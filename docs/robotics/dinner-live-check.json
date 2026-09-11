@@ -1,0 +1,10 @@
+{
+  "passed": [
+    "Seeded dinner scene, seven physical objects and no active autonomous task",
+    "Open inspection preset exposes loose cutlery",
+    "Target example initializes placement without claiming task success",
+    "Unsupported dinner goals and incompatible rack controls fail clearly without losing the scene",
+    "Dinner and chemistry scenes switch without stale object state"
+  ],
+  "scope": "Scene/API checks only. Original setup restored; physical trajectory reset."
+}

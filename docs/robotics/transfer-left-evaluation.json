@@ -1,0 +1,2054 @@
+{
+  "tested_at": "2026-09-08T12:40:57.811787+00:00",
+  "engine": "3.12.0",
+  "successes": 11,
+  "trials": 11,
+  "results": [
+    {
+      "seed": 0,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 6.966,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.667,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.63,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.032,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": -0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.005,
+          "hold_min_lift_cm": 5.667,
+          "placement_xy_error_mm": 0.102,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 1.133,
+          "other_tube_max_displacement_mm": 0.007,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 26.005,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.81,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.155,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.455,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.755,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.625,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.63,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 1,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 6.417,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.662,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.75,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.027,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": -0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.004,
+          "hold_min_lift_cm": 5.662,
+          "placement_xy_error_mm": 0.093,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.693,
+          "other_tube_max_displacement_mm": 0.009,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 26.12,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.925,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.275,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.575,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.875,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.745,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.75,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 2,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 6.585,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.646,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.645,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.014,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": -0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.002,
+          "hold_min_lift_cm": 5.646,
+          "placement_xy_error_mm": 0.148,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.506,
+          "other_tube_max_displacement_mm": 0.005,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 26.015,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.82,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.17,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.47,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.77,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.64,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.645,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 3,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 6.946,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.647,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.715,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.016,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": 0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.005,
+          "hold_min_lift_cm": 5.647,
+          "placement_xy_error_mm": 0.104,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.416,
+          "other_tube_max_displacement_mm": 0.006,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 26.09,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.895,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.24,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.54,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.84,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.71,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.715,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 4,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 7.806,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.642,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.515,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.01,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": 0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.003,
+          "hold_min_lift_cm": 5.642,
+          "placement_xy_error_mm": 0.137,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.284,
+          "other_tube_max_displacement_mm": 0.005,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 25.89,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.695,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.04,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.34,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.64,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.51,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.515,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 5,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 5.867,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.657,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.595,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.023,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": -0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.002,
+          "hold_min_lift_cm": 5.657,
+          "placement_xy_error_mm": 0.094,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.483,
+          "other_tube_max_displacement_mm": 0.004,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 25.965,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.77,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.12,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.42,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.72,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.59,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.595,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 6,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 6.46,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.665,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.665,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.032,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": -0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.002,
+          "hold_min_lift_cm": 5.665,
+          "placement_xy_error_mm": 0.104,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.488,
+          "other_tube_max_displacement_mm": 0.003,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 26.035,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.84,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.19,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.49,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.79,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.66,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.665,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 7,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 6.782,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.644,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.615,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.012,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": -0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.003,
+          "hold_min_lift_cm": 5.644,
+          "placement_xy_error_mm": 0.133,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.545,
+          "other_tube_max_displacement_mm": 0.007,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 25.99,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.795,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.14,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.44,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.74,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.61,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.615,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 8,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 7.189,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.67,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.735,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.035,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": -0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.002,
+          "hold_min_lift_cm": 5.67,
+          "placement_xy_error_mm": 0.11,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.655,
+          "other_tube_max_displacement_mm": 0.006,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 26.11,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.915,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.26,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.56,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.86,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.73,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.735,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 9,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 6.733,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.653,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.675,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.021,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": -0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.006,
+          "hold_min_lift_cm": 5.653,
+          "placement_xy_error_mm": 0.117,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.931,
+          "other_tube_max_displacement_mm": 0.006,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 26.05,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.855,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.2,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.5,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.8,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.67,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.675,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    },
+    {
+      "seed": 42,
+      "requested_arm": "left",
+      "practice": true,
+      "kind": "transfer",
+      "transfer_side": "left",
+      "wall_time_s": 6.843,
+      "peak_gripper_torque_nm": 0.15,
+      "measured_hold_min_cm": 5.647,
+      "task": {
+        "status": "succeeded",
+        "active": false,
+        "stage": "verify",
+        "stage_label": "Check stable placement after release",
+        "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked.",
+        "arm": "left",
+        "tube_id": "A2",
+        "kind": "transfer",
+        "source_slot": "A2",
+        "recording_id": null,
+        "destination_slot": "B2",
+        "progress": 1.0,
+        "stages": [
+          {
+            "id": "planning",
+            "label": "Check reach and clearance"
+          },
+          {
+            "id": "approach",
+            "label": "Move above the tube"
+          },
+          {
+            "id": "descend",
+            "label": "Align the open fingers"
+          },
+          {
+            "id": "close",
+            "label": "Close and verify both fingers"
+          },
+          {
+            "id": "lift",
+            "label": "Lift clear of the rack"
+          },
+          {
+            "id": "hold",
+            "label": "Verify an unsupported hold"
+          },
+          {
+            "id": "clearance",
+            "label": "Raise for transfer"
+          },
+          {
+            "id": "transit",
+            "label": "Carry to the destination rack"
+          },
+          {
+            "id": "align",
+            "label": "Center over the target slot"
+          },
+          {
+            "id": "lower",
+            "label": "Lower until the rack supports the tube"
+          },
+          {
+            "id": "release",
+            "label": "Open and clear the fixed finger"
+          },
+          {
+            "id": "retract",
+            "label": "Withdraw from the rack"
+          },
+          {
+            "id": "park",
+            "label": "Park the working arm"
+          },
+          {
+            "id": "verify",
+            "label": "Check stable placement after release"
+          }
+        ],
+        "elapsed_s": 43.67,
+        "attempts": 1,
+        "metrics": {
+          "max_lift_cm": 8.014,
+          "hold_verified_s": 1.505,
+          "both_fingers": false,
+          "other_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0,
+          "gripper_torque_limit_nm": 0.15,
+          "ik_axis": "gripper_y_up",
+          "lift_cm": -0.0,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "rack_support_n": 0.196,
+          "external_contact_n": 0.196,
+          "tilt_deg": 0.003,
+          "hold_min_lift_cm": 5.647,
+          "placement_xy_error_mm": 0.119,
+          "placement_z_error_mm": 0.0,
+          "placement_speed_mm_s": 0.562,
+          "other_tube_max_displacement_mm": 0.007,
+          "placement_stable_s": 1.0
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Move above the tube"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.87,
+            "message": "Align the open fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.175,
+            "message": "Close and verify both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.475,
+            "message": "Lift clear of the rack"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.275,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "clearance",
+            "at_s": 17.78,
+            "message": "Raise for transfer"
+          },
+          {
+            "stage": "transit",
+            "at_s": 20.085,
+            "message": "Carry to the destination rack"
+          },
+          {
+            "stage": "align",
+            "at_s": 26.04,
+            "message": "Center over the target slot"
+          },
+          {
+            "stage": "lower",
+            "at_s": 27.845,
+            "message": "Lower until the rack supports the tube"
+          },
+          {
+            "stage": "release",
+            "at_s": 31.195,
+            "message": "Open and clear the fixed finger"
+          },
+          {
+            "stage": "retract",
+            "at_s": 35.495,
+            "message": "Withdraw from the rack"
+          },
+          {
+            "stage": "park",
+            "at_s": 38.795,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 42.665,
+            "message": "Check stable placement after release"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 43.67,
+            "message": "Tube A2 lifted, held clear for 1.5 s, and transferred upright from A2 to B2. Both arms are parked."
+          }
+        ],
+        "observation": "exact_simulator_state",
+        "attachment": "physical_contacts_only"
+      }
+    }
+  ]
+}

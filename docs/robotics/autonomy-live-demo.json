@@ -1,0 +1,729 @@
+{
+  "task": {
+    "status": "succeeded",
+    "active": false,
+    "stage": "verify",
+    "stage_label": "Check stable placement after release",
+    "message": "Tube B2 lifted, held clear for 1.5 s, and returned upright to its original slot. Both arms are parked.",
+    "arm": "right",
+    "tube_id": "B2",
+    "progress": 1.0,
+    "stages": [
+      {
+        "id": "planning",
+        "label": "Check reach and clearance"
+      },
+      {
+        "id": "approach",
+        "label": "Move above the tube"
+      },
+      {
+        "id": "descend",
+        "label": "Align the open fingers"
+      },
+      {
+        "id": "close",
+        "label": "Close and verify both fingers"
+      },
+      {
+        "id": "lift",
+        "label": "Lift clear of the rack"
+      },
+      {
+        "id": "hold",
+        "label": "Verify an unsupported hold"
+      },
+      {
+        "id": "align",
+        "label": "Center over the original slot"
+      },
+      {
+        "id": "lower",
+        "label": "Lower until the rack supports the tube"
+      },
+      {
+        "id": "release",
+        "label": "Open and clear the fixed finger"
+      },
+      {
+        "id": "retract",
+        "label": "Withdraw from the rack"
+      },
+      {
+        "id": "park",
+        "label": "Park the working arm"
+      },
+      {
+        "id": "verify",
+        "label": "Check stable placement after release"
+      }
+    ],
+    "elapsed_s": 35.345,
+    "attempts": 1,
+    "metrics": {
+      "max_lift_cm": 5.692,
+      "hold_verified_s": 1.505,
+      "both_fingers": false,
+      "other_arm_max_motion_deg": 0.0,
+      "unexpected_collisions": 0,
+      "gripper_torque_limit_nm": 0.15,
+      "ik_axis": "gripper_y_up",
+      "lift_cm": -0.0,
+      "finger_forces_n": [
+        0.0,
+        0.0
+      ],
+      "rack_support_n": 0.196,
+      "external_contact_n": 0.196,
+      "tilt_deg": 0.006,
+      "hold_min_lift_cm": 5.565,
+      "placement_xy_error_mm": 0.309,
+      "placement_z_error_mm": 0.0,
+      "placement_speed_mm_s": 0.056,
+      "other_tube_max_displacement_mm": 0.011,
+      "placement_stable_s": 1.0
+    },
+    "history": [
+      {
+        "stage": "planning",
+        "at_s": 0.0,
+        "message": "Check reach and clearance"
+      },
+      {
+        "stage": "approach",
+        "at_s": 0.0,
+        "message": "Move above the tube"
+      },
+      {
+        "stage": "descend",
+        "at_s": 3.87,
+        "message": "Align the open fingers"
+      },
+      {
+        "stage": "close",
+        "at_s": 7.175,
+        "message": "Close and verify both fingers"
+      },
+      {
+        "stage": "lift",
+        "at_s": 12.475,
+        "message": "Lift clear of the rack"
+      },
+      {
+        "stage": "hold",
+        "at_s": 16.275,
+        "message": "Verify an unsupported hold"
+      },
+      {
+        "stage": "align",
+        "at_s": 17.78,
+        "message": "Center over the original slot"
+      },
+      {
+        "stage": "lower",
+        "at_s": 19.585,
+        "message": "Lower until the rack supports the tube"
+      },
+      {
+        "stage": "release",
+        "at_s": 22.86,
+        "message": "Open and clear the fixed finger"
+      },
+      {
+        "stage": "retract",
+        "at_s": 27.165,
+        "message": "Withdraw from the rack"
+      },
+      {
+        "stage": "park",
+        "at_s": 30.47,
+        "message": "Park the working arm"
+      },
+      {
+        "stage": "verify",
+        "at_s": 34.34,
+        "message": "Check stable placement after release"
+      },
+      {
+        "stage": "succeeded",
+        "at_s": 35.345,
+        "message": "Tube B2 lifted, held clear for 1.5 s, and returned upright to its original slot. Both arms are parked."
+      }
+    ],
+    "observation": "exact_simulator_state",
+    "attachment": "physical_contacts_only"
+  },
+  "seed": 42,
+  "practice": true,
+  "camera": "center",
+  "observed_interval_wall_s": 20.267,
+  "observed_interval_sim_s": 20.095,
+  "mean_camera_fps": 18.55,
+  "mean_simulation_real_time_factor": 1.0,
+  "samples": [
+    {
+      "elapsed_s": 15.25,
+      "rtf": 0.999,
+      "fps": 17.7,
+      "frame_ms": 59.6
+    },
+    {
+      "elapsed_s": 15.5,
+      "rtf": 0.999,
+      "fps": 16.8,
+      "frame_ms": 53.5
+    },
+    {
+      "elapsed_s": 15.73,
+      "rtf": 0.999,
+      "fps": 17.8,
+      "frame_ms": 52.9
+    },
+    {
+      "elapsed_s": 15.96,
+      "rtf": 1.0,
+      "fps": 18.6,
+      "frame_ms": 52.1
+    },
+    {
+      "elapsed_s": 16.15,
+      "rtf": 1.0,
+      "fps": 19.2,
+      "frame_ms": 52.6
+    },
+    {
+      "elapsed_s": 16.37,
+      "rtf": 1.0,
+      "fps": 19.8,
+      "frame_ms": 51.6
+    },
+    {
+      "elapsed_s": 16.6,
+      "rtf": 1.0,
+      "fps": 18.4,
+      "frame_ms": 53.1
+    },
+    {
+      "elapsed_s": 16.83,
+      "rtf": 1.0,
+      "fps": 18.2,
+      "frame_ms": 55.1
+    },
+    {
+      "elapsed_s": 17.02,
+      "rtf": 1.004,
+      "fps": 18.0,
+      "frame_ms": 55.5
+    },
+    {
+      "elapsed_s": 17.25,
+      "rtf": 1.004,
+      "fps": 19.2,
+      "frame_ms": 54.1
+    },
+    {
+      "elapsed_s": 17.48,
+      "rtf": 1.004,
+      "fps": 18.4,
+      "frame_ms": 52.6
+    },
+    {
+      "elapsed_s": 17.7,
+      "rtf": 1.004,
+      "fps": 19.3,
+      "frame_ms": 49.7
+    },
+    {
+      "elapsed_s": 17.92,
+      "rtf": 1.0,
+      "fps": 17.5,
+      "frame_ms": 50.6
+    },
+    {
+      "elapsed_s": 18.17,
+      "rtf": 1.0,
+      "fps": 20.5,
+      "frame_ms": 55.0
+    },
+    {
+      "elapsed_s": 18.35,
+      "rtf": 1.0,
+      "fps": 19.6,
+      "frame_ms": 50.0
+    },
+    {
+      "elapsed_s": 18.59,
+      "rtf": 1.0,
+      "fps": 19.7,
+      "frame_ms": 51.0
+    },
+    {
+      "elapsed_s": 18.83,
+      "rtf": 1.0,
+      "fps": 15.4,
+      "frame_ms": 49.5
+    },
+    {
+      "elapsed_s": 19.02,
+      "rtf": 1.0,
+      "fps": 19.3,
+      "frame_ms": 52.4
+    },
+    {
+      "elapsed_s": 19.25,
+      "rtf": 1.0,
+      "fps": 18.7,
+      "frame_ms": 51.6
+    },
+    {
+      "elapsed_s": 19.44,
+      "rtf": 1.0,
+      "fps": 19.5,
+      "frame_ms": 51.7
+    },
+    {
+      "elapsed_s": 19.69,
+      "rtf": 1.0,
+      "fps": 18.9,
+      "frame_ms": 54.4
+    },
+    {
+      "elapsed_s": 19.87,
+      "rtf": 1.0,
+      "fps": 19.9,
+      "frame_ms": 54.6
+    },
+    {
+      "elapsed_s": 20.12,
+      "rtf": 0.999,
+      "fps": 18.5,
+      "frame_ms": 52.8
+    },
+    {
+      "elapsed_s": 20.3,
+      "rtf": 0.999,
+      "fps": 19.7,
+      "frame_ms": 49.6
+    },
+    {
+      "elapsed_s": 20.55,
+      "rtf": 0.999,
+      "fps": 19.2,
+      "frame_ms": 51.5
+    },
+    {
+      "elapsed_s": 20.72,
+      "rtf": 0.999,
+      "fps": 18.2,
+      "frame_ms": 55.4
+    },
+    {
+      "elapsed_s": 20.94,
+      "rtf": 0.998,
+      "fps": 18.1,
+      "frame_ms": 52.1
+    },
+    {
+      "elapsed_s": 21.17,
+      "rtf": 0.998,
+      "fps": 16.2,
+      "frame_ms": 59.9
+    },
+    {
+      "elapsed_s": 21.4,
+      "rtf": 0.998,
+      "fps": 18.9,
+      "frame_ms": 48.8
+    },
+    {
+      "elapsed_s": 21.63,
+      "rtf": 0.998,
+      "fps": 13.7,
+      "frame_ms": 52.5
+    },
+    {
+      "elapsed_s": 21.85,
+      "rtf": 0.998,
+      "fps": 15.5,
+      "frame_ms": 57.3
+    },
+    {
+      "elapsed_s": 22.03,
+      "rtf": 1.0,
+      "fps": 19.4,
+      "frame_ms": 49.2
+    },
+    {
+      "elapsed_s": 22.28,
+      "rtf": 1.0,
+      "fps": 18.0,
+      "frame_ms": 46.8
+    },
+    {
+      "elapsed_s": 22.52,
+      "rtf": 1.0,
+      "fps": 20.0,
+      "frame_ms": 49.4
+    },
+    {
+      "elapsed_s": 22.7,
+      "rtf": 1.0,
+      "fps": 19.7,
+      "frame_ms": 49.7
+    },
+    {
+      "elapsed_s": 22.92,
+      "rtf": 1.001,
+      "fps": 19.8,
+      "frame_ms": 49.8
+    },
+    {
+      "elapsed_s": 23.17,
+      "rtf": 1.001,
+      "fps": 19.9,
+      "frame_ms": 48.4
+    },
+    {
+      "elapsed_s": 23.35,
+      "rtf": 1.001,
+      "fps": 19.9,
+      "frame_ms": 52.6
+    },
+    {
+      "elapsed_s": 23.62,
+      "rtf": 1.001,
+      "fps": 19.4,
+      "frame_ms": 50.6
+    },
+    {
+      "elapsed_s": 23.83,
+      "rtf": 1.001,
+      "fps": 16.1,
+      "frame_ms": 50.2
+    },
+    {
+      "elapsed_s": 24.05,
+      "rtf": 1.002,
+      "fps": 19.8,
+      "frame_ms": 49.5
+    },
+    {
+      "elapsed_s": 24.22,
+      "rtf": 1.002,
+      "fps": 19.6,
+      "frame_ms": 49.9
+    },
+    {
+      "elapsed_s": 24.45,
+      "rtf": 1.002,
+      "fps": 15.7,
+      "frame_ms": 66.8
+    },
+    {
+      "elapsed_s": 24.65,
+      "rtf": 1.002,
+      "fps": 18.0,
+      "frame_ms": 57.8
+    },
+    {
+      "elapsed_s": 24.87,
+      "rtf": 1.002,
+      "fps": 16.9,
+      "frame_ms": 53.0
+    },
+    {
+      "elapsed_s": 25.1,
+      "rtf": 0.999,
+      "fps": 19.2,
+      "frame_ms": 51.9
+    },
+    {
+      "elapsed_s": 25.28,
+      "rtf": 0.999,
+      "fps": 19.0,
+      "frame_ms": 49.7
+    },
+    {
+      "elapsed_s": 25.53,
+      "rtf": 0.999,
+      "fps": 19.4,
+      "frame_ms": 51.2
+    },
+    {
+      "elapsed_s": 25.78,
+      "rtf": 0.999,
+      "fps": 19.5,
+      "frame_ms": 51.1
+    },
+    {
+      "elapsed_s": 26.01,
+      "rtf": 0.999,
+      "fps": 18.4,
+      "frame_ms": 52.6
+    },
+    {
+      "elapsed_s": 26.19,
+      "rtf": 0.999,
+      "fps": 19.1,
+      "frame_ms": 51.6
+    },
+    {
+      "elapsed_s": 26.42,
+      "rtf": 0.999,
+      "fps": 18.7,
+      "frame_ms": 51.9
+    },
+    {
+      "elapsed_s": 26.65,
+      "rtf": 0.999,
+      "fps": 19.1,
+      "frame_ms": 58.6
+    },
+    {
+      "elapsed_s": 26.82,
+      "rtf": 0.999,
+      "fps": 17.0,
+      "frame_ms": 60.9
+    },
+    {
+      "elapsed_s": 27.05,
+      "rtf": 1.0,
+      "fps": 18.3,
+      "frame_ms": 56.9
+    },
+    {
+      "elapsed_s": 27.25,
+      "rtf": 1.0,
+      "fps": 18.2,
+      "frame_ms": 54.7
+    },
+    {
+      "elapsed_s": 27.5,
+      "rtf": 1.0,
+      "fps": 17.8,
+      "frame_ms": 51.4
+    },
+    {
+      "elapsed_s": 27.72,
+      "rtf": 1.0,
+      "fps": 18.4,
+      "frame_ms": 51.7
+    },
+    {
+      "elapsed_s": 27.95,
+      "rtf": 1.0,
+      "fps": 18.7,
+      "frame_ms": 48.7
+    },
+    {
+      "elapsed_s": 28.17,
+      "rtf": 1.0,
+      "fps": 18.9,
+      "frame_ms": 56.6
+    },
+    {
+      "elapsed_s": 28.34,
+      "rtf": 1.0,
+      "fps": 19.2,
+      "frame_ms": 53.7
+    },
+    {
+      "elapsed_s": 28.59,
+      "rtf": 1.0,
+      "fps": 18.3,
+      "frame_ms": 54.5
+    },
+    {
+      "elapsed_s": 28.75,
+      "rtf": 1.0,
+      "fps": 18.1,
+      "frame_ms": 51.7
+    },
+    {
+      "elapsed_s": 29.0,
+      "rtf": 0.999,
+      "fps": 16.1,
+      "frame_ms": 50.4
+    },
+    {
+      "elapsed_s": 29.24,
+      "rtf": 0.999,
+      "fps": 19.6,
+      "frame_ms": 51.1
+    },
+    {
+      "elapsed_s": 29.42,
+      "rtf": 0.999,
+      "fps": 18.7,
+      "frame_ms": 50.4
+    },
+    {
+      "elapsed_s": 29.67,
+      "rtf": 0.999,
+      "fps": 19.6,
+      "frame_ms": 48.0
+    },
+    {
+      "elapsed_s": 29.89,
+      "rtf": 0.999,
+      "fps": 19.9,
+      "frame_ms": 49.4
+    },
+    {
+      "elapsed_s": 30.07,
+      "rtf": 1.004,
+      "fps": 19.9,
+      "frame_ms": 49.8
+    },
+    {
+      "elapsed_s": 30.29,
+      "rtf": 1.004,
+      "fps": 19.9,
+      "frame_ms": 58.6
+    },
+    {
+      "elapsed_s": 30.5,
+      "rtf": 1.004,
+      "fps": 19.6,
+      "frame_ms": 49.7
+    },
+    {
+      "elapsed_s": 30.74,
+      "rtf": 1.004,
+      "fps": 17.7,
+      "frame_ms": 50.4
+    },
+    {
+      "elapsed_s": 30.98,
+      "rtf": 0.999,
+      "fps": 19.1,
+      "frame_ms": 50.2
+    },
+    {
+      "elapsed_s": 31.22,
+      "rtf": 0.999,
+      "fps": 16.6,
+      "frame_ms": 50.5
+    },
+    {
+      "elapsed_s": 31.43,
+      "rtf": 0.999,
+      "fps": 19.9,
+      "frame_ms": 49.4
+    },
+    {
+      "elapsed_s": 31.6,
+      "rtf": 0.999,
+      "fps": 19.6,
+      "frame_ms": 46.4
+    },
+    {
+      "elapsed_s": 31.84,
+      "rtf": 0.999,
+      "fps": 18.8,
+      "frame_ms": 48.2
+    },
+    {
+      "elapsed_s": 32.02,
+      "rtf": 1.0,
+      "fps": 12.8,
+      "frame_ms": 53.7
+    },
+    {
+      "elapsed_s": 32.25,
+      "rtf": 1.0,
+      "fps": 19.7,
+      "frame_ms": 49.9
+    },
+    {
+      "elapsed_s": 32.48,
+      "rtf": 1.0,
+      "fps": 19.3,
+      "frame_ms": 51.3
+    },
+    {
+      "elapsed_s": 32.72,
+      "rtf": 1.0,
+      "fps": 19.0,
+      "frame_ms": 51.1
+    },
+    {
+      "elapsed_s": 32.89,
+      "rtf": 1.0,
+      "fps": 16.9,
+      "frame_ms": 60.7
+    },
+    {
+      "elapsed_s": 33.14,
+      "rtf": 0.999,
+      "fps": 19.3,
+      "frame_ms": 54.2
+    },
+    {
+      "elapsed_s": 33.36,
+      "rtf": 0.999,
+      "fps": 18.1,
+      "frame_ms": 49.4
+    },
+    {
+      "elapsed_s": 33.59,
+      "rtf": 0.999,
+      "fps": 15.5,
+      "frame_ms": 51.1
+    },
+    {
+      "elapsed_s": 33.77,
+      "rtf": 0.999,
+      "fps": 19.8,
+      "frame_ms": 49.5
+    },
+    {
+      "elapsed_s": 34.0,
+      "rtf": 0.998,
+      "fps": 19.9,
+      "frame_ms": 49.3
+    },
+    {
+      "elapsed_s": 34.23,
+      "rtf": 0.998,
+      "fps": 19.4,
+      "frame_ms": 47.4
+    },
+    {
+      "elapsed_s": 34.42,
+      "rtf": 0.998,
+      "fps": 18.5,
+      "frame_ms": 51.0
+    },
+    {
+      "elapsed_s": 34.64,
+      "rtf": 0.998,
+      "fps": 20.0,
+      "frame_ms": 48.8
+    },
+    {
+      "elapsed_s": 34.87,
+      "rtf": 0.998,
+      "fps": 19.9,
+      "frame_ms": 48.7
+    },
+    {
+      "elapsed_s": 35.1,
+      "rtf": 1.0,
+      "fps": 19.1,
+      "frame_ms": 51.6
+    },
+    {
+      "elapsed_s": 35.27,
+      "rtf": 1.0,
+      "fps": 19.5,
+      "frame_ms": 60.3
+    },
+    {
+      "elapsed_s": 35.345,
+      "rtf": 1.0,
+      "fps": 16.4,
+      "frame_ms": 50.3
+    }
+  ]
+}
