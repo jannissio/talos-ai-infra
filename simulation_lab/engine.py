@@ -18,6 +18,7 @@ import numpy as np
 
 from .autonomy import LiftReturn
 from .dinner import dinner_state
+from .dinner_autonomy import DinnerSequence
 from .rendering import offer_latest, render_worker
 from .recording import EpisodeRecorder
 from .scene import CAMERAS, HOME, JOINT_LABELS, JOINTS, RackPose, TABLE_Z, build_scene
@@ -142,9 +143,7 @@ class LabEngine:
             self._record_result()
         self.model, self.data, self.layout, self.target = model, data, layout, target
         self.xml = xml
-        self.task = LiftReturn(model, data, layout)
-        if scenario == "dinner":
-            self.task.message = "Dinner scene ready for manual inspection. Dinner manipulation skills are the next milestone."
+        self.task = DinnerSequence(model,data,layout) if scenario == "dinner" else LiftReturn(model,data,layout)
         self.motion_started = None
         self.generation += 1
         self.dropped_wall_time = 0.
@@ -195,14 +194,15 @@ class LabEngine:
                 self.running = False
                 self.task.request_pause = False
         else:
-            if self.layout.get("scenario") == "dinner":
-                raise ValueError("Dinner manipulation is not implemented yet. Inspect this scene manually, or select chemistry for the existing tube goals.")
             if self.motion_started is not None:
                 raise ValueError("Wait for the motion test to finish or reset the scene before starting a goal.")
             if payload.get("record") and self.recorder is not None and self.recorder.snapshot()["busy"]:
                 raise ValueError("The previous demonstration is still being saved. Wait or turn off recording.")
-            self.task.start(payload.get("arm", "auto"), payload.get("tube_id"),
-                            kind=payload.get("kind", "lift_return"), destination_slot=payload.get("destination_slot"))
+            if self.layout.get("scenario") == "dinner":
+                self.task.start(side=payload.get("arm","auto"),object_id=payload.get("object_id"),kind=payload.get("kind","set_table"))
+            else:
+                self.task.start(payload.get("arm", "auto"), payload.get("tube_id"),
+                                kind=payload.get("kind", "lift_return"), destination_slot=payload.get("destination_slot"))
             if payload.get("record"):
                 if self.recorder is None:
                     self.recorder = EpisodeRecorder()

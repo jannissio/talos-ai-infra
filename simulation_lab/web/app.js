@@ -52,7 +52,8 @@ function updateState(next) {
   });
   if (!controlsReady) {
     makeJointControls(); syncSceneControls(); controlsReady = true;
-    if (state.task.status !== 'idle') {
+    if (dinner && state.task.status !== 'idle') $('dinner-goal').value = state.task.kind === 'set_table' ? 'set_table' : state.task.kind === 'drawer_open' ? 'drawer' : state.task.object_id || 'bottle';
+    if (state.task.status !== 'idle' && !dinner) {
       $('goal-kind').value = state.task.kind;
       $('goal-arm').value = state.task.arm || 'auto';
       $('goal-tube').value = state.task.tube_id || '';
@@ -91,6 +92,26 @@ function sceneFormMode() {
 
 function updateTask() {
   const task = state.task, metrics = task.metrics;
+  if (state.scenario === 'dinner') {
+    $('dinner-status').textContent = task.status.toUpperCase();
+    $('dinner-status').className = `goal-status ${task.status}`;
+    $('dinner-stage').textContent = task.status === 'succeeded' ? 'Dinner goal complete' : task.stage_label;
+    $('dinner-elapsed').textContent = `${task.elapsed_s.toFixed(1)} s`;
+    $('dinner-progress').value = task.progress;
+    $('dinner-message').textContent = task.message;
+    $('start-dinner').disabled = task.active || goalBusy || !connected || state.dinner_preset !== 'task' || ($('dinner-goal').value === 'set_table' && state.drawer.open_m > .008);
+    $('cancel-dinner').disabled = !task.active || goalBusy || !connected;
+    $('dinner-goal').disabled = task.active || goalBusy;
+    const resultsKey = JSON.stringify((task.results || []).map(r => r.skill));
+    if ($('dinner-results').dataset.key !== resultsKey) {
+      $('dinner-results').dataset.key = resultsKey;
+      $('dinner-results').replaceChildren(...(task.results || []).map(r => {
+        const li = document.createElement('li');
+        li.textContent = `${r.skill}: verified${r.metrics.placement_xy_error_mm === undefined ? '' : `, ${r.metrics.placement_xy_error_mm.toFixed(1)} mm placement error`}`;
+        return li;
+      }));
+    }
+  }
   const labels = {idle: 'READY', running: state.running ? 'RUNNING' : 'PAUSED', succeeded: 'SUCCESS', failed: 'FAILED', cancelled: 'CANCELLED'};
   $('goal-status').textContent = labels[task.status];
   $('goal-status').className = `goal-status ${task.status}`;
@@ -98,8 +119,8 @@ function updateTask() {
   $('goal-elapsed').textContent = `${task.elapsed_s.toFixed(1)} s`;
   $('goal-progress').value = task.progress;
   $('task-strip').hidden = task.status === 'idle';
-  $('task-strip-stage').textContent = `${labels[task.status]} · ${task.tube_id ? `Tube ${task.tube_id}${task.destination_slot ? ` → ${task.destination_slot}` : ''} · ` : ''}${task.status === 'succeeded' ? 'Goal complete' : task.stage_label}`;
-  $('task-strip-metrics').textContent = `Lift ${(metrics.lift_cm || 0).toFixed(1)} cm · Hold ${(metrics.hold_verified_s || 0).toFixed(1)} s · ${task.elapsed_s.toFixed(1)} s elapsed`;
+  $('task-strip-stage').textContent = `${labels[task.status]} · ${task.tube_id ? `${state.scenario === 'dinner' ? 'Object' : 'Tube'} ${task.tube_id}${task.destination_slot ? ` → ${task.destination_slot}` : ''} · ` : ''}${task.status === 'succeeded' ? 'Goal complete' : task.stage_label}`;
+  $('task-strip-metrics').textContent = `${state.scenario === 'dinner' ? 'Peak lift' : 'Lift'} ${((state.scenario === 'dinner' ? metrics.max_lift_cm : metrics.lift_cm) || 0).toFixed(1)} cm · Hold ${(metrics.hold_verified_s || 0).toFixed(1)} s · ${task.elapsed_s.toFixed(1)} s elapsed`;
   $('task-strip-cancel').hidden = !task.active;
   $('task-strip-cancel').disabled = goalBusy || !connected;
   if ($('goal-message').textContent !== task.message) $('goal-message').textContent = task.message;
@@ -269,13 +290,24 @@ async function sendGoal(action) {
   clearTimeout(jointTimer);
   goalBusy = true; updateTask();
   try {
-    const kind = $('goal-kind').value;
-    updateState(await api('/api/task', {action, kind, arm: $('goal-arm').value, tube_id: $('goal-tube').value || null,
-      destination_slot: kind === 'transfer' ? $('goal-destination').value || null : null, record: $('record-demo').checked}));
+    let payload = {action};
+    if (action === 'start' && state.scenario === 'dinner') {
+      const selected = $('dinner-goal').value;
+      payload = {action, kind: selected === 'set_table' ? 'set_table' : selected === 'drawer' ? 'drawer_open' : 'dinner_place',
+        object_id: ['set_table','drawer'].includes(selected) ? null : selected, arm:'auto', record:false};
+    } else if (action === 'start') {
+      const kind = $('goal-kind').value;
+      payload = {action, kind, arm: $('goal-arm').value, tube_id: $('goal-tube').value || null,
+        destination_slot: kind === 'transfer' ? $('goal-destination').value || null : null, record: $('record-demo').checked};
+    }
+    updateState(await api('/api/task', payload));
     if (action === 'start' && window.matchMedia('(max-width:790px)').matches) $('camera-frame').scrollIntoView({behavior:'smooth', block:'start'});
   } catch (error) { notice(error.message); }
   finally { goalBusy = false; updateTask(); }
 }
+$('dinner-goal').addEventListener('change', () => state && updateTask());
+$('start-dinner').addEventListener('click', () => sendGoal('start'));
+$('cancel-dinner').addEventListener('click', () => sendGoal('cancel'));
 $('start-goal').addEventListener('click', () => sendGoal('start'));
 $('cancel-goal').addEventListener('click', () => sendGoal('cancel'));
 $('task-strip-cancel').addEventListener('click', () => sendGoal('cancel'));

@@ -38,32 +38,32 @@
     <geom name="inspection_floor" type="plane" size=".4 .4 .05" pos="0 0 0.0" rgba=".27 .32 .36 1" />
     <body name="plate" pos="0 0 0.001" euler="0 0 0">
       <freejoint name="plate_free" />
-      <inertial pos="0 0 0.007" mass="0.065" diaginertia="9.5441667e-05 9.5441667e-05 0.00018876" />
+      <inertial pos="0 0 0.012" mass="0.065" diaginertia="9.75e-05 9.75e-05 0.00018876" />
       <geom name="plate_base" type="cylinder" size="0.058 0.003" pos="0 0 0.003" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" material="ceramic" />
-      <geom name="plate_rim_0" type="box" size="0.005 0.0086890648 0.005" pos="0.061 0 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 0" material="plate_blue" />
-      <geom name="plate_rim_1" type="box" size="0.005 0.0086890648 0.005" pos="0.058921475 0.015787962 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 0.26179939" material="plate_blue" />
-      <geom name="plate_rim_2" type="box" size="0.005 0.0086890648 0.005" pos="0.05282755 0.0305 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 0.52359878" material="plate_blue" />
-      <geom name="plate_rim_3" type="box" size="0.005 0.0086890648 0.005" pos="0.043133514 0.043133514 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 0.78539816" material="plate_blue" />
-      <geom name="plate_rim_4" type="box" size="0.005 0.0086890648 0.005" pos="0.0305 0.05282755 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 1.0471976" material="plate_blue" />
-      <geom name="plate_rim_5" type="box" size="0.005 0.0086890648 0.005" pos="0.015787962 0.058921475 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 1.3089969" material="plate_blue" />
-      <geom name="plate_rim_6" type="box" size="0.005 0.0086890648 0.005" pos="3.7351727e-18 0.061 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 1.5707963" material="plate_blue" />
-      <geom name="plate_rim_7" type="box" size="0.005 0.0086890648 0.005" pos="-0.015787962 0.058921475 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 1.8325957" material="plate_blue" />
-      <geom name="plate_rim_8" type="box" size="0.005 0.0086890648 0.005" pos="-0.0305 0.05282755 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 2.0943951" material="plate_blue" />
-      <geom name="plate_rim_9" type="box" size="0.005 0.0086890648 0.005" pos="-0.043133514 0.043133514 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 2.3561945" material="plate_blue" />
-      <geom name="plate_rim_10" type="box" size="0.005 0.0086890648 0.005" pos="-0.05282755 0.0305 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 2.6179939" material="plate_blue" />
-      <geom name="plate_rim_11" type="box" size="0.005 0.0086890648 0.005" pos="-0.058921475 0.015787962 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 2.8797933" material="plate_blue" />
-      <geom name="plate_rim_12" type="box" size="0.005 0.0086890648 0.005" pos="-0.061 7.4703455e-18 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 3.1415927" material="plate_blue" />
-      <geom name="plate_rim_13" type="box" size="0.005 0.0086890648 0.005" pos="-0.058921475 -0.015787962 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 3.403392" material="plate_blue" />
-      <geom name="plate_rim_14" type="box" size="0.005 0.0086890648 0.005" pos="-0.05282755 -0.0305 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 3.6651914" material="plate_blue" />
-      <geom name="plate_rim_15" type="box" size="0.005 0.0086890648 0.005" pos="-0.043133514 -0.043133514 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 3.9269908" material="plate_blue" />
-      <geom name="plate_rim_16" type="box" size="0.005 0.0086890648 0.005" pos="-0.0305 -0.05282755 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 4.1887902" material="plate_blue" />
-      <geom name="plate_rim_17" type="box" size="0.005 0.0086890648 0.005" pos="-0.015787962 -0.058921475 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 4.4505896" material="plate_blue" />
-      <geom name="plate_rim_18" type="box" size="0.005 0.0086890648 0.005" pos="-1.1205518e-17 -0.061 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 4.712389" material="plate_blue" />
-      <geom name="plate_rim_19" type="box" size="0.005 0.0086890648 0.005" pos="0.015787962 -0.058921475 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 4.9741884" material="plate_blue" />
-      <geom name="plate_rim_20" type="box" size="0.005 0.0086890648 0.005" pos="0.0305 -0.05282755 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 5.2359878" material="plate_blue" />
-      <geom name="plate_rim_21" type="box" size="0.005 0.0086890648 0.005" pos="0.043133514 -0.043133514 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 5.4977871" material="plate_blue" />
-      <geom name="plate_rim_22" type="box" size="0.005 0.0086890648 0.005" pos="0.05282755 -0.0305 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 5.7595865" material="plate_blue" />
-      <geom name="plate_rim_23" type="box" size="0.005 0.0086890648 0.005" pos="0.058921475 -0.015787962 0.009" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 6.0213859" material="plate_blue" />
+      <geom name="plate_rim_0" type="box" size="0.005 0.0086890648 0.01" pos="0.061 0 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 0" material="plate_blue" />
+      <geom name="plate_rim_1" type="box" size="0.005 0.0086890648 0.01" pos="0.058921475 0.015787962 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 0.26179939" material="plate_blue" />
+      <geom name="plate_rim_2" type="box" size="0.005 0.0086890648 0.01" pos="0.05282755 0.0305 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 0.52359878" material="plate_blue" />
+      <geom name="plate_rim_3" type="box" size="0.005 0.0086890648 0.01" pos="0.043133514 0.043133514 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 0.78539816" material="plate_blue" />
+      <geom name="plate_rim_4" type="box" size="0.005 0.0086890648 0.01" pos="0.0305 0.05282755 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 1.0471976" material="plate_blue" />
+      <geom name="plate_rim_5" type="box" size="0.005 0.0086890648 0.01" pos="0.015787962 0.058921475 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 1.3089969" material="plate_blue" />
+      <geom name="plate_rim_6" type="box" size="0.005 0.0086890648 0.01" pos="3.7351727e-18 0.061 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 1.5707963" material="plate_blue" />
+      <geom name="plate_rim_7" type="box" size="0.005 0.0086890648 0.01" pos="-0.015787962 0.058921475 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 1.8325957" material="plate_blue" />
+      <geom name="plate_rim_8" type="box" size="0.005 0.0086890648 0.01" pos="-0.0305 0.05282755 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 2.0943951" material="plate_blue" />
+      <geom name="plate_rim_9" type="box" size="0.005 0.0086890648 0.01" pos="-0.043133514 0.043133514 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 2.3561945" material="plate_blue" />
+      <geom name="plate_rim_10" type="box" size="0.005 0.0086890648 0.01" pos="-0.05282755 0.0305 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 2.6179939" material="plate_blue" />
+      <geom name="plate_rim_11" type="box" size="0.005 0.0086890648 0.01" pos="-0.058921475 0.015787962 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 2.8797933" material="plate_blue" />
+      <geom name="plate_rim_12" type="box" size="0.005 0.0086890648 0.01" pos="-0.061 7.4703455e-18 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 3.1415927" material="plate_blue" />
+      <geom name="plate_rim_13" type="box" size="0.005 0.0086890648 0.01" pos="-0.058921475 -0.015787962 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 3.403392" material="plate_blue" />
+      <geom name="plate_rim_14" type="box" size="0.005 0.0086890648 0.01" pos="-0.05282755 -0.0305 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 3.6651914" material="plate_blue" />
+      <geom name="plate_rim_15" type="box" size="0.005 0.0086890648 0.01" pos="-0.043133514 -0.043133514 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 3.9269908" material="plate_blue" />
+      <geom name="plate_rim_16" type="box" size="0.005 0.0086890648 0.01" pos="-0.0305 -0.05282755 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 4.1887902" material="plate_blue" />
+      <geom name="plate_rim_17" type="box" size="0.005 0.0086890648 0.01" pos="-0.015787962 -0.058921475 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 4.4505896" material="plate_blue" />
+      <geom name="plate_rim_18" type="box" size="0.005 0.0086890648 0.01" pos="-1.1205518e-17 -0.061 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 4.712389" material="plate_blue" />
+      <geom name="plate_rim_19" type="box" size="0.005 0.0086890648 0.01" pos="0.015787962 -0.058921475 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 4.9741884" material="plate_blue" />
+      <geom name="plate_rim_20" type="box" size="0.005 0.0086890648 0.01" pos="0.0305 -0.05282755 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 5.2359878" material="plate_blue" />
+      <geom name="plate_rim_21" type="box" size="0.005 0.0086890648 0.01" pos="0.043133514 -0.043133514 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 5.4977871" material="plate_blue" />
+      <geom name="plate_rim_22" type="box" size="0.005 0.0086890648 0.01" pos="0.05282755 -0.0305 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 5.7595865" material="plate_blue" />
+      <geom name="plate_rim_23" type="box" size="0.005 0.0086890648 0.01" pos="0.058921475 -0.015787962 0.014" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" euler="0 0 6.0213859" material="plate_blue" />
       <site name="plate_grasp" pos="0 -0.061 0.01" size=".002" group="4" rgba="0 1 0 1" />
     </body>
   </worldbody>

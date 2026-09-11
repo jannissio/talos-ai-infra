@@ -4,7 +4,7 @@ Two simulated SO-101 arms learning to set a dinner table. This is our work in pr
 
 ![Dinner scene, with the drawer opened for inspection](docs/robotics/dinner-task.jpg)
 
-**Current milestone:** a seeded MuJoCo dinner environment with two plates, a mug, a glass, a bottle, fork, spoon, and a passive cutlery drawer. The browser provides five cameras, joint controls, pause/step, an object inventory, and task-start / target-example presets. The example is an initialized scene, not a robot-completed task. No dinner controller or trained policy is loaded yet.
+**Current milestone:** a physical six-skill dinner sequence: place the bottle, plate and mug, open a passive drawer, then retrieve and place the fork and spoon. Choose **Task start / Closed / Seed 42**, then **Run all six skills → Start dinner goal**. Each grasp, hold and release is verified. Uses exact simulator state; no trained vision/language policy is loaded. The side plate and glass remain staging assets. [Implementation, geometry changes and results](docs/robotics/DINNER_SCENE.md).
 
 Start the local viewer in PowerShell:
 
@@ -16,7 +16,7 @@ Open [Talos on this PC](http://127.0.0.1:8765/). Stop with `.\stop-lab.ps1`. On 
 
 Read the [dinner scene, models and measured checks](docs/robotics/DINNER_SCENE.md) and the [current submission build plan](docs/hackathon/BUILD_PLAN.md). Project code and original dinner assets use [MIT](LICENSE); the SO-101 assets retain [Apache-2.0 attribution](simulation_lab/NOTICE.md). [Development and AI-assistance disclosure](docs/PROVENANCE.md).
 
-**September 10 recheck:** kickoff is now listed as **17:00 CEST September 10**, submission deadline **20:30 CEST September 16**, and the portal is live. The Intel online PDF is unchanged; additional setup and speech resources are available. [Read the update](docs/hackathon/UPDATE_2026-09-10.md).
+**September 11 recheck:** kickoff is now listed as **17:00 CEST September 10**, submission deadline **20:30 CEST September 16**, and the portal is live. The Intel online PDF is unchanged; additional setup and speech resources are available. [Read the current challenge alignment](docs/hackathon/UPDATE_2026-09-11.md).
 
 **Preserved preparation experiments:** select **Chemistry practice → Load seed** to use the September 8 BenchLab environment with randomized test-tube racks. These earlier experiments established physics, control and recording infrastructure; the submission now uses the dinner scenario.
 

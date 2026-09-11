@@ -51,13 +51,20 @@
       </section>
       <aside class="control-panel" aria-label="Experiment controls">
         <section class="dinner-panel" id="dinner-panel" aria-labelledby="dinner-heading">
-          <div class="goal-heading"><h2 id="dinner-heading">Set the dinner table</h2><span class="goal-status">SCENE READY</span></div>
-          <p class="goal-intro">Open the drawer, arrange the dishes and cutlery, then use both arms to serve a drink.</p>
-          <div class="milestone-note"><strong>01 · Build the physical scene</strong><p>Inspect the objects with the cameras and joint controls. Autonomous dinner skills come next.</p></div>
+          <div class="goal-heading"><h2 id="dinner-heading">Set the dinner table</h2><span id="dinner-status" class="goal-status">READY</span></div>
+          <p class="goal-intro">Physical baseline: arrange the bottle, plate, mug and cutlery. Coordinated serving is a later milestone.</p>
+          <div class="milestone-note"><strong>Physical skills · exact simulator state</strong><p>Move the bottle, plate and mug, open the drawer, then place the fork and spoon. Each grasp and placement is checked.</p></div>
+          <label for="dinner-goal" class="block-label">Goal<select id="dinner-goal"><option value="set_table">Run all six skills</option><option value="bottle">Place bottle</option><option value="plate">Place plate</option><option value="mug">Place mug</option><option value="drawer">Open drawer</option><option value="fork">Retrieve and place fork</option><option value="spoon">Retrieve and place spoon</option></select></label>
+          <div class="goal-actions"><button id="start-dinner" class="primary" disabled>Start dinner goal</button><button id="cancel-dinner" disabled>Cancel</button></div>
+          <div class="goal-stage"><strong id="dinner-stage">Ready for a goal</strong><span id="dinner-elapsed">0 s</span></div>
+          <progress id="dinner-progress" max="1" value="0" aria-label="Dinner goal progress"></progress>
+          <p id="dinner-message" role="status" aria-live="polite">Load Task start, seed 42, for the baseline demonstration.</p>
+          <ol id="dinner-results"></ol>
+          <p class="small-note">Cancel pauses physics, including held objects. Reset before repeating the full sequence or after a failure. Individual skills require the preceding scene changes.</p>
           <div class="drawer-state"><span>Cutlery drawer</span><strong id="drawer-state">Closed</strong></div>
-          <p class="small-note">The drawer has a physical handle and no motor. Select “Open for inspection” and load the setup to examine the cutlery.</p>
+          <p class="small-note">The drawer has a physical handle and no motor. The robot pulls it; Open for inspection is only a reset preset.</p>
           <h3 class="inventory-heading">Tableware · live positions</h3><div id="object-inventory" class="object-inventory"></div>
-          <details class="target-legend"><summary>Placement guide</summary><p>Blue plate left, gold side plate right. Fork beside the blue plate; spoon beside the side plate. Mug and glass at the round markers. The bottle stays in the serving area.</p></details>
+          <details class="target-legend"><summary>Placement guide</summary><p>Blue plate left, gold side plate right. Fork beside the blue plate; spoon across the front. Mug and glass at the round markers. The bottle stays in the serving area.</p></details>
           <p class="small-note">Small, lightweight rigid props. Vessels are hollow; liquid flow and trained policies are not implemented.</p>
         </section>
         <section class="goal-panel" id="chemistry-goals" aria-labelledby="goal-heading" hidden>

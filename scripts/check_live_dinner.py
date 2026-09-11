@@ -21,7 +21,7 @@ def main():
         assert [o['initial_position_m'] for o in first['objects']] != [o['initial_position_m'] for o in other['objects']]
         passed.append('Seeded dinner scene, seven physical objects and no active autonomous task')
         opened = call('/api/reset', {"scenario": "dinner", "drawer_open": True})
-        assert abs(opened['drawer']['open_m']-.095) < .001
+        assert abs(opened['drawer']['open_m']-opened['drawer']['travel_m']) < .001
         assert all(o['position_m'][1] < .20 for o in opened['objects'] if o['id'] in ('fork', 'spoon'))
         passed.append('Open inspection preset exposes loose cutlery')
         reference = call('/api/reset', {"scenario": "dinner", "dinner_preset": "reference"})
@@ -36,7 +36,7 @@ def main():
         expect_status('/api/reset', {"scenario": "dinner", "dinner_preset": "missing"}, 422)
         expect_status('/api/racks', {"racks": [{"x": -.18, "y": .1, "yaw_deg": 0}, {"x": .18, "y": .1, "yaw_deg": 0}]}, 400)
         assert call('/api/state')['scenario'] == 'dinner'
-        passed.append('Unsupported dinner goals and incompatible rack controls fail clearly without losing the scene')
+        passed.append('Wrong-scene goals, reference execution and incompatible rack controls fail clearly without losing the scene')
         chemistry = call('/api/reset', {"scenario": "chemistry", "transfer_side": "left"})
         assert chemistry['tube_count'] == 5 and chemistry['transfer_side'] == 'left'
         assert 'objects' not in chemistry

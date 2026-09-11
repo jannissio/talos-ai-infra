@@ -11,7 +11,7 @@
   "assets": [
     {
       "file": "plate.xml",
-      "sha256": "426ae7ee3399b32c2485b27f62b602d72c17a063aa5e5c235c6e1c8eb4884840",
+      "sha256": "d658b3d8561f8112a167802db764719321de811f8c7f87be04bc26b58f9f57ce",
       "spec": {
         "id": "plate",
         "body": "plate",
@@ -21,7 +21,7 @@
         "size_m": [
           0.132,
           0.132,
-          0.014
+          0.024
         ],
         "color": "#719acb",
         "grasp_local_m": [
@@ -171,7 +171,7 @@
     },
     {
       "file": "fork.xml",
-      "sha256": "84309c1c91ecab36458eaaa089e76faf30226983bc0fb6ce8a50af757b1d666d",
+      "sha256": "25d3a7a6b2c993c1aee9c32429ecf6a453e5b201aca32ad5ac41b6ee19ee91a7",
       "spec": {
         "id": "fork",
         "body": "fork",
@@ -181,13 +181,13 @@
         "size_m": [
           0.017,
           0.11,
-          0.008
+          0.016
         ],
         "color": "#cad5de",
         "grasp_local_m": [
           0,
-          -0.019,
-          0.004
+          0,
+          0.008
         ],
         "grasp_width_m": 0.009,
         "friction": 0.8,
@@ -203,7 +203,7 @@
     },
     {
       "file": "spoon.xml",
-      "sha256": "489baf48918aa893987fd373f31a4289a7069f3fa4bc88e67debb037f3665b9f",
+      "sha256": "d4eaf783ed6550b10a5449ebcc80a0cd307370ff997f071322ac5db3486a24b0",
       "spec": {
         "id": "spoon",
         "body": "spoon",
@@ -213,13 +213,13 @@
         "size_m": [
           0.022,
           0.11,
-          0.008
+          0.016
         ],
         "color": "#cad5de",
         "grasp_local_m": [
           0,
-          -0.019,
-          0.004
+          0,
+          0.008
         ],
         "grasp_width_m": 0.009,
         "friction": 0.8,
@@ -235,17 +235,17 @@
     },
     {
       "file": "drawer.xml",
-      "sha256": "6e9fe97b1566831cecacab5c936400a6766ff753e8b457c9ddd2874851a2af8c",
+      "sha256": "a7db71d966e4b25122b3702ef1ef83c89f780c4af164e4c674c1a1c389c81513",
       "spec": {
         "body": "cutlery_drawer",
         "joint": "drawer_slide",
-        "travel_m": 0.095,
+        "travel_m": 0.12,
         "initial_open_m": 0.0,
         "handle_site": "drawer_handle_grasp",
         "actuated": false,
         "closed_origin_m": [
-          0.0,
-          0.28,
+          -0.28,
+          0.18,
           0.76
         ]
       }

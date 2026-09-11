@@ -1,5 +1,7 @@
 # From manual control to goal-driven autonomy
 
+**September 11 submission milestone:** the dinner environment now has a physical bottle/plate/mug/drawer/fork/spoon sequence. See [dinner implementation and results](DINNER_SCENE.md). The chemistry plan below is retained as preparation history.
+
 Prepared September 8, 2026 for the local chemistry learning sandbox. **Lift-and-return, single-arm rack transfer and demonstration recording are now implemented.** Read [Lift & return](LIFT_AND_RETURN.md) and [Transfer and recording](TRANSFER_AND_RECORDING.md) for the demonstrations. Vision, learned policies and coordinated two-arm hand-off remain future work.
 
 ## Recommendation

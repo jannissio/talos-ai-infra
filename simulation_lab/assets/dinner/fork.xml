@@ -38,15 +38,15 @@
     <geom name="inspection_floor" type="plane" size=".4 .4 .05" pos="0 0 0.0" rgba=".27 .32 .36 1" />
     <body name="fork" pos="0 0 0.001" euler="0 0 0">
       <freejoint name="fork_free" />
-      <inertial pos="0 0 0.004" mass="0.012" diaginertia="1.2164e-05 3.53e-07 1.2389e-05" />
-      <geom name="fork_handle" type="box" size="0.0045 0.034 0.004" pos="0 -0.019 0.004" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" material="steel" />
+      <inertial pos="0 0 0.008" mass="0.012" diaginertia="1.2356e-05 5.45e-07 1.2389e-05" />
+      <geom name="fork_handle" type="box" size="0.0045 0.034 0.008" pos="0 -0.019 0.008" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" material="steel" />
       <geom name="fork_neck" type="box" size="0.003 0.01 0.004" pos="0 0.02 0.004" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" material="steel" />
       <geom name="fork_head" type="box" size="0.0085 0.007 0.004" pos="0 0.032 0.004" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" material="steel" />
       <geom name="fork_tine_0" type="box" size="0.00125 0.011 0.0015" pos="-0.0072 0.046 0.004" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" material="steel" />
       <geom name="fork_tine_1" type="box" size="0.00125 0.011 0.0015" pos="-0.0024 0.046 0.004" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" material="steel" />
       <geom name="fork_tine_2" type="box" size="0.00125 0.011 0.0015" pos="0.0024 0.046 0.004" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" material="steel" />
       <geom name="fork_tine_3" type="box" size="0.00125 0.011 0.0015" pos="0.0072 0.046 0.004" mass="0" friction="0.8 0.005 0.0001" condim="4" solref=".012 1" material="steel" />
-      <site name="fork_grasp" pos="0 -0.019 0.004" size=".002" group="4" rgba="0 1 0 1" />
+      <site name="fork_grasp" pos="0 0 0.008" size=".002" group="4" rgba="0 1 0 1" />
     </body>
   </worldbody>
 </mujoco>

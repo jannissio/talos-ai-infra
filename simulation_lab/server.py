@@ -80,7 +80,8 @@ class TaskCommand(BaseModel):
     action: Literal["start", "cancel"]
     arm: Literal["auto", "left", "right"] = "auto"
     tube_id: str | None = Field(default=None, pattern=r"^[A-D][1-6]$")
-    kind: Literal["lift_return", "transfer"] = "lift_return"
+    object_id: Literal["bottle","plate","mug","fork","spoon"] | None = None
+    kind: Literal["lift_return", "transfer", "set_table", "dinner_place", "drawer_open"] = "lift_return"
     destination_slot: str | None = Field(default=None, pattern=r"^[A-D][1-6]$")
     record: bool = False
     record_images: bool = True

@@ -11,3 +11,6 @@ SO-101 robot models originate from Google DeepMind MuJoCo Menagerie, pinned to c
 The dinner models are original procedural geometry under this repository's MIT license. No downloaded dinnerware model pack or generated image textures were used. Simulator mass/inertia/friction values are documented engineering approximations, not measurements of physical dishes.
 
 Pre-event preparation reuse has not received organizer-specific approval. Preserve this dated disclosure in the eventual submission; do not describe all infrastructure as newly built during the event. The user's authorization to develop locally does not establish competition eligibility.
+
+
+September 11 physical milestone: Codex-assisted implementation of the dinner teacher, drawer pull, rim and cutlery grasps, six-skill sequencing, browser controls and physical evaluation. The plate rim, utensil handles, drawer dimensions and object staging were revised after contact/clearance failures; these are original engineering approximations. No robot geometry changes, object attachments, external-force manipulation or learned-policy claims were introduced. See `robotics/DINNER_SCENE.md` and the dated challenge recheck.

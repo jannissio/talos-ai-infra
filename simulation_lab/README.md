@@ -1,6 +1,6 @@
 # Talos simulator · Dinner challenge and BenchLab practice
 
-**September 11:** the default browser scene is now the dinner challenge. Select **Dinner challenge**, a seed, **Task start** or **Target example**, and **Load seed**. Select **Open for inspection** before loading to see the cutlery in the passive drawer. Every preset rebuilds the physical scene; the target example is not autonomous execution. Dinner-specific robot goals are the next milestone.
+**September 11:** the default browser scene is now the dinner challenge. Select **Dinner challenge**, a seed, **Task start** or **Target example**, and **Load seed**. Select **Open for inspection** before loading to see the cutlery in the passive drawer. Every preset rebuilds the physical scene; the target example is not autonomous execution. Choose **Run all six skills → Start dinner goal** to execute bottle/plate/mug placement, drawer opening and fork/spoon retrieval. Use **Task start / Closed / Seed 42** for the baseline. Cancellation pauses physics. This is an exact-state teacher, not a learned policy.
 
 The scene contains seven free rigid tableware objects, a passive drawer, two unchanged SO-101 arms and five cameras. See [dinner setup, model dimensions and verification](../docs/robotics/DINNER_SCENE.md), [standalone dinner models](assets/dinner/README.md), and [submission build plan](../docs/hackathon/BUILD_PLAN.md).
 

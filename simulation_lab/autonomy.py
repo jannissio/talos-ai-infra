@@ -1,7 +1,8 @@
 """Ground-truth lift/return teacher. Commands actuators only; never edits prop state.
 
 IK uses a separate scratch MjData. Five arm coordinates satisfy position plus
-alignment of the gripper's local Y axis with world up (yaw remains free).
+alignment of a configurable gripper axis. The default local-Y-up mode preserves
+the chemistry teacher; dinner grasps can also constrain the closing direction.
 """
 from __future__ import annotations
 
@@ -23,6 +24,7 @@ LABELS = {
     "approach": "Move above the tube", "descend": "Align the open fingers",
     "close": "Close and verify both fingers", "retry": "Reopen for one grasp retry",
     "lift": "Lift clear of the rack", "hold": "Verify an unsupported hold",
+    "rotate": "Orient the held object",
     "clearance": "Raise for transfer", "transit": "Carry to the destination rack",
     "align": "Center over the target slot", "lower": "Lower until the rack supports the tube",
     "release": "Open and clear the fixed finger", "retract": "Withdraw from the rack",
@@ -56,9 +58,13 @@ class ArmIK:
         self.hi = model.jnt_range[self.indices, 1] - .004
         self.jp = np.zeros((3, model.nv))
         self.jr = self.jp.copy()
+        self.grasp_point = GRASP_POINT.copy()
+        self.x_target = None
+        self.axis_index = 1
+        self.axis_target = np.array([0., 0., 1.])
 
     def point(self, data):
-        return data.xpos[self.body] + data.xmat[self.body].reshape(3, 3) @ GRASP_POINT
+        return data.xpos[self.body] + data.xmat[self.body].reshape(3, 3) @ self.grasp_point
 
     def solve(self, position, initial):
         q = np.asarray(initial).copy()
@@ -67,15 +73,20 @@ class ArmIK:
             mujoco.mj_kinematics(self.model, self.data)
             mujoco.mj_comPos(self.model, self.data)
             point = self.point(self.data)
-            axis = self.data.xmat[self.body].reshape(3, 3)[:, 1]
-            error = np.r_[position - point, .08 * (np.array([0., 0., 1.]) - axis)]
+            axis = self.data.xmat[self.body].reshape(3, 3)[:, self.axis_index]
+            error = np.r_[position - point, .08 * (self.axis_target - axis)]
+            if self.x_target is not None:
+                xaxis = self.data.xmat[self.body].reshape(3, 3)[:, 0]
+                error = np.r_[error, .08*(self.x_target-xaxis)]
             if np.linalg.norm(error) < 1e-5:
                 return q
             mujoco.mj_jac(self.model, self.data, self.jp, self.jr, point, self.body)
             jac = np.vstack((self.jp[:, self.indices], -.08 * skew(axis) @ self.jr[:, self.indices]))
-            delta = jac.T @ np.linalg.solve(jac @ jac.T + np.eye(6) * 1e-5, error)
+            if self.x_target is not None:
+                jac = np.vstack((jac, -.08*skew(xaxis) @ self.jr[:, self.indices]))
+            delta = jac.T @ np.linalg.solve(jac @ jac.T + np.eye(len(error)) * 1e-5, error)
             q = np.clip(q + np.clip(delta, -.06, .06), self.lo, self.hi)
-        raise PlanningError("The upright finger orientation is outside this arm's useful reach.")
+        raise PlanningError("The requested gripper pose is outside this arm's useful reach.")
 
 
 @dataclass
@@ -415,7 +426,7 @@ class LiftReturn:
             kp = self.model.actuator_gainprm[i, 0]
             kv = -self.model.actuator_biasprm[i, 2]
             torque = kp*(targets[i]-self.data.qpos[i]) - kv*self.data.qvel[i]
-            ctrl[i] = self.data.qpos[i] + (np.clip(torque, -GRIP_TORQUE, GRIP_TORQUE) + kv*self.data.qvel[i])/kp
+            ctrl[i] = self.data.qpos[i] + (np.clip(torque, -getattr(self, "grip_torque", GRIP_TORQUE), getattr(self, "grip_torque", GRIP_TORQUE)) + kv*self.data.qvel[i])/kp
         return ctrl
 
     def update(self, targets):
