@@ -2,6 +2,8 @@
 
 Prepared 2026-09-08 for the online Intel track with the Speechmatics bonus. Unchecked boxes mean **not yet verified or completed**, not an assertion that an existing user account lacks the item.
 
+September 11 livestream clarification: other Intel systems with integrated graphics are accepted in the spoken Q&A; Core Ultra Series 2/3 earns bonus points. This conflicts with a strict written-brief sentence. [Review and development implications](LIVESTREAM_REVIEW_2026-09-11.md). The deadline, ten-seed evidence and Speechmatics checklist remain unchanged.
+
 ## Enrollment
 
 - [ ] Every member is independently registered and has checked their approval/enrollment status.
@@ -41,11 +43,12 @@ Source for this section: [Intel online brief, page 4](https://drive.google.com/f
 
 - [ ] **Reproducible repository:** setup steps, dependencies, MuJoCo assets, training/fine-tuning code, evaluation code, inference code, and exact reproduction commands.
 - [ ] **Simulation package:** two SO-101 arms and the dinner-table scenario, including randomization and evaluation configuration.
-- [ ] **Benchmark script:** executes on Core Ultra Series 2/3; reports latency, throughput, chosen device, and precision.
+- [ ] **Benchmark script:** executes on the selected Intel target; reports exact hardware, latency, throughput, chosen device and precision. Reconcile the written Core Ultra wording with the livestream clarification before the final eligibility claim.
 - [ ] **Demonstration video:** shows task execution for ten randomized environment seeds, with instructions, variations, and outcomes verifiable.
 - [ ] **Technical README:** architecture, policy/model choice, coordination, training, robustness methods, optimization, and Intel device mapping.
 - [ ] **Target execution:** final simulation and AI/VLA/VLM inference run on qualifying Intel hardware.
 - [ ] **OpenVINO:** supported components are optimized and performance gains are evaluated against retained task quality.
+- [ ] **Packaging recommendation:** consider an Intel-ready downloadable container; validate dependencies, assets and commands rather than merely supplying a Dockerfile.
 
 The brief's suggested demo sequence includes scene/instruction, camera-based decisions, both arms acting with at least one hand-off or complementary action, final table state, a ten-seed success summary, and an Intel benchmark. Account for these in the five-minute presentation. Confirm whether a supplemental full run recording is allowed; retain the complete recordings locally regardless.
 

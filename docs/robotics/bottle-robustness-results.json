@@ -1,0 +1,852 @@
+{
+  "promotion": false,
+  "browser_checkpoint_retained": ".run/retrieval-fit5-v4",
+  "scope": "Small local upright neighborhood; four untouched test positions, not full-workspace generalization.",
+  "results": {
+    "baseline_development": {
+      "successes": 2,
+      "trials": 4,
+      "episodes": [
+        {
+          "episode": "dev-yplus4",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.7965338081159015,
+          "best_supported_hold_s": 9.025000000000011,
+          "placement_error_m": 0.0021801054459723236,
+          "simulated_s": 27.239999999998865,
+          "other_object_max_displacement_m": 4.953225674273455e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "dev-yminus4",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.763954472179212,
+          "best_supported_hold_s": 8.995000000000006,
+          "placement_error_m": 0.00119788661934956,
+          "simulated_s": 27.279999999998857,
+          "other_object_max_displacement_m": 4.960502536663864e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "dev-diagonal",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 6.7683496348246,
+          "best_supported_hold_s": 9.005000000000008,
+          "placement_error_m": 0.0009792088150392488,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315427749614e-05,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "dev-light",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 0.16293454412342756,
+          "best_supported_hold_s": 0.0,
+          "placement_error_m": 0.08322983402547679,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316643964361e-05,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    "candidate_development": {
+      "successes": 3,
+      "trials": 4,
+      "episodes": [
+        {
+          "episode": "dev-yplus4",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.9051989241113105,
+          "best_supported_hold_s": 9.090000000000021,
+          "placement_error_m": 0.0007717473623491598,
+          "simulated_s": 27.35999999999884,
+          "other_object_max_displacement_m": 4.975056620078895e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "dev-yminus4",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 6.161966247253403e-05,
+          "best_supported_hold_s": 0.0,
+          "placement_error_m": 0.08026042533245385,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315596804811e-05,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "dev-diagonal",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.778751134750916,
+          "best_supported_hold_s": 9.005000000000008,
+          "placement_error_m": 0.0010803609062375163,
+          "simulated_s": 27.249999999998863,
+          "other_object_max_displacement_m": 4.95504475813605e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "dev-light",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.677364939543818,
+          "best_supported_hold_s": 8.744999999999967,
+          "placement_error_m": 0.009261599144580013,
+          "simulated_s": 28.209999999998672,
+          "other_object_max_displacement_m": 5.129695512028593e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    "candidate_training": {
+      "successes": 6,
+      "trials": 6,
+      "episodes": [
+        {
+          "episode": "train-yplus2",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.894229175838184,
+          "best_supported_hold_s": 9.08500000000002,
+          "placement_error_m": 0.0007952489296388629,
+          "simulated_s": 27.40999999999883,
+          "other_object_max_displacement_m": 4.984152928683822e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yplus6",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.88925645302122,
+          "best_supported_hold_s": 9.08000000000002,
+          "placement_error_m": 0.0008194304922969889,
+          "simulated_s": 27.40999999999883,
+          "other_object_max_displacement_m": 4.984152928683822e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yminus6",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.8986046281716344,
+          "best_supported_hold_s": 9.090000000000021,
+          "placement_error_m": 0.0007813707108007877,
+          "simulated_s": 27.404999999998832,
+          "other_object_max_displacement_m": 4.983243297268179e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-xplus6",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.897051476742422,
+          "best_supported_hold_s": 9.08500000000002,
+          "placement_error_m": 0.0007852455072536491,
+          "simulated_s": 27.40999999999883,
+          "other_object_max_displacement_m": 4.984152928683822e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-xminus6",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.89380547128815,
+          "best_supported_hold_s": 9.08500000000002,
+          "placement_error_m": 0.0007956542157268608,
+          "simulated_s": 27.40999999999883,
+          "other_object_max_displacement_m": 4.984152928683822e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "recovery-yplus2",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.854373232146549,
+          "best_supported_hold_s": 9.060000000000016,
+          "placement_error_m": 0.0007826634882761962,
+          "simulated_s": 37.44499999997162,
+          "other_object_max_displacement_m": 6.819215637809474e-06,
+          "parked_arm_max_motion_deg": 0.03881763361022688,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    "candidate_familiar": {
+      "successes": 5,
+      "trials": 5,
+      "episodes": [
+        {
+          "episode": "upright-01",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.803989416471657,
+          "best_supported_hold_s": 9.030000000000012,
+          "placement_error_m": 0.002172765385642631,
+          "simulated_s": 27.244999999998864,
+          "other_object_max_displacement_m": 4.9541351324937e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-04",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.810972594623188,
+          "best_supported_hold_s": 9.035000000000013,
+          "placement_error_m": 0.0019962321320092145,
+          "simulated_s": 27.224999999998868,
+          "other_object_max_displacement_m": 4.9504960235902625e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-01",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 9.327337638278543,
+          "best_supported_hold_s": 8.144999999999873,
+          "placement_error_m": 0.007836033798448612,
+          "simulated_s": 32.64999999999825,
+          "other_object_max_displacement_m": 5.9375041132264664e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-03",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 10.817576728694133,
+          "best_supported_hold_s": 18.480000000000608,
+          "placement_error_m": 0.0067120001996648845,
+          "simulated_s": 39.795000000001906,
+          "other_object_max_displacement_m": 7.237626838335516e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-11",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 9.308915499980674,
+          "best_supported_hold_s": 14.055000000000797,
+          "placement_error_m": 0.006641910306046016,
+          "simulated_s": 32.559999999998205,
+          "other_object_max_displacement_m": 5.921128335504673e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    "baseline_held_out": {
+      "successes": 4,
+      "trials": 4,
+      "episodes": [
+        {
+          "episode": "test-ne",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.670755690922525,
+          "best_supported_hold_s": 8.789999999999974,
+          "placement_error_m": 0.007922759533944031,
+          "simulated_s": 42.88500000000349,
+          "other_object_max_displacement_m": 7.799956278051372e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-nw",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.738769155012781,
+          "best_supported_hold_s": 8.980000000000004,
+          "placement_error_m": 0.0011885853400996293,
+          "simulated_s": 27.42499999999883,
+          "other_object_max_displacement_m": 4.9868818320354574e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-se",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.873684846558192,
+          "best_supported_hold_s": 9.08000000000002,
+          "placement_error_m": 0.002220025650864714,
+          "simulated_s": 27.15999999999888,
+          "other_object_max_displacement_m": 4.93867210263363e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-sw",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.690678680908302,
+          "best_supported_hold_s": 8.944999999999999,
+          "placement_error_m": 0.0012905068118407653,
+          "simulated_s": 27.37499999999884,
+          "other_object_max_displacement_m": 4.9777855094400995e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    "candidate_held_out": {
+      "successes": 3,
+      "trials": 4,
+      "episodes": [
+        {
+          "episode": "test-ne",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.721998721260425,
+          "best_supported_hold_s": 8.864999999999986,
+          "placement_error_m": 0.009507815206781319,
+          "simulated_s": 28.5699999999986,
+          "other_object_max_displacement_m": 5.19519052846652e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-nw",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 2.9665811007391074,
+          "best_supported_hold_s": 0.0,
+          "placement_error_m": 0.09700570854088397,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316587227433e-05,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.06999999999999999,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-se",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.863490338287193,
+          "best_supported_hold_s": 9.065000000000017,
+          "placement_error_m": 0.0008588061344528337,
+          "simulated_s": 27.534999999998806,
+          "other_object_max_displacement_m": 5.006893756583965e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-sw",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.703144886507129,
+          "best_supported_hold_s": 8.955,
+          "placement_error_m": 0.0012565618071761725,
+          "simulated_s": 27.334999999998846,
+          "other_object_max_displacement_m": 4.9705088789491465e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    }
+  },
+  "new_demonstrations": [
+    {
+      "episode": "train-yplus2",
+      "eligible": true,
+      "frames": 764,
+      "images": 2292,
+      "replays": [
+        {
+          "hz": 200,
+          "passed": true,
+          "placement_error_m": 0.0007953122897413578,
+          "tilt_deg": 0.0014451427308921135,
+          "speed_m_s": 2.0385066559703843e-05,
+          "table_support_n": 0.8302078426936945,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        },
+        {
+          "hz": 20,
+          "passed": true,
+          "placement_error_m": 0.0007953122897413578,
+          "tilt_deg": 0.0014451427308921135,
+          "speed_m_s": 2.0385066559703843e-05,
+          "table_support_n": 0.8302078426936945,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        }
+      ],
+      "gripper_cap_nm": 0.25
+    },
+    {
+      "episode": "train-yplus6",
+      "eligible": true,
+      "frames": 764,
+      "images": 2292,
+      "replays": [
+        {
+          "hz": 200,
+          "passed": true,
+          "placement_error_m": 0.0008194320068262874,
+          "tilt_deg": 0.0014452120841752158,
+          "speed_m_s": 2.03836385905996e-05,
+          "table_support_n": 0.8302078497051923,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        },
+        {
+          "hz": 20,
+          "passed": true,
+          "placement_error_m": 0.0008194320068262874,
+          "tilt_deg": 0.0014452120841752158,
+          "speed_m_s": 2.03836385905996e-05,
+          "table_support_n": 0.8302078497051923,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        }
+      ],
+      "gripper_cap_nm": 0.25
+    },
+    {
+      "episode": "train-yminus6",
+      "eligible": true,
+      "frames": 764,
+      "images": 2292,
+      "replays": [
+        {
+          "hz": 200,
+          "passed": true,
+          "placement_error_m": 0.0007820226760201852,
+          "tilt_deg": 0.0016098918061447128,
+          "speed_m_s": 1.4685317217150465e-05,
+          "table_support_n": 0.8296886922254127,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        },
+        {
+          "hz": 20,
+          "passed": true,
+          "placement_error_m": 0.0007820226760201852,
+          "tilt_deg": 0.0016098918061447128,
+          "speed_m_s": 1.4685317217150465e-05,
+          "table_support_n": 0.8296886922254127,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        }
+      ],
+      "gripper_cap_nm": 0.25
+    },
+    {
+      "episode": "train-xplus6",
+      "eligible": true,
+      "frames": 764,
+      "images": 2292,
+      "replays": [
+        {
+          "hz": 200,
+          "passed": true,
+          "placement_error_m": 0.0007852228456165278,
+          "tilt_deg": 0.0014451114577775188,
+          "speed_m_s": 2.0385673884547918e-05,
+          "table_support_n": 0.8302078399082319,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        },
+        {
+          "hz": 20,
+          "passed": true,
+          "placement_error_m": 0.0007852228456165278,
+          "tilt_deg": 0.0014451114577775188,
+          "speed_m_s": 2.0385673884547918e-05,
+          "table_support_n": 0.8302078399082319,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        }
+      ],
+      "gripper_cap_nm": 0.25
+    },
+    {
+      "episode": "train-xminus6",
+      "eligible": true,
+      "frames": 764,
+      "images": 2292,
+      "replays": [
+        {
+          "hz": 200,
+          "passed": true,
+          "placement_error_m": 0.0007955587789605571,
+          "tilt_deg": 0.0014451722379684336,
+          "speed_m_s": 2.0384950754020858e-05,
+          "table_support_n": 0.8302078412860111,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        },
+        {
+          "hz": 20,
+          "passed": true,
+          "placement_error_m": 0.0007955587789605571,
+          "tilt_deg": 0.0014451722379684336,
+          "speed_m_s": 2.0384950754020858e-05,
+          "table_support_n": 0.8302078412860111,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 6.943738558592844e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        }
+      ],
+      "gripper_cap_nm": 0.25
+    },
+    {
+      "episode": "recovery-yplus2",
+      "eligible": true,
+      "frames": 965,
+      "images": 2895,
+      "replays": [
+        {
+          "hz": 200,
+          "passed": true,
+          "placement_error_m": 0.0007826642123088283,
+          "tilt_deg": 0.00046798479214250264,
+          "speed_m_s": 1.3703159879006992e-05,
+          "table_support_n": 0.8303630518182543,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 8.782811300350441e-06,
+          "parked_arm_max_motion_deg": 0.03881851379344354,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        },
+        {
+          "hz": 20,
+          "passed": true,
+          "placement_error_m": 0.0007826642123088283,
+          "tilt_deg": 0.00046798479214250264,
+          "speed_m_s": 1.3703159879006992e-05,
+          "table_support_n": 0.8303630518182543,
+          "verified_hold_s": 1.8049999999999835,
+          "hold_bad_ticks": 0,
+          "longest_carry_contact_gap_s": 0.0,
+          "external_carry_ticks": 0,
+          "other_object_max_displacement_m": 8.782811300350441e-06,
+          "parked_arm_max_motion_deg": 0.03881851379344354,
+          "state_reset_count": 1,
+          "teacher_updates": 0
+        }
+      ],
+      "gripper_cap_nm": 0.25
+    }
+  ],
+  "training_observations_total": 9040,
+  "held_out_excluded_from_training": true,
+  "freeze_sha256": "e327d4b915093ba7185acee679a4c2fd6a7194d7e469e1757736946cd72917a0",
+  "actuator_pause": {
+    "episode": "upright-01",
+    "success": true,
+    "reason": "verified_lift_hold_release_and_place",
+    "max_lift_cm": 6.8038250457227445,
+    "best_supported_hold_s": 9.030000000000012,
+    "placement_error_m": 0.002173249075561723,
+    "simulated_s": 29.144999999998486,
+    "other_object_max_displacement_m": 5.2998020891075324e-06,
+    "parked_arm_max_motion_deg": 0.038819196462592395,
+    "longest_unsupported_contact_gap_s": 0.0,
+    "teacher_updates": 0,
+    "state_resets": 1
+  },
+  "artifact_bytes": 453972438,
+  "artifact_budget_bytes": 2147483648,
+  "disk_free_bytes": 109571043328,
+  "artifacts": [
+    {
+      "path": ".run/bottle-robustness-baseline-dev",
+      "bytes": 365961
+    },
+    {
+      "path": ".run/bottle-robustness-baseline-dev.log",
+      "bytes": 177
+    },
+    {
+      "path": ".run/bottle-robustness-baseline-test",
+      "bytes": 271398
+    },
+    {
+      "path": ".run/bottle-robustness-baseline-test.log",
+      "bytes": 219
+    },
+    {
+      "path": ".run/bottle-robustness-blend-dev",
+      "bytes": 369455
+    },
+    {
+      "path": ".run/bottle-robustness-blend-dev.log",
+      "bytes": 177
+    },
+    {
+      "path": ".run/bottle-robustness-blend-familiar",
+      "bytes": 1234289
+    },
+    {
+      "path": ".run/bottle-robustness-blend-familiar.log",
+      "bytes": 189942
+    },
+    {
+      "path": ".run/bottle-robustness-blend-progress-dev",
+      "bytes": 308749
+    },
+    {
+      "path": ".run/bottle-robustness-blend-progress-dev.log",
+      "bytes": 205
+    },
+    {
+      "path": ".run/bottle-robustness-candidate-dev",
+      "bytes": 303834
+    },
+    {
+      "path": ".run/bottle-robustness-candidate-dev.log",
+      "bytes": 205
+    },
+    {
+      "path": ".run/bottle-robustness-candidate-training",
+      "bytes": 385066
+    },
+    {
+      "path": ".run/bottle-robustness-candidate-training.log",
+      "bytes": 356
+    },
+    {
+      "path": ".run/bottle-robustness-collect.log",
+      "bytes": 330
+    },
+    {
+      "path": ".run/bottle-robustness-control-tests.log",
+      "bytes": 105
+    },
+    {
+      "path": ".run/bottle-robustness-data",
+      "bytes": 432914667
+    },
+    {
+      "path": ".run/bottle-robustness-fit-blend.log",
+      "bytes": 239
+    },
+    {
+      "path": ".run/bottle-robustness-fit.log",
+      "bytes": 233
+    },
+    {
+      "path": ".run/bottle-robustness-frozen-sources",
+      "bytes": 711732
+    },
+    {
+      "path": ".run/bottle-robustness-model",
+      "bytes": 3467528
+    },
+    {
+      "path": ".run/bottle-robustness-model-blend",
+      "bytes": 3468092
+    },
+    {
+      "path": ".run/bottle-robustness-model-blend-progress",
+      "bytes": 3468094
+    },
+    {
+      "path": ".run/bottle-robustness-model-progress",
+      "bytes": 3467530
+    },
+    {
+      "path": ".run/bottle-robustness-progress-dev",
+      "bytes": 305147
+    },
+    {
+      "path": ".run/bottle-robustness-progress-dev.log",
+      "bytes": 205
+    },
+    {
+      "path": ".run/bottle-robustness-recovery-demo.json",
+      "bytes": 39346
+    },
+    {
+      "path": ".run/bottle-robustness-recovery-demo.log",
+      "bytes": 39821
+    },
+    {
+      "path": ".run/bottle-robustness-recovery-demo.mp4",
+      "bytes": 168951
+    },
+    {
+      "path": ".run/bottle-robustness-recovery-source.json",
+      "bytes": 59829
+    },
+    {
+      "path": ".run/bottle-robustness-recovery-source.log",
+      "bytes": 60506
+    },
+    {
+      "path": ".run/bottle-robustness-recovery-source.npy",
+      "bytes": 3488
+    },
+    {
+      "path": ".run/bottle-robustness-recovery.log",
+      "bytes": 50
+    },
+    {
+      "path": ".run/bottle-robustness-selected-familiar",
+      "bytes": 1234253
+    },
+    {
+      "path": ".run/bottle-robustness-selected-familiar.log",
+      "bytes": 189930
+    },
+    {
+      "path": ".run/bottle-robustness-selected-stall.json",
+      "bytes": 30877
+    },
+    {
+      "path": ".run/bottle-robustness-selected-stall.log",
+      "bytes": 31252
+    },
+    {
+      "path": ".run/bottle-robustness-selected-test",
+      "bytes": 879901
+    },
+    {
+      "path": ".run/bottle-robustness-selected-test.log",
+      "bytes": 191
+    },
+    {
+      "path": ".run/bottle-robustness-training-tests.log",
+      "bytes": 108
+    }
+  ],
+  "next_direction": "Keep the successful baseline; use sequence-aware learning and corrective feedback rather than further nearest-trajectory parameter tuning. These four test poses must not be reused as an untouched test set after inspecting their outcomes."
+}

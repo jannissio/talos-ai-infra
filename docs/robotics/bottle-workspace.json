@@ -1,0 +1,3239 @@
+{
+  "grid_step_m": 0.05,
+  "local_refinement_m": 0.01,
+  "scope": "Bottle approach planning on one dinner layout. Not a complete reachable set. Planner failure is not proof of physical impossibility. Full-rollout results are separate.",
+  "samples": [
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "tested_path_collision",
+      "reason": "left: The planned path has insufficient clearance: left_shoulder / left_fixed_jaw_box2 Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.15,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.1,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "tested_path_collision",
+      "reason": "left: The planned path has insufficient clearance: left_shoulder / left_lower_arm Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": -0.05,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.0,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "tested_path_collision",
+      "reason": "right: The planned path has insufficient clearance: right_shoulder / right_lower_arm Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.05,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.1,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.2,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.15,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "tested_path_collision",
+      "reason": "right: The planned path has insufficient clearance: right_shoulder / right_fixed_jaw_box1 Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.1,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "reset_overlap",
+      "reason": "Initial bottle overlap exceeds 1 mm; not an approach candidate."
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.05,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": false,
+      "arm": "right",
+      "label": "tested_path_collision",
+      "reason": "right: The planned path has insufficient clearance: right_shoulder / right_lower_arm Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 0.0,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 1.5707963267948966,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 3.141592653589793,
+      "sideways": true,
+      "arm": "right",
+      "label": "planner_unresolved",
+      "reason": "right: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "left",
+      "label": "planner_unresolved",
+      "reason": "left: The requested gripper pose is outside this arm's useful reach. Physics paused for inspection."
+    },
+    {
+      "x": 0.15,
+      "y": -0.0,
+      "yaw": 4.71238898038469,
+      "sideways": true,
+      "arm": "right",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.11,
+      "y": -0.16,
+      "yaw": 0.7853981633974483,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.11,
+      "y": -0.15,
+      "yaw": 0.7853981633974483,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.11,
+      "y": -0.14,
+      "yaw": 0.7853981633974483,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.1,
+      "y": -0.16,
+      "yaw": 0.7853981633974483,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.1,
+      "y": -0.15,
+      "yaw": 0.7853981633974483,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.1,
+      "y": -0.14,
+      "yaw": 0.7853981633974483,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.09,
+      "y": -0.16,
+      "yaw": 0.7853981633974483,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.09,
+      "y": -0.15,
+      "yaw": 0.7853981633974483,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    },
+    {
+      "x": -0.09,
+      "y": -0.14,
+      "yaw": 0.7853981633974483,
+      "sideways": true,
+      "arm": "left",
+      "label": "approach_candidate",
+      "reason": "Approach the object"
+    }
+  ],
+  "approach_candidates": 85
+}

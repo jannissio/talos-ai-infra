@@ -1,0 +1,19 @@
+{
+  "scope":"Sequence-aware neural action control from eleven verified demonstrations; PCA RGB features are fixed and train-only",
+  "training_source":".run/bottle-robustness-model",
+  "training_lineage":".run/bottle-robustness-data/fit-lineage.json",
+  "development":"Familiar training starts and the eight exposed robustness development/test positions; none are called unseen again",
+  "held_out":[
+    {"id":"seq-test-east","anchor":"upright-01","dx":0.0045,"dy":0.0015},
+    {"id":"seq-test-west","anchor":"upright-01","dx":-0.0045,"dy":0.0015},
+    {"id":"seq-test-southeast","anchor":"upright-01","dx":0.0015,"dy":-0.0045},
+    {"id":"seq-test-southwest","anchor":"upright-01","dx":-0.0015,"dy":-0.0045},
+    {"id":"seq-test-sideways-a","anchor":"sideways-01","dx":0.002,"dy":-0.002},
+    {"id":"seq-test-sideways-b","anchor":"sideways-01","dx":-0.002,"dy":0.002}
+  ],
+  "selection":"Train and diagnose on familiar/exposed development starts only. Freeze candidate weights, code and new test states before one final neural-versus-retrieval comparison. Do not tune from held-out outcomes in this goal.",
+  "success":"Unchanged physical evaluator: supported grasp/lift/hold, upright placement/release, parked other arm and limited disturbance. No runtime teacher, attachments, object-pose inputs or resets after initial setup.",
+  "budget_bytes":2147483648,
+  "reserve_bytes":10737418240,
+  "caveat":"A recurrent model may learn elapsed-step behavior implicitly. Actuator-pause and camera-rejection checks are needed; familiar success does not prove generalization."
+}

@@ -7,7 +7,16 @@
 *.json text eol=lf
 *.xml text eol=lf
 *.ps1 text eol=crlf
-*.stl binary
 *.obj text eol=lf
-*.jpg binary
+
+# Preserve generated artifacts byte-for-byte, including ASCII-encoded PDFs.
+*.pdf binary
+*.pptx binary
+*.mp4 binary
 *.png binary
+*.jpg binary
+*.stl binary
+*.npz binary
+*.npy binary
+*.safetensors binary
+*.bin binary

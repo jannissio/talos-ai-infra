@@ -1,0 +1,233 @@
+{
+  "scope": "Development evaluation. All listed seeds become exposed, never fresh holdout again.",
+  "checkpoint": ".run/visual-bottle-refine-v1/step-000400",
+  "checkpoint_hashes": {
+    "primitive.json": "9a41b8ee558a562592178988fe8f7a310571efb82aa5062b3cc64cfbc7dd2666",
+    "primitive.safetensors": "e2a1ff9400cdb49d7b9a38d5880759a0269814111c88b2081416f8e349c7564e",
+    "talos_normalization.json": "18070e907ab87dbb47ae7d2692d1de696a06957eadc6f00aa46e3a237fa4a1a8",
+    "visual.npz": "90157ca7de0491966dd22f53aec1f2ab8830855e1c9bd7353cec9b6f7d85ac25"
+  },
+  "cases": [
+    "seed-2026091102",
+    "seed-2026091103",
+    "seed-2026091104",
+    "seed-2026091105",
+    "seed-2026091106",
+    "train-017",
+    "train-019",
+    "train-025"
+  ],
+  "results": [
+    {
+      "case": "seed-2026091102",
+      "status": "succeeded",
+      "message": "Neural policy physically lifted, held, released and placed the bottle.",
+      "elapsed_s": 28.66,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.25,
+        "other_arm_max_motion_deg": 0.0010390676039418259,
+        "hold_verified_s": 9.644999999998081,
+        "lift_cm": -2.4372690199392366e-06,
+        "max_lift_cm": 6.847593112726913,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.8033400398615473,
+        "tilt_deg": 0.0018847116573767445,
+        "peak_tilt_deg": 1.3175397968545974,
+        "placement_error_mm": 0.8482546074515007,
+        "stable_release_s": 1.0049999999998,
+        "longest_unsupported_gap_s": 0.0,
+        "other_object_max_displacement_m": 4.393457546765376e-06,
+        "parked_arm_max_motion_deg": 0.0010390676039418259
+      }
+    },
+    {
+      "case": "seed-2026091103",
+      "status": "succeeded",
+      "message": "Neural policy physically lifted, held, released and placed the bottle.",
+      "elapsed_s": 28.415,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.25,
+        "other_arm_max_motion_deg": 0.0011779477687687064,
+        "hold_verified_s": 9.64999999999808,
+        "lift_cm": -9.011337609443615e-06,
+        "max_lift_cm": 6.847580602824166,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.7964502667804985,
+        "tilt_deg": 0.0005884786208466581,
+        "peak_tilt_deg": 1.2100839030930983,
+        "placement_error_mm": 0.6493054198391096,
+        "stable_release_s": 1.0049999999998,
+        "longest_unsupported_gap_s": 0.0,
+        "other_object_max_displacement_m": 4.096629565985819e-06,
+        "parked_arm_max_motion_deg": 0.0011779477687687064
+      }
+    },
+    {
+      "case": "seed-2026091104",
+      "status": "succeeded",
+      "message": "Neural policy physically lifted, held, released and placed the bottle.",
+      "elapsed_s": 28.45,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.25,
+        "other_arm_max_motion_deg": 0.0011496217029278966,
+        "hold_verified_s": 9.664999999998077,
+        "lift_cm": -6.1603681378308295e-06,
+        "max_lift_cm": 6.861425259682042,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.7445294185983653,
+        "tilt_deg": 0.0005821653301349137,
+        "peak_tilt_deg": 1.5001925879725364,
+        "placement_error_mm": 0.7923537239330801,
+        "stable_release_s": 1.0049999999998,
+        "longest_unsupported_gap_s": 0.0,
+        "other_object_max_displacement_m": 4.853824933419004e-06,
+        "parked_arm_max_motion_deg": 0.0011496217029278966
+      }
+    },
+    {
+      "case": "seed-2026091105",
+      "status": "succeeded",
+      "message": "Neural policy physically lifted, held, released and placed the bottle.",
+      "elapsed_s": 28.835,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.25,
+        "other_arm_max_motion_deg": 0.0011952350294023603,
+        "hold_verified_s": 9.64999999999808,
+        "lift_cm": -1.171844878911088e-05,
+        "max_lift_cm": 6.855508690813106,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.766038330976257,
+        "tilt_deg": 0.0007821358816804344,
+        "peak_tilt_deg": 1.8060710413570797,
+        "placement_error_mm": 0.6326123444573425,
+        "stable_release_s": 1.0049999999998,
+        "longest_unsupported_gap_s": 0.0,
+        "other_object_max_displacement_m": 4.8379754747613054e-06,
+        "parked_arm_max_motion_deg": 0.0011952350294023603
+      }
+    },
+    {
+      "case": "seed-2026091106",
+      "status": "succeeded",
+      "message": "Neural policy physically lifted, held, released and placed the bottle.",
+      "elapsed_s": 28.83,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.25,
+        "other_arm_max_motion_deg": 0.0016844777479111638,
+        "hold_verified_s": 9.659999999998078,
+        "lift_cm": -1.5523315699539353e-05,
+        "max_lift_cm": 6.885562048395588,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.8426622152716284,
+        "tilt_deg": 0.001592025058612519,
+        "peak_tilt_deg": 1.5141624779987368,
+        "placement_error_mm": 3.295865796251147,
+        "stable_release_s": 1.0049999999998,
+        "longest_unsupported_gap_s": 0.0,
+        "other_object_max_displacement_m": 3.417864719279887e-06,
+        "parked_arm_max_motion_deg": 0.0016844777479111638
+      }
+    },
+    {
+      "case": "train-017",
+      "status": "succeeded",
+      "message": "Neural policy physically lifted, held, released and placed the bottle.",
+      "elapsed_s": 28.49,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.25,
+        "other_arm_max_motion_deg": 0.0015930088931056462,
+        "hold_verified_s": 9.60999999999837,
+        "lift_cm": -4.472870329674805e-05,
+        "max_lift_cm": 6.8037722942890895,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.8389220083392304,
+        "tilt_deg": 0.001454439428865327,
+        "peak_tilt_deg": 1.39515040690605,
+        "placement_error_mm": 0.9787454141152024,
+        "stable_release_s": 1.0049999999998,
+        "longest_unsupported_gap_s": 0.0,
+        "other_object_max_displacement_m": 2.3751313919698023e-06,
+        "parked_arm_max_motion_deg": 0.0015930088931056462
+      }
+    },
+    {
+      "case": "train-019",
+      "status": "failed",
+      "message": "Arm failed to track the neural primitive within ten seconds. Physics paused.",
+      "elapsed_s": 12.8,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.25,
+        "other_arm_max_motion_deg": 0.00837609502093135,
+        "hold_verified_s": 0.0,
+        "lift_cm": -1.979880703828485e-06,
+        "max_lift_cm": 0.0,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.7540473812436612,
+        "tilt_deg": 0.0010907672570331342,
+        "peak_tilt_deg": 0.0023848286737397396,
+        "placement_error_mm": 160.45778313586067,
+        "stable_release_s": 0.0,
+        "longest_unsupported_gap_s": 0.0,
+        "other_object_max_displacement_m": 5.94458824579361e-05,
+        "parked_arm_max_motion_deg": 0.00837609502093135
+      }
+    },
+    {
+      "case": "train-025",
+      "status": "failed",
+      "message": "Physical monitor stopped the policy: lost support or disturbed another object/arm.",
+      "elapsed_s": 23.76,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.25,
+        "other_arm_max_motion_deg": 0.0017106703545813127,
+        "hold_verified_s": 8.379999999998619,
+        "lift_cm": 4.523246419723415,
+        "max_lift_cm": 6.82520946470847,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.0,
+        "tilt_deg": 0.3363673125778195,
+        "peak_tilt_deg": 1.4788156421629057,
+        "placement_error_mm": 2.456590897476721,
+        "stable_release_s": 0.0,
+        "longest_unsupported_gap_s": 0.1849999999999632,
+        "other_object_max_displacement_m": 3.615987934057864e-06,
+        "parked_arm_max_motion_deg": 0.0017106703545813127
+      }
+    }
+  ],
+  "successes": 6,
+  "complete": true,
+  "measurement_note": "Historical run before explicit unexpected-arm-contact counting. The unmeasured counter is omitted. upright-visual-collision-regression.json reports a later 10/10 regression on the same exposed seeds with actual contact checks; it is not a fresh holdout."
+}

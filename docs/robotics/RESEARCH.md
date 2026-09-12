@@ -1,5 +1,7 @@
 # Robotics and simulation: decision research
 
+**September 11 follow-up:** the [evidence-based training plan](TRAINING_RESEARCH_PLAN.md) applies newer research to the implemented dinner teacher and specifies data, training and evaluation gates. The [mjbatch review](MJBATCH_REVIEW.md) covers the September 10 CPU-batching release, source inspection and Windows/version incompatibilities. The original research snapshot below is retained for context.
+
 **Research cutoff: September 8, 2026.** Prepared for our online Intel entry in the AI Infra Summit Hackathon, with the Speechmatics Bonus Award. This is preparation research, not a finalized architecture or an implementation.
 
 The review prioritizes **June–September 2026**, including papers from **August 27** and software releases from **August 18–28**. May work is included where it materially affects our choices. Older models are explicitly labeled as engineering baselines, not presented as new state of the art. The scope is language-conditioned, camera-based, bimanual manipulation; locomotion and unrelated humanoid capabilities are outside the decision.

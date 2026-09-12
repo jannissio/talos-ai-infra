@@ -1,59 +1,50 @@
 # Talos · Dinner-table robotics
 
-Two simulated SO-101 arms learning to set a dinner table. This is our work in progress for the **AI Infra Summit Hackathon 2026 online Intel challenge and Speechmatics Bonus Award**. Dinner-scene development started **September 11, 2026**. [GitHub repository](https://github.com/jannissio/talos-ai-infra).
+Two SO-101 arms, a physical dinner-table simulation, and spoken or typed instructions. Built for the [AI Infra Summit online Intel challenge and Speechmatics bonus](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon).
 
-![Dinner scene, with the drawer opened for inspection](docs/robotics/dinner-task.jpg)
+![Talos dinner scene](docs/robotics/dinner-task.jpg)
 
-**Current milestone:** a physical six-skill dinner sequence: place the bottle, plate and mug, open a passive drawer, then retrieve and place the fork and spoon. Choose **Task start / Closed / Seed 42**, then **Run all six skills → Start dinner goal**. Each grasp, hold and release is verified. Uses exact simulator state; no trained vision/language policy is loaded. The side plate and glass remain staging assets. [Implementation, geometry changes and results](docs/robotics/DINNER_SCENE.md).
+Talos combines MuJoCo, six camera views, contact-verified manipulation, Speechmatics transcription and a camera-conditioned neural bottle controller running through OpenVINO. The browser offers labeled programmed and learned modes, with progress, cancellation and failure feedback.
 
-Start the local viewer in PowerShell:
+## Run locally
+
+Use clean CPython 3.12. For the programmed simulator:
 
 ```powershell
-.\start-lab.ps1
+py -3.12 -m venv .venv
+.\.venv\Scripts\python -m pip install -r requirements.txt
+.\.venv\Scripts\python -m simulation_lab.server
 ```
 
-Open [Talos on this PC](http://127.0.0.1:8765/). Stop with `.\stop-lab.ps1`. On a fresh checkout, first create a clean CPython 3.12 virtual environment and install `requirements.txt`; see [setup and controls](simulation_lab/README.md).
+Open [the local application](http://127.0.0.1:8765/). Select **Task start / Closed / Seed 42**, then enter `set the table`. This mode places the bottle, plate and mug, opens the passive drawer, and retrieves the fork and spoon with programmed physical skills.
 
-Read the [dinner scene, models and measured checks](docs/robotics/DINNER_SCENE.md) and the [current submission build plan](docs/hackathon/BUILD_PLAN.md). Project code and original dinner assets use [MIT](LICENSE); the SO-101 assets retain [Apache-2.0 attribution](simulation_lab/NOTICE.md). [Development and AI-assistance disclosure](docs/PROVENANCE.md).
+For learned bottle control, use the separate training/runtime environment:
 
-**September 11 recheck:** kickoff is now listed as **17:00 CEST September 10**, submission deadline **20:30 CEST September 16**, and the portal is live. The Intel online PDF is unchanged; additional setup and speech resources are available. [Read the current challenge alignment](docs/hackathon/UPDATE_2026-09-11.md).
+```powershell
+py -3.12 -m venv .venv-training
+.\.venv-training\Scripts\python -m pip install -r requirements-training.txt -r requirements-openvino.txt
+.\.venv-training\Scripts\python -m simulation_lab.server --learned
+```
 
-**Preserved preparation experiments:** select **Chemistry practice → Load seed** to use the September 8 BenchLab environment with randomized test-tube racks. These earlier experiments established physics, control and recording infrastructure; the submission now uses the dinner scenario.
+Select **Learned upright bottle · OpenVINO**, reset to seed 42, and enter `place the bottle`. The [upright model](models/bottle_visual/README.md) uses overhead RGB localization and motor feedback. The original model remains available for familiar sideways practice. Stop a foreground server with Ctrl+C.
 
-**First autonomous milestone implemented:** load **Lift practice scene** and press **Start lift & return**. Either arm can physically grasp a tube, lift it, hold it clear, and return it. See the [implementation and measured results](docs/robotics/LIFT_AND_RETURN.md). This baseline uses simulator positions and inverse kinematics; it does not yet use vision, language, or a learned policy.
+## Voice
 
-**Rack transfer and recording implemented:** choose **Load transfer practice → Start transfer**. The selected arm moves a tube to an empty slot in another rack while the other arm stays parked. Recordings include actuator commands, synchronized simulator observations and reconstructed images from three cameras. See [transfer and recording instructions](docs/robotics/TRANSFER_AND_RECORDING.md).
+Create a local `.env` containing `SPEECHMATICS_API_KEY=your-key`. Spaces around `=` and matching quotes are supported. The file is ignored by Git. The long-lived key stays on the server; the browser receives a temporary token. Press **Speak instruction**, speak English, then finish recording. Audio is sent to Speechmatics only during recording, for at most 20 seconds. Typed commands remain available.
 
-## The task in simple terms
+## Measured behavior
 
-Build a robot demonstration inside a computer. Two simulated robot arms should understand an instruction, look at the scene, and work together to arrange a dinner table. Show that it works when the scene changes, and measure how efficiently the AI runs on Intel hardware. Real robot arms are not needed for the online challenge.
+- Real Speechmatics transcripts have driven the six-skill programmed sequence and a learned bottle movement, using explicitly labeled synthetic speech tests.
+- The revised upright model completed **10/10 new task-preset scene seeds**, with **0.36–1.66 mm** placement errors. This covers small bottle-position changes, not the entire reachable workspace. Wider-position trials still include failures.
+- The original three-view model supports familiar sideways practice but completed **0/10** broader scene seeds. Its results remain available separately.
+- `pass the bottle to the right arm` runs a programmed table-supported relay: left release, park, right regrasp and placement. Seed 42 completed in **76.3 simulated seconds**, with **1.45 mm** final placement error.
+- OpenVINO FP32 inference has been checked on an Intel CPU and Intel UHD iGPU. Current camera rendering uses NVIDIA.
+- Videos can be reconstructed at 1280×720, 20 fps, with four simultaneous views, without changing training image resolution or physics.
 
-For the bonus, let a person **speak the instruction through Speechmatics**, then show the robots responding to it. Our proposed concept is a voice-controlled table-setting assistant. Speechmatics supplements the main challenge; a voice-only app would not satisfy the published Intel brief.
+No objects are welded to grippers or teleported during control. The learned controller uses initial visual features and motor feedback; an independent simulator-state monitor can stop execution but cannot generate actions. The language interpreter is a constrained grammar. Direct airborne handoffs, arbitrary placements and learned dish/drawer skills remain outside the demonstrated scope.
 
-Source: [Intel online challenge brief](https://drive.google.com/file/d/1xSisqTQUAFQiLOpjLZrCVTCsQi4bMCpO/view), especially pages 1–5; [event tracks and bonus](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon).
+See the [upright policy experiment](docs/robotics/VISUAL_BOTTLE_POLICY.md), [relay evidence](docs/robotics/TABLE_RELAY.md), [simulator controls](simulation_lab/README.md), and [storage safeguards](docs/robotics/STORAGE_POLICY.md). A [271 KB frozen training input](training/bottle_visual/README.md) supports local GPU retraining.
 
-## Read these first
+The [submission folder](submission/PROJECT.md) contains the presentation, cover, [HD demonstration](submission/Talos-demo.mp4), [all ten seed recordings](submission/Talos-ten-seeds.mp4) and measured evidence. The interactive simulator runs locally; no public hosted simulation is claimed.
 
-| File | Contents |
-| --- | --- |
-| [Hackathon brief](docs/hackathon/BRIEF.md) | Objective, participation, tracks, awards, technical requirements, judging, rules, and timetable |
-| [Submission checklist](docs/hackathon/SUBMISSION_CHECKLIST.md) | Platform fields, Intel deliverables, bonus evidence, and final checks |
-| [Development plan](docs/hackathon/PLAN.md) | Preparation now, proposed approach, and milestones through submission |
-| [Open questions](docs/hackathon/OPEN_QUESTIONS.md) | Conflicting instructions and a ready-to-send organizer inquiry |
-| [Sources](docs/hackathon/SOURCES.md) | Official references, original sponsor PDFs, and research limitations |
-| [Robotics research](docs/robotics/RESEARCH.md) | State of the art through September 8, recent papers/releases, simulation assets, control options, and experiments before choosing an architecture |
-| [Intel cloud assessment](docs/robotics/INTEL_CLOUD.md) | Current AI PC access offering and checks for qualifying Core Ultra hardware |
-| [Autonomy strategy](docs/robotics/AUTONOMY_PLAN.md) | Ways to give the arms goals and the recommended path from a physical grasp baseline to learned, coordinated skills |
-| [Lift & return milestone](docs/robotics/LIFT_AND_RETURN.md) | Working demonstration, scene adjustments, controller, verification, failures, and next steps |
-| [Transfer and recording milestone](docs/robotics/TRANSFER_AND_RECORDING.md) | Rack-to-rack placement, current slot occupancy, demonstration format, measured results and validation |
-| [AI control plan](docs/robotics/AI_CONTROL_PLAN.md) | Options for learned control, ACT-first recommendation, SmolVLA alternative, hardware feasibility and next experiments |
-
-## Remaining submission requirements
-
-1. **Arrange final-demo hardware.** This PC has an Intel Core i7-10850H, 16 GiB RAM, Intel UHD Graphics, and an NVIDIA Quadro T2000 Max-Q. Intel's final demonstration requirement specifies **Core Ultra Series 2/3** for both simulation and AI inference. This PC does not match that requirement. Access through a teammate, a loan, or an approved remote machine needs to be resolved; organizer-provided access is not confirmed.
-2. **Use the corrected timetable.** The September 10 recheck resolves the old conflict: kickoff **September 10 at 17:00 CEST**; submissions close **September 16 at 20:30 CEST**. Our internal submission target remains September 16 at 18:00 CEST. All CEST times here are Berlin time, UTC+2. See the [dated update](docs/hackathon/UPDATE_2026-09-10.md).
-3. **Disclose reused preparation work.** BenchLab's chemistry, control and recording infrastructure was developed on September 8; dinner assets and submission-specific scene work started September 11. Retain this history and disclose AI assistance. Reuse eligibility remains an organizer question; beginning dinner development does not establish an exemption.
-
-Sources: local read-only hardware inspection; [Intel brief, page 3](https://drive.google.com/file/d/1xSisqTQUAFQiLOpjLZrCVTCsQi4bMCpO/view); [event schedule](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon); [live dashboard](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon/live); [general reuse guidance](https://lablab.ai/guide/ai-hackathons).
-
-Next: physically grasp, lift and place the bottle with a goal controller; then add drawer and dish skills, collect demonstrations, and train a camera-based policy. Intel access and early model conversion checks should progress alongside this work. See the [current build plan](docs/hackathon/BUILD_PLAN.md); the [original preparation plan](docs/hackathon/PLAN.md) remains dated history.
+Project code, model weights and original dinner assets use [MIT](LICENSE). SO-101 assets retain their [Apache-2.0 attribution](simulation_lab/NOTICE.md). See [development and AI-assistance provenance](docs/PROVENANCE.md).

@@ -1,0 +1,470 @@
+{
+  "experiment": "Matched physical controller and NVIDIA camera capture; familiar starts only",
+  "checkpoint": ".run\\act-matched-1000\\step-001000",
+  "checkpoint_sha256": "4115ee466db437c42a2f7b5536ff0617d2c1d4eb68f9eb14b8253767f38b0b6c",
+  "training": {
+    "first_logged_update": {
+      "step": 1,
+      "loss": 97.25881958007812,
+      "components": {
+        "l1_loss": 0.6488660573959351,
+        "kld_loss": 9.660995483398438
+      },
+      "gradient_norm": 1475.487548828125,
+      "successful_updates": 1,
+      "elapsed_s": 1.9449951999995392,
+      "peak_gpu_bytes": 931770368
+    },
+    "last_logged_update": {
+      "step": 1000,
+      "loss": 2.177128314971924,
+      "components": {
+        "l1_loss": 0.12946538627147675,
+        "kld_loss": 0.20476630330085754
+      },
+      "gradient_norm": 90.44654083251953,
+      "successful_updates": 1000,
+      "elapsed_s": 1551.0132599000062,
+      "peak_gpu_bytes": 1250693632
+    }
+  },
+  "recording_audit": [
+    {
+      "episode": "sideways-01",
+      "max_state_error": 0.0,
+      "max_applied_control_error": 0.0,
+      "max_pixel_error": 0,
+      "image_checks": 12,
+      "nonterminal_observations": 862,
+      "physical_replays_passed": 2
+    },
+    {
+      "episode": "sideways-03",
+      "max_state_error": 0.0,
+      "max_applied_control_error": 0.0,
+      "max_pixel_error": 0,
+      "image_checks": 12,
+      "nonterminal_observations": 1005,
+      "physical_replays_passed": 2
+    },
+    {
+      "episode": "sideways-11",
+      "max_state_error": 0.0,
+      "max_applied_control_error": 0.0,
+      "max_pixel_error": 0,
+      "image_checks": 12,
+      "nonterminal_observations": 860,
+      "physical_replays_passed": 2
+    },
+    {
+      "episode": "upright-01",
+      "max_state_error": 0.0,
+      "max_applied_control_error": 0.0,
+      "max_pixel_error": 0,
+      "image_checks": 12,
+      "nonterminal_observations": 764,
+      "physical_replays_passed": 2
+    },
+    {
+      "episode": "upright-04",
+      "max_state_error": 0.0,
+      "max_applied_control_error": 0.0,
+      "max_pixel_error": 0,
+      "image_checks": 12,
+      "nonterminal_observations": 764,
+      "physical_replays_passed": 2
+    }
+  ],
+  "physical_evaluation": {
+    "evaluation": "five familiar training starts; not held-out generalization",
+    "successes": 0,
+    "trials": 5,
+    "results": [
+      {
+        "episode": "upright-01",
+        "checkpoint": "PROJECT_ROOT\\.run\\act-matched-1000\\step-001000",
+        "success": false,
+        "reason": "timeout",
+        "simulated_s": 60.00000000001224,
+        "wall_s": 43.47257049998734,
+        "best_supported_hold_s": 0.0,
+        "stable_release_s": 0.0,
+        "placement_error_m": 0.08445077566649471,
+        "other_object_max_displacement_m": 1.0915316701452437e-05,
+        "parked_arm_max_motion_deg": 0.12305519231132622,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "clipped_action_values": 0,
+        "inference_median_ms": 69.21750000037719,
+        "inference_p95_ms": 103.21186498331372,
+        "gripper_cap_nm": 0.25,
+        "blank_images": false,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "max_lift_cm": 2.1867144428533436e-06,
+        "video": "PROJECT_ROOT\\.run\\act-matched-evaluation-1000\\upright-01.mp4",
+        "timing": "Offline synchronous evaluation; physics waits during inference. Not a real-time claim.",
+        "policy_inputs": [
+          "three RGB cameras",
+          "12 joint positions",
+          "12 joint velocities"
+        ]
+      },
+      {
+        "episode": "upright-04",
+        "checkpoint": "PROJECT_ROOT\\.run\\act-matched-1000\\step-001000",
+        "success": false,
+        "reason": "timeout",
+        "simulated_s": 60.00000000001224,
+        "wall_s": 35.156319200003054,
+        "best_supported_hold_s": 0.0,
+        "stable_release_s": 0.0,
+        "placement_error_m": 0.07575934221400728,
+        "other_object_max_displacement_m": 1.0915318587809e-05,
+        "parked_arm_max_motion_deg": 0.13581621370135866,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "clipped_action_values": 0,
+        "inference_median_ms": 58.117450011195615,
+        "inference_p95_ms": 80.77919500356074,
+        "gripper_cap_nm": 0.25,
+        "blank_images": false,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "max_lift_cm": 1.230169113242141e-05,
+        "video": "PROJECT_ROOT\\.run\\act-matched-evaluation-1000\\upright-04.mp4",
+        "timing": "Offline synchronous evaluation; physics waits during inference. Not a real-time claim.",
+        "policy_inputs": [
+          "three RGB cameras",
+          "12 joint positions",
+          "12 joint velocities"
+        ]
+      },
+      {
+        "episode": "sideways-01",
+        "checkpoint": "PROJECT_ROOT\\.run\\act-matched-1000\\step-001000",
+        "success": false,
+        "reason": "timeout",
+        "simulated_s": 60.00000000001224,
+        "wall_s": 35.16482179999002,
+        "best_supported_hold_s": 0.0,
+        "stable_release_s": 0.0,
+        "placement_error_m": 0.17790468316407862,
+        "other_object_max_displacement_m": 1.0915316220816618e-05,
+        "parked_arm_max_motion_deg": 0.21315452811065955,
+        "longest_unsupported_contact_gap_s": 0.005,
+        "clipped_action_values": 60,
+        "inference_median_ms": 56.525499996496364,
+        "inference_p95_ms": 78.43125499639427,
+        "gripper_cap_nm": 0.25,
+        "blank_images": false,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "max_lift_cm": 4.488449220186674,
+        "video": "PROJECT_ROOT\\.run\\act-matched-evaluation-1000\\sideways-01.mp4",
+        "timing": "Offline synchronous evaluation; physics waits during inference. Not a real-time claim.",
+        "policy_inputs": [
+          "three RGB cameras",
+          "12 joint positions",
+          "12 joint velocities"
+        ]
+      },
+      {
+        "episode": "sideways-03",
+        "checkpoint": "PROJECT_ROOT\\.run\\act-matched-1000\\step-001000",
+        "success": false,
+        "reason": "timeout",
+        "simulated_s": 60.00000000001224,
+        "wall_s": 34.563706100016134,
+        "best_supported_hold_s": 0.0,
+        "stable_release_s": 0.0,
+        "placement_error_m": 0.1537762416579508,
+        "other_object_max_displacement_m": 1.0915313081361613e-05,
+        "parked_arm_max_motion_deg": 0.19242930169660946,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "clipped_action_values": 0,
+        "inference_median_ms": 57.20670000300743,
+        "inference_p95_ms": 77.86455999157624,
+        "gripper_cap_nm": 0.25,
+        "blank_images": false,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "max_lift_cm": 2.6645352591003757e-12,
+        "video": "PROJECT_ROOT\\.run\\act-matched-evaluation-1000\\sideways-03.mp4",
+        "timing": "Offline synchronous evaluation; physics waits during inference. Not a real-time claim.",
+        "policy_inputs": [
+          "three RGB cameras",
+          "12 joint positions",
+          "12 joint velocities"
+        ]
+      },
+      {
+        "episode": "sideways-11",
+        "checkpoint": "PROJECT_ROOT\\.run\\act-matched-1000\\step-001000",
+        "success": false,
+        "reason": "timeout",
+        "simulated_s": 60.00000000001224,
+        "wall_s": 35.68902400002116,
+        "best_supported_hold_s": 0.0,
+        "stable_release_s": 0.0,
+        "placement_error_m": 0.16137762800775132,
+        "other_object_max_displacement_m": 1.0915314479188589e-05,
+        "parked_arm_max_motion_deg": 0.22925613977129833,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "clipped_action_values": 0,
+        "inference_median_ms": 56.77200001082383,
+        "inference_p95_ms": 79.41729499434588,
+        "gripper_cap_nm": 0.25,
+        "blank_images": false,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "max_lift_cm": 2.4980018054066022e-12,
+        "video": "PROJECT_ROOT\\.run\\act-matched-evaluation-1000\\sideways-11.mp4",
+        "timing": "Offline synchronous evaluation; physics waits during inference. Not a real-time claim.",
+        "policy_inputs": [
+          "three RGB cameras",
+          "12 joint positions",
+          "12 joint velocities"
+        ]
+      }
+    ]
+  },
+  "offline_scores": {
+    "normal": {
+      "metric": "offline zero-latent action prediction MAE, not task success",
+      "checkpoint": ".run/act-matched-1000/step-001000",
+      "dataset": ".run/act-matched-nvidia-fit5",
+      "sampled_observations": 128,
+      "valid_future_targets": 2523,
+      "mae_rad_per_joint": [
+        0.041716240012735495,
+        0.05883036801326478,
+        0.04440922279751022,
+        0.08679707240264566,
+        0.1020352278160189,
+        0.10728884631567799,
+        0.0006172900629649548,
+        0.0003603613901081607,
+        0.00037267474583865064,
+        0.0003295817629855349,
+        0.0004400252012053842,
+        0.0004023434952332583
+      ],
+      "left_arm_mae_rad": 0.06675762620843502,
+      "left_gripper_mae_rad": 0.10728884631567799,
+      "right_parked_mae_rad": 0.00042037944305599057,
+      "first_five_left_arm_mae_rad": 0.06714776667690128,
+      "current_joint_position_reference_mae_rad": 0.0405099467139985,
+      "first_five_current_joint_reference_mae_rad": 0.00880147432615547,
+      "blank_images": false,
+      "dataset_lineage": {
+        "split": "fit5",
+        "episodes": [
+          {
+            "episode_index": 0,
+            "source": "sideways-01",
+            "frames": 862,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "df8d62e749451f8226b7f259f999cc4a0cbcc8d1c86980c628e33e15873e1347"
+            },
+            "source_manifest_sha256": "3dbf76502e1695a326960743674403b1433431827f96face22d6f5358320a5fc"
+          },
+          {
+            "episode_index": 1,
+            "source": "sideways-03",
+            "frames": 1005,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "519dd4e7d2a14f8a38cfb450f3b64d9463a574a05c1cda77ec9f9b9443e6f78f"
+            },
+            "source_manifest_sha256": "838a9a7da1109a01fdad67f2ac6cd2ed83d10a9c2c8f1c340e38e1bc984e5c43"
+          },
+          {
+            "episode_index": 2,
+            "source": "sideways-11",
+            "frames": 860,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "4d65ce14d02d486601c5348cd351739b77726d096b012e3170c8db9868aefb78"
+            },
+            "source_manifest_sha256": "edcf09e355075279d21c208b48bd69d6b47dfc89a7d93fbb397bb9b038eae49a"
+          },
+          {
+            "episode_index": 3,
+            "source": "upright-01",
+            "frames": 764,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "599acd017576d59b24cbdf7210cdf77711258dad23622c9e87f04b723dbbd019"
+            },
+            "source_manifest_sha256": "1664aadfae1408e6e32e4ec1d7fc0e33c93654c636f34e4a6e68a47ea8d475ba"
+          },
+          {
+            "episode_index": 4,
+            "source": "upright-04",
+            "frames": 764,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "ce45c0f395d6b9221e856bd9d979d6b6a63fed06aab42db2bcc9620a7480af93"
+            },
+            "source_manifest_sha256": "968bf02a3cc5c02cc07407dec89ce83e294c3ab41904602a8534ee341aaf0f73"
+          }
+        ],
+        "cameras": [
+          "overhead",
+          "left_wrist_cam",
+          "right_wrist_cam"
+        ],
+        "gripper_caps_nm": [
+          0.25
+        ],
+        "resolution": [
+          320,
+          240
+        ],
+        "state_order": "12 joint positions followed by 12 joint velocities",
+        "limitations": "Validation episodes are nearby development poses; reserved poses are separate and unconsumed."
+      },
+      "normalization": "Checkpoint training statistics; evaluation statistics unused."
+    },
+    "blank_images": {
+      "metric": "offline zero-latent action prediction MAE, not task success",
+      "checkpoint": ".run/act-matched-1000/step-001000",
+      "dataset": ".run/act-matched-nvidia-fit5",
+      "sampled_observations": 128,
+      "valid_future_targets": 2523,
+      "mae_rad_per_joint": [
+        0.5286456791125164,
+        0.38852786961123437,
+        0.2474803524833797,
+        0.7292389898039356,
+        1.6173878585446508,
+        0.3632809246904643,
+        0.0008785981039678677,
+        0.0004934518761545998,
+        0.003395522155791958,
+        0.000690429611334572,
+        0.0007514214911691924,
+        0.001230730383914943
+      ],
+      "left_arm_mae_rad": 0.7022561499111434,
+      "left_gripper_mae_rad": 0.3632809246904643,
+      "right_parked_mae_rad": 0.0012400256037221888,
+      "first_five_left_arm_mae_rad": 0.7014294772403045,
+      "current_joint_position_reference_mae_rad": 0.0405099467139985,
+      "first_five_current_joint_reference_mae_rad": 0.00880147432615547,
+      "blank_images": true,
+      "dataset_lineage": {
+        "split": "fit5",
+        "episodes": [
+          {
+            "episode_index": 0,
+            "source": "sideways-01",
+            "frames": 862,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "df8d62e749451f8226b7f259f999cc4a0cbcc8d1c86980c628e33e15873e1347"
+            },
+            "source_manifest_sha256": "3dbf76502e1695a326960743674403b1433431827f96face22d6f5358320a5fc"
+          },
+          {
+            "episode_index": 1,
+            "source": "sideways-03",
+            "frames": 1005,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "519dd4e7d2a14f8a38cfb450f3b64d9463a574a05c1cda77ec9f9b9443e6f78f"
+            },
+            "source_manifest_sha256": "838a9a7da1109a01fdad67f2ac6cd2ed83d10a9c2c8f1c340e38e1bc984e5c43"
+          },
+          {
+            "episode_index": 2,
+            "source": "sideways-11",
+            "frames": 860,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "4d65ce14d02d486601c5348cd351739b77726d096b012e3170c8db9868aefb78"
+            },
+            "source_manifest_sha256": "edcf09e355075279d21c208b48bd69d6b47dfc89a7d93fbb397bb9b038eae49a"
+          },
+          {
+            "episode_index": 3,
+            "source": "upright-01",
+            "frames": 764,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "599acd017576d59b24cbdf7210cdf77711258dad23622c9e87f04b723dbbd019"
+            },
+            "source_manifest_sha256": "1664aadfae1408e6e32e4ec1d7fc0e33c93654c636f34e4a6e68a47ea8d475ba"
+          },
+          {
+            "episode_index": 4,
+            "source": "upright-04",
+            "frames": 764,
+            "gripper_cap_nm": 0.25,
+            "matched_controller": {
+              "implementation": "simulation_lab.policy_control.apply_targets",
+              "cap_nm": 0.25,
+              "teacher_updates": 0,
+              "state_resets": 1,
+              "source_manifest_sha256": "ce45c0f395d6b9221e856bd9d979d6b6a63fed06aab42db2bcc9620a7480af93"
+            },
+            "source_manifest_sha256": "968bf02a3cc5c02cc07407dec89ce83e294c3ab41904602a8534ee341aaf0f73"
+          }
+        ],
+        "cameras": [
+          "overhead",
+          "left_wrist_cam",
+          "right_wrist_cam"
+        ],
+        "gripper_caps_nm": [
+          0.25
+        ],
+        "resolution": [
+          320,
+          240
+        ],
+        "state_order": "12 joint positions followed by 12 joint velocities",
+        "limitations": "Validation episodes are nearby development poses; reserved poses are separate and unconsumed."
+      },
+      "normalization": "Checkpoint training statistics; evaluation statistics unused."
+    }
+  },
+  "reserved_physical_poses_evaluated": 0,
+  "caveat": "Recording corrections and increased training exposure changed together; this does not isolate their effects."
+}

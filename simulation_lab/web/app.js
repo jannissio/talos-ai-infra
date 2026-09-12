@@ -1,4 +1,17 @@
 const $ = (id) => document.getElementById(id);
+import {initSpeech} from './speech.js';
+initSpeech({button:$('voice-command'),feedback:$('command-feedback'),onTranscript:async text=>{
+  $('command-text').value=text;
+  // Only a final transcript is executed, never a changing partial hypothesis.
+  try{const next=await api('/api/command',{text,mode:$('command-mode').value});updateState(next);$('command-feedback').textContent='Speechmatics: '+text+' — '+next.task.message;}
+  catch(error){$('command-feedback').textContent='Speechmatics: '+text+' — '+error.message;}
+}});
+$('command-form').addEventListener('submit',async event=>{
+  event.preventDefault();$('send-command').disabled=true;
+  try {const next=await api('/api/command',{text:$('command-text').value,mode:$('command-mode').value});updateState(next);$('command-feedback').textContent='Instruction accepted. '+(next.task.message||'');}
+  catch(error){$('command-feedback').textContent=error.message;}
+  finally{$('send-command').disabled=false;}
+});
 let state, selectedArm = 'left', connected = false, controlsReady = false;
 let jointTimer, noticeTimer, streamRetry, lastJointEdit = 0, goalBusy = false, slotOptionsKey = '';
 
@@ -23,6 +36,7 @@ function updateState(next) {
   const previousVersion = state?.scene_version;
   state = next;
   const dinner = state.scenario === 'dinner';
+  $('runtime-mode').textContent=state.controller==='learned_bottle'?'OpenVINO neural bottle policy · physical success monitor':state.task.active?'Programmed physical skills · simulator positions':'Runs on this PC · Manual control';
   connected = true;
   $('status-dot').className = 'status-dot connected';
   $('connection-text').textContent = 'Connected to this PC';
@@ -93,6 +107,9 @@ function sceneFormMode() {
 function updateTask() {
   const task = state.task, metrics = task.metrics;
   if (state.scenario === 'dinner') {
+    const learned=task.kind==='learned_bottle';
+    $('active-controller-label').textContent=learned?'Learned bottle · OpenVINO':'Physical skills · exact simulator state';
+    $('active-controller-description').textContent=learned?(task.policy_details?.visual_encoder==='bottle_rgb_geometry'?'Initial overhead bottle localization conditions a learned trajectory. Motor feedback controls progress; an independent physical monitor checks success.':'Three initial camera views condition the original neural trajectory. Motor feedback controls progress; an independent physical monitor checks success.'):'Move the bottle, plate and mug, open the drawer, then place the fork and spoon. Each grasp and placement is checked.';
     $('dinner-status').textContent = task.status.toUpperCase();
     $('dinner-status').className = `goal-status ${task.status}`;
     $('dinner-stage').textContent = task.status === 'succeeded' ? 'Dinner goal complete' : task.stage_label;
@@ -114,6 +131,7 @@ function updateTask() {
   }
   const labels = {idle: 'READY', running: state.running ? 'RUNNING' : 'PAUSED', succeeded: 'SUCCESS', failed: 'FAILED', cancelled: 'CANCELLED'};
   $('goal-status').textContent = labels[task.status];
+  $('load-sideways').disabled = task.active || goalBusy || !connected;
   $('goal-status').className = `goal-status ${task.status}`;
   $('goal-stage').textContent = task.stage_label;
   $('goal-elapsed').textContent = `${task.elapsed_s.toFixed(1)} s`;
@@ -313,6 +331,13 @@ $('cancel-goal').addEventListener('click', () => sendGoal('cancel'));
 $('task-strip-cancel').addEventListener('click', () => sendGoal('cancel'));
 $('goal-kind').addEventListener('change', () => state && updateTask());
 $('record-demo').addEventListener('change', () => state && updateTask());
+$('load-sideways').addEventListener('click', async () => {
+  if (state?.task?.active) return;
+  try {
+    updateState(await api('/api/reset', {scenario:'dinner', seed:42, dinner_preset:'task', bottle_start:'sideways'}));
+    $('dinner-goal').value = 'bottle';
+  } catch (error) { notice(error.message); }
+});
 $('load-practice').addEventListener('click', async () => {
   clearTimeout(jointTimer); goalBusy = true;
   if (state) updateTask();

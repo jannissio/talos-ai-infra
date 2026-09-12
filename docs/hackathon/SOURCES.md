@@ -50,6 +50,8 @@ Technology links supplied by the event are a reading queue, not a claim that the
 
 ## Verification and limitations
 
+- September 11: reviewed the user-provided [livestream transcript](transcript_livestream.txt) in three bounded sections. [Extracted findings and conflicts](LIVESTREAM_REVIEW_2026-09-11.md) include line citations. The Twitch audio/video was not independently retrieved; hardware clarification is attributed to the transcript, not silently substituted for the written brief.
+
 - The initial web text extraction omitted most dynamically rendered event content. The rendered browser page was inspected after loading, confirming the active sections and detailed timetable. Draft/duplicate HTML sections embedded in page data were not treated as current rules.
 - All five online PDF pages were extracted and visually inspected, including the hardware wording and 100-point rubric. Onsite PDFs were read for contextual summaries and retained intact.
 - The rule book, submission guide, getting-started guide, terms, conduct, and live dashboard needed rendered-browser inspection because initial text fetches returned little or no body content.

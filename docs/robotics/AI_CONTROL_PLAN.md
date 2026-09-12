@@ -1,5 +1,7 @@
 # From the working simulator to learned arm control
 
+**Current decision:** [Evidence-based dinner training plan](TRAINING_RESEARCH_PLAN.md), September 11, 2026, supersedes the next-training priorities below. It specifies data contracts, ACT/SmolVLA experiments, corrective collection, bimanual training, Intel gates and recent literature. The physical dinner teacher is now implemented. See also the [mjbatch source and compatibility review](MJBATCH_REVIEW.md).
+
 **September 11 scope update:** the user selected the dinner-table scenario. The [dinner scene](DINNER_SCENE.md) now exists; the next physical teacher skill is bottle grasp/lift/place. References to tube tasks below describe the preparation experiment, not the chosen submission task. ACT/SmolVLA and Colab/RTX 4070 remain candidate training paths; use [the updated build plan](../hackathon/BUILD_PLAN.md) for sequencing.
 
 Decision note, September 8, 2026. This is a proposed next phase; no policy has been trained or deployed by this note.

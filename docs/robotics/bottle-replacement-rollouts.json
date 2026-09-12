@@ -1,0 +1,611 @@
+[
+  {
+    "spec": {
+      "x": -0.05,
+      "y": -0.175,
+      "yaw": 2.356194490192345,
+      "sideways": true,
+      "id": "sideways-11"
+    },
+    "outcome": {
+      "status": "succeeded",
+      "active": false,
+      "stage": "verify",
+      "stage_label": "Verify stable placement",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "tube_id": "bottle",
+      "kind": "dinner_place",
+      "source_slot": "bottle_start",
+      "recording_id": null,
+      "destination_slot": "bottle_place",
+      "progress": 1.0,
+      "stages": [
+        {
+          "id": "planning",
+          "label": "Check reach and clearance"
+        },
+        {
+          "id": "approach",
+          "label": "Approach the object"
+        },
+        {
+          "id": "descend",
+          "label": "Align the fingers"
+        },
+        {
+          "id": "close",
+          "label": "Grasp and check both fingers"
+        },
+        {
+          "id": "lift",
+          "label": "Lift the object"
+        },
+        {
+          "id": "hold",
+          "label": "Verify an unsupported hold"
+        },
+        {
+          "id": "rotate",
+          "label": "Orient the held object for placement"
+        },
+        {
+          "id": "align",
+          "label": "Move over the placement guide"
+        },
+        {
+          "id": "lower",
+          "label": "Lower to measured table support"
+        },
+        {
+          "id": "release",
+          "label": "Release the object"
+        },
+        {
+          "id": "retract",
+          "label": "Withdraw the gripper"
+        },
+        {
+          "id": "park",
+          "label": "Park the working arm"
+        },
+        {
+          "id": "verify",
+          "label": "Verify stable placement"
+        }
+      ],
+      "elapsed_s": 42.985,
+      "attempts": 1,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.65,
+        "other_arm_max_motion_deg": 3.40955461852889e-11,
+        "hold_verified_s": 1.804999999999744,
+        "unexpected_collisions": 0,
+        "lift_cm": -2.4057646533664157,
+        "max_lift_cm": 9.410122472828352,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.8296861522780211,
+        "tilt_deg": 0.001600161326896687,
+        "peak_tilt_deg": 91.63542939875789,
+        "placement_z_error_mm": 0.05667273309728493,
+        "other_object_max_displacement_mm": 0.007819064046462699,
+        "placement_yaw_error_deg": 0.0,
+        "placement_speed_mm_s": 0.02042214968798369,
+        "placement_xy_error_mm": 0.17873578285583175
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.305,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.61,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 11.91,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 15.71,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "rotate",
+          "at_s": 17.515,
+          "message": "Orient the held object for placement"
+        },
+        {
+          "stage": "align",
+          "at_s": 22.82,
+          "message": "Move over the placement guide"
+        },
+        {
+          "stage": "lower",
+          "at_s": 27.125,
+          "message": "Lower to measured table support"
+        },
+        {
+          "stage": "release",
+          "at_s": 30.51,
+          "message": "Release the object"
+        },
+        {
+          "stage": "retract",
+          "at_s": 34.81,
+          "message": "Withdraw the gripper"
+        },
+        {
+          "stage": "park",
+          "at_s": 38.11,
+          "message": "Park the working arm"
+        },
+        {
+          "stage": "verify",
+          "at_s": 41.98,
+          "message": "Verify stable placement"
+        },
+        {
+          "stage": "succeeded",
+          "at_s": 42.985,
+          "message": "bottle physically lifted, held, placed and released."
+        }
+      ],
+      "observation": "exact_simulator_state",
+      "attachment": "physical_contacts_only",
+      "object_id": "bottle"
+    },
+    "actions": 8597,
+    "replays": [
+      {
+        "hz": 200,
+        "passed": true,
+        "placement_error_m": 0.00017867081441241784,
+        "tilt_deg": 0.0014454778655776414,
+        "speed_m_s": 2.042214968798369e-05,
+        "table_support_n": 0.8302074936750421,
+        "verified_hold_s": 1.8049999999999835,
+        "hold_bad_ticks": 0,
+        "state_reset_count": 1,
+        "teacher_updates": 0
+      },
+      {
+        "hz": 20,
+        "passed": true,
+        "placement_error_m": 0.0002664117895057389,
+        "tilt_deg": 0.00046325304879477476,
+        "speed_m_s": 1.3738889966137851e-05,
+        "table_support_n": 0.8303651117988894,
+        "verified_hold_s": 1.8049999999999835,
+        "hold_bad_ticks": 0,
+        "state_reset_count": 1,
+        "teacher_updates": 0
+      }
+    ],
+    "folder": ".run/bottle-pilot/sideways-11"
+  },
+  {
+    "spec": {
+      "x": -0.045,
+      "y": -0.175,
+      "yaw": 2.356194490192345,
+      "sideways": true,
+      "id": "sideways-12"
+    },
+    "outcome": {
+      "status": "succeeded",
+      "active": false,
+      "stage": "verify",
+      "stage_label": "Verify stable placement",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "tube_id": "bottle",
+      "kind": "dinner_place",
+      "source_slot": "bottle_start",
+      "recording_id": null,
+      "destination_slot": "bottle_place",
+      "progress": 1.0,
+      "stages": [
+        {
+          "id": "planning",
+          "label": "Check reach and clearance"
+        },
+        {
+          "id": "approach",
+          "label": "Approach the object"
+        },
+        {
+          "id": "descend",
+          "label": "Align the fingers"
+        },
+        {
+          "id": "close",
+          "label": "Grasp and check both fingers"
+        },
+        {
+          "id": "lift",
+          "label": "Lift the object"
+        },
+        {
+          "id": "hold",
+          "label": "Verify an unsupported hold"
+        },
+        {
+          "id": "rotate",
+          "label": "Orient the held object for placement"
+        },
+        {
+          "id": "align",
+          "label": "Move over the placement guide"
+        },
+        {
+          "id": "lower",
+          "label": "Lower to measured table support"
+        },
+        {
+          "id": "release",
+          "label": "Release the object"
+        },
+        {
+          "id": "retract",
+          "label": "Withdraw the gripper"
+        },
+        {
+          "id": "park",
+          "label": "Park the working arm"
+        },
+        {
+          "id": "verify",
+          "label": "Verify stable placement"
+        }
+      ],
+      "elapsed_s": 42.985,
+      "attempts": 1,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.65,
+        "other_arm_max_motion_deg": 3.40955461852889e-11,
+        "hold_verified_s": 1.804999999999744,
+        "unexpected_collisions": 0,
+        "lift_cm": -2.4057646368556895,
+        "max_lift_cm": 9.409741164578723,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.8296861639900402,
+        "tilt_deg": 0.0016002052854173171,
+        "peak_tilt_deg": 91.73292369196416,
+        "placement_z_error_mm": 0.056672722469452985,
+        "other_object_max_displacement_mm": 0.007819064046462699,
+        "placement_yaw_error_deg": 0.0,
+        "placement_speed_mm_s": 0.02042197424126217,
+        "placement_xy_error_mm": 0.1786277764084636
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.305,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.61,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 11.91,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 15.71,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "rotate",
+          "at_s": 17.515,
+          "message": "Orient the held object for placement"
+        },
+        {
+          "stage": "align",
+          "at_s": 22.82,
+          "message": "Move over the placement guide"
+        },
+        {
+          "stage": "lower",
+          "at_s": 27.125,
+          "message": "Lower to measured table support"
+        },
+        {
+          "stage": "release",
+          "at_s": 30.51,
+          "message": "Release the object"
+        },
+        {
+          "stage": "retract",
+          "at_s": 34.81,
+          "message": "Withdraw the gripper"
+        },
+        {
+          "stage": "park",
+          "at_s": 38.11,
+          "message": "Park the working arm"
+        },
+        {
+          "stage": "verify",
+          "at_s": 41.98,
+          "message": "Verify stable placement"
+        },
+        {
+          "stage": "succeeded",
+          "at_s": 42.985,
+          "message": "bottle physically lifted, held, placed and released."
+        }
+      ],
+      "observation": "exact_simulator_state",
+      "attachment": "physical_contacts_only",
+      "object_id": "bottle"
+    },
+    "actions": 8597,
+    "replays": [
+      {
+        "hz": 200,
+        "passed": true,
+        "placement_error_m": 0.00017856398404853392,
+        "tilt_deg": 0.001445481647692727,
+        "speed_m_s": 2.042197424126217e-05,
+        "table_support_n": 0.8302074950256193,
+        "verified_hold_s": 1.8049999999999835,
+        "hold_bad_ticks": 0,
+        "state_reset_count": 1,
+        "teacher_updates": 0
+      },
+      {
+        "hz": 20,
+        "passed": true,
+        "placement_error_m": 0.00027109751642194826,
+        "tilt_deg": 0.000463307331421539,
+        "speed_m_s": 1.3738466416514841e-05,
+        "table_support_n": 0.8303650884707343,
+        "verified_hold_s": 1.8049999999999835,
+        "hold_bad_ticks": 0,
+        "state_reset_count": 1,
+        "teacher_updates": 0
+      }
+    ],
+    "folder": ".run/bottle-pilot/sideways-12"
+  },
+  {
+    "spec": {
+      "x": -0.055,
+      "y": -0.175,
+      "yaw": 2.356194490192345,
+      "sideways": true,
+      "id": "sideways-13"
+    },
+    "outcome": {
+      "status": "succeeded",
+      "active": false,
+      "stage": "verify",
+      "stage_label": "Verify stable placement",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "tube_id": "bottle",
+      "kind": "dinner_place",
+      "source_slot": "bottle_start",
+      "recording_id": null,
+      "destination_slot": "bottle_place",
+      "progress": 1.0,
+      "stages": [
+        {
+          "id": "planning",
+          "label": "Check reach and clearance"
+        },
+        {
+          "id": "approach",
+          "label": "Approach the object"
+        },
+        {
+          "id": "descend",
+          "label": "Align the fingers"
+        },
+        {
+          "id": "close",
+          "label": "Grasp and check both fingers"
+        },
+        {
+          "id": "lift",
+          "label": "Lift the object"
+        },
+        {
+          "id": "hold",
+          "label": "Verify an unsupported hold"
+        },
+        {
+          "id": "rotate",
+          "label": "Orient the held object for placement"
+        },
+        {
+          "id": "align",
+          "label": "Move over the placement guide"
+        },
+        {
+          "id": "lower",
+          "label": "Lower to measured table support"
+        },
+        {
+          "id": "release",
+          "label": "Release the object"
+        },
+        {
+          "id": "retract",
+          "label": "Withdraw the gripper"
+        },
+        {
+          "id": "park",
+          "label": "Park the working arm"
+        },
+        {
+          "id": "verify",
+          "label": "Verify stable placement"
+        }
+      ],
+      "elapsed_s": 42.985,
+      "attempts": 1,
+      "metrics": {
+        "gripper_torque_limit_nm": 0.65,
+        "other_arm_max_motion_deg": 5.251095779096266e-11,
+        "hold_verified_s": 1.804999999999744,
+        "unexpected_collisions": 0,
+        "lift_cm": -2.405764668613508,
+        "max_lift_cm": 9.416168599169561,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 0.8296861451016285,
+        "tilt_deg": 0.0016001342223365231,
+        "peak_tilt_deg": 91.53798921164226,
+        "placement_z_error_mm": 0.05667273951170948,
+        "other_object_max_displacement_mm": 0.00781906442278913,
+        "placement_yaw_error_deg": 0.0,
+        "placement_speed_mm_s": 0.020422253221141055,
+        "placement_xy_error_mm": 0.17900334328261383
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.305,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.61,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 11.91,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 15.71,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "rotate",
+          "at_s": 17.515,
+          "message": "Orient the held object for placement"
+        },
+        {
+          "stage": "align",
+          "at_s": 22.82,
+          "message": "Move over the placement guide"
+        },
+        {
+          "stage": "lower",
+          "at_s": 27.125,
+          "message": "Lower to measured table support"
+        },
+        {
+          "stage": "release",
+          "at_s": 30.51,
+          "message": "Release the object"
+        },
+        {
+          "stage": "retract",
+          "at_s": 34.81,
+          "message": "Withdraw the gripper"
+        },
+        {
+          "stage": "park",
+          "at_s": 38.11,
+          "message": "Park the working arm"
+        },
+        {
+          "stage": "verify",
+          "at_s": 41.98,
+          "message": "Verify stable placement"
+        },
+        {
+          "stage": "succeeded",
+          "at_s": 42.985,
+          "message": "bottle physically lifted, held, placed and released."
+        }
+      ],
+      "observation": "exact_simulator_state",
+      "attachment": "physical_contacts_only",
+      "object_id": "bottle"
+    },
+    "actions": 8597,
+    "replays": [
+      {
+        "hz": 200,
+        "passed": true,
+        "placement_error_m": 0.000178937646964469,
+        "tilt_deg": 0.0014454786220014502,
+        "speed_m_s": 2.0422253221141055e-05,
+        "table_support_n": 0.8302074927377018,
+        "verified_hold_s": 1.8049999999999835,
+        "hold_bad_ticks": 0,
+        "state_reset_count": 1,
+        "teacher_updates": 0
+      },
+      {
+        "hz": 20,
+        "passed": true,
+        "placement_error_m": 0.0003910418416068234,
+        "tilt_deg": 0.0015961450735266134,
+        "speed_m_s": 1.481278149372253e-05,
+        "table_support_n": 0.8296846709755099,
+        "verified_hold_s": 1.8049999999999835,
+        "hold_bad_ticks": 0,
+        "state_reset_count": 1,
+        "teacher_updates": 0
+      }
+    ],
+    "folder": ".run/bottle-pilot/sideways-13"
+  }
+]

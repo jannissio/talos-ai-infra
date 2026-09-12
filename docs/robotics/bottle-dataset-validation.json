@@ -1,0 +1,393 @@
+{
+  "episodes": [
+    {
+      "id": "sideways-01",
+      "valid": true,
+      "actions": 8616,
+      "observations": 863,
+      "images": 2589,
+      "duration_s": 43.08,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 862,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "031d2c7cbff6743349079fc893f6164c4b8e93773641d688f14afbc00b2fc77c",
+        "actions.jsonl.gz": "2ab57e21834de94bf3b5eb70b83fbf0ae51e6282be440ce3eb65b28820cb5384",
+        "observations.jsonl.gz": "50ff3d9da8ad34e2afdf55bdce90689f0103746789ee8654dcaa3b130819426c",
+        "images.jsonl": "8347de7347170628ee2eb9821d4f22aec11c6feeae38459ee864f71d7af83ece"
+      }
+    },
+    {
+      "id": "sideways-03",
+      "valid": true,
+      "actions": 10047,
+      "observations": 1006,
+      "images": 3018,
+      "duration_s": 50.235,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 1005,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "8f19088384bf4835ab1fd6b91bf5925287000624052d83b4859b903bfd1e9227",
+        "actions.jsonl.gz": "7b7293c8952906ad076b560fb9f99e82bb6e285f4e051a8e8e87ce4fc67f432e",
+        "observations.jsonl.gz": "0d5b66edf4df0a7f5e5134b257e2c63047ea1355920829865ce28bcd7765a8b5",
+        "images.jsonl": "c8de6b3ba2e162463ed5754895e9ea596817eb021ad5bce76badd593bec658b7"
+      }
+    },
+    {
+      "id": "sideways-04",
+      "valid": true,
+      "actions": 10027,
+      "observations": 1004,
+      "images": 3012,
+      "duration_s": 50.135,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 1003,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "080fd28564857d9af657d5ef4ffb6264af5d489163caa38f0bb3f8d08d845968",
+        "actions.jsonl.gz": "bd043b61a1376ffb1a46de3258de6eefd7eb59c589d5fee027e8a7ff62a936ae",
+        "observations.jsonl.gz": "2e62b5f9a9ad81c4e34c9e58feba13c13bfa2966a489bd7cd1a2da7cf06137b1",
+        "images.jsonl": "5b81072de81340d02c47973572eb08b76ceeb098c570eee57218aa21f58442c7"
+      }
+    },
+    {
+      "id": "sideways-05",
+      "valid": true,
+      "actions": 8624,
+      "observations": 864,
+      "images": 2592,
+      "duration_s": 43.12,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 863,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "abb5b5720da29041bdf83ba22f4e94248a8dbc63ba1cfc80ec3ae22356fd0188",
+        "actions.jsonl.gz": "e9c135651ceea8f734f4465dcddc8035dcdcbb0e835564bc13d1a4a275b84154",
+        "observations.jsonl.gz": "6fb58a6e470d26969515238b446aac920da2aaa1841b7236603e763a23d93a72",
+        "images.jsonl": "bca1f712d4719611a81c6d18f7d58870dbd439e9b6cc0e6d550db943ee3497ec"
+      }
+    },
+    {
+      "id": "sideways-07",
+      "valid": true,
+      "actions": 10055,
+      "observations": 1007,
+      "images": 3021,
+      "duration_s": 50.275,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 1006,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "d238501d68dc3c573013bc459385d2eb4ae6211123f915c3ce9e645c8a28ed0b",
+        "actions.jsonl.gz": "17f16c74983088de4a81efab7daa071746f8955903c1ae782f1d3345a924304c",
+        "observations.jsonl.gz": "731fef2dfa749a77219081e30093e63468984c4d510113a7ee187a8f8eb626a7",
+        "images.jsonl": "9132b8b086f09a09c1a7b3ac2cc3dc063ec1045ab332709e5f4728d6bba3ab53"
+      }
+    },
+    {
+      "id": "sideways-08",
+      "valid": true,
+      "actions": 10036,
+      "observations": 1005,
+      "images": 3015,
+      "duration_s": 50.18,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 1004,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "21e9265372838b10427c2c872243768363c9029a3c03345bafa6da74c0e4c3ab",
+        "actions.jsonl.gz": "53246579298ceeccc6b3681c4d9771ce515845c2acad1417df9a3a3e93588ef2",
+        "observations.jsonl.gz": "d3c3b62c0cf2a5f03561adf78dcfb6c2813ec872c6508e35047be1409e16129e",
+        "images.jsonl": "1b439aff370e52e49f5281834a102c95b264c0e33a03107ad8e240ea596df8a2"
+      }
+    },
+    {
+      "id": "sideways-09",
+      "valid": true,
+      "actions": 8615,
+      "observations": 863,
+      "images": 2589,
+      "duration_s": 43.075,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 862,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "7204b51151002078364d16a2ba4cd99d0bd83e85135b4d9be42f33e30f18fc5a",
+        "actions.jsonl.gz": "3422461cbd1f91b900256e5dc20a47cc6dcf16c30dfdad83ce6dcd1e6fd3f6e1",
+        "observations.jsonl.gz": "7535b6ffa14f174e916e86a942f1587138b8478b3efb76d8e6bff26aadd8d9a6",
+        "images.jsonl": "334fc0c3a8a1630b2f6dd0bfa7ca8d112c3eeb1b77272d935cb3f41c74914184"
+      }
+    },
+    {
+      "id": "sideways-11",
+      "valid": true,
+      "actions": 8597,
+      "observations": 861,
+      "images": 2583,
+      "duration_s": 42.985,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 860,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "8f4e5a461f6fa5ab31883276fbe7b6514d5bf45004329a919f0b110b89126d01",
+        "actions.jsonl.gz": "a32aa6079a926067aeb4a919bba2c30dd94057221df72a1fe3af9f71fe0b45ef",
+        "observations.jsonl.gz": "71fd56e3d50a37fb74433ca2f519f530b3995131f2af683b5a620d4a7242f668",
+        "images.jsonl": "b420cc9b15e41f763dceaf5a6a9cdbf8da13d5974002f069ddac5a12b05c5065"
+      }
+    },
+    {
+      "id": "sideways-12",
+      "valid": true,
+      "actions": 8597,
+      "observations": 861,
+      "images": 2583,
+      "duration_s": 42.985,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 860,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "a0259ae2bf5c20e5541771c6ad8a939a97d4ba2ccf12a379a6609f70214bb69a",
+        "actions.jsonl.gz": "e5ea4b3fc1b8af392bb42ef87731076074991eacbae878836f6c429381e40e6d",
+        "observations.jsonl.gz": "175ff27db75a763d6f05dda6e23b9c34ae63ea5f82a287041f09f0244eaec4c9",
+        "images.jsonl": "e61c5a41c56373776496dd63af53e73e3043f78edc9f80249a88cc4930d758da"
+      }
+    },
+    {
+      "id": "sideways-13",
+      "valid": true,
+      "actions": 8597,
+      "observations": 861,
+      "images": 2583,
+      "duration_s": 42.985,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 860,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "e5adec36577037996f23624dd151582aaa67acddbb5c1c3c5d4923db059ac644",
+        "actions.jsonl.gz": "1421c51177cc25709500e8a0af04f9d85f9768d679a6068998fcf6df286396d6",
+        "observations.jsonl.gz": "b4cd93b1693e6dd34101ee8da9bcadbc6aaef9c39b05ea03bb4c23f26f0a97f2",
+        "images.jsonl": "d8ab74a1bf0260819ccf116fdcdf243463420eb1f7f8a9e41de525b25be1755f"
+      }
+    },
+    {
+      "id": "upright-01",
+      "valid": true,
+      "actions": 7633,
+      "observations": 765,
+      "images": 2295,
+      "duration_s": 38.165,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 764,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "83e1ca3bcec3c3966a599544f215a988af1120a8cc02d320d638f0d6ac7427ce",
+        "actions.jsonl.gz": "66282dfe5e7a12ce1906d9683edced1ba7d20d33f89306e39daae96ec2add894",
+        "observations.jsonl.gz": "a40cb44ee40920dbb40c1fb891eda7830d958aabc65a1ac9179f44133b26a779",
+        "images.jsonl": "a6d7e27e08feaff57b6ee2d7fb25d9b801bbb6a2a24de0966c1a5ec8b38f3994"
+      }
+    },
+    {
+      "id": "upright-02",
+      "valid": true,
+      "actions": 7633,
+      "observations": 765,
+      "images": 2295,
+      "duration_s": 38.165,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 764,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "3685a3ccd2de1410b90b3fc779a761b6c9d14e12e79974cf959d1bfaf15d50fe",
+        "actions.jsonl.gz": "9b5514e47d98371143947d8ee1728035793b39017175690432e79aa278822e92",
+        "observations.jsonl.gz": "abfa5fefd42d57a73d18040745f3fadab38a5e23b4f90dfb6c60badc9519fa33",
+        "images.jsonl": "dbda4a3a696f580a7f782bdc10b7edd5ecc6e3292075bae23d539b4ec1eee4e3"
+      }
+    },
+    {
+      "id": "upright-03",
+      "valid": true,
+      "actions": 7631,
+      "observations": 765,
+      "images": 2295,
+      "duration_s": 38.155,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 764,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "f6ac10a10b88ff5b92a220767d66284fbcd40ff4bcdd2cd0527a08d3b839239a",
+        "actions.jsonl.gz": "fd343b4c15e548f02dd551a322e772ed3594ca682a7f01d69105dfb0a1149e45",
+        "observations.jsonl.gz": "bc2bd58d85a4648e3a049052f777d775310d12f613ae982b97b23c961eadcc47",
+        "images.jsonl": "de5f8bb3dd7bb95c49c8bee05c55391b843c4b3464fc5fd840ff5eb001ad837c"
+      }
+    },
+    {
+      "id": "upright-04",
+      "valid": true,
+      "actions": 7633,
+      "observations": 765,
+      "images": 2295,
+      "duration_s": 38.165,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 764,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "8b522e39325ed3b6d937890651bb4b5d0cecc5e055784f9bcb6f116cad1c4c3e",
+        "actions.jsonl.gz": "9e36f68b7ff1027b69b8d5597ddacf577897393ca618b0b8c02c64ed54627786",
+        "observations.jsonl.gz": "4696dfd792fb1c34c5bf9f9891cf556bdd73f24fec253a93090d4c14e432f4df",
+        "images.jsonl": "62f472596d48faad7ce5943d496fe1226974b73c302b2b1fdcabbea0918b982d"
+      }
+    },
+    {
+      "id": "upright-05",
+      "valid": true,
+      "actions": 7628,
+      "observations": 764,
+      "images": 2292,
+      "duration_s": 38.14,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 763,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "a03a37597b2368208105e3c18007e360181ccbd1aae3ec3a98f978f6d3bb1c25",
+        "actions.jsonl.gz": "b6f300fcc9f592455f66061c3f6d789a49dc3ba81c352aae7e0ca43d4927ff0f",
+        "observations.jsonl.gz": "fadff58842b0287cd815b0e04e3879e23b47c0373222539c667505699b3ca2a7",
+        "images.jsonl": "24e37a3af22b2545831abf9ad04f3d55319c63e564eff452852c87acb0f25f4b"
+      }
+    },
+    {
+      "id": "upright-06",
+      "valid": true,
+      "actions": 7633,
+      "observations": 765,
+      "images": 2295,
+      "duration_s": 38.165,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 764,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "4d7d8fd5005620e1252a43ca11fe68783b06d6a9dbb8f713026fbcf12da16a7e",
+        "actions.jsonl.gz": "33b9cbf657f4b0b05ade42d2065e97eaadeb4dbeebdb177db09ec616dfa70e9d",
+        "observations.jsonl.gz": "4af228d760e51e0e8784258113aab16a316fde508b4912c1a13ccf78fd8647de",
+        "images.jsonl": "7963785deacf3f261705dfabc9557396c95d614c827daa8458748341102e841c"
+      }
+    },
+    {
+      "id": "upright-07",
+      "valid": true,
+      "actions": 7626,
+      "observations": 764,
+      "images": 2292,
+      "duration_s": 38.13,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 763,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "df87b626490fedb9606f94e0f54fd0d45a3042b0cd7220bff74a066a710c04af",
+        "actions.jsonl.gz": "b3ee6a95ec2dc8d58545e32bd95b180bf9a5f21e11a501988af95df6bde5fc7f",
+        "observations.jsonl.gz": "d7ffe3d1fd562ef82e705121306ac47c83f11f6acbce7483436e1084c42dbaae",
+        "images.jsonl": "870611c9c8c29777cd9061e7d6b3bdf04d197000b5162c04c29ad412094fd92b"
+      }
+    },
+    {
+      "id": "upright-08",
+      "valid": true,
+      "actions": 7629,
+      "observations": 764,
+      "images": 2292,
+      "duration_s": 38.145,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 763,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "d4ace929ecc45fb191982e7388c2b55288d23e77a5b76fda0c104a2adff32e84",
+        "actions.jsonl.gz": "eda757237dc6eb1dd3c83fc805439816d0e935483bf5b85ae946ece59b287812",
+        "observations.jsonl.gz": "28157e0a7893e663a07e8025cdb603b4219a7cd04e62a38c7304d2e35fff48d6",
+        "images.jsonl": "0e892646b7b884b58c343309598626303ebdf02bc9cab563544903fc19361635"
+      }
+    },
+    {
+      "id": "upright-09",
+      "valid": true,
+      "actions": 7633,
+      "observations": 765,
+      "images": 2295,
+      "duration_s": 38.165,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 764,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "81dd750c61b1d27b0d9d7a932097d01e20e358ef311bc5f4b3e1a75d1513101a",
+        "actions.jsonl.gz": "632e48422c709926967ff86633ea2e63d2e2a15900baa0a9ec7d4f190facf18d",
+        "observations.jsonl.gz": "2cdbe0e0d28bbd1b8a0e580965d234bbb392f4089e8b6b530632e09e165ac28f",
+        "images.jsonl": "cf664dac598a1c8dc9e855c3baac6072d39ba8fff06fabb7fa69899e5363eea7"
+      }
+    },
+    {
+      "id": "upright-10",
+      "valid": true,
+      "actions": 7629,
+      "observations": 764,
+      "images": 2292,
+      "duration_s": 38.145,
+      "outcome": "succeeded",
+      "training_eligible": true,
+      "policy_samples": 763,
+      "sha256": {
+        "scene.xml": "e1fbe792eed4c961c0069500261284b9196fdb45ba04c3f15c08acec29c4f96c",
+        "initial-integration-state.npy": "5bded1da611969d720fd60cdbcc907e5276e5f000eb5abae52a95589c89dad6f",
+        "actions.jsonl.gz": "4b631a740a0c37513cb620426f77a73b84166061726812d87ed439ec2a44dada",
+        "observations.jsonl.gz": "d81a1bf9097f75ddab0d75119d55dd87a13a347f99730256fd704fcda2bd8423",
+        "images.jsonl": "d21cec0078e3c608b9469f504188942e9c2858528b845bd6098c35659c4c1d40"
+      }
+    }
+  ],
+  "successful_episodes": 20,
+  "physical_replays_passed": 40,
+  "images": 50523,
+  "observations": 16841,
+  "actions": 168119,
+  "duration_s": 840.595,
+  "bytes_on_disk": 1747877791,
+  "policy_inputs": [
+    "three synchronized RGB images",
+    "12 joint positions",
+    "12 joint velocities"
+  ],
+  "action": "12 nominal joint targets at 20 Hz; interpolation and gripper torque limiting at 200 Hz",
+  "limitations": [
+    "Single object and fixed surrounding dinner layout; all successful pilot demonstrations use the left arm.",
+    "20 demonstrations are a pipeline pilot, not sufficient evidence of generalization.",
+    "No learned policy, no hardware transfer test, no bimanual coordination.",
+    "Reserved validation poses have not been used or evaluated."
+  ],
+  "source_sha256": {
+    "simulation_lab/autonomy.py": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+    "simulation_lab/dinner_autonomy.py": "0efab2ca26922e3b602c0015ddc4b2426372b6dcbfd958507eaf9d6fb4117ffc",
+    "simulation_lab/scene.py": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+    "simulation_lab/recording.py": "7d69746d10a7a643aede6fd65c77b8975c81ddd1ae013f05b6f7309add195cad",
+    "simulation_lab/dataset.py": "1c9310a12391a957563f317f0f260ebc5ff284b9050a27b4a27fcb3143f1b2d2",
+    "scripts/prepare_bottle_data.py": "24372df981f6ad9b0ba873394054cbf7ee5cce5a11856221750775324d10b5fb",
+    "scripts/replay_bottle_pilot.py": "9ecd4962e2271d2fc9d8058440f56e86a525e52e55f031f75bba6b5599cf5ec1"
+  },
+  "selected_dataset_bytes": 1520127223
+}

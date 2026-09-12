@@ -1,5 +1,7 @@
 # Hackathon research brief
 
+**September 11 livestream clarification:** the speakers say other Intel systems with integrated graphics are accepted and Core Ultra Series 2/3 earns bonus points. This differs from the strict written-brief sentence retained below. See the [transcript review](LIVESTREAM_REVIEW_2026-09-11.md) for source lines, uncertainty and updated development decisions.
+
 Checked **2026-09-08**. Scope: the publicly available event page, live dashboard, linked sponsor briefs, lablab rules and guides, and organizer/vendor sources. Private Discord announcements, enrollment-only material, and future changes are not included. Official requirements are distinguished from our recommendations and unresolved conflicts.
 
 **September 10 recheck:** the online PDF is unchanged; the schedule is corrected below and practical Intel/Speechmatics resources have been added. See [the update record](UPDATE_2026-09-10.md). Other general-rule summaries retain their September 8 research date.

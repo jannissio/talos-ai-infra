@@ -14,7 +14,7 @@ DINNER_LABELS = {
     'close': 'Grasp and check both fingers', 'retry': 'Reopen for one grasp retry',
     'lift': 'Lift the object', 'hold': 'Verify an unsupported hold',
     'clearance': 'Withdraw from the drawer', 'transit': 'Carry clear of the drawer',
-    'rotate': 'Turn the spoon for placement', 'align': 'Move over the placement guide',
+    'rotate': 'Orient the held object for placement', 'align': 'Move over the placement guide',
     'lower': 'Lower to measured table support', 'release': 'Release the object',
     'retract': 'Withdraw the gripper', 'park': 'Park the working arm',
     'verify': 'Verify stable placement',
@@ -25,6 +25,7 @@ SKILLS = ('bottle', 'plate', 'mug', 'drawer', 'fork', 'spoon')
 class DinnerTask(LiftReturn):
     def __init__(self, model, data, layout):
         super().__init__(model, data, layout)
+        self.open_grip = OPEN
         self.message = 'Choose a dinner goal. Uses exact simulator state and physical contacts.'
 
     def snapshot(self):
@@ -78,11 +79,21 @@ class DinnerTask(LiftReturn):
                 self.moving_geoms.add(i)
         self.jaw_geoms = self.fixed_geoms | self.moving_geoms
         self.origin = self.data.xpos[self.body].copy()
+        self.sideways = item['id'] == 'bottle' and self.data.xmat[self.body,8] < .5
+        if self.sideways:
+            self.grip_torque = .65
+            self.open_grip = .85
+            self.ik.grasp_point = np.array([.016,0.,-.092])
+            self.ik.axis_target = self.data.xmat[self.body].reshape(3,3)[:,2].copy()
+            if 'rotate' not in self.stages:
+                self.stages.insert(self.stages.index('align'), 'rotate')
         self.parked = self.data.qpos[6:12].copy() if side == 'left' else self.data.qpos[:6].copy()
         self.source_slot = {'id': item['id']+'_start'}
         target = next((t for t in self.layout['targets'] if t['object_id'] == item['id']), None)
         self.destination_position = np.array(target['position_m']) if target else np.array(item.get("initial_position_m",self.origin)) + [.070, -.040, 0]
         self.destination_position[2] = self.layout['table_z'] if item['id'] in ('fork','spoon') else self.origin[2]
+        if self.sideways:
+            self.destination_position[2] = self.layout['table_z']
         self.destination = {'id': target['id'] if target else 'bottle_place', 'position_m': self.destination_position.tolist()}
         self.others = {o['id']: self.data.body(o['body']).xpos.copy() for o in self.layout['objects'] if o['id'] != item['id']}
         self.metrics = {'gripper_torque_limit_nm': self.grip_torque, 'other_arm_max_motion_deg': 0., 'hold_verified_s': 0., 'unexpected_collisions': 0}
@@ -96,6 +107,8 @@ class DinnerTask(LiftReturn):
             try:
                 self._select_item(side, item)
                 self.grasp = self.data.site(item['grasp_site']).xpos.copy()
+                if self.sideways:
+                    self.grasp = self.origin + self.ik.axis_target*.070
                 if item['id'] in ('fork','spoon'):
                     if self.data.joint('drawer_slide').qpos[0] < .105:
                         raise PlanningError('Open the drawer before retrieving cutlery.')
@@ -125,13 +138,13 @@ class DinnerTask(LiftReturn):
                 if item['id'] == 'spoon':
                     front = self.hover + [0,-.04,0]
                     qfront = self.ik.solve(front, above)
-                    approach = np.vstack((self._joint_path(self.data.qpos[self.offset:self.offset+5], qfront, OPEN), self._cartesian(front,self.hover,qfront,OPEN)))
+                    approach = np.vstack((self._joint_path(self.data.qpos[self.offset:self.offset+5], qfront, self.open_grip), self._cartesian(front,self.hover,qfront,self.open_grip)))
                 else:
-                    approach = self._joint_path(self.data.qpos[self.offset:self.offset+5], above, OPEN)
-                self._cartesian(self.hover, self.grasp, above, OPEN)
+                    approach = self._joint_path(self.data.qpos[self.offset:self.offset+5], above, self.open_grip)
+                self._cartesian(self.hover, self.grasp, above, self.open_grip)
                 self.attempts = 1
                 targets[:] = HOME*2
-                self._move('approach', approach, OPEN, 3.)
+                self._move('approach', approach, self.open_grip, 3.)
                 return
             except PlanningError as exc:
                 failures.append(side+': '+str(exc))
@@ -166,7 +179,14 @@ class DinnerTask(LiftReturn):
     def _move_point(self, stage, end, grip, duration):
         points = self._cartesian(self.ik.point(self.data), np.asarray(end), self.data.qpos[self.offset:self.offset+5], grip, check=False)
         carry = self._carry_reference() if self.kind != 'drawer_open' and stage in ('lift','clearance','transit','align','lower') else None
-        self._check_path(points, float(self.data.qpos[self.offset+5]) if carry is not None else grip, allow_tube=True, carry=carry, support=self.base_geom if stage == 'lower' else None)
+        actual_grip = float(self.data.qpos[self.offset+5]) if carry is not None else grip
+        if stage == 'lift' and self.sideways:
+            # Permit initial table support only at departure; the remaining
+            # hypothetical carried path must clear the table normally.
+            self._check_path(points[:2], actual_grip, True, carry=carry, support=self.base_geom)
+            self._check_path(points[2:], actual_grip, True, carry=carry)
+        else:
+            self._check_path(points, actual_grip, allow_tube=True, carry=carry, support=self.base_geom if stage == 'lower' else None)
         self._move(stage, points, grip, duration)
 
     def update(self, targets):
@@ -194,25 +214,29 @@ class DinnerTask(LiftReturn):
                         raise PlanningError('Lost verified finger contact.')
                 else:
                     self.bad_grip_since = None
-                if up < math.cos(math.radians(30 if self.tube["id"] in ("fork","spoon") else 15)):
+                if not self.sideways and up < math.cos(math.radians(30 if self.tube["id"] in ("fork","spoon") else 15)):
                     raise PlanningError('Object exceeded its allowed carrying tilt.')
             if self.kind != 'drawer_open' and self.stage in ('clearance','transit','rotate','align') and forces['external'] > .10:
                 raise PlanningError('The carried object contacted external support.')
             done = self._done_motion()
             if self.stage == 'approach' and done:
-                self._move_point('descend', self.grasp, OPEN, 3.)
+                self._move_point('descend', self.grasp, self.open_grip, 3.)
             elif self.stage == 'descend' and done:
                 q = self.data.qpos[self.offset:self.offset+5].copy()
                 self._move('close', np.array([q,q]), CLOSED, 5.)
             elif self.stage == 'close' and done:
-                if not both or up < math.cos(math.radians(10)):
+                if not both or (not self.sideways and up < math.cos(math.radians(10))):
                     if self.attempts < 2 and np.linalg.norm(self.data.xpos[self.body]-self.origin) < .006:
                         self.attempts += 1
                         q = self.data.qpos[self.offset:self.offset+5].copy()
-                        self._move('retry',np.array([q,q]),OPEN,4.)
+                        self._move('retry',np.array([q,q]),self.open_grip,4.)
                         return
                     raise PlanningError('Both fingers did not establish a grasp after the allowed attempts.')
                 endpoint = self.ik.point(self.data)+[0,-.020 if self.tube['id']=='spoon' else 0,.07 if self.tube['id']=='bottle' else .055 if self.tube['id']=='plate' else .035]
+                if self.sideways:
+                    # First withdraw vertically; reorientation also translates
+                    # toward the shared workspace to avoid a wrist singularity.
+                    endpoint[2] = self.ik.point(self.data)[2] + .055
                 try:
                     self._move_point('lift',endpoint,CLOSED,3.5)
                 except PlanningError as exc:
@@ -227,7 +251,7 @@ class DinnerTask(LiftReturn):
                     self._move('lift',points,CLOSED,4.)
                     self.metrics['lift_alternative'] = '20 mm vertical, then forward and upward'
             elif self.stage == 'retry' and done:
-                self._move_point('descend',self.grasp,OPEN,2.)
+                self._move_point('descend',self.grasp,self.open_grip,2.)
             elif self.stage == 'lift' and done:
                 if not (both and lift > (.05 if self.tube['id']=='bottle' else .02) and forces['external'] < .02):
                     raise PlanningError('Lift lacks independent finger support.')
@@ -238,6 +262,18 @@ class DinnerTask(LiftReturn):
                     raise PlanningError('Hold slipped or regained external support.')
                 self.metrics['hold_verified_s'] = now-self.stage_started
                 if done:
+                    if self.sideways:
+                        q = self.data.qpos[self.offset:self.offset+5].copy()
+                        reference = self._carry_reference()
+                        # Express the physically held bottle axis in the wrist frame.
+                        # This changes an IK constraint, never the object's pose.
+                        self.ik.axis_local = reference[1][:,2].copy()
+                        self.ik.axis_target = np.array([0.,0.,1.])
+                        end = self.ik.solve(np.array([.025,-.075,self.layout['table_z']+.190]),np.array(HOME[:5]))
+                        points = np.linspace(q,end,100)
+                        self._check_path(points,float(self.data.qpos[self.offset+5]),True,carry=reference)
+                        self._move('rotate',np.array(points),CLOSED,5.)
+                        return
                     if self.tube['id'] in ('fork','spoon'):
                         self._move_point('clearance', self.ik.point(self.data)+[0,-.050-self.ik.point(self.data)[1],0], CLOSED, 4.)
                         return
@@ -262,6 +298,10 @@ class DinnerTask(LiftReturn):
                 self._check_path(points,float(self.data.qpos[self.offset+5]),True,carry=reference)
                 self._move('rotate',np.array(points),CLOSED,4.)
             elif self.stage in ('transit','rotate') and done:
+                if self.sideways:
+                    if up < .98:
+                        raise PlanningError('Bottle failed to become upright after reorientation.')
+                    self.sideways = False
                 center = self.destination_position.copy()
                 center[2] = self.destination_position[2]+.03 if self.tube["id"] == "plate" else self.data.xpos[self.body,2]
                 point, _ = self._point_for_center(center, self._carry_reference(), self.data.qpos[self.offset:self.offset+5])
@@ -273,20 +313,20 @@ class DinnerTask(LiftReturn):
             elif self.stage == 'lower':
                 if forces['base'] > .06 and abs(self.data.xpos[self.body,2]-self.destination_position[2]) < .003:
                     p = self.ik.point(self.data)-self.data.xmat[self.ik.body].reshape(3,3)[:,0]*.010
-                    self._move_point('release', p, OPEN, 4.)
+                    self._move_point('release', p, self.open_grip, 4.)
                 elif done:
                     raise PlanningError('No measured table support; refusing release.')
             elif self.stage == 'release' and done:
                 endpoint = self.ik.point(self.data)+[0,0,.065 if self.tube['id'] in ('bottle','fork','spoon') else .035]
                 try:
-                    self._move_point('retract',endpoint,OPEN,3.)
+                    self._move_point('retract',endpoint,self.open_grip,3.)
                 except PlanningError as exc:
                     if self.tube['id'] != 'spoon' or 'useful reach' not in str(exc):
                         raise
-                    self._move_point('retract',endpoint-[0,0,.010],OPEN,3.)
+                    self._move_point('retract',endpoint-[0,0,.010],self.open_grip,3.)
                     self.metrics['retract_alternative'] = '55 mm retreat'
             elif self.stage == 'retract' and done:
-                path = self._joint_path(self.data.qpos[self.offset:self.offset+5], np.array(HOME[:5]), OPEN)
+                path = self._joint_path(self.data.qpos[self.offset:self.offset+5], np.array(HOME[:5]), self.open_grip)
                 self._move('park', path, HOME[5], 3.)
             elif self.stage == 'park' and done:
                 q = self.data.qpos[self.offset:self.offset+5].copy()

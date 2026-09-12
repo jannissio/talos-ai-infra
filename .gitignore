@@ -1,4 +1,5 @@
 .venv/
+.venv-training/
 __pycache__/
 *.py[cod]
 .run/
@@ -20,3 +21,7 @@ docs/hackathon/sources/*
 docs/hackathon/sources/2026-09-10/*
 !docs/hackathon/sources/2026-09-10/*.json
 cover_image.jpg
+
+# Private supplied transcript and local crash output.
+docs/hackathon/transcript_livestream.txt
+kernel.errors.txt

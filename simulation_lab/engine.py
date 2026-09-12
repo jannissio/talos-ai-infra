@@ -124,7 +124,9 @@ class LabEngine:
             raise request.error
         return self.snapshot()
 
-    def _reset(self, seed=42, rack_count=3, racks=None, practice=False, transfer_side=None, scenario="chemistry", dinner_preset="task", drawer_open=False):
+    def _reset(self, seed=42, rack_count=3, racks=None, practice=False, transfer_side=None, scenario="chemistry", dinner_preset="task", drawer_open=False, bottle_start='upright'):
+        if bottle_start == 'sideways' and (scenario != 'dinner' or dinner_preset != 'task'):
+            raise ValueError('Sideways bottle practice requires the dinner Task start scene.')
         xml, layout = build_scene(seed, rack_count, racks, practice=practice, transfer_side=transfer_side,
                                   scenario=scenario, dinner_preset=dinner_preset, drawer_open=drawer_open)
         model = mujoco.MjModel.from_xml_string(xml)
@@ -134,13 +136,21 @@ class LabEngine:
         data.ctrl[:] = target
         if scenario == "dinner":
             data.qpos[model.joint("drawer_slide").qposadr[0]] = layout["drawer"]["initial_open_m"]
-        for _ in range(200):
+            if bottle_start == 'sideways':
+                angle = np.pi/4
+                c,s = np.cos(angle/2),np.sin(angle/2)
+                adr = model.joint('bottle_free').qposadr[0]
+                data.qpos[adr:adr+7] = [-.10,-.15,layout['table_z']+.026,*(np.array([c,-s,c,s])*np.sqrt(.5))]
+            layout['bottle_start'] = bottle_start
+        for _ in range(300 if bottle_start == 'sideways' else 200):
             mujoco.mj_step(model, data)
         data.time = 0.
+        self.last_command_object = None
         mujoco.mj_forward(model, data)
         if hasattr(self, "task") and self.task.active:
             self.task.cancel(self.target)
             self._record_result()
+        if hasattr(self,'task') and hasattr(self.task,'close'):self.task.close()
         self.model, self.data, self.layout, self.target = model, data, layout, target
         self.xml = xml
         self.task = DinnerSequence(model,data,layout) if scenario == "dinner" else LiftReturn(model,data,layout)
@@ -194,11 +204,18 @@ class LabEngine:
                 self.running = False
                 self.task.request_pause = False
         else:
+            if self.task.active:raise ValueError('A goal is already running. Cancel it first.')
             if self.motion_started is not None:
                 raise ValueError("Wait for the motion test to finish or reset the scene before starting a goal.")
             if payload.get("record") and self.recorder is not None and self.recorder.snapshot()["busy"]:
                 raise ValueError("The previous demonstration is still being saved. Wait or turn off recording.")
+            if payload.get('record'):
+                from .storage import require_space,GIB
+                from .recording import EPISODE_ROOT
+                require_space(self.recorder.root if self.recorder else EPISODE_ROOT,GIB if payload.get('record_images',True) else 128*1024**2)
             if self.layout.get("scenario") == "dinner":
+                if hasattr(self.task,'close'):self.task.close()
+                self.task=DinnerSequence(self.model,self.data,self.layout)
                 self.task.start(side=payload.get("arm","auto"),object_id=payload.get("object_id"),kind=payload.get("kind","set_table"))
             else:
                 self.task.start(payload.get("arm", "auto"), payload.get("tube_id"),
@@ -209,6 +226,29 @@ class LabEngine:
                 self.task.recording_id = self.recorder.start(self.xml, self.layout, self.task.snapshot(), self.data.time,
                                                               images=payload.get("record_images", True))
             self.running = True
+
+    def _language_command(self,payload):
+        from .language import parse_command
+        from .command_task import CommandSequence
+        plan=parse_command(payload['text'],getattr(self,'last_command_object',None))
+        if plan.get('control')=='cancel':
+            self._task_command({'action':'cancel'});return
+        if self.layout.get('scenario')!='dinner':raise ValueError('Language commands use the dinner scene.')
+        if self.task.active:raise ValueError('A task is running. Say stop or wait for it to finish.')
+        if payload.get('mode') in ('learned_bottle','learned_bottle_legacy'):
+            steps=plan['steps']
+            if len(steps)!=1 or steps[0]['kind']!='dinner_place' or steps[0]['object_id']!='bottle' or steps[0]['arm']=='right' or (steps[0].get('destination') or {}).get('kind','default')!='default':
+                raise ValueError('This learned model currently supports “place the bottle” with the left arm and its trained destination. Other instructions require the programmed mode.')
+            try:from .learned_task import LearnedBottleTask,DEFAULT_CHECKPOINT,LEGACY_CHECKPOINT
+            except ImportError:raise ValueError('Use the training Python environment to enable learned control.') from None
+            checkpoint=LEGACY_CHECKPOINT if payload.get('mode')=='learned_bottle_legacy' else DEFAULT_CHECKPOINT
+            candidate=LearnedBottleTask(self.model,self.data,self.layout,checkpoint=checkpoint)
+        else:
+            candidate=CommandSequence(self.model,self.data,self.layout)
+            candidate.start_plan(plan)
+        if hasattr(self.task,'close'):self.task.close()
+        self.task=candidate;self.motion_started=None;self.running=True
+        self.last_command_object=plan.get('last_object')
 
     def _finish_recording(self):
         if self.recorder is not None and not self.task.active and getattr(self.task, "recording_id", None) == self.recorder.snapshot()["id"]:
@@ -281,6 +321,7 @@ class LabEngine:
                         scenario=self.layout.get("scenario", "chemistry"),
                         recording=self.recorder.snapshot() if self.recorder else {"id": None, "status": "idle", "busy": False})
         snapshot.update(dinner_state(self.model, self.data, self.layout))
+        if getattr(self.task,'kind',None)=='learned_bottle':snapshot['controller']='learned_bottle'
         with self.lock:
             snapshot.update(self.render_stats)
             snapshot["frame_id"] = self.frame_id
@@ -353,6 +394,8 @@ class LabEngine:
                             sim_checkpoint, checkpoint = self.data.time, time.perf_counter()
                         elif request.operation == "task":
                             self._task_command(request.payload)
+                        elif request.operation == "language":
+                            self._language_command(request.payload)
                         else:
                             self._control(request.payload)
                     except Exception as exc:
@@ -385,6 +428,7 @@ class LabEngine:
             self.stopping.set()
             self.ready.set()
         finally:
+            if hasattr(self,'task') and hasattr(self.task,'close'):self.task.close()
             for request in pending:
                 if not request.done.is_set():
                     request.error = RuntimeError(self.error or "Simulator stopped.")

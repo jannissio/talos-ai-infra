@@ -1,0 +1,174 @@
+{
+  "selected": [
+    "overhead",
+    "left_wrist_cam",
+    "right_wrist_cam"
+  ],
+  "comparison_episode": "sideways-01",
+  "comparison_resolution": [
+    480,
+    360
+  ],
+  "visibility": [
+    {
+      "stage": "approach",
+      "camera": "overhead",
+      "visible_bottle_pixels": 1045
+    },
+    {
+      "stage": "approach",
+      "camera": "opposite",
+      "visible_bottle_pixels": 472
+    },
+    {
+      "stage": "close",
+      "camera": "overhead",
+      "visible_bottle_pixels": 113
+    },
+    {
+      "stage": "close",
+      "camera": "opposite",
+      "visible_bottle_pixels": 273
+    },
+    {
+      "stage": "hold",
+      "camera": "overhead",
+      "visible_bottle_pixels": 137
+    },
+    {
+      "stage": "hold",
+      "camera": "opposite",
+      "visible_bottle_pixels": 307
+    },
+    {
+      "stage": "rotate",
+      "camera": "overhead",
+      "visible_bottle_pixels": 486
+    },
+    {
+      "stage": "rotate",
+      "camera": "opposite",
+      "visible_bottle_pixels": 452
+    },
+    {
+      "stage": "lower",
+      "camera": "overhead",
+      "visible_bottle_pixels": 554
+    },
+    {
+      "stage": "lower",
+      "camera": "opposite",
+      "visible_bottle_pixels": 529
+    }
+  ],
+  "calibration": [
+    {
+      "name": "overhead",
+      "body_id": 0,
+      "local_position_m": [
+        0.0,
+        0.07,
+        1.75
+      ],
+      "local_quaternion_wxyz": [
+        1.0,
+        0.0,
+        -0.0,
+        -0.0
+      ],
+      "vertical_fov_deg": 48.0,
+      "resolution": [
+        640,
+        480
+      ],
+      "intrinsics_fx_fy_cx_cy": [
+        539.0488257370118,
+        539.0488257370118,
+        320,
+        240
+      ],
+      "coordinates": "MuJoCo camera local +X right, +Y up, viewing along -Z. Wrist extrinsics vary with joints."
+    },
+    {
+      "name": "opposite",
+      "body_id": 0,
+      "local_position_m": [
+        0.0,
+        0.78,
+        1.48
+      ],
+      "local_quaternion_wxyz": [
+        -0.0,
+        0.0,
+        0.43050239794034884,
+        0.9025894334455781
+      ],
+      "vertical_fov_deg": 55.0,
+      "resolution": [
+        640,
+        480
+      ],
+      "intrinsics_fx_fy_cx_cy": [
+        461.03571047307986,
+        461.03571047307986,
+        320,
+        240
+      ],
+      "coordinates": "MuJoCo camera local +X right, +Y up, viewing along -Z. Wrist extrinsics vary with joints."
+    },
+    {
+      "name": "left_wrist_cam",
+      "body_id": 7,
+      "local_position_m": [
+        0.0,
+        0.055,
+        -0.045
+      ],
+      "local_quaternion_wxyz": [
+        0.9596616526574011,
+        -0.281157451295294,
+        0.0,
+        0.0
+      ],
+      "vertical_fov_deg": 48.455489575996914,
+      "resolution": [
+        640,
+        480
+      ],
+      "intrinsics_fx_fy_cx_cy": [
+        533.3333465155442,
+        533.3333465155442,
+        320,
+        240
+      ],
+      "coordinates": "MuJoCo camera local +X right, +Y up, viewing along -Z. Wrist extrinsics vary with joints."
+    },
+    {
+      "name": "right_wrist_cam",
+      "body_id": 15,
+      "local_position_m": [
+        0.0,
+        0.055,
+        -0.045
+      ],
+      "local_quaternion_wxyz": [
+        0.9596616526574011,
+        -0.281157451295294,
+        0.0,
+        0.0
+      ],
+      "vertical_fov_deg": 48.455489575996914,
+      "resolution": [
+        640,
+        480
+      ],
+      "intrinsics_fx_fy_cx_cy": [
+        533.3333465155442,
+        533.3333465155442,
+        320,
+        240
+      ],
+      "coordinates": "MuJoCo camera local +X right, +Y up, viewing along -Z. Wrist extrinsics vary with joints."
+    }
+  ]
+}

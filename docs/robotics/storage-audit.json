@@ -1,0 +1,115 @@
+{
+  "disk": {
+    "total": 509164384256,
+    "used": 392160350208,
+    "free": 117004034048
+  },
+  "folders": [
+    {
+      "folder": ".run",
+      "logical_bytes": 14228505940,
+      "largest_children": [
+        [
+          "(root files)",
+          3172884725
+        ],
+        [
+          "bottle-pilot",
+          1747877791
+        ],
+        [
+          "act-train16",
+          1694774770
+        ],
+        [
+          "act-matched-2000",
+          1238540653
+        ],
+        [
+          "act-matched-1000",
+          1238540593
+        ],
+        [
+          "act-colab-200",
+          619280890
+        ],
+        [
+          "act-local-smoke-v2",
+          619263554
+        ],
+        [
+          "act-colab-resume-local",
+          619263424
+        ],
+        [
+          "act-local-resume",
+          619263131
+        ],
+        [
+          "act-fit5",
+          531799711
+        ],
+        [
+          "bottle-matched-nvidia",
+          500482736
+        ],
+        [
+          "act-validation4",
+          427527391
+        ]
+      ]
+    },
+    {
+      "folder": ".venv",
+      "logical_bytes": 182052947,
+      "largest_children": [
+        [
+          "Lib",
+          180520720
+        ],
+        [
+          "Scripts",
+          1531798
+        ],
+        [
+          "(root files)",
+          429
+        ],
+        [
+          "Include",
+          0
+        ]
+      ]
+    },
+    {
+      "folder": ".venv-training",
+      "logical_bytes": 8558824726,
+      "largest_children": [
+        [
+          "Lib",
+          8552942639
+        ],
+        [
+          "Scripts",
+          5875018
+        ],
+        [
+          "share",
+          6659
+        ],
+        [
+          "(root files)",
+          410
+        ],
+        [
+          "Include",
+          0
+        ]
+      ]
+    }
+  ],
+  "new_experiment_budget_gib": 1,
+  "minimum_free_reserve_gib": 10,
+  "deletions": 0,
+  "note": "Logical file sizes, not deduplicated physical allocation. Existing data reused."
+}

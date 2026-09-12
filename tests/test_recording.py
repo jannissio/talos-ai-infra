@@ -4,6 +4,7 @@ from pathlib import Path
 import tempfile
 import time
 import unittest
+from unittest.mock import patch
 
 import mujoco
 import numpy as np
@@ -22,6 +23,17 @@ def wait_saved(recorder):
 
 
 class RecordingTests(unittest.TestCase):
+    def test_low_disk_space_prevents_recording(self):
+        with tempfile.TemporaryDirectory() as root:
+            recorder=EpisodeRecorder(root)
+            try:
+                with patch('simulation_lab.recording.require_space',side_effect=OSError('Insufficient disk headroom')):
+                    with self.assertRaises(OSError):recorder.start('',{}, {},0.)
+                self.assertFalse(recorder.capturing)
+                self.assertFalse(recorder.snapshot()['busy'])
+                self.assertEqual(list(Path(root).iterdir()),[])
+            finally:recorder.close()
+
     def test_synchronized_actions_observations_and_images(self):
         with tempfile.TemporaryDirectory() as root:
             model, data, targets, task = setup()
@@ -44,7 +56,7 @@ class RecordingTests(unittest.TestCase):
                 result = validate(Path(root)/episode_id)
                 self.assertEqual(result["actions"], 60)
                 self.assertEqual(result["observations"], 7)
-                self.assertEqual(result["images"], 6)
+                self.assertEqual(result["images"], 21)
                 self.assertEqual(result["outcome"], "cancelled")
                 self.assertFalse(result["training_eligible"])
             finally:

@@ -47,7 +47,7 @@ async def local_origin(request: Request, call_next):
 
 class Control(BaseModel):
     model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
-    camera: Literal["center", "overview", "overhead", "left_wrist_cam", "right_wrist_cam"] | None = None
+    camera: Literal["center", "overview", "overhead", "opposite", "left_wrist_cam", "right_wrist_cam"] | None = None
     running: bool | None = None
     shadows: bool | None = None
     preset: Literal["home", "gentle"] | None = None
@@ -73,6 +73,7 @@ class Reset(BaseModel):
     scenario: Literal["dinner", "chemistry"] = "chemistry"
     dinner_preset: Literal["task", "reference"] = "task"
     drawer_open: bool = False
+    bottle_start: Literal['upright', 'sideways'] = 'upright'
 
 
 class TaskCommand(BaseModel):
@@ -93,6 +94,11 @@ class Rack(BaseModel):
     y: float = Field(ge=-0.015, le=0.30)
     yaw_deg: float = Field(ge=-180, le=180)
 
+class LanguageCommand(BaseModel):
+    model_config=ConfigDict(extra='forbid')
+    text:str=Field(min_length=1,max_length=500)
+    mode:Literal['programmed','learned_bottle','learned_bottle_legacy']='programmed'
+
 
 class Layout(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -106,6 +112,8 @@ def send(operation, payload):
         raise HTTPException(400, str(exc)) from exc
     except RuntimeError as exc:
         raise HTTPException(503, str(exc)) from exc
+    except OSError as exc:
+        raise HTTPException(507, str(exc)) from exc
 
 
 @app.get("/")
@@ -138,6 +146,22 @@ def racks(request: Layout):
 @app.post("/api/task")
 def task(request: TaskCommand):
     return send("task", request.model_dump())
+
+@app.post('/api/command')
+def command(request:LanguageCommand):
+    return send('language',request.model_dump())
+
+@app.get('/api/speech/status')
+def speech_status():
+    from .speech import status
+    return status()
+
+@app.post('/api/speech/token')
+async def speech_token():
+    from .speech import temporary_token
+    try:return await asyncio.to_thread(temporary_token)
+    except ValueError as exc:raise HTTPException(503,str(exc)) from None
+    except RuntimeError as exc:raise HTTPException(502,str(exc)) from None
 
 
 @app.get("/frame.jpg")
@@ -177,5 +201,13 @@ app.mount("/static", StaticFiles(directory=STATIC), name="static")
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument('--learned',action='store_true',help='Preload the learned runtime before accepting browser requests (training environment).')
     args = parser.parse_args()
+    if args.learned:
+        from .learned_task import DEFAULT_CHECKPOINT
+        # Import PyTorch on the main thread before the engine starts. Leave
+        # OpenVINO model compilation on its owning physics thread: precompiling
+        # a throwaway model here caused large live-thread inference overhead.
+        if not (DEFAULT_CHECKPOINT/'primitive.json').is_file():
+            raise RuntimeError('Packaged learned bottle model is missing.')
     uvicorn.run(app, host="127.0.0.1", port=args.port, access_log=False)

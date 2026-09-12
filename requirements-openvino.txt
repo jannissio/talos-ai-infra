@@ -1,0 +1,4 @@
+# Optional export/runtime dependency; install into .venv-training for export.
+# Existing Torch/LeRobot versions remain pinned by requirements-training.txt.
+openvino==2026.3.0
+openvino-telemetry==2025.2.0

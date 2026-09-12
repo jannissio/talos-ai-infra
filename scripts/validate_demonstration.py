@@ -66,7 +66,7 @@ def validate(folder):
                 assert image.size == tuple(manifest["images"]["resolution"])
                 image.verify()
             images += 1
-        expected = sum(row["index"] % 4 == 0 for row in observations)*len(manifest["images"]["cameras"])
+        expected = sum(row["index"] % manifest["images"].get("observation_stride", 4) == 0 for row in observations)*len(manifest["images"]["cameras"])
         assert images == expected == manifest["images"]["count"]
     elif manifest["images"]["status"] != "disabled":
         raise ValueError("Image export has not completed: "+manifest["images"]["status"])

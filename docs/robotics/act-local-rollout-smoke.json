@@ -1,0 +1,27 @@
+{
+  "episode": "upright-01",
+  "checkpoint": ".run/act-local-smoke-v2/step-000003",
+  "success": false,
+  "reason": "timeout",
+  "simulated_s": 1.9999999999999793,
+  "wall_s": 2.2002194999950007,
+  "best_supported_hold_s": 0.0,
+  "stable_release_s": 0.0,
+  "placement_error_m": 0.05769877488980505,
+  "other_object_max_displacement_m": 3.959007887247695e-07,
+  "parked_arm_max_motion_deg": 0.4403356791726357,
+  "longest_unsupported_contact_gap_s": 0.035,
+  "clipped_action_values": 200,
+  "inference_median_ms": 58.39584999193903,
+  "inference_p95_ms": 587.0487349951862,
+  "gripper_cap_nm": 0.25,
+  "blank_images": false,
+  "teacher_updates": 0,
+  "state_resets": 1,
+  "timing": "Offline synchronous evaluation; physics waits during inference. Not a real-time claim.",
+  "policy_inputs": [
+    "three RGB cameras",
+    "12 joint positions",
+    "12 joint velocities"
+  ]
+}

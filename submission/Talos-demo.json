@@ -1,0 +1,73 @@
+{
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 20,
+  "duration_s": 231.8,
+  "bytes": 16517398,
+  "chapters": [
+    {
+      "title": "Talos: dinner-table robotics",
+      "start_s": 0.0,
+      "duration_s": 6,
+      "type": "explanatory_card"
+    },
+    {
+      "title": "Speechmatics test: \u201cSet the table\u201d",
+      "start_s": 6.0,
+      "duration_s": 5,
+      "type": "explanatory_card"
+    },
+    {
+      "title": "Programmed physical skills | 2x playback | exact-state IK",
+      "start_s": 11.0,
+      "playback_speed": 2,
+      "source": "voice-set-table-720p.mp4",
+      "type": "recorded_physics",
+      "duration_s": 124.85
+    },
+    {
+      "title": "\u201cPass the bottle to the right arm\u201d",
+      "start_s": 135.85,
+      "duration_s": 6,
+      "type": "explanatory_card"
+    },
+    {
+      "title": "Programmed relay | 2x playback | table release and regrasp",
+      "start_s": 141.85,
+      "playback_speed": 2,
+      "source": "relay-bottle-720p.mp4",
+      "type": "recorded_physics",
+      "duration_s": 38.2
+    },
+    {
+      "title": "Speechmatics test: \u201cPlace the bottle\u201d",
+      "start_s": 180.05,
+      "duration_s": 5,
+      "type": "explanatory_card"
+    },
+    {
+      "title": "Learned upright bottle | 1x | OpenVINO + initial RGB localization",
+      "start_s": 185.05,
+      "playback_speed": 1,
+      "source": "visual-bottle-720p.mp4",
+      "type": "recorded_physics",
+      "duration_s": 28.75
+    },
+    {
+      "title": "Intel OpenVINO FP32",
+      "start_s": 213.8,
+      "duration_s": 8,
+      "type": "explanatory_card"
+    },
+    {
+      "title": "Measured scope",
+      "start_s": 221.8,
+      "duration_s": 10,
+      "type": "explanatory_card"
+    }
+  ],
+  "synthetic_speech_only": true,
+  "physical_footage": "Recorded authoritative MuJoCo states, rendered offline; speeds labeled; no invented movements"
+}

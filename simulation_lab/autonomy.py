@@ -62,6 +62,7 @@ class ArmIK:
         self.x_target = None
         self.axis_index = 1
         self.axis_target = np.array([0., 0., 1.])
+        self.axis_local = None
 
     def point(self, data):
         return data.xpos[self.body] + data.xmat[self.body].reshape(3, 3) @ self.grasp_point
@@ -73,7 +74,8 @@ class ArmIK:
             mujoco.mj_kinematics(self.model, self.data)
             mujoco.mj_comPos(self.model, self.data)
             point = self.point(self.data)
-            axis = self.data.xmat[self.body].reshape(3, 3)[:, self.axis_index]
+            rotation = self.data.xmat[self.body].reshape(3, 3)
+            axis = rotation[:, self.axis_index] if self.axis_local is None else rotation @ self.axis_local
             error = np.r_[position - point, .08 * (self.axis_target - axis)]
             if self.x_target is not None:
                 xaxis = self.data.xmat[self.body].reshape(3, 3)[:, 0]

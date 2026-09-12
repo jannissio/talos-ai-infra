@@ -15,7 +15,7 @@ HOME = [0.0, -0.70, 0.80, 0.20, 0.0, 0.65]
 JOINTS = ["shoulder_pan", "shoulder_lift", "elbow_flex", "wrist_flex", "wrist_roll", "gripper"]
 JOINT_LABELS = ["Base turn", "Shoulder", "Elbow", "Wrist bend", "Wrist rotation", "Gripper"]
 COLORS = [(0.03, 0.62, 0.65), (0.25, 0.43, 0.88), (0.88, 0.43, 0.19), (0.64, 0.36, 0.81)]
-CAMERAS = {"center": "Between the arms", "overview": "Overview", "overhead": "Overhead", "left_wrist_cam": "Left wrist", "right_wrist_cam": "Right wrist"}
+CAMERAS = {"center": "Between the arms", "overview": "Overview", "overhead": "Overhead", "opposite": "Opposite side", "left_wrist_cam": "Left wrist", "right_wrist_cam": "Right wrist"}
 
 
 def vec(values) -> str:
@@ -221,6 +221,7 @@ def build_scene(seed: int = 42, count: int = 3, racks: list[RackPose] | None = N
     add_camera(world, "center", (0, -0.57, 1.14), (0, 0.10, 0.83), 59)
     add_camera(world, "overview", (0.83, -0.77, 1.62), (0, 0.08, 0.82), 46)
     add_camera(world, "overhead", (0, 0.07, 1.75), (0, 0.07, TABLE_Z), 48)
+    add_camera(world, "opposite", (0, .78, 1.48), (0, -.035, .82), 55)
     layout = {"seed": seed, "scenario": scenario, "racks": rack_records, "slots": slot_records, "tubes": tube_records, "table_z": TABLE_Z, "practice": practice, "transfer_side": transfer_side}
     if scenario == "dinner":
         from .dinner import add_dinner_scene

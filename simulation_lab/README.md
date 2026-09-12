@@ -1,8 +1,12 @@
 # Talos simulator · Dinner challenge and BenchLab practice
 
+**September 12:** the main instruction panel has programmed skills, two learned bottle modes, Speechmatics voice input, progress and cancellation. Use `python -m simulation_lab.server --learned` from `.venv-training`. The default learned upright model passed ten task-preset seeds; its classical overhead RGB detector conditions a neural trajectory, with motor-feedback progress checks. See [current policy and limits](../docs/robotics/VISUAL_BOTTLE_POLICY.md). Programmed mode also supports `pass the bottle to the right arm`, a [table-supported relay](../docs/robotics/TABLE_RELAY.md). Earlier sections below describe the preserved physical teacher and chemistry experiments.
+
 **September 11:** the default browser scene is now the dinner challenge. Select **Dinner challenge**, a seed, **Task start** or **Target example**, and **Load seed**. Select **Open for inspection** before loading to see the cutlery in the passive drawer. Every preset rebuilds the physical scene; the target example is not autonomous execution. Choose **Run all six skills → Start dinner goal** to execute bottle/plate/mug placement, drawer opening and fork/spoon retrieval. Use **Task start / Closed / Seed 42** for the baseline. Cancellation pauses physics. This is an exact-state teacher, not a learned policy.
 
-The scene contains seven free rigid tableware objects, a passive drawer, two unchanged SO-101 arms and five cameras. See [dinner setup, model dimensions and verification](../docs/robotics/DINNER_SCENE.md), [standalone dinner models](assets/dinner/README.md), and [submission build plan](../docs/hackathon/BUILD_PLAN.md).
+The scene contains seven free rigid tableware objects, a passive drawer, two unchanged SO-101 arms and six cameras. See [dinner setup, model dimensions and verification](../docs/robotics/DINNER_SCENE.md), [standalone dinner models](assets/dinner/README.md), and [submission build plan](../docs/hackathon/BUILD_PLAN.md).
+
+**Bottle pilot:** click **Load sideways bottle practice → Start dinner goal** for a physical sideways pickup and upright placement. The new **Opposite side** camera is available alongside overhead and wrist views. See [data preparation, verified demonstrations and replay commands](../docs/robotics/DATA_PREPARATION.md). No learned policy is loaded.
 
 **The chemistry instructions below remain available:** first choose **Chemistry practice → Load seed**. Existing lift/transfer goals, recording, rack editing, and manual controls are preserved.
 
@@ -42,7 +46,7 @@ The server binds to **127.0.0.1**. It is accessible from this PC, not published 
 
 For the newest milestone, select **Load transfer practice → Start transfer**. This loads two racks within the selected arm's workspace, with tube **A2** and empty destination **B2** selected. Choose Right arm before loading the preset to mirror the layout. A transfer takes approximately **44 simulated seconds**. The other arm stays parked.
 
-**Record demonstration** is checked by default in the browser. Actions are saved at 200 Hz and observations at 20 Hz. After the physical task finishes, a separate process renders synchronized central/left-wrist/right-wrist images at 5 Hz. The recording panel shows progress and a manifest link when finished. Image export takes additional time and can lower viewer FPS, while physics and controls remain independent. Uncheck recording for a quick repeat while an earlier recording exports.
+**Record demonstration** is checked by default for chemistry browser goals. Actions are saved at 200 Hz and observations at 20 Hz. After the physical task finishes, a separate process renders synchronized overhead/left-wrist/right-wrist images at 20 Hz. The recording panel shows progress and a manifest link when finished. Image export takes additional time and can lower viewer FPS, while physics and controls remain independent. Uncheck recording for a quick repeat while an earlier recording exports. Dinner pilot collection currently uses the documented headless script; the dinner browser button runs without recording.
 
 The original lift-and-return goal is still available:
 
@@ -198,6 +202,16 @@ Validate or re-export a saved recording without moving the robot:
 The re-export command replaces that episode's generated images/index; it preserves the original action and observation files. Keep the workspace robot assets with the recording: the saved scene references them by a relative path. The format is a documented local schema, not yet a LeRobot dataset or a trained policy.
 
 ## Provenance and scope
+
+The dinner-table bottle pilot now has a separate [ACT training and physical evaluation pipeline](../docs/robotics/ACT_TRAINING.md) and [Colab notebook](../notebooks/Talos_ACT_Bottle_Pilot.ipynb). Use `.venv-training` for learning tools; the server continues to use its existing `.venv`. The learned-policy evaluator is a command-line experiment and is not yet a browser goal control. A checkpoint alone does not establish autonomous task success.
+
+The [matched-controller ACT follow-up](../docs/robotics/ACT_MATCHED_EXPERIMENT.md) records the corrected physical/camera contract, a completed 1,000-update local run and 0/5 learned task successes. Successful recorded trajectory replay and successful learned manipulation are reported separately.
+
+The subsequent [working bottle baseline](../docs/robotics/BOTTLE_MODEL_GOAL.md) uses observation-conditioned demonstration retrieval and passes five familiar physical starts. It is **not ACT** and fails one nearby position probe. Its separate browser demo runs at `http://127.0.0.1:8766/`, with repeatable trials, videos, cancellation and fault checks; the main simulator is unchanged by that runner. See the report for restart commands and remaining limitations.
+
+The [robustness follow-up](../docs/robotics/BOTTLE_ROBUSTNESS.md) added six verified demonstrations, including recovery from a stalled grasp. Its selected candidate improved development results but scored 3/4 on separate unseen starts versus the existing baseline's 4/4. It was **not promoted**; the browser retains the previous controller. The new data and frozen comparison are ready for a sequence-aware learning experiment.
+
+The [neural controller milestone](../docs/robotics/BOTTLE_SEQUENCE_GOAL.md) has a separate demo at **http://127.0.0.1:8768/**. An initial-camera-conditioned neural motion primitive with programmed motor-feedback timing passed 9/11 training starts, including all five original starts and a recovery case. A short actuator pause passed; a persistent stall stopped. It scored 3/6 on six newly frozen starts versus retrieval's 6/6, so port 8766 retains the established retrieval baseline. Continuous visual correction and arbitrary-position success remain future work. Port 8767 retains the earlier single-start guarded GRU experiment.
 
 The SO-101 assets come from [Google DeepMind's MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie/tree/main/robotstudio_so101), pinned to `ac6b2b09983786f3036cab1000221017fa2193b4`, under [Apache-2.0](assets/so101/LICENSE). Their original notices are retained. Our scene changes include arm placement/colors, visual-only simplification, cameras, lab props and controls. See [NOTICE.md](NOTICE.md).
 

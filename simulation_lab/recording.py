@@ -19,7 +19,8 @@ import mujoco
 import numpy as np
 from PIL import Image
 
-from .scene import ASSETS, JOINTS
+from .scene import ASSETS, JOINTS, CAMERAS
+from .storage import require_space, GIB
 
 EPISODE_ROOT = Path(__file__).resolve().parents[1] / ".run" / "demonstrations"
 
@@ -45,7 +46,14 @@ def export_images(folder_name, stop):
     renderer = None
     parent = multiprocessing.parent_process()
     try:
+        width, height = manifest["images"]["resolution"]
+        camera_count = len(manifest["images"]["cameras"])
+        frame_count = manifest.get('observation_count', 0)//manifest['images'].get('observation_stride', 4)+1
+        # Raw RGB is a conservative estimate for the compressed image export.
+        require_space(folder, frame_count*camera_count*width*height*3 + 32*1024**2)
         model = mujoco.MjModel.from_xml_path(str(folder/"scene.xml"))
+        # Multisampling is a render-only expense; retain full image resolution.
+        model.vis.quality.offsamples = 0
         data = mujoco.MjData(model)
         width, height = manifest["images"]["resolution"]
         cameras = manifest["images"]["cameras"]
@@ -58,7 +66,7 @@ def export_images(folder_name, stop):
         with gzip.open(folder/"observations.jsonl.gz", "rt", encoding="utf-8") as source, (folder/"images.jsonl").open("w", encoding="utf-8") as index:
             for line in source:
                 sample = json.loads(line)
-                if sample["index"] % 4:  # 20 Hz observations -> 5 Hz camera sets.
+                if sample["index"] % manifest['images'].get('observation_stride', 4):
                     continue
                 if stop.is_set() or (parent is not None and not parent.is_alive()):
                     raise RuntimeError("Image export interrupted.")
@@ -67,6 +75,8 @@ def export_images(folder_name, stop):
                 data.time = sample["simulation_time_s"]
                 mujoco.mj_forward(model, data)
                 for camera in cameras:
+                    if count % 30 == 0:
+                        require_space(folder, 30*width*height*3 + 8*1024**2)
                     renderer.update_scene(data, camera=camera, scene_option=option)
                     renderer.scene.flags[mujoco.mjtRndFlag.mjRND_SHADOW] = False
                     file = image_dir/f"{sample['index']:06d}_{camera}.jpg"
@@ -83,9 +93,10 @@ def export_images(folder_name, stop):
                         # Optional progress may be stale while Windows holds an
                         # open reader handle; never sacrifice the actual images.
                         pass
-        manifest["images"].update(status="completed", count=count, index="images.jsonl")
+        manifest["images"].update(status="completed", count=count, index="images.jsonl", multisampling=0)
         manifest["images"].pop("error", None)
-        manifest["training_eligible"] = bool(manifest["trajectory_complete"] and manifest["outcome"]["status"] == "succeeded")
+        manifest["training_eligible"] = bool(manifest["trajectory_complete"] and manifest["outcome"]["status"] == "succeeded"
+                                             and all(r['passed'] for r in manifest.get('replays', [])))
     except Exception as exc:
         manifest["images"].update(status="failed", error=f"{type(exc).__name__}: {exc}")
         manifest["training_eligible"] = False
@@ -121,11 +132,16 @@ class EpisodeRecorder:
         with self.lock:
             self.meta.update(values)
 
-    def start(self, xml, layout, task, start_time, images=True):
+    def start(self, xml, layout, task, start_time, images=True, image_hz=20, cameras=None):
+        if image_hz not in (5,10,20):
+            raise ValueError('Image frequency must divide the 20 Hz observation grid: 5, 10 or 20.')
+        if cameras is not None and (not cameras or len(set(cameras)) != len(cameras) or any(c not in CAMERAS for c in cameras)):
+            raise ValueError('Choose distinct, known recording cameras.')
         if not self.worker.is_alive():
             raise ValueError("The recording worker has stopped. Restart BenchLab before recording again.")
         if self.snapshot()["busy"]:
             raise ValueError("The previous demonstration is still being saved. Wait for it or turn off recording.")
+        require_space(self.root, GIB if images else 128*1024**2)
         episode_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")+"_"+uuid.uuid4().hex[:10]
         self.start_time = float(start_time)
         self.action_count = self.observation_count = 0
@@ -135,7 +151,8 @@ class EpisodeRecorder:
         self.meta = {"id": episode_id, "status": "recording", "busy": True, "actions": 0, "observations": 0,
                      "images": 0, "message": "Recording actions and observations.", "path": str(self.root/episode_id)}
         self.pending.put_nowait(("start", {"xml": xml, "layout": deepcopy(layout), "task": task,
-                                           "images": images, "id": episode_id, "start_time": self.start_time}))
+                                           "images": images, "id": episode_id, "start_time": self.start_time,
+                                           'image_hz': image_hz, 'cameras': cameras or ['overhead','left_wrist_cam','right_wrist_cam']}))
         return episode_id
 
     def capture(self, data, target, applied_ctrl, task):
@@ -156,7 +173,9 @@ class EpisodeRecorder:
     def observation(self, data, action_index, terminal=False):
         row = {"index": self.observation_count, "action_index": action_index,
                "time_s": round(float(data.time)-self.start_time, 9), "simulation_time_s": float(data.time),
-               "qpos": data.qpos.copy(), "qvel": data.qvel.copy(), "terminal": terminal}
+               "qpos": data.qpos.copy(), "qvel": data.qvel.copy(), "terminal": terminal,
+               'robot_joint_position': data.qpos[:12].copy(), 'robot_joint_velocity': data.qvel[:12].copy(),
+               'actuator_force': data.actuator_force.copy()}
         self.observation_count += 1
         return row
 
@@ -211,11 +230,14 @@ class EpisodeRecorder:
                                 "joint_order": [side+"_"+j for side in ("left", "right") for j in JOINTS],
                                 "action_contract": "qpos/qvel observations at t precede ctrl applied for [t,t+0.005). target is the nominal position target; ctrl includes the gripper torque limit.",
                                 "observation_contract": "qpos/qvel follow the saved MuJoCo model. First 12 coordinates are arm joints. Exact simulator object state is privileged teacher/evaluator information.",
-                                "images": {"status": "pending" if payload["images"] else "disabled", "hz": 5, "resolution": [640, 360],
-                                           "cameras": ["center", "left_wrist_cam", "right_wrist_cam"],
+                                "images": {"status": "pending" if payload["images"] else "disabled", "hz": payload['image_hz'], "resolution": [640, 480],
+                                           'observation_stride': 20//payload['image_hz'],
+                                           "cameras": payload['cameras'],
                                            "alignment": "Offline render of exactly the referenced observation qpos/qvel, not asynchronous live stream images."}}
                     write_json(folder/"manifest.json", manifest)
                 elif operation == "step" and actions is not None:
+                    if written_actions % 200 == 0:
+                        require_space(folder, 32*1024**2)
                     row, observation = payload
                     self._line(actions, row)
                     written_actions += 1

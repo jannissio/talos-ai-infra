@@ -4,7 +4,7 @@
 - **September 10:** public challenge/schedule/resource recheck. Saved sponsor downloads are retained locally as reference material, excluded from Git, and not relicensed as project assets.
 - **September 11:** user selected the published dinner-table task and supplied `https://github.com/jannissio/talos-ai-infra`. The existing remote initial commit and MIT license were retained. Dinner assets, scene presets, inventory, passive drawer, scene-specific API behavior, physical checks, and submission build plan were added.
 
-Codex assisted with research, implementation, model geometry, debugging, documentation and verification. The project is work in progress; these contributions do not imply a trained policy, physical-hardware validation, or completed challenge.
+Codex assisted with research, implementation, model geometry, debugging, documentation and verification. The project includes the trained simulation policies described below; no physical-hardware validation or completed competition entry is implied.
 
 SO-101 robot models originate from Google DeepMind MuJoCo Menagerie, pinned to commit `ac6b2b09983786f3036cab1000221017fa2193b4`. The original Apache-2.0 license, source files and provenance hashes are retained. Visual simplification and runtime composition are described in [NOTICE](../simulation_lab/NOTICE.md).
 
@@ -14,3 +14,5 @@ Pre-event preparation reuse has not received organizer-specific approval. Preser
 
 
 September 11 physical milestone: Codex-assisted implementation of the dinner teacher, drawer pull, rim and cutlery grasps, six-skill sequencing, browser controls and physical evaluation. The plate rim, utensil handles, drawer dimensions and object staging were revised after contact/clearance failures; these are original engineering approximations. No robot geometry changes, object attachments, external-force manipulation or learned-policy claims were introduced. See `robotics/DINNER_SCENE.md` and the dated challenge recheck.
+
+September 12 submission development: trained ACT and compact bottle-policy experiments, including retained failure evidence; integrated learned control with the browser, Speechmatics streaming, bounded language parsing and a physical table-supported relay. The revised upright policy uses classical overhead RGB localization and a trained trajectory network. Its 10/10 fresh task-preset scene evaluation is limited to that reset distribution. Current inference uses Intel OpenVINO; current camera rendering uses NVIDIA. End-to-end speech evidence uses synthetic English input sent to the real Speechmatics service. HD footage reconstructs actual recorded simulator states, with accelerated playback explicitly labeled. Weights and original simulation-derived training arrays are MIT licensed.

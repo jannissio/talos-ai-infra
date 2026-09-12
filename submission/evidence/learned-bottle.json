@@ -1,0 +1,142 @@
+{
+  "seed": 42,
+  "input_source": "Speechmatics Realtime API; Synthetic English Windows TTS, not a human microphone recording",
+  "instruction": "Place.  The  bottle.",
+  "plan": {
+    "instruction": "Place.  The  bottle.",
+    "interpreter": "constrained_grammar",
+    "steps": [
+      {
+        "kind": "dinner_place",
+        "object_id": "bottle",
+        "arm": "auto",
+        "destination": {
+          "kind": "default"
+        }
+      }
+    ],
+    "last_object": "bottle"
+  },
+  "status": "succeeded",
+  "simulated_seconds": 27.46999999999882,
+  "wall_seconds": 4.457604399998672,
+  "controller": "OpenVINO learned bottle primitive; camera/motor inputs with independent simulator-state success monitor",
+  "physical_state_writes_during_control": 0,
+  "equality_constraints": 0,
+  "task": {
+    "status": "succeeded",
+    "active": false,
+    "stage": "neural_control",
+    "stage_label": "Neural camera-conditioned motion",
+    "message": "Neural policy physically lifted, held, released and placed the bottle.",
+    "arm": "left",
+    "tube_id": "bottle",
+    "kind": "learned_bottle",
+    "source_slot": null,
+    "recording_id": null,
+    "destination_slot": null,
+    "progress": 1.0,
+    "stages": [
+      {
+        "id": "planning",
+        "label": "Check reach and clearance"
+      },
+      {
+        "id": "approach",
+        "label": "Move above the tube"
+      },
+      {
+        "id": "descend",
+        "label": "Align the open fingers"
+      },
+      {
+        "id": "close",
+        "label": "Close and verify both fingers"
+      },
+      {
+        "id": "lift",
+        "label": "Lift clear of the rack"
+      },
+      {
+        "id": "hold",
+        "label": "Verify an unsupported hold"
+      },
+      {
+        "id": "align",
+        "label": "Center over the target slot"
+      },
+      {
+        "id": "lower",
+        "label": "Lower until the rack supports the tube"
+      },
+      {
+        "id": "release",
+        "label": "Open and clear the fixed finger"
+      },
+      {
+        "id": "retract",
+        "label": "Withdraw from the rack"
+      },
+      {
+        "id": "park",
+        "label": "Park the working arm"
+      },
+      {
+        "id": "verify",
+        "label": "Check stable placement after release"
+      }
+    ],
+    "elapsed_s": 27.47,
+    "attempts": 0,
+    "metrics": {
+      "gripper_torque_limit_nm": 0.25,
+      "other_arm_max_motion_deg": 0.0004754659493414037,
+      "hold_verified_s": 9.059999999998672,
+      "lift_cm": -1.3010381250122549e-05,
+      "max_lift_cm": 6.89062189826164,
+      "both_fingers": false,
+      "finger_forces_n": [
+        0.0,
+        0.0
+      ],
+      "external_contact_n": 0.83036290510337,
+      "tilt_deg": 0.00046863230252506524,
+      "peak_tilt_deg": 1.232926092007425,
+      "placement_error_mm": 0.8622165730400739,
+      "stable_release_s": 1.0049999999998,
+      "longest_unsupported_gap_s": 0.0,
+      "other_object_max_displacement_m": 4.995921310631226e-06,
+      "parked_arm_max_motion_deg": 0.0004754659493414037
+    },
+    "history": [
+      {
+        "stage": "succeeded",
+        "at_s": 27.47,
+        "message": "Neural policy physically lifted, held, released and placed the bottle."
+      }
+    ],
+    "observation": "three RGB cameras and 12 joint positions/velocities",
+    "attachment": "physical_contacts_only",
+    "object_id": "bottle",
+    "policy_mode": "learned_bottle",
+    "physical_monitor": "privileged simulator state used only for success/failure stops, never action generation",
+    "policy_details": {
+      "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+      "continuous_visual_correction": false,
+      "initial_camera_conditioning": true,
+      "neural_runtime": "OpenVINO",
+      "neural_execution_devices": [
+        "CPU"
+      ],
+      "inference_demonstration_actions": false,
+      "simulator_clock_or_object_pose_input": false,
+      "internal_progress_endpoints": 552,
+      "tracking_guard_wait_calls": 0
+    },
+    "teacher_updates": 0,
+    "inference_median_ms": 4.700949997641146,
+    "timing": "200 Hz physics, 20 Hz action endpoints, 5 Hz neural queries. Synchronous inference can slow wall time; display rendering is independent."
+  },
+  "recording": "20 Hz authoritative physical state for video reconstruction; not a separate rollout",
+  "measurement_note": "Historical run before explicit unexpected-arm-contact counting. The unmeasured counter is omitted. upright-visual-collision-regression.json reports a later 10/10 regression on the same exposed seeds with actual contact checks; it is not a fresh holdout."
+}

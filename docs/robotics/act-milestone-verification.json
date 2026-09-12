@@ -1,0 +1,20 @@
+{
+  "milestone": "ACT training pipeline and first GPU experiment complete; learned task performance unsuccessful",
+  "checkpoint_sha256": "d48b1640c26c9ca79a4fc5ea4c685aa09bd43a963b61a65b4492f4e0be7923a0",
+  "evidence": {
+    "dataset_conversion": "act-dataset-conversion.json",
+    "colab_run": ".run/act-colab-200/metrics.jsonl",
+    "notebook": "notebooks/Talos_ACT_Bottle_Pilot.ipynb",
+    "physical_familiar_starts": "act-local-evaluation-200.json",
+    "offline_prediction": "act-offline-scores-200.json",
+    "cross_machine_resume": ".run/act-colab-resume-local/step-000201",
+    "simulator_tests": ".run/act-simulator-regression.log",
+    "training_tests": ".run/act-tests.log"
+  },
+  "finite_colab_updates": 200,
+  "physical_successes": 0,
+  "physical_trials": 5,
+  "physical_held_out_performance": "Not evaluated; familiar-start prerequisite failed.",
+  "simulator_http_ready_verified": true,
+  "checkpoint_archive_sha256": "8020f35cb49b0248eed464476a09a48b786b0d439f5c311cb908cd6ecadff014"
+}

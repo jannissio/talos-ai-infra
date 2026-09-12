@@ -1,0 +1,300 @@
+{
+  "scope": "Demonstration-fitted retrieval baseline; not neural ACT or a VLA. Five familiar starts; development probes are not held-out evaluation.",
+  "selected_checkpoint": ".run\\retrieval-fit5-v4",
+  "familiar": {
+    "successes": 5,
+    "trials": 5,
+    "results": [
+      {
+        "episode": "upright-01",
+        "success": true,
+        "reason": "verified_lift_hold_release_and_place",
+        "simulated_s": 27.244999999998864,
+        "max_lift_cm": 6.803989416471657,
+        "best_supported_hold_s": 9.030000000000012,
+        "stable_release_s": 1.0000000000000007,
+        "placement_error_m": 0.002172765385642631,
+        "other_object_max_displacement_m": 4.9541351324937e-06,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      },
+      {
+        "episode": "upright-04",
+        "success": true,
+        "reason": "verified_lift_hold_release_and_place",
+        "simulated_s": 27.224999999998868,
+        "max_lift_cm": 6.810972594623188,
+        "best_supported_hold_s": 9.035000000000013,
+        "stable_release_s": 1.0000000000000007,
+        "placement_error_m": 0.0019962321320092145,
+        "other_object_max_displacement_m": 4.9504960235902625e-06,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      },
+      {
+        "episode": "sideways-01",
+        "success": true,
+        "reason": "verified_lift_hold_release_and_place",
+        "simulated_s": 32.64999999999825,
+        "max_lift_cm": 9.327337638278543,
+        "best_supported_hold_s": 8.144999999999873,
+        "stable_release_s": 1.0000000000000007,
+        "placement_error_m": 0.007836033798448612,
+        "other_object_max_displacement_m": 5.9375041132264664e-06,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      },
+      {
+        "episode": "sideways-03",
+        "success": true,
+        "reason": "verified_lift_hold_release_and_place",
+        "simulated_s": 39.795000000001906,
+        "max_lift_cm": 10.817576728694133,
+        "best_supported_hold_s": 18.480000000000608,
+        "stable_release_s": 1.0000000000000007,
+        "placement_error_m": 0.0067120001996648845,
+        "other_object_max_displacement_m": 7.237626838335516e-06,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      },
+      {
+        "episode": "sideways-11",
+        "success": true,
+        "reason": "verified_lift_hold_release_and_place",
+        "simulated_s": 32.559999999998205,
+        "max_lift_cm": 9.308915499980674,
+        "best_supported_hold_s": 14.055000000000797,
+        "stable_release_s": 1.0000000000000007,
+        "placement_error_m": 0.006641910306046016,
+        "other_object_max_displacement_m": 5.921128335504673e-06,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      }
+    ]
+  },
+  "development_probes": {
+    "successes": 4,
+    "trials": 5,
+    "results": [
+      {
+        "episode": "x-plus-2mm",
+        "success": true,
+        "reason": "verified_lift_hold_release_and_place",
+        "simulated_s": 27.049999999998903,
+        "max_lift_cm": 6.776410843721137,
+        "best_supported_hold_s": 9.010000000000009,
+        "stable_release_s": 1.0000000000000007,
+        "placement_error_m": 0.0019027666889350275,
+        "other_object_max_displacement_m": 4.918659696785082e-06,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      },
+      {
+        "episode": "x-minus-2mm",
+        "success": true,
+        "reason": "verified_lift_hold_release_and_place",
+        "simulated_s": 27.354999999998842,
+        "max_lift_cm": 6.752553855642418,
+        "best_supported_hold_s": 8.990000000000006,
+        "stable_release_s": 1.0000000000000007,
+        "placement_error_m": 0.0011531491449113392,
+        "other_object_max_displacement_m": 4.974146987747372e-06,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      },
+      {
+        "episode": "y-plus-2mm",
+        "success": false,
+        "reason": "timeout",
+        "simulated_s": 60.00000000001224,
+        "max_lift_cm": 0.1620040913752563,
+        "best_supported_hold_s": 0.0,
+        "stable_release_s": 0.0,
+        "placement_error_m": 0.08316731022742066,
+        "other_object_max_displacement_m": 1.091531679708561e-05,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      },
+      {
+        "episode": "y-minus-2mm",
+        "success": true,
+        "reason": "verified_lift_hold_release_and_place",
+        "simulated_s": 27.234999999998866,
+        "max_lift_cm": 6.811295049416966,
+        "best_supported_hold_s": 9.035000000000013,
+        "stable_release_s": 1.0000000000000007,
+        "placement_error_m": 0.0023630455626342246,
+        "other_object_max_displacement_m": 4.952315861364714e-06,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      },
+      {
+        "episode": "light-90pct",
+        "success": true,
+        "reason": "verified_lift_hold_release_and_place",
+        "simulated_s": 27.244999999998864,
+        "max_lift_cm": 6.803989416471657,
+        "best_supported_hold_s": 9.030000000000012,
+        "stable_release_s": 1.0000000000000007,
+        "placement_error_m": 0.002172765385642631,
+        "other_object_max_displacement_m": 4.9541351324937e-06,
+        "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+        "longest_unsupported_contact_gap_s": 0.0,
+        "teacher_updates": 0,
+        "state_resets": 1,
+        "rejection_detail": null,
+        "fault_injection": {
+          "actuator_hold_seconds": 0,
+          "hold_begins_at_seconds": 0
+        }
+      }
+    ]
+  },
+  "mid_approach_actuator_pause": {
+    "episode": "upright-01",
+    "success": true,
+    "reason": "verified_lift_hold_release_and_place",
+    "simulated_s": 29.094999999998496,
+    "max_lift_cm": 6.803811975227559,
+    "best_supported_hold_s": 9.030000000000012,
+    "stable_release_s": 1.0000000000000007,
+    "placement_error_m": 0.0021732435784910186,
+    "other_object_max_displacement_m": 5.290705289789278e-06,
+    "parked_arm_max_motion_deg": 0.038819196462592395,
+    "longest_unsupported_contact_gap_s": 0.0,
+    "teacher_updates": 0,
+    "state_resets": 1,
+    "rejection_detail": null,
+    "fault_injection": {
+      "actuator_hold_seconds": 2.0,
+      "hold_begins_at_seconds": 3.0
+    }
+  },
+  "blank_cameras": {
+    "episode": "upright-01",
+    "success": false,
+    "reason": "policy_observation_rejected",
+    "simulated_s": 0.0,
+    "max_lift_cm": 0,
+    "best_supported_hold_s": 0.0,
+    "stable_release_s": 0.0,
+    "placement_error_m": 0.08445045140314299,
+    "other_object_max_displacement_m": 0.0,
+    "parked_arm_max_motion_deg": 0.0,
+    "longest_unsupported_contact_gap_s": 0.0,
+    "teacher_updates": 0,
+    "state_resets": 1,
+    "rejection_detail": "Camera reconstruction error exceeds the fitted visual support.",
+    "fault_injection": {
+      "actuator_hold_seconds": 0,
+      "hold_begins_at_seconds": 0
+    }
+  },
+  "relative_ACT": {
+    "physical": {
+      "episode": "upright-01",
+      "success": false,
+      "reason": "timeout",
+      "simulated_s": 60.00000000001224,
+      "max_lift_cm": 2.1867144428533436e-06,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.08445077566649448,
+      "other_object_max_displacement_m": 1.0915315857935049e-05,
+      "parked_arm_max_motion_deg": 0.6273750558452218,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "teacher_updates": 0,
+      "state_resets": 1,
+      "rejection_detail": null,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      }
+    },
+    "offline_scores": {
+      "first_five_left_arm_mae_rad": 0.003390898128221713,
+      "left_arm_mae_rad": 0.020682709597514774,
+      "left_gripper_mae_rad": 0.027240339000689052,
+      "first_five_current_joint_reference_mae_rad": 0.0077007702967729855
+    },
+    "finite_updates": 1000,
+    "training_elapsed_seconds": 1317.1
+  },
+  "checkpoint_bytes": 1886952,
+  "checkpoint_sha256": {
+    "retrieval.json": "e0019933f80671d6578f8ae340ffb04f3065045d36b3840284814f0884af49df",
+    "retrieval.npz": "f118e242cd0eaf09f0df874b56544d0b570d7e41a0a9d4003e3cf54bcb170c57",
+    "run.json": "9f4c927394dd02c21a7eb5a620b2633cdd9dc9e236e2ee1c7c9ffa3596731c88",
+    "talos_normalization.json": "18070e907ab87dbb47ae7d2692d1de696a06957eadc6f00aa46e3a237fa4a1a8"
+  },
+  "source_sha256": {
+    "simulation_lab\\retrieval_policy.py": "b6a9f84724bdcfca6c1959f39f7c83b7186e397a8e282bfe8a39b829b676cdcb",
+    "scripts\\evaluate_act.py": "2cf9ed8c5765b9975f3f2cdd6cbb3806ce2ad63675514ebc3ed314a56fe507cb",
+    "simulation_lab\\policy_control.py": "cbc3320292096b82f873b0101ab637704a52f59438ee30f35fa54697d73743ff"
+  },
+  "disk_free_gib": 106.48427200317383,
+  "artifacts_note": "Full per-cycle traces and videos remain under .run; no duplicated training images. Earlier failed experiments preserved."
+}

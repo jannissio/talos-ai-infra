@@ -21,6 +21,7 @@
           <button class="camera-button selected" data-camera="center" aria-pressed="true">Between arms</button>
           <button class="camera-button" data-camera="overview" aria-pressed="false">Overview</button>
           <button class="camera-button" data-camera="overhead" aria-pressed="false">Overhead</button>
+          <button class="camera-button" data-camera="opposite" aria-pressed="false">Opposite side</button>
           <button class="camera-button" data-camera="left_wrist_cam" aria-pressed="false">Left wrist</button>
           <button class="camera-button" data-camera="right_wrist_cam" aria-pressed="false">Right wrist</button>
         </div>
@@ -50,12 +51,20 @@
         <p class="viewer-note" id="viewer-note">Physical tableware and a passive drawer. The target example is a reset preset, not an autonomous result.</p>
       </section>
       <aside class="control-panel" aria-label="Experiment controls">
+        <section class="dinner-panel" aria-labelledby="command-heading">
+          <h2 id="command-heading">Tell Talos what to do</h2>
+        <p>Try “place the bottle”, “set the table” or “pass the bottle to the right arm”. The relay uses a shared table area for release and regrasp. Left and right follow the overhead view.</p>
+          <form id="command-form"><label for="command-mode">Controller</label><select id="command-mode"><option value="programmed">Programmed physical skills</option><option value="learned_bottle">Learned upright bottle · OpenVINO</option><option value="learned_bottle_legacy">Original bottle model · sideways practice</option></select><label for="command-text">Instruction</label><textarea id="command-text" rows="3" maxlength="500" placeholder="Place the bottle" required></textarea><button id="send-command" class="primary">Run instruction</button><button id="voice-command" type="button" disabled>Voice setup pending</button></form>
+          <p id="policy-description">The upright model uses overhead bottle localization and motor feedback. The original model uses three initial views and supports familiar sideways practice. Programmed skills use simulator positions.</p>
+          <p id="command-feedback" role="status">Command mode currently uses the physical skill baseline and simulator positions. Unsupported instructions are refused.</p>
+        </section>
         <section class="dinner-panel" id="dinner-panel" aria-labelledby="dinner-heading">
           <div class="goal-heading"><h2 id="dinner-heading">Set the dinner table</h2><span id="dinner-status" class="goal-status">READY</span></div>
-          <p class="goal-intro">Physical baseline: arrange the bottle, plate, mug and cutlery. Coordinated serving is a later milestone.</p>
-          <div class="milestone-note"><strong>Physical skills · exact simulator state</strong><p>Move the bottle, plate and mug, open the drawer, then place the fork and spoon. Each grasp and placement is checked.</p></div>
+          <p class="goal-intro">Arrange the bottle, plate, mug and cutlery. Use an instruction to transfer the bottle between the arms through a shared table area.</p>
+          <div class="milestone-note"><strong id="active-controller-label">Physical skills · exact simulator state</strong><p id="active-controller-description">Move the bottle, plate and mug, open the drawer, then place the fork and spoon. Each grasp and placement is checked.</p></div>
           <label for="dinner-goal" class="block-label">Goal<select id="dinner-goal"><option value="set_table">Run all six skills</option><option value="bottle">Place bottle</option><option value="plate">Place plate</option><option value="mug">Place mug</option><option value="drawer">Open drawer</option><option value="fork">Retrieve and place fork</option><option value="spoon">Retrieve and place spoon</option></select></label>
           <div class="goal-actions"><button id="start-dinner" class="primary" disabled>Start dinner goal</button><button id="cancel-dinner" disabled>Cancel</button></div>
+          <button id="load-sideways">Load sideways bottle practice</button>
           <div class="goal-stage"><strong id="dinner-stage">Ready for a goal</strong><span id="dinner-elapsed">0 s</span></div>
           <progress id="dinner-progress" max="1" value="0" aria-label="Dinner goal progress"></progress>
           <p id="dinner-message" role="status" aria-live="polite">Load Task start, seed 42, for the baseline demonstration.</p>
@@ -65,7 +74,7 @@
           <p class="small-note">The drawer has a physical handle and no motor. The robot pulls it; Open for inspection is only a reset preset.</p>
           <h3 class="inventory-heading">Tableware · live positions</h3><div id="object-inventory" class="object-inventory"></div>
           <details class="target-legend"><summary>Placement guide</summary><p>Blue plate left, gold side plate right. Fork beside the blue plate; spoon across the front. Mug and glass at the round markers. The bottle stays in the serving area.</p></details>
-          <p class="small-note">Small, lightweight rigid props. Vessels are hollow; liquid flow and trained policies are not implemented.</p>
+          <p class="small-note">Small, lightweight rigid props. Vessels are hollow; liquid flow is not simulated. The learned bottle controller is selected in the instruction panel.</p>
         </section>
         <section class="goal-panel" id="chemistry-goals" aria-labelledby="goal-heading" hidden>
           <div class="goal-heading"><h2 id="goal-heading">Robot goals</h2><span id="goal-status" class="goal-status">READY</span></div>
@@ -112,7 +121,7 @@
       </aside>
     </div>
     <div id="notice" class="notice" role="alert" hidden></div>
-    <footer><span>SO-101 × 2 <span class="separator">/</span> Central, overhead &amp; wrist cameras</span><span>Runs on this PC <span class="separator">·</span> No trained policy loaded</span></footer>
+    <footer><span>SO-101 × 2 <span class="separator">/</span> Central, overhead &amp; wrist cameras</span><span id="runtime-mode">Runs on this PC · Manual control</span></footer>
   </main>
 </body>
 </html>

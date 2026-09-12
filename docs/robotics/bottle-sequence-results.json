@@ -1,0 +1,2846 @@
+{
+  "goal_status": "complete",
+  "individual_development_trials": [
+    {
+      "result_file": ".run/bottle-sequence-absolute-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-absolute/step-010000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 0.19829552656863703,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.08442503456568613,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.0915317171469616e-05,
+      "parked_arm_max_motion_deg": 0.19265620251667184,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-context-first-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-context/step-010000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 3.27986121436461,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.1009142663591386,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.091531564431525e-05,
+      "parked_arm_max_motion_deg": 0.019169622264361353,
+      "longest_unsupported_contact_gap_s": 0.035,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1,
+        "tracking_guard_tolerance_rad": null,
+        "tracking_guard_wait_calls": 0
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-feedback-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-absolute-feedback/step-010000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 4.651279025533539,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.09690943427804401,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.091531619146391e-05,
+      "parked_arm_max_motion_deg": 0.22517803763813996,
+      "longest_unsupported_contact_gap_s": 0.015,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-feedback15-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-absolute-feedback/step-015000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 0.3987776907367957,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.08357072327443076,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.0915315506011834e-05,
+      "parked_arm_max_motion_deg": 0.2302220142486551,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-first-stall.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-velocity/step-010000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 6.82236763863564,
+      "best_supported_hold_s": 1.2549999999999952,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.06409458836527673,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.0915317267943076e-05,
+      "parked_arm_max_motion_deg": 0.08869628757210696,
+      "longest_unsupported_contact_gap_s": 0.11500000000000003,
+      "fault_injection": {
+        "actuator_hold_seconds": 2.0,
+        "hold_begins_at_seconds": 3.0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-first-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-first/step-003000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 3.40292032707461,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.05117009604325452,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 0.06437233754017171,
+      "parked_arm_max_motion_deg": 4.889676923793028,
+      "longest_unsupported_contact_gap_s": 0.01,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-guard-replay-long-stall.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-guard-replay",
+      "success": false,
+      "reason": "policy_observation_rejected",
+      "max_lift_cm": 2.186696346218042e-06,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.0844505056817879,
+      "simulated_s": 13.200000000000664,
+      "other_object_max_displacement_m": 2.3993928121065343e-06,
+      "parked_arm_max_motion_deg": 0.039081820116064786,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 20.0,
+        "hold_begins_at_seconds": 3.0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 16,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1,
+        "tracking_guard_tolerance_rad": 0.005,
+        "tracking_guard_replays_last_predicted_chunk": true,
+        "tracking_guard_wait_calls": 51
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-guard-replay-normal.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-guard-replay",
+      "success": true,
+      "reason": "verified_lift_hold_release_and_place",
+      "max_lift_cm": 6.855862761775889,
+      "best_supported_hold_s": 3.5949999999999456,
+      "stable_release_s": 1.0000000000000007,
+      "placement_error_m": 0.0009938153949283007,
+      "simulated_s": 27.404999999998832,
+      "other_object_max_displacement_m": 4.983243569963965e-06,
+      "parked_arm_max_motion_deg": 0.015329599709964942,
+      "longest_unsupported_contact_gap_s": 0.015,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 138,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1,
+        "tracking_guard_tolerance_rad": 0.005,
+        "tracking_guard_replays_last_predicted_chunk": true,
+        "tracking_guard_wait_calls": 0
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-guard-replay-stall.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-guard-replay",
+      "success": true,
+      "reason": "verified_lift_hold_release_and_place",
+      "max_lift_cm": 6.853092732952792,
+      "best_supported_hold_s": 3.5949999999999456,
+      "stable_release_s": 1.0000000000000007,
+      "placement_error_m": 0.0013853907195329701,
+      "simulated_s": 29.204999999998474,
+      "other_object_max_displacement_m": 5.3107180850691646e-06,
+      "parked_arm_max_motion_deg": 0.039081820116064786,
+      "longest_unsupported_contact_gap_s": 0.015,
+      "fault_injection": {
+        "actuator_hold_seconds": 2.0,
+        "hold_begins_at_seconds": 3.0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 137,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1,
+        "tracking_guard_tolerance_rad": 0.005,
+        "tracking_guard_replays_last_predicted_chunk": true,
+        "tracking_guard_wait_calls": 10
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-guard-stall.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-guard",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 6.8587505902871655,
+      "best_supported_hold_s": 1.6599999999999866,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.09388377244155464,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.091531731056659e-05,
+      "parked_arm_max_motion_deg": 0.07384823525779875,
+      "longest_unsupported_contact_gap_s": 0.11500000000000003,
+      "fault_injection": {
+        "actuator_hold_seconds": 2.0,
+        "hold_begins_at_seconds": 3.0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 290,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1,
+        "tracking_guard_tolerance_rad": 0.005,
+        "tracking_guard_wait_calls": 10
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-noise-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-noise/step-010000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 2.0844123516106094e-05,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.08497903649142222,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.0915315600202393e-05,
+      "parked_arm_max_motion_deg": 0.0315497637912287,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-one-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-one/step-015000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 2.1867144428533436e-06,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.08445077566649531,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 0.03800160880447834,
+      "parked_arm_max_motion_deg": 3.3400296308977806,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-demo-normal.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-primitive-tight/step-000600",
+      "success": true,
+      "reason": "verified_lift_hold_release_and_place",
+      "max_lift_cm": 6.840266660755045,
+      "best_supported_hold_s": 9.045000000000014,
+      "stable_release_s": 1.0000000000000007,
+      "placement_error_m": 0.001730163413246311,
+      "simulated_s": 27.204999999998872,
+      "other_object_max_displacement_m": 4.946858097626698e-06,
+      "parked_arm_max_motion_deg": 0.00046703398277187527,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 548,
+        "tracking_guard_wait_calls": 0
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-final-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-primitive/step-040000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 6.884354529817283,
+      "best_supported_hold_s": 1.7049999999999856,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.09119701966299124,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.0915315870377573e-05,
+      "parked_arm_max_motion_deg": 0.0060500170259902425,
+      "longest_unsupported_contact_gap_s": 0.15000000000000005,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 1200,
+        "tracking_guard_wait_calls": 0
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-first-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-primitive/step-010000",
+      "success": false,
+      "reason": "policy_observation_rejected",
+      "max_lift_cm": 6.758149582069828,
+      "best_supported_hold_s": 1.8049999999999835,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.09352145187557569,
+      "simulated_s": 51.20000000000774,
+      "other_object_max_displacement_m": 9.313343830077728e-06,
+      "parked_arm_max_motion_deg": 0.03584920042957595,
+      "longest_unsupported_contact_gap_s": 0.18000000000000008,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 824,
+        "tracking_guard_wait_calls": 51
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-long-stall.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-primitive-tight/step-000600",
+      "success": false,
+      "reason": "policy_observation_rejected",
+      "max_lift_cm": 2.186696346218042e-06,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.0844505056817879,
+      "simulated_s": 13.200000000000664,
+      "other_object_max_displacement_m": 2.3993928121065343e-06,
+      "parked_arm_max_motion_deg": 0.03878035341891236,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 20.0,
+        "hold_begins_at_seconds": 3.0
+      },
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 64,
+        "tracking_guard_wait_calls": 51
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-refine-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-primitive-refine/step-000200",
+      "success": false,
+      "reason": "policy_observation_rejected",
+      "max_lift_cm": 6.885311253810322,
+      "best_supported_hold_s": 7.799999999999856,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.015217831885551052,
+      "simulated_s": 35.199999999999555,
+      "other_object_max_displacement_m": 6.401484894223716e-06,
+      "parked_arm_max_motion_deg": 0.0010559842128232118,
+      "longest_unsupported_contact_gap_s": 0.24000000000000013,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 504,
+        "tracking_guard_wait_calls": 51
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-selected-stall.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-primitive-tight/step-000600",
+      "success": true,
+      "reason": "verified_lift_hold_release_and_place",
+      "max_lift_cm": 6.8401948759290505,
+      "best_supported_hold_s": 9.045000000000014,
+      "stable_release_s": 1.0000000000000007,
+      "placement_error_m": 0.0017285268586985474,
+      "simulated_s": 29.204999999998474,
+      "other_object_max_displacement_m": 5.3107175944323475e-06,
+      "parked_arm_max_motion_deg": 0.03878035341891236,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 2.0,
+        "hold_begins_at_seconds": 3.0
+      },
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 548,
+        "tracking_guard_wait_calls": 10
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-tight-first-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-primitive-tight/step-000200",
+      "success": false,
+      "reason": "policy_observation_rejected",
+      "max_lift_cm": 6.857565257232457,
+      "best_supported_hold_s": 7.789999999999856,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.014262592474582385,
+      "simulated_s": 35.199999999999555,
+      "other_object_max_displacement_m": 6.401484017817072e-06,
+      "parked_arm_max_motion_deg": 0.0006529653209931345,
+      "longest_unsupported_contact_gap_s": 0.24000000000000013,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 504,
+        "tracking_guard_wait_calls": 51
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-tight-middle-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-primitive-tight/step-000600",
+      "success": true,
+      "reason": "verified_lift_hold_release_and_place",
+      "max_lift_cm": 6.840266660755045,
+      "best_supported_hold_s": 9.045000000000014,
+      "stable_release_s": 1.0000000000000007,
+      "placement_error_m": 0.001730163413246311,
+      "simulated_s": 27.204999999998872,
+      "other_object_max_displacement_m": 4.946858097626698e-06,
+      "parked_arm_max_motion_deg": 0.00046703398277187527,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 548,
+        "tracking_guard_wait_calls": 0
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-refine-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-refine/step-010000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 3.2835571676583797,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.10812065469045162,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 0.0008807584068500703,
+      "parked_arm_max_motion_deg": 0.12509096592807478,
+      "longest_unsupported_contact_gap_s": 0.01,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-refine15-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-refine/step-015000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 0.07108733032525905,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.08464063047609163,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.0915315596804811e-05,
+      "parked_arm_max_motion_deg": 0.1546086830515967,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-stutter-final-normal.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-stutter/step-020000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 2.1867144428533436e-06,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.08445077566649555,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.0915315182209943e-05,
+      "parked_arm_max_motion_deg": 0.07584517384673502,
+      "longest_unsupported_contact_gap_s": 0.0,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-stutter-normal.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-stutter/step-010000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 6.879395920623899,
+      "best_supported_hold_s": 0.8050000000000006,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.06986365478697047,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.0915317953113651e-05,
+      "parked_arm_max_motion_deg": 0.10373229448505039,
+      "longest_unsupported_contact_gap_s": 0.10500000000000002,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-velocity-final-normal.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-velocity/step-020000",
+      "success": true,
+      "reason": "verified_lift_hold_release_and_place",
+      "max_lift_cm": 6.846029684483657,
+      "best_supported_hold_s": 3.3999999999999497,
+      "stable_release_s": 1.0000000000000007,
+      "placement_error_m": 0.0010446618710007345,
+      "simulated_s": 27.629999999998788,
+      "other_object_max_displacement_m": 5.02417780648783e-06,
+      "parked_arm_max_motion_deg": 0.01215209206910346,
+      "longest_unsupported_contact_gap_s": 0.025,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 139,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1,
+        "tracking_guard_tolerance_rad": null,
+        "tracking_guard_wait_calls": 0
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-velocity-final-stall.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-velocity/step-020000",
+      "success": false,
+      "reason": "timeout",
+      "max_lift_cm": 4.06958648757737,
+      "best_supported_hold_s": 0.0,
+      "stable_release_s": 0.0,
+      "placement_error_m": 0.07281007755855116,
+      "simulated_s": 60.00000000001224,
+      "other_object_max_displacement_m": 1.0915318482851622e-05,
+      "parked_arm_max_motion_deg": 0.08101973693932626,
+      "longest_unsupported_contact_gap_s": 0.01,
+      "fault_injection": {
+        "actuator_hold_seconds": 2.0,
+        "hold_begins_at_seconds": 3.0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 300,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1,
+        "tracking_guard_tolerance_rad": null,
+        "tracking_guard_wait_calls": 0
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    },
+    {
+      "result_file": ".run/bottle-sequence-velocity-upright.json",
+      "episode": "upright-01",
+      "checkpoint": ".run/bottle-sequence-velocity/step-010000",
+      "success": true,
+      "reason": "verified_lift_hold_release_and_place",
+      "max_lift_cm": 6.855862761775889,
+      "best_supported_hold_s": 3.5949999999999456,
+      "stable_release_s": 1.0000000000000007,
+      "placement_error_m": 0.0009938153949283007,
+      "simulated_s": 27.404999999998832,
+      "other_object_max_displacement_m": 4.983243569963965e-06,
+      "parked_arm_max_motion_deg": 0.015329599709964942,
+      "longest_unsupported_contact_gap_s": 0.015,
+      "fault_injection": {
+        "actuator_hold_seconds": 0,
+        "hold_begins_at_seconds": 0
+      },
+      "policy_details": {
+        "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+        "observation_calls": 138,
+        "inference_demonstration_actions": false,
+        "clock_or_teacher_phase_input": false,
+        "hidden_state_resets": 1
+      },
+      "teacher_updates": 0,
+      "state_resets": 1
+    }
+  ],
+  "suites": [
+    {
+      "result_file": ".run/bottle-sequence-all-final-training/summary.json",
+      "suite": "training",
+      "successes": 0,
+      "trials": 11,
+      "results": [
+        {
+          "episode": "sideways-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 2.8094546658726127,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.25665481294431086,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.091531565089306e-05,
+          "parked_arm_max_motion_deg": 0.011886962911423639,
+          "longest_unsupported_contact_gap_s": 0.04,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-03",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 2.392926422099162,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.07320160888386147,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316685525044e-05,
+          "parked_arm_max_motion_deg": 0.022987989486658155,
+          "longest_unsupported_contact_gap_s": 0.015,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-11",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 1.9317880628477724e-12,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.1613776279777191,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915317678418234e-05,
+          "parked_arm_max_motion_deg": 0.014109254450843869,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 0.6819173015807478,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.0831710960143346,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316587556356e-05,
+          "parked_arm_max_motion_deg": 0.021042095991598866,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-04",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.0482815013967213,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.33061091534105,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 0.08690474791461951,
+          "parked_arm_max_motion_deg": 0.015101886732631615,
+          "longest_unsupported_contact_gap_s": 0.13000000000000003,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yplus2",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.2129269729947896,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.09046812526362291,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315364974984e-05,
+          "parked_arm_max_motion_deg": 0.027155277478086902,
+          "longest_unsupported_contact_gap_s": 0.02,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yplus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 4.046264048381653,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.06031486174909785,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915317953459886e-05,
+          "parked_arm_max_motion_deg": 0.015992520790960148,
+          "longest_unsupported_contact_gap_s": 0.045,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yminus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 2.885737283305312,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.08681831706699795,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.3974003140632948e-05,
+          "parked_arm_max_motion_deg": 0.014118096636113521,
+          "longest_unsupported_contact_gap_s": 0.045,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-xplus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.3421979788249234,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.0536491479100807,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316904794466e-05,
+          "parked_arm_max_motion_deg": 0.024108270168765225,
+          "longest_unsupported_contact_gap_s": 0.005,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-xminus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.1519584685618995,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.11018773072626187,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316261034913e-05,
+          "parked_arm_max_motion_deg": 0.023329636958516448,
+          "longest_unsupported_contact_gap_s": 0.030000000000000002,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "recovery-yplus2",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-025000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.868100937067387,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.10246433466285496,
+          "simulated_s": 59.99999999995111,
+          "other_object_max_displacement_m": 1.0930102682868771e-05,
+          "parked_arm_max_motion_deg": 0.03394993005796131,
+          "longest_unsupported_contact_gap_s": 0.01,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    {
+      "result_file": ".run/bottle-sequence-all-first-original/summary.json",
+      "suite": "original",
+      "successes": 0,
+      "trials": 5,
+      "results": [
+        {
+          "episode": "upright-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-010000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.829685308177555,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.0746325261300607,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315214869299e-05,
+          "parked_arm_max_motion_deg": 0.03674339865938707,
+          "longest_unsupported_contact_gap_s": 0.01,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-04",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-010000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.465363795328924,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.08759888595357784,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315659048774e-05,
+          "parked_arm_max_motion_deg": 0.029209645697283817,
+          "longest_unsupported_contact_gap_s": 0.01,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-010000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 2.683794610142509,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.2370406882392633,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 0.0032810654646030024,
+          "parked_arm_max_motion_deg": 0.03142171388876108,
+          "longest_unsupported_contact_gap_s": 0.015,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-03",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-010000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 2.984279490192421e-11,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.1537762416379598,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315778421772e-05,
+          "parked_arm_max_motion_deg": 0.03490466963844804,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-11",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-all-feedback\\step-010000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 4.019007349143067e-12,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.16137762803863798,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315468365252e-05,
+          "parked_arm_max_motion_deg": 0.03464456238326392,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    {
+      "result_file": ".run/bottle-sequence-context-final-training/summary.json",
+      "suite": "training",
+      "successes": 0,
+      "trials": 11,
+      "results": [
+        {
+          "episode": "sideways-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 4.586489357865487,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.18695622818350316,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316055823468e-05,
+          "parked_arm_max_motion_deg": 0.012737950841002174,
+          "longest_unsupported_contact_gap_s": 0.08,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-03",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 2.5424107263916085e-12,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.1537762416621674,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315460879491e-05,
+          "parked_arm_max_motion_deg": 0.02668131113535498,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-11",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 1.2434497875801753e-12,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.16137762798229657,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316968178832e-05,
+          "parked_arm_max_motion_deg": 0.008441444283603846,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.0512371602251287,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.06542567312197142,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316720862713e-05,
+          "parked_arm_max_motion_deg": 0.0271351257690354,
+          "longest_unsupported_contact_gap_s": 0.030000000000000002,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-04",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 9.090088035108579,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.17975312511120908,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 0.006225837182534891,
+          "parked_arm_max_motion_deg": 0.014392321885542516,
+          "longest_unsupported_contact_gap_s": 0.40500000000000025,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yplus2",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.166192119375466,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.03252606345046948,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316413745168e-05,
+          "parked_arm_max_motion_deg": 0.03691665889091892,
+          "longest_unsupported_contact_gap_s": 0.02,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yplus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.3198880656132745,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.07567897846047006,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316038178298e-05,
+          "parked_arm_max_motion_deg": 0.020357649680503843,
+          "longest_unsupported_contact_gap_s": 0.01,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yminus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 6.099107357802991,
+          "best_supported_hold_s": 0.2150000000000001,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.08396557305193408,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316545495534e-05,
+          "parked_arm_max_motion_deg": 0.020872204806353444,
+          "longest_unsupported_contact_gap_s": 0.12000000000000004,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-xplus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.297674589411148,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.0669782000219627,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315294145311e-05,
+          "parked_arm_max_motion_deg": 0.03191086697124305,
+          "longest_unsupported_contact_gap_s": 0.01,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-xminus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.7360719948383414,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.08830337698565714,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 0.00030353397712567533,
+          "parked_arm_max_motion_deg": 0.02097045343425625,
+          "longest_unsupported_contact_gap_s": 0.025,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "recovery-yplus2",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-030000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 4.595779503175135,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.058918837800875985,
+          "simulated_s": 59.99999999995111,
+          "other_object_max_displacement_m": 1.0930103875319742e-05,
+          "parked_arm_max_motion_deg": 0.040945052045763576,
+          "longest_unsupported_contact_gap_s": 0.01,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    {
+      "result_file": ".run/bottle-sequence-context-middle-original/summary.json",
+      "suite": "original",
+      "successes": 0,
+      "trials": 5,
+      "results": [
+        {
+          "episode": "upright-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-020000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 3.130792309787711,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.08986052573135853,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315180524591e-05,
+          "parked_arm_max_motion_deg": 0.013673588207190088,
+          "longest_unsupported_contact_gap_s": 0.005,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-04",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-020000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 4.491384256463348,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.0735294646774719,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915317135029073e-05,
+          "parked_arm_max_motion_deg": 0.03181478677575978,
+          "longest_unsupported_contact_gap_s": 0.01,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-020000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 4.845916174972653,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.24275594142598164,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315521306436e-05,
+          "parked_arm_max_motion_deg": 0.011901472631427828,
+          "longest_unsupported_contact_gap_s": 0.085,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-03",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-020000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 5.184741524999481e-12,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.15377624166870313,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316073442021e-05,
+          "parked_arm_max_motion_deg": 0.015017547573978243,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-11",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-context\\step-020000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 1.1879386363489175e-12,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.1613776279914705,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915314228509952e-05,
+          "parked_arm_max_motion_deg": 0.014188643284232876,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Two-layer GRU neural action-chunk policy with fitted PCA RGB features",
+            "observation_calls": 300,
+            "inference_demonstration_actions": false,
+            "clock_or_teacher_phase_input": false,
+            "hidden_state_resets": 1,
+            "tracking_guard_tolerance_rad": null,
+            "tracking_guard_replays_last_predicted_chunk": false,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    {
+      "result_file": ".run/bottle-sequence-neural-heldout/summary.json",
+      "suite": "test",
+      "successes": 3,
+      "trials": 6,
+      "results": [
+        {
+          "episode": "seq-test-east",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.8703480406390955,
+          "best_supported_hold_s": 9.060000000000016,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0009528350394914082,
+          "simulated_s": 27.41999999999883,
+          "other_object_max_displacement_m": 4.985972198482643e-06,
+          "parked_arm_max_motion_deg": 0.00045484349601586084,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 552,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-west",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.882051287604874,
+          "best_supported_hold_s": 9.070000000000018,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0009844545648826735,
+          "simulated_s": 27.234999999998866,
+          "other_object_max_displacement_m": 4.952315863833057e-06,
+          "parked_arm_max_motion_deg": 0.0006052354660242111,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 548,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-southeast",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 6.900567017576487,
+          "best_supported_hold_s": 3.4999999999999476,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.09048327036053448,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915314694831688e-05,
+          "parked_arm_max_motion_deg": 0.004647033959619009,
+          "longest_unsupported_contact_gap_s": 0.29000000000000015,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1200,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-southwest",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.847477106862643,
+          "best_supported_hold_s": 9.055000000000016,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0013144357578699683,
+          "simulated_s": 27.244999999998864,
+          "other_object_max_displacement_m": 4.954135128774668e-06,
+          "parked_arm_max_motion_deg": 0.0005442468881980999,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 548,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-sideways-a",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 4.046768318772842,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.1789798192423673,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316154984831e-05,
+          "parked_arm_max_motion_deg": 0.009500701793761229,
+          "longest_unsupported_contact_gap_s": 0.075,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1200,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-sideways-b",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": false,
+          "reason": "policy_observation_rejected",
+          "max_lift_cm": 5.639378573601395,
+          "best_supported_hold_s": 0.16500000000000006,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.0827710939734023,
+          "simulated_s": 41.80000000000293,
+          "other_object_max_displacement_m": 7.602499184854743e-06,
+          "parked_arm_max_motion_deg": 0.002019794999113928,
+          "longest_unsupported_contact_gap_s": 0.10000000000000002,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 612,
+            "tracking_guard_wait_calls": 57
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-development/summary.json",
+      "suite": "development",
+      "successes": 4,
+      "trials": 8,
+      "results": [
+        {
+          "episode": "dev-yplus4",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 6.813067775229287,
+          "best_supported_hold_s": 1.729999999999985,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.08817565198328452,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316146085088e-05,
+          "parked_arm_max_motion_deg": 0.004858732242048178,
+          "longest_unsupported_contact_gap_s": 0.16500000000000006,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1200,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "dev-yminus4",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.860815004509824,
+          "best_supported_hold_s": 9.060000000000016,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.001044240113694893,
+          "simulated_s": 27.249999999998863,
+          "other_object_max_displacement_m": 4.95504475813605e-06,
+          "parked_arm_max_motion_deg": 0.0005516937613301054,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 548,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "dev-diagonal",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": false,
+          "reason": "policy_observation_rejected",
+          "max_lift_cm": 6.917284245588695,
+          "best_supported_hold_s": 7.804999999999856,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.013199944931843382,
+          "simulated_s": 40.400000000002215,
+          "other_object_max_displacement_m": 7.3477240297229975e-06,
+          "parked_arm_max_motion_deg": 0.0006120085096402899,
+          "longest_unsupported_contact_gap_s": 0.2550000000000001,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 504,
+            "tracking_guard_wait_calls": 77
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "dev-light",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": false,
+          "reason": "policy_observation_rejected",
+          "max_lift_cm": 0.4096530358357442,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.08496706682356209,
+          "simulated_s": 39.2000000000016,
+          "other_object_max_displacement_m": 7.129350357748174e-06,
+          "parked_arm_max_motion_deg": 0.007575583075444896,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 584,
+            "tracking_guard_wait_calls": 51
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-ne",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.867800231020005,
+          "best_supported_hold_s": 9.055000000000016,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0009393736126712802,
+          "simulated_s": 27.329999999998847,
+          "other_object_max_displacement_m": 4.969598831557636e-06,
+          "parked_arm_max_motion_deg": 0.00048479011738778956,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 548,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-nw",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.8749789888847275,
+          "best_supported_hold_s": 9.060000000000016,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0009091788033121857,
+          "simulated_s": 27.549999999998803,
+          "other_object_max_displacement_m": 5.009622991125489e-06,
+          "parked_arm_max_motion_deg": 0.0005282110720675956,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 548,
+            "tracking_guard_wait_calls": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-se",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 6.813999347881284,
+          "best_supported_hold_s": 3.6499999999999444,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.08946410118088033,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315648235653e-05,
+          "parked_arm_max_motion_deg": 0.004691411484102122,
+          "longest_unsupported_contact_gap_s": 0.2600000000000001,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1200,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "test-sw",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.84963608060698,
+          "best_supported_hold_s": 9.050000000000015,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.001191675681700896,
+          "simulated_s": 27.36499999999884,
+          "other_object_max_displacement_m": 4.975966252077403e-06,
+          "parked_arm_max_motion_deg": 0.0005492337028276881,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 548,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-middle-original/summary.json",
+      "suite": "original",
+      "successes": 0,
+      "trials": 5,
+      "results": [
+        {
+          "episode": "upright-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive\\step-020000",
+          "success": false,
+          "reason": "policy_observation_rejected",
+          "max_lift_cm": 6.779281758694545,
+          "best_supported_hold_s": 1.7499999999999847,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.08864287534001582,
+          "simulated_s": 52.400000000008355,
+          "other_object_max_displacement_m": 9.53177580614168e-06,
+          "parked_arm_max_motion_deg": 0.028038428587773303,
+          "longest_unsupported_contact_gap_s": 0.10500000000000002,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 848,
+            "tracking_guard_wait_calls": 51
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-04",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive\\step-020000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 6.877809841110172,
+          "best_supported_hold_s": 1.7699999999999843,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.07987197969936927,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915316254522827e-05,
+          "parked_arm_max_motion_deg": 0.027830092496161817,
+          "longest_unsupported_contact_gap_s": 0.11000000000000003,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1180,
+            "tracking_guard_wait_calls": 5
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive\\step-020000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 5.502516928752144,
+          "best_supported_hold_s": 1.2599999999999951,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.20079454866882124,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315596804811e-05,
+          "parked_arm_max_motion_deg": 0.02431397363726227,
+          "longest_unsupported_contact_gap_s": 0.09500000000000001,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1200,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-03",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive\\step-020000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 5.407945026602268,
+          "best_supported_hold_s": 1.2849999999999946,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.15690189021707646,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315596804811e-05,
+          "parked_arm_max_motion_deg": 0.005048798724063779,
+          "longest_unsupported_contact_gap_s": 0.09500000000000001,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1200,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-11",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive\\step-020000",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 4.128898933517744,
+          "best_supported_hold_s": 0.0,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.16258071949703826,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315596804811e-05,
+          "parked_arm_max_motion_deg": 0.026737212934220392,
+          "longest_unsupported_contact_gap_s": 0.075,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1200,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    {
+      "result_file": ".run/bottle-sequence-primitive-selected-training/summary.json",
+      "suite": "training",
+      "successes": 9,
+      "trials": 11,
+      "results": [
+        {
+          "episode": "sideways-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 9.338957473324927,
+          "best_supported_hold_s": 8.114999999999869,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0002401530153119553,
+          "simulated_s": 32.21999999999803,
+          "other_object_max_displacement_m": 5.859266814123846e-06,
+          "parked_arm_max_motion_deg": 0.0011115061913561466,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 648,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-03",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 10.823369343984501,
+          "best_supported_hold_s": 18.460000000000612,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.006614543729532427,
+          "simulated_s": 39.830000000001924,
+          "other_object_max_displacement_m": 7.243995680697942e-06,
+          "parked_arm_max_motion_deg": 0.001384813308786659,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 800,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "sideways-11",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 9.306348338014747,
+          "best_supported_hold_s": 14.055000000000797,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.006710033942690579,
+          "simulated_s": 32.599999999998225,
+          "other_object_max_displacement_m": 5.9284060703904035e-06,
+          "parked_arm_max_motion_deg": 0.0012441123282174666,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 652,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-01",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.840266660755045,
+          "best_supported_hold_s": 9.045000000000014,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.001730163413246311,
+          "simulated_s": 27.204999999998872,
+          "other_object_max_displacement_m": 4.946858097626698e-06,
+          "parked_arm_max_motion_deg": 0.00046703398277187527,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 548,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "upright-04",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.857037907523278,
+          "best_supported_hold_s": 9.055000000000016,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0018571151258962575,
+          "simulated_s": 27.204999999998872,
+          "other_object_max_displacement_m": 4.946858097626698e-06,
+          "parked_arm_max_motion_deg": 0.0005167764023391425,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 548,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yplus2",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.896217725705512,
+          "best_supported_hold_s": 9.070000000000018,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0008434562824456552,
+          "simulated_s": 27.534999999998806,
+          "other_object_max_displacement_m": 5.006893468689075e-06,
+          "parked_arm_max_motion_deg": 0.0005336799896607182,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 548,
+            "tracking_guard_wait_calls": 1
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yplus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 6.919381366181943,
+          "best_supported_hold_s": 3.479999999999948,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.09952723040004131,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315881036546e-05,
+          "parked_arm_max_motion_deg": 0.004956799525963123,
+          "longest_unsupported_contact_gap_s": 0.28000000000000014,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1200,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-yminus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": false,
+          "reason": "timeout",
+          "max_lift_cm": 6.900576657893376,
+          "best_supported_hold_s": 3.5049999999999475,
+          "stable_release_s": 0.0,
+          "placement_error_m": 0.09255790036609007,
+          "simulated_s": 60.00000000001224,
+          "other_object_max_displacement_m": 1.0915315553776165e-05,
+          "parked_arm_max_motion_deg": 0.004561100675191908,
+          "longest_unsupported_contact_gap_s": 0.28000000000000014,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 1200,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-xplus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.894196679217868,
+          "best_supported_hold_s": 9.070000000000018,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0007835119906830387,
+          "simulated_s": 27.51499999999881,
+          "other_object_max_displacement_m": 5.003255244113462e-06,
+          "parked_arm_max_motion_deg": 0.00045499503145085416,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 552,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "train-xminus6",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.89680730906308,
+          "best_supported_hold_s": 9.075000000000019,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0008281892081080419,
+          "simulated_s": 27.40999999999883,
+          "other_object_max_displacement_m": 4.984152928683822e-06,
+          "parked_arm_max_motion_deg": 0.0006580535903299515,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 552,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "recovery-yplus2",
+          "checkpoint": "PROJECT_ROOT\\.run\\bottle-sequence-primitive-tight\\step-000600",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.851442535859387,
+          "best_supported_hold_s": 7.809999999999856,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0016280348012173988,
+          "simulated_s": 37.254999999971794,
+          "other_object_max_displacement_m": 6.78459452340601e-06,
+          "parked_arm_max_motion_deg": 0.03733878252030906,
+          "longest_unsupported_contact_gap_s": 0.10500000000000002,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+            "continuous_visual_correction": false,
+            "initial_camera_conditioning": true,
+            "inference_demonstration_actions": false,
+            "simulator_clock_or_object_pose_input": false,
+            "internal_progress_endpoints": 748,
+            "tracking_guard_wait_calls": 0
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    },
+    {
+      "result_file": ".run/bottle-sequence-retrieval-heldout/summary.json",
+      "suite": "test",
+      "successes": 6,
+      "trials": 6,
+      "results": [
+        {
+          "episode": "seq-test-east",
+          "checkpoint": "PROJECT_ROOT\\.run\\retrieval-fit5-v4",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.538096867469834,
+          "best_supported_hold_s": 8.819999999999979,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0013044071893905601,
+          "simulated_s": 27.289999999998855,
+          "other_object_max_displacement_m": 4.962321787448057e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "PCA visual/proprioceptive retrieval with temporal tie-breaking",
+            "progress_weight": 0.01,
+            "mixture": [
+              {
+                "demonstration": "upright-04",
+                "weight": 1.0
+              }
+            ],
+            "selected_demonstration": "upright-04",
+            "not_ACT": true
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-west",
+          "checkpoint": "PROJECT_ROOT\\.run\\retrieval-fit5-v4",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.655846235519725,
+          "best_supported_hold_s": 8.914999999999994,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0013580212985306564,
+          "simulated_s": 29.699999999998376,
+          "other_object_max_displacement_m": 5.4007756965116045e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "PCA visual/proprioceptive retrieval with temporal tie-breaking",
+            "progress_weight": 0.01,
+            "mixture": [
+              {
+                "demonstration": "upright-01",
+                "weight": 1.0
+              }
+            ],
+            "selected_demonstration": "upright-01",
+            "not_ACT": true
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-southeast",
+          "checkpoint": "PROJECT_ROOT\\.run\\retrieval-fit5-v4",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.745449275579207,
+          "best_supported_hold_s": 8.980000000000004,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0011832319862535772,
+          "simulated_s": 27.26999999999886,
+          "other_object_max_displacement_m": 4.9586832763586324e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "PCA visual/proprioceptive retrieval with temporal tie-breaking",
+            "progress_weight": 0.01,
+            "mixture": [
+              {
+                "demonstration": "upright-01",
+                "weight": 1.0
+              }
+            ],
+            "selected_demonstration": "upright-01",
+            "not_ACT": true
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-southwest",
+          "checkpoint": "PROJECT_ROOT\\.run\\retrieval-fit5-v4",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 6.655737365952453,
+          "best_supported_hold_s": 8.914999999999994,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.0013603195065995126,
+          "simulated_s": 27.104999999998892,
+          "other_object_max_displacement_m": 4.9286657178114575e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "PCA visual/proprioceptive retrieval with temporal tie-breaking",
+            "progress_weight": 0.01,
+            "mixture": [
+              {
+                "demonstration": "upright-01",
+                "weight": 1.0
+              }
+            ],
+            "selected_demonstration": "upright-01",
+            "not_ACT": true
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-sideways-a",
+          "checkpoint": "PROJECT_ROOT\\.run\\retrieval-fit5-v4",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 9.324472466519895,
+          "best_supported_hold_s": 8.144999999999873,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.007822332640902187,
+          "simulated_s": 32.5499999999982,
+          "other_object_max_displacement_m": 5.9193090204773585e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "PCA visual/proprioceptive retrieval with temporal tie-breaking",
+            "progress_weight": 0.01,
+            "mixture": [
+              {
+                "demonstration": "sideways-01",
+                "weight": 1.0
+              }
+            ],
+            "selected_demonstration": "sideways-01",
+            "not_ACT": true
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        },
+        {
+          "episode": "seq-test-sideways-b",
+          "checkpoint": "PROJECT_ROOT\\.run\\retrieval-fit5-v4",
+          "success": true,
+          "reason": "verified_lift_hold_release_and_place",
+          "max_lift_cm": 9.274159078841993,
+          "best_supported_hold_s": 8.104999999999867,
+          "stable_release_s": 1.0000000000000007,
+          "placement_error_m": 0.00028360657317369746,
+          "simulated_s": 32.5549999999982,
+          "other_object_max_displacement_m": 5.92021908552082e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "longest_unsupported_contact_gap_s": 0.0,
+          "fault_injection": {
+            "actuator_hold_seconds": 0,
+            "hold_begins_at_seconds": 0
+          },
+          "policy_details": {
+            "kind": "PCA visual/proprioceptive retrieval with temporal tie-breaking",
+            "progress_weight": 0.01,
+            "mixture": [
+              {
+                "demonstration": "sideways-01",
+                "weight": 1.0
+              }
+            ],
+            "selected_demonstration": "sideways-01",
+            "not_ACT": true
+          },
+          "teacher_updates": 0,
+          "state_resets": 1
+        }
+      ]
+    }
+  ],
+  "sequence_artifacts_bytes": 73951332,
+  "budget_bytes": 2147483648,
+  "free_bytes": 108969435136,
+  "reserve_bytes": 10737418240,
+  "images_copied_for_training": 0,
+  "interpretation": "Physical evaluator unchanged. Neural familiar success and programmed tracking recovery do not prove arbitrary-position generalization."
+}
