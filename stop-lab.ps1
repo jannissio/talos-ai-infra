@@ -5,8 +5,9 @@ if (-not (Test-Path -LiteralPath $taskPidPath)) { Write-Output 'No recorded Benc
 $taskRecord = Get-Content -LiteralPath $taskPidPath | ConvertFrom-Json
 $taskProcess = Get-CimInstance Win32_Process -Filter "ProcessId = $($taskRecord.pid)" -ErrorAction SilentlyContinue
 if ($taskProcess) {
-    $taskExpectedPython = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot '.venv\Scripts\python.exe'))
-    if ($taskProcess.ExecutablePath -ne $taskExpectedPython -or $taskProcess.CommandLine -notmatch '-m simulation_lab\.server') {
+    $taskAllowedPython = @('.venv\Scripts\python.exe', '.venv-training\Scripts\python.exe') | ForEach-Object { [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot $_)) }
+    $taskExpectedPython = [System.IO.Path]::GetFullPath($taskRecord.python)
+    if ($taskExpectedPython -notin $taskAllowedPython -or $taskProcess.ExecutablePath -ne $taskExpectedPython -or $taskProcess.CommandLine -notmatch '-m simulation_lab\.server' -or $taskProcess.CommandLine -notmatch "--port $Port(\s|$)") {
         throw 'The recorded process does not match this workspace simulator. Nothing was stopped.'
     }
     # Windows virtual environments can use a launcher that owns a CPython child.

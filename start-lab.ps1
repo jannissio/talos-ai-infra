@@ -1,7 +1,8 @@
-param([switch]$NoBrowser, [int]$Port = 8765)
+param([switch]$NoBrowser, [switch]$Learned, [int]$Port = 8765)
 $ErrorActionPreference = 'Stop'
 $taskRoot = $PSScriptRoot
 $taskPython = Join-Path $taskRoot '.venv\Scripts\python.exe'
+if ($Learned) { $taskPython = Join-Path $taskRoot '.venv-training\Scripts\python.exe' }
 $taskRunDir = Join-Path $taskRoot '.run'
 $taskUrl = "http://127.0.0.1:$Port"
 if (-not (Test-Path -LiteralPath $taskPython)) {
@@ -11,14 +12,27 @@ New-Item -ItemType Directory -Path $taskRunDir -Force | Out-Null
 $taskAlreadyRunning = $false
 try {
     $taskState = Invoke-RestMethod -Uri "$taskUrl/api/state" -TimeoutSec 2
-    $taskAlreadyRunning = $taskState.ready -and $taskState.controller -in @('manual_joint_targets', 'ground_truth_ik')
+    $taskAlreadyRunning = $taskState.ready -and $taskState.controller -in @('manual_joint_targets', 'ground_truth_ik', 'learned_bottle')
 } catch { }
+if ($taskAlreadyRunning -and $Learned) {
+    $taskExistingPath = Join-Path $taskRunDir "server-$Port.json"
+    $taskExistingLearned = $false
+    if (Test-Path -LiteralPath $taskExistingPath) {
+        $taskExistingRecord = Get-Content -LiteralPath $taskExistingPath | ConvertFrom-Json
+        $taskExistingLearned = $taskExistingRecord.learned -eq $true
+    }
+    if (-not $taskExistingLearned) {
+        throw "A simulator already uses port $Port. Stop it first or choose another port to start the learned runtime."
+    }
+}
 if (-not $taskAlreadyRunning) {
     if (Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue) {
         throw "Port $Port is already used by another application. Run this script with -Port followed by another port."
     }
-    $taskProcess = Start-Process -FilePath $taskPython -ArgumentList @('-m', 'simulation_lab.server', '--port', $Port) -WorkingDirectory $taskRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $taskRunDir "server-$Port.stdout.log") -RedirectStandardError (Join-Path $taskRunDir "server-$Port.stderr.log") -PassThru
-    @{pid=$taskProcess.Id; port=$Port; python=$taskPython; started_at=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $taskRunDir "server-$Port.json")
+    $taskArguments = @('-m', 'simulation_lab.server', '--port', $Port)
+    if ($Learned) { $taskArguments += '--learned' }
+    $taskProcess = Start-Process -FilePath $taskPython -ArgumentList $taskArguments -WorkingDirectory $taskRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $taskRunDir "server-$Port.stdout.log") -RedirectStandardError (Join-Path $taskRunDir "server-$Port.stderr.log") -PassThru
+    @{pid=$taskProcess.Id; port=$Port; python=$taskPython; learned=[bool]$Learned; started_at=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $taskRunDir "server-$Port.json")
     $taskReady = $false
     for ($taskAttempt = 0; $taskAttempt -lt 80; $taskAttempt++) {
         Start-Sleep -Milliseconds 250

@@ -16,7 +16,8 @@ def build():
            'upright-visual-network-benchmark.json':read('visual-bottle-openvino-clean/benchmark.json'),
            'upright-visual-blank.json':read('visual-blank-check.json'),
            'upright-visual-cancel.json':read('visual-cancel-check.json'),
-           'upright-visual-collision-regression.json':read('visual-collision-regression/summary.json')}
+           'upright-visual-collision-regression.json':read('visual-collision-regression/summary.json'),
+           'final-live-check.json':read('final-api-check.json')}
     # These historical learned runs predate the actual collision monitor.
     # Its old, initialized counter was not a measurement; preserve no false zero.
     def strip_unmeasured(value):

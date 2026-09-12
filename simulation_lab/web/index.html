@@ -56,7 +56,7 @@
         <p>Try “place the bottle”, “set the table” or “pass the bottle to the right arm”. The relay uses a shared table area for release and regrasp. Left and right follow the overhead view.</p>
           <form id="command-form"><label for="command-mode">Controller</label><select id="command-mode"><option value="programmed">Programmed physical skills</option><option value="learned_bottle">Learned upright bottle · OpenVINO</option><option value="learned_bottle_legacy">Original bottle model · sideways practice</option></select><label for="command-text">Instruction</label><textarea id="command-text" rows="3" maxlength="500" placeholder="Place the bottle" required></textarea><button id="send-command" class="primary">Run instruction</button><button id="voice-command" type="button" disabled>Voice setup pending</button></form>
           <p id="policy-description">The upright model uses overhead bottle localization and motor feedback. The original model uses three initial views and supports familiar sideways practice. Programmed skills use simulator positions.</p>
-          <p id="command-feedback" role="status">Command mode currently uses the physical skill baseline and simulator positions. Unsupported instructions are refused.</p>
+          <p id="command-feedback" role="status">Choose the controller for your next instruction. Programmed mode supports all six skills and the bottle relay; learned modes support bottle placement.</p>
         </section>
         <section class="dinner-panel" id="dinner-panel" aria-labelledby="dinner-heading">
           <div class="goal-heading"><h2 id="dinner-heading">Set the dinner table</h2><span id="dinner-status" class="goal-status">READY</span></div>

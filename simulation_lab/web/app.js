@@ -1,5 +1,13 @@
 const $ = (id) => document.getElementById(id);
 import {initSpeech} from './speech.js';
+$('command-mode').addEventListener('change',()=>{
+  const mode=$('command-mode').value;
+  $('command-feedback').textContent=mode==='programmed'
+    ? 'Programmed mode: set the table, place individual items, or pass the bottle to the right arm.'
+    : mode==='learned_bottle'
+      ? 'Learned upright mode: reset to Task start, then say or type “place the bottle”. Other objects and custom destinations are not supported.'
+      : 'Original learned model: use familiar sideways bottle practice, then say or type “place the bottle”. Wider placements can fail.';
+});
 initSpeech({button:$('voice-command'),feedback:$('command-feedback'),onTranscript:async text=>{
   $('command-text').value=text;
   // Only a final transcript is executed, never a changing partial hypothesis.

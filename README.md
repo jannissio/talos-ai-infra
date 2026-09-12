@@ -28,6 +28,8 @@ py -3.12 -m venv .venv-training
 
 Select **Learned upright bottle · OpenVINO**, reset to seed 42, and enter `place the bottle`. The [upright model](models/bottle_visual/README.md) uses overhead RGB localization and motor feedback. The original model remains available for familiar sideways practice. Stop a foreground server with Ctrl+C.
 
+After installation, Windows users can instead run `.\start-lab.ps1 -Learned` to launch the complete runtime in the background and open the browser. Stop it with `.\stop-lab.ps1`. Both scripts accept `-Port` when the default port is occupied.
+
 ## Voice
 
 Create a local `.env` containing `SPEECHMATICS_API_KEY=your-key`. Spaces around `=` and matching quotes are supported. The file is ignored by Git. The long-lived key stays on the server; the browser receives a temporary token. Press **Speak instruction**, speak English, then finish recording. Audio is sent to Speechmatics only during recording, for at most 20 seconds. Typed commands remain available.
@@ -45,6 +47,6 @@ No objects are welded to grippers or teleported during control. The learned cont
 
 See the [upright policy experiment](docs/robotics/VISUAL_BOTTLE_POLICY.md), [relay evidence](docs/robotics/TABLE_RELAY.md), [simulator controls](simulation_lab/README.md), and [storage safeguards](docs/robotics/STORAGE_POLICY.md). A [271 KB frozen training input](training/bottle_visual/README.md) supports local GPU retraining.
 
-The [submission folder](submission/PROJECT.md) contains the presentation, cover, [HD demonstration](submission/Talos-demo.mp4), [all ten seed recordings](submission/Talos-ten-seeds.mp4) and measured evidence. The interactive simulator runs locally; no public hosted simulation is claimed.
+The [submission folder](submission/PROJECT.md) contains the presentation, cover, [HD demonstration](submission/Talos-demo.mp4), [all ten seed recordings](submission/Talos-ten-seeds.mp4) and measured evidence. See [verification and reproduction](docs/robotics/SUBMISSION_VERIFICATION.md). The interactive simulator runs locally; no public hosted simulation is claimed.
 
 Project code, model weights and original dinner assets use [MIT](LICENSE). SO-101 assets retain their [Apache-2.0 attribution](simulation_lab/NOTICE.md). See [development and AI-assistance provenance](docs/PROVENANCE.md).

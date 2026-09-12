@@ -26,6 +26,8 @@ From the project folder in PowerShell:
 
 This starts a hidden local server and opens your default browser. It reuses an already running instance. Use `-NoBrowser` to start without opening another tab. Use `-Port 8766` if the default port is occupied.
 
+Use `.\start-lab.ps1 -Learned` after installing the separate training/OpenVINO environment to enable the neural bottle modes. The same stop script handles either environment. A running programmed-only server must be stopped before reusing its port for the learned runtime.
+
 Stop the server:
 
 ```powershell
