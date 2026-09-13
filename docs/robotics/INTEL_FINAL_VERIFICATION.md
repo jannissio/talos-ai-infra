@@ -8,6 +8,24 @@ The user confirmed enrollment and access to the laptop, but cannot access an Int
 
 Use the final `codex/final-submission` revision and the existing clean Python 3.12 `.venv-training` environment. Install the pinned `requirements-training.txt` and `requirements-openvino.txt` only if missing; preserve the 10 GiB reserve and check available disk first. CUDA is unnecessary for this inference verification. Keep `.env` local; this procedure does not require a Speechmatics key or microphone.
 
+To preserve the laptop's existing checkout and uncommitted work, run the following from its original Talos repository. This creates a separate checkout of the current private branch and reuses the existing Python environment. The dated sibling directory must not already exist. The disk check allows 1 GiB for checkout/verification writes in addition to the 10 GiB reserve; do not delete old data if it refuses.
+
+```powershell
+$talosBase = (Get-Location).Path
+$talosPython = Join-Path $talosBase ".venv-training\Scripts\python.exe"
+$talosReview = Join-Path (Split-Path $talosBase -Parent) "Talos-final-20260914"
+& $talosPython -c "import sys; from pathlib import Path; from simulation_lab.storage import require_space; require_space(Path(sys.argv[1]), 1024**3)" $talosReview
+if ($LASTEXITCODE -ne 0) { throw "Disk/environment preflight failed." }
+if (Test-Path -LiteralPath $talosReview) { throw "Use a new review directory; preserve the existing one." }
+git fetch origin codex/final-submission
+if ($LASTEXITCODE -ne 0) { throw "Private branch fetch failed." }
+git worktree add --detach $talosReview origin/codex/final-submission
+if ($LASTEXITCODE -ne 0) { throw "Isolated checkout creation failed." }
+& (Join-Path $talosReview "verify-final-on-intel.ps1") -Python $talosPython -Output ".run/intel-final-laptop-cpu"
+```
+
+The final command deliberately reports a failed strict hardware check on the historical i7 laptop even if physical execution passes. Retain `verification.json`, `hardware.json`, `physical.json` and the model benchmark files under the new checkout's `.run/intel-final-laptop-cpu`. The script does not upload them. The old checkout and its environment remain available. If this machine already has the final private branch checked out safely, the shorter commands below are sufficient.
+
 Run the hardware inspection first, choosing a fresh evidence folder:
 
 ```powershell
