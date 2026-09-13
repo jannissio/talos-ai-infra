@@ -16,24 +16,24 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import mujoco
 import numpy as np
 from simulation_lab.dinner_autonomy import DinnerTask
+from simulation_lab.autonomy import ArmIK, PlanningError
 from simulation_lab.dinner_monitor import DinnerPhysicalMonitor
+from simulation_lab.experiment_targets import with_bottle_destination
+from simulation_lab.experiment_push import apply_disclosed_bottle_push
 from simulation_lab.policy_control import apply_targets
 from simulation_lab.scene import build_scene, HOME
 from simulation_lab.storage import require_space
 from scripts.prepare_bottle_data import STATE, state
 
 
-def collect(seed, protocol, folder):
+def collect(seed, protocol, folder, push=None):
     require_space(folder, 32*1024**2); folder.mkdir()
     rng = np.random.default_rng(seed)
     bounds = protocol['workspace_m']
     x, y, yaw = rng.uniform(*bounds['x']), rng.uniform(*bounds['y']), rng.uniform(-.6, .6)
     destination = protocol['destinations_m'][seed % 3]
     xml, layout = build_scene(seed=seed, scenario='dinner', dinner_preset='task')
-    layout = deepcopy(layout)
-    for target in layout['targets']:
-        if target['object_id'] == 'bottle':
-            target['position_m'] = [*destination, layout['table_z']]
+    layout = with_bottle_destination(layout, destination)
     model = mujoco.MjModel.from_xml_string(xml); data = mujoco.MjData(model)
     data.qpos[:12] = HOME*2; data.ctrl[:] = HOME*2
     address = int(model.joint('bottle_free').qposadr[0])
@@ -51,15 +51,36 @@ def collect(seed, protocol, folder):
     (folder/'scene.xml').write_text(ET.tostring(scene, encoding='unicode'))
     report = {'seed': seed, 'split': 'training', 'initial_pose': [x, y, yaw], 'destination_m': destination,
               'layout': layout, 'initial_overlap_m': float(overlap), 'training_eligible': False,
-              'recovery_demonstration': False, 'controller': 'exact-state training teacher only',
+              'recovery_demonstration': push is not None, 'disclosed_push': push, 'recovery_replanned': False,
+              'controller': 'exact-state training teacher only',
               'state_writes_during_control': 0, 'hidden_forces': 0, 'replay': None}
     if overlap > .001 or data.body('bottle').xmat[8] < .98:
         report.update(status='invalid_start', message='Initial overlap or tipped bottle; preserve and refuse this start.')
     else:
-        task = DinnerTask(model, data, layout); task.start(side='auto', object_id='bottle')
+        chosen_side = 'auto'
+        if push:
+            grasp = data.body('bottle').xpos+data.body('bottle').xmat.reshape(3, 3)@np.array([0., 0., .128])
+            for side in ('left', 'right'):
+                solver = ArmIK(model, data, side)
+                try:
+                    for point in (grasp, grasp+[0., 0., .070], np.r_[destination, layout['table_z']+.198],
+                                  np.r_[destination, layout['table_z']+.1275]):
+                        solver.solve(point, np.asarray(HOME[:5]))
+                    chosen_side = side; break
+                except PlanningError:
+                    continue
+        task = DinnerTask(model, data, layout); task.start(side=chosen_side, object_id='bottle')
         targets = np.array(HOME*2); actions, stages = [], []
         trace = {k: [] for k in ['qpos', 'qvel', 'time', 'stage']}
         for tick in range(20000):
+            if push and data.time >= 2.3 and task.active and task.stage == 'approach' and not report['recovery_replanned']:
+                try:
+                    task.grasp = data.site(task.tube['grasp_site']).xpos.copy()
+                    task.hover = task.grasp+[0., 0., .055]
+                    task._move_point('approach', task.hover, task.open_grip, 2.)
+                    report['recovery_replanned'] = True
+                except PlanningError as exc:
+                    task._finish('failed', 'Recovery replanning failed: '+str(exc), True)
             q, v = data.qpos.copy(), data.qvel.copy(); task.update(targets)
             assert np.array_equal(q, data.qpos) and np.array_equal(v, data.qvel)
             if task.side:
@@ -73,8 +94,11 @@ def collect(seed, protocol, folder):
                 break
             actions.append(targets.copy()); stages.append(task.stage)
             data.ctrl[:] = apply_targets(model, data, targets, .25, 0 if task.side != 'right' else 6)
+            apply_disclosed_bottle_push(model, data, push)
             mujoco.mj_step(model, data)
-            assert model.neq == 0 and not np.any(data.xfrc_applied) and not np.any(data.qfrc_applied)
+            assert model.neq == 0 and not np.any(data.qfrc_applied)
+            if not push:
+                assert not np.any(data.xfrc_applied)
         if task.active:
             task.cancel(targets)
         report.update(status=task.status, message=task.message, arm=task.side, outcome=task.snapshot())
@@ -88,6 +112,8 @@ def collect(seed, protocol, folder):
             if task.status == 'succeeded':
                 replay = mujoco.MjData(model); mujoco.mj_setState(model, replay, initial, STATE); mujoco.mj_forward(model, replay)
                 monitor = DinnerPhysicalMonitor(model, replay, layout, 'bottle', task.side)
+                if not np.allclose(monitor.destination[:2], destination, atol=1e-12):
+                    raise ValueError('Physical monitor did not receive the declared destination.')
                 replay_trace = {k: [] for k in ['qpos', 'qvel', 'time', 'stage']}
                 for tick in range(int(indices[-1])+301):
                     failure = monitor.update()
@@ -98,6 +124,7 @@ def collect(seed, protocol, folder):
                         break
                     target = np.asarray([np.interp(tick, indices, endpoints[:, j]) for j in range(12)])
                     replay.ctrl[:] = apply_targets(model, replay, target, .25, 0 if task.side == 'left' else 6)
+                    apply_disclosed_bottle_push(model, replay, push)
                     mujoco.mj_step(model, replay)
                 monitor.update(); report['replay'] = monitor.report()
                 report['training_eligible'] = report['replay']['passed']
@@ -113,13 +140,23 @@ def run(args):
     if not 1 <= args.count <= 24:
         raise ValueError('At most the first 24 nominal seeds; reserve the final eight for recovery data.')
     protocol = json.loads(args.protocol.read_text())
+    first = args.start_seed or protocol['training_seed_range'][0]
+    if first < protocol['training_seed_range'][0] or first+args.count-1 > protocol['training_seed_range'][1]:
+        raise ValueError('Requested collection lies outside the declared training seeds.')
+    if args.push and (first < 2026095125 or args.count > 8):
+        raise ValueError('Recovery collection is limited to the final eight reserved training seeds.')
+    if not args.push and first+args.count > 2026095125:
+        raise ValueError('The final eight training seeds are reserved for recovery demonstrations.')
+    push = json.loads(args.push.read_text()) if args.push else None
     require_space(args.output, args.count*32*1024**2); args.output.mkdir(parents=True)
     rows = []
-    for seed in range(protocol['training_seed_range'][0], protocol['training_seed_range'][0]+args.count):
-        rows.append(collect(seed, protocol, args.output/f'seed-{seed}'))
+    for seed in range(first, first+args.count):
+        rows.append(collect(seed, protocol, args.output/f'seed-{seed}', push))
         result = {'protocol': args.protocol.as_posix(), 'nominal_seeds_planned': args.count, 'recovery_seeds_reserved': [2026095125, 2026095132],
                   'attempts': len(rows), 'eligible': sum(r['training_eligible'] for r in rows), 'rows': rows,
                   'scope': 'Training teacher and replay results only; not learned execution or a robustness benchmark.'}
+        result.update(first_seed=first, recovery_collection=push is not None,
+                      push_protocol=args.push.as_posix() if args.push else None)
         (args.output/'summary.json').write_text(json.dumps(result, indent=2)+'\n')
         print(json.dumps(rows[-1]), flush=True)
 
@@ -128,5 +165,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--protocol', type=Path, default=Path('docs/robotics/experiments/rgb-servo-bottle-v1.json'))
     parser.add_argument('--count', type=int, default=24)
+    parser.add_argument('--start-seed', type=int)
+    parser.add_argument('--push', type=Path)
     parser.add_argument('--output', type=Path, required=True)
     run(parser.parse_args())

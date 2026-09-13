@@ -19,8 +19,11 @@ def dataset_rows(folder):
     manifest = json.loads((folder/'manifest.json').read_text())
     for shard in manifest['shards']:
         with np.load(folder/shard['file'], allow_pickle=False) as data:
-            for i in range(len(data['rgb'])):
-                yield {name: data['rgb'][i, j] for j, name in enumerate(VIEWS)}, manifest['calibrations'], data['world_points'][i], bool(data['present'][i]), None
+            # Decompress each array once; repeated NPZ member access re-inflates
+            # the entire shard for every individual view.
+            rgb, points, present = data['rgb'], data['world_points'], data['present']
+            for i in range(len(rgb)):
+                yield {name: rgb[i, j] for j, name in enumerate(VIEWS)}, manifest['calibrations'], points[i], bool(present[i]), None
 
 
 def trace_rows(folder):
@@ -55,7 +58,14 @@ def run(args):
         raise FileExistsError(args.output)
     require_space(args.output, 32*1024**2); args.output.mkdir(parents=True)
     torch.set_num_threads(2)
-    observer = RgbBottleObserver(args.checkpoint, args.device)
+    if args.openvino:
+        from simulation_lab.rgb_servo_openvino import OpenVinoBottleObserver
+        exported = json.loads((args.openvino/'parity.json').read_text())
+        if exported['observer_sha256'] != hashlib.sha256(args.checkpoint.read_bytes()).hexdigest():
+            raise ValueError('OpenVINO export does not match the frozen observer.')
+        observer = OpenVinoBottleObserver(args.openvino/'observer.xml', minimum_views=args.minimum_views, rigid_geometry=args.rigid_geometry)
+    else:
+        observer = RgbBottleObserver(args.checkpoint, args.device, args.minimum_views, args.rigid_geometry)
     records = trace_rows(args.recording) if args.recording else dataset_rows(args.dataset)
     rows = []; began = time.perf_counter()
     for index, (images, calibrations, truth, present, seconds) in enumerate(records):
@@ -78,7 +88,10 @@ def run(args):
             canvas.save(args.output/f'frame-{index:03d}.png')
     errors = [r['scoring_only_error_mm'] for r in rows if 'scoring_only_error_mm' in r]
     quantiles = {'median': float(np.median(errors)), 'p95': float(np.quantile(errors, .95)), 'max': max(errors)} if errors else None
-    result = {'protocol': 'docs/robotics/experiments/rgb-servo-confidence-v1.json',
+    result = {'protocol': 'docs/robotics/experiments/rgb-servo-confidence-v1.json' if args.minimum_views == 3 else 'docs/robotics/experiments/rgb-servo-confidence-v2.json',
+              'minimum_views': args.minimum_views,
+              'rigid_geometry': args.rigid_geometry,
+              'inference_runtime': 'OpenVINO CPU' if args.openvino else 'PyTorch '+args.device,
               'source': (args.recording or args.dataset).as_posix(), 'checkpoint_sha256': hashlib.sha256(args.checkpoint.read_bytes()).hexdigest(),
               'frames': len(rows), 'present': sum(r['scoring_only_present'] for r in rows),
               'accepted_present': sum(r['status'] == 'observed' and r['scoring_only_present'] for r in rows),
@@ -93,6 +106,9 @@ def run(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--minimum-views', type=int, choices=[2, 3], default=3)
+    parser.add_argument('--rigid-geometry', action='store_true')
+    parser.add_argument('--openvino', type=Path)
     parser.add_argument('--checkpoint', type=Path, required=True)
     source = parser.add_mutually_exclusive_group(required=True)
     source.add_argument('--dataset', type=Path)

@@ -1,0 +1,6 @@
+{
+  "original_reports_preserved": true,
+  "correction": "Original destination_m fields are requested goals. The original collector did not insert a bottle target; teacher and monitor used the fallback goal. Do not interpret these 15 passing motions as coverage of the requested destinations.",
+  "training_use": "Only physically replayed RGB poses supervise observer v3/v4. The motor network uses the separate kinematic dataset.",
+  "reproduction": "Use the included compact replay states. Rerunning the corrected collector creates different demonstrations."
+}

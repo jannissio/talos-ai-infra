@@ -1,6 +1,6 @@
 # Final Intel verification
 
-Prepared September 13 for the user's Intel laptop on September 14. The final policy suite must be physically selected and published before it is used as submission evidence. The current `.run` suites are local candidates.
+Prepared September 13 for the user's Intel laptop on September 14. The selected v6 suite and its complete physical evidence are packaged in `models/dinner_suite/suite.json` and privately pushed on `codex/final-submission` (baseline revision `c2e6d3d`). Preserve that baseline while RGB-feedback candidates remain experimental.
 
 The user confirmed enrollment and access to the laptop, but cannot access an Intel cloud account. Historical laptop identification is **Core i7-10850H**, Intel UHD and Quadro T2000. That is not Core Ultra Series 2/3. The written Intel brief and September 11 spoken clarification differ; see [the cloud/access record](INTEL_CLOUD.md). No script can turn an older processor into a Core Ultra result or establish organizer approval.
 
@@ -16,7 +16,7 @@ Run the hardware inspection first, choosing a fresh evidence folder:
 
 Check the actual OpenGL renderer. If it says NVIDIA, it does not establish Intel graphics execution. Select the Intel graphics adapter for this Python runtime through the laptop's supported graphics settings, restart the process, and record a new inspection. Preserve both results. Device availability in OpenVINO and the OpenGL renderer are separate facts.
 
-Once `models/dinner_suite/suite.json` is published, run:
+The packaged baseline is ready for this run from the private development branch:
 
 ```powershell
 .\.venv-training\Scripts\python.exe scripts/verify_intel_submission.py --suite models/dinner_suite/suite.json --output .run/intel-final-cpu --device CPU
@@ -32,4 +32,4 @@ Network benchmark throughput excludes rendering, vision preprocessing, motor-fee
 
 The portable script passed an original-bottle smoke test here: export parity passed, physical release and arm parking passed, and `strict_hardware_and_physics_passed` correctly remained false for AMD/NVIDIA. Local reports are retained under `.run/final-goal/intel-verifier-pc-smoke-v1`. This is a tooling check, not final Intel evidence.
 
-The final model suite, actual laptop run, hardware interpretation and submission upload remain open checklist items until their evidence exists.
+The actual laptop run, hardware interpretation and submission confirmation remain open until their evidence exists. The source and media draft are prepared; that does not replace device execution.

@@ -1,0 +1,207 @@
+{
+  "schema": "talos.rgb-servo-motion-labels.v1",
+  "split": "train",
+  "source": ".run/rgb-servo-motion-v1",
+  "source_attempts": 24,
+  "eligible_motions": 15,
+  "states_per_motion": 128,
+  "states": 1920,
+  "completed_states": 1920,
+  "shards": [
+    {
+      "file": "seed-2026095101.npz",
+      "states": 128,
+      "seed": 2026095101,
+      "sha256": "82b414227f04e5a9d3fb5933f89191a4fd7ec5e06fb40122cdb6a0e06177a754"
+    },
+    {
+      "file": "seed-2026095102.npz",
+      "states": 128,
+      "seed": 2026095102,
+      "sha256": "255f531bbc9f968f530af9e904cd6cf277675d30752bed28c5aef4704be9b3d1"
+    },
+    {
+      "file": "seed-2026095104.npz",
+      "states": 128,
+      "seed": 2026095104,
+      "sha256": "90865a7bf82a2f85567efdab8a86c672a3cfe6b695b89e130b684176b24fff0a"
+    },
+    {
+      "file": "seed-2026095105.npz",
+      "states": 128,
+      "seed": 2026095105,
+      "sha256": "b16c39310ab9f8f3963699b945634d6e55054cd42a958d6e604786e639552723"
+    },
+    {
+      "file": "seed-2026095106.npz",
+      "states": 128,
+      "seed": 2026095106,
+      "sha256": "6b2a7b8fc20c591388c501175202225a7a57e0662cadf64aa579fdc5f32319ac"
+    },
+    {
+      "file": "seed-2026095107.npz",
+      "states": 128,
+      "seed": 2026095107,
+      "sha256": "dce5ecad75ba94cc41c9422d7938f8c41b6968ef6386e8da7f9ea075e6fd41ac"
+    },
+    {
+      "file": "seed-2026095108.npz",
+      "states": 128,
+      "seed": 2026095108,
+      "sha256": "c639f03106b6d0aa8d47e59cac9f8bc5dbd2fc7c9191ef5227ed6c23eae8aa72"
+    },
+    {
+      "file": "seed-2026095109.npz",
+      "states": 128,
+      "seed": 2026095109,
+      "sha256": "3fd20de6ceed65f4a8103b687195aadff3e37eb27e7edbe3bf5d8e8f3ed0c397"
+    },
+    {
+      "file": "seed-2026095110.npz",
+      "states": 128,
+      "seed": 2026095110,
+      "sha256": "9d104f7f3abdd5dffbc5658381ff3f7c5c2e24d615804c100fdf7d9c70108e93"
+    },
+    {
+      "file": "seed-2026095111.npz",
+      "states": 128,
+      "seed": 2026095111,
+      "sha256": "b0f6756bc0e8ee51eee487799f6fba90f0a202f40a389c3ee3935824229809e1"
+    },
+    {
+      "file": "seed-2026095114.npz",
+      "states": 128,
+      "seed": 2026095114,
+      "sha256": "a8c1def5cab0d043099f432ed969b16981b4a55a0921511d8c3d9fa40de16791"
+    },
+    {
+      "file": "seed-2026095115.npz",
+      "states": 128,
+      "seed": 2026095115,
+      "sha256": "a91a9716b1a2005b3a2b79f893d200c76b927c70e54887a0eb98d435d9085bd4"
+    },
+    {
+      "file": "seed-2026095116.npz",
+      "states": 128,
+      "seed": 2026095116,
+      "sha256": "1976c058859fbe744eecfa5f5ffe10c0a3c995026ebc6463dcdf1e6c5a7259f5"
+    },
+    {
+      "file": "seed-2026095117.npz",
+      "states": 128,
+      "seed": 2026095117,
+      "sha256": "4a613eccbd9ac38b2e80eed10c03c5fa1370aee569cdfb02bd6947dc82267069"
+    },
+    {
+      "file": "seed-2026095124.npz",
+      "states": 128,
+      "seed": 2026095124,
+      "sha256": "a6d9f5b9da3879e693c5fbeed4583b40b2c245bfb4fd847304f6e6e0c6ece73b"
+    }
+  ],
+  "views": [
+    "servo_overhead",
+    "servo_left",
+    "servo_right"
+  ],
+  "label_usage": "Privileged keypoints/segmentation are labels only. Inference receives current RGB.",
+  "physical_action_replay_verified": true,
+  "seed": 2026095406,
+  "reserve_gib": 10,
+  "calibrations": {
+    "servo_overhead": {
+      "projection": [
+        [
+          289.70562438082106,
+          -7.942179233028326e-15,
+          -160.0,
+          243.15736897744793
+        ],
+        [
+          -1.773935405370967e-14,
+          -289.70562438082106,
+          -120.00000000000001,
+          173.3147254315665
+        ],
+        [
+          3.7493993930529855e-33,
+          6.123234262925839e-17,
+          -1.0,
+          1.565000057220459
+        ]
+      ],
+      "position": [
+        0.02499999850988388,
+        -0.05000000074505806,
+        1.565000057220459
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_left": {
+      "projection": [
+        [
+          139.96006121796395,
+          269.7455894009473,
+          -131.06432914733887,
+          235.9376259738274
+        ],
+        [
+          119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          300.9390426756939
+        ],
+        [
+          -0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4426019191741943
+        ]
+      ],
+      "position": [
+        0.31701743602752686,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_right": {
+      "projection": [
+        [
+          269.7455894009473,
+          -139.96006121796395,
+          -131.06432914733887,
+          212.20772144375218
+        ],
+        [
+          -119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          306.8958486433129
+        ],
+        [
+          0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4223229885101318
+        ]
+      ],
+      "position": [
+        -0.2670174539089203,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    }
+  },
+  "wall_seconds": 71.6894547000993
+}

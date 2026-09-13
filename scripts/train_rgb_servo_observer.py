@@ -118,12 +118,14 @@ def train(args):
     network = BottleKeypointNet().to(device)
     if args.warm_start:
         network.load_state_dict(load_file(str(args.warm_start), device='cuda'))
-    optimizer = torch.optim.AdamW(network.parameters(), lr=.001, weight_decay=.0001)
+    if not 0 < args.learning_rate <= .001:
+        raise ValueError('Learning rate is outside the bounded experiment range.')
+    optimizer = torch.optim.AdamW(network.parameters(), lr=args.learning_rate, weight_decay=.0001)
     schedule = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, args.steps, eta_min=.0001)
     manifest = {'schema': 'talos.rgb-servo-observer-training.v1', 'architecture': 'BottleKeypointNet',
                 'parameters': sum(p.numel() for p in network.parameters()), 'device': torch.cuda.get_device_name(),
                 'train': args.train.as_posix(), 'development': args.development.as_posix(), 'seed': 2026095403,
-                'max_steps': args.steps, 'batch_size': args.batch_size, 'steps': [], 'pretrained_weights': False,
+                'max_steps': args.steps, 'batch_size': args.batch_size, 'learning_rate': args.learning_rate, 'steps': [], 'pretrained_weights': False,
                 'warm_start': args.warm_start.as_posix() if args.warm_start else None,
                 'extra_training': args.extra_train.as_posix() if args.extra_train else None,
                 'label_usage': 'Segmentation, body positions and visibility labels are training and scoring inputs only. Inference receives RGB.',
@@ -169,6 +171,7 @@ def train(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--learning-rate', type=float, default=.001)
     parser.add_argument('--train', type=Path, required=True)
     parser.add_argument('--development', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)

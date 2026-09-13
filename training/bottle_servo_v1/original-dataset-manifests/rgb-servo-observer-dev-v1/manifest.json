@@ -1,0 +1,135 @@
+{
+  "protocol": "docs/robotics/experiments/rgb-servo-observer-v1.json",
+  "protocol_sha256": "587e8158562cba52da137844728c069473067bf74ffb8cb73063385297b437b2",
+  "split": "development",
+  "states": 256,
+  "views": [
+    "servo_overhead",
+    "servo_left",
+    "servo_right"
+  ],
+  "shards": [
+    {
+      "file": "shard-000.npz",
+      "states": 64,
+      "sha256": "bc7618c8c4a6f63252eb36c15675169ac2c63b5ed019888fb24ae38d3e991278"
+    },
+    {
+      "file": "shard-001.npz",
+      "states": 64,
+      "sha256": "ef7a08dcc6e14608643b2672fee55427f0d4447cdad070469049b215d0d24b3b"
+    },
+    {
+      "file": "shard-002.npz",
+      "states": 64,
+      "sha256": "953656d5afb78b6615bf24ffac11f8e152079bfe26a19417a82f29bd925025ef"
+    },
+    {
+      "file": "shard-003.npz",
+      "states": 64,
+      "sha256": "eb79d9066373b255c12deb55db23e55cf38ad12e2fe9631aa2b5ae5d313bac12"
+    }
+  ],
+  "labels_only": "Projected body keypoints and geometry segmentation never enter the deployed observer.",
+  "static_perception_examples": true,
+  "physical_demonstrations": false,
+  "robot_pose_source": ".run/final-goal/full-dinner-42-transition-v6",
+  "reserve_gib": 10,
+  "calibrations": {
+    "servo_overhead": {
+      "projection": [
+        [
+          289.70562438082106,
+          -7.942179233028326e-15,
+          -160.0,
+          243.15736897744793
+        ],
+        [
+          -1.773935405370967e-14,
+          -289.70562438082106,
+          -120.00000000000001,
+          173.3147254315665
+        ],
+        [
+          3.7493993930529855e-33,
+          6.123234262925839e-17,
+          -1.0,
+          1.565000057220459
+        ]
+      ],
+      "position": [
+        0.02499999850988388,
+        -0.05000000074505806,
+        1.565000057220459
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_left": {
+      "projection": [
+        [
+          139.96006121796395,
+          269.7455894009473,
+          -131.06432914733887,
+          235.9376259738274
+        ],
+        [
+          119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          300.9390426756939
+        ],
+        [
+          -0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4426019191741943
+        ]
+      ],
+      "position": [
+        0.31701743602752686,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_right": {
+      "projection": [
+        [
+          269.7455894009473,
+          -139.96006121796395,
+          -131.06432914733887,
+          212.20772144375218
+        ],
+        [
+          -119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          306.8958486433129
+        ],
+        [
+          0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4223229885101318
+        ]
+      ],
+      "position": [
+        -0.2670174539089203,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    }
+  },
+  "completed_states": 256,
+  "wall_seconds": 6.755852499976754
+}

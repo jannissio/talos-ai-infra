@@ -27,5 +27,11 @@ models/bottle_relays/** -text whitespace=cr-at-eol
 models/dinner_suite/** -text whitespace=cr-at-eol
 training/bottle_relays/** -text whitespace=cr-at-eol
 training/dinner_suite/** -text whitespace=cr-at-eol
+models/bottle_servo_v1/** -text whitespace=cr-at-eol
+training/bottle_servo_v1/** -text whitespace=cr-at-eol
 docs/robotics/evidence/** -text whitespace=cr-at-eol
 docs/robotics/experiments/** -text whitespace=cr-at-eol
+
+# Generated state scenes preserve their original XML indentation and hashes.
+docs/robotics/evidence/rgb-servo-v1/**/scene.xml -whitespace
+training/bottle_servo_v1/motion/**/scene.xml -whitespace

@@ -1,0 +1,528 @@
+{
+  "schema": "talos.rgb-servo-observer-training.v1",
+  "architecture": "BottleKeypointNet",
+  "parameters": 393772,
+  "device": "NVIDIA GeForce RTX 4070",
+  "train": ".run/rgb-servo-observer-combined-v4",
+  "development": ".run/rgb-servo-observer-dev-v1",
+  "seed": 2026095403,
+  "max_steps": 4000,
+  "batch_size": 24,
+  "learning_rate": 0.0003,
+  "steps": [
+    {
+      "step": 1,
+      "loss": 3.2191996574401855,
+      "keypoint_loss": 3.2165684700012207,
+      "mask_loss": 0.0038113868795335293,
+      "visibility_loss": 6.577666499651968e-05,
+      "coordinate_loss_px": 0.03562048450112343,
+      "wall_seconds": 1.0956061999313533,
+      "peak_vram_gib": 0.9912815093994141
+    },
+    {
+      "step": 100,
+      "loss": 3.257310390472412,
+      "keypoint_loss": 3.251523971557617,
+      "mask_loss": 0.004609218332916498,
+      "visibility_loss": 0.00648307241499424,
+      "coordinate_loss_px": 0.10927007347345352,
+      "wall_seconds": 4.819712300086394,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 200,
+      "loss": 3.2167513370513916,
+      "keypoint_loss": 3.214101552963257,
+      "mask_loss": 0.004113451112061739,
+      "visibility_loss": 9.00049926713109e-05,
+      "coordinate_loss_px": 0.028744209557771683,
+      "wall_seconds": 8.574775899993256,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 300,
+      "loss": 3.2195241451263428,
+      "keypoint_loss": 3.2129058837890625,
+      "mask_loss": 0.004278702195733786,
+      "visibility_loss": 0.019987130537629128,
+      "coordinate_loss_px": 0.024080343544483185,
+      "wall_seconds": 12.309975099982694,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 400,
+      "loss": 3.2287991046905518,
+      "keypoint_loss": 3.224808692932129,
+      "mask_loss": 0.00582883320748806,
+      "visibility_loss": 1.2141451406932902e-05,
+      "coordinate_loss_px": 0.053684115409851074,
+      "wall_seconds": 15.96729680011049,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 500,
+      "loss": 3.2178804874420166,
+      "keypoint_loss": 3.2150938510894775,
+      "mask_loss": 0.004273582249879837,
+      "visibility_loss": 0.0001121682144002989,
+      "coordinate_loss_px": 0.03137649968266487,
+      "wall_seconds": 19.574591800104827,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 600,
+      "loss": 3.22750186920166,
+      "keypoint_loss": 3.2233104705810547,
+      "mask_loss": 0.004908273462206125,
+      "visibility_loss": 0.0036051867064088583,
+      "coordinate_loss_px": 0.0508200041949749,
+      "wall_seconds": 23.229040500009432,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 700,
+      "loss": 3.4132955074310303,
+      "keypoint_loss": 3.368046522140503,
+      "mask_loss": 0.007205327972769737,
+      "visibility_loss": 0.19699636101722717,
+      "coordinate_loss_px": 0.11234696209430695,
+      "wall_seconds": 26.901291700080037,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 800,
+      "loss": 3.221665382385254,
+      "keypoint_loss": 3.2155754566192627,
+      "mask_loss": 0.004269961733371019,
+      "visibility_loss": 0.01659662276506424,
+      "coordinate_loss_px": 0.03178558498620987,
+      "wall_seconds": 30.753273400012404,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 900,
+      "loss": 3.2166972160339355,
+      "keypoint_loss": 3.214165687561035,
+      "mask_loss": 0.0038856016471982002,
+      "visibility_loss": 4.7319710574811324e-05,
+      "coordinate_loss_px": 0.028958892449736595,
+      "wall_seconds": 34.63310500001535,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1000,
+      "loss": 3.2277770042419434,
+      "keypoint_loss": 3.2243759632110596,
+      "mask_loss": 0.004693984054028988,
+      "visibility_loss": 0.0010844841599464417,
+      "coordinate_loss_px": 0.04185305908322334,
+      "wall_seconds": 38.32322130003013,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1100,
+      "loss": 3.261383056640625,
+      "keypoint_loss": 3.256354331970215,
+      "mask_loss": 0.004705542698502541,
+      "visibility_loss": 0.004694769158959389,
+      "coordinate_loss_px": 0.08685839176177979,
+      "wall_seconds": 41.913981599966064,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1200,
+      "loss": 3.219317674636841,
+      "keypoint_loss": 3.2164855003356934,
+      "mask_loss": 0.0037597091868519783,
+      "visibility_loss": 0.001522529637441039,
+      "coordinate_loss_px": 0.032390207052230835,
+      "wall_seconds": 45.50962170003913,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1300,
+      "loss": 3.2697806358337402,
+      "keypoint_loss": 3.2643187046051025,
+      "mask_loss": 0.004764144774526358,
+      "visibility_loss": 0.002370499772951007,
+      "coordinate_loss_px": 0.13028286397457123,
+      "wall_seconds": 49.19400990009308,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1400,
+      "loss": 3.2118375301361084,
+      "keypoint_loss": 3.209442377090454,
+      "mask_loss": 0.004058030899614096,
+      "visibility_loss": 0.00023840593348722905,
+      "coordinate_loss_px": 0.015926389023661613,
+      "wall_seconds": 52.82383770006709,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1500,
+      "loss": 3.274135112762451,
+      "keypoint_loss": 3.2676591873168945,
+      "mask_loss": 0.006965638604015112,
+      "visibility_loss": 0.001256065210327506,
+      "coordinate_loss_px": 0.13709120452404022,
+      "wall_seconds": 56.84899819991551,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1600,
+      "loss": 3.2127370834350586,
+      "keypoint_loss": 3.210226058959961,
+      "mask_loss": 0.004237520042806864,
+      "visibility_loss": 9.252296877093613e-05,
+      "coordinate_loss_px": 0.01868434250354767,
+      "wall_seconds": 60.95403479994275,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1700,
+      "loss": 3.2276082038879395,
+      "keypoint_loss": 3.224717617034912,
+      "mask_loss": 0.003813830902799964,
+      "visibility_loss": 0.0001262109144590795,
+      "coordinate_loss_px": 0.04791784659028053,
+      "wall_seconds": 65.01516199996695,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1800,
+      "loss": 3.2422378063201904,
+      "keypoint_loss": 3.237675428390503,
+      "mask_loss": 0.0046446057967841625,
+      "visibility_loss": 0.0029458326753228903,
+      "coordinate_loss_px": 0.08255312591791153,
+      "wall_seconds": 69.06056490004994,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 1900,
+      "loss": 3.2155721187591553,
+      "keypoint_loss": 3.2131614685058594,
+      "mask_loss": 0.0036696267779916525,
+      "visibility_loss": 0.00014272918633650988,
+      "coordinate_loss_px": 0.027361847460269928,
+      "wall_seconds": 72.84789670002647,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2000,
+      "loss": 3.2369651794433594,
+      "keypoint_loss": 3.233218193054199,
+      "mask_loss": 0.0044242446310818195,
+      "visibility_loss": 0.0008416794007644057,
+      "coordinate_loss_px": 0.06833066791296005,
+      "wall_seconds": 76.45510819996707,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2100,
+      "loss": 3.2113037109375,
+      "keypoint_loss": 3.208913564682007,
+      "mask_loss": 0.0037533596623688936,
+      "visibility_loss": 0.001110931858420372,
+      "coordinate_loss_px": 0.0145726902410388,
+      "wall_seconds": 80.0672518000938,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2200,
+      "loss": 3.221771478652954,
+      "keypoint_loss": 3.2180304527282715,
+      "mask_loss": 0.004097113385796547,
+      "visibility_loss": 0.004351849667727947,
+      "coordinate_loss_px": 0.04109823331236839,
+      "wall_seconds": 83.74970489996485,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2300,
+      "loss": 3.2115931510925293,
+      "keypoint_loss": 3.2092270851135254,
+      "mask_loss": 0.004033440258353949,
+      "visibility_loss": 9.005631727632135e-05,
+      "coordinate_loss_px": 0.0165566336363554,
+      "wall_seconds": 87.66628720005974,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2400,
+      "loss": 3.2254416942596436,
+      "keypoint_loss": 3.2215559482574463,
+      "mask_loss": 0.004363381769508123,
+      "visibility_loss": 0.004230922088027,
+      "coordinate_loss_px": 0.04289386048913002,
+      "wall_seconds": 91.5633660000749,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2500,
+      "loss": 3.214731216430664,
+      "keypoint_loss": 3.2124695777893066,
+      "mask_loss": 0.0034564395900815725,
+      "visibility_loss": 0.0004385653301142156,
+      "coordinate_loss_px": 0.02227497659623623,
+      "wall_seconds": 95.29900630004704,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2600,
+      "loss": 3.214545965194702,
+      "keypoint_loss": 3.2122857570648193,
+      "mask_loss": 0.003382466733455658,
+      "visibility_loss": 9.491858509136364e-05,
+      "coordinate_loss_px": 0.02748885564506054,
+      "wall_seconds": 99.0986027000472,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2700,
+      "loss": 3.219475030899048,
+      "keypoint_loss": 3.2164223194122314,
+      "mask_loss": 0.004317048005759716,
+      "visibility_loss": 0.0007625151774846017,
+      "coordinate_loss_px": 0.03707187995314598,
+      "wall_seconds": 102.87567800004035,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2800,
+      "loss": 3.2284343242645264,
+      "keypoint_loss": 3.225243091583252,
+      "mask_loss": 0.0037609164137393236,
+      "visibility_loss": 0.0006003723829053342,
+      "coordinate_loss_px": 0.05952814966440201,
+      "wall_seconds": 106.79470150009729,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 2900,
+      "loss": 3.212299108505249,
+      "keypoint_loss": 3.2095978260040283,
+      "mask_loss": 0.0036863486748188734,
+      "visibility_loss": 0.0025118382181972265,
+      "coordinate_loss_px": 0.017780397087335587,
+      "wall_seconds": 110.49743079999462,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3000,
+      "loss": 3.213663101196289,
+      "keypoint_loss": 3.210952043533325,
+      "mask_loss": 0.00462308619171381,
+      "visibility_loss": 0.00010815002315212041,
+      "coordinate_loss_px": 0.018898870795965195,
+      "wall_seconds": 114.11357950000092,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3100,
+      "loss": 3.213719367980957,
+      "keypoint_loss": 3.2110812664031982,
+      "mask_loss": 0.004398847930133343,
+      "visibility_loss": 0.00021421512064989656,
+      "coordinate_loss_px": 0.019793642684817314,
+      "wall_seconds": 117.75489700003527,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3200,
+      "loss": 3.218813896179199,
+      "keypoint_loss": 3.215763568878174,
+      "mask_loss": 0.0045942021533846855,
+      "visibility_loss": 0.00021925498731434345,
+      "coordinate_loss_px": 0.03546062111854553,
+      "wall_seconds": 121.33688810002059,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3300,
+      "loss": 3.2232789993286133,
+      "keypoint_loss": 3.2197959423065186,
+      "mask_loss": 0.004263473208993673,
+      "visibility_loss": 0.001989860087633133,
+      "coordinate_loss_px": 0.047667697072029114,
+      "wall_seconds": 124.94869989994913,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3400,
+      "loss": 3.209765911102295,
+      "keypoint_loss": 3.207427978515625,
+      "mask_loss": 0.003646002383902669,
+      "visibility_loss": 0.0015009762719273567,
+      "coordinate_loss_px": 0.010744729079306126,
+      "wall_seconds": 128.55767820007168,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3500,
+      "loss": 3.2107994556427,
+      "keypoint_loss": 3.2084670066833496,
+      "mask_loss": 0.003961449954658747,
+      "visibility_loss": 0.0003211044822819531,
+      "coordinate_loss_px": 0.01437109149992466,
+      "wall_seconds": 132.1684457999654,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3600,
+      "loss": 3.2101073265075684,
+      "keypoint_loss": 3.2079999446868896,
+      "mask_loss": 0.003727082861587405,
+      "visibility_loss": 1.1869295121869072e-05,
+      "coordinate_loss_px": 0.01207664329558611,
+      "wall_seconds": 135.75815159990452,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3700,
+      "loss": 3.2122223377227783,
+      "keypoint_loss": 3.2096540927886963,
+      "mask_loss": 0.004524498246610165,
+      "visibility_loss": 5.956712266197428e-05,
+      "coordinate_loss_px": 0.014692552387714386,
+      "wall_seconds": 139.35837760008872,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3800,
+      "loss": 3.2120022773742676,
+      "keypoint_loss": 3.209648370742798,
+      "mask_loss": 0.003944816533476114,
+      "visibility_loss": 5.599336509476416e-05,
+      "coordinate_loss_px": 0.018512047827243805,
+      "wall_seconds": 143.0229378999211,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 3900,
+      "loss": 3.2151904106140137,
+      "keypoint_loss": 3.2121505737304688,
+      "mask_loss": 0.0037490178365260363,
+      "visibility_loss": 0.0033431199844926596,
+      "coordinate_loss_px": 0.0248420313000679,
+      "wall_seconds": 146.87603959999979,
+      "peak_vram_gib": 0.9935636520385742
+    },
+    {
+      "step": 4000,
+      "loss": 3.2156481742858887,
+      "keypoint_loss": 3.2129573822021484,
+      "mask_loss": 0.00401925528421998,
+      "visibility_loss": 0.0005896491929888725,
+      "coordinate_loss_px": 0.028157087042927742,
+      "wall_seconds": 150.6852144000586,
+      "peak_vram_gib": 0.9935636520385742
+    }
+  ],
+  "pretrained_weights": false,
+  "warm_start": ".run/rgb-servo-observer-fit-v3/step-004000/model.safetensors",
+  "extra_training": null,
+  "label_usage": "Segmentation, body positions and visibility labels are training and scoring inputs only. Inference receives RGB.",
+  "reserve_gib": 10,
+  "latest_checkpoint": "step-004000",
+  "completed_steps": 4000,
+  "wall_seconds": 151.15587170002982,
+  "peak_vram_gib": 0.9935636520385742,
+  "calibrations": {
+    "servo_overhead": {
+      "projection": [
+        [
+          289.70562438082106,
+          -7.942179233028326e-15,
+          -160.0,
+          243.15736897744793
+        ],
+        [
+          -1.773935405370967e-14,
+          -289.70562438082106,
+          -120.00000000000001,
+          173.3147254315665
+        ],
+        [
+          3.7493993930529855e-33,
+          6.123234262925839e-17,
+          -1.0,
+          1.565000057220459
+        ]
+      ],
+      "position": [
+        0.02499999850988388,
+        -0.05000000074505806,
+        1.565000057220459
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_left": {
+      "projection": [
+        [
+          139.96006121796395,
+          269.7455894009473,
+          -131.06432914733887,
+          235.9376259738274
+        ],
+        [
+          119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          300.9390426756939
+        ],
+        [
+          -0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4426019191741943
+        ]
+      ],
+      "position": [
+        0.31701743602752686,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_right": {
+      "projection": [
+        [
+          269.7455894009473,
+          -139.96006121796395,
+          -131.06432914733887,
+          212.20772144375218
+        ],
+        [
+          -119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          306.8958486433129
+        ],
+        [
+          0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4223229885101318
+        ]
+      ],
+      "position": [
+        -0.2670174539089203,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    }
+  }
+}

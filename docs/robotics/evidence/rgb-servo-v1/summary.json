@@ -1,0 +1,1164 @@
+{
+  "frozen_inputs": {
+    "protocol": "docs/robotics/experiments/rgb-servo-bottle-v1.json",
+    "protocol_sha256": "98b91b564ca938162099a8301f0f22b6f0097fd20654ea65f274a6d265442e0f",
+    "split": "evaluation",
+    "cases": [
+      {
+        "seed": 2026095301,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095301,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095301,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095301,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095302,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095302,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095302,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095302,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095303,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095303,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095303,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095303,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095304,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095304,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095304,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095304,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095305,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095305,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095305,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095305,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095306,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095306,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095306,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095306,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095307,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095307,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095307,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095307,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095308,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095308,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095308,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095308,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095309,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095309,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095309,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095309,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095310,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095310,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095310,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095310,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095311,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095311,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095311,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095311,
+        "mode": "push-frozen"
+      },
+      {
+        "seed": 2026095312,
+        "mode": "nominal"
+      },
+      {
+        "seed": 2026095312,
+        "mode": "nominal-frozen"
+      },
+      {
+        "seed": 2026095312,
+        "mode": "push-live"
+      },
+      {
+        "seed": 2026095312,
+        "mode": "push-frozen"
+      }
+    ],
+    "observer": ".run/rgb-servo-observer-fit-v4/step-004000/model.safetensors",
+    "observer_sha256": "1b97d12a89d632462e27846846bae5be88d904d2c876901f05ec190f491d2851",
+    "motor": ".run/rgb-servo-motor-fit-v1/model.safetensors",
+    "motor_sha256": "8e979711b4edf131bd662b3b34a869d629d34c415fd8d7e13038c41ccf3f9d92",
+    "minimum_views": 2,
+    "push_protocol": "docs/robotics/experiments/rgb-servo-push-v1.json",
+    "rigid_geometry": true,
+    "openvino": ".run/rgb-servo-openvino-v4",
+    "include_frozen_nominal": true,
+    "scope": "Original finite workspace and all three requested destinations, including known training-stage reach failures. No case is excluded."
+  },
+  "attempted": 48,
+  "planned": 48,
+  "passed_by_case": {
+    "nominal": 2,
+    "nominal-frozen": 1,
+    "push-live": 3,
+    "push-frozen": 0
+  },
+  "paired": [
+    {
+      "seed": 2026095301,
+      "nominal": false,
+      "live": false,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095302,
+      "nominal": false,
+      "live": false,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095303,
+      "nominal": false,
+      "live": false,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095304,
+      "nominal": false,
+      "live": false,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095305,
+      "nominal": false,
+      "live": true,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095306,
+      "nominal": true,
+      "live": true,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095307,
+      "nominal": false,
+      "live": false,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095308,
+      "nominal": false,
+      "live": false,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095309,
+      "nominal": true,
+      "live": true,
+      "frozen": false,
+      "nominal_frozen": true
+    },
+    {
+      "seed": 2026095310,
+      "nominal": false,
+      "live": false,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095311,
+      "nominal": false,
+      "live": false,
+      "frozen": false,
+      "nominal_frozen": false
+    },
+    {
+      "seed": 2026095312,
+      "nominal": false,
+      "live": false,
+      "frozen": false,
+      "nominal_frozen": false
+    }
+  ],
+  "rows": [
+    {
+      "seed": 2026095301,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.1693208001088351,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095301-nominal/report.json",
+      "report_sha256": "c03757e7f5cffd8371b2a7311f97ddc51f491a44b93c32c70ca46a914a22fc81"
+    },
+    {
+      "seed": 2026095301,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.16965449997223914,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095301-nominal-frozen/report.json",
+      "report_sha256": "7c50891ab72adba75ba085d4cdaa3c349857ae634f2c14567854fbc12086126d"
+    },
+    {
+      "seed": 2026095301,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.1278623000252992,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095301-push-frozen/report.json",
+      "report_sha256": "7812730f8ecbfd6ce0ab26b077f9448da06d09287c2908bb46e8bd5619068778"
+    },
+    {
+      "seed": 2026095301,
+      "case": "push-live",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.13359139999374747,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095301-push-live/report.json",
+      "report_sha256": "06a331eb8157fd293d74caccc83a3167e482e7c3f1541bca1a874b172422d138"
+    },
+    {
+      "seed": 2026095302,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.15232990006916225,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095302-nominal/report.json",
+      "report_sha256": "6ed7249dd673cb3bbd64e7b59aa384f0246c9b34d3454f7e96d7755b42669e48"
+    },
+    {
+      "seed": 2026095302,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.1421158998273313,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095302-nominal-frozen/report.json",
+      "report_sha256": "d79ae64e78083f33ae4e5c1e6ad69f3c4c8e52a51caeea234bf58d046ef0dd3e"
+    },
+    {
+      "seed": 2026095302,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.12949479999952018,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095302-push-frozen/report.json",
+      "report_sha256": "72d991cba09b4d2bdd82a2f98a3347da7421bd08642b75172b54648f9758f581"
+    },
+    {
+      "seed": 2026095302,
+      "case": "push-live",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.1280479000415653,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095302-push-live/report.json",
+      "report_sha256": "789d346744399e1530ba86e66833baadf89da286787bd14a7831057a2e52e759"
+    },
+    {
+      "seed": 2026095303,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (1.624 mm, axis 0.0005).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.12618319992907345,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095303-nominal/report.json",
+      "report_sha256": "74fc34886ca3f72c9f8ceb3ac093be888e6506161529ce8af994900c333966aa"
+    },
+    {
+      "seed": 2026095303,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (1.624 mm, axis 0.0005).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.12299850000999868,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095303-nominal-frozen/report.json",
+      "report_sha256": "127dca6e4d0a97d4a2faf751f6f725b6133021ccfefc155cc0340b26740870b5"
+    },
+    {
+      "seed": 2026095303,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (1.624 mm, axis 0.0005).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.13472239999100566,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095303-push-frozen/report.json",
+      "report_sha256": "5c647c3eb624f7eb9600513b609fd770a1e4d754471120a4122f58e33d943e6d"
+    },
+    {
+      "seed": 2026095303,
+      "case": "push-live",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (1.624 mm, axis 0.0005).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.11965520004741848,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095303-push-live/report.json",
+      "report_sha256": "82c86796bb7069d5e3c4da737c60e6559beba035d6b797e4b343a96878993ee8"
+    },
+    {
+      "seed": 2026095304,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.1243300000205636,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095304-nominal/report.json",
+      "report_sha256": "0c349f05f9778008620e683ccc0989ab6a2c5f1152ea237deca0984cdb6bf3ca"
+    },
+    {
+      "seed": 2026095304,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.125086999963969,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095304-nominal-frozen/report.json",
+      "report_sha256": "dbd32e18b7230c87cc13401c91747bb8f258528e8f2fbbe96d2d922350152992"
+    },
+    {
+      "seed": 2026095304,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.12482569995336235,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095304-push-frozen/report.json",
+      "report_sha256": "5daea9b4b3be54e377efa133f41f884d80936deaf5cdf21a4e1bc30239b255b7"
+    },
+    {
+      "seed": 2026095304,
+      "case": "push-live",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.13529249979183078,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095304-push-live/report.json",
+      "report_sha256": "55489f1df09e39964a99922faf9333d4a179b65af7ee73d711fe3675ad16b00f"
+    },
+    {
+      "seed": 2026095305,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "Controller finished; physical monitor decides success.",
+      "arm": "right",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 8.309372678175789,
+      "simulation_seconds": 36.33000000000013,
+      "wall_seconds": 42.73955229995772,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.03711128234863281,
+      "report": "2026095305-nominal/report.json",
+      "report_sha256": "8b0c3bbfe0e02e58bc3001a7407e62a4a5f22ae758cca6f48251302a44e3935f"
+    },
+    {
+      "seed": 2026095305,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "Controller finished; physical monitor decides success.",
+      "arm": "right",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 8.471605059412282,
+      "simulation_seconds": 36.33000000000013,
+      "wall_seconds": 42.65800409996882,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.03633761405944824,
+      "report": "2026095305-nominal-frozen/report.json",
+      "report_sha256": "9962055db0fa1c22bf94555f89437d8eaf031462acb226a4afeca485652fbf78"
+    },
+    {
+      "seed": 2026095305,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "Controller finished; physical monitor decides success.",
+      "arm": "right",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 9.375530598636653,
+      "simulation_seconds": 36.33000000000013,
+      "wall_seconds": 42.176500499947,
+      "push_translation_mm": [
+        6.672263368326305,
+        0.0033630019135866274,
+        8.035889464963475e-05
+      ],
+      "counterfactual_max_action_delta_rad": 0.07979468047427174,
+      "report": "2026095305-push-frozen/report.json",
+      "report_sha256": "5537e8fee85f1ea86104e5630f9ff07434693a4be543335eec154a2c34e84416"
+    },
+    {
+      "seed": 2026095305,
+      "case": "push-live",
+      "status": "succeeded",
+      "passed": true,
+      "message": "",
+      "arm": "right",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 3.921460322265244,
+      "simulation_seconds": 34.53999999999922,
+      "wall_seconds": 40.962333699921146,
+      "push_translation_mm": [
+        6.672263368326332,
+        0.003363001913600505,
+        8.035889464963475e-05
+      ],
+      "counterfactual_max_action_delta_rad": 0.0817419244722577,
+      "report": "2026095305-push-live/report.json",
+      "report_sha256": "546904f22059d103c68e6c69a903ab47b411d12dee905b897981de46c0f37a71"
+    },
+    {
+      "seed": 2026095306,
+      "case": "nominal",
+      "status": "succeeded",
+      "passed": true,
+      "message": "",
+      "arm": "left",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 1.872642625151464,
+      "simulation_seconds": 34.53999999999922,
+      "wall_seconds": 40.77586090005934,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0038490642184092483,
+      "report": "2026095306-nominal/report.json",
+      "report_sha256": "83074042d655b6f954204b66cbe4e18be316b4790dc6d899f5a6ca49b10f9209"
+    },
+    {
+      "seed": 2026095306,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "Controller finished; physical monitor decides success.",
+      "arm": "left",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 8.411914674565372,
+      "simulation_seconds": 36.33000000000013,
+      "wall_seconds": 41.975821000058204,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.004110064495492893,
+      "report": "2026095306-nominal-frozen/report.json",
+      "report_sha256": "4f01e316cee0d7368c4ff018ee863a4203430a1c0d881b32821c904a041e90db"
+    },
+    {
+      "seed": 2026095306,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "Controller finished; physical monitor decides success.",
+      "arm": "left",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 10.444722307775368,
+      "simulation_seconds": 36.33000000000013,
+      "wall_seconds": 41.63330450002104,
+      "push_translation_mm": [
+        11.638073152495606,
+        0.009315157939712715,
+        3.3262202214778824e-05
+      ],
+      "counterfactual_max_action_delta_rad": 0.08045148408135246,
+      "report": "2026095306-push-frozen/report.json",
+      "report_sha256": "f8113850437f36eb529a7d31a4c677c7e633bff1e8e874b606482ae53de9dbef"
+    },
+    {
+      "seed": 2026095306,
+      "case": "push-live",
+      "status": "succeeded",
+      "passed": true,
+      "message": "",
+      "arm": "left",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 2.2310203623385485,
+      "simulation_seconds": 34.53999999999922,
+      "wall_seconds": 39.9805309001822,
+      "push_translation_mm": [
+        11.638064322138666,
+        0.009312931740321218,
+        3.3261578269438985e-05
+      ],
+      "counterfactual_max_action_delta_rad": 0.08895298540263752,
+      "report": "2026095306-push-live/report.json",
+      "report_sha256": "f886278958e6fdb44147dcb150464fdddf13c6f104b863d50f960f47249dd5ca"
+    },
+    {
+      "seed": 2026095307,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.15587269980460405,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095307-nominal/report.json",
+      "report_sha256": "195a588a0bae4983b2cf9721763b5ed3440d0e9b100d69eafb664e5c953d7750"
+    },
+    {
+      "seed": 2026095307,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.15962360007688403,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095307-nominal-frozen/report.json",
+      "report_sha256": "58daea0db354f15510abb6279889e85259ba0f3d08fe8b779271bba7a1057886"
+    },
+    {
+      "seed": 2026095307,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.18538210005499423,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095307-push-frozen/report.json",
+      "report_sha256": "c2d5238390047c9c7bebc2d624658d973481e8ff3b9a16445a8b0acb718ea2d9"
+    },
+    {
+      "seed": 2026095307,
+      "case": "push-live",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.1838704999536276,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095307-push-live/report.json",
+      "report_sha256": "d5875a5e3d27fe32483614b2ad51c19a678d88bf7390b0f449daf146e18587f1"
+    },
+    {
+      "seed": 2026095308,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "Current RGB estimate was unavailable for more than 0.6 seconds.",
+      "arm": "right",
+      "stage": "descend",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 353.4660672118471,
+      "simulation_seconds": 3.104999999999956,
+      "wall_seconds": 3.9337870001327246,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.004553674316406187,
+      "report": "2026095308-nominal/report.json",
+      "report_sha256": "f2335efeb207db2d50003b533916de667120654797318eedf04c3d3b12080417"
+    },
+    {
+      "seed": 2026095308,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "Controller finished; physical monitor decides success.",
+      "arm": "right",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 8.018948757115211,
+      "simulation_seconds": 36.33000000000013,
+      "wall_seconds": 40.63011190015823,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.004721906738281212,
+      "report": "2026095308-nominal-frozen/report.json",
+      "report_sha256": "e545be8df74dd0ee30275c5545e613eb17e665b802a6997c803c59eb97f703f3"
+    },
+    {
+      "seed": 2026095308,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "Controller finished; physical monitor decides success.",
+      "arm": "right",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 8.983004343546584,
+      "simulation_seconds": 36.33000000000013,
+      "wall_seconds": 40.96239020000212,
+      "push_translation_mm": [
+        6.429711848269529,
+        -0.00818318750646363,
+        0.000339204628496681
+      ],
+      "counterfactual_max_action_delta_rad": 0.0695407220270603,
+      "report": "2026095308-push-frozen/report.json",
+      "report_sha256": "1708240c286d06abb8b38e2f38508e449b0dd03db69c545bb54e274252e696f5"
+    },
+    {
+      "seed": 2026095308,
+      "case": "push-live",
+      "status": "failed",
+      "passed": false,
+      "message": "Current RGB estimate was unavailable for more than 0.6 seconds.",
+      "arm": "right",
+      "stage": "descend",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 347.8826569364888,
+      "simulation_seconds": 4.80499999999992,
+      "wall_seconds": 5.848596700001508,
+      "push_translation_mm": [
+        6.429711848269778,
+        -0.008183187506380363,
+        0.000339204628496681
+      ],
+      "counterfactual_max_action_delta_rad": 0.07184790649414008,
+      "report": "2026095308-push-live/report.json",
+      "report_sha256": "a636e67f7693c8c1f13f59c764b57d42bf475cf11801ffa3f1bd1018088a1caa"
+    },
+    {
+      "seed": 2026095309,
+      "case": "nominal",
+      "status": "succeeded",
+      "passed": true,
+      "message": "",
+      "arm": "left",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 1.3361659972440025,
+      "simulation_seconds": 34.53999999999922,
+      "wall_seconds": 39.95649880007841,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.003345805093829979,
+      "report": "2026095309-nominal/report.json",
+      "report_sha256": "8c1b40b7775fdac0a41ea19ab2a45687a54ecb83d917ab181c87d3fa465b5461"
+    },
+    {
+      "seed": 2026095309,
+      "case": "nominal-frozen",
+      "status": "succeeded",
+      "passed": true,
+      "message": "",
+      "arm": "left",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 7.77685549934356,
+      "simulation_seconds": 34.53999999999922,
+      "wall_seconds": 40.25461659999564,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0033375266709445572,
+      "report": "2026095309-nominal-frozen/report.json",
+      "report_sha256": "8c5f2607f853faab3f87d37a9f2b826c1fb3a96523f15ad4efd9347bd3bc7b31"
+    },
+    {
+      "seed": 2026095309,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "Controller finished; physical monitor decides success.",
+      "arm": "left",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 11.34451428258931,
+      "simulation_seconds": 36.33000000000013,
+      "wall_seconds": 39.708028400084004,
+      "push_translation_mm": [
+        8.770336979713814,
+        0.08816136904937766,
+        -9.566773973013198e-05
+      ],
+      "counterfactual_max_action_delta_rad": 0.07966369174408572,
+      "report": "2026095309-push-frozen/report.json",
+      "report_sha256": "b20dfb02303adc6edc4fe7aad18e68507be564124447a27e35196fbfa37170c7"
+    },
+    {
+      "seed": 2026095309,
+      "case": "push-live",
+      "status": "succeeded",
+      "passed": true,
+      "message": "",
+      "arm": "left",
+      "stage": "verify",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 1.5302294646010497,
+      "simulation_seconds": 34.53999999999922,
+      "wall_seconds": 39.49495720001869,
+      "push_translation_mm": [
+        8.770336979713953,
+        0.0881613690491001,
+        -9.566773961910968e-05
+      ],
+      "counterfactual_max_action_delta_rad": 0.0810114277203875,
+      "report": "2026095309-push-live/report.json",
+      "report_sha256": "096153d05be9612af7347be612cafa3ae6ca90fc73977ba51c5a282cd00534cf"
+    },
+    {
+      "seed": 2026095310,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.1555570000782609,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095310-nominal/report.json",
+      "report_sha256": "986a2f5b2d4d4c743d711d904db469fb2db30dabb1881e2e0024d40081c8ea2f"
+    },
+    {
+      "seed": 2026095310,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.16290240013040602,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095310-nominal-frozen/report.json",
+      "report_sha256": "78a7fcaddbae1ce4f71428851f48eb5ef5196ed8be8e1e343f03b59e7866955f"
+    },
+    {
+      "seed": 2026095310,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.14417079999111593,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095310-push-frozen/report.json",
+      "report_sha256": "dce72fc716411d7456f66cbb460ee2a30d23095694af9b650ca9cc6f16dfb7f3"
+    },
+    {
+      "seed": 2026095310,
+      "case": "push-live",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor geometry guard refused prediction (6.997 mm, axis 0.0024).; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.16003200015984476,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095310-push-live/report.json",
+      "report_sha256": "bb580974b0ccdf5f9a268a75260e7de6a776343773b6c9667f8924946143f3b6"
+    },
+    {
+      "seed": 2026095311,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.1454574998933822,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095311-nominal/report.json",
+      "report_sha256": "748178fcc9d2c3131add09535cdc92a68cf2515776f236456e4ac6f51959dcb6"
+    },
+    {
+      "seed": 2026095311,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.13106999988667667,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095311-nominal-frozen/report.json",
+      "report_sha256": "3040cf92f177ffee7ecc27f6ecfe573e45384d965be8d0a275a2f9e826e983a3"
+    },
+    {
+      "seed": 2026095311,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.13161649997346103,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095311-push-frozen/report.json",
+      "report_sha256": "09a9438bde73a713c6dbc13202eac351cf522627c89e8e83ba1456c805f6ea0d"
+    },
+    {
+      "seed": 2026095311,
+      "case": "push-live",
+      "status": "failed",
+      "passed": false,
+      "message": "left: Neural motor prediction exceeds joint limits.; right: Neural motor prediction exceeds joint limits.",
+      "arm": null,
+      "stage": "observe",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": null,
+      "simulation_seconds": 0.0,
+      "wall_seconds": 0.12061790004372597,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.0,
+      "report": "2026095311-push-live/report.json",
+      "report_sha256": "0cacf4c9d4010dd937c006778d59166d95bf49307f37a18503c2fefde11d81a7"
+    },
+    {
+      "seed": 2026095312,
+      "case": "nominal",
+      "status": "failed",
+      "passed": false,
+      "message": "Motor progress timed out during descend.",
+      "arm": "left",
+      "stage": "descend",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 147.46902152255728,
+      "simulation_seconds": 10.005000000000164,
+      "wall_seconds": 12.429718100000173,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.015995502471923828,
+      "report": "2026095312-nominal/report.json",
+      "report_sha256": "5017c6c187241183d7b8c34922fe6b222de7089fa7994e830b49570ad8c96045"
+    },
+    {
+      "seed": 2026095312,
+      "case": "nominal-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "Motor progress timed out during descend.",
+      "arm": "left",
+      "stage": "descend",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 147.46902152255728,
+      "simulation_seconds": 10.005000000000164,
+      "wall_seconds": 12.692638500127941,
+      "push_translation_mm": null,
+      "counterfactual_max_action_delta_rad": 0.014680743217468262,
+      "report": "2026095312-nominal-frozen/report.json",
+      "report_sha256": "d6312519186eb50461ebed54866054f22b6881b4d5db537ca6cf74c94a7712b6"
+    },
+    {
+      "seed": 2026095312,
+      "case": "push-frozen",
+      "status": "failed",
+      "passed": false,
+      "message": "Motor progress timed out during descend.",
+      "arm": "left",
+      "stage": "descend",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 141.02345936126864,
+      "simulation_seconds": 10.005000000000164,
+      "wall_seconds": 11.212152499938384,
+      "push_translation_mm": [
+        6.546867934342525,
+        0.04019307371516678,
+        3.175199536631368e-05
+      ],
+      "counterfactual_max_action_delta_rad": 0.08129810383929703,
+      "report": "2026095312-push-frozen/report.json",
+      "report_sha256": "13a88ebf0628de7d477afd654d38ec02f93d99e5d0c8fde212f75f31239034e3"
+    },
+    {
+      "seed": 2026095312,
+      "case": "push-live",
+      "status": "failed",
+      "passed": false,
+      "message": "Motor progress timed out during descend.",
+      "arm": "left",
+      "stage": "descend",
+      "inference_runtime": "OpenVINO CPU",
+      "placement_error_mm": 141.02345936126864,
+      "simulation_seconds": 10.005000000000164,
+      "wall_seconds": 12.68018599995412,
+      "push_translation_mm": [
+        6.546867934342525,
+        0.04019307371516678,
+        3.175199536631368e-05
+      ],
+      "counterfactual_max_action_delta_rad": 0.08631169666159133,
+      "report": "2026095312-push-live/report.json",
+      "report_sha256": "638b6d5a660ad6f391d1e843f240196b212018bebea26cc31a0c86489984e1cc"
+    }
+  ],
+  "wall_seconds": 293.61849109991454
+}

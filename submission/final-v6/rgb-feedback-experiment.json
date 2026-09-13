@@ -1,0 +1,29 @@
+{
+  "schema": "talos.rgb-servo-comparison-video.v1",
+  "seed": 2026095309,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 20,
+  "frames": 1008,
+  "duration_seconds": 50.4,
+  "playback_speed": 1,
+  "final_result_hold_seconds": 2,
+  "bytes": 3390062,
+  "wall_seconds": 19.68293739994988,
+  "recordings": [
+    {
+      "case": "push-live",
+      "states_sha256": "64728d0975bd20c87d7b3e3b8b9e0bca36cceb84d43de4fff35e4b03e73ca5d1"
+    },
+    {
+      "case": "push-frozen",
+      "states_sha256": "735badafcb9b54c0c33e5498fb0af36b4652118aae9aa00ef7b4cfb3f844731d"
+    }
+  ],
+  "selection": "Illustration selected after evaluation: the only seed where both unperturbed controls pass. All 48 outcomes are packaged.",
+  "method": "Offline rendering of authoritative saved states. No new physics, interpolated object poses or invented actions.",
+  "audio": "No audio; all explanations are captioned.",
+  "status": "Experimental, not the selected dinner baseline."
+}

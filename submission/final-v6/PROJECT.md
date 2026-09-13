@@ -27,13 +27,14 @@ The demonstrated scope is finite starting regions and fixed task destinations. A
 | Item | File or URL | Verified state |
 | --- | --- | --- |
 | Repository | https://github.com/jannissio/talos-ai-infra | Private; release timing remains the user's instruction |
-| Interactive demo | https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics | Private; CPU default under final hosted sequence verification |
+| Interactive demo | https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics | Private; all six learned tasks pass on OpenVINO CPU, exposed seed 42 |
 | Cover | `cover-v6.png` | 1280×720, full 16:9 crop saved in draft |
 | Main video | `Talos-demo-v6.mp4` | 1280×720, 20 fps, 189.1 seconds, 8,998,287 bytes; saved in draft |
 | Presentation PDF | `Talos-v6.pdf` | Eight checked slides; saved in draft |
 | Editable deck | `Talos-v6-r2.pptx` | Eight checked slides, nonpersonal author metadata |
 | All dinner trials | `Talos-dinner-ten-v6.mp4` | All ten, 4× labeled playback, 8/10 outcome |
 | All relay trials | `Talos-relays-ten-v3.mp4` | All ten, 1× playback, 5/5 each direction |
+| Experimental RGB comparison | `rgb-feedback-experiment.mp4` | 50.4 seconds, 1× playback, one labeled pair plus complete 48-trial counts; supplementary only |
 
 Main-video instructions/explanations are captions; it has no audio track. The original synthetic-speech video remains preserved in the parent submission folder. A human microphone bottle trial passed on this PC; final six-skill voice rehearsal has been requested.
 
@@ -41,11 +42,11 @@ Main-video instructions/explanations are captions; it has no audio track. The or
 
 Reproduction, architecture and complete physical outcomes are in the repository. The v6 baseline completes 8/10 frozen six-skill dinner sequences; the two placement failures are retained. Table-supported bottle relays pass 5/5 trials in each direction. Separate ten-seed videos are in submission/final-v6.
 
-The learned controller uses initial RGB features and motor feedback. Continuous visual correction, arbitrary reachable placements, pouring, airborne handoffs and unrestricted language remain unfinished. Current experimental observer results are reported separately.
+The selected dinner controller uses initial RGB features and motor feedback. A separate RGB correction experiment completed all 48 trials: live control passed 2/12 nominal and 3/12 pushed scenes; frozen-image control passed 1/12 and 0/12. Seven seeds were refused before motion. All outcomes and reproduction inputs are packaged; this candidate is not promoted. Arbitrary placements, pouring, airborne handoffs and unrestricted language remain unfinished.
 
 Original Talos code, weights and procedural data are MIT licensed. Upstream SO-101 assets retain their Apache-2.0 notices. Development reuse and AI assistance are disclosed in docs/PROVENANCE.md.
 
-Release checks still in progress: final-suite Intel laptop execution, full hosted-sequence verification, and anonymous judge access. Historical Intel timings describe the original bottle model only. The GitHub repository and hosted Space remain private until immediately before final submission.
+The private hosted demo completed all six learned tasks on exposed seed 42 using OpenVINO CPU: 247.655 simulated / 273.03 wall seconds, with physical release and parking verified. Final-suite Intel laptop execution and anonymous judge access remain open. Historical Intel timings describe the original bottle model only. The GitHub repository and hosted Space remain private until immediately before final submission.
 
 ## Before final submission
 

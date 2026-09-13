@@ -1,0 +1,826 @@
+{
+  "protocol": "docs/robotics/experiments/rgb-servo-bottle-v1.json",
+  "nominal_seeds_planned": 24,
+  "recovery_seeds_reserved": [
+    2026095125,
+    2026095132
+  ],
+  "attempts": 24,
+  "eligible": 15,
+  "rows": [
+    {
+      "seed": 2026095101,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        -0.026354546424204567,
+        -0.09750304427805528,
+        0.4365595256707372
+      ],
+      "destination_m": [
+        0.2,
+        0.05
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.674214903049374,
+          "placement_z_error_mm": 0.0003691404070194082,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.013847772869341876,
+          "max_lift_cm": 6.901902462406106,
+          "hold_verified_s": 9.094999999998667,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.1526266254302777e-08,
+            "side_plate": 3.205233290680184e-07,
+            "mug": 3.112731709619963e-07,
+            "glass": 1.1522631407329343e-07,
+            "fork": 5.984193641147057e-06,
+            "spoon": 6.049478165782696e-06
+          },
+          "other_object_max_displacement_m": 6.049478165782696e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095102,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.08393153004078971,
+        -0.1652787387449079,
+        -0.28200911524545097
+      ],
+      "destination_m": [
+        0.1,
+        -0.115
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.7282607438198515,
+          "placement_z_error_mm": 0.00014315180685287032,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.011370837124648394,
+          "max_lift_cm": 6.8994341704306965,
+          "hold_verified_s": 9.089999999998668,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.7039773382330409e-07,
+            "side_plate": 1.5520228593852983e-07,
+            "mug": 4.771114698882841e-07,
+            "glass": 2.1374594492868098e-08,
+            "fork": 1.9327561457031652e-06,
+            "spoon": 2.9033657662632686e-06
+          },
+          "other_object_max_displacement_m": 2.9033657662632686e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095103,
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "arm": "right",
+      "training_eligible": false,
+      "initial_pose": [
+        -0.13429941486047814,
+        -0.11456915097989762,
+        -0.4503541736246799
+      ],
+      "destination_m": [
+        0.16,
+        -0.06
+      ],
+      "replay": null
+    },
+    {
+      "seed": 2026095104,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.11944870414888153,
+        -0.14590323271489214,
+        0.3682957042640004
+      ],
+      "destination_m": [
+        0.2,
+        0.05
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.9999340270360978,
+          "placement_z_error_mm": 0.00045701661932628923,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.015146809933634212,
+          "max_lift_cm": 6.783192269273675,
+          "hold_verified_s": 9.009999999998673,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 2.0504034726727611e-07,
+            "side_plate": 8.390669690574324e-08,
+            "mug": 2.981547537757651e-07,
+            "glass": 8.799083548131618e-08,
+            "fork": 6.0292916941574064e-06,
+            "spoon": 5.83988498711178e-06
+          },
+          "other_object_max_displacement_m": 6.0292916941574064e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095105,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.056517063011292945,
+        -0.16219908653645917,
+        -0.4049328750646801
+      ],
+      "destination_m": [
+        0.1,
+        -0.115
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.7148959838885809,
+          "placement_z_error_mm": 0.00010471718303595168,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.013856202311029433,
+          "max_lift_cm": 6.844384657859914,
+          "hold_verified_s": 9.05499999999867,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.4808562870236063e-08,
+            "side_plate": 8.521243582491228e-08,
+            "mug": 2.85809006252003e-07,
+            "glass": 3.412712180903918e-08,
+            "fork": 8.598839535341116e-06,
+            "spoon": 3.1638583244912862e-06
+          },
+          "other_object_max_displacement_m": 8.613530452067903e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095106,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.12987954731042156,
+        -0.1557718682419885,
+        0.2984414409002598
+      ],
+      "destination_m": [
+        0.16,
+        -0.06
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.7578184695862336,
+          "placement_z_error_mm": 0.00018908635879277824,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.020155515986601473,
+          "max_lift_cm": 6.833850463486502,
+          "hold_verified_s": 9.049999999998668,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.176405434446379e-08,
+            "side_plate": 2.6188916191639818e-08,
+            "mug": 2.839496180496606e-07,
+            "glass": 5.390244195347238e-08,
+            "fork": 6.9080391778980395e-06,
+            "spoon": 5.845390375159534e-06
+          },
+          "other_object_max_displacement_m": 6.9080391778980395e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095107,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.04961486582481425,
+        -0.06463522460403177,
+        0.028467181986158496
+      ],
+      "destination_m": [
+        0.2,
+        0.05
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.7381851713864097,
+          "placement_z_error_mm": 0.0001422059914268914,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.019859398095322344,
+          "max_lift_cm": 6.9005896455535005,
+          "hold_verified_s": 9.089999999998668,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.0206642311575802e-08,
+            "side_plate": 2.4354397758386478e-08,
+            "mug": 1.846227167041576e-07,
+            "glass": 1.1658035809210168e-07,
+            "fork": 6.694757039053405e-06,
+            "spoon": 4.08345108640729e-06
+          },
+          "other_object_max_displacement_m": 6.694757039053405e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095108,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.10877826335717325,
+        -0.13679125098073028,
+        -0.16532561197115397
+      ],
+      "destination_m": [
+        0.1,
+        -0.115
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.7392322950653059,
+          "placement_z_error_mm": 0.0006679795178099468,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.020502695939473826,
+          "max_lift_cm": 6.890463846271933,
+          "hold_verified_s": 9.074999999998669,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 2.406496210326803e-07,
+            "side_plate": 7.135001848181165e-08,
+            "mug": 3.058806994945617e-07,
+            "glass": 1.2242016765109828e-08,
+            "fork": 4.146974348976929e-06,
+            "spoon": 4.648621491445782e-06
+          },
+          "other_object_max_displacement_m": 4.648621491445782e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095109,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        -0.000989989252815071,
+        -0.07970215243933731,
+        0.4233336631286163
+      ],
+      "destination_m": [
+        0.16,
+        -0.06
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.7527729126491721,
+          "placement_z_error_mm": 5.5872862003703005e-05,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.019922085343253338,
+          "max_lift_cm": 6.900841913073419,
+          "hold_verified_s": 9.089999999998668,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.1741601723892936e-08,
+            "side_plate": 2.704957959820845e-08,
+            "mug": 1.3691765569966192e-07,
+            "glass": 6.619070506820054e-08,
+            "fork": 6.061794834950075e-06,
+            "spoon": 2.3495114550128853e-06
+          },
+          "other_object_max_displacement_m": 6.061794834950075e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095110,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.1347146863474541,
+        -0.06291641969623085,
+        -0.32666800532888934
+      ],
+      "destination_m": [
+        0.2,
+        0.05
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.9318154898938835,
+          "placement_z_error_mm": 0.00042369662534014196,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.020092912669090583,
+          "max_lift_cm": 6.849644590474224,
+          "hold_verified_s": 9.04999999999867,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.1969989072868883e-08,
+            "side_plate": 1.4758104227557666e-07,
+            "mug": 1.8175800188309523e-07,
+            "glass": 2.8214060258193142e-08,
+            "fork": 6.2773680453689305e-06,
+            "spoon": 4.75952710691034e-06
+          },
+          "other_object_max_displacement_m": 6.2773680453689305e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095111,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        -0.028091728627979262,
+        -0.1380579506749512,
+        0.5390918535859278
+      ],
+      "destination_m": [
+        0.1,
+        -0.115
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.7096114063578071,
+          "placement_z_error_mm": 0.00018746611218922737,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.021180296257417547,
+          "max_lift_cm": 6.845072333413327,
+          "hold_verified_s": 9.889999999998437,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.473014997329498e-08,
+            "side_plate": 9.75508341141117e-08,
+            "mug": 3.4780572870765484e-07,
+            "glass": 7.265498049102994e-08,
+            "fork": 5.249023311597233e-06,
+            "spoon": 5.5713590190993775e-06
+          },
+          "other_object_max_displacement_m": 5.5713590190993775e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095112,
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "arm": "right",
+      "training_eligible": false,
+      "initial_pose": [
+        -0.12284303452462608,
+        -0.08400789667675375,
+        0.5933824405944311
+      ],
+      "destination_m": [
+        0.16,
+        -0.06
+      ],
+      "replay": null
+    },
+    {
+      "seed": 2026095113,
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "arm": "right",
+      "training_eligible": false,
+      "initial_pose": [
+        -0.08660987208736594,
+        -0.0788178272410932,
+        -0.11600770168421815
+      ],
+      "destination_m": [
+        0.2,
+        0.05
+      ],
+      "replay": null
+    },
+    {
+      "seed": 2026095114,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        -0.00995984548313103,
+        -0.08389804907254218,
+        -0.516454056268055
+      ],
+      "destination_m": [
+        0.1,
+        -0.115
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 1.0875540653339824,
+          "placement_z_error_mm": 0.0003646114921096455,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.019704747603273894,
+          "max_lift_cm": 6.79417684301945,
+          "hold_verified_s": 9.03499999999867,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.1655215843366595e-08,
+            "side_plate": 2.6214989221986194e-07,
+            "mug": 3.6777970070479526e-07,
+            "glass": 1.870491849887305e-07,
+            "fork": 1.771664478779247e-06,
+            "spoon": 4.956682917713432e-06
+          },
+          "other_object_max_displacement_m": 4.956682917713432e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095115,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.021153796896316523,
+        -0.17407138462499347,
+        0.050766623290601554
+      ],
+      "destination_m": [
+        0.16,
+        -0.06
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.7648289381618412,
+          "placement_z_error_mm": 9.112870014149621e-06,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.013210186301016289,
+          "max_lift_cm": 6.895539791568095,
+          "hold_verified_s": 9.089999999998668,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.363366633162599e-08,
+            "side_plate": 4.746249705769178e-08,
+            "mug": 3.1934241989943193e-07,
+            "glass": 1.108313145185578e-07,
+            "fork": 6.770630930987305e-06,
+            "spoon": 5.934131274663313e-06
+          },
+          "other_object_max_displacement_m": 6.770630930987305e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095116,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.0802961136086899,
+        -0.093184615774607,
+        0.5318193911775834
+      ],
+      "destination_m": [
+        0.2,
+        0.05
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.8893878535222227,
+          "placement_z_error_mm": 0.00013487485406304955,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.013561747467456938,
+          "max_lift_cm": 6.780021426924754,
+          "hold_verified_s": 9.014999999998672,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.7241324377240813e-08,
+            "side_plate": 2.6293214974684192e-08,
+            "mug": 3.424142597817223e-07,
+            "glass": 1.39466799605051e-07,
+            "fork": 0.00016144754806798883,
+            "spoon": 4.923575877198185e-06
+          },
+          "other_object_max_displacement_m": 0.00016295559068167697,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095117,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        0.08342694289767558,
+        -0.14068661534427657,
+        -0.29172083576663455
+      ],
+      "destination_m": [
+        0.1,
+        -0.115
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.7615925864638486,
+          "placement_z_error_mm": 0.0003629075759903344,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.014774916681985379,
+          "max_lift_cm": 6.868886363098303,
+          "hold_verified_s": 9.064999999998669,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.0826427427210896e-08,
+            "side_plate": 1.277108813868548e-07,
+            "mug": 2.999143912976137e-07,
+            "glass": 2.803051373526991e-08,
+            "fork": 4.61069415680127e-06,
+            "spoon": 4.3404054231106715e-06
+          },
+          "other_object_max_displacement_m": 4.61069415680127e-06,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    },
+    {
+      "seed": 2026095118,
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "arm": "right",
+      "training_eligible": false,
+      "initial_pose": [
+        -0.08078062917208118,
+        -0.15398314044593736,
+        0.5100374867762215
+      ],
+      "destination_m": [
+        0.16,
+        -0.06
+      ],
+      "replay": null
+    },
+    {
+      "seed": 2026095119,
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "arm": "right",
+      "training_eligible": false,
+      "initial_pose": [
+        -0.13289369348668822,
+        -0.06735166436078585,
+        -0.28234063227693623
+      ],
+      "destination_m": [
+        0.2,
+        0.05
+      ],
+      "replay": null
+    },
+    {
+      "seed": 2026095120,
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "arm": "right",
+      "training_eligible": false,
+      "initial_pose": [
+        -0.0677655262297103,
+        -0.08963318493075413,
+        0.3361851168077805
+      ],
+      "destination_m": [
+        0.1,
+        -0.115
+      ],
+      "replay": null
+    },
+    {
+      "seed": 2026095121,
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "arm": "right",
+      "training_eligible": false,
+      "initial_pose": [
+        -0.10690082204075792,
+        -0.1529501925460386,
+        -0.24836525926923675
+      ],
+      "destination_m": [
+        0.16,
+        -0.06
+      ],
+      "replay": null
+    },
+    {
+      "seed": 2026095122,
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "arm": "right",
+      "training_eligible": false,
+      "initial_pose": [
+        -0.05053944980128071,
+        -0.17938703763128044,
+        0.12663470188649906
+      ],
+      "destination_m": [
+        0.2,
+        0.05
+      ],
+      "replay": null
+    },
+    {
+      "seed": 2026095123,
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "arm": "right",
+      "training_eligible": false,
+      "initial_pose": [
+        -0.11920305566725622,
+        -0.06700503000285939,
+        0.35552568019211195
+      ],
+      "destination_m": [
+        0.1,
+        -0.115
+      ],
+      "replay": null
+    },
+    {
+      "seed": 2026095124,
+      "status": "succeeded",
+      "message": "bottle physically lifted, held, placed and released.",
+      "arm": "left",
+      "training_eligible": true,
+      "initial_pose": [
+        -0.024551198777847907,
+        -0.07689591369403703,
+        -0.09751067764405219
+      ],
+      "destination_m": [
+        0.16,
+        -0.06
+      ],
+      "replay": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 0.9347187112233508,
+          "placement_z_error_mm": 0.0004466141860781647,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.01280390466519625,
+          "max_lift_cm": 6.817006678909154,
+          "hold_verified_s": 9.044999999998668,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.619372111744972e-08,
+            "side_plate": 4.719270873311474e-08,
+            "mug": 2.6390927352995076e-07,
+            "glass": 8.865498501511154e-08,
+            "fork": 0.00016574038330102587,
+            "spoon": 2.9534552283646904e-06
+          },
+          "other_object_max_displacement_m": 0.000167592671323769,
+          "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      }
+    }
+  ],
+  "scope": "Training teacher and replay results only; not learned execution or a robustness benchmark."
+}
