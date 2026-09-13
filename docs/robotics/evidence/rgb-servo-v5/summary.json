@@ -1,0 +1,49 @@
+{
+  "training_completed": true,
+  "stop_reason": null,
+  "completed_updates": 3000,
+  "gradient_evaluations": 6018,
+  "optimizer_iterations": 3000,
+  "selected_update": 3000,
+  "kinematic_gate_passed": true,
+  "cuda_device": "NVIDIA GeForce RTX 4070",
+  "cuda_geometry_maximum_absolute_error": 1.71946551441593e-07,
+  "baseline": {
+    "accepted": 361,
+    "total": 362,
+    "position_error_mm": {
+      "p95": 0.5119717981487519,
+      "median": 0.182651770908928,
+      "max": 1.710511626962505
+    }
+  },
+  "candidates": [
+    {
+      "update": 1000,
+      "sha256": "461829c701d9739a0863d7e64f9289008020ab1e0848803eb0b431ac147a7a01",
+      "accepted": 361,
+      "total": 362,
+      "position_error_mm": {
+        "p95": 0.4698657130751563,
+        "median": 0.142736921831564,
+        "max": 1.283399926390656
+      }
+    },
+    {
+      "update": 3000,
+      "sha256": "ad1b9b7bbb4e45b7d89e2de4149b22e9a8b9d298ea8ed66073d24639f434ccb7",
+      "accepted": 361,
+      "total": 362,
+      "position_error_mm": {
+        "p95": 0.36735766922359386,
+        "median": 0.09761442073092857,
+        "max": 0.9892103700698472
+      }
+    }
+  ],
+  "wall_seconds_at_last_log": 192.54522179998457,
+  "physical_trials_at_packaging": 0,
+  "physical_development_seeds_exposed": [],
+  "physical_evaluation_seeds_exposed": [],
+  "status": "offline gate passed; physical validation still required"
+}

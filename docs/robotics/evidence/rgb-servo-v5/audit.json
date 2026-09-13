@@ -1,0 +1,44 @@
+{
+  "verified_files": 9,
+  "device": "cpu",
+  "scores": [
+    {
+      "update": 0,
+      "accepted": 361,
+      "total": 362,
+      "position_error_mm": {
+        "p95": 0.5119539582089812,
+        "median": 0.1826187185445931,
+        "max": 1.710526467717354
+      },
+      "maximum_rescore_position_delta_mm": 0.00011605488691164567,
+      "maximum_rescore_axis_delta": 4.690946072997623e-07
+    },
+    {
+      "update": 1000,
+      "accepted": 361,
+      "total": 362,
+      "position_error_mm": {
+        "p95": 0.46985339480741445,
+        "median": 0.14273687843860897,
+        "max": 1.283421105997645
+      },
+      "maximum_rescore_position_delta_mm": 0.00013785515408812343,
+      "maximum_rescore_axis_delta": 5.477578225765759e-07
+    },
+    {
+      "update": 3000,
+      "accepted": 361,
+      "total": 362,
+      "position_error_mm": {
+        "p95": 0.3673559713824074,
+        "median": 0.09762080212077462,
+        "max": 0.9892203315634083
+      },
+      "maximum_rescore_position_delta_mm": 0.00013273628033498575,
+      "maximum_rescore_axis_delta": 4.451807316410922e-07
+    }
+  ],
+  "kinematic_gate_passed": true,
+  "scope": "Checkpoint reload and independent MuJoCo forward-geometry checks only; no new physical test."
+}
