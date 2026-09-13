@@ -14,7 +14,11 @@ Run the hardware inspection first, choosing a fresh evidence folder:
 .\.venv-training\Scripts\python.exe scripts/inspect_intel_target.py --inspect-only --output .run/intel-final-hardware.json
 ```
 
+For the complete procedure, `./verify-final-on-intel.ps1` provides a disk/environment preflight and an unused dated report folder. It defaults to CPU inference. Pass `-Python` with an existing Python 3.12 training-environment executable when using an isolated checkout. It does not read credentials, upload evidence or submit the entry. The explicit Python commands below remain available.
+
 Check the actual OpenGL renderer. If it says NVIDIA, it does not establish Intel graphics execution. Select the Intel graphics adapter for this Python runtime through the laptop's supported graphics settings, restart the process, and record a new inspection. Preserve both results. Device availability in OpenVINO and the OpenGL renderer are separate facts.
+
+The final flag also checks the actual device name in every selected inference benchmark. A generic `GPU` identifier can refer to NVIDIA on a mixed-vendor system; Intel CPU and rendering alone must not be mistaken for Intel inference. Missing identity or failed parity keeps `inference_devices_intel` false.
 
 The packaged baseline is ready for this run from the private development branch:
 
@@ -31,5 +35,7 @@ Network benchmark throughput excludes rendering, vision preprocessing, motor-fee
 ## Verification performed on the RTX PC
 
 The portable script passed an original-bottle smoke test here: export parity passed, physical release and arm parking passed, and `strict_hardware_and_physics_passed` correctly remained false for AMD/NVIDIA. Local reports are retained under `.run/final-goal/intel-verifier-pc-smoke-v1`. This is a tooling check, not final Intel evidence.
+
+The complete six-skill procedure was then tested with the privately pushed RGB-evidence revision `1a27b0b`. All six re-exports passed parity, and the physical seed-42 sequence completed in 50.15 wall seconds with release, parking and zero unexpected collisions. The strict hardware flag correctly remained false. [Hardware/benchmark flags](evidence/learned-dinner-v6/portable-verifier-pc-seed42.json) and [all six physical outcomes](evidence/learned-dinner-v6/portable-verifier-pc-physical-seed42.json) are packaged; raw recordings remain under `.run/final-goal/intel-verifier-six-skill-pc-v1`. This verifies the full command used tomorrow; it does not replace running it on the Intel laptop.
 
 The actual laptop run, hardware interpretation and submission confirmation remain open until their evidence exists. The source and media draft are prepared; that does not replace device execution.

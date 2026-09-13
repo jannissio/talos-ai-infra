@@ -20,7 +20,7 @@ Five new neural skill models complement the preserved bottle model. Classical RG
 
 Training runs on an RTX 4070. Models are exported to OpenVINO with numerical parity checks. Historical Intel CPU and integrated-GPU bottle measurements are preserved; final-suite Intel verification remains pending. The repository includes compact training inputs, physical evaluation scripts, assets and model provenance.
 
-The demonstrated scope is finite starting regions and fixed task destinations. Arbitrary reachable positions, continuous visual grasp correction, pouring and airborne handoffs remain unfinished. The hosted interface is being verified privately before release; local voice input has passed a human microphone trial.
+The demonstrated scope is finite starting regions and fixed task destinations. Arbitrary reachable positions, continuous visual grasp correction, pouring and airborne handoffs remain unfinished. The private hosted CPU demo completes all six tasks on exposed seed 42; anonymous access remains to be checked at release. Local voice input has passed a human microphone bottle trial.
 
 ## Media and links
 
@@ -42,7 +42,7 @@ Main-video instructions/explanations are captions; it has no audio track. The or
 
 Reproduction, architecture and complete physical outcomes are in the repository. The v6 baseline completes 8/10 frozen six-skill dinner sequences; the two placement failures are retained. Table-supported bottle relays pass 5/5 trials in each direction. Separate ten-seed videos are in submission/final-v6.
 
-The selected dinner controller uses initial RGB features and motor feedback. A separate RGB correction experiment completed all 48 trials: live control passed 2/12 nominal and 3/12 pushed scenes; frozen-image control passed 1/12 and 0/12. Seven seeds were refused before motion. All outcomes and reproduction inputs are packaged; this candidate is not promoted. Arbitrary placements, pouring, airborne handoffs and unrestricted language remain unfinished.
+The selected dinner controller uses initial RGB features and motor feedback. Separate RGB experiments remain unpromoted: V1 passed 2/12 nominal and 3/12 pushed live scenes, versus 1/12 and 0/12 with frozen images. V2 routing completed 48 new frozen trials: live 6/12 nominal and 5/12 pushed, frozen-image 2/12 and 1/12. Only one V2 seed passed both undisturbed controls. All outcomes, failed revisions and reproduction inputs are packaged. Different final seeds prevent a controlled V1/V2 comparison. Arbitrary placements, pouring, airborne handoffs and unrestricted language remain unfinished.
 
 Original Talos code, weights and procedural data are MIT licensed. Upstream SO-101 assets retain their Apache-2.0 notices. Development reuse and AI assistance are disclosed in docs/PROVENANCE.md.
 

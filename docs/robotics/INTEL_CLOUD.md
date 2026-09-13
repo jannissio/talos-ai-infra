@@ -2,6 +2,8 @@
 
 ## September 13 access recheck
 
+**Current disposition:** the user cannot access an Intel account and has confirmed the older Intel laptop is available September 14. No cloud instance has been requested or reserved. The final route is the [portable laptop verification](INTEL_FINAL_VERIFICATION.md), with the Core Ultra eligibility gap still explicit. A successful i7-10850H run would establish legacy Intel execution only.
+
 The rendered portal still advertises Core Ultra AI PCs, browser/SSH access and a self-service Test Drive category. The actual hardware catalog requires sign-in, so no Series 2/3 SKU, available slot, price or approved reservation has been verified for this account.
 
 The [current request guide](https://cloud.intel.com/docs/how_to_request.html) states **2–3 business days** for approved/rejected/waitlisted status; pre-approved requests can be immediate. That delay may exceed our September 14 finish target. Reservations have fixed expiry and a maximum total duration of 30 days. Linux browser access starts JupyterLab; Windows starts RDP. Browser access does not require uploading an SSH key.

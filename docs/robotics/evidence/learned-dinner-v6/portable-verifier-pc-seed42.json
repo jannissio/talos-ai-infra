@@ -1,0 +1,142 @@
+{
+  "hardware": {
+    "schema": "talos.intel-target-inspection.v1",
+    "cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+    "os": "Windows",
+    "os_release": "11",
+    "python": "3.12.10",
+    "mujoco": "3.12.0",
+    "openvino": "2026.3.0-22451-8a17657b995-releases/2026/3",
+    "openvino_devices": [
+      {
+        "id": "CPU",
+        "name": "AMD Ryzen 7 5800X 8-Core Processor             "
+      },
+      {
+        "id": "GPU",
+        "name": "NVIDIA GeForce RTX 4070 (dGPU)"
+      }
+    ],
+    "opengl": {
+      "vendor": "NVIDIA Corporation",
+      "renderer": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+      "version": "4.6.0 NVIDIA 591.86"
+    },
+    "intel_cpu": false,
+    "intel_opengl_renderer": false,
+    "core_ultra_series": null,
+    "strict_written_hardware_check": false,
+    "all_intel_cpu_and_graphics": false,
+    "physical_policy_run": "Required separately; device discovery does not demonstrate task success.",
+    "eligibility": "Record actual hardware. Organizer confirmation remains necessary for legacy Intel under the livestream clarification."
+  },
+  "benchmarks": {
+    "bottle": {
+      "device": "CPU",
+      "name": "AMD Ryzen 7 5800X 8-Core Processor             ",
+      "execution_devices": [
+        "CPU"
+      ],
+      "max_joint_error_rad": 2.3449473884440408e-05,
+      "parity_passed": true,
+      "median_ms": 0.16160006634891033,
+      "p95_ms": 0.2135801012627781,
+      "synchronous_chunks_per_second": 6083.835230582865,
+      "output_endpoints_per_chunk": 20,
+      "precision_hint": "<Type: 'float32'>",
+      "warmup_calls": 20,
+      "measured_calls": 300
+    },
+    "plate": {
+      "device": "CPU",
+      "name": "AMD Ryzen 7 5800X 8-Core Processor             ",
+      "execution_devices": [
+        "CPU"
+      ],
+      "max_joint_error_rad": 3.6963082550300896e-06,
+      "parity_passed": true,
+      "median_ms": 0.16270007472485304,
+      "p95_ms": 0.19504985539242625,
+      "synchronous_chunks_per_second": 6005.428915520063,
+      "output_endpoints_per_chunk": 20,
+      "precision_hint": "<Type: 'float32'>",
+      "warmup_calls": 20,
+      "measured_calls": 300
+    },
+    "mug": {
+      "device": "CPU",
+      "name": "AMD Ryzen 7 5800X 8-Core Processor             ",
+      "execution_devices": [
+        "CPU"
+      ],
+      "max_joint_error_rad": 3.5493929431140714e-06,
+      "parity_passed": true,
+      "median_ms": 0.15765009447932243,
+      "p95_ms": 0.2089899615384639,
+      "synchronous_chunks_per_second": 6363.738561741066,
+      "output_endpoints_per_chunk": 20,
+      "precision_hint": "<Type: 'float32'>",
+      "warmup_calls": 20,
+      "measured_calls": 300
+    },
+    "drawer": {
+      "device": "CPU",
+      "name": "AMD Ryzen 7 5800X 8-Core Processor             ",
+      "execution_devices": [
+        "CPU"
+      ],
+      "max_joint_error_rad": 3.7485463053599233e-06,
+      "parity_passed": true,
+      "median_ms": 0.13329996727406979,
+      "p95_ms": 0.18787480657920247,
+      "synchronous_chunks_per_second": 6943.946136512543,
+      "output_endpoints_per_chunk": 20,
+      "precision_hint": "<Type: 'float32'>",
+      "warmup_calls": 20,
+      "measured_calls": 300
+    },
+    "fork": {
+      "device": "CPU",
+      "name": "AMD Ryzen 7 5800X 8-Core Processor             ",
+      "execution_devices": [
+        "CPU"
+      ],
+      "max_joint_error_rad": 6.02756296075313e-06,
+      "parity_passed": true,
+      "median_ms": 0.1467500114813447,
+      "p95_ms": 0.23011500015854836,
+      "synchronous_chunks_per_second": 6360.419532024164,
+      "output_endpoints_per_chunk": 20,
+      "precision_hint": "<Type: 'float32'>",
+      "warmup_calls": 20,
+      "measured_calls": 300
+    },
+    "spoon": {
+      "device": "CPU",
+      "name": "AMD Ryzen 7 5800X 8-Core Processor             ",
+      "execution_devices": [
+        "CPU"
+      ],
+      "max_joint_error_rad": 3.341114229726827e-06,
+      "parity_passed": true,
+      "median_ms": 0.1591000473126769,
+      "p95_ms": 0.1965850824490191,
+      "synchronous_chunks_per_second": 6212.196202369003,
+      "output_endpoints_per_chunk": 20,
+      "precision_hint": "<Type: 'float32'>",
+      "warmup_calls": 20,
+      "measured_calls": 300
+    }
+  },
+  "physical_passed": true,
+  "source_checkpoint_sha256": {
+    "bottle": "e2a1ff9400cdb49d7b9a38d5880759a0269814111c88b2081416f8e349c7564e",
+    "plate": "d8e55a0b354b84e7a458b6ddc824d499764ea595213c8f3a7a6c4194362f5247",
+    "mug": "4a239422c24726a3c1319428f2dbf40e79b5f4ab3cf50f66ca53eb0b4134df62",
+    "drawer": "32115eb5dcc782d80c73d53925b0cb9dc610f03d149580a810752d2bb833cc3c",
+    "fork": "fbdc32af07b247af0771ec8ff0c029c57f558d02954be3bb77e07e9b0b5dd453",
+    "spoon": "df5bdb17d0dc3a65dae7eba8fea9d5a3edb036edecf1bbb0c32021c64fbce47e"
+  },
+  "strict_hardware_and_physics_passed": false,
+  "note": "Legacy Intel eligibility depends on organizer clarification. Diagnostic mode never turns this flag true."
+}

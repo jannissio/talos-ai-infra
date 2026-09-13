@@ -12,6 +12,7 @@ import sys
 from types import SimpleNamespace
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from simulation_lab.storage import require_space
+from simulation_lab.hardware_evidence import all_inference_devices_are_intel
 from scripts.inspect_intel_target import inspect
 from scripts.export_primitive_openvino import run as export
 from scripts.evaluate_learned_dinner import run as evaluate
@@ -44,8 +45,10 @@ def run(args):
     save(args.output/'suite.json',suite)
     returncode=evaluate(SimpleNamespace(suite=args.output/'suite.json',checkpoint=None,episode=None,
         seed=args.seed,skills=args.skills,output=args.output/'physical.json',capture=args.output/'physical-recording',disturbance_x_n=0.))
-    strict=hardware['strict_written_hardware_check'] and hardware['all_intel_cpu_and_graphics']
+    intel_inference=all_inference_devices_are_intel(benchmarks)
+    strict=hardware['strict_written_hardware_check'] and hardware['all_intel_cpu_and_graphics'] and intel_inference
     result={'hardware':hardware,'benchmarks':benchmarks,'physical_passed':returncode==0,
+            'inference_devices_intel':intel_inference,
             'source_checkpoint_sha256':{s:hashlib.sha256((p/'primitive.safetensors').read_bytes()).hexdigest() for s,p in sources.items()},
             'strict_hardware_and_physics_passed':bool(strict and returncode==0),
             'note':'Legacy Intel eligibility depends on organizer clarification. Diagnostic mode never turns this flag true.'}

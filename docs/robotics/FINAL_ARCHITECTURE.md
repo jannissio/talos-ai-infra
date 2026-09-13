@@ -57,10 +57,12 @@ Install the environments from the root README, then use unused output paths:
 
 These seeds are exposed reproduction cases. Use `--capture` with a fresh folder for actual state traces. Check disk before every dataset, episode and export; keep 10 GiB plus expected writes. Do not overwrite existing evidence.
 
-## Actively scheduled beyond the baseline
+## Experiments beyond the baseline
 
 The [RGB-servo protocol](experiments/rgb-servo-bottle-v1.json) declares a 48-pair approach grid, varied training scenes, requested destinations and paired live/frozen image tests. The approach probe found 27 candidates, covering 21 of 24 positions with at least one arm; that is not full physical reachability proof. An exposed RGB probe found amber-arm ambiguity and an unsuitable camera view.
 
 Three fixed cameras, a custom CNN observer and a neural Cartesian motor map are implemented. Training/scoring use synthetic segmentation, projected keypoints and offline IK labels; action inputs exclude simulator object poses and inference-time IK. The final rigid observer passes its fresh perception test at 1.938 mm p95. All 48 frozen physical trials complete: nominal live 2/12, nominal frozen 1/12, pushed live 3/12 and pushed frozen 0/12. Seven starts are refused before movement. Only one seed passes both undisturbed controls; live images recover its 8.77 mm push, while frozen images fail. The candidate remains experimental and is not selected for the dinner workflow. Its [models and reproduction commands](../../models/bottle_servo_v1/README.md) and [all outcomes](evidence/rgb-servo-v1/README.md) are packaged. See the [experiment record](RGB_SERVO_PROGRESS.md) for earlier failures and the corrected target-label bug. Absolute bottle yaw is not an observer output because the known bottle is nearly rotationally symmetric.
+
+The separate [V2 routing experiment](evidence/rgb-servo-v2/README.md) reuses the same weights with independently selected lift/transport heights and optional table-supported relays. Its new frozen set completes 48 cases: nominal live 6/12, nominal frozen 2/12, pushed live 5/12 and pushed frozen 1/12. Three seeds are refused before motion. It also misses its promotion gate; only one seed passes both undisturbed controls. Both development revisions and every final outcome are retained. Neither experiment replaces the selected six-skill workflow.
 
 Pouring, general other-object handoffs, airborne exchanges, broad object/lighting variation and unrestricted instructions remain unfinished. Preparing submission assets does not complete these development stages.
