@@ -12,6 +12,8 @@
 
 September 13 PC follow-through: see [RTX 4070 baseline verification](robotics/PC_BASELINE.md) for fresh installations, physical regression results and a successful human-triggered voice trial. The [coverage experiment](robotics/RTX4070_COVERAGE_EXPERIMENT.md) stopped at its declared data gate and retained the published model. Follow the [September 14 release plan](hackathon/RELEASE_PLAN_2026-09-14.md): the user requires completion tomorrow and gives September 15 as the deadline. Live timing, final Intel execution and judge-access details remain open. The original handoff below is retained as historical context.
 
+**Late September 13 refinement:** [V3](robotics/evidence/rgb-servo-v3/README.md) uses a separate 6,000-step motor-training budget with geometry losses. It improves exposed kinematic scores but misses the unchanged 0.500 mm p95 gate (result 0.564 mm), so it stops without physical trials or promotion. Both checkpoints and every score are packaged; the reserved physical scenes remain unexposed. Current training checks pass **15 tests**; the unchanged application suite remains at **67 passed**. Continue from the final review packet, preserving GitHub/HF privacy and leaving Submit to the user.
+
 Clone https://github.com/jannissio/talos-ai-infra and open the checkout as a Codex project. Current final-submission development is on `codex/final-submission`; use that branch until the reviewed final release is merged. The old laptop's absolute path is not required.
 
 ## Read first

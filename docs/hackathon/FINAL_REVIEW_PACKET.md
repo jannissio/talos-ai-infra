@@ -10,7 +10,8 @@ Prepared September 13. Internal completion target: **September 14, 18:00 CEST**,
 - Private hosted CPU demo: all six learned tasks pass on exposed seed 42. Full local browser at `http://127.0.0.1:8768/`; hosted Space at `https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics`.
 - [Experimental RGB correction](../robotics/evidence/rgb-servo-v1/README.md): all 48 outcomes, selected experimental weights, compact generation inputs and a labeled comparison video are saved. It remains unpromoted because nominal physical coverage is only 2/12.
 - [V2 routing experiment](../robotics/evidence/rgb-servo-v2/README.md): another 48 frozen trials finish at 6/12 nominal live and 5/12 pushed live, versus 2/12 and 1/12 with images frozen per leg. It also misses its promotion gate. Both revisions, all failures and exact state recordings are retained; the baseline is unchanged.
-- Latest full checks: 67 application tests, 13 training tests, dependency checks, package hashes, exact compact arrays and video decoding pass. The 41 original protected artifacts are unchanged. Credentials remain in local `.env`; commit metadata is nonpersonal.
+- [V3 offline motor refinement](../robotics/evidence/rgb-servo-v3/README.md) stops at its declared kinematic gate: 0.564 mm p95 against 0.500 mm. Both checkpoints and all scores are preserved; no physical trial or model promotion follows.
+- Latest full checks: 67 application tests, 15 training tests, dependency checks, package hashes, exact compact arrays and video decoding pass. The 41 original protected artifacts are unchanged. Credentials remain in local `.env`; commit metadata is nonpersonal.
 - Development is on `codex/final-submission`, including preserved V1 evidence revision `1a27b0b` and the subsequent V2 routing/Intel-verifier preparation. Use the latest privately pushed revision of this branch. The hosted baseline remains unchanged.
 
 ## Required before the public release

@@ -1,0 +1,54 @@
+{
+  "schema": "talos.rgb-servo-motor-refinement-result.v3",
+  "status": "stopped at the unchanged kinematic gate; not promoted",
+  "selected_step": 6000,
+  "kinematic_gate_passed": false,
+  "gate": {
+    "minimum_accepted": 360,
+    "total": 362,
+    "maximum_p95_position_error_mm": 0.5
+  },
+  "baseline": {
+    "accepted": 355,
+    "total": 362,
+    "position_error_mm": {
+      "p95": 1.0835085338923176,
+      "median": 0.4507859808174275,
+      "max": 2.7293176663517187
+    }
+  },
+  "candidates": [
+    {
+      "step": 3000,
+      "sha256": "637fed3bf4187eb5e3f6cdb0ff226d1d147d51b64d1c3a685a59f661029bccec",
+      "accepted": 360,
+      "total": 362,
+      "position_error_mm": {
+        "p95": 0.6339582339678665,
+        "median": 0.2535943064061275,
+        "max": 1.9386740875562274
+      }
+    },
+    {
+      "step": 6000,
+      "sha256": "9fa2e84e38134714a3a4c466a837bd10ffdf30bea864d5f599e811b7b8b31a0d",
+      "accepted": 361,
+      "total": 362,
+      "position_error_mm": {
+        "p95": 0.5642072451165258,
+        "median": 0.20830792372093337,
+        "max": 1.7462836237924733
+      }
+    }
+  ],
+  "training_steps": 6000,
+  "wall_seconds_at_last_training_step": 151.6954209995456,
+  "maximum_torch_allocated_vram_gib": 0.022029876708984375,
+  "cuda_device": "NVIDIA GeForce RTX 4070",
+  "cuda_geometry_maximum_absolute_error": 1.71946551441593e-07,
+  "physical_trials": 0,
+  "physical_development_seeds_exposed": [],
+  "physical_evaluation_seeds_exposed": [],
+  "scope": "Original exposed kinematic development labels only. No physical success, OpenVINO parity or wider coverage is established.",
+  "training_log": "Structured curve preserved in training.json. The raw local console log is not packaged because its warning includes a personal absolute path."
+}
