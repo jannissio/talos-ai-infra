@@ -18,6 +18,8 @@ September 13 PC follow-through: see [RTX 4070 baseline verification](robotics/PC
 
 Clone https://github.com/jannissio/talos-ai-infra and open the checkout as a Codex project. Current final-submission development is on `codex/final-submission`; use that branch until the reviewed final release is merged. The old laptop's absolute path is not required.
 
+**September 14 motor/hosting follow-through:** [V4](robotics/evidence/rgb-servo-v4/README.md) stops offline at 0.512 mm p95. [V5](robotics/evidence/rgb-servo-v5/README.md) passes its offline gate at 0.367 mm, then stops at its physical development gate: 3/6 nominal live, 1/6 nominal frozen, 3/6 pushed live, 0/6 pushed frozen. All 24 cases and 13,711 state frames are packaged; final seeds stay unexposed and the selected dinner baseline is unchanged. The private hosted relay-plus-dinner workflow also passes all seven steps on exposed seed 42 in 297.31 wall seconds. Its hosting allowance is now 420 seconds, with local cancellation/restart verified; check the latest private deployment record for the subsequent cloud regression. Continue preparation with the active checklist, preserving privacy and never clicking Submit.
+
 ## Read first
 
 - `README.md`

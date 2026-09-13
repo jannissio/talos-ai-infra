@@ -1,6 +1,6 @@
 # Talos v6 submission draft
 
-All three form steps were saved and rechecked after a full page reload on September 14, including the 1,897-character additional-information text. The entry is **not submitted**. The repository and Space remain private until the final release. Update pending checks below before the user's final Submit action.
+All three form steps were saved and rechecked after a full page reload on September 14, including an exact match of the 1,962-character additional-information text below. The entry is **not submitted**. The repository and Space remain private until the final release. Update pending checks below before the user's final Submit action.
 
 **Title (36/50):** Talos: Learned Dinner-Table Robotics
 
@@ -49,9 +49,9 @@ The selected dinner controller uses initial RGB features and motor feedback. Sep
 
 Original Talos code, weights and procedural data are MIT licensed. Upstream SO-101 assets retain their Apache-2.0 notices. Development reuse and AI assistance are disclosed in docs/PROVENANCE.md.
 
-The private hosted demo completed all six learned tasks on exposed seed 42 using OpenVINO CPU: 247.655 simulated / 273.03 wall seconds, with physical release and parking verified. Final-suite Intel laptop execution and anonymous judge access remain open. Historical Intel timings describe the original bottle model only. The GitHub repository and hosted Space remain private until immediately before final submission.
+The private OpenVINO CPU demo passes six-skill dinner and seven-step relay-plus-dinner on exposed seed 42 in 273.03 and 297.31 wall seconds, with release and parking verified. Final-suite Intel laptop execution and anonymous judge access remain open. Historical Intel timings describe the original bottle model only. The GitHub repository and hosted Space remain private until immediately before final submission.
 
-V3 motor refinement stopped at its offline precision gate; no physical trial or deployed-model change followed.
+Motor-only V3/V4 stopped offline. V5 passed offline but stopped at 3/6 nominal and 3/6 pushed live development successes; its final scenes stay unexposed. No candidate is promoted.
 
 ## Before final submission
 

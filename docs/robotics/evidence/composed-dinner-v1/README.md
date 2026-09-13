@@ -43,3 +43,5 @@ In the full local browser, select **Learned dinner sequence**, **Task start**, *
 ```
 
 The evaluator refuses a changed frozen input or an existing output folder. Every dataset/export checks disk, retaining 10 GiB plus expected writes. Raw and packaged state evidence total approximately 133 MiB, below the separate 256 MiB protocol budget. Original models and all previous evidence remain unchanged. Any revised controller needs new development/evaluation separation; these final failures must not be used for hidden tuning of the reported result.
+
+September 14 deployment regression: the private hosted CPU demo also completes the seven-step workflow on exposed seed 42, in **283.31 simulated / 297.31 wall seconds**. Every step releases and parks with zero unexpected collisions, state writes or hidden forces. [Selected browser-report fields](cloud-cpu-seed42.json) preserve this separate deployment observation; it is not another frozen trial, anonymous-access verification or an Intel run. Its 2.69-second margin under the former 300-second hosting limit motivates a 420-second hosting allowance; the controller and physical success limits are unchanged.

@@ -40,6 +40,7 @@ def simulate(instruction, seed, controller, bottle_start, camera, inference, req
         raise gr.Error('Shared GPU inference is unavailable in this local interface.')
     job = TrialWorker((instruction, seed, controller, bottle_start, camera),
                       suite=SUITE, cache_dir=os.environ['GRADIO_TEMP_DIR'],
+                      max_wall_seconds=420,
                       gpu_callback=generate_trajectory if use_gpu else None)
     with JOBS_LOCK:
         JOBS[request.session_hash] = job
