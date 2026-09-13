@@ -1,8 +1,12 @@
 {
   "date": "2026-09-13",
   "protocol_sha256": "5793f86747412506b510d4309fc998470b85a335d90deeec9e60e17d7cc8fede",
+  "protocol_sha256_scope": "Exact local declaration bytes with Windows CRLF line endings; Git publishes text with LF. Use canonical_protocol_sha256 for cross-checkout verification.",
+  "canonical_protocol_sha256": "c36aef045224ef837e1a46e4d25a9c3eb984285870e3697a9c43aeeac082c54a",
+  "canonical_protocol_encoding": "UTF-8 encoding of json.dumps(protocol, sort_keys=True, separators=(',', ':'))",
   "scope": "Reconstructed exposed development starts, not fresh holdouts. All attempted cases retained.",
   "baseline_checkpoint": "models/bottle_visual",
+  "baseline_hashes_scope": "Exact local file bytes at evaluation. Binary weights are byte-stable; text file line endings can differ across checkouts.",
   "baseline_hashes": {
     "openvino.json": "00d12a2a6dd68d5d48d010074cfa0ac4c6058d024b7a8dd86b6ca12a3b327a5a",
     "primitive.bin": "5d62de7468ff238558e5f0aed74977a5c557631d1a9d732b91c73699ee19282a",

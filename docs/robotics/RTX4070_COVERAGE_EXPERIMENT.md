@@ -18,6 +18,8 @@ The experiment used less than 1 MiB of compact outputs and left approximately 53
 
 Validation: the 43-test application suite and 10-test training-contract suite passed. The final four protocol tests also passed, including an additional check that resuming preserves failed attempts in the denominator and respects the new-attempt limit. Physical diagnostic runs returned the expected success/failure exit codes and retained all reports. The 41 original packaged model, frozen-input and submission files remained byte-identical.
 
+The results retain the original local declaration-file hash and also provide a canonical JSON protocol hash for verification across Windows/Git line-ending conversion. The parsed local and published protocols were checked to be identical. This does not change any declared scene or result.
+
 Reproduce the stopped diagnostic with fresh output locations:
 
 ```powershell
