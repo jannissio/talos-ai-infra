@@ -204,6 +204,10 @@ if __name__ == "__main__":
     parser.add_argument('--learned',action='store_true',help='Preload the learned runtime before accepting browser requests (training environment).')
     args = parser.parse_args()
     if args.learned:
+        import torch
+        # Set the CPU worker budget before HTTP/physics threads start. The
+        # learned controller also applies it on its owning physics thread.
+        torch.set_num_threads(2)
         from .learned_task import DEFAULT_CHECKPOINT
         # Import PyTorch on the main thread before the engine starts. Leave
         # OpenVINO model compilation on its owning physics thread: precompiling

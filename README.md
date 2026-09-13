@@ -22,9 +22,14 @@ For learned bottle control, use the separate training/runtime environment:
 
 ```powershell
 py -3.12 -m venv .venv-training
+.\.venv-training\Scripts\python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
 .\.venv-training\Scripts\python -m pip install -r requirements-training.txt -r requirements-openvino.txt
+.\.venv-training\Scripts\python -m pip check
+.\.venv-training\Scripts\python -c "import torch; assert torch.cuda.is_available(), 'CUDA unavailable'; print(torch.__version__, torch.version.cuda, torch.cuda.get_device_name(0))"
 .\.venv-training\Scripts\python -m simulation_lab.server --learned
 ```
+
+The explicit CUDA wheel installation is for NVIDIA training on Windows; it follows the [official PyTorch 2.8 installation matrix](https://pytorch.org/get-started/previous-versions/). The learned browser controller still uses OpenVINO on the CPU; CPU-only inference can omit the CUDA-specific installation and availability assertion. Use `py -3.12` and the environment paths above: plain `python` may resolve to another project's environment. Check destination-drive space before installation and every dataset/export, preserving the [10 GiB reserve](docs/robotics/STORAGE_POLICY.md) in addition to expected writes.
 
 Select **Learned upright bottle · OpenVINO**, reset to seed 42, and enter `place the bottle`. The [upright model](models/bottle_visual/README.md) uses overhead RGB localization and motor feedback. The original model remains available for familiar sideways practice. Stop a foreground server with Ctrl+C.
 

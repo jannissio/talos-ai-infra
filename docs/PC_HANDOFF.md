@@ -1,5 +1,7 @@
 # Continue Talos on another Windows PC
 
+September 13 PC follow-through: see [RTX 4070 baseline verification](robotics/PC_BASELINE.md) for fresh installations, tests, physical regression results and the remaining live-timing/voice limits, and [the proposed next coverage experiment](robotics/RTX4070_COVERAGE_EXPERIMENT.md). The original handoff below is retained as historical context.
+
 Clone https://github.com/jannissio/talos-ai-infra and open the checkout as a Codex project. Use the repository's current `main` branch. The old laptop's absolute path is not required.
 
 ## Read first
