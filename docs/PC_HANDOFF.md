@@ -14,6 +14,8 @@ September 13 PC follow-through: see [RTX 4070 baseline verification](robotics/PC
 
 **Late September 13 refinement:** [V3](robotics/evidence/rgb-servo-v3/README.md) uses a separate 6,000-step motor-training budget with geometry losses. It improves exposed kinematic scores but misses the unchanged 0.500 mm p95 gate (result 0.564 mm), so it stops without physical trials or promotion. Both checkpoints and every score are packaged; the reserved physical scenes remain unexposed. Current training checks pass **15 tests**; the unchanged application suite remains at **67 passed**. Continue from the final review packet, preserving GitHub/HF privacy and leaving Submit to the user.
 
+**September 14 preparation:** the [evidence page](hackathon/PUBLIC_DEMO.md) now contains all five current videos and passes local asset/HTTP hash and browser playback-selection checks; preview at `http://127.0.0.1:8769/`. Pages remains disabled and manual-only. Both learned relay directions also pass fresh private hosted CPU checks on exposed seed 42, with all legs released and parked. All form steps, media and the 1,897-character additional-information text persist after reload. The entry is still a draft; no final submission action has been taken. Verify the latest reviewed private `main` and development revisions before release, especially after later Intel evidence is added.
+
 Clone https://github.com/jannissio/talos-ai-infra and open the checkout as a Codex project. Current final-submission development is on `codex/final-submission`; use that branch until the reviewed final release is merged. The old laptop's absolute path is not required.
 
 ## Read first

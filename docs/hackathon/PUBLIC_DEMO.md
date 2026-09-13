@@ -6,9 +6,9 @@ Checked September 13, 2026. The [submission guide](https://lablab.ai/ai-articles
 
 ## GitHub page
 
-The prepared `site/` page contains recordings, measured scope, outcome links, the published presentation and local launch instructions. It labels all recordings explicitly. `scripts/build_public_site.py` exports only an explicit allowlist of public assets, checks the 10 GiB reserve and refuses to replace existing builds.
+The prepared `site/` page now contains the current v6 main demonstration, all-ten dinner and relay recordings, all-ten integrated workflows and the labeled RGB experiment. It links the three complete outcome summaries, current presentation, hosted demo and full-suite launch instructions. Scope text retains failed placements and pending Intel/voice/public-access checks. `scripts/build_public_site.py` exports only an explicit allowlist of assets, including MIT/Apache licenses and notices, checks the 10 GiB reserve and refuses to replace existing builds.
 
-The GitHub Actions workflow publishes this build through Pages. [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) hosts HTML/CSS/JavaScript; it does not run Talos's Python/MuJoCo server.
+The GitHub Actions workflow is prepared for a manual Pages deployment after the final release; it also refuses a private repository. It remains disabled remotely. Development pushes cannot trigger deployment. [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) hosts HTML/CSS/JavaScript; it does not run Talos's Python/MuJoCo server.
 
 The authenticated repository check found that the existing repository was **private**, despite earlier handoff descriptions of it as public. Anonymous access returned 404. Two remote branches, no tags, no issues, no pull requests and no releases were present. All nine reachable commit identities use `Talos contributors <contributors@talos.invalid>`. Public access remains open until visibility, deployment and anonymous access have actually been verified.
 
@@ -18,6 +18,10 @@ Preview locally in a fresh export directory:
 .\.venv\Scripts\python scripts/build_public_site.py --output .run/public-site-preview
 .\.venv\Scripts\python -m http.server 8767 --bind 127.0.0.1 --directory .run/public-site-preview
 ```
+
+September 14 local verification: the fresh v6 export contains **16 allowlisted files / 27,946,778 bytes**, plus its manifest and Pages marker. Every file is byte-identical to its source and its unauthenticated localhost HTTP response; all local asset/anchor links resolve. The [machine-readable result](evidence/site-v6-local.json) is a local check, not proof of public availability. Browser checks at the existing 1280-pixel viewport load all five videos without media errors (189.1, 73.0, 76.3, 82.9 and 50.4 seconds), with the corresponding captions, selected controls and downloads. The page has no horizontal overflow. Current local review: `http://127.0.0.1:8769/`.
+
+Recheck a fresh export with `scripts/verify_public_site.py --build <export-folder> --base-url <served-base-url> --output <new-report.json>`. The same command can verify delivered public static bytes after the authorized release; it sends no authentication. Public repository access, hosted physics and the actual submission remain separate checks. Refresh the preparation-only access paragraph when public access is actually verified.
 
 ## Interactive backend
 
@@ -43,6 +47,8 @@ An initial CPU-only application was rejected by the ZeroGPU runtime because it r
 The first cloud learned bottle trial passes: 38.355 simulated seconds, 43.67 wall seconds, physical release/parking and no hidden state writes or forces. Cloud cancellation is confirmed. A full GPU sequence completes bottle, plate and mug but fails when requesting inference at the drawer step. Subsequent diagnostics identify a service allocation failure: no GPU became available within 60 seconds. A later short GPU bottle trial passes. The current revision reports inference device and distinguishes service failures. The default CPU path now completes all six learned tasks in a fresh cloud trial: **247.655 simulated / 273.03 wall seconds**, release and parked arms verified, no unexpected collisions, state writes or hidden forces. See the [selected-field browser evidence](../robotics/evidence/learned-dinner-v6/cloud-cpu-seed42.json). Seed 42 is an exposed deployment regression, not an extra unseen test.
 
 The free tier has account/anonymous GPU quotas and a shared queue. No purchase or paid upgrade is authorized. Keep both source repositories private until the final submission release, then verify anonymous access and actual judge usability.
+
+September 14 private deployment checks also pass both learned bottle-relay directions on exposed seed 42. The [forward relay](../robotics/evidence/learned-relays-v3/cloud-cpu-forward-seed42.json) completes in 74.02 simulated / 81.36 wall seconds; the [reverse relay](../robotics/evidence/learned-relays-v3/cloud-cpu-reverse-seed42.json) completes in 74.01 / 80.06 seconds. Every leg verifies release and parked arms, with no unexpected collisions, state writes or hidden forces. The farther-left scene uses the ordinary `Place the bottle` instruction and the RGB planner selects the reverse relay. These are signed-in cloud regressions, not new randomized holdouts, anonymous tests or Intel measurements. The deployment revision and all models are unchanged.
 
 [Render's free compute](https://render.com/docs/compute-plans) provides only 0.1 CPU and 512 MB memory. [Its lifecycle limits](https://render.com/docs/free) include idle shutdown. These resources have not been shown sufficient for Talos's renderer and inference stack; do not promise a suitable live backend on that basis.
 

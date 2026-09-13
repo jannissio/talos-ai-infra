@@ -1,0 +1,139 @@
+{
+  "schema": "talos.evidence-site-verification.v1",
+  "passed": true,
+  "files": [
+    {
+      "file": "index.html",
+      "sha256": "f74e6a2dbf464a9d7e3854a5f494693ed74a0184bb46556e188689fb2bdfa170",
+      "bytes": 8163,
+      "http_status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "file": "style.css",
+      "sha256": "866545027f617e699ed533f16e8dda095595f1a3c5fec450ba56d56c09e10f8b",
+      "bytes": 5688,
+      "http_status": 200,
+      "content_type": "text/css"
+    },
+    {
+      "file": "app.js",
+      "sha256": "1b11809d530c5a095fbeb1b4c7f822f8bd25dea8468b4c6d1e1f1bee0db3d708",
+      "bytes": 1984,
+      "http_status": 200,
+      "content_type": "text/javascript"
+    },
+    {
+      "file": "assets/cover-v6.png",
+      "sha256": "77cfbbf1b56b83253379233d0c0d1354963e876845fab5884539abe9d9fdef93",
+      "bytes": 190016,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "file": "assets/Talos-demo-v6.mp4",
+      "sha256": "192bcbb8c13ecf3527d7d378e1aa0bc8a96ed4c87cf2b119da8813cef84eae9f",
+      "bytes": 8998287,
+      "http_status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "file": "assets/Talos-dinner-ten-v6.mp4",
+      "sha256": "265d0a3f6598bea9675150cafc6c7c720b449a14a1d0937d7732289dc3545368",
+      "bytes": 4336298,
+      "http_status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "file": "assets/Talos-relays-ten-v3.mp4",
+      "sha256": "7b201f6963c9ec33efbbc7fc1960b4c8938a5d8cb69201c19212b85dbb31793c",
+      "bytes": 4811740,
+      "http_status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "file": "assets/Talos-composed-dinner-ten-v1.mp4",
+      "sha256": "cf53c92f005037a17453a10ccc3d7af69b4a944113a100742d51a0b669435d69",
+      "bytes": 5440663,
+      "http_status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "file": "assets/rgb-feedback-experiment.mp4",
+      "sha256": "9533f55841fa420639e61f4a7f4329b74f8d3e56dbb70d87da81881c391ddd7b",
+      "bytes": 3390062,
+      "http_status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "file": "assets/Talos-v6.pdf",
+      "sha256": "d0cac4a25286c44bdcd5586cae01796c2884724640eeb4853ca423a8d56462e0",
+      "bytes": 722796,
+      "http_status": 200,
+      "content_type": "application/pdf"
+    },
+    {
+      "file": "assets/evidence/dinner-summary.json",
+      "sha256": "cdfae153871f9e62911b4d9e4d2c422278b8fef6322c27a050107250080c04a1",
+      "bytes": 4897,
+      "http_status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "file": "assets/evidence/relay-summary.json",
+      "sha256": "16df06e97b776d8da2507b4e9dbd5cfac72a200b1c938e7105e766c1ce03217e",
+      "bytes": 3459,
+      "http_status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "file": "assets/evidence/composed-summary.json",
+      "sha256": "83d4e9b36dd1b345a07572997b24da4d5dba7ca50db164648553bd5d5efd6285",
+      "bytes": 18917,
+      "http_status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "file": "assets/licenses/Talos-MIT.txt",
+      "sha256": "8250518a06f95e8614ccb0f74e70aa8a04e5314c9b35ff588d34d04b27daece4",
+      "bytes": 1066,
+      "http_status": 200,
+      "content_type": "text/plain"
+    },
+    {
+      "file": "assets/licenses/SO101-NOTICE.md",
+      "sha256": "a71e5f80fa2a9c43fa35b46a32a02319069947c75b8d89b69faaa97965274cd7",
+      "bytes": 1385,
+      "http_status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "file": "assets/licenses/SO101-Apache-2.0.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "http_status": 200,
+      "content_type": "text/plain"
+    }
+  ],
+  "bytes": 27946778,
+  "local_resource_references": [
+    "app.js",
+    "assets/Talos-composed-dinner-ten-v1.mp4",
+    "assets/Talos-demo-v6.mp4",
+    "assets/Talos-dinner-ten-v6.mp4",
+    "assets/Talos-relays-ten-v3.mp4",
+    "assets/Talos-v6.pdf",
+    "assets/cover-v6.png",
+    "assets/evidence/composed-summary.json",
+    "assets/evidence/dinner-summary.json",
+    "assets/evidence/relay-summary.json",
+    "assets/licenses/SO101-Apache-2.0.txt",
+    "assets/licenses/SO101-NOTICE.md",
+    "assets/licenses/Talos-MIT.txt",
+    "assets/rgb-feedback-experiment.mp4",
+    "style.css"
+  ],
+  "base_url": "http://127.0.0.1:8769/",
+  "authentication_used": false,
+  "scope": "Static resources, source hashes and local anchors only. This does not verify robot physics, public visibility or the submission form."
+}

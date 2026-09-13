@@ -1,0 +1,40 @@
+{
+  "schema": "talos.hosted-browser-selected-fields.v1",
+  "observed_on": "2026-09-14",
+  "source": "Selected fields read from the private Gradio trial-evidence UI; this is not a raw simulator state recording.",
+  "space": "jannis-sms/talos-dinner-robotics",
+  "deployment_revision": "f6e59689a6ca75684f45b8cf8aa023e373468ef5",
+  "private": true,
+  "instruction": "Pass the bottle to the right arm",
+  "seed": 42,
+  "split": "exposed deployment regression",
+  "controller": "learned",
+  "bottle_start": "upright",
+  "camera": "opposite",
+  "inference_runtime": "OpenVINO CPU",
+  "status": "succeeded",
+  "simulation_seconds": 74.02,
+  "wall_seconds": 81.36,
+  "completed_steps": ["relay_bottle_left", "relay_bottle_right"],
+  "results": [
+    {
+      "skill": "relay_bottle_left",
+      "status": "succeeded",
+      "placement_error_mm": 0.9133039439764326,
+      "stable_release_and_park_s": 0.5000000000002558,
+      "both_arms_parked": true,
+      "unexpected_collisions": 0
+    },
+    {
+      "skill": "relay_bottle_right",
+      "status": "succeeded",
+      "placement_error_mm": 1.1382981459197,
+      "stable_release_and_park_s": 0.5049999999995407,
+      "both_arms_parked": true,
+      "unexpected_collisions": 0
+    }
+  ],
+  "physics_state_writes_during_control": 0,
+  "hidden_forces": 0,
+  "scope": "One fresh signed-in cloud trial on exposed seed 42, using unchanged deployed models. No new holdout, anonymous-access or Intel-hardware claim."
+}

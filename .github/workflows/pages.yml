@@ -1,9 +1,6 @@
 name: Publish public evidence page
 on:
   workflow_dispatch:
-  push:
-    branches: [codex/final-submission]
-    paths: ['site/**', 'scripts/build_public_site.py', 'submission/**', '.github/workflows/pages.yml']
 permissions:
   contents: read
   pages: write

@@ -9,13 +9,27 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from simulation_lab.storage import require_space
 
 ROOT=Path(__file__).resolve().parents[1]
-ASSETS=['cover.png','Talos-demo.mp4','Talos-ten-seeds.mp4','Talos.pdf','evidence/ten-seed-upright-visual.json']
+ASSETS={
+    'cover-v6.png': 'submission/final-v6/cover-v6.png',
+    'Talos-demo-v6.mp4': 'submission/final-v6/Talos-demo-v6.mp4',
+    'Talos-dinner-ten-v6.mp4': 'submission/final-v6/Talos-dinner-ten-v6.mp4',
+    'Talos-relays-ten-v3.mp4': 'submission/final-v6/Talos-relays-ten-v3.mp4',
+    'Talos-composed-dinner-ten-v1.mp4': 'submission/final-v6/Talos-composed-dinner-ten-v1.mp4',
+    'rgb-feedback-experiment.mp4': 'submission/final-v6/rgb-feedback-experiment.mp4',
+    'Talos-v6.pdf': 'submission/final-v6/Talos-v6.pdf',
+    'evidence/dinner-summary.json': 'docs/robotics/evidence/learned-dinner-v6/summary.json',
+    'evidence/relay-summary.json': 'docs/robotics/evidence/learned-relays-v3/summary.json',
+    'evidence/composed-summary.json': 'docs/robotics/evidence/composed-dinner-v1/original-final-summary.json',
+    'licenses/Talos-MIT.txt': 'LICENSE',
+    'licenses/SO101-NOTICE.md': 'simulation_lab/NOTICE.md',
+    'licenses/SO101-Apache-2.0.txt': 'simulation_lab/assets/so101/LICENSE',
+}
 
 
 def build(output):
     if output.exists():raise FileExistsError('Choose a fresh build directory; previous exports are preserved.')
     files=[(ROOT/'site'/name,Path(name)) for name in ('index.html','style.css','app.js')]
-    files += [(ROOT/'submission'/name,Path('assets')/name) for name in ASSETS]
+    files += [(ROOT/source,Path('assets')/name) for name,source in ASSETS.items()]
     require_space(output,sum(source.stat().st_size for source,_ in files)+16*1024**2)
     output.mkdir(parents=True)
     manifest={}
