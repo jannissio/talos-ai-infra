@@ -19,6 +19,10 @@ def main(a):
     source=Path(a.source)
     with np.load(source/'retrieval.npz',allow_pickle=False) as z:d={k:z[k] for k in z.files}
     info=json.loads((source/'retrieval.json').read_text())
+    if info.get('action_preprocessing'):
+        gate=json.loads((source/'input-replay.json').read_text())
+        if not gate['passed'] or gate['source_sha256']!=hashlib.sha256((source/'retrieval.npz').read_bytes()).hexdigest():
+            raise ValueError('Modified action labels require passing physical replay for every fitted episode.')
     initial=d['visual'][d['bounds'][:,0]];vm=initial.mean(0);vs=np.maximum(initial.std(0),.01)
     if a.visual_scaling=='global':vs[:]=max(float(vs.max()),.01)
     visual=[];seconds=[]
@@ -39,8 +43,13 @@ def main(a):
           'max_seconds':float(t.max()),'reconstruction_limit':info['reconstruction_limit'],'tracking_tolerance_rad':.005,
           'visual_preprocess':info.get('visual_preprocess','raw'),'reconstruction_check':info.get('reconstruction_check','every_query'),
           'visual_encoder':info.get('visual_encoder','camera_pca'),
+          'arm_offset':info.get('arm_offset',0),'skill':info.get('skill','bottle'),
+          'gripper_cap_nm':info.get('gripper_cap_nm',.25),
+          'cameras':info.get('cameras',['overhead','left_wrist_cam','right_wrist_cam']),
           'arguments':vars(a),'architecture':'Three 256-unit SiLU layers; initial 32-dimensional visual encoding plus 13 internal-progress Fourier features',
           'scope':'Learned motion primitive with measured-joint progress guard; no continuous visual correction.'}
+    for name in ['logical_skill','trained_destination_m','feature_support','action_preprocessing']:
+        if name in info:meta[name]=info[name]
     began=time.perf_counter()
     for step in range(1,a.steps+1):
         idx=torch.arange(len(t),device='cuda') if a.optimizer=='lbfgs' else torch.randint(len(t),(1024,),device='cuda')

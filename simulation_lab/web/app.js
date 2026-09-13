@@ -4,6 +4,8 @@ $('command-mode').addEventListener('change',()=>{
   const mode=$('command-mode').value;
   $('command-feedback').textContent=mode==='programmed'
     ? 'Programmed mode: set the table, place individual items, or pass the bottle to the right arm.'
+    : mode==='learned_dinner'
+      ? 'Learned dinner candidate: say “set the table” or name an item. Camera checks plan preparation steps; each neural skill releases and parks before the next. Relay instructions require the corresponding trained models. Custom destinations are unsupported.'
     : mode==='learned_bottle'
       ? 'Learned upright mode: reset to Task start, then say or type “place the bottle”. Other objects and custom destinations are not supported.'
       : 'Original learned model: use familiar sideways bottle practice, then say or type “place the bottle”. Wider placements can fail.';
@@ -44,7 +46,11 @@ function updateState(next) {
   const previousVersion = state?.scene_version;
   state = next;
   const dinner = state.scenario === 'dinner';
-  $('runtime-mode').textContent=state.controller==='learned_bottle'?'OpenVINO neural bottle policy · physical success monitor':state.task.active?'Programmed physical skills · simulator positions':'Runs on this PC · Manual control';
+  $('runtime-mode').textContent=state.controller==='learned_dinner'?'Neural dinner skills · camera-grounded sequence':state.controller==='learned_bottle'?'OpenVINO neural bottle policy · physical success monitor':state.task.active?'Programmed physical skills · simulator positions':'Runs on this PC · Manual control';
+  $('learned-dinner-option').disabled=!state.learned_dinner_available;
+  $('policy-description').textContent=state.learned_dinner_available
+    ? 'The dinner candidate combines six neural skills with camera-based preparation checks. Bottle-only models remain available. Programmed skills use simulator positions.'
+    : 'The upright model uses overhead bottle localization and motor feedback. The original model uses three initial views and supports familiar sideways practice. Programmed skills use simulator positions.';
   connected = true;
   $('status-dot').className = 'status-dot connected';
   $('connection-text').textContent = 'Connected to this PC';
@@ -107,17 +113,20 @@ function sceneFormMode() {
   $('dinner-preset-wrap').hidden = !dinner;
   $('drawer-start-wrap').hidden = !dinner;
   const reference = dinner && $('dinner-preset').value === 'reference';
+  $('bottle-start-wrap').hidden = !dinner;
+  $('bottle-start').disabled = reference || !dinner;
   $('drawer-start').disabled = reference;
   $('drawer-start').title = reference ? 'The target example keeps the drawer closed to clear the glass setting.' : '';
-  if (reference) $('drawer-start').value = 'closed';
+  if (reference) { $('drawer-start').value = 'closed'; $('bottle-start').value = 'upright'; }
 }
 
 function updateTask() {
   const task = state.task, metrics = task.metrics;
   if (state.scenario === 'dinner') {
     const learned=task.kind==='learned_bottle';
-    $('active-controller-label').textContent=learned?'Learned bottle · OpenVINO':'Physical skills · exact simulator state';
-    $('active-controller-description').textContent=learned?(task.policy_details?.visual_encoder==='bottle_rgb_geometry'?'Initial overhead bottle localization conditions a learned trajectory. Motor feedback controls progress; an independent physical monitor checks success.':'Three initial camera views condition the original neural trajectory. Motor feedback controls progress; an independent physical monitor checks success.'):'Move the bottle, plate and mug, open the drawer, then place the fork and spoon. Each grasp and placement is checked.';
+    const dinnerLearned=task.policy_mode==='learned_dinner';
+    $('active-controller-label').textContent=dinnerLearned?'Learned dinner · '+(task.policy_details?.neural_runtime||'neural model'):learned?'Learned bottle · OpenVINO':'Physical skills · exact simulator state';
+    $('active-controller-description').textContent=dinnerLearned?'Camera observations condition each neural skill. Motor feedback regulates movement; physical checks require release and parked arms before chaining.':learned?(task.policy_details?.visual_encoder==='bottle_rgb_geometry'?'Initial overhead bottle localization conditions a learned trajectory. Motor feedback controls progress; an independent physical monitor checks success.':'Three initial camera views condition the original neural trajectory. Motor feedback controls progress; an independent physical monitor checks success.'):'Move the bottle, plate and mug, open the drawer, then place the fork and spoon. Each grasp and placement is checked.';
     $('dinner-status').textContent = task.status.toUpperCase();
     $('dinner-status').className = `goal-status ${task.status}`;
     $('dinner-stage').textContent = task.status === 'succeeded' ? 'Dinner goal complete' : task.stage_label;
@@ -127,12 +136,13 @@ function updateTask() {
     $('start-dinner').disabled = task.active || goalBusy || !connected || state.dinner_preset !== 'task' || ($('dinner-goal').value === 'set_table' && state.drawer.open_m > .008);
     $('cancel-dinner').disabled = !task.active || goalBusy || !connected;
     $('dinner-goal').disabled = task.active || goalBusy;
-    const resultsKey = JSON.stringify((task.results || []).map(r => r.skill));
+    const resultsKey = JSON.stringify((task.results || []).map(r => [r.skill,r.status]));
     if ($('dinner-results').dataset.key !== resultsKey) {
       $('dinner-results').dataset.key = resultsKey;
       $('dinner-results').replaceChildren(...(task.results || []).map(r => {
         const li = document.createElement('li');
-        li.textContent = `${r.skill}: verified${r.metrics.placement_xy_error_mm === undefined ? '' : `, ${r.metrics.placement_xy_error_mm.toFixed(1)} mm placement error`}`;
+        const error=r.metrics?.placement_error_mm??r.metrics?.placement_xy_error_mm;
+        li.textContent = `${r.skill_label || r.skill}: ${r.status==='succeeded'?'verified':r.status}${error === undefined ? '' : `, ${error.toFixed(1)} mm placement error`}`;
         return li;
       }));
     }
@@ -251,6 +261,7 @@ function syncSceneControls() {
   if (dinner) {
     $('dinner-preset').value = state.dinner_preset;
     $('drawer-start').value = state.drawer_open ? 'open' : 'closed';
+    $('bottle-start').value=state.bottle_start||'upright';
     document.querySelector('[data-panel="arms"]').click();
     $('object-inventory').replaceChildren(...state.objects.map(item => {
       const row = document.createElement('div'); row.className = 'object-row'; row.dataset.object = item.id;
@@ -306,7 +317,8 @@ async function resetScene(seed, rackCount) {
   try {
     $('loading').hidden = false;
     updateState(await api('/api/reset', {seed, rack_count: rackCount, scenario: $('scenario').value,
-      dinner_preset: $('dinner-preset').value, drawer_open: $('drawer-start').value === 'open'}));
+      dinner_preset: $('dinner-preset').value, drawer_open: $('drawer-start').value === 'open',
+      bottle_start:$('scenario').value==='dinner'&&$('dinner-preset').value==='task'?$('bottle-start').value:'upright'}));
     syncSceneControls();
   } catch (error) { notice(error.message); }
   finally { $('loading').hidden = true; }
@@ -317,16 +329,22 @@ async function sendGoal(action) {
   goalBusy = true; updateTask();
   try {
     let payload = {action};
+    let endpoint='/api/task';
     if (action === 'start' && state.scenario === 'dinner') {
       const selected = $('dinner-goal').value;
-      payload = {action, kind: selected === 'set_table' ? 'set_table' : selected === 'drawer' ? 'drawer_open' : 'dinner_place',
-        object_id: ['set_table','drawer'].includes(selected) ? null : selected, arm:'auto', record:false};
+      if($('command-mode').value!=='programmed') {
+        endpoint='/api/command';
+        payload={mode:$('command-mode').value,text:selected==='set_table'?'set the table':selected==='drawer'?'open the drawer':`place the ${selected}`};
+      } else {
+        payload = {action, kind: selected === 'set_table' ? 'set_table' : selected === 'drawer' ? 'drawer_open' : 'dinner_place',
+          object_id: ['set_table','drawer'].includes(selected) ? null : selected, arm:'auto', record:false};
+      }
     } else if (action === 'start') {
       const kind = $('goal-kind').value;
       payload = {action, kind, arm: $('goal-arm').value, tube_id: $('goal-tube').value || null,
         destination_slot: kind === 'transfer' ? $('goal-destination').value || null : null, record: $('record-demo').checked};
     }
-    updateState(await api('/api/task', payload));
+    updateState(await api(endpoint, payload));
     if (action === 'start' && window.matchMedia('(max-width:790px)').matches) $('camera-frame').scrollIntoView({behavior:'smooth', block:'start'});
   } catch (error) { notice(error.message); }
   finally { goalBusy = false; updateTask(); }
@@ -377,7 +395,7 @@ $('reset-scene').addEventListener('click', async () => {
   if (!state) return;
   clearTimeout(jointTimer);
   if (state.scenario === 'dinner') {
-    try { updateState(await api('/api/reset', {scenario: 'dinner', seed: state.seed, dinner_preset: state.dinner_preset, drawer_open: state.drawer_open})); }
+    try { updateState(await api('/api/reset', {scenario: 'dinner', seed: state.seed, dinner_preset: state.dinner_preset, drawer_open: state.drawer_open,bottle_start:state.bottle_start||'upright'})); }
     catch (error) { notice(error.message); }
     return;
   }

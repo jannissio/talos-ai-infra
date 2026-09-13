@@ -1,4 +1,7 @@
-"""Export the primitive network and measure numerical parity/latency on real Intel devices."""
+"""Export the primitive network and measure parity/latency on available devices.
+
+Hardware names are reported verbatim; an AMD CPU result is not Intel evidence.
+"""
 import argparse,hashlib,json,shutil,sys,time
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
@@ -32,10 +35,14 @@ def run(a):
                 with torch.inference_mode():expected=net(torch.from_numpy(inputs['visual']),torch.from_numpy(inputs['seconds'])).numpy()
                 actual=compiled(inputs)[0];errors.append(float(np.max(np.abs((actual-expected)*scale))))
             for _ in range(20):compiled(samples[0])
+            benchmark_start=time.perf_counter()
             for i in range(300):
                 start=time.perf_counter();compiled(samples[i%len(samples)]);latencies.append((time.perf_counter()-start)*1000)
+            benchmark_seconds=time.perf_counter()-benchmark_start
             report.update(execution_devices=list(compiled.get_property('EXECUTION_DEVICES')),max_joint_error_rad=max(errors),
-                          parity_passed=max(errors)<1e-4,median_ms=float(np.median(latencies)),p95_ms=float(np.percentile(latencies,95)))
+                          parity_passed=max(errors)<1e-4,median_ms=float(np.median(latencies)),p95_ms=float(np.percentile(latencies,95)),
+                          synchronous_chunks_per_second=300/benchmark_seconds,output_endpoints_per_chunk=20,
+                          precision_hint=str(compiled.get_property('INFERENCE_PRECISION_HINT')),warmup_calls=20,measured_calls=300)
         except Exception as exc:report.update(error_type=type(exc).__name__,supported=False)
         reports.append(report);print(json.dumps(report),flush=True)
     result={'openvino':ov.__version__,'source_sha256':hashlib.sha256((source/'primitive.safetensors').read_bytes()).hexdigest(),

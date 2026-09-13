@@ -1,5 +1,17 @@
 # Intel cloud assessment for the sandbox and final hardware
 
+## September 13 access recheck
+
+The rendered portal still advertises Core Ultra AI PCs, browser/SSH access and a self-service Test Drive category. The actual hardware catalog requires sign-in, so no Series 2/3 SKU, available slot, price or approved reservation has been verified for this account.
+
+The [current request guide](https://cloud.intel.com/docs/how_to_request.html) states **2–3 business days** for approved/rejected/waitlisted status; pre-approved requests can be immediate. That delay may exceed our September 14 finish target. Reservations have fixed expiry and a maximum total duration of 30 days. Linux browser access starts JupyterLab; Windows starts RDP. Browser access does not require uploading an SSH key.
+
+There is an account-guidance discrepancy: the portal says corporate **or personal** accounts, while the [registration guide](https://cloud.intel.com/docs/how_to_register.html) still says corporate email. Do not assume either that a personal account is excluded or that it is entitled to a particular machine. The user has been asked to sign in privately so the actual catalog can be inspected. No account was created, agreement accepted, instance requested, or charge incurred by this recheck.
+
+Prepare both routes: an available qualifying AI PC in this cloud, or the user's Intel laptop with hardware eligibility explicitly documented. Running inference on this AMD/RTX development PC does not establish Intel execution. The written brief's stricter deployment sentence is still present in the PDF read September 13; keep the livestream clarification and hardware uncertainty visible.
+
+## Original September 8 assessment
+
 Checked **September 8, 2026** against the currently rendered [Intel Cloud Services portal](https://cloud.intel.com/).
 
 **This is a promising route to request qualifying hardware.** The current portal explicitly offers an **AI PC** category using **Intel Core Ultra processors**, alongside Arc Pro GPU and Xeon server categories. Its workflow says to choose hardware, request an instance, await approval (typically within three days), and connect through a browser or SSH. It also describes Test Drive access as self-service. Exact SKU, availability, duration, quotas, and any costs for this account were not verified.

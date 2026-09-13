@@ -1,5 +1,7 @@
 # Continue Talos on another Windows PC
 
+**Active goal (September 13):** finish the broader hackathon system and submission by September 14. Follow [the final-submission checklist](hackathon/FINAL_SUBMISSION_CHECKLIST.md), which supersedes the narrow release scope below. User has confirmed a successful microphone command on this PC; credentials remain local.
+
 September 13 PC follow-through: see [RTX 4070 baseline verification](robotics/PC_BASELINE.md) for fresh installations, physical regression results and a successful human-triggered voice trial. The [coverage experiment](robotics/RTX4070_COVERAGE_EXPERIMENT.md) stopped at its declared data gate and retained the published model. Follow the [September 14 release plan](hackathon/RELEASE_PLAN_2026-09-14.md): the user requires completion tomorrow and gives September 15 as the deadline. Live timing, final Intel execution and judge-access details remain open. The original handoff below is retained as historical context.
 
 Clone https://github.com/jannissio/talos-ai-infra and open the checkout as a Codex project. Use the repository's current `main` branch. The old laptop's absolute path is not required.

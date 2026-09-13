@@ -8,12 +8,9 @@ from pathlib import Path
 import numpy as np
 import torch
 from PIL import Image
+from .policy_observation import ObservationRejected
 
 KEYS=['observation.images.'+c for c in ['overhead','left_wrist_cam','right_wrist_cam']]
-
-
-class ObservationRejected(ValueError):
-    pass
 
 
 def image_vector(images):

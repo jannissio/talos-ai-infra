@@ -73,7 +73,7 @@ class Reset(BaseModel):
     scenario: Literal["dinner", "chemistry"] = "chemistry"
     dinner_preset: Literal["task", "reference"] = "task"
     drawer_open: bool = False
-    bottle_start: Literal['upright', 'sideways'] = 'upright'
+    bottle_start: Literal['upright', 'sideways', 'wide_left'] = 'upright'
 
 
 class TaskCommand(BaseModel):
@@ -97,7 +97,7 @@ class Rack(BaseModel):
 class LanguageCommand(BaseModel):
     model_config=ConfigDict(extra='forbid')
     text:str=Field(min_length=1,max_length=500)
-    mode:Literal['programmed','learned_bottle','learned_bottle_legacy']='programmed'
+    mode:Literal['programmed','learned_bottle','learned_bottle_legacy','learned_dinner']='programmed'
 
 
 class Layout(BaseModel):
@@ -202,7 +202,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument('--learned',action='store_true',help='Preload the learned runtime before accepting browser requests (training environment).')
+    parser.add_argument('--dinner-suite',type=Path,help='Explicit neural dinner suite JSON; requires --learned.')
     args = parser.parse_args()
+    if args.dinner_suite:
+        if not args.learned:parser.error('--dinner-suite requires --learned')
+        if not args.dinner_suite.is_file():parser.error('Dinner suite file does not exist.')
+        engine.dinner_suite=args.dinner_suite.resolve()
     if args.learned:
         import torch
         # Set the CPU worker budget before HTTP/physics threads start. The

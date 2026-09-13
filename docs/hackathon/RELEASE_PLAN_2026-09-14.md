@@ -1,5 +1,7 @@
 # Finish Talos on September 14
 
+**Superseded scope decision:** the user requested completing the broader challenge, not freezing the limited prototype. Follow [the active final-submission checklist](FINAL_SUBMISSION_CHECKLIST.md). This earlier plan remains as history.
+
 The user requires the project to be finished tomorrow, September 14, because they work on September 15 and identify that as the submission deadline. Treat September 15 as the user's hard deadline. The public event page inspected September 13 still describes an online build window of September 10–16; older repository notes recorded September 16 at 20:30 CEST. The exact platform/organizer cutoff needs reconciliation, but it does not move our completion target later.
 
 ## Release scope and model decision

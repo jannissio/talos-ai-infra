@@ -4,7 +4,7 @@ This small experiment uses RGB only. The calibrated region excludes the drawer
 and arms. It is not a general detector and rejects missing/ambiguous amber blobs.
 """
 import numpy as np
-from .retrieval_policy import ObservationRejected
+from .policy_observation import ObservationRejected
 
 def bottle_features(images):
     rgb=np.asarray(images[0],dtype=float)

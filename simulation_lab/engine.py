@@ -64,6 +64,7 @@ class LabEngine:
         self.real_time_factor = 1.
         self.dropped_wall_time = 0.
         self.recorder = None
+        self.dinner_suite=RUN_DIR.parent/'models'/'dinner_suite'/'suite.json'
 
     def start(self):
         self.render_process.start()
@@ -125,8 +126,9 @@ class LabEngine:
         return self.snapshot()
 
     def _reset(self, seed=42, rack_count=3, racks=None, practice=False, transfer_side=None, scenario="chemistry", dinner_preset="task", drawer_open=False, bottle_start='upright'):
-        if bottle_start == 'sideways' and (scenario != 'dinner' or dinner_preset != 'task'):
-            raise ValueError('Sideways bottle practice requires the dinner Task start scene.')
+        if bottle_start not in ('upright','sideways','wide_left'):raise ValueError('Unknown bottle start.')
+        if bottle_start != 'upright' and (scenario != 'dinner' or dinner_preset != 'task'):
+            raise ValueError('Bottle practice requires the dinner Task start scene.')
         xml, layout = build_scene(seed, rack_count, racks, practice=practice, transfer_side=transfer_side,
                                   scenario=scenario, dinner_preset=dinner_preset, drawer_open=drawer_open)
         model = mujoco.MjModel.from_xml_string(xml)
@@ -141,8 +143,12 @@ class LabEngine:
                 c,s = np.cos(angle/2),np.sin(angle/2)
                 adr = model.joint('bottle_free').qposadr[0]
                 data.qpos[adr:adr+7] = [-.10,-.15,layout['table_z']+.026,*(np.array([c,-s,c,s])*np.sqrt(.5))]
+            elif bottle_start=='wide_left':
+                from .dinner import left_reach_bottle_pose
+                pose=left_reach_bottle_pose(seed);adr=model.joint('bottle_free').qposadr[0]
+                data.qpos[adr:adr+7]=[pose['x'],pose['y'],layout['table_z']+.001,np.cos(pose['yaw']/2),0,0,np.sin(pose['yaw']/2)]
             layout['bottle_start'] = bottle_start
-        for _ in range(300 if bottle_start == 'sideways' else 200):
+        for _ in range(300 if bottle_start != 'upright' else 200):
             mujoco.mj_step(model, data)
         data.time = 0.
         self.last_command_object = None
@@ -235,7 +241,19 @@ class LabEngine:
             self._task_command({'action':'cancel'});return
         if self.layout.get('scenario')!='dinner':raise ValueError('Language commands use the dinner scene.')
         if self.task.active:raise ValueError('A task is running. Say stop or wait for it to finish.')
-        if payload.get('mode') in ('learned_bottle','learned_bottle_legacy'):
+        if payload.get('mode')=='learned_dinner':
+            if not self.dinner_suite.is_file():raise ValueError('The learned dinner suite is not installed.')
+            try:
+                from .learned_dinner import LearnedDinnerSequence,observe_scene
+                from .learned_plan import plan_learned_steps
+            except ImportError:raise ValueError('Use the training Python environment for learned dinner control.') from None
+            paths=json.loads(self.dinner_suite.read_text(encoding='utf-8-sig'))
+            visual_plan=plan_learned_steps(plan,observe_scene(self.model,self.data),paths)
+            checkpoints={name:self.dinner_suite.parent/path for name,path in paths.items()}
+            candidate=LearnedDinnerSequence(self.model,self.data,self.layout,checkpoints,visual_plan['steps'])
+            candidate.plan=visual_plan
+            candidate.message='Plan: '+' → '.join(visual_plan['steps'])+'. '+' '.join(visual_plan['reasons'])
+        elif payload.get('mode') in ('learned_bottle','learned_bottle_legacy'):
             steps=plan['steps']
             if len(steps)!=1 or steps[0]['kind']!='dinner_place' or steps[0]['object_id']!='bottle' or steps[0]['arm']=='right' or (steps[0].get('destination') or {}).get('kind','default')!='default':
                 raise ValueError('This learned model currently supports “place the bottle” with the left arm and its trained destination. Other instructions require the programmed mode.')
@@ -322,6 +340,8 @@ class LabEngine:
                         recording=self.recorder.snapshot() if self.recorder else {"id": None, "status": "idle", "busy": False})
         snapshot.update(dinner_state(self.model, self.data, self.layout))
         if getattr(self.task,'kind',None)=='learned_bottle':snapshot['controller']='learned_bottle'
+        if getattr(self.task,'kind',None) in ('learned_dinner','learned_dinner_sequence'):snapshot['controller']='learned_dinner'
+        snapshot['learned_dinner_available']=self.dinner_suite.is_file()
         with self.lock:
             snapshot.update(self.render_stats)
             snapshot["frame_id"] = self.frame_id

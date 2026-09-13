@@ -55,6 +55,13 @@ class PrimitivePolicy(torch.nn.Module):
         self.eval()
         with np.load(folder/'visual.npz',allow_pickle=False) as z:self.visual={k:z[k] for k in z.files}
         self.context=None;self.progress=0;self.previous=None;self.waits=0;self.total_waits=0
+        self.feedback=self.meta.get('visual_feedback')
+        self.visual_refreshes=0;self.initial_features=None
+        if self.feedback and (self.feedback.get('mode')!='approach_refresh'
+                or self.meta.get('visual_encoder')!='bottle_rgb_geometry'
+                or not 0<float(self.feedback.get('until_progress_s',0))<=3.5
+                or not 0<float(self.feedback.get('max_centroid_shift_px',0))<=12):
+            raise ValueError('Unsupported visual feedback configuration.')
     def predict_action_chunk(self,batch):
         if batch['observation.state'].shape!=(1,24) or any(batch[k].shape!=(1,3,240,320) for k in KEYS):
             raise ObservationRejected('Unexpected camera/joint observation dimensions.')
@@ -65,11 +72,18 @@ class PrimitivePolicy(torch.nn.Module):
         state=batch['observation.state'][0].detach().cpu().numpy()
         images=[(batch[k][0].detach().cpu().permute(1,2,0).numpy()*255).round().clip(0,255).astype(np.uint8) for k in KEYS]
         a=self.visual
+        refresh=bool(self.feedback and self.progress/20<self.feedback['until_progress_s'])
         if self.meta.get('visual_encoder')=='bottle_rgb_geometry':
             from .bottle_vision import bottle_features
             # Initial-location conditioning cannot localize a bottle after the
             # hand occludes it. Later frames are shape/finite checked above.
-            pixels=bottle_features(images) if self.context is None else a['mean'].copy()
+            pixels=bottle_features(images) if self.context is None or refresh else a['mean'].copy()
+            if self.initial_features is None:self.initial_features=pixels.copy()
+            elif refresh and np.linalg.norm((pixels[:2]-self.initial_features[:2])*[320,240])>self.feedback['max_centroid_shift_px']:
+                raise ObservationRejected('Bottle moved beyond the tested visual approach correction range.')
+        elif self.meta.get('visual_encoder')=='dinner_rgb_geometry':
+            from .dinner_vision import dinner_features
+            pixels=dinner_features(images,self.meta['skill']) if self.context is None else a['mean'].copy()
         else:pixels=primitive_image_vector(images,self.meta.get('visual_preprocess','raw'))
         centered=pixels-a['mean']
         # These tiny matrix-vector products are slower when a desktop BLAS
@@ -77,12 +91,21 @@ class PrimitivePolicy(torch.nn.Module):
         projection=np.einsum('i,ji->j',centered,a['components'],optimize=False)
         reconstruction=np.einsum('i,ij->j',projection,a['components'],optimize=False)
         check_reconstruction=self.context is None or self.meta.get('reconstruction_check','every_query')=='every_query'
+        support=self.meta.get('feature_support')
+        if support and (self.context is None or refresh):
+            lo,hi=np.asarray(support['min']),np.asarray(support['max'])
+            if lo.shape!=pixels.shape or hi.shape!=pixels.shape or not np.isfinite([lo,hi]).all() or np.any(lo>hi):
+                raise ObservationRejected('Invalid fitted camera support metadata.')
+            if np.any(pixels<lo) or np.any(pixels>hi):raise ObservationRejected('Object observation lies outside the trained camera support.')
         if check_reconstruction and np.mean((centered-reconstruction)**2)>self.meta['reconstruction_limit']:
             raise ObservationRejected('Camera reconstruction outside fitted support.')
         device=next(self.parameters()).device
-        if self.context is None:
+        if self.context is None or refresh:
             self.context=torch.tensor((projection/a['scale']-self.meta['visual_mean'])/self.meta['visual_std'],device=device,dtype=torch.float32)
-        if self.previous is not None and np.max(np.abs(state[:5]-self.previous[0,4,:5].cpu().numpy()))>self.meta['tracking_tolerance_rad']:
+            if refresh:self.visual_refreshes+=1
+        offset=self.meta.get('arm_offset',0)
+        if type(offset) is not int or offset not in (0,6):raise ObservationRejected('Invalid policy arm offset.')
+        if self.previous is not None and np.max(np.abs(state[offset:offset+5]-self.previous[0,4,offset:offset+5].cpu().numpy()))>self.meta['tracking_tolerance_rad']:
             self.waits+=1;self.total_waits+=1
             if self.waits>50:raise ObservationRejected('Arm failed to track the neural primitive within ten seconds.')
             return self.previous
@@ -95,6 +118,9 @@ class PrimitivePolicy(torch.nn.Module):
     def details(self):
         return {'kind':'Camera-conditioned neural motion primitive with programmed joint-feedback progress guard',
                 'continuous_visual_correction':False,'initial_camera_conditioning':True,
+                'pregrasp_visual_feedback':bool(self.feedback),
+                'visual_feedback_scope':'RGB refresh during initial approach only; frozen before grasp' if self.feedback else 'initial image only',
+                'visual_refresh_calls':self.visual_refreshes,
                 'camera_support_check':self.meta.get('reconstruction_check','every_query'),
                 'visual_encoder':self.meta.get('visual_encoder','camera_pca'),
                 'neural_runtime':'OpenVINO' if hasattr(self.net,'compiled') else 'PyTorch',

@@ -1,0 +1,33 @@
+name: Publish public evidence page
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/final-submission]
+    paths: ['site/**', 'scripts/build_public_site.py', 'submission/**', '.github/workflows/pages.yml']
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: public-evidence-page
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build only allowlisted public content
+        run: python scripts/build_public_site.py --output .run/public-site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .run/public-site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -26,6 +26,14 @@ OBJECTS = {
 }
 
 
+def left_reach_bottle_pose(seed):
+    """Declared practice reset; real motion begins only after this setup."""
+    rng=np.random.default_rng(seed)
+    return {'x':float(-.0734067766+rng.uniform(-.006,.006)),
+            'y':float(-.1215734485+rng.uniform(-.006,.006)),
+            'yaw':float(.3096408+rng.uniform(-.08,.08))}
+
+
 def surface(parent, name, kind, size, pos=(0, 0, 0), **attrs):
     """Explicit mass is assigned once per body; geometry carries collisions."""
     return geom(parent, name, kind, size, pos, mass="0", friction=".8 .005 .0001",
@@ -221,5 +229,6 @@ def dinner_state(model, data, layout):
             "stable_object_count": sum(o["upright"] and o["above_table"] for o in objects),
             "targets": layout["targets"], "challenge": layout["challenge"],
             "dinner_preset": layout["dinner_preset"], "drawer_open": layout["drawer_open"],
+            "bottle_start":layout.get('bottle_start','upright'),
             "drawer": {**layout["drawer"], "open_m": opening, "open_fraction": opening/DRAWER_TRAVEL,
                        "handle_position_m": data.site("drawer_handle_grasp").xpos.tolist()}}

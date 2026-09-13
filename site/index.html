@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Talos: spoken instructions, learned robot motion and contact-verified dinner-table manipulation. Explore the measured prototype and its evidence.">
+  <meta name="theme-color" content="#0b1720">
+  <title>Talos · From words to physical actions</title>
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#demo">Skip to demonstration</a>
+  <header class="bar"><a class="brand" href="#">TALOS<span>ROBOTICS / 2026</span></a><nav aria-label="Main navigation"><a href="#evidence">Evidence</a><a href="#run">Run Talos</a><a class="repo" href="https://github.com/jannissio/talos-ai-infra">Source code ↗</a></nav></header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div class="eyebrow"><span class="dot"></span> AI INFRA SUMMIT · INTEL ONLINE CHALLENGE</div>
+      <h1 id="title">From words<br>to <em>physical actions.</em></h1>
+      <div class="hero-bottom"><p>Two robot arms. A dinner table.<br>Spoken instructions become movements you can inspect, reproduce and measure.</p><a class="button" href="#demo">Watch Talos in action <span>↓</span></a></div>
+    </section>
+    <section id="demo" class="demo" aria-labelledby="demo-title">
+      <div class="section-top"><div><span class="eyebrow">01 / DEMONSTRATION</span><h2 id="demo-title">See the physical prototype.</h2></div><span class="tag">RECORDED EXECUTION</span></div>
+      <div class="video-wrap"><video id="demo-video" controls playsinline preload="metadata" poster="assets/cover.png"><source src="assets/Talos-demo.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/Talos-demo.mp4">Download the demonstration.</a></video></div>
+      <div class="video-controls" aria-label="Choose a recording"><button class="selected" data-video="demo" aria-pressed="true">Project demonstration</button><button data-video="seeds" aria-pressed="false">Ten bottle trials</button><a id="download-video" href="assets/Talos-demo.mp4" download>Download video ↓</a></div>
+      <p class="caption" id="video-caption" aria-live="polite">Published baseline recording. Programmed table setting and relay are distinguished from learned bottle control; accelerated segments are labeled.</p>
+    </section>
+    <section id="evidence" class="evidence" aria-labelledby="evidence-title">
+      <div class="section-top"><div><span class="eyebrow">02 / MEASURED, WITH LIMITS</span><h2 id="evidence-title">The evidence behind the motion.</h2></div><span class="tag amber">DEVELOPMENT PREVIEW</span></div>
+      <div class="stats"><article><strong>10 / 10</strong><h3>Upright bottle trials</h3><p>Preserved learned model, small starting-position changes. This result does not establish full table coverage.</p></article><article><strong>6</strong><h3>Neural dinner skills in development</h3><p>Bottle, plate, mug, drawer, fork and spoon. A complete learned sequence passed seed 42; randomized development still reveals failures.</p></article><article><strong>2 arms</strong><h3>One physical workspace</h3><p>SO-101 arms move through motors and finger contacts. The verified programmed relay releases onto the table between grasps.</p></article></div>
+      <div class="scope"><div><h3>Verified in the published baseline</h3><ul><li>Programmed six-skill table setting in the verified starting scene.</li><li>Learned upright bottle placement with RGB localization and motor feedback.</li><li>Speechmatics commands, six camera views, cancellation and failure reporting.</li><li>OpenVINO inference measurements on an Intel CPU and Intel UHD graphics.</li></ul></div><div><h3>Still being completed</h3><ul><li>Robust learned table setting and bottle relays across new positions.</li><li>Continuous visual correction and broader instruction support.</li><li>Final Intel execution and Core Ultra eligibility evidence.</li><li>Public live simulator hosting and final submission assets.</li></ul></div></div>
+      <div class="links"><a href="assets/evidence/ten-seed-upright-visual.json">All ten bottle outcomes ↗</a><a href="https://github.com/jannissio/talos-ai-infra/blob/codex/final-submission/docs/hackathon/FINAL_SUBMISSION_CHECKLIST.md">Current completion checklist ↗</a><a href="assets/Talos.pdf">Published presentation PDF ↓</a></div>
+    </section>
+    <section class="method" aria-labelledby="method-title"><div><span class="eyebrow">03 / THE CONTROL PATH</span><h2 id="method-title">Each component has a clear job.</h2></div><ol><li><span>01</span><h3>Understand</h3><p>Speechmatics transcribes speech. A bounded interpreter selects supported tasks.</p></li><li><span>02</span><h3>Observe &amp; move</h3><p>Camera features condition neural motion. Joint feedback regulates progress.</p></li><li><span>03</span><h3>Verify</h3><p>A separate physical monitor checks contact, release and placement. It does not generate learned actions.</p></li></ol></section>
+    <section id="run" class="run" aria-labelledby="run-title"><div><span class="eyebrow">04 / REPRODUCE IT</span><h2 id="run-title">Run the interactive simulator.</h2><p>The complete application currently runs on your own computer. This public page plays recorded evidence; it does not run the physics server.</p><p>Follow the repository setup for clean Python environments, models and OpenVINO. Voice is optional; typed commands work without an API key.</p><a class="button" href="https://github.com/jannissio/talos-ai-infra#run-locally">Open setup instructions ↗</a></div><div class="terminal"><div><i></i><span>WINDOWS POWERSHELL · AFTER SETUP</span></div><pre><code>.\start-lab.ps1 -Learned</code></pre><p>Then open the local browser address printed by the launcher. Choose <b>Learned upright bottle</b> and enter <b>place the bottle</b>.</p><a href="https://github.com/jannissio/talos-ai-infra">Browse source, models and training input ↗</a></div></section>
+  </main>
+  <footer><span class="brand">TALOS</span><p>Original Talos code: MIT · Third-party licenses retained<br>MuJoCo · SO-101 · PyTorch · OpenVINO · Speechmatics</p><a href="https://github.com/jannissio/talos-ai-infra/blob/main/docs/PROVENANCE.md">Provenance ↗</a></footer>
+</body></html>

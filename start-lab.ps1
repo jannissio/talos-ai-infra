@@ -1,6 +1,8 @@
-param([switch]$NoBrowser, [switch]$Learned, [int]$Port = 8765)
+param([switch]$NoBrowser, [switch]$Learned, [int]$Port = 8765, [string]$DinnerSuite)
 $ErrorActionPreference = 'Stop'
 $taskRoot = $PSScriptRoot
+if ($DinnerSuite -and -not $Learned) { throw 'DinnerSuite requires -Learned.' }
+if ($DinnerSuite) { $DinnerSuite = (Resolve-Path -LiteralPath $DinnerSuite).Path }
 $taskPython = Join-Path $taskRoot '.venv\Scripts\python.exe'
 if ($Learned) { $taskPython = Join-Path $taskRoot '.venv-training\Scripts\python.exe' }
 $taskRunDir = Join-Path $taskRoot '.run'
@@ -12,7 +14,7 @@ New-Item -ItemType Directory -Path $taskRunDir -Force | Out-Null
 $taskAlreadyRunning = $false
 try {
     $taskState = Invoke-RestMethod -Uri "$taskUrl/api/state" -TimeoutSec 2
-    $taskAlreadyRunning = $taskState.ready -and $taskState.controller -in @('manual_joint_targets', 'ground_truth_ik', 'learned_bottle')
+    $taskAlreadyRunning = $taskState.ready -and $taskState.controller -in @('manual_joint_targets', 'ground_truth_ik', 'learned_bottle', 'learned_dinner')
 } catch { }
 if ($taskAlreadyRunning -and $Learned) {
     $taskExistingPath = Join-Path $taskRunDir "server-$Port.json"
@@ -20,6 +22,9 @@ if ($taskAlreadyRunning -and $Learned) {
     if (Test-Path -LiteralPath $taskExistingPath) {
         $taskExistingRecord = Get-Content -LiteralPath $taskExistingPath | ConvertFrom-Json
         $taskExistingLearned = $taskExistingRecord.learned -eq $true
+        if ($DinnerSuite -and $taskExistingRecord.dinner_suite -ne $DinnerSuite) {
+            throw 'This port is running a different dinner suite. Stop it first or use another port.'
+        }
     }
     if (-not $taskExistingLearned) {
         throw "A simulator already uses port $Port. Stop it first or choose another port to start the learned runtime."
@@ -31,8 +36,9 @@ if (-not $taskAlreadyRunning) {
     }
     $taskArguments = @('-m', 'simulation_lab.server', '--port', $Port)
     if ($Learned) { $taskArguments += '--learned' }
+    if ($DinnerSuite) { $taskArguments += @('--dinner-suite', ('"' + $DinnerSuite + '"')) }
     $taskProcess = Start-Process -FilePath $taskPython -ArgumentList $taskArguments -WorkingDirectory $taskRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $taskRunDir "server-$Port.stdout.log") -RedirectStandardError (Join-Path $taskRunDir "server-$Port.stderr.log") -PassThru
-    @{pid=$taskProcess.Id; port=$Port; python=$taskPython; learned=[bool]$Learned; started_at=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $taskRunDir "server-$Port.json")
+    @{pid=$taskProcess.Id; port=$Port; python=$taskPython; learned=[bool]$Learned; dinner_suite=$DinnerSuite; started_at=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $taskRunDir "server-$Port.json")
     $taskReady = $false
     for ($taskAttempt = 0; $taskAttempt -lt 80; $taskAttempt++) {
         Start-Sleep -Milliseconds 250
