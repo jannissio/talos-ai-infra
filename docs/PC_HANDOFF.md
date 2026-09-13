@@ -1,0 +1,52 @@
+# Continue Talos on another Windows PC
+
+Clone https://github.com/jannissio/talos-ai-infra and open the checkout as a Codex project. Use the repository's current `main` branch. The old laptop's absolute path is not required.
+
+## Read first
+
+- `README.md`
+- `docs/robotics/SUBMISSION_VERIFICATION.md`
+- `docs/robotics/VISUAL_BOTTLE_POLICY.md`
+- `models/bottle_visual/README.md`
+- `training/bottle_visual/README.md`
+- `docs/robotics/TABLE_RELAY.md`
+- `docs/robotics/STORAGE_POLICY.md`
+- `docs/hackathon/LIVESTREAM_REVIEW_2026-09-11.md`
+- `submission/PROJECT.md`
+
+## What transfers through Git
+
+The repository includes simulation code and robot/dinner assets, both deployed bottle models, the exact compact 22-episode upright training input, training/evaluation scripts, published metrics, the presentation, cover and two HD videos. This is enough to run the packaged demonstration and retrain the compact upright model.
+
+Excluded on purpose: `.env`, virtual environments, `.run` with raw images/recordings and experimental checkpoints, private source downloads/transcript and machine diagnostics. The complete experiment archive remains on the laptop. Do not assume those private paths exist on the PC. New demonstrations can be generated with the collectors; copying the old raw archive is optional for further analysis and should be selective after checking disk space. Never upload the raw archive or credentials indiscriminately.
+
+Create a new local `.env` on the PC if voice is needed: `SPEECHMATICS_API_KEY=your-key`. Matching quotes and spaces around `=` are supported. Obtain the key privately from the account or transfer the local file securely; do not paste it into chat or commit it. No account credit purchase is authorized.
+
+## First goal on the PC
+
+Establish a working baseline on the RTX 4070 (12 GB VRAM) before changing models:
+
+1. Inspect installed clean CPython 3.12, GPU/driver information and actual free disk space. Create new `.venv` and `.venv-training` environments using the pinned requirements in the README. Do not copy Windows environments from the laptop or use Anaconda. Verify CUDA availability in the training environment; avoid an accidental CPU-only Torch installation.
+2. Run the documented application and training-contract tests. Physically evaluate `models/bottle_visual` on seed 42 before retraining. These are exposed regression cases, not new holdouts. Preserve the packaged models unchanged.
+3. Start `start-lab.ps1 -Learned`, verify the browser cameras and controls, and let the user rehearse actual microphone input. Speechmatics synthetic-audio API tests passed on the laptop; unattended human microphone capture was not tested.
+4. Report any environment differences. OpenVINO CPU/iGPU measurements are specific to the laptop; do not reuse them as measurements of this PC. Core Ultra hardware eligibility still needs confirmation against the written brief and livestream clarification.
+
+Then propose a bounded broader-position learning goal: retain the current baseline, inspect the failed wider-position cases/protocols, collect a compact curriculum rather than a large image archive, train on the RTX 4070, and declare fresh evaluation seeds before checkpoint selection. More GPU capacity alone does not solve grasp precision or dataset coverage. Consider continuous visual feedback as a subsequent architectural improvement, not an already implemented feature.
+
+## Current measured scope
+
+- Programmed exact-state physical skills place bottle, plate and mug, open the passive drawer, and retrieve fork/spoon. The six-skill sequence passed on seed 42.
+- The programmed left-to-right bottle relay releases onto a shared table area before regrasping with the other arm. It is not an airborne handoff; reverse direction and other objects are not supported by this relay.
+- The default upright model uses a **classical overhead RGB centroid detector**, a neural trajectory and motor-feedback progress checks. It passed 10/10 declared new task-preset scenes, with small bottle-position jitter, and the same ten exposed scenes with stricter collision monitoring. Wider-position development was 1/3. This is not full reachable-workspace coverage or continuous visual correction.
+- The original three-view model remains for familiar sideways practice. Its earlier broader ten-scene test was 0/10; keep that failure evidence.
+- Learned actions never use exact simulator object positions, a programmed teacher, action retrieval, attachments or teleportation. A separate privileged-state monitor can stop/score execution. Learned success verifies release before the working arm necessarily finishes parking; reset before another learned trial.
+- Other dishes and arbitrary destinations are not learned skills. Unsupported learned instructions must be refused explicitly, without a silent programmed fallback.
+- The laptop passed 40 application tests and 9 training-contract tests from a clean source checkout. Dependencies were reused there, so setup on this PC is a new installation check.
+
+## Persistent instructions
+
+Check the destination drive before **every** new training batch/episode or export and periodically during writing. Preserve at least **10 GiB free in addition to expected writes**. Never automatically delete existing data or checkpoints. Use compact state data and separate demo rendering where possible.
+
+The user authorizes publishing needed, sanitized project changes to the existing GitHub repository. Use a `codex/` branch for new work and a nonpersonal commit identity such as `Talos contributors <contributors@talos.invalid>`. Inspect staged content for credentials/private paths; do not push old laptop branches or backups containing the previous personal commit identity. All current published history was sanitized.
+
+The user will upload the hackathon submission. Materials are in `submission/`; no public hosted interactive simulator has been deployed. Keep claims aligned with measured results and distinguish programmed skills, classical vision and neural control.
