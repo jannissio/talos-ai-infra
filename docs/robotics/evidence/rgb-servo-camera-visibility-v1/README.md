@@ -1,5 +1,7 @@
 # Camera visibility diagnostic: a candidate for fresh validation
 
+**Subsequent result:** the [fresh perception test](../rgb-servo-camera-perception-v1/README.md) fails the selected camera configuration's acceptance gate, 202/237 present bottles. It stops before physical evaluation and is not deployed. The diagnostic below remains unchanged evidence from exposed traces.
+
 The [protocol](protocol.json) was committed in `dcd84ca` before running this diagnostic. It compares three fixed camera configurations with the **unchanged V1 observer weights and OpenVINO IR**. It replays 32 saved approach frames from each of four exposed V5 development traces: both nominal visibility failures, the successful relay and the only both-nominal-pass seed. No controller runs and no new physical trial or neural training occurs.
 
 | Camera configuration | Accepted frames | Recovered original refusals | Accepted error p95 | Maximum | Diagnostic gate |

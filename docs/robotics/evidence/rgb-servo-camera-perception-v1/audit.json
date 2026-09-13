@@ -1,0 +1,32 @@
+{
+  "all_observations_verified": 512,
+  "sampled_states_verified": 256,
+  "maximum_scoring_discrepancy_mm": 0.0,
+  "summaries": {
+    "original": {
+      "states": 256,
+      "present": 237,
+      "accepted_present": 225,
+      "absent": 19,
+      "false_accepted_absent": 0,
+      "accepted_error_p95_mm": 2.823762150407825,
+      "accepted_error_max_mm": 11.548407428060004,
+      "gate_passed": false
+    },
+    "opposite_obliques": {
+      "states": 256,
+      "present": 237,
+      "accepted_present": 202,
+      "absent": 19,
+      "false_accepted_absent": 0,
+      "accepted_error_p95_mm": 2.3825205117480106,
+      "accepted_error_max_mm": 3.737113133253478,
+      "gate_passed": false
+    }
+  },
+  "selected_configuration": "opposite_obliques",
+  "selected_gate_passed": false,
+  "physical_trials": 0,
+  "promoted": false,
+  "scope": "Fresh static perception test on exposed arm-pose families; no physical, Intel or general manipulation claim."
+}
