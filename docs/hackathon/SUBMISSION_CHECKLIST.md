@@ -1,5 +1,7 @@
 # Submission checklist
 
+**Current status, September 13:** use the [September 14 release plan](RELEASE_PLAN_2026-09-14.md) for the evidence-backed readiness table and remaining actions. The historical checklist below predates the packaged models, videos, fresh PC installation and human voice rehearsal; its unchecked boxes are not a current claim that those artifacts are missing. The user requires completion on September 14 and gives September 15 as the deadline; reconcile the exact cutoff without delaying that target.
+
 Prepared 2026-09-08 for the online Intel track with the Speechmatics bonus. Unchecked boxes mean **not yet verified or completed**, not an assertion that an existing user account lacks the item.
 
 September 11 livestream clarification: other Intel systems with integrated graphics are accepted in the spoken Q&A; Core Ultra Series 2/3 earns bonus points. This conflicts with a strict written-brief sentence. [Review and development implications](LIVESTREAM_REVIEW_2026-09-11.md). The deadline, ten-seed evidence and Speechmatics checklist remain unchanged.

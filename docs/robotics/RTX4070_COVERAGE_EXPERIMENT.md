@@ -1,6 +1,33 @@
-# Proposed next goal: bounded upright bottle coverage
+# Bounded upright bottle coverage experiment
 
-This is a proposed experiment, not a completed training result. Keep both published models and all existing evaluations unchanged. The RTX 4070 provides 12 GB VRAM for training; the deployed baseline remains CPU OpenVINO inference with NVIDIA camera rendering. Extra VRAM does not by itself correct grasp precision or coverage.
+**September 13 outcome:** the declared data gate failed after three reconstruction attempts. Two teacher demonstrations and both replay rates passed; the original `train-019` reconstruction was refused by the current teacher's grasp planner before movement. The packaged learned model reproduced **1/3** success on these exposed cases. No candidate was trained, and the baseline remains the submission model. See [complete results](experiments/rtx4070-coverage-v1-results.json) and the [September 14 release plan](../hackathon/RELEASE_PLAN_2026-09-14.md).
+
+Both published models and all existing evaluations remain unchanged. The RTX 4070 provides 12 GB VRAM for training; the deployed baseline remains CPU OpenVINO inference with NVIDIA camera rendering. Extra VRAM does not by itself correct grasp precision or coverage. The original proposed protocol below is retained; the exact [frozen specifications](experiments/rtx4070-coverage-v1.json) retain the historical scene seeds for the first three reconstruction attempts and use fresh seeds for the remaining 21 planned training attempts.
+
+## Measured diagnostic outcome
+
+| Historical case | Teacher/replays | Packaged learned controller | Interpretation |
+| --- | --- | --- | --- |
+| train-017 | Pass at 200 and 20 Hz | Pass; 6.80 cm lift, 0.98 mm placement error | Reconstructed familiar wider-position success |
+| train-019 | Teacher rejects useful grasp reach at 0 s | Tracking timeout at 12.8 s; no lift | Current grasp/planning boundary; not proof of physical impossibility |
+| train-025 | Pass at 200 and 20 Hz | Support loss at 23.76 s after 6.83 cm lift | A valid demonstration exists, but the learned trajectory fails to maintain support |
+
+All three RGB bottle detections were accepted. The failing tracking case reached a sampled joint-guard error of 0.0163 rad; the other cases stayed below 0.0028 rad at query boundaries. The support-loss case reached a 0.185 s unsupported gap, exceeding the unchanged 0.18 s monitor limit. No thresholds were relaxed and no teacher actions were supplied during learned evaluation.
+
+The experiment used less than 1 MiB of compact outputs and left approximately 535 GiB free when reporting. The remaining 21 training attempts, six development cases and 12 fresh evaluation cases were not run. Those evaluation scenes remain unevaluated; there is no new generalization result or replacement checkpoint.
+
+Validation: the 43-test application suite and 10-test training-contract suite passed. The final four protocol tests also passed, including an additional check that resuming preserves failed attempts in the denominator and respects the new-attempt limit. Physical diagnostic runs returned the expected success/failure exit codes and retained all reports. The 41 original packaged model, frozen-input and submission files remained byte-identical.
+
+Reproduce the stopped diagnostic with fresh output locations:
+
+```powershell
+.\.venv-training\Scripts\python scripts/collect_compact_bottle.py --protocol docs/robotics/experiments/rtx4070-coverage-v1.json --output .run/coverage-reconstruction-new --limit 3
+.\.venv-training\Scripts\python scripts/verify_live_policy.py --episode .run/coverage-reconstruction-new/train-000 --checkpoint models/bottle_visual --diagnostics --output .run/coverage-reconstruction-new/baseline-000.json
+.\.venv-training\Scripts\python scripts/verify_live_policy.py --episode .run/coverage-reconstruction-new/train-001 --checkpoint models/bottle_visual --diagnostics --output .run/coverage-reconstruction-new/baseline-001.json
+.\.venv-training\Scripts\python scripts/verify_live_policy.py --episode .run/coverage-reconstruction-new/train-002 --checkpoint models/bottle_visual --diagnostics --output .run/coverage-reconstruction-new/baseline-002.json
+```
+
+Expected learned outcomes are success, failure, failure. The verifier now returns exit code 1 for physical failure/cancellation and refuses an existing report path. Collection can explicitly resume an identical protocol without overwriting completed episodes, but this experiment's failed gate means it must not be resumed for training without a separately declared revised experiment.
 
 ## Evidence and hypothesis
 

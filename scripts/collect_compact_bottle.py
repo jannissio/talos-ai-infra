@@ -3,7 +3,7 @@
 This dataset is for initial-image-conditioned policies. It is NOT a continuous
 visual observation dataset. Failed teacher/replay cases are never training eligible.
 """
-import argparse,hashlib,json,math,os,sys,xml.etree.ElementTree as ET
+import argparse,hashlib,json,math,os,re,sys,xml.etree.ElementTree as ET
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import mujoco,numpy as np
@@ -65,10 +65,29 @@ def trial(spec,out):
             'status':task.status,'message':task.message,'replays':manifest['replays']}
 
 
+def validate_specs(specs):
+    if not isinstance(specs,list) or not 2<=len(specs)<=100:
+        raise ValueError('Choose 2–100 explicit training specifications.')
+    names=set()
+    for spec in specs:
+        if not isinstance(spec,dict) or not re.fullmatch(r'train-[0-9]{3}',str(spec.get('id',''))):
+            raise ValueError('Episode IDs must be safe train-NNN names.')
+        if spec['id'] in names:raise ValueError('Duplicate episode ID.')
+        names.add(spec['id'])
+        if spec.get('split')!='training':raise ValueError('Evaluation/development cases cannot enter collection.')
+        if type(spec.get('seed')) is not int or not 0<=spec['seed']<=2147483647:raise ValueError('Invalid scene seed.')
+        if 'pose' in spec:
+            pose=spec['pose']
+            if not isinstance(pose,dict) or set(pose)!={'x','y','yaw','sideways'}:raise ValueError('Explicit pose requires x, y, yaw and sideways.')
+            if type(pose['sideways']) is not bool:raise ValueError('Sideways must be boolean.')
+            for name,lo,hi in [('x',-.30,.30),('y',-.30,.30),('yaw',-math.pi,math.pi)]:
+                if type(pose[name]) not in (int,float) or not math.isfinite(pose[name]) or not lo<=pose[name]<=hi:
+                    raise ValueError('Invalid finite bottle pose.')
+    return specs
+
+
 def main(a):
     out=Path(a.output)
-    if out.exists():raise FileExistsError('Use a new batch folder; previous outcomes are preserved.')
-    require_space(out,a.count*8*1024**2);out.mkdir(parents=True)
     rng=np.random.default_rng(617131);specs=[]
     for i in range(a.count):
         spec={'id':f'train-{i:03d}','seed':2026090001+i,'split':'training'}
@@ -78,19 +97,44 @@ def main(a):
                           'y':float(rng.uniform(-.15,-.07) if sideways else rng.uniform(-.15,-.04)),
                           'yaw':float(rng.uniform(.4,1.2) if sideways else rng.uniform(-.4,.4)),'sideways':sideways}
         specs.append(spec)
-    (out/'protocol.json').write_text(json.dumps({'specs':specs,'storage_reserve_gib':10,'expected_max_mib':a.count*8,
-        'not_evaluation_seeds':True,'purpose':'Broader training only; new frozen evaluation seeds must be chosen afterward'},indent=2))
+    if a.protocol:specs=json.loads(Path(a.protocol).read_text(encoding='utf-8'))['training']
+    validate_specs(specs)
+    require_space(out,len(specs)*8*1024**2)
+    if out.exists():
+        if not a.resume:raise FileExistsError('Use a new batch folder or explicitly resume its unchanged protocol.')
+        saved=json.loads((out/'protocol.json').read_text())
+        if saved['specs']!=specs:raise ValueError('Resume protocol differs; existing episodes are preserved.')
+    else:
+        if a.resume:raise FileNotFoundError('Resume requires an existing batch.')
+        out.mkdir(parents=True)
+        (out/'protocol.json').write_text(json.dumps({'specs':specs,'storage_reserve_gib':10,'expected_max_mib':len(specs)*8,
+            'not_evaluation_seeds':True,'purpose':'Explicit training only; evaluate separate frozen specifications'},indent=2))
     rows=[]
     # Initialize the already-installed CUDA runtime before rendering to match
     # the NVIDIA image source used in the previous training collection.
     import torch
     torch.cuda.init()
+    collected=0
     for spec in specs:
+        folder=out/spec['id']
+        if folder.exists():
+            manifest=json.loads((folder/'manifest.json').read_text())
+            if manifest['spec']!=spec:raise ValueError('Saved episode specification differs.')
+            rows.append({'id':spec['id'],'seed':spec['seed'],'training_eligible':manifest['training_eligible'],
+                         'status':manifest['outcome']['status'],'message':manifest['outcome']['message'],'replays':manifest['replays']})
+            continue
+        if a.limit is not None and collected>=a.limit:break
         rows.append(trial(spec,out));print(json.dumps(rows[-1]),flush=True)
+        collected+=1
+        require_space(out,1024**2)
         (out/'summary.json').write_text(json.dumps({'episodes':rows,'eligible':sum(r['training_eligible'] for r in rows),'planned':len(specs)},indent=2))
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',required=True);p.add_argument('--count',type=int,default=32)
+    p.add_argument('--protocol',help='Frozen JSON with an explicit training list; no development/evaluation collection.')
+    p.add_argument('--resume',action='store_true',help='Append unfinished cases only when the saved protocol matches exactly.')
+    p.add_argument('--limit',type=int,help='Bound new attempts in this invocation, for a diagnostic gate.')
     a=p.parse_args()
     if not 2<=a.count<=100:p.error('Choose 2–100 demonstrations per bounded batch.')
+    if a.limit is not None and a.limit<1:p.error('Limit must be positive.')
     main(a)

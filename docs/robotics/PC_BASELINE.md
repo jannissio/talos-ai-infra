@@ -47,7 +47,7 @@ The current local address is `http://127.0.0.1:8765/`. Choose **Learned upright 
 
 ## Voice, evidence and next work
 
-The user configured a local Speechmatics key. Talos confirmed only its presence, and Git confirmed `.env` is ignored. The browser exposed **Speak instruction**. Key presence alone does not establish API authentication or human microphone capture; the user must initiate and rehearse actual recording. No key or private audio belongs in committed evidence.
+The user configured a local Speechmatics key, and Git confirmed `.env` is ignored. During the subsequent human rehearsal, the user reported pressing **Speak instruction** and seeing **“Place. The bottle”**. The live API independently verified the resulting learned task's success: 28.645 simulated seconds, 6.8734 cm peak lift, 1.1154 mm final error, one second of stable release and zero unexpected collisions. This is one user-reported human microphone trial with physically verified completion; the assistant did not independently record or listen to the microphone audio. No microphone audio was saved. The original published speech recordings remain labeled synthetic. Live timing was slow in this rehearsal (383.74 ms median control query); it is not a low-latency speech/control claim.
 
 Installation logs, dependency freezes, hardware diagnostics, physical rollout reports and profiling probes are retained locally under `.run/pc-baseline-20260913/`; live scene checks are `.run/live-check.json` and `.run/dinner-live-check.json`. Autonomous outcomes, including the cancelled diagnostic trial, are retained in `.run/autonomy/`. These local diagnostics are excluded from Git.
 
