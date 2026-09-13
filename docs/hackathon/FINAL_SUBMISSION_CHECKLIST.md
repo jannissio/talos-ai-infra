@@ -112,3 +112,6 @@ The PDF requires an end-to-end perception/language/action workflow. Its examples
 - The private hosted combined workflow passes all seven steps on exposed seed 42 in 283.31 simulated / 297.31 wall seconds. The hosting allowance is increased to 420 seconds; local cancellation and a fresh learned trial pass. No controller, model or physical acceptance threshold changes. GitHub/HF remain private and Submit remains reserved for the user.
 
 - The revised 1,962-character additional-information draft survives a full reload with an exact text match. All three form steps and required media remain present. Submit is untouched.
+
+- The post-update private hosted seven-step run passes in 305.33 wall seconds, exceeding the former 300-second allowance. All seven physical outcomes match the earlier run. Current Space revision is `c08e96f493e76f38f06143fa621c3cf01da29b25`, private and running.
+- The fixed-camera diagnostic completes all 384 observations on 128 exposed approach states. Opposite oblique cameras recover all 11 original refusals and accept 122/128 frames, but lose six other frames; p95/max error 2.524/4.160 mm passes the declared diagnostic gate. Exact outputs, source and an independent zero-discrepancy geometry audit are packaged. Fresh perception and physical evaluation are the next bounded checks; no model or controller is promoted.

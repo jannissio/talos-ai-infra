@@ -63,6 +63,10 @@ Then propose a bounded broader-position learning goal: retain the current baseli
 
 ## Persistent instructions
 
+**September 14 continuation:** the [fixed-camera diagnostic](robotics/evidence/rgb-servo-camera-visibility-v1/README.md) selects opposite oblique views on exposed saved states: 122/128 accepted, all 11 original refusals recovered, 2.524 mm p95. This is not fresh perception or physical success; those checks remain the next bounded experiment. The private hosted seven-step workflow also passes after the 420-second allowance update, in 305.33 wall seconds, exceeding the old limit. Preserve the exact [post-update browser evidence](robotics/evidence/composed-dinner-v1/cloud-cpu-headroom-seed42.json).
+
+Check **both the output directory and console-log filename for prior existence before launching any redirected job**. One September 14 launch replaced an older local console log before the diagnostic correctly refused its existing output directory. The original JSON results and 27 PNGs remain intact; the old console text was not recovered. The incident is recorded locally in `.run/final-goal/visibility-console-log-collision-20260914.json`. All 41 protected published artifacts still match their preserved hashes. Do not reuse that old log as evidence of its original run.
+
 **Public-release timing (September 13 correction):** keep the GitHub repository private until immediately before the final submission. The user explicitly reversed the early public visibility change. The repository is private again, anonymous access returns 404, and GitHub Pages plus its publishing workflow are disabled. Push sanitized development commits privately; do not make the repository or a duplicate source repository public early. Prepare and test hosting privately/local first.
 
 Check the destination drive before **every** new training batch/episode or export and periodically during writing. Preserve at least **10 GiB free in addition to expected writes**. Never automatically delete existing data or checkpoints. Use compact state data and separate demo rendering where possible.
