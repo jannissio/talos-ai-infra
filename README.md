@@ -4,7 +4,7 @@ Two SO-101 arms, a physical dinner-table simulation, and spoken or typed instruc
 
 ![Talos dinner scene](docs/robotics/dinner-task.jpg)
 
-Talos combines MuJoCo, six camera views, contact-verified manipulation, Speechmatics transcription and a camera-conditioned neural bottle controller running through OpenVINO. The browser offers labeled programmed and learned modes, with progress, cancellation and failure feedback.
+Talos combines MuJoCo, six camera views, Speechmatics transcription and camera-conditioned neural motor policies running through OpenVINO. The measured v6 baseline chains six learned dinner skills and supports table-supported bottle relays in both directions. The browser offers programmed and learned modes, progress, cancellation and explicit failures. See [the current architecture and evidence](docs/robotics/FINAL_ARCHITECTURE.md).
 
 ## Run locally
 
@@ -33,6 +33,14 @@ The explicit CUDA wheel installation is for NVIDIA training on Windows; it follo
 
 Select **Learned upright bottle · OpenVINO**, reset to seed 42, and enter `place the bottle`. The [upright model](models/bottle_visual/README.md) uses overhead RGB localization and motor feedback. The original model remains available for familiar sideways practice. Stop a foreground server with Ctrl+C.
 
+For the expanded [six-skill suite](models/dinner_suite/README.md), run:
+
+```powershell
+.\start-lab.ps1 -Learned -DinnerSuite models/dinner_suite/suite.json
+```
+
+Choose **Learned dinner sequence**, reset to Task start, and enter `set the table`. Each skill must release and park before the next begins; no reset occurs between the six skills. The menu retains the word “candidate” to distinguish this finite evaluated baseline from broad workspace coverage. Use `pass the bottle to the right arm` at the standard start, or choose **Left reach practice** and use `place the bottle` for the reverse relay.
+
 After installation, Windows users can instead run `.\start-lab.ps1 -Learned` to launch the complete runtime in the background and open the browser. Stop it with `.\stop-lab.ps1`. Both scripts accept `-Port` when the default port is occupied.
 
 ## Voice
@@ -41,6 +49,9 @@ Create a local `.env` containing `SPEECHMATICS_API_KEY=your-key`. Spaces around 
 
 ## Measured behavior
 
+- The v6 learned dinner suite completes **8/10** frozen randomized task-start sequences. The two failures are retained: mug placement error 14.59 mm and spoon error 13.61 mm, against the unchanged 8 mm threshold. Five new policies use 201 physically replayed training examples; the original bottle model is preserved.
+- Four learned relay policies pass **5/5** frozen trials in each direction, using 52 replayed training examples. They release onto the shared table before the other arm grasps. These are bounded upright regions and fixed destinations.
+- A human microphone bottle command succeeded on this PC. Final six-skill microphone rehearsal is still open.
 - Real Speechmatics transcripts have driven the six-skill programmed sequence and a learned bottle movement, using explicitly labeled synthetic speech tests.
 - The revised upright model completed **10/10 new task-preset scene seeds**, with **0.36–1.66 mm** placement errors. This covers small bottle-position changes, not the entire reachable workspace. Wider-position trials still include failures.
 - The original three-view model supports familiar sideways practice but completed **0/10** broader scene seeds. Its results remain available separately.
@@ -48,10 +59,10 @@ Create a local `.env` containing `SPEECHMATICS_API_KEY=your-key`. Spaces around 
 - OpenVINO FP32 inference has been checked on an Intel CPU and Intel UHD iGPU. Current camera rendering uses NVIDIA.
 - Videos can be reconstructed at 1280×720, 20 fps, with four simultaneous views, without changing training image resolution or physics.
 
-No objects are welded to grippers or teleported during control. The learned controller uses initial visual features and motor feedback; an independent simulator-state monitor can stop execution but cannot generate actions. The language interpreter is a constrained grammar. Direct airborne handoffs, arbitrary placements and learned dish/drawer skills remain outside the demonstrated scope.
+No objects are welded to grippers or teleported during control. The learned controllers use initial visual features and motor feedback; an independent simulator-state monitor can stop execution but cannot generate actions. The language interpreter is a constrained grammar with RGB-grounded preparation steps. Direct airborne handoffs, pouring, arbitrary placements and continuous visual correction remain unfinished. [The active RGB-feedback experiment](docs/robotics/experiments/rgb-servo-bottle-v1.json) preserves the selected baseline and has separate data and accuracy gates.
 
 See the [upright policy experiment](docs/robotics/VISUAL_BOTTLE_POLICY.md), [relay evidence](docs/robotics/TABLE_RELAY.md), [simulator controls](simulation_lab/README.md), and [storage safeguards](docs/robotics/STORAGE_POLICY.md). A [271 KB frozen training input](training/bottle_visual/README.md) supports local GPU retraining.
 
-The [submission folder](submission/PROJECT.md) contains the presentation, cover, [HD demonstration](submission/Talos-demo.mp4), [all ten seed recordings](submission/Talos-ten-seeds.mp4) and measured evidence. See [verification and reproduction](docs/robotics/SUBMISSION_VERIFICATION.md). The interactive simulator runs locally; no public hosted simulation is claimed.
+The original [submission folder](submission/PROJECT.md) is preserved. Updated materials are versioned under `submission/final-v6/`; [the final checklist](docs/hackathon/FINAL_SUBMISSION_CHECKLIST.md) tracks remaining work. A compact Hugging Face demo is under [private deployment verification](docs/hackathon/PUBLIC_DEMO.md). The repository and Space stay private until immediately before submission. Final-suite Intel execution, public judge access and the user's submission confirmation remain open.
 
 Project code, model weights and original dinner assets use [MIT](LICENSE). SO-101 assets retain their [Apache-2.0 attribution](simulation_lab/NOTICE.md). See [development and AI-assistance provenance](docs/PROVENANCE.md).

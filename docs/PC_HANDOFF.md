@@ -2,9 +2,11 @@
 
 **Active goal (September 13):** finish the broader hackathon system and submission by September 14. Follow [the final-submission checklist](hackathon/FINAL_SUBMISSION_CHECKLIST.md), which supersedes the narrow release scope below. User has confirmed a successful microphone command on this PC; credentials remain local.
 
+**September 13 evening:** the packaged [v6 architecture](robotics/FINAL_ARCHITECTURE.md) now has six learned skills (8/10 frozen full sequences) and both learned bottle relay directions (5/5 each). Five dinner models, four relay models, exact compact inputs and every outcome are packaged. Updated media and all three submission-form steps are saved as a draft, verified after reload; **Submit has not been pressed**. The private Hugging Face Space has a verified learned bottle trial; CPU inference is now the default while full cloud-sequence verification continues. All 41 original protected files remain unchanged; current checks pass 56 application and 13 training-contract tests. Follow [active RGB-feedback work](robotics/RGB_SERVO_PROGRESS.md), not just the submission baseline. Final Intel execution, human six-skill voice rehearsal, final public release and actual submission remain open.
+
 September 13 PC follow-through: see [RTX 4070 baseline verification](robotics/PC_BASELINE.md) for fresh installations, physical regression results and a successful human-triggered voice trial. The [coverage experiment](robotics/RTX4070_COVERAGE_EXPERIMENT.md) stopped at its declared data gate and retained the published model. Follow the [September 14 release plan](hackathon/RELEASE_PLAN_2026-09-14.md): the user requires completion tomorrow and gives September 15 as the deadline. Live timing, final Intel execution and judge-access details remain open. The original handoff below is retained as historical context.
 
-Clone https://github.com/jannissio/talos-ai-infra and open the checkout as a Codex project. Use the repository's current `main` branch. The old laptop's absolute path is not required.
+Clone https://github.com/jannissio/talos-ai-infra and open the checkout as a Codex project. Current final-submission development is on `codex/final-submission`; use that branch until the reviewed final release is merged. The old laptop's absolute path is not required.
 
 ## Read first
 
@@ -49,8 +51,10 @@ Then propose a bounded broader-position learning goal: retain the current baseli
 
 ## Persistent instructions
 
+**Public-release timing (September 13 correction):** keep the GitHub repository private until immediately before the final submission. The user explicitly reversed the early public visibility change. The repository is private again, anonymous access returns 404, and GitHub Pages plus its publishing workflow are disabled. Push sanitized development commits privately; do not make the repository or a duplicate source repository public early. Prepare and test hosting privately/local first.
+
 Check the destination drive before **every** new training batch/episode or export and periodically during writing. Preserve at least **10 GiB free in addition to expected writes**. Never automatically delete existing data or checkpoints. Use compact state data and separate demo rendering where possible.
 
-The user authorizes publishing needed, sanitized project changes to the existing GitHub repository. Use a `codex/` branch for new work and a nonpersonal commit identity such as `Talos contributors <contributors@talos.invalid>`. Inspect staged content for credentials/private paths; do not push old laptop branches or backups containing the previous personal commit identity. All current published history was sanitized.
+The user authorizes pushing needed, sanitized project changes to the existing private GitHub repository. Public visibility follows the timing rule above. Use a `codex/` branch for new work and a nonpersonal commit identity such as `Talos contributors <contributors@talos.invalid>`. Inspect staged content for credentials/private paths; do not push old laptop branches or backups containing the previous personal commit identity. All current remote history was sanitized.
 
 The user will upload the hackathon submission. Materials are in `submission/`; no public hosted interactive simulator has been deployed. Keep claims aligned with measured results and distinguish programmed skills, classical vision and neural control.

@@ -40,13 +40,13 @@ def observe_scene(model,data):
 
 
 class LearnedDinnerTask(LiftReturn):
-    def __init__(self, model, data, layout, checkpoint, skill):
+    def __init__(self, model, data, layout, checkpoint, skill, *, policy_factory=PrimitivePolicy):
         super().__init__(model, data, layout)
         if layout.get('scenario') != 'dinner' or skill not in ALL_LEARNED_SKILLS:
             raise ValueError('Choose a supported dinner skill in the dinner scene.')
         if np.max(np.abs(data.qpos[:12]-np.array(HOME*2))) > .035:
             raise ValueError('Both arms must be parked before starting a learned skill.')
-        self.policy = PrimitivePolicy(checkpoint, 'cpu')
+        self.policy = policy_factory(checkpoint, 'cpu')
         self.object_id=object_for_skill(skill)
         if self.policy.meta.get('skill','bottle') != self.object_id:
             raise ValueError('Checkpoint does not match the requested skill.')
@@ -57,6 +57,10 @@ class LearnedDinnerTask(LiftReturn):
         self.side = 'left' if self.offset == 0 else 'right'
         if skill in RELAY_SKILLS and not skill.endswith(self.side):raise ValueError('Relay arm does not match its checkpoint.')
         self.cap = self.policy.meta.get('gripper_cap_nm', .25)
+        self.inactive_slice=slice(6,12) if self.offset==0 else slice(0,6)
+        hold_mode=self.policy.meta.get('inactive_arm_control')
+        if hold_mode not in (None,'hold_previous_targets'):raise ValueError('Unknown inactive-arm control contract.')
+        self.inactive_targets=data.ctrl[self.inactive_slice].copy() if hold_mode else None
         monitor_layout=layout
         if skill in RELAY_SKILLS:
             destination=np.asarray(self.policy.meta.get('trained_destination_m'),dtype=float)
@@ -86,6 +90,9 @@ class LearnedDinnerTask(LiftReturn):
         self.close()
 
     def apply_gripper_limit(self, targets):
+        if self.inactive_targets is not None:
+            targets=np.asarray(targets).copy()
+            targets[self.inactive_slice]=self.inactive_targets
         return apply_targets(self.model, self.data, targets, self.cap, self.offset)
 
     def _observation(self):
@@ -127,6 +134,7 @@ class LearnedDinnerTask(LiftReturn):
                 self.chunk = np.clip(chunk, self.model.actuator_ctrlrange[:, 0], self.model.actuator_ctrlrange[:, 1])
             u = (self.tick % 40)/10; i = int(u)
             targets[:] = self.chunk[i]*(1-(u-i))+self.chunk[i+1]*(u-i)
+            if self.inactive_targets is not None:targets[self.inactive_slice]=self.inactive_targets
             self.tick += 1
         except ObservationRejected as exc:
             targets[:] = self.data.qpos[:12]
@@ -141,18 +149,20 @@ class LearnedDinnerTask(LiftReturn):
                       policy_details=self.policy.details(),
                       inference_median_ms=float(np.median(self.inference_ms)) if self.inference_ms else None,
                       completion_note='Physical release and parked arms required before the next skill.')
+        result['inactive_arm_control']=self.policy.meta.get('inactive_arm_control','neural targets')
         result['stages'] = [{'id': 'neural_control', 'label': 'Camera-conditioned neural movement'}]
         result['progress'] = 1. if self.status == 'succeeded' else min(.99, self.policy.progress/20/self.policy.meta['max_seconds'])
         return result
 
 
 class LearnedDinnerSequence(LiftReturn):
-    def __init__(self, model, data, layout, checkpoints, skills):
+    def __init__(self, model, data, layout, checkpoints, skills, *, policy_factory=PrimitivePolicy):
         super().__init__(model, data, layout)
         if not skills or any(s not in ALL_LEARNED_SKILLS for s in skills): raise ValueError('Invalid learned dinner sequence.')
         if len(skills) != len(set(skills)): raise ValueError('Repeated placement needs a separately trained destination.')
         if any(s not in checkpoints for s in skills):raise ValueError('The suite does not contain every requested learned skill.')
         self.checkpoints = {s: Path(checkpoints[s]) for s in skills}
+        self.policy_factory = policy_factory
         if any(not (p/'primitive.json').is_file() for p in self.checkpoints.values()):
             raise ValueError('A requested learned skill has no checkpoint; no programmed fallback is used.')
         self.steps, self.results = list(skills), []
@@ -163,7 +173,7 @@ class LearnedDinnerSequence(LiftReturn):
 
     def _next(self):
         skill = self.steps[len(self.results)]
-        self.child = LearnedDinnerTask(self.model, self.data, self.layout, self.checkpoints[skill], skill)
+        self.child = LearnedDinnerTask(self.model, self.data, self.layout, self.checkpoints[skill], skill, policy_factory=self.policy_factory)
         self.stage = self.child.stage
 
     def close(self):

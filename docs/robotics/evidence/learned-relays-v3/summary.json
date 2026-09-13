@@ -1,0 +1,102 @@
+{
+  "schema": "talos.learned-relays-release.v3",
+  "runtime": "OpenVINO CPU FP32 on AMD Ryzen 7 5800X; not Intel eligibility evidence",
+  "scope": "Two trained upright starting regions and fixed destinations; table-supported releases between arms. No airborne transfer or continuous visual correction.",
+  "train_examples_per_leg": 13,
+  "aligned_input_replays_passed": 52,
+  "aligned_input_replays_total": 52,
+  "directions": {
+    "relay": {
+      "passed": 5,
+      "total": 5,
+      "trials": [
+        {
+          "seed": 2026092501,
+          "status": "succeeded",
+          "placement_error_mm": 1.1340325683978352,
+          "simulation_seconds": 74.22,
+          "wall_seconds": 13.886729300022125,
+          "report": "relay-final-2026092501-v3.json"
+        },
+        {
+          "seed": 2026092502,
+          "status": "succeeded",
+          "placement_error_mm": 1.330060202694829,
+          "simulation_seconds": 74.22,
+          "wall_seconds": 13.576332099968567,
+          "report": "relay-final-2026092502-v3.json"
+        },
+        {
+          "seed": 2026092503,
+          "status": "succeeded",
+          "placement_error_mm": 1.476896676071438,
+          "simulation_seconds": 74.225,
+          "wall_seconds": 12.178392299916595,
+          "report": "relay-final-2026092503-v3.json"
+        },
+        {
+          "seed": 2026092504,
+          "status": "succeeded",
+          "placement_error_mm": 1.1350499438573125,
+          "simulation_seconds": 74.025,
+          "wall_seconds": 11.914829700021073,
+          "report": "relay-final-2026092504-v3.json"
+        },
+        {
+          "seed": 2026092505,
+          "status": "succeeded",
+          "placement_error_mm": 1.6902549883535118,
+          "simulation_seconds": 74.225,
+          "wall_seconds": 10.779757499927655,
+          "report": "relay-final-2026092505-v3.json"
+        }
+      ]
+    },
+    "reverse": {
+      "passed": 5,
+      "total": 5,
+      "trials": [
+        {
+          "seed": 2026092601,
+          "status": "succeeded",
+          "placement_error_mm": 0.8459891248089629,
+          "simulation_seconds": 74.01,
+          "wall_seconds": 12.483049400150776,
+          "report": "reverse-final-2026092601-v3.json"
+        },
+        {
+          "seed": 2026092602,
+          "status": "succeeded",
+          "placement_error_mm": 1.1051112151327913,
+          "simulation_seconds": 74.005,
+          "wall_seconds": 11.381996100069955,
+          "report": "reverse-final-2026092602-v3.json"
+        },
+        {
+          "seed": 2026092603,
+          "status": "succeeded",
+          "placement_error_mm": 1.1179760658955524,
+          "simulation_seconds": 74.205,
+          "wall_seconds": 12.019034799886867,
+          "report": "reverse-final-2026092603-v3.json"
+        },
+        {
+          "seed": 2026092604,
+          "status": "succeeded",
+          "placement_error_mm": 1.3167885423956813,
+          "simulation_seconds": 74.01,
+          "wall_seconds": 11.345000999979675,
+          "report": "reverse-final-2026092604-v3.json"
+        },
+        {
+          "seed": 2026092605,
+          "status": "succeeded",
+          "placement_error_mm": 0.8496549374356693,
+          "simulation_seconds": 74.01,
+          "wall_seconds": 13.109572699991986,
+          "report": "reverse-final-2026092605-v3.json"
+        }
+      ]
+    }
+  }
+}

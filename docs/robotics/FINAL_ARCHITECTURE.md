@@ -1,0 +1,66 @@
+# Talos v6: measured architecture and active work
+
+September 13, 2026. This describes the selected submission baseline. The broader development goal remains active; its open items are tracked in the [completion checklist](../hackathon/FINAL_SUBMISSION_CHECKLIST.md).
+
+## Execution path
+
+1. Typed text or Speechmatics transcription enters a bounded grammar. Supported instructions include setting the table, named dishes, drawer opening and a bottle relay. This is not an unrestricted language model.
+2. Classical RGB geometry from overhead and two calibrated workspace views checks bottle region, obstructed paths and drawer state. The planner inserts supported preparation skills, such as clearing the plate before opening the drawer. A farther-left bottle can select the trained reverse relay. Ambiguous observations and unsupported goals are refused.
+3. Each skill captures its own initial RGB views. Classical geometry encodes them into a 32-dimensional visual context. A small neural network with three 256-unit SiLU layers maps context and progress to 12 joint targets. It never loads demonstration action arrays at runtime.
+4. Measured joint positions and velocities regulate neural progress. Interpolated commands drive MuJoCo actuators. The five new dinner policies retain the inactive arm's previous targets at transitions. Every skill releases and parks before chaining to the next.
+5. A separate privileged-state monitor measures contacts, lift, collisions, placement, release and parking. It can stop or score a trial, but does not generate the learned motor targets. Later skills must preserve previous placements.
+
+```mermaid
+flowchart LR
+  A[Typed instruction or Speechmatics transcript] --> B[Bounded grammar and task context]
+  C[Initial RGB scene checks] --> B
+  B --> D[Ordered supported skills]
+  E[Each skill's initial RGB features] --> F[Neural motor policy]
+  D --> F
+  G[Joint feedback] --> F
+  F --> H[Actuators and contact physics]
+  H --> G
+  H --> I[Separate physical stop and score monitor]
+```
+
+The programmed mode retains its exact-state inverse-kinematics controller. The learned mode has no silent programmed fallback, attachments, teleportation, equality constraints or hidden forces. Harness disturbance experiments are explicitly declared separately.
+
+## Models and evidence
+
+| Component | Training input | Measured outcome |
+| --- | --- | --- |
+| Preserved upright bottle | 22 compact episodes | 10/10 small-jitter tests; historical wider development 1/3 |
+| Plate, mug, drawer, fork, spoon | 201 eligible episodes, all aligned action replays pass | Full v6 dinner sequence 8/10 frozen starts; all six development scenes and seed 42 pass |
+| Four bottle-relay legs | 52 eligible episodes, all aligned action replays pass | 5/5 left-to-right and 5/5 right-to-left frozen trials |
+| New RGB keypoint observer | Separate synthetic perception examples | Experimental; accuracy/occlusion gate precedes any robot integration |
+
+The dinner failures are seed 2026091902 (mug 14.59 mm XY error) and 2026091905 (spoon 13.61 mm). The acceptance threshold remains 8 mm. Every outcome is retained under [dinner evidence](evidence/learned-dinner-v6/summary.json) and [relay evidence](evidence/learned-relays-v3/summary.json). These are fixed goals and disclosed finite starting regions, not a guarantee for any reachable position.
+
+Models are safetensors plus FP32 OpenVINO IR. Training inputs named `retrieval.npz` are offline supervised data only. See [dinner retraining](../../training/dinner_suite/README.md), [relay retraining](../../training/bottle_relays/README.md) and the preserved [bottle instructions](../../training/bottle_visual/README.md). All new training used the RTX 4070. Original files remain byte-identical.
+
+## Deployment
+
+The full local browser uses FastAPI, MuJoCo and OpenVINO CPU inference. The private Gradio Space runs MuJoCo/OSMesa on CPU and defaults to OpenVINO CPU inference. An explicit shared-GPU option requests fresh neural trajectory predictions at each skill's initial image. The worker samples those predictions with the same motor-feedback guard. This is a cache of current model outputs, not retrieval of training trajectories. Cloud GPU allocation can fail and is reported separately from a physical grasp failure. The compact Space has one selected camera and no microphone capture; the local lab offers the complete interface.
+
+All promoted OpenVINO exports pass numerical parity on this AMD/NVIDIA PC. Historical original-bottle inference timings on i7-10850H/Intel UHD are not final-suite measurements. [Final Intel verification](INTEL_FINAL_VERIFICATION.md) still requires the actual laptop, renderer/device evidence and resolution of the Core Ultra eligibility wording.
+
+## Reproduction
+
+Install the environments from the root README, then use unused output paths:
+
+```powershell
+.\start-lab.ps1 -Learned -DinnerSuite models/dinner_suite/suite.json
+.\.venv-training\Scripts\python scripts/evaluate_learned_dinner.py --suite models/dinner_suite/suite.json --skills bottle,plate,mug,drawer,fork,spoon --seed 2026091901 --output .run/reproduce-dinner-v6.json
+.\.venv-training\Scripts\python scripts/evaluate_learned_dinner.py --suite models/dinner_suite/suite.json --skills relay_bottle_left,relay_bottle_right --seed 2026092501 --output .run/reproduce-relay-v3.json
+.\.venv-training\Scripts\python scripts/evaluate_learned_dinner.py --suite models/dinner_suite/suite.json --skills reverse_bottle_right,reverse_bottle_left --bottle-start wide_left --seed 2026092601 --output .run/reproduce-reverse-v3.json
+```
+
+These seeds are exposed reproduction cases. Use `--capture` with a fresh folder for actual state traces. Check disk before every dataset, episode and export; keep 10 GiB plus expected writes. Do not overwrite existing evidence.
+
+## Actively scheduled beyond the baseline
+
+The [RGB-servo protocol](experiments/rgb-servo-bottle-v1.json) declares a 48-pair approach grid, varied training scenes, requested destinations and paired live/frozen image tests. The approach probe found 27 candidates, covering 21 of 24 positions with at least one arm; that is not full physical reachability proof. An exposed RGB probe found amber-arm ambiguity and an unsuitable camera view.
+
+Three new fixed cameras and a custom CNN observer are now implemented. Training/scoring use synthetic segmentation and projected keypoints; inference receives RGB only. The first fit used 101 seconds and 0.994 GiB VRAM but missed the 3 mm p95 gate (3.598 mm on 220/225 accepted bottle-present development states). The expanded-data revision is an active experiment, not a promoted capability. Subsequent physical recovery demonstrations, neural corrective actions, and paired live/frozen-image disturbance trials remain to execute. Absolute bottle yaw is not an observer output because the known bottle is nearly rotationally symmetric.
+
+Pouring, general other-object handoffs, airborne exchanges, broad object/lighting variation and unrestricted instructions remain unfinished. Preparing submission assets does not complete these development stages.

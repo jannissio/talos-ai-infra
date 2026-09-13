@@ -1,0 +1,183 @@
+{
+  "schema": "talos.learned-dinner-release.v6",
+  "successes": 8,
+  "trials": 10,
+  "runtime": "OpenVINO CPU FP32 on AMD Ryzen 7 5800X; final Intel verification is separate",
+  "scope": "Six sequential learned skills, task-preset randomized starts and fixed destinations. Initial RGB features and motor feedback; no continuous visual correction or arbitrary-workspace guarantee.",
+  "training_examples": {
+    "plate": 41,
+    "mug": 41,
+    "drawer": 41,
+    "fork": 39,
+    "spoon": 39
+  },
+  "aligned_training_replays": 201,
+  "outcomes": [
+    {
+      "seed": 2026091901,
+      "status": "succeeded",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "failed_skill": null,
+      "placement_error_mm": 3.0467087704109224,
+      "simulation_seconds": 247.42,
+      "wall_seconds": 32.6039517999161,
+      "report": "dinner-final-2026091901-v6.json"
+    },
+    {
+      "seed": 2026091902,
+      "status": "failed",
+      "completed_steps": [
+        "bottle",
+        "plate"
+      ],
+      "failed_skill": "mug",
+      "placement_error_mm": 14.590542262607569,
+      "simulation_seconds": 153.12,
+      "wall_seconds": 19.604084900114685,
+      "report": "dinner-final-2026091902-v6.json"
+    },
+    {
+      "seed": 2026091903,
+      "status": "succeeded",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "failed_skill": null,
+      "placement_error_mm": 2.5381601302781966,
+      "simulation_seconds": 247.42,
+      "wall_seconds": 33.06855500000529,
+      "report": "dinner-final-2026091903-v6.json"
+    },
+    {
+      "seed": 2026091904,
+      "status": "succeeded",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "failed_skill": null,
+      "placement_error_mm": 0.05226066313493587,
+      "simulation_seconds": 247.465,
+      "wall_seconds": 32.61681819986552,
+      "report": "dinner-final-2026091904-v6.json"
+    },
+    {
+      "seed": 2026091905,
+      "status": "failed",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork"
+      ],
+      "failed_skill": "spoon",
+      "placement_error_mm": 13.613260213360181,
+      "simulation_seconds": 283.89,
+      "wall_seconds": 38.08995719999075,
+      "report": "dinner-final-2026091905-v6.json"
+    },
+    {
+      "seed": 2026091906,
+      "status": "succeeded",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "failed_skill": null,
+      "placement_error_mm": 0.1749462472066615,
+      "simulation_seconds": 247.425,
+      "wall_seconds": 42.445453099906445,
+      "report": "dinner-final-2026091906-v6.json"
+    },
+    {
+      "seed": 2026091907,
+      "status": "succeeded",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "failed_skill": null,
+      "placement_error_mm": 2.905495708018078,
+      "simulation_seconds": 247.39,
+      "wall_seconds": 38.33156130020507,
+      "report": "dinner-final-2026091907-v6.json"
+    },
+    {
+      "seed": 2026091908,
+      "status": "succeeded",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "failed_skill": null,
+      "placement_error_mm": 0.5760793806895091,
+      "simulation_seconds": 247.465,
+      "wall_seconds": 41.234964300179854,
+      "report": "dinner-final-2026091908-v6.json"
+    },
+    {
+      "seed": 2026091909,
+      "status": "succeeded",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "failed_skill": null,
+      "placement_error_mm": 0.3239604204585139,
+      "simulation_seconds": 247.39,
+      "wall_seconds": 36.98392980010249,
+      "report": "dinner-final-2026091909-v6.json"
+    },
+    {
+      "seed": 2026091910,
+      "status": "succeeded",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "failed_skill": null,
+      "placement_error_mm": 5.465611620169472,
+      "simulation_seconds": 247.415,
+      "wall_seconds": 34.61696960008703,
+      "report": "dinner-final-2026091910-v6.json"
+    }
+  ],
+  "failure_policy": "All ten frozen trials retained; two placement failures. This release is the measured submission baseline, not completion of broader robot development."
+}

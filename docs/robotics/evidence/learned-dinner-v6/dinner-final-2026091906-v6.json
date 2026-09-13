@@ -1,0 +1,598 @@
+{
+  "status": "succeeded",
+  "active": false,
+  "stage": "neural_control",
+  "stage_label": "Neural spoon movement",
+  "message": "Completed all requested neural dinner skills; both arms parked.",
+  "arm": "left",
+  "tube_id": "spoon",
+  "kind": "learned_dinner_sequence",
+  "source_slot": null,
+  "recording_id": null,
+  "destination_slot": null,
+  "progress": 1.0,
+  "stages": [
+    {
+      "id": "neural_control",
+      "label": "Camera-conditioned neural movement"
+    }
+  ],
+  "elapsed_s": 247.425,
+  "attempts": 0,
+  "metrics": {
+    "placement_error_mm": 0.1749462472066615,
+    "placement_z_error_mm": 0.034933356191202414,
+    "placement_yaw_error_deg": 0.09450830936268935,
+    "speed_mm_s": 7.397091929539999e-08,
+    "max_lift_cm": 3.3847710076404303,
+    "hold_verified_s": 22.119999999979882,
+    "longest_unsupported_gap_s": 0.0,
+    "stable_release_and_park_s": 0.5049999999995407,
+    "both_arms_parked": true,
+    "other_object_displacements_m": {
+      "plate": 3.180696729743678e-08,
+      "side_plate": 1.0096049414936908e-07,
+      "mug": 2.6646329008689838e-08,
+      "glass": 9.181355219871259e-08,
+      "bottle": 1.358427464787742e-07,
+      "fork": 2.8493909286198215e-09
+    },
+    "other_object_max_displacement_m": 6.914719626712123e-07,
+    "parked_arm_max_motion_deg": 3.826843392736903e-11,
+    "unexpected_collisions": 0
+  },
+  "history": [
+    {
+      "stage": "succeeded",
+      "at_s": 52.565,
+      "message": "Neural spoon completed with physical release and both arms parked."
+    }
+  ],
+  "observation": "initial three RGB cameras and motor-feedback progress guard",
+  "attachment": "physical_contacts_only",
+  "object_id": "spoon",
+  "skill_id": "spoon",
+  "skill_label": "spoon",
+  "policy_mode": "learned_dinner",
+  "physical_monitor": "privileged state for stop/score only; never motor target generation",
+  "teacher_updates": 0,
+  "policy_details": {
+    "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+    "continuous_visual_correction": false,
+    "initial_camera_conditioning": true,
+    "pregrasp_visual_feedback": false,
+    "visual_feedback_scope": "initial image only",
+    "visual_refresh_calls": 0,
+    "camera_support_check": "initial_only",
+    "visual_encoder": "dinner_rgb_geometry",
+    "neural_runtime": "OpenVINO",
+    "neural_execution_devices": [
+      "CPU"
+    ],
+    "inference_demonstration_actions": false,
+    "simulator_clock_or_object_pose_input": false,
+    "internal_progress_endpoints": 1052,
+    "tracking_guard_wait_calls": 0
+  },
+  "inference_median_ms": 1.6708001494407654,
+  "completion_note": "Physical release and parked arms required before the next skill.",
+  "inactive_arm_control": "hold_previous_targets",
+  "steps": [
+    "bottle",
+    "plate",
+    "mug",
+    "drawer",
+    "fork",
+    "spoon"
+  ],
+  "completed_steps": [
+    "bottle",
+    "plate",
+    "mug",
+    "drawer",
+    "fork",
+    "spoon"
+  ],
+  "results": [
+    {
+      "skill": "bottle",
+      "status": "succeeded",
+      "active": false,
+      "stage": "neural_control",
+      "stage_label": "Neural bottle movement",
+      "message": "Neural bottle completed with physical release and both arms parked.",
+      "arm": "left",
+      "tube_id": "bottle",
+      "kind": "learned_dinner",
+      "source_slot": null,
+      "recording_id": null,
+      "destination_slot": null,
+      "progress": 1.0,
+      "stages": [
+        {
+          "id": "neural_control",
+          "label": "Camera-conditioned neural movement"
+        }
+      ],
+      "elapsed_s": 38.155,
+      "attempts": 0,
+      "metrics": {
+        "placement_error_mm": 0.5293864166689138,
+        "placement_z_error_mm": 0.00017182749378896744,
+        "placement_yaw_error_deg": 0.0,
+        "speed_mm_s": 0.013119365015998972,
+        "max_lift_cm": 6.866034098677676,
+        "hold_verified_s": 9.654999999998369,
+        "longest_unsupported_gap_s": 0.0,
+        "stable_release_and_park_s": 0.5000000000002558,
+        "both_arms_parked": true,
+        "other_object_displacements_m": {
+          "plate": 1.440882187907656e-08,
+          "side_plate": 1.1479861091711531e-07,
+          "mug": 3.3084521367269655e-07,
+          "glass": 7.621194162680178e-08,
+          "fork": 5.058250348643087e-06,
+          "spoon": 4.80021974688068e-06
+        },
+        "other_object_max_displacement_m": 5.058250348643087e-06,
+        "parked_arm_max_motion_deg": 0.0011193023333293957,
+        "unexpected_collisions": 0
+      },
+      "history": [
+        {
+          "stage": "succeeded",
+          "at_s": 38.155,
+          "message": "Neural bottle completed with physical release and both arms parked."
+        }
+      ],
+      "observation": "initial three RGB cameras and motor-feedback progress guard",
+      "attachment": "physical_contacts_only",
+      "object_id": "bottle",
+      "skill_id": "bottle",
+      "skill_label": "bottle",
+      "policy_mode": "learned_dinner",
+      "physical_monitor": "privileged state for stop/score only; never motor target generation",
+      "teacher_updates": 0,
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "pregrasp_visual_feedback": false,
+        "visual_feedback_scope": "initial image only",
+        "visual_refresh_calls": 0,
+        "camera_support_check": "initial_only",
+        "visual_encoder": "bottle_rgb_geometry",
+        "neural_runtime": "OpenVINO",
+        "neural_execution_devices": [
+          "CPU"
+        ],
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 764,
+        "tracking_guard_wait_calls": 0
+      },
+      "inference_median_ms": 1.424199901521206,
+      "completion_note": "Physical release and parked arms required before the next skill.",
+      "inactive_arm_control": "neural targets"
+    },
+    {
+      "skill": "plate",
+      "status": "succeeded",
+      "active": false,
+      "stage": "neural_control",
+      "stage_label": "Neural plate movement",
+      "message": "Neural plate completed with physical release and both arms parked.",
+      "arm": "left",
+      "tube_id": "plate",
+      "kind": "learned_dinner",
+      "source_slot": null,
+      "recording_id": null,
+      "destination_slot": null,
+      "progress": 1.0,
+      "stages": [
+        {
+          "id": "neural_control",
+          "label": "Camera-conditioned neural movement"
+        }
+      ],
+      "elapsed_s": 37.365,
+      "attempts": 0,
+      "metrics": {
+        "placement_error_mm": 1.99628599402594,
+        "placement_z_error_mm": 0.00048152348530727807,
+        "placement_yaw_error_deg": 0.0,
+        "speed_mm_s": 0.021034172932766822,
+        "max_lift_cm": 4.819361791242516,
+        "hold_verified_s": 9.710000000004968,
+        "longest_unsupported_gap_s": 0.0,
+        "stable_release_and_park_s": 0.5049999999995407,
+        "both_arms_parked": true,
+        "other_object_displacements_m": {
+          "side_plate": 1.0866816603234852e-07,
+          "mug": 3.457710196448645e-07,
+          "glass": 6.857849759018597e-08,
+          "bottle": 5.6776570021025675e-08,
+          "fork": 4.958376371077265e-06,
+          "spoon": 4.705480962765051e-06
+        },
+        "other_object_max_displacement_m": 4.958376371077265e-06,
+        "parked_arm_max_motion_deg": 0.00011466408376116718,
+        "unexpected_collisions": 0
+      },
+      "history": [
+        {
+          "stage": "succeeded",
+          "at_s": 37.365,
+          "message": "Neural plate completed with physical release and both arms parked."
+        }
+      ],
+      "observation": "initial three RGB cameras and motor-feedback progress guard",
+      "attachment": "physical_contacts_only",
+      "object_id": "plate",
+      "skill_id": "plate",
+      "skill_label": "plate",
+      "policy_mode": "learned_dinner",
+      "physical_monitor": "privileged state for stop/score only; never motor target generation",
+      "teacher_updates": 0,
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "pregrasp_visual_feedback": false,
+        "visual_feedback_scope": "initial image only",
+        "visual_refresh_calls": 0,
+        "camera_support_check": "initial_only",
+        "visual_encoder": "dinner_rgb_geometry",
+        "neural_runtime": "OpenVINO",
+        "neural_execution_devices": [
+          "CPU"
+        ],
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 748,
+        "tracking_guard_wait_calls": 0
+      },
+      "inference_median_ms": 2.103599952533841,
+      "completion_note": "Physical release and parked arms required before the next skill.",
+      "inactive_arm_control": "hold_previous_targets"
+    },
+    {
+      "skill": "mug",
+      "status": "succeeded",
+      "active": false,
+      "stage": "neural_control",
+      "stage_label": "Neural mug movement",
+      "message": "Neural mug completed with physical release and both arms parked.",
+      "arm": "right",
+      "tube_id": "mug",
+      "kind": "learned_dinner",
+      "source_slot": null,
+      "recording_id": null,
+      "destination_slot": null,
+      "progress": 1.0,
+      "stages": [
+        {
+          "id": "neural_control",
+          "label": "Camera-conditioned neural movement"
+        }
+      ],
+      "elapsed_s": 41.155,
+      "attempts": 0,
+      "metrics": {
+        "placement_error_mm": 3.1739349898732367,
+        "placement_z_error_mm": 0.000861996489964767,
+        "placement_yaw_error_deg": 0.0,
+        "speed_mm_s": 0.006290850753271687,
+        "max_lift_cm": 3.377886580493583,
+        "hold_verified_s": 9.794999999991091,
+        "longest_unsupported_gap_s": 0.0,
+        "stable_release_and_park_s": 0.5049999999995407,
+        "both_arms_parked": true,
+        "other_object_displacements_m": {
+          "plate": 2.819063521052958e-07,
+          "side_plate": 1.0871032377954981e-07,
+          "glass": 5.599572110312442e-08,
+          "bottle": 1.4105608813582532e-07,
+          "fork": 5.466106311674042e-06,
+          "spoon": 5.187351609033831e-06
+        },
+        "other_object_max_displacement_m": 5.466106311674042e-06,
+        "parked_arm_max_motion_deg": 0.0030166133990421696,
+        "unexpected_collisions": 0
+      },
+      "history": [
+        {
+          "stage": "succeeded",
+          "at_s": 41.155,
+          "message": "Neural mug completed with physical release and both arms parked."
+        }
+      ],
+      "observation": "initial three RGB cameras and motor-feedback progress guard",
+      "attachment": "physical_contacts_only",
+      "object_id": "mug",
+      "skill_id": "mug",
+      "skill_label": "mug",
+      "policy_mode": "learned_dinner",
+      "physical_monitor": "privileged state for stop/score only; never motor target generation",
+      "teacher_updates": 0,
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "pregrasp_visual_feedback": false,
+        "visual_feedback_scope": "initial image only",
+        "visual_refresh_calls": 0,
+        "camera_support_check": "initial_only",
+        "visual_encoder": "dinner_rgb_geometry",
+        "neural_runtime": "OpenVINO",
+        "neural_execution_devices": [
+          "CPU"
+        ],
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 824,
+        "tracking_guard_wait_calls": 0
+      },
+      "inference_median_ms": 2.1357000805437565,
+      "completion_note": "Physical release and parked arms required before the next skill.",
+      "inactive_arm_control": "hold_previous_targets"
+    },
+    {
+      "skill": "drawer",
+      "status": "succeeded",
+      "active": false,
+      "stage": "neural_control",
+      "stage_label": "Neural drawer movement",
+      "message": "Neural drawer completed with physical release and both arms parked.",
+      "arm": "left",
+      "tube_id": "drawer",
+      "kind": "learned_dinner",
+      "source_slot": null,
+      "recording_id": null,
+      "destination_slot": null,
+      "progress": 1.0,
+      "stages": [
+        {
+          "id": "neural_control",
+          "label": "Camera-conditioned neural movement"
+        }
+      ],
+      "elapsed_s": 29.665,
+      "attempts": 0,
+      "metrics": {
+        "drawer_open_m": 0.11776747771208758,
+        "max_opening_m": 0.11815010719249801,
+        "verified_handle_contact_s": 7.249999999993406,
+        "stable_release_and_park_s": 0.5049999999995407,
+        "both_arms_parked": true,
+        "other_object_displacements_m": {
+          "plate": 2.710103397521979e-07,
+          "side_plate": 1.7836313151917645e-07,
+          "mug": 4.219368688001337e-08,
+          "glass": 4.9711551471075634e-08,
+          "bottle": 8.520831358313392e-08,
+          "fork": 0.11769583862483757,
+          "spoon": 0.11776378113813132
+        },
+        "other_object_max_displacement_m": 7.980375781677472e-07,
+        "parked_arm_max_motion_deg": 0.0037386896196451714,
+        "unexpected_collisions": 0
+      },
+      "history": [
+        {
+          "stage": "succeeded",
+          "at_s": 29.665,
+          "message": "Neural drawer completed with physical release and both arms parked."
+        }
+      ],
+      "observation": "initial three RGB cameras and motor-feedback progress guard",
+      "attachment": "physical_contacts_only",
+      "object_id": "drawer",
+      "skill_id": "drawer",
+      "skill_label": "drawer",
+      "policy_mode": "learned_dinner",
+      "physical_monitor": "privileged state for stop/score only; never motor target generation",
+      "teacher_updates": 0,
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "pregrasp_visual_feedback": false,
+        "visual_feedback_scope": "initial image only",
+        "visual_refresh_calls": 0,
+        "camera_support_check": "initial_only",
+        "visual_encoder": "dinner_rgb_geometry",
+        "neural_runtime": "OpenVINO",
+        "neural_execution_devices": [
+          "CPU"
+        ],
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 596,
+        "tracking_guard_wait_calls": 0
+      },
+      "inference_median_ms": 2.1829998586326838,
+      "completion_note": "Physical release and parked arms required before the next skill.",
+      "inactive_arm_control": "hold_previous_targets"
+    },
+    {
+      "skill": "fork",
+      "status": "succeeded",
+      "active": false,
+      "stage": "neural_control",
+      "stage_label": "Neural fork movement",
+      "message": "Neural fork completed with physical release and both arms parked.",
+      "arm": "left",
+      "tube_id": "fork",
+      "kind": "learned_dinner",
+      "source_slot": null,
+      "recording_id": null,
+      "destination_slot": null,
+      "progress": 1.0,
+      "stages": [
+        {
+          "id": "neural_control",
+          "label": "Camera-conditioned neural movement"
+        }
+      ],
+      "elapsed_s": 48.52,
+      "attempts": 0,
+      "metrics": {
+        "placement_error_mm": 0.735475906379006,
+        "placement_z_error_mm": 0.0263895370081757,
+        "placement_yaw_error_deg": 0.21351350059772184,
+        "speed_mm_s": 3.485939699720313e-08,
+        "max_lift_cm": 3.386054170535868,
+        "hold_verified_s": 18.939999999982774,
+        "longest_unsupported_gap_s": 0.0,
+        "stable_release_and_park_s": 0.5049999999995407,
+        "both_arms_parked": true,
+        "other_object_displacements_m": {
+          "plate": 1.3683119770431163e-08,
+          "side_plate": 2.8398070123774815e-07,
+          "mug": 8.296479071042613e-08,
+          "glass": 1.4062832964507926e-07,
+          "bottle": 5.0640926282483125e-08,
+          "spoon": 3.931728714380615e-05
+        },
+        "other_object_max_displacement_m": 4.4442381230158985e-05,
+        "parked_arm_max_motion_deg": 4.0819238781902776e-11,
+        "unexpected_collisions": 0
+      },
+      "history": [
+        {
+          "stage": "succeeded",
+          "at_s": 48.52,
+          "message": "Neural fork completed with physical release and both arms parked."
+        }
+      ],
+      "observation": "initial three RGB cameras and motor-feedback progress guard",
+      "attachment": "physical_contacts_only",
+      "object_id": "fork",
+      "skill_id": "fork",
+      "skill_label": "fork",
+      "policy_mode": "learned_dinner",
+      "physical_monitor": "privileged state for stop/score only; never motor target generation",
+      "teacher_updates": 0,
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "pregrasp_visual_feedback": false,
+        "visual_feedback_scope": "initial image only",
+        "visual_refresh_calls": 0,
+        "camera_support_check": "initial_only",
+        "visual_encoder": "dinner_rgb_geometry",
+        "neural_runtime": "OpenVINO",
+        "neural_execution_devices": [
+          "CPU"
+        ],
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 972,
+        "tracking_guard_wait_calls": 0
+      },
+      "inference_median_ms": 1.9871999975293875,
+      "completion_note": "Physical release and parked arms required before the next skill.",
+      "inactive_arm_control": "hold_previous_targets"
+    },
+    {
+      "skill": "spoon",
+      "status": "succeeded",
+      "active": false,
+      "stage": "neural_control",
+      "stage_label": "Neural spoon movement",
+      "message": "Neural spoon completed with physical release and both arms parked.",
+      "arm": "left",
+      "tube_id": "spoon",
+      "kind": "learned_dinner",
+      "source_slot": null,
+      "recording_id": null,
+      "destination_slot": null,
+      "progress": 1.0,
+      "stages": [
+        {
+          "id": "neural_control",
+          "label": "Camera-conditioned neural movement"
+        }
+      ],
+      "elapsed_s": 52.565,
+      "attempts": 0,
+      "metrics": {
+        "placement_error_mm": 0.1749462472066615,
+        "placement_z_error_mm": 0.034933356191202414,
+        "placement_yaw_error_deg": 0.09450830936268935,
+        "speed_mm_s": 7.397091929539999e-08,
+        "max_lift_cm": 3.3847710076404303,
+        "hold_verified_s": 22.119999999979882,
+        "longest_unsupported_gap_s": 0.0,
+        "stable_release_and_park_s": 0.5049999999995407,
+        "both_arms_parked": true,
+        "other_object_displacements_m": {
+          "plate": 3.180696729743678e-08,
+          "side_plate": 1.0096049414936908e-07,
+          "mug": 2.6646329008689838e-08,
+          "glass": 9.181355219871259e-08,
+          "bottle": 1.358427464787742e-07,
+          "fork": 2.8493909286198215e-09
+        },
+        "other_object_max_displacement_m": 6.914719626712123e-07,
+        "parked_arm_max_motion_deg": 3.826843392736903e-11,
+        "unexpected_collisions": 0
+      },
+      "history": [
+        {
+          "stage": "succeeded",
+          "at_s": 52.565,
+          "message": "Neural spoon completed with physical release and both arms parked."
+        }
+      ],
+      "observation": "initial three RGB cameras and motor-feedback progress guard",
+      "attachment": "physical_contacts_only",
+      "object_id": "spoon",
+      "skill_id": "spoon",
+      "skill_label": "spoon",
+      "policy_mode": "learned_dinner",
+      "physical_monitor": "privileged state for stop/score only; never motor target generation",
+      "teacher_updates": 0,
+      "policy_details": {
+        "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+        "continuous_visual_correction": false,
+        "initial_camera_conditioning": true,
+        "pregrasp_visual_feedback": false,
+        "visual_feedback_scope": "initial image only",
+        "visual_refresh_calls": 0,
+        "camera_support_check": "initial_only",
+        "visual_encoder": "dinner_rgb_geometry",
+        "neural_runtime": "OpenVINO",
+        "neural_execution_devices": [
+          "CPU"
+        ],
+        "inference_demonstration_actions": false,
+        "simulator_clock_or_object_pose_input": false,
+        "internal_progress_endpoints": 1052,
+        "tracking_guard_wait_calls": 0
+      },
+      "inference_median_ms": 1.6708001494407654,
+      "completion_note": "Physical release and parked arms required before the next skill.",
+      "inactive_arm_control": "hold_previous_targets"
+    }
+  ],
+  "skill_elapsed_s": 52.565,
+  "seed": 2026091906,
+  "episode": null,
+  "bottle_start": "upright",
+  "wall_seconds": 42.445453099906445,
+  "physics_state_writes": 0,
+  "hidden_forces": 0,
+  "equality_constraints": 0,
+  "evaluation": "physical neural execution",
+  "checkpoint_sha256": {
+    "bottle": "e2a1ff9400cdb49d7b9a38d5880759a0269814111c88b2081416f8e349c7564e",
+    "plate": "d8e55a0b354b84e7a458b6ddc824d499764ea595213c8f3a7a6c4194362f5247",
+    "mug": "4a239422c24726a3c1319428f2dbf40e79b5f4ab3cf50f66ca53eb0b4134df62",
+    "drawer": "32115eb5dcc782d80c73d53925b0cb9dc610f03d149580a810752d2bb833cc3c",
+    "fork": "fbdc32af07b247af0771ec8ff0c029c57f558d02954be3bb77e07e9b0b5dd453",
+    "spoon": "df5bdb17d0dc3a65dae7eba8fea9d5a3edb036edecf1bbb0c32021c64fbce47e"
+  }
+}

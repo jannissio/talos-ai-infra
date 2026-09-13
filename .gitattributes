@@ -20,3 +20,12 @@
 *.npy binary
 *.safetensors binary
 *.bin binary
+
+# These evaluated packages contain byte-level manifests. Preserve original
+# newlines as well as binary weights so a fresh checkout matches their hashes.
+models/bottle_relays/** -text whitespace=cr-at-eol
+models/dinner_suite/** -text whitespace=cr-at-eol
+training/bottle_relays/** -text whitespace=cr-at-eol
+training/dinner_suite/** -text whitespace=cr-at-eol
+docs/robotics/evidence/** -text whitespace=cr-at-eol
+docs/robotics/experiments/** -text whitespace=cr-at-eol

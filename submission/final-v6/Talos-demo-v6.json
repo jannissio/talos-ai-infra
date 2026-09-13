@@ -1,0 +1,102 @@
+{
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 20,
+  "duration_seconds": 189.1,
+  "bytes": 8998287,
+  "wall_seconds": 60.99325839988887,
+  "audio": "No audio track; instructions and explanations are visible captions.",
+  "chapters": [
+    {
+      "title": "Talos: learned dinner-table robotics",
+      "type": "explanation",
+      "start_s": 0.0,
+      "duration_s": 6
+    },
+    {
+      "title": "From instruction to movement",
+      "type": "explanation",
+      "start_s": 6.0,
+      "duration_s": 8
+    },
+    {
+      "title": "\u201cSet the table\u201d \u2014 six learned skills",
+      "type": "recorded_physics",
+      "start_s": 14.0,
+      "seed": 2026091901,
+      "playback_speed": 4,
+      "simulation_seconds": 247.41999999984748,
+      "source_recording": ".run/final-goal/dinner-final-2026091901-v6",
+      "recording_sha256": "18302d053a4d92d3bebc91f9f614583ddce504d5ab75313dcfa7ff12ea98b1bf",
+      "completed_steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "status": "succeeded",
+      "duration_s": 63.9
+    },
+    {
+      "title": "\u201cPass the bottle to the right arm\u201d",
+      "type": "recorded_physics",
+      "start_s": 77.9,
+      "seed": 2026092501,
+      "playback_speed": 2,
+      "simulation_seconds": 74.22000000000499,
+      "source_recording": ".run/final-goal/relay-final-2026092501-v3",
+      "recording_sha256": "36f8e2116a725d7ae13bde5c36ae380404863eedfa7c039f2e7f8559a67b8fbc",
+      "completed_steps": [
+        "relay_bottle_left",
+        "relay_bottle_right"
+      ],
+      "status": "succeeded",
+      "duration_s": 39.15
+    },
+    {
+      "title": "\u201cPass the bottle to the left arm\u201d",
+      "type": "recorded_physics",
+      "start_s": 117.05,
+      "seed": 2026092601,
+      "playback_speed": 2,
+      "simulation_seconds": 74.01000000000518,
+      "source_recording": ".run/final-goal/reverse-final-2026092601-v3",
+      "recording_sha256": "097068a96c1c1c5dcd8efb13334d9d01384954a658e4f2044378cb988498da8f",
+      "completed_steps": [
+        "reverse_bottle_right",
+        "reverse_bottle_left"
+      ],
+      "status": "succeeded",
+      "duration_s": 39.05
+    },
+    {
+      "title": "All frozen outcomes are retained",
+      "type": "explanation",
+      "start_s": 156.1,
+      "duration_s": 10
+    },
+    {
+      "title": "Intel deployment evidence",
+      "type": "explanation",
+      "start_s": 166.1,
+      "duration_s": 9
+    },
+    {
+      "title": "What is still being developed",
+      "type": "explanation",
+      "start_s": 175.1,
+      "duration_s": 8
+    },
+    {
+      "title": "Reproduce and inspect",
+      "type": "explanation",
+      "start_s": 183.1,
+      "duration_s": 6
+    }
+  ],
+  "scope": "Versioned six-skill submission baseline, not a claim that broader development or Intel verification is complete."
+}

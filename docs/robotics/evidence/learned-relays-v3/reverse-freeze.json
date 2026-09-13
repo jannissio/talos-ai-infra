@@ -1,0 +1,46 @@
+{
+  "schema": "talos.frozen-reverse-evaluation.v1",
+  "protocol": "docs/robotics/experiments/reverse-learning-v1.json",
+  "candidate": "repaired-grip-v3",
+  "runtime": "OpenVINO CPU FP32",
+  "development_successes": 4,
+  "development_trials": 4,
+  "evaluation_seeds": [
+    2026092601,
+    2026092602,
+    2026092603,
+    2026092604,
+    2026092605
+  ],
+  "bottle_start": "wide_left",
+  "final_destination_m": [
+    0.1,
+    -0.115,
+    0.76
+  ],
+  "selection": "Freeze before first held-out rollout. All five outcomes retained; no candidate selection from them.",
+  "files": {
+    "reverse_bottle_left/benchmark.json": "79fb7d54ffab208847d8730c473aa9f9628d7bec34326f0d34a5c80956e5fd48",
+    "reverse_bottle_left/openvino.json": "00d12a2a6dd68d5d48d010074cfa0ac4c6058d024b7a8dd86b6ca12a3b327a5a",
+    "reverse_bottle_left/primitive.bin": "84e92009721e26afa5b8a33a6101d90684ddffabc83b79a659d468f15c958d06",
+    "reverse_bottle_left/primitive.json": "1fbfbe55c68eb35f7b891f7b4ed405d17763e8e93d09c8639cd6bd4585aa8a3c",
+    "reverse_bottle_left/primitive.safetensors": "4dc09e74e1a060b12eb9e2727b1643dc69654f77fb192d1e7c2257766d537863",
+    "reverse_bottle_left/primitive.xml": "85253525fcf0822b6dfe3c4e2d56300aa29a055dbd18b35ecb88042b07bb5e7b",
+    "reverse_bottle_left/talos_normalization.json": "18070e907ab87dbb47ae7d2692d1de696a06957eadc6f00aa46e3a237fa4a1a8",
+    "reverse_bottle_left/visual.npz": "90157ca7de0491966dd22f53aec1f2ab8830855e1c9bd7353cec9b6f7d85ac25",
+    "reverse_bottle_right/benchmark.json": "f106e3d9cdd66c29d024890e4b2e8efb2c0f6284b875b13979eaaf324086a14d",
+    "reverse_bottle_right/openvino.json": "00d12a2a6dd68d5d48d010074cfa0ac4c6058d024b7a8dd86b6ca12a3b327a5a",
+    "reverse_bottle_right/primitive.bin": "147d9fbea1d9aec5949b9884bc9c0d517fbe33824b2bcdfbe5cee3f55b74a0f3",
+    "reverse_bottle_right/primitive.json": "95b42cf4044046f14951f5dbf25558423ab8ed6e1b3046f9bdef782195e5cb0c",
+    "reverse_bottle_right/primitive.safetensors": "9287546d56b5b64eada1a1d21b2bde320d527ace025b7caa5d5adc802b39f96d",
+    "reverse_bottle_right/primitive.xml": "85253525fcf0822b6dfe3c4e2d56300aa29a055dbd18b35ecb88042b07bb5e7b",
+    "reverse_bottle_right/talos_normalization.json": "18070e907ab87dbb47ae7d2692d1de696a06957eadc6f00aa46e3a237fa4a1a8",
+    "reverse_bottle_right/visual.npz": "90157ca7de0491966dd22f53aec1f2ab8830855e1c9bd7353cec9b6f7d85ac25",
+    "simulation_lab/primitive_policy.py": "60c009448171533385df1be82e3f64ed395f28d3e03145eb2f10ab6a791ef143",
+    "simulation_lab/learned_dinner.py": "04b2eb4689c0ffe1cb220e9e21d19d4e7c50a9444c9b1d9fd037a9bdabc56ced",
+    "simulation_lab/dinner_monitor.py": "34b2a5356ffcb5c2cf888607ceb387e51ca2ed00f6fa8fa39a897744e8bebe54",
+    "simulation_lab/bottle_vision.py": "5b6ccf6e0224bf66ef7d4c69c382384add65d90ebfeedad838be5dc756bfa9ac",
+    "simulation_lab/policy_control.py": "a418fe2619985852d4e65b40e20c18f82fd72076b4d8b9202507dda4a410b151",
+    "simulation_lab/dinner.py": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11"
+  }
+}
