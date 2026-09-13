@@ -51,6 +51,7 @@ Create a local `.env` containing `SPEECHMATICS_API_KEY=your-key`. Spaces around 
 
 - The v6 learned dinner suite completes **8/10** frozen randomized task-start sequences. The two failures are retained: mug placement error 14.59 mm and spoon error 13.61 mm, against the unchanged 8 mm threshold. Five new policies use 201 physically replayed training examples; the original bottle model is preserved.
 - Four learned relay policies pass **5/5** frozen trials in each direction, using 52 replayed training examples. They release onto the shared table before the other arm grasps. These are bounded upright regions and fixed destinations.
+- The [integrated camera-planned workflow](docs/robotics/evidence/composed-dinner-v1/README.md) completes **8/10** new frozen scenes from the left-reach bottle preset: both relay legs, then plate, mug, drawer, fork and spoon, without a reset. All ten pass every step through fork; two final spoon placements fail. Existing models remain unchanged.
 - A human microphone bottle command succeeded on this PC. Final six-skill microphone rehearsal is still open.
 - Real Speechmatics transcripts have driven the six-skill programmed sequence and a learned bottle movement, using explicitly labeled synthetic speech tests.
 - The revised upright model completed **10/10 new task-preset scene seeds**, with **0.36–1.66 mm** placement errors. This covers small bottle-position changes, not the entire reachable workspace. Wider-position trials still include failures.

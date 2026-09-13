@@ -34,6 +34,7 @@ The demonstrated scope is finite starting regions and fixed task destinations. A
 | Editable deck | `Talos-v6-r2.pptx` | Eight checked slides, nonpersonal author metadata |
 | All dinner trials | `Talos-dinner-ten-v6.mp4` | All ten, 4× labeled playback, 8/10 outcome |
 | All relay trials | `Talos-relays-ten-v3.mp4` | All ten, 1× playback, 5/5 each direction |
+| Integrated relay plus dinner | `Talos-composed-dinner-ten-v1.mp4` | All ten new frozen workflows, 4× labeled playback, 82.9 seconds, 8/10 outcome; supplementary |
 | Experimental RGB comparison | `rgb-feedback-experiment.mp4` | 50.4 seconds, 1× playback, one labeled pair plus complete 48-trial counts; supplementary only |
 
 Main-video instructions/explanations are captions; it has no audio track. The original synthetic-speech video remains preserved in the parent submission folder. A human microphone bottle trial passed on this PC; final six-skill voice rehearsal has been requested.
@@ -41,6 +42,8 @@ Main-video instructions/explanations are captions; it has no audio track. The or
 ## Additional information saved in the form
 
 Reproduction, architecture and complete physical outcomes are in the repository. The v6 baseline completes 8/10 frozen six-skill dinner sequences; the two placement failures are retained. Table-supported bottle relays pass 5/5 trials in each direction. Separate ten-seed videos are in submission/final-v6.
+
+A separate camera-planned workflow combines the reverse bottle relay with the remaining dinner tasks: 8/10 new frozen full sequences pass. Both failures are spoon placement; all ten pass both relay legs and the intermediate tasks. The existing models are unchanged.
 
 The selected dinner controller uses initial RGB features and motor feedback. Separate RGB experiments remain unpromoted: V1 passed 2/12 nominal and 3/12 pushed live scenes, versus 1/12 and 0/12 with frozen images. V2 routing completed 48 new frozen trials: live 6/12 nominal and 5/12 pushed, frozen-image 2/12 and 1/12. Only one V2 seed passed both undisturbed controls. All outcomes, failed revisions and reproduction inputs are packaged. Different final seeds prevent a controlled V1/V2 comparison. Arbitrary placements, pouring, airborne handoffs and unrestricted language remain unfinished.
 

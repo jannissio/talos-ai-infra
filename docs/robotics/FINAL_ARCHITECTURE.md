@@ -46,6 +46,8 @@ All promoted OpenVINO exports pass numerical parity on this AMD/NVIDIA PC. Histo
 
 ## Reproduction
 
+The [composed-command evaluation](evidence/composed-dinner-v1/README.md) directly exercises the production language/RGB planner on the finite left-reach bottle preset. It selects both reverse-relay legs before plate, mug, drawer, fork and spoon. The unchanged models complete 8/10 freshly frozen workflows; every trial passes both relay legs and the intermediate tasks, while two spoon placements miss the 8 mm limit. All 14 development/final traces and a ten-trial video are packaged. This extends the verified composition beyond the original reset region without claiming general workspace coverage.
+
 Install the environments from the root README, then use unused output paths:
 
 ```powershell
