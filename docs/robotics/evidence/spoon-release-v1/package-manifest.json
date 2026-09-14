@@ -1,0 +1,1510 @@
+{
+  "files": [
+    {
+      "file": "models/spoon_release_v1/checkpoint/primitive.json",
+      "sha256": "bf67b66b3b12ab6c8f49b063f740b31ef265e8eedb16c9c011c39e8807175369",
+      "bytes": 5921,
+      "source": ".run/spoon-release-v1/fit/step-012000/primitive.json",
+      "source_sha256": "bf67b66b3b12ab6c8f49b063f740b31ef265e8eedb16c9c011c39e8807175369",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/checkpoint/primitive.safetensors",
+      "sha256": "8a6bec4cf6f0fc4e2743ac9336b2714f86d684be3750a6d2ba05ed0b7836a03c",
+      "bytes": 586392,
+      "source": ".run/spoon-release-v1/fit/step-012000/primitive.safetensors",
+      "source_sha256": "8a6bec4cf6f0fc4e2743ac9336b2714f86d684be3750a6d2ba05ed0b7836a03c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/checkpoint/talos_normalization.json",
+      "sha256": "18070e907ab87dbb47ae7d2692d1de696a06957eadc6f00aa46e3a237fa4a1a8",
+      "bytes": 494,
+      "source": ".run/spoon-release-v1/fit/step-012000/talos_normalization.json",
+      "source_sha256": "18070e907ab87dbb47ae7d2692d1de696a06957eadc6f00aa46e3a237fa4a1a8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/checkpoint/visual.npz",
+      "sha256": "90157ca7de0491966dd22f53aec1f2ab8830855e1c9bd7353cec9b6f7d85ac25",
+      "bytes": 637,
+      "source": ".run/spoon-release-v1/fit/step-012000/visual.npz",
+      "source_sha256": "90157ca7de0491966dd22f53aec1f2ab8830855e1c9bd7353cec9b6f7d85ac25",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/openvino/benchmark.json",
+      "sha256": "1a398b26ea500c6ca75d602f9dd62ca06c4bf5e2d5c12cc1641844db6357a247",
+      "bytes": 1421,
+      "source": ".run/spoon-release-v1/openvino/benchmark.json",
+      "source_sha256": "1a398b26ea500c6ca75d602f9dd62ca06c4bf5e2d5c12cc1641844db6357a247",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/openvino/openvino.json",
+      "sha256": "00d12a2a6dd68d5d48d010074cfa0ac4c6058d024b7a8dd86b6ca12a3b327a5a",
+      "bytes": 37,
+      "source": ".run/spoon-release-v1/openvino/openvino.json",
+      "source_sha256": "00d12a2a6dd68d5d48d010074cfa0ac4c6058d024b7a8dd86b6ca12a3b327a5a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/openvino/primitive.bin",
+      "sha256": "7819748755381966fcf4cb017af431671909795ff5ad137838d8908442d701ab",
+      "bytes": 585812,
+      "source": ".run/spoon-release-v1/openvino/primitive.bin",
+      "source_sha256": "7819748755381966fcf4cb017af431671909795ff5ad137838d8908442d701ab",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/openvino/primitive.json",
+      "sha256": "bf67b66b3b12ab6c8f49b063f740b31ef265e8eedb16c9c011c39e8807175369",
+      "bytes": 5921,
+      "source": ".run/spoon-release-v1/openvino/primitive.json",
+      "source_sha256": "bf67b66b3b12ab6c8f49b063f740b31ef265e8eedb16c9c011c39e8807175369",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/openvino/primitive.safetensors",
+      "sha256": "8a6bec4cf6f0fc4e2743ac9336b2714f86d684be3750a6d2ba05ed0b7836a03c",
+      "bytes": 586392,
+      "source": ".run/spoon-release-v1/openvino/primitive.safetensors",
+      "source_sha256": "8a6bec4cf6f0fc4e2743ac9336b2714f86d684be3750a6d2ba05ed0b7836a03c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/openvino/primitive.xml",
+      "sha256": "85253525fcf0822b6dfe3c4e2d56300aa29a055dbd18b35ecb88042b07bb5e7b",
+      "bytes": 13678,
+      "source": ".run/spoon-release-v1/openvino/primitive.xml",
+      "source_sha256": "85253525fcf0822b6dfe3c4e2d56300aa29a055dbd18b35ecb88042b07bb5e7b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/openvino/talos_normalization.json",
+      "sha256": "18070e907ab87dbb47ae7d2692d1de696a06957eadc6f00aa46e3a237fa4a1a8",
+      "bytes": 494,
+      "source": ".run/spoon-release-v1/openvino/talos_normalization.json",
+      "source_sha256": "18070e907ab87dbb47ae7d2692d1de696a06957eadc6f00aa46e3a237fa4a1a8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/openvino/visual.npz",
+      "sha256": "90157ca7de0491966dd22f53aec1f2ab8830855e1c9bd7353cec9b6f7d85ac25",
+      "bytes": 637,
+      "source": ".run/spoon-release-v1/openvino/visual.npz",
+      "source_sha256": "90157ca7de0491966dd22f53aec1f2ab8830855e1c9bd7353cec9b6f7d85ac25",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/training.json",
+      "sha256": "4298f227a1b51147f72475e4123b0d0b9906cbe24fb61aa68e7da8bd2952c742",
+      "bytes": 4214,
+      "source": ".run/spoon-release-v1/fit/training.json",
+      "source_sha256": "4298f227a1b51147f72475e4123b0d0b9906cbe24fb61aa68e7da8bd2952c742",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "models/spoon_release_v1/suite.json",
+      "sha256": "60cb63427a3995806bcf3a9724d38739acfd2e196f9dd523530fefbcdafafafc",
+      "bytes": 454,
+      "source": null,
+      "source_sha256": null,
+      "transformation": "Portable paths; only spoon checkpoint replaced."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/protocol.json",
+      "sha256": "a4b51b88e7605526cd37a316a8e30c819e851939ddd4ec3aa671ca018fc26a8b",
+      "bytes": 4118,
+      "source": "docs/robotics/experiments/spoon-release-v1.json",
+      "source_sha256": "a4b51b88e7605526cd37a316a8e30c819e851939ddd4ec3aa671ca018fc26a8b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/original-candidate-suite.json",
+      "sha256": "68b45731302d2213dc6baadfa0ae21bf8f7ae0eb7480a83672ea30fec5a52325",
+      "bytes": 544,
+      "source": ".run/spoon-release-v1/candidate-suite.json",
+      "source_sha256": "68b45731302d2213dc6baadfa0ae21bf8f7ae0eb7480a83672ea30fec5a52325",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-baseline/initial-state.npy",
+      "sha256": "d875f9ec2b804d42b383f0756ce4b547fedc1c48fce5282a4f1c276f5fc6469b",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-baseline/initial-state.npy",
+      "source_sha256": "d875f9ec2b804d42b383f0756ce4b547fedc1c48fce5282a4f1c276f5fc6469b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-baseline/report.json",
+      "sha256": "fe6707d7444c93772405208f8a7f9c8b91420a1f390eac1bd0f0e37088d312e4",
+      "bytes": 14823,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-baseline/report.json",
+      "source_sha256": "fe6707d7444c93772405208f8a7f9c8b91420a1f390eac1bd0f0e37088d312e4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-baseline/scene.xml",
+      "sha256": "082c6edd702658a5ed03791dab00d0f1b5b6e274a2cf8c9b531e5d29d0a28213",
+      "bytes": 135641,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-baseline/scene.xml",
+      "source_sha256": "feecf0b6ec224359a3307f76b4f66c163e6c8a60c28220fe47eb47c7f94c4e86",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-baseline/states.npz",
+      "sha256": "5926bddfabc1da59cd589ec87b1f7dbf5d81ce3b4072bb180f960093f07848b6",
+      "bytes": 2409707,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-baseline/states.npz",
+      "source_sha256": "5926bddfabc1da59cd589ec87b1f7dbf5d81ce3b4072bb180f960093f07848b6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-baseline.log",
+      "sha256": "06506d8458d4122b8da89ee3a832014189a1b0eed18b9d193d9051888ce864af",
+      "bytes": 165,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-baseline.log",
+      "source_sha256": "06506d8458d4122b8da89ee3a832014189a1b0eed18b9d193d9051888ce864af",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-candidate/initial-state.npy",
+      "sha256": "d875f9ec2b804d42b383f0756ce4b547fedc1c48fce5282a4f1c276f5fc6469b",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-candidate/initial-state.npy",
+      "source_sha256": "d875f9ec2b804d42b383f0756ce4b547fedc1c48fce5282a4f1c276f5fc6469b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-candidate/report.json",
+      "sha256": "24ba3cc32dca1b982480a88fbe8a9dace850527f641ebf2d599a33a23c1b3913",
+      "bytes": 14824,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-candidate/report.json",
+      "source_sha256": "24ba3cc32dca1b982480a88fbe8a9dace850527f641ebf2d599a33a23c1b3913",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-candidate/scene.xml",
+      "sha256": "082c6edd702658a5ed03791dab00d0f1b5b6e274a2cf8c9b531e5d29d0a28213",
+      "bytes": 135641,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-candidate/scene.xml",
+      "source_sha256": "feecf0b6ec224359a3307f76b4f66c163e6c8a60c28220fe47eb47c7f94c4e86",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-candidate/states.npz",
+      "sha256": "5926bddfabc1da59cd589ec87b1f7dbf5d81ce3b4072bb180f960093f07848b6",
+      "bytes": 2409707,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-candidate/states.npz",
+      "source_sha256": "5926bddfabc1da59cd589ec87b1f7dbf5d81ce3b4072bb180f960093f07848b6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-upright-candidate.log",
+      "sha256": "01b89396857ac330b759de13249da7db96c9d073e959801dbf11a6929fa551fe",
+      "bytes": 165,
+      "source": ".run/spoon-release-v1/development/2026099201-upright-candidate.log",
+      "source_sha256": "01b89396857ac330b759de13249da7db96c9d073e959801dbf11a6929fa551fe",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-baseline/initial-state.npy",
+      "sha256": "80d47ad656f2e1d5791ddd3285a86bc41746f0fda9372252fe1e1b8f13704a43",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-baseline/initial-state.npy",
+      "source_sha256": "80d47ad656f2e1d5791ddd3285a86bc41746f0fda9372252fe1e1b8f13704a43",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-baseline/report.json",
+      "sha256": "62bfc9e38f31017f1178289a280627bf96afb7d7b4d6c09ee898143aa3d0c1b0",
+      "bytes": 18716,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-baseline/report.json",
+      "source_sha256": "62bfc9e38f31017f1178289a280627bf96afb7d7b4d6c09ee898143aa3d0c1b0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-baseline/scene.xml",
+      "sha256": "082c6edd702658a5ed03791dab00d0f1b5b6e274a2cf8c9b531e5d29d0a28213",
+      "bytes": 135641,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-baseline/scene.xml",
+      "source_sha256": "feecf0b6ec224359a3307f76b4f66c163e6c8a60c28220fe47eb47c7f94c4e86",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-baseline/states.npz",
+      "sha256": "bc34877581bf30270af9ac430783b62aa7a05be6f5851b93050a03e4f5345883",
+      "bytes": 2990184,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-baseline/states.npz",
+      "source_sha256": "bc34877581bf30270af9ac430783b62aa7a05be6f5851b93050a03e4f5345883",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-baseline.log",
+      "sha256": "4922a722a54c4e12c3a419d0a5bc6e1cfb79358ba549e09dd7046d42900b0a76",
+      "bytes": 203,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-baseline.log",
+      "source_sha256": "4922a722a54c4e12c3a419d0a5bc6e1cfb79358ba549e09dd7046d42900b0a76",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-candidate/initial-state.npy",
+      "sha256": "80d47ad656f2e1d5791ddd3285a86bc41746f0fda9372252fe1e1b8f13704a43",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-candidate/initial-state.npy",
+      "source_sha256": "80d47ad656f2e1d5791ddd3285a86bc41746f0fda9372252fe1e1b8f13704a43",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-candidate/report.json",
+      "sha256": "39f1a1b0961f4e178944dbbce995ecccd45424d0ae5b239e7aac167753052363",
+      "bytes": 18717,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-candidate/report.json",
+      "source_sha256": "39f1a1b0961f4e178944dbbce995ecccd45424d0ae5b239e7aac167753052363",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-candidate/scene.xml",
+      "sha256": "082c6edd702658a5ed03791dab00d0f1b5b6e274a2cf8c9b531e5d29d0a28213",
+      "bytes": 135641,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-candidate/scene.xml",
+      "source_sha256": "feecf0b6ec224359a3307f76b4f66c163e6c8a60c28220fe47eb47c7f94c4e86",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-candidate/states.npz",
+      "sha256": "bc34877581bf30270af9ac430783b62aa7a05be6f5851b93050a03e4f5345883",
+      "bytes": 2990184,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-candidate/states.npz",
+      "source_sha256": "bc34877581bf30270af9ac430783b62aa7a05be6f5851b93050a03e4f5345883",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099201-wide_left-candidate.log",
+      "sha256": "a921aab9dd9abf64288a91dcfde06fdb073b9c31475dd2134004f4f5d4fcde2d",
+      "bytes": 205,
+      "source": ".run/spoon-release-v1/development/2026099201-wide_left-candidate.log",
+      "source_sha256": "a921aab9dd9abf64288a91dcfde06fdb073b9c31475dd2134004f4f5d4fcde2d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-baseline/initial-state.npy",
+      "sha256": "bc661ace27c05f25c311edc110bdd244f3c05b9024048f01e3eb58f72947d79f",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-baseline/initial-state.npy",
+      "source_sha256": "bc661ace27c05f25c311edc110bdd244f3c05b9024048f01e3eb58f72947d79f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-baseline/report.json",
+      "sha256": "5cbd1efa516d01474067b9a918a6698fc960a2677d0a1a35bad110fb97879c42",
+      "bytes": 24520,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-baseline/report.json",
+      "source_sha256": "5cbd1efa516d01474067b9a918a6698fc960a2677d0a1a35bad110fb97879c42",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-baseline/scene.xml",
+      "sha256": "fba54807d590f6cab16704c0af0d654bc25ac4b4fb5ec4df7e2624d7ca59731b",
+      "bytes": 135618,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-baseline/scene.xml",
+      "source_sha256": "e2bc8c3ba5a9f9cfff909223f1272c2305a7482d0dc7b48e0ab0afe9c36ae6a1",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-baseline/states.npz",
+      "sha256": "3764f8d3130cf409c54f294b8ee4820f5924f3de06c2d322edb1664376946b90",
+      "bytes": 3951692,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-baseline/states.npz",
+      "source_sha256": "3764f8d3130cf409c54f294b8ee4820f5924f3de06c2d322edb1664376946b90",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-baseline.log",
+      "sha256": "41c1bf635ea7ef0deebb8758924e2d9de61f6846ce2412ba4d518227d0287fbf",
+      "bytes": 201,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-baseline.log",
+      "source_sha256": "41c1bf635ea7ef0deebb8758924e2d9de61f6846ce2412ba4d518227d0287fbf",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-candidate/initial-state.npy",
+      "sha256": "bc661ace27c05f25c311edc110bdd244f3c05b9024048f01e3eb58f72947d79f",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-candidate/initial-state.npy",
+      "source_sha256": "bc661ace27c05f25c311edc110bdd244f3c05b9024048f01e3eb58f72947d79f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-candidate/report.json",
+      "sha256": "809bb8cc9d79d2e9dd4a2f1a776f0dafd912ada820d236bac0352912a959aa42",
+      "bytes": 24516,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-candidate/report.json",
+      "source_sha256": "809bb8cc9d79d2e9dd4a2f1a776f0dafd912ada820d236bac0352912a959aa42",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-candidate/scene.xml",
+      "sha256": "fba54807d590f6cab16704c0af0d654bc25ac4b4fb5ec4df7e2624d7ca59731b",
+      "bytes": 135618,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-candidate/scene.xml",
+      "source_sha256": "e2bc8c3ba5a9f9cfff909223f1272c2305a7482d0dc7b48e0ab0afe9c36ae6a1",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-candidate/states.npz",
+      "sha256": "49f785b46abad0846afffdb0bf3b9ab019998df793acfea5e3b5bf37eb526782",
+      "bytes": 3951967,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-candidate/states.npz",
+      "source_sha256": "49f785b46abad0846afffdb0bf3b9ab019998df793acfea5e3b5bf37eb526782",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-upright-candidate.log",
+      "sha256": "47530ea1e7be8158e36070083d178610e65d9a6240a9344133a127508cff139c",
+      "bytes": 203,
+      "source": ".run/spoon-release-v1/development/2026099202-upright-candidate.log",
+      "source_sha256": "47530ea1e7be8158e36070083d178610e65d9a6240a9344133a127508cff139c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-baseline/initial-state.npy",
+      "sha256": "3e632a28751831e69748e8235be124991ba0e76acd405943b94caef2ec1464c4",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-baseline/initial-state.npy",
+      "source_sha256": "3e632a28751831e69748e8235be124991ba0e76acd405943b94caef2ec1464c4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-baseline/report.json",
+      "sha256": "ee18fa8332cb969d13f0e795cbf69e45f8e91e2a12a689338ea17ae4cac6c1fe",
+      "bytes": 28441,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-baseline/report.json",
+      "source_sha256": "ee18fa8332cb969d13f0e795cbf69e45f8e91e2a12a689338ea17ae4cac6c1fe",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-baseline/scene.xml",
+      "sha256": "fba54807d590f6cab16704c0af0d654bc25ac4b4fb5ec4df7e2624d7ca59731b",
+      "bytes": 135618,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-baseline/scene.xml",
+      "source_sha256": "e2bc8c3ba5a9f9cfff909223f1272c2305a7482d0dc7b48e0ab0afe9c36ae6a1",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-baseline/states.npz",
+      "sha256": "5f51deaa88817a3b227ae4a83e60d01582d2f4a40c602af6b1b5c9f707327290",
+      "bytes": 4545285,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-baseline/states.npz",
+      "source_sha256": "5f51deaa88817a3b227ae4a83e60d01582d2f4a40c602af6b1b5c9f707327290",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-baseline.log",
+      "sha256": "f1ee6f5c1aa6929595d2b21d108e6cb3eeb66964630c832155910b1dbf9b558e",
+      "bytes": 241,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-baseline.log",
+      "source_sha256": "f1ee6f5c1aa6929595d2b21d108e6cb3eeb66964630c832155910b1dbf9b558e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-candidate/initial-state.npy",
+      "sha256": "3e632a28751831e69748e8235be124991ba0e76acd405943b94caef2ec1464c4",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-candidate/initial-state.npy",
+      "source_sha256": "3e632a28751831e69748e8235be124991ba0e76acd405943b94caef2ec1464c4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-candidate/report.json",
+      "sha256": "31968760446fd803760c5a5b8d77ccb29c8713478cee330c2d40e210dd3651f1",
+      "bytes": 28434,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-candidate/report.json",
+      "source_sha256": "31968760446fd803760c5a5b8d77ccb29c8713478cee330c2d40e210dd3651f1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-candidate/scene.xml",
+      "sha256": "fba54807d590f6cab16704c0af0d654bc25ac4b4fb5ec4df7e2624d7ca59731b",
+      "bytes": 135618,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-candidate/scene.xml",
+      "source_sha256": "e2bc8c3ba5a9f9cfff909223f1272c2305a7482d0dc7b48e0ab0afe9c36ae6a1",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-candidate/states.npz",
+      "sha256": "be5cc5510622748bb735f170d609ad264792843cf712330067e4eca69a02df17",
+      "bytes": 4545487,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-candidate/states.npz",
+      "source_sha256": "be5cc5510622748bb735f170d609ad264792843cf712330067e4eca69a02df17",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099202-wide_left-candidate.log",
+      "sha256": "1f6cbfe0f1800e0bbbf280ac8cd18a0fd4e1510197aa8459aa50385d535b04cb",
+      "bytes": 242,
+      "source": ".run/spoon-release-v1/development/2026099202-wide_left-candidate.log",
+      "source_sha256": "1f6cbfe0f1800e0bbbf280ac8cd18a0fd4e1510197aa8459aa50385d535b04cb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-baseline/initial-state.npy",
+      "sha256": "cae8f9cf9f05e1c40690d6af11e7cf183c685e82068d29c66ccdf9fc22c896f2",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-baseline/initial-state.npy",
+      "source_sha256": "cae8f9cf9f05e1c40690d6af11e7cf183c685e82068d29c66ccdf9fc22c896f2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-baseline/report.json",
+      "sha256": "8cc1a582843cec1ffe3fc4997f43589d8d0ec4ccc2d97cd8ef17185e0eb4322f",
+      "bytes": 24522,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-baseline/report.json",
+      "source_sha256": "8cc1a582843cec1ffe3fc4997f43589d8d0ec4ccc2d97cd8ef17185e0eb4322f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-baseline/scene.xml",
+      "sha256": "9fec1533cd5a72fc982aa42482710ba506ce5abb543ca0356cd678e737044e81",
+      "bytes": 135643,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-baseline/scene.xml",
+      "source_sha256": "3dc37cb3443c39f6a6b1c85737d20f864b51af67a3f60738ebff7d7f8aa3de3a",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-baseline/states.npz",
+      "sha256": "f45dac97824796a6da3c9adb18daa3b9f430e6359240ad8522eec793d5a3d13a",
+      "bytes": 3941268,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-baseline/states.npz",
+      "source_sha256": "f45dac97824796a6da3c9adb18daa3b9f430e6359240ad8522eec793d5a3d13a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-baseline.log",
+      "sha256": "f538f9f310343f0471ae12895b77a8e0e16c3c1f1a1e173d0887583712d5fa79",
+      "bytes": 200,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-baseline.log",
+      "source_sha256": "f538f9f310343f0471ae12895b77a8e0e16c3c1f1a1e173d0887583712d5fa79",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-candidate/initial-state.npy",
+      "sha256": "cae8f9cf9f05e1c40690d6af11e7cf183c685e82068d29c66ccdf9fc22c896f2",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-candidate/initial-state.npy",
+      "source_sha256": "cae8f9cf9f05e1c40690d6af11e7cf183c685e82068d29c66ccdf9fc22c896f2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-candidate/report.json",
+      "sha256": "4f39a47f4b9cc7a46a0b57785e89bcedf65e6a52d998dfa11281f6026699027a",
+      "bytes": 24532,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-candidate/report.json",
+      "source_sha256": "4f39a47f4b9cc7a46a0b57785e89bcedf65e6a52d998dfa11281f6026699027a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-candidate/scene.xml",
+      "sha256": "9fec1533cd5a72fc982aa42482710ba506ce5abb543ca0356cd678e737044e81",
+      "bytes": 135643,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-candidate/scene.xml",
+      "source_sha256": "3dc37cb3443c39f6a6b1c85737d20f864b51af67a3f60738ebff7d7f8aa3de3a",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-candidate/states.npz",
+      "sha256": "c7251c01bac5a444ad4c714b5740eefeed54997cf9b4592c5f7a1e95af7dc1e3",
+      "bytes": 3941478,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-candidate/states.npz",
+      "source_sha256": "c7251c01bac5a444ad4c714b5740eefeed54997cf9b4592c5f7a1e95af7dc1e3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-upright-candidate.log",
+      "sha256": "8a368e947280cb19c4b3c555850cbc42b9da49303a484b8e64b3ec8928a3566a",
+      "bytes": 202,
+      "source": ".run/spoon-release-v1/development/2026099203-upright-candidate.log",
+      "source_sha256": "8a368e947280cb19c4b3c555850cbc42b9da49303a484b8e64b3ec8928a3566a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-baseline/initial-state.npy",
+      "sha256": "6abc739909f7ac9507fb1fa22b161c49c0377a29aaf1a2233314ac710415ea01",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-baseline/initial-state.npy",
+      "source_sha256": "6abc739909f7ac9507fb1fa22b161c49c0377a29aaf1a2233314ac710415ea01",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-baseline/report.json",
+      "sha256": "04895ea2285d547ea34016df59d487f1b4780605ff73f6ae091a96fb84c001f9",
+      "bytes": 28414,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-baseline/report.json",
+      "source_sha256": "04895ea2285d547ea34016df59d487f1b4780605ff73f6ae091a96fb84c001f9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-baseline/scene.xml",
+      "sha256": "9fec1533cd5a72fc982aa42482710ba506ce5abb543ca0356cd678e737044e81",
+      "bytes": 135643,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-baseline/scene.xml",
+      "source_sha256": "3dc37cb3443c39f6a6b1c85737d20f864b51af67a3f60738ebff7d7f8aa3de3a",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-baseline/states.npz",
+      "sha256": "05bfa8eb7bc426226e354a886079413fe852e25582bbadec13669102de592ae7",
+      "bytes": 4550583,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-baseline/states.npz",
+      "source_sha256": "05bfa8eb7bc426226e354a886079413fe852e25582bbadec13669102de592ae7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-baseline.log",
+      "sha256": "524d71c18ce7c33cc8535abf331337885a4e6650f29a1500e7cf993d3e4b3258",
+      "bytes": 240,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-baseline.log",
+      "source_sha256": "524d71c18ce7c33cc8535abf331337885a4e6650f29a1500e7cf993d3e4b3258",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-candidate/initial-state.npy",
+      "sha256": "6abc739909f7ac9507fb1fa22b161c49c0377a29aaf1a2233314ac710415ea01",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-candidate/initial-state.npy",
+      "source_sha256": "6abc739909f7ac9507fb1fa22b161c49c0377a29aaf1a2233314ac710415ea01",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-candidate/report.json",
+      "sha256": "41f8f56388a7e74f3b0ba66e507db4246bda175e456137c4052928b574b1a16d",
+      "bytes": 28417,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-candidate/report.json",
+      "source_sha256": "41f8f56388a7e74f3b0ba66e507db4246bda175e456137c4052928b574b1a16d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-candidate/scene.xml",
+      "sha256": "9fec1533cd5a72fc982aa42482710ba506ce5abb543ca0356cd678e737044e81",
+      "bytes": 135643,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-candidate/scene.xml",
+      "source_sha256": "3dc37cb3443c39f6a6b1c85737d20f864b51af67a3f60738ebff7d7f8aa3de3a",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-candidate/states.npz",
+      "sha256": "81ca34adfd328f85661a9ba475d1896a26d8d484a0842c4412e5c33b89ed7db8",
+      "bytes": 4550808,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-candidate/states.npz",
+      "source_sha256": "81ca34adfd328f85661a9ba475d1896a26d8d484a0842c4412e5c33b89ed7db8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099203-wide_left-candidate.log",
+      "sha256": "0dcc637f2ef3843f49898903bea62cce49d1035fb7a678824771346455b6f419",
+      "bytes": 242,
+      "source": ".run/spoon-release-v1/development/2026099203-wide_left-candidate.log",
+      "source_sha256": "0dcc637f2ef3843f49898903bea62cce49d1035fb7a678824771346455b6f419",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-baseline/initial-state.npy",
+      "sha256": "eadacc404f29cd423c0eda43e3da919e24f3112d69dbade2c2f669f1ddf46d12",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-baseline/initial-state.npy",
+      "source_sha256": "eadacc404f29cd423c0eda43e3da919e24f3112d69dbade2c2f669f1ddf46d12",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-baseline/report.json",
+      "sha256": "2e30f51f36853bdc9de027839a82ba75ac8c0bac762d2bdd03b450850452fe04",
+      "bytes": 14829,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-baseline/report.json",
+      "source_sha256": "2e30f51f36853bdc9de027839a82ba75ac8c0bac762d2bdd03b450850452fe04",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-baseline/scene.xml",
+      "sha256": "d382fb4d2b4b16b9a9d8d327097cdedd8e7dd6b2639fb917ba69e7d7679786c9",
+      "bytes": 135524,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-baseline/scene.xml",
+      "source_sha256": "6e462fd14339f5a2f61bc5a429f92c3eaf861d7211473cdf46cc26b252d10018",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-baseline/states.npz",
+      "sha256": "a0c016f04f11c651422303dfc743cb94b3e87e0f11a20495826baa509178461e",
+      "bytes": 2457726,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-baseline/states.npz",
+      "source_sha256": "a0c016f04f11c651422303dfc743cb94b3e87e0f11a20495826baa509178461e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-baseline.log",
+      "sha256": "f7a6787930f69280ecc863151eeef9d8f622d97f5e1e0a87fa2e6e4ea1a9339a",
+      "bytes": 165,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-baseline.log",
+      "source_sha256": "f7a6787930f69280ecc863151eeef9d8f622d97f5e1e0a87fa2e6e4ea1a9339a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-candidate/initial-state.npy",
+      "sha256": "eadacc404f29cd423c0eda43e3da919e24f3112d69dbade2c2f669f1ddf46d12",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-candidate/initial-state.npy",
+      "source_sha256": "eadacc404f29cd423c0eda43e3da919e24f3112d69dbade2c2f669f1ddf46d12",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-candidate/report.json",
+      "sha256": "da4c96f137f19dd977eb5b4fbee06882ad09d9ffa26d3fdb09f0045b0e0dbcde",
+      "bytes": 14829,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-candidate/report.json",
+      "source_sha256": "da4c96f137f19dd977eb5b4fbee06882ad09d9ffa26d3fdb09f0045b0e0dbcde",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-candidate/scene.xml",
+      "sha256": "d382fb4d2b4b16b9a9d8d327097cdedd8e7dd6b2639fb917ba69e7d7679786c9",
+      "bytes": 135524,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-candidate/scene.xml",
+      "source_sha256": "6e462fd14339f5a2f61bc5a429f92c3eaf861d7211473cdf46cc26b252d10018",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-candidate/states.npz",
+      "sha256": "a0c016f04f11c651422303dfc743cb94b3e87e0f11a20495826baa509178461e",
+      "bytes": 2457726,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-candidate/states.npz",
+      "source_sha256": "a0c016f04f11c651422303dfc743cb94b3e87e0f11a20495826baa509178461e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-upright-candidate.log",
+      "sha256": "1bc41f4b3fb835846063ca9a66c635d1088e44264e292903715dcb1243c9e8e4",
+      "bytes": 166,
+      "source": ".run/spoon-release-v1/development/2026099204-upright-candidate.log",
+      "source_sha256": "1bc41f4b3fb835846063ca9a66c635d1088e44264e292903715dcb1243c9e8e4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-baseline/initial-state.npy",
+      "sha256": "8d8f24ad03f6d16bf2b0ab55c062227d62816d658366b467650f1ba41975af2e",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-baseline/initial-state.npy",
+      "source_sha256": "8d8f24ad03f6d16bf2b0ab55c062227d62816d658366b467650f1ba41975af2e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-baseline/report.json",
+      "sha256": "3676c35da2f7cfd9a85b2c880f1d8b899eafcc4aa22d32655f58072859783b55",
+      "bytes": 18713,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-baseline/report.json",
+      "source_sha256": "3676c35da2f7cfd9a85b2c880f1d8b899eafcc4aa22d32655f58072859783b55",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-baseline/scene.xml",
+      "sha256": "d382fb4d2b4b16b9a9d8d327097cdedd8e7dd6b2639fb917ba69e7d7679786c9",
+      "bytes": 135524,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-baseline/scene.xml",
+      "source_sha256": "6e462fd14339f5a2f61bc5a429f92c3eaf861d7211473cdf46cc26b252d10018",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-baseline/states.npz",
+      "sha256": "980cea9292b637e24fc67a54af405de12038ee4f2d2e1dd842677ddf67eb358d",
+      "bytes": 3047188,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-baseline/states.npz",
+      "source_sha256": "980cea9292b637e24fc67a54af405de12038ee4f2d2e1dd842677ddf67eb358d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-baseline.log",
+      "sha256": "897e156123e491e7a5f147449965743e57c81c297af5537ad034bc6171677414",
+      "bytes": 203,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-baseline.log",
+      "source_sha256": "897e156123e491e7a5f147449965743e57c81c297af5537ad034bc6171677414",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-candidate/initial-state.npy",
+      "sha256": "8d8f24ad03f6d16bf2b0ab55c062227d62816d658366b467650f1ba41975af2e",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-candidate/initial-state.npy",
+      "source_sha256": "8d8f24ad03f6d16bf2b0ab55c062227d62816d658366b467650f1ba41975af2e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-candidate/report.json",
+      "sha256": "e667b0ffde2a369d6d818c112f63cb5ee514a05edb0335f13bed8da9047ff64d",
+      "bytes": 18713,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-candidate/report.json",
+      "source_sha256": "e667b0ffde2a369d6d818c112f63cb5ee514a05edb0335f13bed8da9047ff64d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-candidate/scene.xml",
+      "sha256": "d382fb4d2b4b16b9a9d8d327097cdedd8e7dd6b2639fb917ba69e7d7679786c9",
+      "bytes": 135524,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-candidate/scene.xml",
+      "source_sha256": "6e462fd14339f5a2f61bc5a429f92c3eaf861d7211473cdf46cc26b252d10018",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-candidate/states.npz",
+      "sha256": "980cea9292b637e24fc67a54af405de12038ee4f2d2e1dd842677ddf67eb358d",
+      "bytes": 3047188,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-candidate/states.npz",
+      "source_sha256": "980cea9292b637e24fc67a54af405de12038ee4f2d2e1dd842677ddf67eb358d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099204-wide_left-candidate.log",
+      "sha256": "9ef790ee0f2ad054a7e48461dbe28cdbb286e25b84849e929cbc9211235adf06",
+      "bytes": 204,
+      "source": ".run/spoon-release-v1/development/2026099204-wide_left-candidate.log",
+      "source_sha256": "9ef790ee0f2ad054a7e48461dbe28cdbb286e25b84849e929cbc9211235adf06",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-baseline/initial-state.npy",
+      "sha256": "d431b437b323b4c109b5709c84244943c037ee00cd61a79e90eeb3a9b7ad9427",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-baseline/initial-state.npy",
+      "source_sha256": "d431b437b323b4c109b5709c84244943c037ee00cd61a79e90eeb3a9b7ad9427",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-baseline/report.json",
+      "sha256": "750e900d8ac22dcf5ec2215e99b3607ea08c69079bff8fe79a689aa50d2e5418",
+      "bytes": 24531,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-baseline/report.json",
+      "source_sha256": "750e900d8ac22dcf5ec2215e99b3607ea08c69079bff8fe79a689aa50d2e5418",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-baseline/scene.xml",
+      "sha256": "bbcbabe6bc4ead417f18d166d3bf0de14628c63afb6d1c494a95d4871815f65b",
+      "bytes": 135642,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-baseline/scene.xml",
+      "source_sha256": "5b41c739b7f6890de8bb3a93970828b24d34aaa15940c777177e88b121669bf6",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-baseline/states.npz",
+      "sha256": "aa2c1e8ab0e9da1bc19519625535616ee566e2a13e4d74440372cf47adbf1664",
+      "bytes": 3895451,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-baseline/states.npz",
+      "source_sha256": "aa2c1e8ab0e9da1bc19519625535616ee566e2a13e4d74440372cf47adbf1664",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-baseline.log",
+      "sha256": "54ae90c0fc0320394481760921c229d4900a257584f0b03005082d0e258c3e07",
+      "bytes": 201,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-baseline.log",
+      "source_sha256": "54ae90c0fc0320394481760921c229d4900a257584f0b03005082d0e258c3e07",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-candidate/initial-state.npy",
+      "sha256": "d431b437b323b4c109b5709c84244943c037ee00cd61a79e90eeb3a9b7ad9427",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-candidate/initial-state.npy",
+      "source_sha256": "d431b437b323b4c109b5709c84244943c037ee00cd61a79e90eeb3a9b7ad9427",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-candidate/report.json",
+      "sha256": "738c9deb4440ff44ad2489e0144fd169a33bab3e38c9820bbae2f11bc4772c5c",
+      "bytes": 24537,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-candidate/report.json",
+      "source_sha256": "738c9deb4440ff44ad2489e0144fd169a33bab3e38c9820bbae2f11bc4772c5c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-candidate/scene.xml",
+      "sha256": "bbcbabe6bc4ead417f18d166d3bf0de14628c63afb6d1c494a95d4871815f65b",
+      "bytes": 135642,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-candidate/scene.xml",
+      "source_sha256": "5b41c739b7f6890de8bb3a93970828b24d34aaa15940c777177e88b121669bf6",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-candidate/states.npz",
+      "sha256": "5299bb0379e10ff1e964db0dc8d6fe96f76045fa055fe5ae729d92ea70215ac4",
+      "bytes": 3894450,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-candidate/states.npz",
+      "source_sha256": "5299bb0379e10ff1e964db0dc8d6fe96f76045fa055fe5ae729d92ea70215ac4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-upright-candidate.log",
+      "sha256": "08cfeb86728e57a118c926eeed5deddc9ce9ac4b5ab2925a060d405f1f7a66e7",
+      "bytes": 203,
+      "source": ".run/spoon-release-v1/development/2026099205-upright-candidate.log",
+      "source_sha256": "08cfeb86728e57a118c926eeed5deddc9ce9ac4b5ab2925a060d405f1f7a66e7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-baseline/initial-state.npy",
+      "sha256": "4bba626fa52af217e4702b548ab2a3fafa761459cda9904c9f5ea598e0990ca8",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-baseline/initial-state.npy",
+      "source_sha256": "4bba626fa52af217e4702b548ab2a3fafa761459cda9904c9f5ea598e0990ca8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-baseline/report.json",
+      "sha256": "886dfa1aa542efa0eeb8a3efdb79ae80d762321f6cb8b57c52d70a715e2c5e59",
+      "bytes": 28412,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-baseline/report.json",
+      "source_sha256": "886dfa1aa542efa0eeb8a3efdb79ae80d762321f6cb8b57c52d70a715e2c5e59",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-baseline/scene.xml",
+      "sha256": "bbcbabe6bc4ead417f18d166d3bf0de14628c63afb6d1c494a95d4871815f65b",
+      "bytes": 135642,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-baseline/scene.xml",
+      "source_sha256": "5b41c739b7f6890de8bb3a93970828b24d34aaa15940c777177e88b121669bf6",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-baseline/states.npz",
+      "sha256": "f499419592f17ca11bfc256b0565c30f73874c7f6270f2b76c8fd2ae58fa9905",
+      "bytes": 4485526,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-baseline/states.npz",
+      "source_sha256": "f499419592f17ca11bfc256b0565c30f73874c7f6270f2b76c8fd2ae58fa9905",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-baseline.log",
+      "sha256": "9d3eb0727b7ade68a2cba0131edecf33363f859a362174079874a0a2e1cf35ed",
+      "bytes": 241,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-baseline.log",
+      "source_sha256": "9d3eb0727b7ade68a2cba0131edecf33363f859a362174079874a0a2e1cf35ed",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-candidate/initial-state.npy",
+      "sha256": "4bba626fa52af217e4702b548ab2a3fafa761459cda9904c9f5ea598e0990ca8",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-candidate/initial-state.npy",
+      "source_sha256": "4bba626fa52af217e4702b548ab2a3fafa761459cda9904c9f5ea598e0990ca8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-candidate/report.json",
+      "sha256": "59980602ff21b0d56a86d21295ca33f3c8703d8d3d5de88a16e8ab58aec8573d",
+      "bytes": 28420,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-candidate/report.json",
+      "source_sha256": "59980602ff21b0d56a86d21295ca33f3c8703d8d3d5de88a16e8ab58aec8573d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-candidate/scene.xml",
+      "sha256": "bbcbabe6bc4ead417f18d166d3bf0de14628c63afb6d1c494a95d4871815f65b",
+      "bytes": 135642,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-candidate/scene.xml",
+      "source_sha256": "5b41c739b7f6890de8bb3a93970828b24d34aaa15940c777177e88b121669bf6",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-candidate/states.npz",
+      "sha256": "18615e05732779b267c419a01cbe41c8703977a5d1f9ad05afac94bd18d92b48",
+      "bytes": 4485840,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-candidate/states.npz",
+      "source_sha256": "18615e05732779b267c419a01cbe41c8703977a5d1f9ad05afac94bd18d92b48",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099205-wide_left-candidate.log",
+      "sha256": "036310c87639c9df1ccdea3f2e26a64223f3306ffc9c6039a6882701a5fe45b7",
+      "bytes": 242,
+      "source": ".run/spoon-release-v1/development/2026099205-wide_left-candidate.log",
+      "source_sha256": "036310c87639c9df1ccdea3f2e26a64223f3306ffc9c6039a6882701a5fe45b7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-baseline/initial-state.npy",
+      "sha256": "52601f615020ca655ff229ebd65a446263f0155794cc8f588b5bed3c7865c0e5",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-baseline/initial-state.npy",
+      "source_sha256": "52601f615020ca655ff229ebd65a446263f0155794cc8f588b5bed3c7865c0e5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-baseline/report.json",
+      "sha256": "6b477ccf26c43b825f2ac46d54e963c3887d48ee1c65c6b6b73ce5e59419b3bd",
+      "bytes": 24495,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-baseline/report.json",
+      "source_sha256": "6b477ccf26c43b825f2ac46d54e963c3887d48ee1c65c6b6b73ce5e59419b3bd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-baseline/scene.xml",
+      "sha256": "59b4ab354eb316778643452a40b63eede26339196fe43cfd768b81f5676ebdc6",
+      "bytes": 135645,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-baseline/scene.xml",
+      "source_sha256": "1847f0f1e83f45e134bf5ad76eb73ead269a52618ac633cc9c42daf01d4c4090",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-baseline/states.npz",
+      "sha256": "727f8da6b807ee7dd16d21197cd45ff9226683064d2d28eca0c99b5876a7306a",
+      "bytes": 3948860,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-baseline/states.npz",
+      "source_sha256": "727f8da6b807ee7dd16d21197cd45ff9226683064d2d28eca0c99b5876a7306a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-baseline.log",
+      "sha256": "397120366cef4d60208b4add7e58b365052ce6108722b584d47c24dbc339ac71",
+      "bytes": 200,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-baseline.log",
+      "source_sha256": "397120366cef4d60208b4add7e58b365052ce6108722b584d47c24dbc339ac71",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-candidate/initial-state.npy",
+      "sha256": "52601f615020ca655ff229ebd65a446263f0155794cc8f588b5bed3c7865c0e5",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-candidate/initial-state.npy",
+      "source_sha256": "52601f615020ca655ff229ebd65a446263f0155794cc8f588b5bed3c7865c0e5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-candidate/report.json",
+      "sha256": "910f82393406d8c6f5583c4040e31ba3c57e2ee26da5eb3b96de7d18c0876989",
+      "bytes": 24503,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-candidate/report.json",
+      "source_sha256": "910f82393406d8c6f5583c4040e31ba3c57e2ee26da5eb3b96de7d18c0876989",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-candidate/scene.xml",
+      "sha256": "59b4ab354eb316778643452a40b63eede26339196fe43cfd768b81f5676ebdc6",
+      "bytes": 135645,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-candidate/scene.xml",
+      "source_sha256": "1847f0f1e83f45e134bf5ad76eb73ead269a52618ac633cc9c42daf01d4c4090",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-candidate/states.npz",
+      "sha256": "a8b1265b40b6c3bda460700153bf2d81069f5275112bfef6cf94f19dedb2f908",
+      "bytes": 3948311,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-candidate/states.npz",
+      "source_sha256": "a8b1265b40b6c3bda460700153bf2d81069f5275112bfef6cf94f19dedb2f908",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-upright-candidate.log",
+      "sha256": "4bdb03f9e7bcecd42febe4a95e80f4093374e792c9d2e4cea5176a3789c22f97",
+      "bytes": 202,
+      "source": ".run/spoon-release-v1/development/2026099206-upright-candidate.log",
+      "source_sha256": "4bdb03f9e7bcecd42febe4a95e80f4093374e792c9d2e4cea5176a3789c22f97",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-baseline/initial-state.npy",
+      "sha256": "fff052842cc36741e6c1254293e855e9423d63d4961b498e5b7d00dd2f064d22",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-baseline/initial-state.npy",
+      "source_sha256": "fff052842cc36741e6c1254293e855e9423d63d4961b498e5b7d00dd2f064d22",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-baseline/report.json",
+      "sha256": "99bc016de13c6ea7fb063aa4b0d92de62fe2acfc19396594624d4681703812a4",
+      "bytes": 28415,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-baseline/report.json",
+      "source_sha256": "99bc016de13c6ea7fb063aa4b0d92de62fe2acfc19396594624d4681703812a4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-baseline/scene.xml",
+      "sha256": "59b4ab354eb316778643452a40b63eede26339196fe43cfd768b81f5676ebdc6",
+      "bytes": 135645,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-baseline/scene.xml",
+      "source_sha256": "1847f0f1e83f45e134bf5ad76eb73ead269a52618ac633cc9c42daf01d4c4090",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-baseline/states.npz",
+      "sha256": "1ac064801c8707719538068618e2f679fc3d63f7f8f091241a7e09ce33e36abb",
+      "bytes": 4535168,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-baseline/states.npz",
+      "source_sha256": "1ac064801c8707719538068618e2f679fc3d63f7f8f091241a7e09ce33e36abb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-baseline.log",
+      "sha256": "6e66698a68aaa914a788739ef618a934336f722a35e705ca7e8a8a334b0b57b1",
+      "bytes": 240,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-baseline.log",
+      "source_sha256": "6e66698a68aaa914a788739ef618a934336f722a35e705ca7e8a8a334b0b57b1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-candidate/initial-state.npy",
+      "sha256": "fff052842cc36741e6c1254293e855e9423d63d4961b498e5b7d00dd2f064d22",
+      "bytes": 1160,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-candidate/initial-state.npy",
+      "source_sha256": "fff052842cc36741e6c1254293e855e9423d63d4961b498e5b7d00dd2f064d22",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-candidate/report.json",
+      "sha256": "2322c0f8b54c0fd4a40147aea292bb32fdda5a22708dbd207ef6381a5ffb9109",
+      "bytes": 28413,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-candidate/report.json",
+      "source_sha256": "2322c0f8b54c0fd4a40147aea292bb32fdda5a22708dbd207ef6381a5ffb9109",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-candidate/scene.xml",
+      "sha256": "59b4ab354eb316778643452a40b63eede26339196fe43cfd768b81f5676ebdc6",
+      "bytes": 135645,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-candidate/scene.xml",
+      "source_sha256": "1847f0f1e83f45e134bf5ad76eb73ead269a52618ac633cc9c42daf01d4c4090",
+      "transformation": "Only meshdir remapped to the same repository assets."
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-candidate/states.npz",
+      "sha256": "ec492a11b990c1f3928006bef1a0208e3be7ae0c5e618d7597a77dd997ed5b63",
+      "bytes": 4534817,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-candidate/states.npz",
+      "source_sha256": "ec492a11b990c1f3928006bef1a0208e3be7ae0c5e618d7597a77dd997ed5b63",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/2026099206-wide_left-candidate.log",
+      "sha256": "6dac968d9e826f4306923260773e9f780901f6802cd47f8a58d15975ebcbc96d",
+      "bytes": 242,
+      "source": ".run/spoon-release-v1/development/2026099206-wide_left-candidate.log",
+      "source_sha256": "6dac968d9e826f4306923260773e9f780901f6802cd47f8a58d15975ebcbc96d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/frozen-inputs.json",
+      "sha256": "7f80c2803aa33a0bdd52ca4ec63db623b3500cb600b57cea344380c80076335f",
+      "bytes": 33278,
+      "source": ".run/spoon-release-v1/development/frozen-inputs.json",
+      "source_sha256": "7f80c2803aa33a0bdd52ca4ec63db623b3500cb600b57cea344380c80076335f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/scripts/evaluate_spoon_release.py",
+      "sha256": "9272128dfcdfd9bb29fc21201af874e3e72c1aedb7ce3e1075e8c7dfbc5a5f8d",
+      "bytes": 19104,
+      "source": ".run/spoon-release-v1/development/source/scripts/evaluate_spoon_release.py",
+      "source_sha256": "9272128dfcdfd9bb29fc21201af874e3e72c1aedb7ce3e1075e8c7dfbc5a5f8d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/__init__.py",
+      "sha256": "41d6e06b5cd49e86faaccfc822e0195485e4efed792c4ae28bdb42dc8e814220",
+      "bytes": 82,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/__init__.py",
+      "source_sha256": "41d6e06b5cd49e86faaccfc822e0195485e4efed792c4ae28bdb42dc8e814220",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/act_learning.py",
+      "sha256": "0266d6ec1db5291a14f7b0cc2bdc1e6eb977497b3d6e1342eeb0a6e6db4ff4c2",
+      "bytes": 4203,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/act_learning.py",
+      "source_sha256": "0266d6ec1db5291a14f7b0cc2bdc1e6eb977497b3d6e1342eeb0a6e6db4ff4c2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/autonomy.py",
+      "sha256": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+      "bytes": 32350,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/autonomy.py",
+      "source_sha256": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/bottle_vision.py",
+      "sha256": "5b6ccf6e0224bf66ef7d4c69c382384add65d90ebfeedad838be5dc756bfa9ac",
+      "bytes": 1651,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/bottle_vision.py",
+      "source_sha256": "5b6ccf6e0224bf66ef7d4c69c382384add65d90ebfeedad838be5dc756bfa9ac",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/command_task.py",
+      "sha256": "b3861f88af0a3535569e3d911f68e0e1d566f0b1f5f24b60c79417d561ce51a4",
+      "bytes": 6890,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/command_task.py",
+      "source_sha256": "b3861f88af0a3535569e3d911f68e0e1d566f0b1f5f24b60c79417d561ce51a4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/dataset.py",
+      "sha256": "1c9310a12391a957563f317f0f260ebc5ff284b9050a27b4a27fcb3143f1b2d2",
+      "bytes": 2391,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/dataset.py",
+      "source_sha256": "1c9310a12391a957563f317f0f260ebc5ff284b9050a27b4a27fcb3143f1b2d2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/dinner.py",
+      "sha256": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11",
+      "bytes": 15459,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/dinner.py",
+      "source_sha256": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/dinner_autonomy.py",
+      "sha256": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+      "bytes": 32018,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/dinner_autonomy.py",
+      "source_sha256": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/dinner_monitor.py",
+      "sha256": "34b2a5356ffcb5c2cf888607ceb387e51ca2ed00f6fa8fa39a897744e8bebe54",
+      "bytes": 5552,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/dinner_monitor.py",
+      "source_sha256": "34b2a5356ffcb5c2cf888607ceb387e51ca2ed00f6fa8fa39a897744e8bebe54",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/dinner_vision.py",
+      "sha256": "66d0bc15b9a9f40832db56378de62c1b5355cebf583ececf7d8fa936a192360e",
+      "bytes": 4673,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/dinner_vision.py",
+      "source_sha256": "66d0bc15b9a9f40832db56378de62c1b5355cebf583ececf7d8fa936a192360e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/engine.py",
+      "sha256": "84e69918d2bc9a98bcb5d23f7e9d2a6bb8410c25d6c1fe4eba24b766d4d77035",
+      "bytes": 25351,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/engine.py",
+      "source_sha256": "84e69918d2bc9a98bcb5d23f7e9d2a6bb8410c25d6c1fe4eba24b766d4d77035",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/experiment_push.py",
+      "sha256": "156700845e130b86e93774c9dfae4221de5443f9855c86bd8e84d7f052a22003",
+      "bytes": 712,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/experiment_push.py",
+      "source_sha256": "156700845e130b86e93774c9dfae4221de5443f9855c86bd8e84d7f052a22003",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/experiment_targets.py",
+      "sha256": "0704accb79c80d894efdf721e7a23437348c9dfe2d0d5edefd63e8b225ea9654",
+      "bytes": 722,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/experiment_targets.py",
+      "source_sha256": "0704accb79c80d894efdf721e7a23437348c9dfe2d0d5edefd63e8b225ea9654",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/hardware_evidence.py",
+      "sha256": "386d563af1666943fb1fcf0d545389220eb30f5808f361bbf72df4aa4a2d7222",
+      "bytes": 488,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/hardware_evidence.py",
+      "source_sha256": "386d563af1666943fb1fcf0d545389220eb30f5808f361bbf72df4aa4a2d7222",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/hosted_gpu.py",
+      "sha256": "668fd99bf83a52a8730179b33f93c5d319707033fecb0cf49f1bd39e2e727bb7",
+      "bytes": 4389,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/hosted_gpu.py",
+      "source_sha256": "668fd99bf83a52a8730179b33f93c5d319707033fecb0cf49f1bd39e2e727bb7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/hosted_worker.py",
+      "sha256": "60cf416fb7f6ef9f5151ccd9127fa821ddee3f65b74712f11ad11c37e6a3a5b2",
+      "bytes": 5050,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/hosted_worker.py",
+      "source_sha256": "60cf416fb7f6ef9f5151ccd9127fa821ddee3f65b74712f11ad11c37e6a3a5b2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/language.py",
+      "sha256": "8a6aa3efc5515e2da1d334432b884de297b53b1f048aba60c031d1739ddcfc1b",
+      "bytes": 5801,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/language.py",
+      "source_sha256": "8a6aa3efc5515e2da1d334432b884de297b53b1f048aba60c031d1739ddcfc1b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/learned_dinner.py",
+      "sha256": "5402aa9069b0a20b21c352272fbeb5dcf70d03ae555aa65d66574e5bf7975066",
+      "bytes": 12677,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/learned_dinner.py",
+      "source_sha256": "5402aa9069b0a20b21c352272fbeb5dcf70d03ae555aa65d66574e5bf7975066",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/learned_plan.py",
+      "sha256": "af91498d8f2d4cff06c829c1fc8c1075b359c00ed49e07043f8301bc4f85fcd8",
+      "bytes": 4681,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/learned_plan.py",
+      "source_sha256": "af91498d8f2d4cff06c829c1fc8c1075b359c00ed49e07043f8301bc4f85fcd8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/learned_skills.py",
+      "sha256": "3ef610a6e6d0516e8bf92d4e7f2b3d06540b49e2671682ab642239aa2cbb129b",
+      "bytes": 698,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/learned_skills.py",
+      "source_sha256": "3ef610a6e6d0516e8bf92d4e7f2b3d06540b49e2671682ab642239aa2cbb129b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/learned_task.py",
+      "sha256": "3bc2fc075d15e07d5717333fbd69541d2e76d2bd41621a71f1a6e51229d2e24f",
+      "bytes": 8314,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/learned_task.py",
+      "source_sha256": "3bc2fc075d15e07d5717333fbd69541d2e76d2bd41621a71f1a6e51229d2e24f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/policy_cameras.py",
+      "sha256": "1415c5f173502017c99f651778245dae83116f4b91b7bbe8bf614cecf06b2752",
+      "bytes": 723,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/policy_cameras.py",
+      "source_sha256": "1415c5f173502017c99f651778245dae83116f4b91b7bbe8bf614cecf06b2752",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/policy_control.py",
+      "sha256": "a418fe2619985852d4e65b40e20c18f82fd72076b4d8b9202507dda4a410b151",
+      "bytes": 904,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/policy_control.py",
+      "source_sha256": "a418fe2619985852d4e65b40e20c18f82fd72076b4d8b9202507dda4a410b151",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/policy_observation.py",
+      "sha256": "d15a9b72e7fb366681d29a21f598d21ffd147b1b9ba56729d296250a67b37af6",
+      "bytes": 131,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/policy_observation.py",
+      "source_sha256": "d15a9b72e7fb366681d29a21f598d21ffd147b1b9ba56729d296250a67b37af6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/primitive_policy.py",
+      "sha256": "60c009448171533385df1be82e3f64ed395f28d3e03145eb2f10ab6a791ef143",
+      "bytes": 8906,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/primitive_policy.py",
+      "source_sha256": "60c009448171533385df1be82e3f64ed395f28d3e03145eb2f10ab6a791ef143",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/public_trial.py",
+      "sha256": "12c83dc1c598b5a6138ecf7ce89ee15c654adb3f110f010963fe152f830c926d",
+      "bytes": 7411,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/public_trial.py",
+      "source_sha256": "12c83dc1c598b5a6138ecf7ce89ee15c654adb3f110f010963fe152f830c926d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/recording.py",
+      "sha256": "073fc8a874a313288399f1827c2018198c92e3da2975b122655afe41aebe43a2",
+      "bytes": 17533,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/recording.py",
+      "source_sha256": "073fc8a874a313288399f1827c2018198c92e3da2975b122655afe41aebe43a2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/relay_task.py",
+      "sha256": "a1387ecf36d24166b6cd356a14375aa47aceb4202687b4ccc96a3d305ab6bcd2",
+      "bytes": 2646,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/relay_task.py",
+      "source_sha256": "a1387ecf36d24166b6cd356a14375aa47aceb4202687b4ccc96a3d305ab6bcd2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rendering.py",
+      "sha256": "570f36b7b683c05d6c33aebc442828196db00596c10ed5e94df2b49ceccf0fcd",
+      "bytes": 3069,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rendering.py",
+      "source_sha256": "570f36b7b683c05d6c33aebc442828196db00596c10ed5e94df2b49ceccf0fcd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/retrieval_policy.py",
+      "sha256": "e47aab06fae8c825cccbe72dae7040edf3ee5d7b07a6537080b95efe001c6873",
+      "bytes": 5478,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/retrieval_policy.py",
+      "source_sha256": "e47aab06fae8c825cccbe72dae7040edf3ee5d7b07a6537080b95efe001c6873",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rgb_bottle_observer.py",
+      "sha256": "45e93ab0d7930a15c82f5e84809eb0d8d7d8d376ed878558529560ff20c18d20",
+      "bytes": 3852,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rgb_bottle_observer.py",
+      "source_sha256": "45e93ab0d7930a15c82f5e84809eb0d8d7d8d376ed878558529560ff20c18d20",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rgb_servo_cameras.py",
+      "sha256": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec",
+      "bytes": 2283,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rgb_servo_cameras.py",
+      "source_sha256": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rgb_servo_controller.py",
+      "sha256": "6fb0d6ac81f717288a23aa88f60bcd84f95f0137b0660db7d35ebe2aeba7cf94",
+      "bytes": 9675,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rgb_servo_controller.py",
+      "source_sha256": "6fb0d6ac81f717288a23aa88f60bcd84f95f0137b0660db7d35ebe2aeba7cf94",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rgb_servo_geometry.py",
+      "sha256": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae",
+      "bytes": 2220,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rgb_servo_geometry.py",
+      "source_sha256": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rgb_servo_motor.py",
+      "sha256": "3d90c40a5af68f0b04dfe5aafaa7de47f4c0b67211d40cc1a461eae2311e22b7",
+      "bytes": 4412,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rgb_servo_motor.py",
+      "source_sha256": "3d90c40a5af68f0b04dfe5aafaa7de47f4c0b67211d40cc1a461eae2311e22b7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rgb_servo_network.py",
+      "sha256": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302",
+      "bytes": 3547,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rgb_servo_network.py",
+      "source_sha256": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rgb_servo_openvino.py",
+      "sha256": "2a091f27331304228bc57a306302cf05ced182af654a57c502b2bdea4bb1fa42",
+      "bytes": 2062,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rgb_servo_openvino.py",
+      "source_sha256": "2a091f27331304228bc57a306302cf05ced182af654a57c502b2bdea4bb1fa42",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rgb_servo_routing.py",
+      "sha256": "75acbf9a9e508ba24c29edc777c6ce83569d73bb9d7cbe567a2e7f40dffcafc6",
+      "bytes": 5932,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rgb_servo_routing.py",
+      "source_sha256": "75acbf9a9e508ba24c29edc777c6ce83569d73bb9d7cbe567a2e7f40dffcafc6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/rgb_servo_vision.py",
+      "sha256": "498a5a52bd6fc207aa8754de074cc1c6d2ab9f10659e43f79d0aba12e9afcb1b",
+      "bytes": 1447,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/rgb_servo_vision.py",
+      "source_sha256": "498a5a52bd6fc207aa8754de074cc1c6d2ab9f10659e43f79d0aba12e9afcb1b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/scene.py",
+      "sha256": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+      "bytes": 13823,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/scene.py",
+      "source_sha256": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/sequence_policy.py",
+      "sha256": "510695960009387afef87284e76e57fa0cce500acd29c380336c08cf865904a8",
+      "bytes": 5049,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/sequence_policy.py",
+      "source_sha256": "510695960009387afef87284e76e57fa0cce500acd29c380336c08cf865904a8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/server.py",
+      "sha256": "724722f43bb88ee487fe1e94797fa0d658131d11f4455f3c5b1363c262bca6e8",
+      "bytes": 8114,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/server.py",
+      "source_sha256": "724722f43bb88ee487fe1e94797fa0d658131d11f4455f3c5b1363c262bca6e8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/slots.py",
+      "sha256": "41755919e4d2bbfb2b023e78c09370d2fbcd740f377bdf616551aff2aa827873",
+      "bytes": 1870,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/slots.py",
+      "source_sha256": "41755919e4d2bbfb2b023e78c09370d2fbcd740f377bdf616551aff2aa827873",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/speech.py",
+      "sha256": "66a50562886702017bdf9e0d2a1af31dfb4531061af9b8a6c5c9f16d02cce4a0",
+      "bytes": 2143,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/speech.py",
+      "source_sha256": "66a50562886702017bdf9e0d2a1af31dfb4531061af9b8a6c5c9f16d02cce4a0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/simulation_lab/storage.py",
+      "sha256": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f",
+      "bytes": 723,
+      "source": ".run/spoon-release-v1/development/source/simulation_lab/storage.py",
+      "source_sha256": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/development/summary.json",
+      "sha256": "3ca2dc94d8bbfab819d7d0a3eacce87f01d05b31bba7eed0c6432bf980402d2d",
+      "bytes": 14047,
+      "source": ".run/spoon-release-v1/development/summary.json",
+      "source_sha256": "3ca2dc94d8bbfab819d7d0a3eacce87f01d05b31bba7eed0c6432bf980402d2d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/scripts/train_spoon_release.py",
+      "sha256": "276dad8178d06bb20e40bc131979903b1c66b663d4d11e1e1a44a8a7f243180a",
+      "bytes": 8937,
+      "source": "scripts/train_spoon_release.py",
+      "source_sha256": "276dad8178d06bb20e40bc131979903b1c66b663d4d11e1e1a44a8a7f243180a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/scripts/export_primitive_openvino.py",
+      "sha256": "b5f664d06e13ce4727a91a218a05f06f55f27bffc702b20b993a5d576db4749b",
+      "bytes": 4133,
+      "source": "scripts/export_primitive_openvino.py",
+      "source_sha256": "b5f664d06e13ce4727a91a218a05f06f55f27bffc702b20b993a5d576db4749b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/source/scripts/package_spoon_release.py",
+      "sha256": "ad485e7eaf4d6315a833a4482c20c8e749e24c21f8c309ee1a3f5c7af22caffd",
+      "bytes": 16908,
+      "source": "scripts/package_spoon_release.py",
+      "source_sha256": "ad485e7eaf4d6315a833a4482c20c8e749e24c21f8c309ee1a3f5c7af22caffd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "docs/robotics/evidence/spoon-release-v1/audit.json",
+      "sha256": "086b9de395e1732f1de49418d9ec7322070330bbbb6f227d862a57824c1cd14a",
+      "bytes": 1043,
+      "source": null,
+      "source_sha256": null,
+      "transformation": "Independent hash, outcome, physical metric and trace audit."
+    }
+  ],
+  "originals_modified": false,
+  "all_declared_outcomes_retained": true
+}

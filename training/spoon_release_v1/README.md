@@ -14,3 +14,5 @@ From the repository root:
 ```
 
 Use a fresh output path. These commands check available space and preserve the 10 GiB reserve. The complete input gate must pass before the separately declared 12,000-update spoon fit. Development/final selection uses new scenes and full workflows; the training replays cannot substitute for that evidence. The current dinner suite remains the selected baseline until the physical promotion gate is satisfied.
+
+The subsequent [fit and paired development test](../../docs/robotics/evidence/spoon-release-v1/README.md) are now complete. Training and export pass, but both models complete only 4/6 workflows per starting preset because two scenes fail at the preceding mug step. The candidate is not promoted; final scenes remain unexposed. All 24 outcomes and the sole fitted checkpoint are preserved.

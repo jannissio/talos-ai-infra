@@ -1,0 +1,43 @@
+{
+  "trials": 24,
+  "trace_frames": 112320,
+  "portable_scenes_loaded": 24,
+  "paired_prefixes_verified": 12,
+  "maximum_final_spoon_metric_discrepancy_mm": 1.1774130559416562e-09,
+  "splits": {
+    "development": {
+      "complete": true,
+      "attempted": 24,
+      "planned": 24,
+      "passed_workflows": {
+        "baseline": {
+          "upright": 4,
+          "wide_left": 4
+        },
+        "candidate": {
+          "upright": 4,
+          "wide_left": 4
+        }
+      },
+      "passed_spoon_attempts": {
+        "baseline": {
+          "upright": 4,
+          "wide_left": 4
+        },
+        "candidate": {
+          "upright": 4,
+          "wide_left": 4
+        }
+      },
+      "paired_initial_states_match": true,
+      "gate_passed": false
+    }
+  },
+  "promoted": false,
+  "scope": "Paired finite dinner workflows on AMD/RTX hardware; no broader workspace, Intel or human-voice claim.",
+  "disk_preflight": {
+    "free_bytes": 560196591616,
+    "expected_package_bytes": 110493603,
+    "reserve_bytes": 10737418240
+  }
+}
