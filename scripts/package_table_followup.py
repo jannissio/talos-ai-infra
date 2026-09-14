@@ -21,10 +21,22 @@ def digest(path):
 def summarize(folder):
     report_path = folder/'report.json'
     report = json.loads(report_path.read_text(encoding='utf-8'))
+    recipe = json.loads((folder/'reset-recipe.json').read_text(encoding='utf-8'))
     physical = report['physical_lookahead']
     return {
         'run': folder.name, 'seed': report['seed'],
         'scope': report['scope'], 'coverage_evaluation': False,
+        'reset_distribution': report.get('reset_distribution', 'unspecified'),
+        'verify_relay_continuation': report.get('verify_relay_continuation', False),
+        'execution_protocol_sha256': digest(folder/'execution-protocol.json') if (folder/'execution-protocol.json').exists() else None,
+        'candidate_scene_protocol': recipe.get('candidate_protocol'),
+        'candidate_scene_summaries': recipe.get('candidate_summaries'),
+        'candidate_protocol_sha256': digest(folder/'protocol.json') if (folder/'protocol.json').exists() else None,
+        'candidate_scene_evidence': [
+            {'candidate': path.parent.name, 'result_sha256': digest(path),
+             'recipe_sha256': digest(path.parent/'recipe.json'),
+             'states_sha256': digest(path.parent/'states.npz')}
+            for path in sorted((folder/'reset-candidates').glob('*/result.json'))],
         'only_item_diagnostic': report['only_item_diagnostic'],
         'whole_table_complete': report['whole_table_complete'],
         'remaining': report['remaining'], 'stop_reason': report.get('stop_reason'),

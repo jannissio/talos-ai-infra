@@ -1,0 +1,65 @@
+{
+  "schema": "talos.rgbd-observability-diagnosis.v3",
+  "scope": "Source preservation and bounded input-robustness evidence for the exposed V24 mug diagnosis; no new scene, model fit, rendering, motion, control, or generalization claim.",
+  "source_preservation": {
+    "baseline_snapshot": ".run/rgbd-camera-source-snapshot-v1/manifest.json",
+    "baseline_file_count": 9,
+    "robustness_snapshot": ".run/rgbd-camera-source-snapshot-v2/manifest.json",
+    "robustness_file_count": 4,
+    "recovered_historical_runs": [
+      "rgbd-item-registration-v4",
+      "raw-rgbd-mug-registration-v1",
+      "raw-rgbd-mug-full-pose-v1"
+    ],
+    "unrecoverable_historical_source_versions": [
+      "rgbd-item-registration-v1",
+      "rgbd-item-registration-v2",
+      "rgbd-item-registration-v3"
+    ],
+    "unrecoverable_interpretation": "The older runs retain their recorded source SHA-256 values, but matching source bytes were not found. Their untracked files have no Git history, and no separate coarse-registration protocol artifacts were recorded. No reconstruction is claimed."
+  },
+  "robustness_v2": {
+    "changes": [
+      "Refuse mismatched RGB, depth, and calibration view counts before zip can truncate them.",
+      "Refuse zero views, invalid shapes, nonfinite calibration or geometry, and missing or nonfinite thresholds.",
+      "Refuse empty teal or exterior-handle evidence before reductions that could produce NaN.",
+      "Use strict JSON serialization with allow_nan=false in the v2 evaluator."
+    ],
+    "tests": {
+      "command": ".venv/Scripts/python.exe -m unittest training_tests.test_raw_rgbd_mug_full_pose_v2 -v",
+      "passed": 3,
+      "failed": 0,
+      "cases": [
+        "mug-absent blank RGB-D",
+        "cylinder surface with no exterior handle evidence",
+        "mismatched view counts"
+      ]
+    },
+    "successful_estimate_regression": {
+      "canonical_json_equal": true,
+      "v1_canonical_estimate_sha256": "f6740d1642b8932950f9bcf986f4efca1596af594159ab22ab2d5fb62adcaeea",
+      "v2_canonical_estimate_sha256": "f6740d1642b8932950f9bcf986f4efca1596af594159ab22ab2d5fb62adcaeea",
+      "body_origin_error_mm_after_truth": 0.5014990555638831,
+      "full_rotation_error_deg_after_truth": 4.000393172196096
+    }
+  },
+  "provenance_sha256": {
+    "prior-report-v1.json": "20a7b8e0e744d9dac80d931fe5870dc52bc716657f7523e3d695d2c0ba568a3b",
+    "prior-report-v2.json": "590b160b4f9ba76cf899202d0d87e9d575fda1b7aa1aa012c6a9f2188ac938b5",
+    "baseline-snapshot-manifest.json": "eb633fb6baceba8f06792984f48371718f547094fe0f718e2a32ebd322afbf1a",
+    "robustness-snapshot-manifest.json": "9ef6add1d59cfcfb7632beab1a52f2530d0288995acffe44f4c40b4552da0226",
+    "full-pose-v1-estimate-before-truth.json": "2da3adf816898d69648b521ffb715375ab5ad52a11ab51efc1a599d5ab33e982",
+    "full-pose-v2-estimate-before-truth.json": "f0c1194afe5bf9869b7e094dab2750c26b649f9ff680264f77bc6e5c13c54e6b",
+    "full-pose-v2-score-after-truth.json": "cd69ab2ae1322e5fcf048cbeaa724c58797d98e64e3155f759173592556dfb8e",
+    "full-pose-v2-module.py": "3e65ad7518e21f063be17152953091dc9d462e59655a0fa41093a2015dc3f571",
+    "full-pose-v2-evaluator.py": "6f169b91bddbf35ef7e7a837970ed85f65893f5aa0cdd27d3335e048c9dbe3f3",
+    "full-pose-v2-protocol.json": "6a4a79447d673a81bc6acb1d4aacc2ef94128975ceb682c33ac6f2ad9b8832bb",
+    "full-pose-v2-tests.py": "930173d6081c00ece941576ee1c301de5a51b2ce6a3ecf494281b56ed2db68df"
+  },
+  "limitations": [
+    "The successful estimate and robustness checks use one exposed saved scene or synthetic refusal inputs.",
+    "The v2 guards do not establish pose robustness under occlusion, color shift, calibration error, or new scenes.",
+    "The earlier 0.501 mm v1 result remains explicitly the better of two truth-scored ambiguous endpoints before the separate full-pose pass.",
+    "No complete randomized seven-item camera-driven table has passed."
+  ]
+}

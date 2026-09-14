@@ -1,0 +1,124 @@
+{
+  "schema": "talos.fork-bottle-support-development-public.v1",
+  "scope": "Reset-only fork support on actual bottle rim, followed by measured-pose geometry checks. No physical delivery/regrasp/placement.",
+  "protocol_sha256": "24c4a5e57442736dc19b56a0aaa8fec5dcbb937e4487ac9f264041b0099abff3",
+  "counts": {
+    "reset_only_support_trials": 2,
+    "reset_only_support_steps": 1200,
+    "saved_support_state_frames": 1202,
+    "independent_support_replay_steps": 1200,
+    "stable_support_resets": 2,
+    "receiver_contact_ik_attempts": 36,
+    "receiver_contact_ik_solutions": 0,
+    "checked_receiver_routes": 0,
+    "physical_delivery_trials": 0,
+    "physical_regrasp_trials": 0,
+    "new_manipulation_steps": 0,
+    "verified_fork_settings": 0
+  },
+  "prefix": {
+    "unique_recorded_motor_steps": 9741,
+    "diagnostic_repetitions": 1,
+    "motor_steps_replayed": 9741,
+    "segments": [
+      {
+        "segment": 0,
+        "steps": 600,
+        "states_sha256": "54c0c46bb23ae5382e525e225d691137467ba3c4bd1df30504fd207d645c5228",
+        "replay_exact": true
+      },
+      {
+        "segment": 1,
+        "steps": 9141,
+        "states_sha256": "07fe038fc0d5b636e85609b4bcff7bfb980afde383a2ca7a500b26c382a589d5",
+        "replay_exact": true
+      }
+    ],
+    "meaning": "Existing selected-scene settling600steps plus accepted bottle9141steps. Prefix replay is neither new manipulation nor independent scene coverage."
+  },
+  "support_derivation": "Two face-down fork resets put the actual model COM above the measured bottle center. Fork handle points toward the left or right receiver bearing. Reset height comes from the actual hollow-neck collision top plus the inverted fork lower extent and1mm settling clearance. No cap or geometry was added.",
+  "support_poses": [
+    {
+      "receiver": "left",
+      "reset_only_support_physics_steps": 600,
+      "saved_state_frames": 601,
+      "independent_replay_exact": true,
+      "stable_for_final_half_second": true,
+      "failure": null,
+      "maximum_fork_external_penetration_mm": 0.4860819223416581,
+      "maximum_bottle_external_penetration_mm": 0.4860819223416581,
+      "maximum_bottle_displacement_mm": 0.0076282953579151,
+      "final_bottle_support_normal_force_n": 0.11242516423583061,
+      "final_com_inside_load_bearing_contact_hull": true,
+      "receiver_geometry_records": 18,
+      "receiver_failure_stages": {
+        "contact_ik": 18
+      },
+      "checked_receiver_route": false,
+      "state_trace_sha256": "8a1d9caaf3c5c21dd6dc769cf50bd92d9e71c0f8a4630952d546fd8bdbc9521c",
+      "contact_force_trace_sha256": "809f1bec6e7e4aafcddaa7b8a21de29363708c3735259442d7f0210e8bce1491",
+      "result_sha256": "4c19a240ac2bba301d29c885b89c957e3eee90977da2ae25f4eeec729ca39888"
+    },
+    {
+      "receiver": "right",
+      "reset_only_support_physics_steps": 600,
+      "saved_state_frames": 601,
+      "independent_replay_exact": true,
+      "stable_for_final_half_second": true,
+      "failure": null,
+      "maximum_fork_external_penetration_mm": 0.48137447598618677,
+      "maximum_bottle_external_penetration_mm": 0.48137447598618677,
+      "maximum_bottle_displacement_mm": 0.007623738830198807,
+      "final_bottle_support_normal_force_n": 0.1124250766863359,
+      "final_com_inside_load_bearing_contact_hull": true,
+      "receiver_geometry_records": 18,
+      "receiver_failure_stages": {
+        "contact_ik": 18
+      },
+      "checked_receiver_route": false,
+      "state_trace_sha256": "a9df0f6890f436474f5893a278afaa618b5921d1fce08770787f929649cc181b",
+      "contact_force_trace_sha256": "022562c57f7856ed786f4c2aff02a6e3d7d56c5a918655bc7b1472fd2bd20dfa",
+      "result_sha256": "ec4c2acfe5a9c4d2130ae39c067c4f9236c47c6cf5c752a3099abc8f4f048597"
+    }
+  ],
+  "result": "Both actual reset-only supports are stable and replay exactly. The bounded underneath receiver contact IK gate is unsolved; collision, grasp, delivery and final placement feasibility were not established.",
+  "guard_audit": {
+    "binding": {
+      "artifact_id": "fork-bottle-support-audit-v1",
+      "file_count": 3,
+      "tree_sha256": "0142388aa0666befe4d2359009ad35dcf15230af07e6dfaf80ad58b0d9ddd5c7",
+      "report_sha256": "93c9f74965a43d735ee4de7f256de62c0f80fedc41b6207126a61007d93b4d80",
+      "log_sha256": "1fdea1c88fa9ad47783ea9420a9295acb979dca639c7820d905292b7808370ec"
+    },
+    "saved_frames_audited": 1202,
+    "all_bottle_penetrations_under_1mm": true,
+    "correction": "Original support trial guarded fork penetration and bottle displacement but did not separately abort on bottle/table penetration. Every retained frame is now geometrically checked; both participants remain under1mm. Current owned helper/harness add that explicit guard for any future use; no new trial run."
+  },
+  "limits": {
+    "fork_and_bottle_external_penetration_mm": 1.0,
+    "unexpected_robot_contact_mm": 0.8,
+    "bottle_and_unrelated_item_displacement_mm": 4.0,
+    "physical_or_model_modifications": false
+  },
+  "limitations": [
+    "The two fork resets are explicit support diagnostics, not physically reached intermediate placements.",
+    "A stable fork on the bottle does not prove a gripper can deliver it, reach underneath, regrasp or complete the fork setting.",
+    "All36receiver searches stop at contact IK with the declared seeds. This does not prove actual palm/camera collision or global physical impossibility.",
+    "Intentional support is ordinary contact with the unchanged bottle rim; no attachment, hidden force, model/friction/actuator change or post-start object state write is used.",
+    "No new manipulation trial or whole-table success is claimed. Original failures and source snapshots are retained."
+  ],
+  "promotion": "Unpromoted diagnostic dependency; not demonstration eligible.",
+  "artifact_binding": {
+    "artifact_id": "fork-bottle-support-v1",
+    "file_count": 87,
+    "tree_sha256": "16e736aeef328ee2a7f9a8cce92b2973dad1391a5f52f479f3d242b12f34e228",
+    "report_sha256": "5fd85e10711233d6287a603ac58bf851071f49701043ce8d7f52b69a5bd76190",
+    "log_sha256": "c882e717fff23b4fdaf353e19f40c611d0e73dabe42de428f87a89c5b52bb772"
+  },
+  "owned_sources_sha256": {
+    "simulation_lab/fork_bottle_support.py": "335132d207c28727ce344b41157ac09e8beb63fbe4d3c7e1a336fb1f11e2e756",
+    "scripts/develop_fork_bottle_support.py": "689b7d0bf431b2325adba943fb9c6feeab010020efcd4eec17e2eb3a659f0bd8"
+  },
+  "compile_check": "Both new modules pass py_compile.",
+  "hash_contract": "SHA256 of raw bytes. Tree hashes bind sorted UTF-8 relative POSIX path + NUL + file SHA256 + newline. Raw state/contact maps stay local."
+}

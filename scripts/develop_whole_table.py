@@ -196,15 +196,68 @@ def execute(model, data, layout, task, targets, folder, observer):
     return result
 
 
-def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, reset='joint', include_item_buffers=False):
+def probe_final_transfer(model, data, layout, targets, item, buffer_path,
+                         folder, observer, report, action_index, maximum_attempts):
+    """Verify a buffer's proposed final leg in independent physical copies.
+
+    A geometric endpoint is insufficient evidence for accepting a buffer whose
+    only purpose is regrasp. Preserve every failed continuation and return the
+    complete passing motor trace for exact main-scene replay, if one exists.
+    The supplied post-buffer state and motor targets are never changed here.
+    """
+    state_spec = mujoco.mjtState.mjSTATE_INTEGRATION
+    initial = np.empty(mujoco.mj_stateSize(model, state_spec))
+    mujoco.mj_getState(model, data, initial, state_spec)
+    excluded, source_pose_cache = [], {}
+    for attempt in range(maximum_attempts):
+        trial = mujoco.MjData(model)
+        mujoco.mj_setState(model, trial, initial, state_spec)
+        mujoco.mj_forward(model, trial)
+        trial_targets = targets.copy()
+        task = TableTeacher(model, trial, layout)
+        task.start(object_id=item, target=destination(layout, item),
+                   excluded_grasps=excluded, source_pose_cache=source_pose_cache)
+        task.update(trial_targets)
+        path = folder/f'continuation-{buffer_path.name}-{attempt:02d}'
+        if not task.active:
+            failure = {'action_index': action_index, 'item': item,
+                       'role': 'conditional_final_setting', 'grasp_attempt': attempt,
+                       'conditional_on_buffer_path': buffer_path.relative_to(folder).as_posix(),
+                       'message': task.message, 'search': task.search_log}
+            report['planning_failures'].append(failure)
+            put(path.with_suffix('.json'), failure)
+            break
+        result = execute(model, trial, layout, task, trial_targets, path, observer)
+        result.update(role='final_setting', path=path.relative_to(folder).as_posix(),
+                      candidate=task.chosen.name, initial_wrist_roll=task.chosen_roll,
+                      action_index=action_index,
+                      conditional_on_buffer_path=buffer_path.relative_to(folder).as_posix())
+        report['physical_lookahead'].append(result)
+        if result['demonstration_eligible']:
+            return result, path, trial_targets
+        excluded.append((task.side, task.chosen.name, task.chosen_roll))
+    return None
+
+
+def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, reset='joint', include_item_buffers=False,
+        verify_relay_continuation=False):
     protocol_bytes = None
+    continuation_protocol_bytes = None
+    if verify_relay_continuation:
+        continuation_protocol_bytes = (ROOT/'docs/robotics/experiments/verified-relay-continuation-development-v1.json').read_bytes()
+        declaration = json.loads(continuation_protocol_bytes)
+        if (seed != declaration['seed'] or reset != declaration['reset_distribution']
+                or maximum_actions != declaration['maximum_accepted_actions']
+                or lookahead_attempts != declaration['physical_lookahead_attempts_per_candidate']
+                or only_item is not None or include_item_buffers):
+            raise ValueError('Arguments differ from the fixed physical relay continuation declaration.')
     if reset == 'joint-direct-contact':
         protocol_bytes = (ROOT/'docs/robotics/experiments/joint-direct-contact-development-v1.json').read_bytes()
         protocol = json.loads(protocol_bytes)
         if (seed != protocol['protocol_seed']
                 or maximum_actions != protocol['execution']['maximum_accepted_actions']
                 or lookahead_attempts != protocol['execution']['physical_lookahead_attempts_per_candidate']
-                or only_item is not None or include_item_buffers):
+                or only_item is not None or include_item_buffers or verify_relay_continuation):
             raise ValueError('Arguments differ from the fixed joint-direct-contact V1 declaration. Declare a separate experiment instead.')
     if folder.exists():raise FileExistsError('Preserve every development attempt.')
     preflight = require_space(folder, 8*1024**3); folder.mkdir(parents=True)
@@ -213,11 +266,14 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
         'whole_table_complete': False, 'actions': [], 'planning_failures': [], 'remaining': list(OBJECTS),
         'only_item_diagnostic': only_item, 'maximum_actions': maximum_actions,
         'include_item_buffers': include_item_buffers,
+        'verify_relay_continuation': verify_relay_continuation,
         'reset_distribution': reset, 'coverage_evaluation': False,
         'lookahead_attempts_per_item': lookahead_attempts, 'physical_lookahead': [],
         'lookahead_contract': 'Privileged training teacher searches independent copied physics states. Only a fully passing action is replayed through motor commands in the continuously evolving main scene. Failed searches remain; this is not learned online recovery.'}
     observer = None
     try:
+        if continuation_protocol_bytes is not None:
+            put(folder/'execution-protocol.json', continuation_protocol_bytes)
         for name in ('simulation_lab/table_teacher.py', 'simulation_lab/table_observation.py',
                      'simulation_lab/side_plate_grasp_candidates.py',
                      'simulation_lab/glass_grasp_candidates.py',
@@ -259,7 +315,8 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
         seen_arrangements = {arrangement_key(data)}
         orientation_relays = {name: 0 for name in OBJECTS}
         state_spec = mujoco.mjtState.mjSTATE_INTEGRATION
-        for action_index in range(maximum_actions):
+        while len(report['actions']) < maximum_actions:
+            action_index = len(report['actions'])
             selected = None
             # Source IK is independent of the proposed destination. Reuse only
             # within this unchanged main scene; discard after every real action.
@@ -296,6 +353,7 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
                                   action_index=action_index)
                     report['physical_lookahead'].append(result)
                     if result['demonstration_eligible']:
+                        following = None
                         if role == 'relay_or_clearance':
                             if arrangement_key(trial) in seen_arrangements:
                                 result['workflow_selection'] = 'Passing demonstration retained; repeated arrangement refused.'
@@ -323,38 +381,57 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
                             if not continuation.active and not clearance_progress and not orientation_change['eligible']:
                                 result['workflow_selection'] = 'Valid buffer demonstration retained, but final regrasp/transfer is unsolved.'
                                 break
+                            if (verify_relay_continuation and continuation.active
+                                    and not clearance_progress and not orientation_change['eligible']):
+                                if action_index+2 > maximum_actions:
+                                    result['workflow_selection'] = 'Passing buffer retained; insufficient accepted-action budget to verify and commit both legs.'
+                                    break
+                                following = probe_final_transfer(
+                                    model, trial, layout, trial_targets, name, attempt_path,
+                                    folder, observer, report, action_index+1, lookahead_attempts)
+                                result['final_transfer_physically_verified'] = following is not None
+                                if following is None:
+                                    result['workflow_selection'] = 'Passing buffer retained; geometric final transfer failed the bounded physical continuation search.'
+                                    break
                             if clearance_progress:
                                 result['workflow_selection'] = 'Physically verified clearance removes a destination obstruction without introducing another.'
+                            elif following is not None:
+                                result['workflow_selection'] = 'Both buffer and final-transfer motor traces pass; replay both in the continuous main scene.'
+                                result['verified_final_transfer_path'] = following[1].relative_to(folder).as_posix()
                             elif continuation.active:
                                 result['workflow_selection'] = 'Physically verified buffer has a geometric final-transfer plan; execution is still required.'
                             else:
                                 result['workflow_selection'] = 'Physically verified buffer improves task orientation by over 30 degrees within the two-relay budget.'
                                 result['orientation_relay_selected'] = True
-                        selected = result, attempt_path, trial_targets; break
+                        selected = [(result, attempt_path, trial_targets)]
+                        if following is not None:selected.append(following)
+                        break
                     excluded.append((task.side, task.chosen.name, task.chosen_roll))
                 if selected is not None:break
             if selected is None:
                 report['stop_reason'] = 'No current candidate action solved; remaining items are unsolved, not classified impossible.'
                 break
-            result, attempt_path, trial_targets = selected
-            with np.load(attempt_path/'states.npz') as archive:
-                values = {key: archive[key] for key in ('qpos', 'qvel', 'ctrl')}
-            # Main scene continuity: no resetting or assigning qpos/qvel here.
-            assert np.array_equal(data.qpos, values['qpos'][0])
-            assert np.array_equal(data.qvel, values['qvel'][0])
-            for i, ctrl in enumerate(values['ctrl']):
-                data.ctrl[:] = ctrl; mujoco.mj_step(model, data)
-                assert np.array_equal(data.qpos, values['qpos'][i+1]), 'Main-scene position replay diverged.'
-                assert np.array_equal(data.qvel, values['qvel'][i+1]), 'Main-scene velocity replay diverged.'
-            result['continuous_main_scene_replay_exact'] = True
-            seen_arrangements.add(arrangement_key(data))
-            if result.get('orientation_relay_selected'):orientation_relays[result['item']] += 1
-            targets[:] = trial_targets
-            report['actions'].append(result)
-            put(folder/f'accepted-action-{action_index:02d}.json', result)
-            if result['role'] == 'final_setting':remaining.remove(result['item'])
+            for result, attempt_path, trial_targets in selected:
+                with np.load(attempt_path/'states.npz') as archive:
+                    values = {key: archive[key] for key in ('qpos', 'qvel', 'ctrl')}
+                # Main scene continuity: no resetting or assigning qpos/qvel here.
+                assert np.array_equal(data.qpos, values['qpos'][0])
+                assert np.array_equal(data.qvel, values['qvel'][0])
+                for i, ctrl in enumerate(values['ctrl']):
+                    data.ctrl[:] = ctrl; mujoco.mj_step(model, data)
+                    assert np.array_equal(data.qpos, values['qpos'][i+1]), 'Main-scene position replay diverged.'
+                    assert np.array_equal(data.qvel, values['qvel'][i+1]), 'Main-scene velocity replay diverged.'
+                result['continuous_main_scene_replay_exact'] = True
+                seen_arrangements.add(arrangement_key(data))
+                if result.get('orientation_relay_selected'):orientation_relays[result['item']] += 1
+                targets[:] = trial_targets
+                report['actions'].append(result)
+                put(folder/f"accepted-action-{len(report['actions'])-1:02d}.json", result)
+                if result['role'] == 'final_setting':remaining.remove(result['item'])
             if only_item and (not include_item_buffers or result['role'] == 'final_setting'):break
             if not remaining:break
+        if remaining and len(report['actions']) >= maximum_actions:
+            report['stop_reason'] = 'Accepted-action budget exhausted; remaining items are unsolved, not classified impossible.'
         report['remaining'] = remaining
         report['final_geometry'] = assess(model, data)
         final_checks = {}
@@ -388,8 +465,11 @@ if __name__ == '__main__':
     parser.add_argument('--only-item', choices=tuple(OBJECTS))
     parser.add_argument('--include-item-buffers', action='store_true',
                         help='Allow temporary placements in an explicitly single-item joint-scene diagnostic.')
+    parser.add_argument('--verify-relay-continuation', action='store_true',
+                        help='Physically verify both legs before accepting a buffer justified only by a final-transfer plan.')
     parser.add_argument('--lookahead-attempts', type=int, default=6)
     parser.add_argument('--reset', choices=('joint', 'joint-direct-contact', 'task'), default='joint')
     args = parser.parse_args()
     if args.include_item_buffers and not args.only_item:parser.error('--include-item-buffers requires --only-item.')
-    run(args.output, args.seed, args.maximum_actions, args.only_item, args.lookahead_attempts, args.reset, args.include_item_buffers)
+    run(args.output, args.seed, args.maximum_actions, args.only_item, args.lookahead_attempts, args.reset, args.include_item_buffers,
+        args.verify_relay_continuation)

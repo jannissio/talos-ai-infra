@@ -1,0 +1,825 @@
+{
+  "schema": "talos_spatial_demonstration_coverage_v1",
+  "scope": "Completed physical primitive inventory. Repeated exposed scenes are not generalization or complete workflows.",
+  "inventory_sha256": "8372c1856168e2540cd8e367e00ba56bb680ac714a07e381300ddaaa443e9a28",
+  "runs_inspected": [
+    "whole-table-anchor-v1-bottle",
+    "whole-table-development-v12-seed4001",
+    "whole-table-development-v13-seed4001",
+    "whole-table-development-v14-seed4002",
+    "whole-table-development-v15-seed4002",
+    "whole-table-development-v16-seed4002",
+    "whole-table-development-v17-seed4001",
+    "whole-table-development-v18-seed4004",
+    "whole-table-development-v19-seed4002",
+    "whole-table-development-v20-seed4004",
+    "whole-table-development-v21-bottle4001",
+    "whole-table-development-v22-bottle4001",
+    "whole-table-development-v23-bottle4001",
+    "whole-table-development-v24-seed4004",
+    "whole-table-development-v25-seed4005",
+    "whole-table-development-v26-direct-contact"
+  ],
+  "sample_count": 36,
+  "workflow_origins": {
+    "accepted_continuous": 15,
+    "independent_lookahead": 21
+  },
+  "independent_scene_group_count": 4,
+  "training_readiness": false,
+  "training_readiness_reason": "No jointly randomized all-seven-object table has passed and successful coverage is incomplete.",
+  "items": {
+    "bottle": {
+      "sample_count": 3,
+      "origins": {
+        "accepted_continuous": 3
+      },
+      "roles": {
+        "isolated_diagnostic": 1,
+        "relay_or_clearance": 1,
+        "final_setting": 1
+      },
+      "source_families": {
+        "upright": 2,
+        "inverted": 1
+      },
+      "final_families": {
+        "upright": 3
+      },
+      "independent_scene_group_count": 2,
+      "source_position_bin_count_5mm": 3
+    },
+    "plate": {
+      "sample_count": 4,
+      "origins": {
+        "accepted_continuous": 4
+      },
+      "roles": {
+        "relay_or_clearance": 2,
+        "final_setting": 2
+      },
+      "source_families": {
+        "upright": 4
+      },
+      "final_families": {
+        "upright": 4
+      },
+      "independent_scene_group_count": 1,
+      "source_position_bin_count_5mm": 3
+    },
+    "spoon": {
+      "sample_count": 4,
+      "origins": {
+        "accepted_continuous": 1,
+        "independent_lookahead": 3
+      },
+      "roles": {
+        "relay_or_clearance": 4
+      },
+      "source_families": {
+        "inverted": 4
+      },
+      "final_families": {
+        "inverted": 4
+      },
+      "independent_scene_group_count": 1,
+      "source_position_bin_count_5mm": 1
+    },
+    "side_plate": {
+      "sample_count": 1,
+      "origins": {
+        "accepted_continuous": 1
+      },
+      "roles": {
+        "final_setting": 1
+      },
+      "source_families": {
+        "upright": 1
+      },
+      "final_families": {
+        "upright": 1
+      },
+      "independent_scene_group_count": 1,
+      "source_position_bin_count_5mm": 1
+    },
+    "mug": {
+      "sample_count": 9,
+      "origins": {
+        "accepted_continuous": 4,
+        "independent_lookahead": 5
+      },
+      "roles": {
+        "relay_or_clearance": 9
+      },
+      "source_families": {
+        "sideways_or_tilted": 9
+      },
+      "final_families": {
+        "sideways_or_tilted": 6,
+        "upright": 3
+      },
+      "independent_scene_group_count": 2,
+      "source_position_bin_count_5mm": 2
+    },
+    "glass": {
+      "sample_count": 6,
+      "origins": {
+        "accepted_continuous": 2,
+        "independent_lookahead": 4
+      },
+      "roles": {
+        "relay_or_clearance": 5,
+        "final_setting": 1
+      },
+      "source_families": {
+        "upright": 6
+      },
+      "final_families": {
+        "upright": 6
+      },
+      "independent_scene_group_count": 1,
+      "source_position_bin_count_5mm": 2
+    },
+    "fork": {
+      "sample_count": 9,
+      "origins": {
+        "independent_lookahead": 9
+      },
+      "roles": {
+        "relay_or_clearance": 9
+      },
+      "source_families": {
+        "inverted": 9
+      },
+      "final_families": {
+        "inverted": 9
+      },
+      "independent_scene_group_count": 1,
+      "source_position_bin_count_5mm": 1
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "570fc06745bc252f64b2",
+      "run": "whole-table-anchor-v1-bottle",
+      "episode": "lookahead-00-000-00-bottle",
+      "item": "bottle",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:30f5b66187012b2033c89188bf8eb25682901a76e3bf8f463ed803e719f8229f",
+      "source_files_sha256": {
+        "lookahead-00-000-00-bottle/action.json": "902f9e17e96f8e84acfb235a63b7317bb41db5e7faa1e43a043be90e5765ff72",
+        "lookahead-00-000-00-bottle/states.npz": "481e6e55455d675493f5d32f936dccf001f92beef53c74f3c54fc99b225a12dc",
+        "lookahead-00-000-00-bottle/observation-000-approach/observation.npz": "c37807686ede2f3c562d28a1a5ad21756a4b257d02da66e73f7ff21737416a55",
+        "lookahead-00-000-00-bottle/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-000-00-bottle/result.json": "5123ec8df92a0d441c2af00db6733071fd5263b9c1ae33a5dfb31308ae710304",
+        "reset-recipe.json": "30f5b66187012b2033c89188bf8eb25682901a76e3bf8f463ed803e719f8229f",
+        "report.json": "dfd98666d49989749ae856ba9f58823531a61119f19699b6282c9f4c2fabdf45"
+      }
+    },
+    {
+      "sample_id": "88d7813dd548e330015b",
+      "run": "whole-table-development-v12-seed4001",
+      "episode": "lookahead-00-004-00-plate",
+      "item": "plate",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+      "source_files_sha256": {
+        "lookahead-00-004-00-plate/action.json": "5f95e87d625fdbbe4bba1a13790e37ab67664a74d589e3337b53fb0db10d38a8",
+        "lookahead-00-004-00-plate/states.npz": "2af777014e98b1002df1e182421c34554c59f9168bc5e631a9fd6e5f7b8ad18f",
+        "lookahead-00-004-00-plate/observation-000-approach/observation.npz": "ed0544abc6115d3f1024ac50f722b508994912775334fbd52eba75e05bb356be",
+        "lookahead-00-004-00-plate/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-004-00-plate/result.json": "2e338250eb9fa104ba1fb22c7386c1a45a6cc1cc4cbc6b0f0781c0c10d8d4f62",
+        "reset-recipe.json": "5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+        "report.json": "0b9f8c8c214c9d835c701ea885f5be6e022964fbdb40b0c9f04e00c02e265f32"
+      }
+    },
+    {
+      "sample_id": "31991018d38ecaf405f0",
+      "run": "whole-table-development-v12-seed4001",
+      "episode": "lookahead-01-000-00-plate",
+      "item": "plate",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+      "source_files_sha256": {
+        "lookahead-01-000-00-plate/action.json": "9f3bf2c5f3ecbfbf20506913c1967fe54ff92da577494e8a8caec31432e133ba",
+        "lookahead-01-000-00-plate/states.npz": "9e3bf7b14440e3ea640a635db270b5aa6251980666f1594d0eb06947e16ae2d5",
+        "lookahead-01-000-00-plate/observation-000-approach/observation.npz": "a64281598a8e6c99cd6de1a0b1af42624fff4a7f38f1f3c6ffd247586deea9d4",
+        "lookahead-01-000-00-plate/observation-000-approach/metadata.json": "ed8adba311a52f2fd83b3a854db3ad9aace180086f069abbd4729f00d334e020",
+        "lookahead-01-000-00-plate/result.json": "8390e0310b0d37bf7c34b1dfc4694f88b094e65b69bde19e731c3430aa9d1aaf",
+        "reset-recipe.json": "5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+        "report.json": "0b9f8c8c214c9d835c701ea885f5be6e022964fbdb40b0c9f04e00c02e265f32"
+      }
+    },
+    {
+      "sample_id": "2755295e4e72184a6fa7",
+      "run": "whole-table-development-v15-seed4002",
+      "episode": "lookahead-00-015-02-spoon",
+      "item": "spoon",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-00-015-02-spoon/action.json": "b57d9bc0cf2f435999448573d60057d17a8e4414e303e6a9113639b7de5c18ae",
+        "lookahead-00-015-02-spoon/states.npz": "660c116fea1b45e95f843e92e69b08ccd7aa1864fd3159c6aedd0a37f21f34de",
+        "lookahead-00-015-02-spoon/observation-000-approach/observation.npz": "786919afa61d1c712b081bc81c9f4c7a38ed06eedd122d68738c70c35a50ad44",
+        "lookahead-00-015-02-spoon/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-015-02-spoon/result.json": "871996dfc97fdb8e959610767755c2fc0a1ab4798fa58bed34deace186f799ef",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "aed00ebd4fc293cb70fd2045ace4b0fd5cfb7b89cbff5e874566397de13e49c6"
+      }
+    },
+    {
+      "sample_id": "0f96007c2e903f63e57d",
+      "run": "whole-table-development-v17-seed4001",
+      "episode": "lookahead-00-001-00-side_plate",
+      "item": "side_plate",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+      "source_files_sha256": {
+        "lookahead-00-001-00-side_plate/action.json": "cbbeb19cc16d358a68878b618c52616e8caab20a047b2611555af4f019001f8f",
+        "lookahead-00-001-00-side_plate/states.npz": "1c82569853f07d41fdf4e5b7c7317533e73613daaf5c6fbdad30f3c20164aefc",
+        "lookahead-00-001-00-side_plate/observation-000-approach/observation.npz": "ed0544abc6115d3f1024ac50f722b508994912775334fbd52eba75e05bb356be",
+        "lookahead-00-001-00-side_plate/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-001-00-side_plate/result.json": "9cd20b90f1a2c3b3dde7e6ec1e51fd2fec61c875822d8e5f3973df3ad67d8d53",
+        "reset-recipe.json": "5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+        "report.json": "46882d1f5c429de76cb91fc6016babf5d49a998813aa51995107067b6fbf2a24"
+      }
+    },
+    {
+      "sample_id": "d56022124e3c24600a78",
+      "run": "whole-table-development-v17-seed4001",
+      "episode": "lookahead-01-004-00-plate",
+      "item": "plate",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+      "source_files_sha256": {
+        "lookahead-01-004-00-plate/action.json": "f6248ed925bfd10360eefa027dd308789d57e6b3dac6150acbf1ad6fdd234323",
+        "lookahead-01-004-00-plate/states.npz": "2739c397460a1198e75d65f314c7519fd1611d992c010b98ad3376afd703816b",
+        "lookahead-01-004-00-plate/observation-000-approach/observation.npz": "9a6955e0d903d72d219a2cd11d095a62f40053abe57654b47d2fa36b766620c1",
+        "lookahead-01-004-00-plate/observation-000-approach/metadata.json": "b327bdd07825e55758a8b9ceac1ee9fc490abc373c9adedbbf560f150960a8e3",
+        "lookahead-01-004-00-plate/result.json": "c44abadc27c8b6976e881b363fd8a2a3d54a48f2a8913b99d06146b8d901cd3e",
+        "reset-recipe.json": "5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+        "report.json": "46882d1f5c429de76cb91fc6016babf5d49a998813aa51995107067b6fbf2a24"
+      }
+    },
+    {
+      "sample_id": "dac001ea378d183ffe39",
+      "run": "whole-table-development-v17-seed4001",
+      "episode": "lookahead-02-000-01-plate",
+      "item": "plate",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+      "source_files_sha256": {
+        "lookahead-02-000-01-plate/action.json": "8d5a143a82964235f4ad184b8e0109ecde3049b76165fe5699eb3aec215b7b1d",
+        "lookahead-02-000-01-plate/states.npz": "0dfca9190cd70ab20aec0d6f7945a7f17883dd6a746a3d04b01f51e92599f02a",
+        "lookahead-02-000-01-plate/observation-000-approach/observation.npz": "19a0b8faed8c115003f1986d8368f43d79d255e9cdca730f0bb1a35d01c54e35",
+        "lookahead-02-000-01-plate/observation-000-approach/metadata.json": "d00271dbd9c5cc01fb1c8b6f77846e53c7a0606529b5806d020e945e4bf0741c",
+        "lookahead-02-000-01-plate/result.json": "683a2c1943826b105f1ee444ab097d1cb7c1136f21015768fcef70f7fbfabff9",
+        "reset-recipe.json": "5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+        "report.json": "46882d1f5c429de76cb91fc6016babf5d49a998813aa51995107067b6fbf2a24"
+      }
+    },
+    {
+      "sample_id": "77fa8c44d33bb7fc02fe",
+      "run": "whole-table-development-v18-seed4004",
+      "episode": "lookahead-00-068-01-mug",
+      "item": "mug",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-00-068-01-mug/action.json": "1b9bef4569f01db4e818202b868c208706655630354725bbee4844508ed6f723",
+        "lookahead-00-068-01-mug/states.npz": "fefac0340e77788cf931529bc339752b28fb7ae250b00d2b3b09ff201d960f3a",
+        "lookahead-00-068-01-mug/observation-000-approach/observation.npz": "caf63849330d07866dc7d14990bb325e0b74722ac4d902ac2cb3f050630f4582",
+        "lookahead-00-068-01-mug/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-068-01-mug/result.json": "29ab34bac3c72839a44d0111103460ac093c0415ed6441bf8c25e976b822196c",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "a0762500e2cde97c9409a7103b16cedc49b996f47abb26389724c00a55db43e9"
+      }
+    },
+    {
+      "sample_id": "5c024a59e49b25d1d4ae",
+      "run": "whole-table-development-v19-seed4002",
+      "episode": "lookahead-00-045-00-mug",
+      "item": "mug",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-00-045-00-mug/action.json": "51e1f81a1404d5093a407afc2645673ab3beb22b39ba935fc68f76b8594ffe62",
+        "lookahead-00-045-00-mug/states.npz": "5f95eff24622499981f411695a8d997aeaa86493246d80f3efc150a4f021d381",
+        "lookahead-00-045-00-mug/observation-000-approach/observation.npz": "786919afa61d1c712b081bc81c9f4c7a38ed06eedd122d68738c70c35a50ad44",
+        "lookahead-00-045-00-mug/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-045-00-mug/result.json": "1434ba587bbfc6cfea7d26758acc00c7a838083bb0f0fecd844a1a87af3bfecc",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "057f0db0f9ae3eb340bc0972135518bfb7dd592b02fa63638ef48e30a8be2291"
+      }
+    },
+    {
+      "sample_id": "7036bdb784f8e73ae4a9",
+      "run": "whole-table-development-v20-seed4004",
+      "episode": "lookahead-00-068-02-mug",
+      "item": "mug",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-00-068-02-mug/action.json": "b961a5955d0db94482eae9a24f4254388e2388643b873ac6c8b7dcae0a2dd612",
+        "lookahead-00-068-02-mug/states.npz": "1c1a4bc0d08f277cd0d7469b26081905f4695839173b20ac0e20539a39964861",
+        "lookahead-00-068-02-mug/observation-000-approach/observation.npz": "caf63849330d07866dc7d14990bb325e0b74722ac4d902ac2cb3f050630f4582",
+        "lookahead-00-068-02-mug/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-068-02-mug/result.json": "91eadc81f1f4d60d89cec0f8ce4ac8b58fec7fe13b3283b3cdad35efe7d73ade",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "989ea43e00c82c7d124d9b11b7050dc08c8ccf69a76cb622110a4d9ba407986b"
+      }
+    },
+    {
+      "sample_id": "8f47c65b4c342421b18b",
+      "run": "whole-table-development-v24-seed4004",
+      "episode": "lookahead-00-006-00-bottle",
+      "item": "bottle",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-00-006-00-bottle/action.json": "bb15a8aa8d9f0383cc1557830a1f795b08d274434d7c3091bc9e18239935820f",
+        "lookahead-00-006-00-bottle/states.npz": "22748096f82901676597adccd5f4dc638b1feea7eb03fa75ffd1fc1358e82d26",
+        "lookahead-00-006-00-bottle/observation-000-approach/observation.npz": "caf63849330d07866dc7d14990bb325e0b74722ac4d902ac2cb3f050630f4582",
+        "lookahead-00-006-00-bottle/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-006-00-bottle/result.json": "57bc8c15306d91565ddbb2a5ef34915a76092ed97705db665670a9a64c71837a",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "90aa38342017efd2c49dc82ddc8b023c3cadc8a167f967c6f979874ff1c5e6eb"
+      }
+    },
+    {
+      "sample_id": "865a695d8be5a4da9634",
+      "run": "whole-table-development-v24-seed4004",
+      "episode": "lookahead-01-001-00-bottle",
+      "item": "bottle",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-01-001-00-bottle/action.json": "779d16ebc83ad2248771a13a65bd7cfaa1c3fc7af95700f00d07390bd08dabe1",
+        "lookahead-01-001-00-bottle/states.npz": "7b53076ed10b29cb8a655f55169ceb418e105155cd82d654f3ebfedfbb603b78",
+        "lookahead-01-001-00-bottle/observation-000-approach/observation.npz": "ddf491631cffebb66fefa57e81ab2642b98d3bdc9d9e22f6375bff1df76edf1a",
+        "lookahead-01-001-00-bottle/observation-000-approach/metadata.json": "72a9018bafbd38af68aca984f1d209cdad15b1380c43fc8ce9c9ad45d0c43720",
+        "lookahead-01-001-00-bottle/result.json": "ea7227b4195883b7b135dc9ceee3b8159c8620bb4d658db1a53fb639865789c5",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "90aa38342017efd2c49dc82ddc8b023c3cadc8a167f967c6f979874ff1c5e6eb"
+      }
+    },
+    {
+      "sample_id": "a56ec0c43f6c653a7c68",
+      "run": "whole-table-development-v24-seed4004",
+      "episode": "lookahead-02-010-00-glass",
+      "item": "glass",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-02-010-00-glass/action.json": "35017a1ab1277d59d6403ff2b69dc4b1b79a2862112ce59a95b07abd09a42bc4",
+        "lookahead-02-010-00-glass/states.npz": "175997991a8bd96ac9c0d37bd6f70524e6bf4d120b9b437d47aee78fffbc8901",
+        "lookahead-02-010-00-glass/observation-000-approach/observation.npz": "973ad6d68f1c3032e1734dda9c9c49cab99aaab5fe4615e3df456c8a3679be93",
+        "lookahead-02-010-00-glass/observation-000-approach/metadata.json": "be37d08ba7d9d4aefcc750038a22f2bfcfe878916066eb5b77c560accbd1a3cc",
+        "lookahead-02-010-00-glass/result.json": "b9cb78b79ac06408ca8fd1812f12486443a043fbfe49609ee1bc21ed336264e0",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "90aa38342017efd2c49dc82ddc8b023c3cadc8a167f967c6f979874ff1c5e6eb"
+      }
+    },
+    {
+      "sample_id": "d9273fcd4b6bec03a726",
+      "run": "whole-table-development-v24-seed4004",
+      "episode": "lookahead-03-001-00-glass",
+      "item": "glass",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-03-001-00-glass/action.json": "aed154c6bb7d2f04e0908a899a6e80bcd34ffe189beff8b75249e780969268a8",
+        "lookahead-03-001-00-glass/states.npz": "21bfd131319154593875367fd5f40ca9971d7ed48344f2978396846ca68121a1",
+        "lookahead-03-001-00-glass/observation-000-approach/observation.npz": "fedb7b0697ccfe7d473bb97e63eeb7da5782121cee7432a35b59534876e3d4b9",
+        "lookahead-03-001-00-glass/observation-000-approach/metadata.json": "82f7ecf1bede64d0d28d183e7de26a1404d9a326a8592af2454e78d59329fcfe",
+        "lookahead-03-001-00-glass/result.json": "0e16752e4a59bbecd46976cace23275345d57adf362b82a5cc8bcdc28aceaef4",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "90aa38342017efd2c49dc82ddc8b023c3cadc8a167f967c6f979874ff1c5e6eb"
+      }
+    },
+    {
+      "sample_id": "374220d0086a5d840e37",
+      "run": "whole-table-development-v24-seed4004",
+      "episode": "lookahead-04-030-02-mug",
+      "item": "mug",
+      "workflow_origin": "accepted_continuous",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-04-030-02-mug/action.json": "b30f192f2523b3472c204ff50ce697c57028527bb8a22a0e59b5caff169352dc",
+        "lookahead-04-030-02-mug/states.npz": "cd11c6ea26640e637e3459dd651f55ab4e38cd8dc2e594fe3e3592fbb37c0bd8",
+        "lookahead-04-030-02-mug/observation-000-approach/observation.npz": "baf86b4ac6d0877825a9e7d088a367af61510e1ed34bce79d78aaa0d553040e4",
+        "lookahead-04-030-02-mug/observation-000-approach/metadata.json": "0057be37dd04c07124e4ef86fe4527d80f9aeac3fa5c6f15b54e786ce10f9bdf",
+        "lookahead-04-030-02-mug/result.json": "bd568ad74b14ff7143f9f2b3f1e325f9aa1c5089006f426e290db1bb3fcc6102",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "90aa38342017efd2c49dc82ddc8b023c3cadc8a167f967c6f979874ff1c5e6eb"
+      }
+    },
+    {
+      "sample_id": "7237c54a45fda8311635",
+      "run": "whole-table-development-v14-seed4002",
+      "episode": "lookahead-00-018-02-spoon",
+      "item": "spoon",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-00-018-02-spoon/action.json": "4abe4ed0eae083dda3de35dfc3cc849405542eec95a88408c10823aba5e1d28d",
+        "lookahead-00-018-02-spoon/states.npz": "a996cf7d4065074baaaf4cdca692e0435bd5e695e29699b97962db608537834a",
+        "lookahead-00-018-02-spoon/observation-000-approach/observation.npz": "786919afa61d1c712b081bc81c9f4c7a38ed06eedd122d68738c70c35a50ad44",
+        "lookahead-00-018-02-spoon/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-018-02-spoon/result.json": "b6967778a2e140f53ffb088cf3200932e6b4b5910a1286e085e0d64bc4e107e9",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "1cb27a3d90c990ee4770cb66afd167e8bb93a7963a44bb6219c5044148f6533a"
+      }
+    },
+    {
+      "sample_id": "ca3e255b0ce9e096cf9b",
+      "run": "whole-table-development-v14-seed4002",
+      "episode": "lookahead-00-019-02-spoon",
+      "item": "spoon",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-00-019-02-spoon/action.json": "f17535997267b2bdb1c3d6b9a664cb6ec52b457384d7c7550a739bbcc19b0215",
+        "lookahead-00-019-02-spoon/states.npz": "ce295897c501d9feab75923d34c50bc69ba88ce9dec465a245d99a9bb398210a",
+        "lookahead-00-019-02-spoon/observation-000-approach/observation.npz": "786919afa61d1c712b081bc81c9f4c7a38ed06eedd122d68738c70c35a50ad44",
+        "lookahead-00-019-02-spoon/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-019-02-spoon/result.json": "218da2cb009af13cbb1369410ddd4e2bd78302c43cec2155896a7a3c8fcc0008",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "1cb27a3d90c990ee4770cb66afd167e8bb93a7963a44bb6219c5044148f6533a"
+      }
+    },
+    {
+      "sample_id": "060372f8a38f66c73044",
+      "run": "whole-table-development-v14-seed4002",
+      "episode": "lookahead-00-020-02-spoon",
+      "item": "spoon",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-00-020-02-spoon/action.json": "c6cb6c2c690b5c9f5cc9110d6e5996a8857b79fa6eddacbbb6f5b7ebb30359e7",
+        "lookahead-00-020-02-spoon/states.npz": "4c41c24a1c53d5dd39c144d718a588ed3000d3685f0851a9980cb1b1a14596c6",
+        "lookahead-00-020-02-spoon/observation-000-approach/observation.npz": "786919afa61d1c712b081bc81c9f4c7a38ed06eedd122d68738c70c35a50ad44",
+        "lookahead-00-020-02-spoon/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-020-02-spoon/result.json": "a97d68a46cf5da80ff26569477af4c896488001f559de233415a385233b3aa32",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "1cb27a3d90c990ee4770cb66afd167e8bb93a7963a44bb6219c5044148f6533a"
+      }
+    },
+    {
+      "sample_id": "0055a444f46dc37c941a",
+      "run": "whole-table-development-v15-seed4002",
+      "episode": "lookahead-01-041-00-mug",
+      "item": "mug",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-01-041-00-mug/action.json": "a69c5a47766902c581809ab13031879cd550a2df509ba63fe4d876a1cf39ce87",
+        "lookahead-01-041-00-mug/states.npz": "69e9cf4f4ec0b52fa1480a9dfaa01b70d3224654a4919b9563a8b2e480a733be",
+        "lookahead-01-041-00-mug/observation-000-approach/observation.npz": "aa5d1fb80108e6cb365dd6b506bddda6196b649fdadb48cb87a4df4fbdfb8d4f",
+        "lookahead-01-041-00-mug/observation-000-approach/metadata.json": "bcf09fdff4d127872875fe3dbde5369860c572a8e6b0e66743a44b8645c00401",
+        "lookahead-01-041-00-mug/result.json": "827e124fe39d9f8868d3998a01f7a60ebf7f8c4f034915a5df65a33f0528127d",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "aed00ebd4fc293cb70fd2045ace4b0fd5cfb7b89cbff5e874566397de13e49c6"
+      }
+    },
+    {
+      "sample_id": "13d4dbad62ca898e0cb5",
+      "run": "whole-table-development-v15-seed4002",
+      "episode": "lookahead-01-046-00-mug",
+      "item": "mug",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-01-046-00-mug/action.json": "1d8cb752b8d3acea4cf92007499560da89ff8721d0228d91100d798ff20f754e",
+        "lookahead-01-046-00-mug/states.npz": "3012dcc088fa1ac4689c842661d640ca2ab37bbec31df0723b2578cb5170b9e9",
+        "lookahead-01-046-00-mug/observation-000-approach/observation.npz": "aa5d1fb80108e6cb365dd6b506bddda6196b649fdadb48cb87a4df4fbdfb8d4f",
+        "lookahead-01-046-00-mug/observation-000-approach/metadata.json": "bcf09fdff4d127872875fe3dbde5369860c572a8e6b0e66743a44b8645c00401",
+        "lookahead-01-046-00-mug/result.json": "3efbd5b3f89d644dde1a4928942009c39b31b6396a62a2290ecaab63393bb6ee",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "aed00ebd4fc293cb70fd2045ace4b0fd5cfb7b89cbff5e874566397de13e49c6"
+      }
+    },
+    {
+      "sample_id": "2c9e06c050bce3ea60be",
+      "run": "whole-table-development-v15-seed4002",
+      "episode": "lookahead-01-047-00-mug",
+      "item": "mug",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-01-047-00-mug/action.json": "8262c6bf0dc2704f38ca2b0ddd373947adcd3690d8a5c78cee2ef80a10ed32b4",
+        "lookahead-01-047-00-mug/states.npz": "053cf49cf5758558bd4ceb6bfa877335a89644ea406ba75bbb69690dbf68961d",
+        "lookahead-01-047-00-mug/observation-000-approach/observation.npz": "aa5d1fb80108e6cb365dd6b506bddda6196b649fdadb48cb87a4df4fbdfb8d4f",
+        "lookahead-01-047-00-mug/observation-000-approach/metadata.json": "bcf09fdff4d127872875fe3dbde5369860c572a8e6b0e66743a44b8645c00401",
+        "lookahead-01-047-00-mug/result.json": "c563fad7a9a4dc374a866d350b400b0810099e9cedf487bdfabad5da6a14786e",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "aed00ebd4fc293cb70fd2045ace4b0fd5cfb7b89cbff5e874566397de13e49c6"
+      }
+    },
+    {
+      "sample_id": "63d2d8dccfe10317cc63",
+      "run": "whole-table-development-v15-seed4002",
+      "episode": "lookahead-01-049-00-mug",
+      "item": "mug",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-01-049-00-mug/action.json": "5f18298968521fd70af087997f22be83d648f96d22fbe1df340ee74a4a0195ea",
+        "lookahead-01-049-00-mug/states.npz": "8b844cee663e36b0b7967c2715ef92c21723ab4c0cea123949d8c28252dff483",
+        "lookahead-01-049-00-mug/observation-000-approach/observation.npz": "aa5d1fb80108e6cb365dd6b506bddda6196b649fdadb48cb87a4df4fbdfb8d4f",
+        "lookahead-01-049-00-mug/observation-000-approach/metadata.json": "bcf09fdff4d127872875fe3dbde5369860c572a8e6b0e66743a44b8645c00401",
+        "lookahead-01-049-00-mug/result.json": "0168f3d88d14781fea254f6f6ff09762e6de9c271929aa9bbede11cfca35aeae",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "aed00ebd4fc293cb70fd2045ace4b0fd5cfb7b89cbff5e874566397de13e49c6"
+      }
+    },
+    {
+      "sample_id": "1aa6177a0c131ca8f44f",
+      "run": "whole-table-development-v15-seed4002",
+      "episode": "lookahead-01-055-00-mug",
+      "item": "mug",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+      "source_files_sha256": {
+        "lookahead-01-055-00-mug/action.json": "9022e71117abc3f834d445747a895e474b4387476edf2042f655bbdcd8b1f29b",
+        "lookahead-01-055-00-mug/states.npz": "453b034da7b3727d427d7bdb729fc2d2cd4a9a78ab1ab71a354f18835bd27fcc",
+        "lookahead-01-055-00-mug/observation-000-approach/observation.npz": "aa5d1fb80108e6cb365dd6b506bddda6196b649fdadb48cb87a4df4fbdfb8d4f",
+        "lookahead-01-055-00-mug/observation-000-approach/metadata.json": "bcf09fdff4d127872875fe3dbde5369860c572a8e6b0e66743a44b8645c00401",
+        "lookahead-01-055-00-mug/result.json": "0a838d431efd3da824a6972782fb47f548486e48799d11531cded8af23152897",
+        "reset-recipe.json": "0c530fbabb9071527e05a748b7a54f4bba400c87a3db9d239c89983efd586f93",
+        "report.json": "aed00ebd4fc293cb70fd2045ace4b0fd5cfb7b89cbff5e874566397de13e49c6"
+      }
+    },
+    {
+      "sample_id": "a85fb7740202ab09393f",
+      "run": "whole-table-development-v18-seed4004",
+      "episode": "lookahead-00-040-00-fork",
+      "item": "fork",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-00-040-00-fork/action.json": "8dae1df71434b7373b10a82167ba1c8a23b459ebbb48e0f8b47234a693aaeec8",
+        "lookahead-00-040-00-fork/states.npz": "1052fa03b8f3fcd10973b2bb6ead8a773a66eb8b2bf594cff24dd0634e7bceac",
+        "lookahead-00-040-00-fork/observation-000-approach/observation.npz": "caf63849330d07866dc7d14990bb325e0b74722ac4d902ac2cb3f050630f4582",
+        "lookahead-00-040-00-fork/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-040-00-fork/result.json": "9cca7762cd110867e10a2d805823e635aa49694454c5aa2f7869d123da1babcf",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "a0762500e2cde97c9409a7103b16cedc49b996f47abb26389724c00a55db43e9"
+      }
+    },
+    {
+      "sample_id": "d2cd7a89b8af89b64d63",
+      "run": "whole-table-development-v18-seed4004",
+      "episode": "lookahead-01-047-00-fork",
+      "item": "fork",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-01-047-00-fork/action.json": "2f357657019cc0b23127a0d4aa0f94fc7db946ec25807810dd7efe3db4782e85",
+        "lookahead-01-047-00-fork/states.npz": "2a53bcaec6ef36bee102cdd852381289b3898209e1c95bb5eec333a9f3d803f0",
+        "lookahead-01-047-00-fork/observation-000-approach/observation.npz": "9c0457bc77b5b556bc8c8212faf117d62d7d1579d1d10cf6e0273048baa6fdd5",
+        "lookahead-01-047-00-fork/observation-000-approach/metadata.json": "2e51ade64b2c23595c92c1c2e474204370787941abee1d5a8fd838bd9171bd95",
+        "lookahead-01-047-00-fork/result.json": "82412b6e6c057b956b83f01dbcc580ea42d216cc80f8dacc6620ec7d1bbf2f52",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "a0762500e2cde97c9409a7103b16cedc49b996f47abb26389724c00a55db43e9"
+      }
+    },
+    {
+      "sample_id": "115056d3ebb39ee04d69",
+      "run": "whole-table-development-v18-seed4004",
+      "episode": "lookahead-01-058-00-fork",
+      "item": "fork",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-01-058-00-fork/action.json": "18847a4860e593d13bdac2f14676604653fc355a366319f08b66a22da2d0d602",
+        "lookahead-01-058-00-fork/states.npz": "3252d55faa17f5cfa9af4912d42322cb8c9aec0643d0b54571950adcd0483db4",
+        "lookahead-01-058-00-fork/observation-000-approach/observation.npz": "9c0457bc77b5b556bc8c8212faf117d62d7d1579d1d10cf6e0273048baa6fdd5",
+        "lookahead-01-058-00-fork/observation-000-approach/metadata.json": "2e51ade64b2c23595c92c1c2e474204370787941abee1d5a8fd838bd9171bd95",
+        "lookahead-01-058-00-fork/result.json": "4f6b4778ad07295a36bc8abe1bc77bf7420a927f2923db5ed487a038a43c17ef",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "a0762500e2cde97c9409a7103b16cedc49b996f47abb26389724c00a55db43e9"
+      }
+    },
+    {
+      "sample_id": "dd5b0d904329bf7fbd5a",
+      "run": "whole-table-development-v20-seed4004",
+      "episode": "lookahead-00-027-00-glass",
+      "item": "glass",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-00-027-00-glass/action.json": "9df89ad326fee3060da068e623119e6f9cdc95d8650500d98e6680306fbfe8fc",
+        "lookahead-00-027-00-glass/states.npz": "464089e4dc07a16d243f3b117dc702947075b2d6208041a3e846c57454c4dc41",
+        "lookahead-00-027-00-glass/observation-000-approach/observation.npz": "caf63849330d07866dc7d14990bb325e0b74722ac4d902ac2cb3f050630f4582",
+        "lookahead-00-027-00-glass/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-027-00-glass/result.json": "042fc8c15c6c7c842e10d704e51627faf8561742c4f359e9e69cbc094f6f4fcc",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "989ea43e00c82c7d124d9b11b7050dc08c8ccf69a76cb622110a4d9ba407986b"
+      }
+    },
+    {
+      "sample_id": "16def3b1c638410f1833",
+      "run": "whole-table-development-v20-seed4004",
+      "episode": "lookahead-00-033-00-glass",
+      "item": "glass",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-00-033-00-glass/action.json": "4d140cdbd579974ea8214f026bee2caa5be65ecc95f70a05a5f1782e4885fc97",
+        "lookahead-00-033-00-glass/states.npz": "23e9944a71680bd1e55d41d6962ec6696f0dd7c6ab9bbef22086c16694423152",
+        "lookahead-00-033-00-glass/observation-000-approach/observation.npz": "caf63849330d07866dc7d14990bb325e0b74722ac4d902ac2cb3f050630f4582",
+        "lookahead-00-033-00-glass/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-033-00-glass/result.json": "43c9e3dc11c6ed406a802253d11a890b94ce82639352435a0966297c917d3ccc",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "989ea43e00c82c7d124d9b11b7050dc08c8ccf69a76cb622110a4d9ba407986b"
+      }
+    },
+    {
+      "sample_id": "93505ea39b45cabc2f02",
+      "run": "whole-table-development-v20-seed4004",
+      "episode": "lookahead-00-040-00-fork",
+      "item": "fork",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-00-040-00-fork/action.json": "542ae8bcaf7110fe5c5cd67a86f0bf8c2000bd9070d4bbcdef26db9c53326dc3",
+        "lookahead-00-040-00-fork/states.npz": "0a556d35d7faded0fe55ba58172b70d6d39e4f53a149230608ffd0a367db1cb9",
+        "lookahead-00-040-00-fork/observation-000-approach/observation.npz": "caf63849330d07866dc7d14990bb325e0b74722ac4d902ac2cb3f050630f4582",
+        "lookahead-00-040-00-fork/observation-000-approach/metadata.json": "acd5be128debbbf7a614bbb77eb6c39b55ff638294b02ac045c526b9086c8a72",
+        "lookahead-00-040-00-fork/result.json": "f798ab572d9d448392597ea4f2c43afb68654f1f982149510bfd4a2d12141dd9",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "989ea43e00c82c7d124d9b11b7050dc08c8ccf69a76cb622110a4d9ba407986b"
+      }
+    },
+    {
+      "sample_id": "f64d202c09b2a17936a1",
+      "run": "whole-table-development-v20-seed4004",
+      "episode": "lookahead-01-028-00-glass",
+      "item": "glass",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-01-028-00-glass/action.json": "c23b3de8ab4bf82cb7f4306f74ff79273f7bac72ed2a8329cd1b0ba70b51a2b5",
+        "lookahead-01-028-00-glass/states.npz": "aa3b7f874ef5a6f3d1fe4b6c494df1556750b39c9e228b048577c84d525b78a1",
+        "lookahead-01-028-00-glass/observation-000-approach/observation.npz": "276eb83fd22c7fac8871c09faf8f4242925b6ea1f808dcbbb14515d4d6ccc530",
+        "lookahead-01-028-00-glass/observation-000-approach/metadata.json": "2e51ade64b2c23595c92c1c2e474204370787941abee1d5a8fd838bd9171bd95",
+        "lookahead-01-028-00-glass/result.json": "4779024b4cc85df095865994601eca319a9c6c57fdf7d1243658a22fead0d00a",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "989ea43e00c82c7d124d9b11b7050dc08c8ccf69a76cb622110a4d9ba407986b"
+      }
+    },
+    {
+      "sample_id": "359bb17231771e83f386",
+      "run": "whole-table-development-v20-seed4004",
+      "episode": "lookahead-01-034-00-glass",
+      "item": "glass",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-01-034-00-glass/action.json": "fe0011126cdca30fbfef3f05c564ac42865c3fcdecd7ddbf472557ca9d5fa625",
+        "lookahead-01-034-00-glass/states.npz": "5d023a8570d8ef2d5e1670100de2d64c2623a3f72759e761d58bdb32cffa1ca4",
+        "lookahead-01-034-00-glass/observation-000-approach/observation.npz": "276eb83fd22c7fac8871c09faf8f4242925b6ea1f808dcbbb14515d4d6ccc530",
+        "lookahead-01-034-00-glass/observation-000-approach/metadata.json": "2e51ade64b2c23595c92c1c2e474204370787941abee1d5a8fd838bd9171bd95",
+        "lookahead-01-034-00-glass/result.json": "f0226a24b16a08f07461b93ea33d6d9a9f996161cc9e6415334211bdef2d3806",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "989ea43e00c82c7d124d9b11b7050dc08c8ccf69a76cb622110a4d9ba407986b"
+      }
+    },
+    {
+      "sample_id": "d27dd3aa4b5f8da9d724",
+      "run": "whole-table-development-v20-seed4004",
+      "episode": "lookahead-01-047-00-fork",
+      "item": "fork",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-01-047-00-fork/action.json": "0ce7537ec881b8a0a00573812700c6f4c2f16108b91bbca20afec82e1e1c0495",
+        "lookahead-01-047-00-fork/states.npz": "d62e4d7d50a295dfb8ac3c01d2a2121dcac9cf29694601a4994e6be99e1e7210",
+        "lookahead-01-047-00-fork/observation-000-approach/observation.npz": "276eb83fd22c7fac8871c09faf8f4242925b6ea1f808dcbbb14515d4d6ccc530",
+        "lookahead-01-047-00-fork/observation-000-approach/metadata.json": "2e51ade64b2c23595c92c1c2e474204370787941abee1d5a8fd838bd9171bd95",
+        "lookahead-01-047-00-fork/result.json": "3d8df9d8b0ad58d43ca094d678f5aabf39ff8a69641084b238199a5ea6da8d6c",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "989ea43e00c82c7d124d9b11b7050dc08c8ccf69a76cb622110a4d9ba407986b"
+      }
+    },
+    {
+      "sample_id": "495b8d9e10b680872a06",
+      "run": "whole-table-development-v20-seed4004",
+      "episode": "lookahead-01-058-00-fork",
+      "item": "fork",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-01-058-00-fork/action.json": "88fc02d2fe8f22d48cf4b82209de90b470d20683d6cade6c3f58324457b8c57e",
+        "lookahead-01-058-00-fork/states.npz": "6ee01da2de3b01273697adf78dffb2090f78478168db8d54a625f5d4b4c43eda",
+        "lookahead-01-058-00-fork/observation-000-approach/observation.npz": "276eb83fd22c7fac8871c09faf8f4242925b6ea1f808dcbbb14515d4d6ccc530",
+        "lookahead-01-058-00-fork/observation-000-approach/metadata.json": "2e51ade64b2c23595c92c1c2e474204370787941abee1d5a8fd838bd9171bd95",
+        "lookahead-01-058-00-fork/result.json": "5d60353001467a28516c74da574cd268775ef39b54db0be6eb0a8fe75c910da0",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "989ea43e00c82c7d124d9b11b7050dc08c8ccf69a76cb622110a4d9ba407986b"
+      }
+    },
+    {
+      "sample_id": "c58062ec264c34eb6635",
+      "run": "whole-table-development-v24-seed4004",
+      "episode": "lookahead-04-010-00-fork",
+      "item": "fork",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-04-010-00-fork/action.json": "60b4aa0959cd9aaa6753706d05dbb1f9c98d39d2b9a99f2c1dfb3f815e5e4fd6",
+        "lookahead-04-010-00-fork/states.npz": "84ee194697e38231bc208cb55df0f4ea57833efdbe7df19f95019930e00a1e9a",
+        "lookahead-04-010-00-fork/observation-000-approach/observation.npz": "baf86b4ac6d0877825a9e7d088a367af61510e1ed34bce79d78aaa0d553040e4",
+        "lookahead-04-010-00-fork/observation-000-approach/metadata.json": "0057be37dd04c07124e4ef86fe4527d80f9aeac3fa5c6f15b54e786ce10f9bdf",
+        "lookahead-04-010-00-fork/result.json": "094c72b91a40a208093428b6e7a6ab6f34ab3fe3edeb55961ec870155dbd0328",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "90aa38342017efd2c49dc82ddc8b023c3cadc8a167f967c6f979874ff1c5e6eb"
+      }
+    },
+    {
+      "sample_id": "a256277402b310a06b0a",
+      "run": "whole-table-development-v24-seed4004",
+      "episode": "lookahead-05-016-00-fork",
+      "item": "fork",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-05-016-00-fork/action.json": "2557dd040f4fceac1bb8b4ce7e36ed4b16213dda44409320e2a3e132ea8fbbd6",
+        "lookahead-05-016-00-fork/states.npz": "c819176dda71f615e30ef0741bebf64cd72b1db93af14f6ac1b330ed78321566",
+        "lookahead-05-016-00-fork/observation-000-approach/observation.npz": "aa2e3e1331eddaec4fde064559cb69504abe94160544bb2d25acb3b121f162fe",
+        "lookahead-05-016-00-fork/observation-000-approach/metadata.json": "95c699117f2bd1ce89c26e8b9ab0a56de22776877ad2e5601f35437dd12504e4",
+        "lookahead-05-016-00-fork/result.json": "4cdff55ccef31be48464032e4de313647f497ef8dd083b015c7d40126d5514be",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "90aa38342017efd2c49dc82ddc8b023c3cadc8a167f967c6f979874ff1c5e6eb"
+      }
+    },
+    {
+      "sample_id": "a046e4b0e5fb89db5e06",
+      "run": "whole-table-development-v24-seed4004",
+      "episode": "lookahead-05-027-00-fork",
+      "item": "fork",
+      "workflow_origin": "independent_lookahead",
+      "dependency_group": "reset_recipe_sha256:23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+      "source_files_sha256": {
+        "lookahead-05-027-00-fork/action.json": "fd603f53fd7e237e7719b5a2f3fb17b43380b4d24c435f5edb3a59cfea32f45e",
+        "lookahead-05-027-00-fork/states.npz": "cf131a2a51ca6460cfd19c88c9fc74d83b96e3bdd34a646d621aeefe2d5ef4d3",
+        "lookahead-05-027-00-fork/observation-000-approach/observation.npz": "aa2e3e1331eddaec4fde064559cb69504abe94160544bb2d25acb3b121f162fe",
+        "lookahead-05-027-00-fork/observation-000-approach/metadata.json": "95c699117f2bd1ce89c26e8b9ab0a56de22776877ad2e5601f35437dd12504e4",
+        "lookahead-05-027-00-fork/result.json": "22b60807c268dfc819a3500c9eff84cefc8f386d077a01aa5a5c8733de24b099",
+        "reset-recipe.json": "23fd1f483fba752e936358454cb62d77ca08a0d9c7caeb6b2052e115c03c53e2",
+        "report.json": "90aa38342017efd2c49dc82ddc8b023c3cadc8a167f967c6f979874ff1c5e6eb"
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "run": "whole-table-development-v25-seed4005",
+      "episode": null,
+      "reason": "explicitly_excluded_as_unfinished_at_inventory_cutoff"
+    },
+    {
+      "run": "whole-table-development-v26-direct-contact",
+      "episode": null,
+      "reason": "explicitly_excluded_as_unfinished_at_inventory_cutoff"
+    },
+    {
+      "run": "whole-table-development-v13-seed4001",
+      "episode": "lookahead-00-004-00-plate",
+      "reason": "duplicate_state_control_example",
+      "duplicate_of": "88d7813dd548e330015b"
+    },
+    {
+      "run": "whole-table-development-v13-seed4001",
+      "episode": "lookahead-01-000-00-plate",
+      "reason": "duplicate_state_control_example",
+      "duplicate_of": "31991018d38ecaf405f0"
+    },
+    {
+      "run": "whole-table-development-v16-seed4002",
+      "episode": "lookahead-00-015-02-spoon",
+      "reason": "duplicate_state_control_example",
+      "duplicate_of": "2755295e4e72184a6fa7"
+    },
+    {
+      "run": "whole-table-development-v14-seed4002",
+      "episode": "lookahead-00-008-02-spoon",
+      "reason": "independent_lookahead_duplicates_accepted_action_label",
+      "duplicate_of": "2755295e4e72184a6fa7"
+    },
+    {
+      "run": "whole-table-development-v16-seed4002",
+      "episode": "lookahead-01-046-00-mug",
+      "reason": "duplicate_state_control_example",
+      "duplicate_of": "13d4dbad62ca898e0cb5"
+    },
+    {
+      "run": "whole-table-development-v16-seed4002",
+      "episode": "lookahead-01-055-00-mug",
+      "reason": "duplicate_state_control_example",
+      "duplicate_of": "1aa6177a0c131ca8f44f"
+    }
+  ],
+  "position_bin_interpretation": "A 5 mm XYZ bin is a descriptive coarse source-position count, not independent coverage, an orientation bin or a dataset selection rule.",
+  "raw_inputs": "Original calibrated RGB-D, motor/state arrays, full keyframes and inventory remain in the preserved local run folders."
+}

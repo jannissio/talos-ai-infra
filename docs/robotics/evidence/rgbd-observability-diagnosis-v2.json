@@ -1,0 +1,49 @@
+{
+  "schema": "talos.rgbd-observability-diagnosis.v2",
+  "scope": "Exposed single-scene camera-input architecture diagnosis. This is not training, control, generalization, or a seven-item rigid-pose result.",
+  "scene": "whole-table development V24 seed 2026114004 initial observation",
+  "inference_boundary": "Saved calibrated RGB and metric depth plus static mug geometry and appearance only. Body poses, renderer segmentation IDs, and privileged labels are unavailable until the estimate is frozen.",
+  "prior_result": {
+    "report": "docs/robotics/evidence/rgbd-observability-diagnosis-v1.json",
+    "interpretation": "The 0.501 mm result in v1 is the better truth-scored endpoint of two unresolved hypotheses; it was never a uniquely inferred body origin."
+  },
+  "new_full_pose_result": {
+    "views": 3,
+    "image_shape": [
+      480,
+      640
+    ],
+    "axis_direction_method": "Compare the two cylinder-axis signs using camera-facing end regions: a solid base supports interior end-disk returns, while an open lip should not.",
+    "axis_direction_margin_points": 140,
+    "selected_axis_sign": -1,
+    "handle_roll_method": "Use teal surface returns more than 4 mm outside the known 25 mm vessel radius to estimate the handle direction, then compare both axial-roll signs by point-direction consistency.",
+    "handle_outlier_points": 263,
+    "handle_direction_concentration": 0.9995511275250711,
+    "handle_roll_score_margin": 1.998935759011796,
+    "status_before_truth": "resolved_static_geometry_pose_hypothesis",
+    "body_origin_error_mm_after_truth": 0.5014990555638831,
+    "full_rotation_error_deg_after_truth": 4.000393172196096,
+    "position_gate_mm": 15.0,
+    "rotation_gate_deg": 10.0,
+    "position_gate_passed": true,
+    "rotation_gate_passed": true,
+    "full_rigid_mug_pose_recovered_on_this_exposed_scene": true
+  },
+  "provenance_sha256": {
+    "prior-report-v1.json": "20a7b8e0e744d9dac80d931fe5870dc52bc716657f7523e3d695d2c0ba568a3b",
+    "raw-rgbd-mug-registration-v1/estimate-before-truth.json": "6b776030ce13169c1a8c82295067585a99f89e85bbc0c7814ffdd70ed20713e9",
+    "raw-rgbd-mug-full-pose-v1/estimate-before-truth.json": "2da3adf816898d69648b521ffb715375ab5ad52a11ab51efc1a599d5ab33e982",
+    "raw-rgbd-mug-full-pose-v1/score-after-truth.json": "4f81fb5d4dca49f26b82d6fd880d828e0866ef2b9c7136faf7b2fa504a0a6c85",
+    "simulation_lab/raw_rgbd_mug_full_pose.py": "95af3e4cad4c857b94ca66e468f112c0d4e75e3d2c479e265c390d08046d778c",
+    "scripts/evaluate_raw_rgbd_mug_full_pose.py": "79ef7a787522513c55789ac6960e19b28540698476beaca10f91c5cc832650bd",
+    "docs/robotics/experiments/raw-rgbd-mug-full-pose-v1.json": "01e6af117317891f8f41e25ab5cdd7b603d6f3e5adbac9d534d8bb25e72c14c1"
+  },
+  "limitations": [
+    "All thresholds and iterations were exposed on this single saved scene.",
+    "The base/lip score relies on view-dependent visibility and the known static mug geometry; it has not been tested under occlusion or different appearance.",
+    "The handle roll estimate assumes the known handle lies along the mug body's positive local X direction.",
+    "This result covers one sideways mug only and is not a policy, action, or grasp-success result.",
+    "The earlier heightmap attempt still recovers only five partial item poses and refuses both plates.",
+    "No complete randomized seven-item camera-driven table has passed."
+  ]
+}

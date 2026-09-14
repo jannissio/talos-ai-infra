@@ -1,0 +1,608 @@
+{
+  "scope": "Exposed V26 seed2026122001 sideways-glass three-leg regrasp dependency; read-only geometry after actual recorded release/park states.",
+  "status": "Unsolved in the declared bounded search; no impossibility certificate.",
+  "experiment": "Three passing first buffers, four existing common upright buffer candidates from each actual post-release state. Check horizontal final-regrasp geometry first, then unchanged common source/transfer planner.",
+  "candidate_count": 12,
+  "hypothetical_final_regrasp_checks_passed": 4,
+  "checked_sideways_to_upright_plans": 0,
+  "source_arm_grasp_roll_records": 816,
+  "new_physical_alternatives": 0,
+  "new_physics_steps": 0,
+  "independently_replayed_new_continuous_prefix": false,
+  "prefix_note": "No new motor prefix replay was justified after geometry found no continuation. Original immutable controls/states and their existing exact-replay verification are retained by hash; the passing glass lookaheads were not accepted into the original main scene.",
+  "source_prefixes": [
+    {
+      "item": "bottle",
+      "path": ".run/whole-table-development-v26-direct-contact/lookahead-00-001-00-bottle",
+      "states_sha256": "07fe038fc0d5b636e85609b4bcff7bfb980afde383a2ca7a500b26c382a589d5",
+      "action_sha256": "ed82368000a632917ec15906f66e52b4bfa170508a0b21106f03411c9ffe0da9",
+      "frames": 9142,
+      "original_independent_replay_exact": true,
+      "originally_accepted_in_main_scene": true,
+      "maximum_external_penetration_mm": 0.46768280980164806,
+      "hold_verified_s": 1.804999999999641
+    },
+    {
+      "item": "glass",
+      "path": ".run/whole-table-development-v26-direct-contact/lookahead-01-023-02-glass",
+      "states_sha256": "627c9a9d366341435adf544fa395abf7a25cd73d8f5a7a982f469bf96ee535f8",
+      "action_sha256": "80101a6bb3574672fda2167a10732063b212de174371d92cabe6c06073f332ec",
+      "frames": 8686,
+      "original_independent_replay_exact": true,
+      "originally_accepted_in_main_scene": false,
+      "maximum_external_penetration_mm": 0.4576111122410128,
+      "hold_verified_s": 1.8049999999983584
+    },
+    {
+      "item": "glass",
+      "path": ".run/whole-table-development-v26-direct-contact/lookahead-01-025-01-glass",
+      "states_sha256": "2bc731ff1791a771b726dd86d5c80fd80beb89b2a579088ff7627b6518398182",
+      "action_sha256": "f8215122bd3633110d5872c4dd52316d06d42a7fbaace9d532b987af0cb86a0c",
+      "frames": 8593,
+      "original_independent_replay_exact": true,
+      "originally_accepted_in_main_scene": false,
+      "maximum_external_penetration_mm": 0.4576111122410128,
+      "hold_verified_s": 1.8049999999983584
+    },
+    {
+      "item": "glass",
+      "path": ".run/whole-table-development-v26-direct-contact/lookahead-01-032-01-glass",
+      "states_sha256": "a9a93a15bf9378d7fd0298e9419504f250fd298737e414c19bf2cb4dfc917227",
+      "action_sha256": "946fede2504b5f90dee039509deb7cafef6620f3b5d83a044390fd6717f4d7af",
+      "frames": 7906,
+      "original_independent_replay_exact": true,
+      "originally_accepted_in_main_scene": false,
+      "maximum_external_penetration_mm": 0.4576111122410128,
+      "hold_verified_s": 1.8049999999983584
+    }
+  ],
+  "source_hashes": {
+    "simulation_lab/table_teacher.py": "8340c96642edd249f0e795396fb0f93d5602e3ac21af98cfb59a9b7579972106",
+    "simulation_lab/table_buffers.py": "66af7cc8f6753110dfd3fc1c3c93c86f2d975067ef80c6814fedeca6a4e5ddbd",
+    "simulation_lab/autonomy.py": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+    "simulation_lab/dinner_autonomy.py": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+    "simulation_lab/dinner.py": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11",
+    "simulation_lab/scene.py": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+    "simulation_lab/random_dinner.py": "30bb153bb28e23f1e5b4fbf94a8f8c0a5a76d72921141e2604d07941204ba698",
+    "simulation_lab/side_plate_grasp_candidates.py": "7f6af355a40e76ab84261636fde273c006e6baf45943d91a6767f765f979043e",
+    "simulation_lab/glass_grasp_candidates.py": "c91103d53f515b3beac83e6b3fcb329b5b73d23ba97b0757dcb4d53772c9dd34",
+    "simulation_lab/horizontal_glass_grasp_candidates.py": "030accdfc1d41714cf83722676f94e4bbf84325e9499c2f80d3a7c7234358ca4",
+    "simulation_lab/table_observation.py": "456b9896641fa12bc4b90ac625ffadb1fd0f14a48776fc95f7d5baef7de651c5",
+    "simulation_lab/direct_contact_dinner.py": "3d13f93227e792c1a2046635834d43ae9c105f2e7b75280c8bc44e079cf6a28c",
+    "simulation_lab/contact_reach.py": "1be3bda7ed22b180f6889ee27441a8a804f6a0a5e78b15cfb5b0436c187f0f96",
+    "scripts/develop_whole_table.py": "361f4d9adc4cada21d9c11de5b6e4d02b23248c51488f992e8df3e34bd258317",
+    "scripts/develop_glass_depth_two.py": "19f33ee159ef460f531ad5001837a4b7e338f04b5416f11d86ea5c0e5e73d54f",
+    ".run/glass-depth-two-geometry-v1/report.json": "4584f0a581c81b2b6d339a3cf9a4ebcd148c4d3a43d2823df0f0df244272815b",
+    ".run/glass-depth-two-geometry-v1/scene.xml": "a94dfdc130b8751a67b18d7c47837a58f7ca1cce5f3d6b54cd90cd7fc17dc68e",
+    ".run/glass-depth-two-geometry-v1/protocol.json": "15d95cd366694a601e070549d9b46f971dfa6efb9eb2ec70a4f9f8a2d94ab7cd",
+    "scripts/export_glass_depth_two_evidence.py": "6283cedcc3404d54e9b489e27f991bc6acc63ee523fa069f8d7b53b8f2b52e46"
+  },
+  "rows": [
+    {
+      "buffer": "lookahead-01-023-02-glass",
+      "buffer_index": 0,
+      "source_states_sha256": "627c9a9d366341435adf544fa395abf7a25cd73d8f5a7a982f469bf96ee535f8",
+      "option_index": 0,
+      "target": [
+        0.014250000148168018,
+        0.1742500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "error": "Horizontal regrasp geometry unsolved: Gripper position/orientation tolerances not solved within joint limits.",
+      "source_search_records": 0,
+      "source_search_failure_categories": {},
+      "source_contact_candidates_without_upright_transfer": []
+    },
+    {
+      "buffer": "lookahead-01-023-02-glass",
+      "buffer_index": 0,
+      "source_states_sha256": "627c9a9d366341435adf544fa395abf7a25cd73d8f5a7a982f469bf96ee535f8",
+      "option_index": 1,
+      "target": [
+        0.07925000014816802,
+        0.1742500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_regrasp_geometry": {
+        "arm": "right",
+        "candidate": "horizontal_glass_diameter_0.067",
+        "source_q": [
+          -0.47348865106648963,
+          1.1604387646424321,
+          -0.4265161133977992,
+          -0.7314056803558163,
+          -1.5227381834647222
+        ],
+        "approach_samples": 47,
+        "descent_samples": 22,
+        "meaning": "Hypothetical upright-settled source and destination geometry; physical continuation required."
+      },
+      "source_planned": false,
+      "message": "No candidate grasp/approach solved for glass; 204 attempts retained.",
+      "source_search_records": 204,
+      "source_search_failure_categories": {
+        "Gripper position/orientation tolerances not solved within joint limits.": 195,
+        "The planned path has insufficient clearance": 6,
+        "Grasp has no solved destination approach": 3
+      },
+      "source_contact_candidates_without_upright_transfer": [
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": -2.4,
+          "source_pose_cache_hit": false,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            -2.4
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+        },
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": 0.0,
+          "source_pose_cache_hit": false,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            0.0
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+        },
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": 2.4,
+          "source_pose_cache_hit": false,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            2.4
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+        }
+      ]
+    },
+    {
+      "buffer": "lookahead-01-023-02-glass",
+      "buffer_index": 0,
+      "source_states_sha256": "627c9a9d366341435adf544fa395abf7a25cd73d8f5a7a982f469bf96ee535f8",
+      "option_index": 2,
+      "target": [
+        -0.050749999851831984,
+        0.1742500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "error": "Horizontal regrasp geometry unsolved: Gripper position/orientation tolerances not solved within joint limits.; Grasp has no solved destination approach: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+      "source_search_records": 0,
+      "source_search_failure_categories": {},
+      "source_contact_candidates_without_upright_transfer": []
+    },
+    {
+      "buffer": "lookahead-01-023-02-glass",
+      "buffer_index": 0,
+      "source_states_sha256": "627c9a9d366341435adf544fa395abf7a25cd73d8f5a7a982f469bf96ee535f8",
+      "option_index": 3,
+      "target": [
+        0.014250000148168018,
+        0.2392500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "error": "Horizontal regrasp geometry unsolved: Gripper position/orientation tolerances not solved within joint limits.",
+      "source_search_records": 0,
+      "source_search_failure_categories": {},
+      "source_contact_candidates_without_upright_transfer": []
+    },
+    {
+      "buffer": "lookahead-01-025-01-glass",
+      "buffer_index": 1,
+      "source_states_sha256": "2bc731ff1791a771b726dd86d5c80fd80beb89b2a579088ff7627b6518398182",
+      "option_index": 0,
+      "target": [
+        0.014250000148168018,
+        0.10925000006262331,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_regrasp_geometry": {
+        "arm": "right",
+        "candidate": "horizontal_glass_diameter_0.067",
+        "source_q": [
+          -0.7012978427528985,
+          1.0039491087174655,
+          -0.0849960755956161,
+          -0.9164355727005652,
+          -1.522738430967908
+        ],
+        "approach_samples": 45,
+        "descent_samples": 22,
+        "meaning": "Hypothetical upright-settled source and destination geometry; physical continuation required."
+      },
+      "source_planned": false,
+      "message": "No candidate grasp/approach solved for glass; 204 attempts retained.",
+      "source_search_records": 204,
+      "source_search_failure_categories": {
+        "Gripper position/orientation tolerances not solved within joint limits.": 195,
+        "The planned path has insufficient clearance": 6,
+        "Grasp has no solved destination approach": 3
+      },
+      "source_contact_candidates_without_upright_transfer": [
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": -2.4,
+          "source_pose_cache_hit": false,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            -2.4
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; Gripper position/orientation tolerances not solved within joint limits.; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; Gripper position/orientation tolerances not solved within joint limits."
+        },
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": 0.0,
+          "source_pose_cache_hit": false,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            0.0
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: Gripper position/orientation tolerances not solved within joint limits.; The planned path has insufficient clearance: table / right_camera_box2; Gripper position/orientation tolerances not solved within joint limits.; The planned path has insufficient clearance: table / right_camera_box2; Gripper position/orientation tolerances not solved within joint limits.; The planned path has insufficient clearance: table / right_camera_box2; Gripper position/orientation tolerances not solved within joint limits.; The planned path has insufficient clearance: table / right_camera_box2"
+        },
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": 2.4,
+          "source_pose_cache_hit": false,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            2.4
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; Gripper position/orientation tolerances not solved within joint limits.; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; Gripper position/orientation tolerances not solved within joint limits."
+        }
+      ]
+    },
+    {
+      "buffer": "lookahead-01-025-01-glass",
+      "buffer_index": 1,
+      "source_states_sha256": "2bc731ff1791a771b726dd86d5c80fd80beb89b2a579088ff7627b6518398182",
+      "option_index": 1,
+      "target": [
+        0.014250000148168018,
+        0.1742500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "error": "Horizontal regrasp geometry unsolved: Gripper position/orientation tolerances not solved within joint limits.",
+      "source_search_records": 0,
+      "source_search_failure_categories": {},
+      "source_contact_candidates_without_upright_transfer": []
+    },
+    {
+      "buffer": "lookahead-01-025-01-glass",
+      "buffer_index": 1,
+      "source_states_sha256": "2bc731ff1791a771b726dd86d5c80fd80beb89b2a579088ff7627b6518398182",
+      "option_index": 2,
+      "target": [
+        0.07925000014816802,
+        0.2392500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "error": "Horizontal regrasp geometry unsolved: Gripper position/orientation tolerances not solved within joint limits.",
+      "source_search_records": 0,
+      "source_search_failure_categories": {},
+      "source_contact_candidates_without_upright_transfer": []
+    },
+    {
+      "buffer": "lookahead-01-025-01-glass",
+      "buffer_index": 1,
+      "source_states_sha256": "2bc731ff1791a771b726dd86d5c80fd80beb89b2a579088ff7627b6518398182",
+      "option_index": 3,
+      "target": [
+        0.014250000148168018,
+        0.2392500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "error": "Horizontal regrasp geometry unsolved: Gripper position/orientation tolerances not solved within joint limits.",
+      "source_search_records": 0,
+      "source_search_failure_categories": {},
+      "source_contact_candidates_without_upright_transfer": []
+    },
+    {
+      "buffer": "lookahead-01-032-01-glass",
+      "buffer_index": 2,
+      "source_states_sha256": "a9a93a15bf9378d7fd0298e9419504f250fd298737e414c19bf2cb4dfc917227",
+      "option_index": 0,
+      "target": [
+        0.07925000014816802,
+        0.1742500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_regrasp_geometry": {
+        "arm": "right",
+        "candidate": "horizontal_glass_diameter_0.067",
+        "source_q": [
+          -0.47348865106648963,
+          1.1604387646424321,
+          -0.4265161133977992,
+          -0.7314056803558163,
+          -1.5227381834647222
+        ],
+        "approach_samples": 47,
+        "descent_samples": 22,
+        "meaning": "Hypothetical upright-settled source and destination geometry; physical continuation required."
+      },
+      "source_planned": false,
+      "message": "No candidate grasp/approach solved for glass; 204 attempts retained.",
+      "source_search_records": 204,
+      "source_search_failure_categories": {
+        "Gripper position/orientation tolerances not solved within joint limits.": 195,
+        "The planned path has insufficient clearance": 6,
+        "Grasp has no solved destination approach": 3
+      },
+      "source_contact_candidates_without_upright_transfer": [
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": -2.4,
+          "source_pose_cache_hit": false,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            -2.4
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+        },
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": 0.0,
+          "source_pose_cache_hit": false,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            0.0
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+        },
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": 2.4,
+          "source_pose_cache_hit": false,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            2.4
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+        }
+      ]
+    },
+    {
+      "buffer": "lookahead-01-032-01-glass",
+      "buffer_index": 2,
+      "source_states_sha256": "a9a93a15bf9378d7fd0298e9419504f250fd298737e414c19bf2cb4dfc917227",
+      "option_index": 1,
+      "target": [
+        -0.050749999851831984,
+        0.1742500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "error": "Horizontal regrasp geometry unsolved: Gripper position/orientation tolerances not solved within joint limits.; Grasp has no solved destination approach: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+      "source_search_records": 0,
+      "source_search_failure_categories": {},
+      "source_contact_candidates_without_upright_transfer": []
+    },
+    {
+      "buffer": "lookahead-01-032-01-glass",
+      "buffer_index": 2,
+      "source_states_sha256": "a9a93a15bf9378d7fd0298e9419504f250fd298737e414c19bf2cb4dfc917227",
+      "option_index": 2,
+      "target": [
+        0.014250000148168018,
+        0.2392500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "error": "Horizontal regrasp geometry unsolved: Gripper position/orientation tolerances not solved within joint limits.",
+      "source_search_records": 0,
+      "source_search_failure_categories": {},
+      "source_contact_candidates_without_upright_transfer": []
+    },
+    {
+      "buffer": "lookahead-01-032-01-glass",
+      "buffer_index": 2,
+      "source_states_sha256": "a9a93a15bf9378d7fd0298e9419504f250fd298737e414c19bf2cb4dfc917227",
+      "option_index": 3,
+      "target": [
+        0.14425000014816797,
+        0.1742500000626233,
+        0.76
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_regrasp_geometry": {
+        "arm": "right",
+        "candidate": "horizontal_glass_diameter_0.067",
+        "source_q": [
+          -0.3220886288273489,
+          1.0004083919039646,
+          -0.07691298997948451,
+          -0.9209784763645961,
+          -1.5227381771758628
+        ],
+        "approach_samples": 45,
+        "descent_samples": 22,
+        "meaning": "Hypothetical upright-settled source and destination geometry; physical continuation required."
+      },
+      "source_planned": false,
+      "message": "No candidate grasp/approach solved for glass; 204 attempts retained.",
+      "source_search_records": 204,
+      "source_search_failure_categories": {
+        "Gripper position/orientation tolerances not solved within joint limits.": 195,
+        "The planned path has insufficient clearance": 6,
+        "Grasp has no solved destination approach": 3
+      },
+      "source_contact_candidates_without_upright_transfer": [
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": -2.4,
+          "source_pose_cache_hit": true,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            -2.4
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2"
+        },
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": 0.0,
+          "source_pose_cache_hit": true,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            0.0
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2"
+        },
+        {
+          "arm": "right",
+          "candidate": "outside_body_band_0.045_-1",
+          "initial_wrist_roll": 2.4,
+          "source_pose_cache_hit": true,
+          "source_ik_initial_joints": [
+            0.0,
+            -0.7,
+            0.8,
+            0.2,
+            2.4
+          ],
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2; The planned path has insufficient clearance: table / right_camera_box2"
+        }
+      ]
+    }
+  ],
+  "diagnosis": "Four hypothetical upright buffer states admit horizontal final-regrasp geometry. The preceding sideways-source grasp/transfer does not solve:195 source IK failures,6 source collision failures and3 upright destination failures per checked plan. Only outside_body_band_0.045_-1 reaches source contact checks; its upright destination fails IK or right_camera_box2/table clearance.",
+  "implication": "A depth-two acceptance rule alone has no checked continuation to accept for these buffers. A different valid grasp/reorientation route remains an unsolved dependency.",
+  "limitations": [
+    "The existing bounded buffer list is not the entire continuous table workspace.",
+    "Planning failure is not physical impossibility or invalid-start evidence.",
+    "No changed geometry, physics, thresholds, task destinations, original outcomes or scene denominators.",
+    "No new upright or sideways glass physical placement is claimed.",
+    "The optional physical harness branch was not exercised because no geometric proof passed."
+  ],
+  "preserved_outputs": [
+    ".run/glass-depth-two-geometry-v1"
+  ],
+  "complete_table_success": false,
+  "learned_control": false
+}
