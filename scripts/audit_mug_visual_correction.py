@@ -1,6 +1,7 @@
 """Recount every paired mug workflow and check frozen inputs and trace evidence."""
 import argparse
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import sys
@@ -77,7 +78,9 @@ def audit(p,protocol,root,split):
                 original=correction['motor'];reproduced=motor.predict(original['joints'],request)
                 for field,value in original.items():
                     if field=='neural_inference_ms':continue
-                    if isinstance(value,(float,int,list)):
+                    if isinstance(value,bool):
+                        if value!=reproduced[field]:raise ValueError('A motor query refusal changed.')
+                    elif isinstance(value,(float,int,list)):
                         difference=float(np.max(abs(np.asarray(value)-np.asarray(reproduced[field]))))
                         max_motor_difference=max(max_motor_difference,difference)
                         if difference>1e-9:raise ValueError('A motor query cannot be independently reproduced.')
@@ -147,7 +150,10 @@ def main(args):
     print({k:result[k] for k in ('split','completed','trace_frames','passed_workflows','passed_mugs','correction_queries','requirements','gate_passed')},flush=True)
     if args.freeze_final:
         if args.split!='development' or not result['gate_passed']:raise ValueError('Only passing complete development can authorize final scenes.')
-        inputs=fingerprint(p,args.protocol)
+        harness=ROOT/p.get('evaluation_harness','scripts/evaluate_mug_visual_correction.py')
+        spec=importlib.util.spec_from_file_location('mug_promotion_harness',harness)
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        inputs=module.fingerprint(p,args.protocol)
         if inputs!=read(root/'development-freeze.json')['inputs']:raise ValueError('Current implementation changed after development.')
         write(p,root/'evaluation-freeze.json',{'inputs':inputs,'development_gate_passed':True,'development_audit_sha256':sha(output),
             'development_freeze_sha256':sha(root/'development-freeze.json'),'evaluation_seeds':p['evaluation_seeds']})
