@@ -65,6 +65,8 @@ The PDF requires an end-to-end perception/language/action workflow. Its examples
 
 ## Acceptance and storage rules
 
+Latest motor prerequisite: [joint-limited V2](../robotics/evidence/mug-correction-motor-v2/README.md) retains all earlier configurations, passes all input labels, both development checkpoints, CPU export and 1,024/1,024 fresh offline cases (0.061 mm p95 / 0.131 mm maximum relative to scaled steps). The callable package reproduces every output exactly. No physical correction or model promotion follows yet; a separate live-versus-frozen comparison is next. V1 remains stopped and preserved.
+
 The [compact Intel kit](../../submission/verification-v1/README.md) is prepared and physically verified from an isolated extraction on this PC: all six skills and CPU export checks pass in 52.662 seconds, with correctly false Intel eligibility. The 19.5 MB private download reuses the laptop's existing environment. This reduces handoff preparation; actual Intel execution and eligibility remain open.
 
 Current visual-placement work: the failed [direct-XYZ fit](../robotics/evidence/mug-visual-observer-v1/README.md) remains stopped and preserved. A separately declared [stereo image-point observer](../robotics/evidence/mug-keypoint-observer-v1/README.md) passes all gates: fresh 448/448 present, 0/64 absent, 0.270 mm p95 / 0.422 mm maximum; all 144 exposed physical states accepted, 0.617 / 0.893 mm. Both models, exact compact inputs and all outcomes are packaged; the full fresh image/prediction reproduction passes. This establishes bounded held-mug perception, with no corrective motor integration, new physical controller trial or selected-model change. Physical visual correction remains unfinished and requires a separate experiment.

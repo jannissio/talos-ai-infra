@@ -24,6 +24,8 @@ Prepared September 13. Internal completion target: **September 14, 18:00 CEST**,
 
 ## Required before the public release
 
+The latest [joint-limited motor V2](../robotics/evidence/mug-correction-motor-v2/README.md) passes all 1,024 fresh offline cases at 0.061 mm p95 / 0.131 mm maximum, with exact callable CPU reproduction. Every earlier sampled position remains represented, but difficult poses use shorter steps. This is a motor prerequisite; contact-physics integration and corrective benefit remain untested. The selected robot and hosted demo are unchanged.
+
 The [compact Intel verification kit](../../submission/verification-v1/README.md) is ready for the laptop: 19.5 MB download, exact selected files and complete licenses. A fresh isolated extraction passes all six physical skills and CPU export checks on this PC in 52.662 seconds; strict Intel eligibility correctly remains false. The actual laptop run is still required. Reuse the existing Python environment and preserve the 10 GiB reserve.
 
 The failed [direct-XYZ mug observer](../robotics/evidence/mug-visual-observer-v1/README.md) remains preserved. A separately declared [stereo image-point fit](../robotics/evidence/mug-keypoint-observer-v1/README.md) now passes bounded perception: all 448 fresh present cases, no false accepts among 64 absent cases, 0.270 mm p95 / 0.422 mm maximum; all 144 exposed physical states pass at 0.617 / 0.893 mm. Both checkpoints, all compact inputs/results and the stopped audit attempt are retained. Packaged fresh reproduction passes exact image/prediction checks. There is no corrective motor integration or new physical success claim. A separate live-versus-frozen-image experiment is required before changing the selected robot.
