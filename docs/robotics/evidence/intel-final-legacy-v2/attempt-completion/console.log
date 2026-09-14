@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File ".\scripts\package_intel_laptop_evidence.py", line 250, in <module>
+    run(parser.parse_args())
+  File ".\scripts\package_intel_laptop_evidence.py", line 200, in run
+    runs[name] = audit_run(args.input/'.run'/name, args.output/'portable'/name, device, checkpoints, xml, layout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".\scripts\package_intel_laptop_evidence.py", line 123, in audit_run
+    raise ValueError('Saved completion state does not have parked arms.')
+ValueError: Saved completion state does not have parked arms.

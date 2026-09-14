@@ -37,8 +37,14 @@ if (-not $taskAlreadyRunning) {
     $taskArguments = @('-m', 'simulation_lab.server', '--port', $Port)
     if ($Learned) { $taskArguments += '--learned' }
     if ($DinnerSuite) { $taskArguments += @('--dinner-suite', ('"' + $DinnerSuite + '"')) }
-    $taskProcess = Start-Process -FilePath $taskPython -ArgumentList $taskArguments -WorkingDirectory $taskRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $taskRunDir "server-$Port.stdout.log") -RedirectStandardError (Join-Path $taskRunDir "server-$Port.stderr.log") -PassThru
-    @{pid=$taskProcess.Id; port=$Port; python=$taskPython; learned=[bool]$Learned; dinner_suite=$DinnerSuite; started_at=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $taskRunDir "server-$Port.json")
+    $taskLogStamp = (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssfffZ')
+    $taskStdout = Join-Path $taskRunDir "server-$Port-$taskLogStamp.stdout.log"
+    $taskStderr = Join-Path $taskRunDir "server-$Port-$taskLogStamp.stderr.log"
+    if ((Test-Path -LiteralPath $taskStdout) -or (Test-Path -LiteralPath $taskStderr)) {
+        throw 'The new server log paths already exist. Earlier logs are preserved.'
+    }
+    $taskProcess = Start-Process -FilePath $taskPython -ArgumentList $taskArguments -WorkingDirectory $taskRoot -WindowStyle Hidden -RedirectStandardOutput $taskStdout -RedirectStandardError $taskStderr -PassThru
+    @{pid=$taskProcess.Id; port=$Port; python=$taskPython; learned=[bool]$Learned; dinner_suite=$DinnerSuite; stdout=$taskStdout; stderr=$taskStderr; started_at=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $taskRunDir "server-$Port.json")
     $taskReady = $false
     for ($taskAttempt = 0; $taskAttempt -lt 80; $taskAttempt++) {
         Start-Sleep -Milliseconds 250
@@ -49,7 +55,7 @@ if (-not $taskAlreadyRunning) {
         } catch { }
     }
     if (-not $taskReady) {
-        throw "The simulator did not become ready. See .run/server-$Port.stderr.log."
+        throw "The simulator did not become ready. See $taskStderr."
     }
 }
 Write-Output "Talos is running at $taskUrl (dinner challenge and BenchLab practice)."

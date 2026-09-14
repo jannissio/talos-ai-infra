@@ -4,7 +4,7 @@ Two SO-101 arms, a physical dinner-table simulation, and spoken or typed instruc
 
 ![Talos dinner scene](docs/robotics/dinner-task.jpg)
 
-Talos combines MuJoCo, six camera views, Speechmatics transcription and camera-conditioned neural motor policies running through OpenVINO. The measured v6 baseline chains six learned dinner skills and supports table-supported bottle relays in both directions. The browser offers programmed and learned modes, progress, cancellation and explicit failures. See [the current architecture and evidence](docs/robotics/FINAL_ARCHITECTURE.md).
+Talos combines MuJoCo, six camera views, Speechmatics transcription and camera-conditioned neural motor policies running through OpenVINO. It chains six learned dinner skills, supports table-supported bottle relays in both directions, and now offers stereo visual correction during late mug placement. The browser provides progress, cancellation and explicit failures. See [the current architecture and evidence](docs/robotics/FINAL_ARCHITECTURE.md).
 
 ## Run locally
 
@@ -18,7 +18,7 @@ py -3.12 -m venv .venv
 
 Open [the local application](http://127.0.0.1:8765/). Select **Task start / Closed / Seed 42**, then enter `set the table`. This mode places the bottle, plate and mug, opens the passive drawer, and retrieves the fork and spoon with programmed physical skills.
 
-For learned bottle control, use the separate training/runtime environment:
+For learned control, use the separate training/runtime environment:
 
 ```powershell
 py -3.12 -m venv .venv-training
@@ -41,6 +41,8 @@ For the expanded [six-skill suite](models/dinner_suite/README.md), run:
 
 Choose **Learned dinner sequence**, reset to Task start, and enter `set the table`. Each skill must release and park before the next begins; no reset occurs between the six skills. The menu retains the word “candidate” to distinguish this finite evaluated baseline from broad workspace coverage. Use `pass the bottle to the right arm` at the standard start, or choose **Left reach practice** and use `place the bottle` for the reverse relay.
 
+Choose **Learned dinner · live mug vision** for the [verified correction profile](models/dinner_visual_mug_v1/README.md). Use `set the table` with standard or Left reach practice starts. Stereo images guide bounded corrections near mug release; all other skills retain their original control. Individual mug commands use the original dinner mode. The current PC demo is [open on port 8770](http://127.0.0.1:8770/).
+
 After installation, Windows users can instead run `.\start-lab.ps1 -Learned` to launch the complete runtime in the background and open the browser. Stop it with `.\stop-lab.ps1`. Both scripts accept `-Port` when the default port is occupied.
 
 ## Voice
@@ -48,6 +50,9 @@ After installation, Windows users can instead run `.\start-lab.ps1 -Learned` to 
 Create a local `.env` containing `SPEECHMATICS_API_KEY=your-key`. Spaces around `=` and matching quotes are supported. The file is ignored by Git. The long-lived key stays on the server; the browser receives a temporary token. Press **Speak instruction**, speak English, then finish recording. Audio is sent to Speechmatics only during recording, for at most 20 seconds. Typed commands remain available.
 
 ## Measured behavior
+
+- The new [frozen mug comparison](docs/robotics/evidence/mug-visual-correction-v2/README.md) completes **20/20 live-vision workflows**, **20/20 original-baseline workflows** and **0/20 frozen-image controls**, evenly split between standard and farther-left starts. All 96 development/final attempts and 422,745 frames are retained. This supports current images for the correction controller; success does not improve over the original baseline on these scenes. Broad workspace coverage remains unfinished.
+- Both production entry points pass both exposed seed-42 starting regions with the new option. [The display-only repair](docs/robotics/evidence/visual-mug-deployment-v1/README.md) fixes black hosted previews while preserving every recorded physics/control array exactly. **73 application and 20 training tests pass.**
 
 - The v6 learned dinner suite completes **8/10** frozen randomized task-start sequences. The two failures are retained: mug placement error 14.59 mm and spoon error 13.61 mm, against the unchanged 8 mm threshold. Five new policies use 201 physically replayed training examples; the original bottle model is preserved.
 - Four learned relay policies pass **5/5** frozen trials in each direction, using 52 replayed training examples. They release onto the shared table before the other arm grasps. These are bounded upright regions and fixed destinations.
@@ -59,10 +64,10 @@ Create a local `.env` containing `SPEECHMATICS_API_KEY=your-key`. Spaces around 
 - The revised upright model completed **10/10 new task-preset scene seeds**, with **0.36–1.66 mm** placement errors. This covers small bottle-position changes, not the entire reachable workspace. Wider-position trials still include failures.
 - The original three-view model supports familiar sideways practice but completed **0/10** broader scene seeds. Its results remain available separately.
 - `pass the bottle to the right arm` runs a programmed table-supported relay: left release, park, right regrasp and placement. Seed 42 completed in **76.3 simulated seconds**, with **1.45 mm** final placement error.
-- OpenVINO FP32 inference has been checked on an Intel CPU and Intel UHD iGPU. Current camera rendering uses NVIDIA.
+- [Actual Intel laptop verification](docs/robotics/evidence/intel-final-legacy-v3/README.md) completes all six baseline skills with Intel UHD OpenGL rendering and Intel CPU or GPU.0 inference. Earlier NVIDIA-rendered runs remain separate. The i7-10850H is not Core Ultra Series 2/3: eligibility remains unresolved, and the new live-mug option needs its own target-machine check.
 - Videos can be reconstructed at 1280×720, 20 fps, with four simultaneous views, without changing training image resolution or physics.
 
-No objects are welded to grippers or teleported during control. The selected learned controllers use initial visual features and motor feedback; an independent simulator-state monitor can stop execution but cannot generate actions. The language interpreter is a constrained grammar with RGB-grounded preparation steps. Direct airborne handoffs, pouring and arbitrary placements remain unfinished. Separate RGB correction experiments remain unpromoted: [V1](models/bottle_servo_v1/README.md) passes 2/12 undisturbed and 3/12 pushed physical trials; [V2 routing](docs/robotics/evidence/rgb-servo-v2/README.md) passes 6/12 and 5/12 on new final seeds. All failures and both frozen-image controls are preserved. These experiments do not replace the dinner workflow or establish arbitrary-position reliability.
+No objects are welded to grippers or teleported during control. The original learned controllers use initial visual features and motor feedback; the new mug option adds live stereo corrections during late placement. An independent simulator-state monitor can stop execution but cannot generate actions. The language interpreter is a constrained grammar with RGB-grounded preparation steps. Direct airborne handoffs, pouring and arbitrary placements remain unfinished. Separate RGB correction experiments remain unpromoted: [V1](models/bottle_servo_v1/README.md) passes 2/12 undisturbed and 3/12 pushed physical trials; [V2 routing](docs/robotics/evidence/rgb-servo-v2/README.md) passes 6/12 and 5/12 on new final seeds. All failures and both frozen-image controls are preserved. These experiments do not replace the dinner workflow or establish arbitrary-position reliability.
 
 See the [upright policy experiment](docs/robotics/VISUAL_BOTTLE_POLICY.md), [relay evidence](docs/robotics/TABLE_RELAY.md), [simulator controls](simulation_lab/README.md), and [storage safeguards](docs/robotics/STORAGE_POLICY.md). A [271 KB frozen training input](training/bottle_visual/README.md) supports local GPU retraining.
 

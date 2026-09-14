@@ -109,7 +109,7 @@ Original Talos contributions use MIT; robot asset notices are in
             'The live mug vision option adds stereo visual correction during late mug placement,\nverified within complete table-setting workflows. Other skills retain initial RGB\nobservations and motor-feedback guards. Arbitrary workspace coverage remains unfinished.')
     (output / 'README.md').write_text(readme, encoding='utf-8', newline='\n')
     (output / '.gitignore').write_text('__pycache__/\n*.py[cod]\n.env\n.env.*\n*.log\n', encoding='utf-8')
-    (output / '.gitattributes').write_text(''.join(f'*.{extension} filter=lfs diff=lfs merge=lfs -text\n'
+    (output / '.gitattributes').write_text('* -text\n'+''.join(f'*.{extension} filter=lfs diff=lfs merge=lfs -text\n'
                                                for extension in ['bin','safetensors','stl','npz']), encoding='utf-8')
     hashes = {p.relative_to(output).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
               for p in output.rglob('*') if p.is_file()}

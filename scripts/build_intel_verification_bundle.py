@@ -26,6 +26,11 @@ def build(args):
                    'talos_normalization.json', 'openvino.json', 'benchmark.json', 'README.md', 'suite.json'}
     for folder in ('bottle_visual', 'bottle_relays', 'dinner_suite'):
         names += [p.relative_to(ROOT).as_posix() for p in (ROOT/'models'/folder).rglob('*') if p.is_file() and p.name in model_files]
+    if args.visual_mug:
+        from simulation_lab.mug_visual_profile import load_profile, DEFAULT_PROFILE
+        profile, _ = load_profile()
+        names += list(profile['model_files']) + list(profile['runtime_sources'])
+        names += [p.relative_to(ROOT).as_posix() for p in DEFAULT_PROFILE.parent.iterdir() if p.is_file()]
     names = sorted(set(names))
     if any(Path(name).is_absolute() or '..' in Path(name).parts or any(part in ('.git', '.run', '__pycache__') or part.startswith('.env') for part in Path(name).parts) for name in names):
         raise ValueError('Private/generated paths cannot enter the allowlisted bundle.')
@@ -84,6 +89,43 @@ execution does not substitute for actual Intel execution.
 The original project and this archive remain private until the final release.
 Only the user presses the hackathon's final Submit button.
 '''
+    if args.visual_mug:
+        readme = '''# Talos live-mug Intel verification kit
+
+This version includes the physically promoted stereo observer, local neural
+motor, bound promotion profile and unchanged dinner/relay models. It complements
+the earlier six-skill kit; it does not replace that kit or its evidence.
+
+Extract into a NEW folder and reuse the laptop's existing Python 3.12 training
+environment. No installation or microphone is needed. In PowerShell:
+
+```powershell
+$talosPython = Read-Host "Full path to the existing training Python executable"
+& $talosPython -I scripts/verify_visual_mug_submission.py --output .run/intel-live-mug-v1
+```
+
+The verifier checks exact model/source hashes, measures CPU, OpenGL and OpenVINO
+identities, benchmarks the new observer/motor on CPU, then runs two exposed full
+workflows serially: standard and farther-left seed 42. Keep the entire output
+folder, including both console logs and scene/state recordings. It preserves a
+10 GiB disk reserve plus expected writes and refuses existing output paths.
+
+Keep the laptop's previously verified Intel graphics preference if testing
+all-Intel rendering. Read the measured renderer, not only the requested setting.
+The i7-10850H remains legacy hardware: strict Core Ultra eligibility is false even
+when both physical workflows succeed, so the ordinary exit code remains 1.
+Diagnostic mode changes the exit status only, never the hardware result.
+
+Network-only timing uses fixed synthetic inputs; physical workflows use actual
+camera observations. No arbitrary-position, pouring or airborne-handoff claim
+follows from these two exposed deployment checks. This option uses OpenVINO CPU;
+the earlier kit retains its separate CPU/GPU.0 baseline inference results.
+
+The kit includes original Talos MIT licensing and upstream SO-101 Apache notices,
+with no credentials, environments or unrelated private files. Source/model hashes
+are in kit-manifest.json. Keep this archive private until final release. Only the
+user presses final Submit.
+'''
     for name, data in [('README-VERIFICATION.md', readme.encode()), ('.gitignore', b'.run/\n.venv*/\n.env\n.env.*\n__pycache__/\n*.py[cod]\n')]:
         require_space(output/name, len(data)+1024)
         with (output/name).open('xb') as stream:
@@ -116,4 +158,5 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--archive', type=Path, required=True)
+    parser.add_argument('--visual-mug', action='store_true', help='Include the verified late-mug profile and its exact observer/motor artifacts.')
     build(parser.parse_args())

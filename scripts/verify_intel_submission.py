@@ -33,6 +33,9 @@ def run(args):
         raise ValueError('A requested skill is missing its checkpoint.')
     args.output.mkdir(parents=True)
     hardware=inspect();save(args.output/'hardware.json',hardware)
+    available=[row['id'] for row in hardware['openvino_devices']]
+    if args.device not in available:
+        raise ValueError('Choose an exact enumerated OpenVINO device: '+', '.join(available)+'. Hardware evidence is retained; no export or physical trial started.')
     suite={};benchmarks={}
     for skill,source in sources.items():
         destination=args.output/skill
@@ -61,7 +64,7 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--suite',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True)
-    p.add_argument('--device',default='CPU',help='Explicit OpenVINO device, e.g. CPU or GPU. Must pass measured parity.')
+    p.add_argument('--device',default='CPU',help='Exact enumerated OpenVINO device, e.g. CPU or GPU.0. Must pass measured parity.')
     p.add_argument('--skills',default='bottle,plate,mug,drawer,fork,spoon')
     p.add_argument('--seed',type=int,default=42)
     p.add_argument('--diagnostic',action='store_true',help='Return physical status on nonqualifying hardware, without changing reported eligibility.')

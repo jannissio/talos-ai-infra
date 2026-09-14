@@ -1,5 +1,20 @@
 # Talos v6: measured architecture and active work
 
+## September 14 selected live-mug option
+
+The [bound profile](../../models/dinner_visual_mug_v1/README.md) adds current stereo observations during late mug placement to the unchanged six-skill/relay suite. The language/RGB planner still chooses the supported workflow; other objects use their original initial-image trajectories and joint-feedback progress checks. Privileged simulator state only stops/scores the task.
+
+Two fixed oblique RGB cameras feed a newly trained 393,772-parameter semantic image-point CNN. Calibrated triangulation estimates the held mug; a separate 19,215-parameter network maps a bounded XY correction request and measured joints to a local motor change. The controller queries every 0.2 simulated seconds within the declared late-placement interval, limits joint steps/total offset and holds/tapers the offset before retreat. It neither substitutes an IK teacher nor changes the grasp-force, collision, release or parking criteria.
+
+The [physical V2 comparison](evidence/mug-visual-correction-v2/README.md) freezes all settings before 36 development and 60 final workflows. Final baseline/live modes each complete 10/10 per starting preset; frozen images complete 0/10 per preset. Every model-generated correction reproduces exactly. This establishes bounded feedback benefit against the frozen-image controller, with no success improvement over the original baseline on those scenes. All original failures and earlier model experiments remain preserved below.
+
+The [production regressions](evidence/visual-mug-deployment-v1/README.md) verify both command entry points and both exposed seed-42 presets. A separate passive preview thread fixes hosted black frames without changing any recorded state, target or progress array. The complete runtime passes 73 application and 20 training tests. The option is selected locally at port 8770 and has been uploaded privately to Hugging Face; fresh cloud and new-option Intel checks remain separate.
+
+[Actual laptop evidence](evidence/intel-final-legacy-v3/README.md) verifies the preceding six-skill baseline on an i7-10850H with Intel UHD OpenGL and either Intel CPU or GPU.0 inference. All source checkpoints match. The older NVIDIA-rendered runs, generic-GPU naming failure and audit attempts are retained. Core Ultra Series 2/3 eligibility remains unresolved; this earlier kit does not verify the later mug integration.
+
+The architecture/evaluation narrative below describes the original suite and preserved experiments. Only the late-mug integration above is newly promoted; arbitrary positions/destinations, general language, pouring and airborne/other-object handoffs remain unfinished.
+
+
 September 13, 2026. This describes the selected submission baseline. The broader development goal remains active; its open items are tracked in the [completion checklist](../hackathon/FINAL_SUBMISSION_CHECKLIST.md).
 
 ## Execution path

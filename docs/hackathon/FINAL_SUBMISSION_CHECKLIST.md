@@ -4,6 +4,13 @@ Updated September 14, 2026. Finish and hand over by **September 14, 18:00 CEST**
 
 This is the active development and release plan. It supersedes the narrower scope decision in `RELEASE_PLAN_2026-09-14.md`. Preparing files or stopping an experiment does not complete the full submission goal.
 
+## Current completion status
+
+- The [late-mug live-vision option](../../models/dinner_visual_mug_v1/README.md) passes its frozen physical gates: final live and original baseline each 20/20 workflows; frozen images 0/20. All 96 outcomes remain available. Production regressions pass both presets and both entry points, with unchanged recorded physics after a preview-only fix. This closes a bounded part of D4, not broad workspace or arbitrary task coverage.
+- Actual Intel baseline execution **and Intel rendering are verified**: [four retained laptop runs](../robotics/evidence/intel-final-legacy-v3/README.md), including Intel UHD OpenGL with CPU/GPU.0 inference. R3/R6/D12 retain the Core Ultra eligibility gap; the new visual option needs its own compact-kit run.
+- Tests pass **73 application / 20 training**. The new private HF revision is uploaded; fresh cloud checks are underway. The local browser is at port 8770, prepared for the pending human six-skill voice rehearsal.
+- Final media/text updates, final public visibility and anonymous judge checks, organizer hardware eligibility and the user's final submission remain open. Never click Submit. Historical status rows/logs below retain the earlier baseline context until the final media refresh.
+
 ## Sources checked now
 
 - September 14 recheck: the event page's deadline banner and schedule agree on September 16, 20:30 CEST. The expanded Intel online track still requires Core Ultra Series 2/3, and the guidelines require a public repository, demo URL, descriptions/tags, cover, video and slides. Original/MIT-compliant wording is unchanged. The signed-in draft's application step still has the repository/demo links and saved 1,962-character additional information; no final action was taken.
