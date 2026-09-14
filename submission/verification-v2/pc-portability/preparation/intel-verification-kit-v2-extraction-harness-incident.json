@@ -1,4 +1,0 @@
-{
-  "reason": "The extraction harness omitted the generated .gitignore from its expected member set. CRC and all source/model hashes passed before the assertion. No physical test had started. The archive and extracted bytes remain unchanged.",
-  "repair": "Include exactly .gitignore, README-VERIFICATION.md and kit-manifest.json in the generated member allowlist."
-}

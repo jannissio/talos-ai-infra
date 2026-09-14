@@ -1,9 +1,9 @@
 # Third-party notices
 
-Original Talos code and original procedural assets use the repository's MIT license. Separately licensed components retain their own terms:
+Original Talos code, models and procedural dinner assets use the repository's [MIT license](LICENSE).
 
-- SO-101 robot assets: Apache-2.0, with source revision and original notices in [simulation_lab/NOTICE.md](simulation_lab/NOTICE.md).
-- Selected CLIPort spatial-policy source: Apache-2.0, with the pinned source manifest, modifications and license in [third_party/talos_cliport](third_party/talos_cliport/README.md).
-- OpenAI CLIP implementation, tokenizer, vocabulary and optional RN50 representation: MIT; the upstream license is retained as [LICENSE-CLIP](third_party/talos_cliport/LICENSE-CLIP). Downloaded weights remain outside Git and are verified against their published SHA256.
+- SO-101 robot assets use Apache-2.0. Their original license, source revision, hashes and modification notices are retained in [simulation_lab/NOTICE.md](simulation_lab/NOTICE.md) and `simulation_lab/assets/so101`.
+- Installed dependencies retain their upstream licenses. The release records the runtime, optional training and hosting environments separately.
+- Archived spatial-policy research includes a modified Apache-2.0 CLIPort component and MIT OpenAI CLIP source. Their licenses, attribution and modifications remain in the [archived component](https://github.com/jannissio/talos-ai-infra/tree/development-snapshot-2026-09-14/third_party/talos_cliport). No pretrained Talos spatial policy was completed, and these components are not the selected demo controller. The upstream GPL U-Net helper was excluded.
 
-CLIPort's GPL-3.0 U-Net helper is not included. The decoder interface uses an independently authored Talos helper, as explained in the component README. This adaptation is not an exact reproduction of the original architecture or evidence of a pretrained Talos robotics capability. Installed Python dependencies retain their upstream licenses.
+The current cover is an AI-generated illustration based on Talos's own simulation image. It is artwork rather than measurement evidence. Its generation brief is recorded in `submission/README.md`.

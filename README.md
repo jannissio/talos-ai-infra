@@ -1,78 +1,57 @@
-# Talos · Dinner-table robotics
+# Talos
 
-Two SO-101 arms, a physical dinner-table simulation, and spoken or typed instructions. Built for the [AI Infra Summit online Intel challenge and Speechmatics bonus](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon).
+**Voice to action at the dinner table.** Two SO-101 robot arms execute learned dinner-setting skills in a physical MuJoCo simulation.
 
-![Talos dinner scene](docs/robotics/dinner-task.jpg)
+![Talos cover illustration](submission/cover.png)
 
-Talos combines MuJoCo, six camera views, Speechmatics transcription and camera-conditioned neural motor policies running through OpenVINO. It chains six learned dinner skills, supports table-supported bottle relays in both directions, and now offers stereo visual correction during late mug placement. The browser provides progress, cancellation and explicit failures. See [the current architecture and evidence](docs/robotics/FINAL_ARCHITECTURE.md).
+[Try the live demo](https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics) · [Presentation](submission/presentation.pdf) · [Results and limits](docs/EVIDENCE.md)
 
-The broader [seven-item shared-table goal](docs/robotics/WHOLE_TABLE_PIPELINE.md) remains unfinished: no complete jointly randomized table has passed, and the adapted CLIPort runtime has not been trained into a Talos action policy. Its privileged physical teachers and static-geometry camera diagnoses are development dependencies, separate from the working learned dinner demo. The [current saved submission text and slides](submission/final-v7/PROJECT.md) keep that distinction explicit.
+Say or type **“Set the table.”** Talos places the bottle, plate and mug, opens the drawer, and retrieves the fork and spoon. It also transfers a bottle between the arms by setting it down on the shared table. The local app has six camera views, voice input, manual controls, cancellation and explicit failure messages.
+
+This is a bounded simulation prototype. General object positions, unrestricted language, pouring, airborne handoffs and a complete randomized seven-item table remain unfinished. The cover is a stylized illustration; the demo and evaluation recordings show actual simulation.
 
 ## Run locally
 
-Use clean CPython 3.12. For the programmed simulator:
+Use Python 3.12 on Windows. No API key or NVIDIA GPU is needed for typed commands and CPU inference.
 
 ```powershell
+git clone --depth 1 https://github.com/jannissio/talos-ai-infra.git
+cd talos-ai-infra
 py -3.12 -m venv .venv
 .\.venv\Scripts\python -m pip install -r requirements.txt
-.\.venv\Scripts\python -m simulation_lab.server
+.\start-lab.ps1 -Learned
 ```
 
-Open [the local application](http://127.0.0.1:8765/). Select **Task start / Closed / Seed 42**, then enter `set the table`. This mode places the bottle, plate and mug, opens the passive drawer, and retrieves the fork and spoon with programmed physical skills.
+In the browser, select **Dinner challenge**, **Task start**, **Closed** drawer and seed **42**. Select **Learned dinner · live mug vision**, reset, enter **Set the table**, and run. Reset before starting another complete trial. Voice is optional: copy `.env.example` to `.env`, privately add a Speechmatics key, then use **Speak instruction**.
 
-For learned control, use the separate training/runtime environment:
+[Setup and reproduction](docs/SETUP.md) covers Linux, GPU training, the hosted interface and verification. The Space starts a fresh isolated scene for each trial and offers one camera view. Its CPU option needs no account or GPU allocation; a full dinner can take about five minutes.
 
-```powershell
-py -3.12 -m venv .venv-training
-.\.venv-training\Scripts\python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
-.\.venv-training\Scripts\python -m pip install -r requirements-training.txt -r requirements-openvino.txt
-.\.venv-training\Scripts\python -m pip check
-.\.venv-training\Scripts\python -c "import torch; assert torch.cuda.is_available(), 'CUDA unavailable'; print(torch.__version__, torch.version.cuda, torch.cuda.get_device_name(0))"
-.\.venv-training\Scripts\python -m simulation_lab.server --learned
-```
+## What is verified
 
-The explicit CUDA wheel installation is for NVIDIA training on Windows; it follows the [official PyTorch 2.8 installation matrix](https://pytorch.org/get-started/previous-versions/). The learned browser controller still uses OpenVINO on the CPU; CPU-only inference can omit the CUDA-specific installation and availability assertion. Use `py -3.12` and the environment paths above: plain `python` may resolve to another project's environment. Check destination-drive space before installation and every dataset/export, preserving the [10 GiB reserve](docs/robotics/STORAGE_POLICY.md) in addition to expected writes.
+| Evaluation | Result | Scope |
+| --- | --- | --- |
+| Original six-skill dinner | 8/10 | Frozen narrow starting scenes; both failures retained |
+| Bottle relays | 5/5 each direction | Table-supported transfer, four learned legs |
+| Relay followed by dinner | 8/10 | A separate frozen left-reach preset |
+| Late mug visual correction | 20/20 live; 20/20 original baseline; 0/20 frozen corrective images | Bounded visual feedback; no demonstrated gain over the original baseline on these scenes |
+| Human voice rehearsal | All six skills completed | One exposed scene |
+| Intel execution | Six-skill baseline on legacy Intel CPU/iGPU with UHD rendering | Core Ultra Series 2/3 eligibility is unresolved; the latest live-mug profile is not separately verified on Intel |
 
-Select **Learned upright bottle · OpenVINO**, reset to seed 42, and enter `place the bottle`. The [upright model](models/bottle_visual/README.md) uses overhead RGB localization and motor feedback. The original model remains available for familiar sideways practice. Stop a foreground server with Ctrl+C.
+See [the evidence index](docs/EVIDENCE.md) for exact protocols, outcomes, limitations and archived traces. Neural models supply motion; an independent simulator-state monitor can stop or score it. Programmed control is a separate selectable mode using exact simulator state.
 
-For the expanded [six-skill suite](models/dinner_suite/README.md), run:
+## Repository map
 
-```powershell
-.\start-lab.ps1 -Learned -DinnerSuite models/dinner_suite/suite.json
-```
+| Folder | Purpose |
+| --- | --- |
+| `simulation_lab/` | Browser server, physics, control, perception and robot assets |
+| `models/` | Immutable checkpoints and exports; [model guide](models/INDEX.md) identifies the selected profile |
+| `training/` | Compact inputs and frozen sources for the demonstrated models |
+| `scripts/` | Reproduction, training and verification tools; [script guide](scripts/README.md) |
+| `tests/`, `training_tests/` | Runtime contracts and model/geometry checks |
+| `hosting/` | Compact Gradio Space |
+| `docs/` | Setup, architecture and evidence |
+| `submission/` | Current cover, presentation and submission text |
 
-Choose **Learned dinner sequence**, reset to Task start, and enter `set the table`. Each skill must release and park before the next begins; no reset occurs between the six skills. The menu retains the word “candidate” to distinguish this finite evaluated baseline from broad workspace coverage. Use `pass the bottle to the right arm` at the standard start, or choose **Left reach practice** and use `place the bottle` for the reverse relay.
+The release contains one current presentation. Historical slides, stopped experiments and complete success/failure traces are preserved in the [development archive](docs/ARCHIVE.md). A shallow clone avoids downloading that large history. Credentials, virtual environments, personal recordings and editing files are excluded from Git.
 
-Choose **Learned dinner · live mug vision** for the [verified correction profile](models/dinner_visual_mug_v1/README.md). Use `set the table` with standard or Left reach practice starts. Stereo images guide bounded corrections near mug release; all other skills retain their original control. Individual mug commands use the original dinner mode. The current PC demo is [open on port 8770](http://127.0.0.1:8770/).
-
-After installation, Windows users can instead run `.\start-lab.ps1 -Learned` to launch the complete runtime in the background and open the browser. Stop it with `.\stop-lab.ps1`. Both scripts accept `-Port` when the default port is occupied.
-
-## Voice
-
-Create a local `.env` containing `SPEECHMATICS_API_KEY=your-key`. Spaces around `=` and matching quotes are supported. The file is ignored by Git. The long-lived key stays on the server; the browser receives a temporary token. Press **Speak instruction**, speak English, then finish recording. Audio is sent to Speechmatics only during recording, for at most 20 seconds. Typed commands remain available.
-
-## Measured behavior
-
-- The new [frozen mug comparison](docs/robotics/evidence/mug-visual-correction-v2/README.md) completes **20/20 live-vision workflows**, **20/20 original-baseline workflows** and **0/20 frozen-image controls**, evenly split between standard and farther-left starts. All 96 development/final attempts and 422,745 frames are retained. This supports current images for the correction controller; success does not improve over the original baseline on these scenes. Broad workspace coverage remains unfinished.
-- Both production entry points pass both exposed seed-42 starting regions with the new option. [The display-only repair](docs/robotics/evidence/visual-mug-deployment-v1/README.md) fixes black hosted previews while preserving every recorded physics/control array exactly. **73 application and 20 training tests pass.**
-
-- The v6 learned dinner suite completes **8/10** frozen randomized task-start sequences. The two failures are retained: mug placement error 14.59 mm and spoon error 13.61 mm, against the unchanged 8 mm threshold. Five new policies use 201 physically replayed training examples; the original bottle model is preserved.
-- Four learned relay policies pass **5/5** frozen trials in each direction, using 52 replayed training examples. They release onto the shared table before the other arm grasps. These are bounded upright regions and fixed destinations.
-- The [integrated camera-planned workflow](docs/robotics/evidence/composed-dinner-v1/README.md) completes **8/10** new frozen scenes from the left-reach bottle preset: both relay legs, then plate, mug, drawer, fork and spoon, without a reset. All ten pass every step through fork; two final spoon placements fail. Existing models remain unchanged.
-- A later [paired spoon-release experiment](docs/robotics/evidence/spoon-release-v1/README.md) completes all 24 development trials. Baseline and candidate each pass **4/6 standard and 4/6 left-reach workflows**; two scenes fail at the preceding mug step. The candidate shows no increase in completed workflows and is not promoted. These results remain separate from the earlier frozen evaluations.
-- A separate [mug release fit](docs/robotics/evidence/mug-release-v1/README.md) regresses on its 24 paired development workflows: baseline **6/6 per preset**, candidate **4/6**. All failures are preserved, and the candidate remains unpromoted. The selected dinner models are unchanged.
-- A human “Set the table” microphone command completed all six learned skills, including 15 live mug corrections and parked arms. [The preserved trace and private hosted CPU trial](docs/robotics/evidence/human-voice-dinner-v1/README.md) verify this bounded workflow; the hosted trial took 287.79 wall seconds.
-- Real Speechmatics transcripts have driven the six-skill programmed sequence and a learned bottle movement, using explicitly labeled synthetic speech tests.
-- The revised upright model completed **10/10 new task-preset scene seeds**, with **0.36–1.66 mm** placement errors. This covers small bottle-position changes, not the entire reachable workspace. Wider-position trials still include failures.
-- The original three-view model supports familiar sideways practice but completed **0/10** broader scene seeds. Its results remain available separately.
-- `pass the bottle to the right arm` runs a programmed table-supported relay: left release, park, right regrasp and placement. Seed 42 completed in **76.3 simulated seconds**, with **1.45 mm** final placement error.
-- [Actual Intel laptop verification](docs/robotics/evidence/intel-final-legacy-v3/README.md) completes all six baseline skills with Intel UHD OpenGL rendering and Intel CPU or GPU.0 inference. Earlier NVIDIA-rendered runs remain separate. The i7-10850H is not Core Ultra Series 2/3: eligibility remains unresolved, and the new live-mug option needs its own target-machine check.
-- Videos can be reconstructed at 1280×720, 20 fps, with four simultaneous views, without changing training image resolution or physics.
-
-No objects are welded to grippers or teleported during control. The original learned controllers use initial visual features and motor feedback; the new mug option adds live stereo corrections during late placement. An independent simulator-state monitor can stop execution but cannot generate actions. The language interpreter is a constrained grammar with RGB-grounded preparation steps. Direct airborne handoffs, pouring and arbitrary placements remain unfinished. Separate RGB correction experiments remain unpromoted: [V1](models/bottle_servo_v1/README.md) passes 2/12 undisturbed and 3/12 pushed physical trials; [V2 routing](docs/robotics/evidence/rgb-servo-v2/README.md) passes 6/12 and 5/12 on new final seeds. All failures and both frozen-image controls are preserved. These experiments do not replace the dinner workflow or establish arbitrary-position reliability.
-
-See the [upright policy experiment](docs/robotics/VISUAL_BOTTLE_POLICY.md), [relay evidence](docs/robotics/TABLE_RELAY.md), [simulator controls](simulation_lab/README.md), and [storage safeguards](docs/robotics/STORAGE_POLICY.md). A [271 KB frozen training input](training/bottle_visual/README.md) supports local GPU retraining.
-
-The original [submission folder](submission/PROJECT.md) and v6 media are preserved. Updated text and slides are versioned under [final-v7](submission/final-v7/PROJECT.md) and saved in the draft; [the final checklist](docs/hackathon/FINAL_SUBMISSION_CHECKLIST.md) tracks remaining work. The compact Hugging Face demo has passed its [private CPU verification](docs/robotics/evidence/human-voice-dinner-v1/README.md). The repository and Space stay private until immediately before submission. Core Ultra eligibility, the latest live-mug Intel run, historical video-caption review, public judge access and the user's final submission remain open.
-
-Project code, model weights and original dinner assets use [MIT](LICENSE). SO-101 assets retain their [Apache-2.0 attribution](simulation_lab/NOTICE.md). See [development and AI-assistance provenance](docs/PROVENANCE.md).
+Original Talos code and models use [MIT](LICENSE). SO-101 assets retain Apache-2.0 and their notices; see [third-party licenses](THIRD_PARTY_NOTICES.md).

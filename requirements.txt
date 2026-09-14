@@ -1,23 +1,14 @@
-# Tested local sandbox runtime; CPython 3.12.14 on Windows.
-absl-py==2.5.0
-annotated-doc==0.0.5
-annotated-types==0.8.0
-anyio==4.15.1
-click==8.5.0
-etils==1.14.0
+# Complete local CPU demo, Python 3.12. Optional feature environments live in hosting/ and training/.
+--extra-index-url https://download.pytorch.org/whl/cpu
 fastapi==0.141.1
-fsspec==2026.7.0
-glfw==2.10.2
-h11==0.16.0
-idna==3.19
-mujoco==3.12.0
-numpy==2.5.3
-pillow==12.3.0
-pydantic==2.13.5
-pydantic_core==2.46.5
-PyOpenGL==3.1.10
-starlette==1.6.0
-typing-inspection==0.4.4
-typing_extensions==4.16.0
 uvicorn==0.52.4
-zipp==4.1.0
+mujoco==3.12.0
+numpy==2.2.6
+pillow==12.3.0
+PyOpenGL==3.1.10
+safetensors==0.7.0
+packaging==26.0
+openvino==2026.3.0
+openvino-telemetry==2025.2.0
+torch==2.8.0+cpu; platform_system != "Darwin"
+torch==2.8.0; platform_system == "Darwin"

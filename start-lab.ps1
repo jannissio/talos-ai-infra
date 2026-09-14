@@ -4,7 +4,9 @@ $taskRoot = $PSScriptRoot
 if ($DinnerSuite -and -not $Learned) { throw 'DinnerSuite requires -Learned.' }
 if ($DinnerSuite) { $DinnerSuite = (Resolve-Path -LiteralPath $DinnerSuite).Path }
 $taskPython = Join-Path $taskRoot '.venv\Scripts\python.exe'
-if ($Learned) { $taskPython = Join-Path $taskRoot '.venv-training\Scripts\python.exe' }
+if ($Learned -and (Test-Path -LiteralPath (Join-Path $taskRoot '.venv-training\Scripts\python.exe'))) {
+    $taskPython = Join-Path $taskRoot '.venv-training\Scripts\python.exe'
+}
 $taskRunDir = Join-Path $taskRoot '.run'
 $taskUrl = "http://127.0.0.1:$Port"
 if (-not (Test-Path -LiteralPath $taskPython)) {

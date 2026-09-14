@@ -40,7 +40,7 @@ def build(output):
         mapping[name] = ROOT / name
     for name in ['LICENSE', 'simulation_lab/NOTICE.md', 'hosting/gradio_app.py','hosting/gpu_inference.py']:
         mapping[name] = ROOT / name
-    mapping['requirements.txt'] = ROOT / 'requirements-hosting.txt'
+    mapping['requirements.txt'] = ROOT / 'hosting/requirements.txt'
     mapping['packages.txt'] = ROOT / 'hosting/packages.txt'
     model_files = {'primitive.json','primitive.safetensors','primitive.xml','primitive.bin','visual.npz','talos_normalization.json','openvino.json','benchmark.json','README.md','suite.json'}
     for folder in ['bottle_visual', 'bottle_relays', 'dinner_suite']:
@@ -99,7 +99,7 @@ table between arms; they are not airborne handoffs.
 This deployment contains no Speechmatics credentials or microphone service. Use
 the complete local application for voice and six simultaneous camera streams.
 
-The source repository and this Space remain private until final submission.
+Source, models, measured results and setup instructions are available in the repository.
 Repository: https://github.com/jannissio/talos-ai-infra
 Original Talos contributions use MIT; robot asset notices are in
 `simulation_lab/NOTICE.md` and `simulation_lab/assets/so101/LICENSE`.
@@ -115,7 +115,7 @@ Original Talos contributions use MIT; robot asset notices are in
               for p in output.rglob('*') if p.is_file()}
     report = {'files':len(hashes),'bytes':sum(p.stat().st_size for p in output.rglob('*') if p.is_file()),
               'storage_preflight':space,'sha256':hashes,
-              'privacy':'Local preparation only. Create a PRIVATE Space and use nonpersonal Git author metadata. Public release is deferred until submission.'}
+              'privacy':'Explicit allowlist: no credentials, local recordings or development scratch files. Upload only after review, with nonpersonal Git metadata.'}
     (output / 'build-manifest.json').write_text(json.dumps(report, indent=2)+'\n', encoding='utf-8')
     print(json.dumps({'files':report['files'],'bytes':report['bytes'],'storage_preflight':space}))
 
