@@ -1,0 +1,40 @@
+{
+  "schema": "talos.rgb-servo-observer-camera-training.v1",
+  "all_observations_verified": 2560,
+  "camera_state_records_verified": 3072,
+  "unique_paired_states": 1536,
+  "maximum_scoring_discrepancy_mm": 0.0,
+  "selected_step": 3000,
+  "collection_seconds": 99.23105620034039,
+  "training_seconds": 207.77667200006545,
+  "peak_torch_reserved_gib": 2.912109375,
+  "fresh_perception": {
+    "original": {
+      "states": 256,
+      "present": 232,
+      "accepted_present": 218,
+      "absent": 24,
+      "false_accepted_absent": 0,
+      "accepted_error_p95_mm": 2.2986533311083823,
+      "accepted_error_max_mm": 6.5158529785834896,
+      "gate_passed": false
+    },
+    "opposite_obliques": {
+      "states": 256,
+      "present": 232,
+      "accepted_present": 226,
+      "absent": 24,
+      "false_accepted_absent": 0,
+      "accepted_error_p95_mm": 2.2931897086679816,
+      "accepted_error_max_mm": 7.124302210543776,
+      "gate_passed": false
+    }
+  },
+  "status": "Stopped at fresh perception maximum-error gate",
+  "physical_trials": 0,
+  "promoted": false,
+  "physical_training_seeds_exposed": [],
+  "physical_development_seeds_exposed": [],
+  "physical_final_seeds_exposed": [],
+  "scope": "Static perception on exposed arm-pose families, OpenVINO CPU on AMD; no physical or Intel claim."
+}

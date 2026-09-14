@@ -1,0 +1,209 @@
+{
+  "protocol": "docs/robotics/experiments/rgb-servo-observer-camera-training-v1.json",
+  "protocol_sha256": "a9eeea6fcb3d21a1890ed6c3b8a7942a0e2a70247d8bce9480ba0ae72e1b3014",
+  "split": "train",
+  "states": 1024,
+  "views": [
+    "servo_overhead",
+    "servo_left",
+    "servo_right"
+  ],
+  "shards": [
+    {
+      "file": "shard-000.npz",
+      "states": 64,
+      "sha256": "91886746c9436527544eebb967917c1516977daa299de09a99762f7a1e6dce1e"
+    },
+    {
+      "file": "shard-001.npz",
+      "states": 64,
+      "sha256": "8afa09d093fcc02f0bb2d74db02d1bcb021c373e0eb7395f81fde27931a3cbfe"
+    },
+    {
+      "file": "shard-002.npz",
+      "states": 64,
+      "sha256": "862c51766d303b2f41a37676645877d0de5c5073e5cfb82c150bcdbeba034342"
+    },
+    {
+      "file": "shard-003.npz",
+      "states": 64,
+      "sha256": "2e2d26f00cc09e2c6815a9cea5b89e4b8bf3f6e361e9b6a5e94831b1e88a78b7"
+    },
+    {
+      "file": "shard-004.npz",
+      "states": 64,
+      "sha256": "a4917d2fdbd896a254de81334a0eb5f9e14e04cfb91f4f98a5c2ea1809160172"
+    },
+    {
+      "file": "shard-005.npz",
+      "states": 64,
+      "sha256": "5bdde8304b69fdc4c3210b86157d12f7cbe931dc03ab25336ab1455a0256ae24"
+    },
+    {
+      "file": "shard-006.npz",
+      "states": 64,
+      "sha256": "0334d0b9a79faa86d323928d80c12130b0f4e5325e4dbeef3c99d2288f31c065"
+    },
+    {
+      "file": "shard-007.npz",
+      "states": 64,
+      "sha256": "ff3c3325a1aba18369cbb507aa1c4107e6ad7bdd45b2cfaee694256142f573bd"
+    },
+    {
+      "file": "shard-008.npz",
+      "states": 64,
+      "sha256": "fb91f0ff89a372b9edaf8459c4a4f763ba3ef70dc291812711b29a8f24eddadd"
+    },
+    {
+      "file": "shard-009.npz",
+      "states": 64,
+      "sha256": "3030e6b14c604e42165d888a6a8af6c3de81d570862ca2d7b82e0e5e931aa24b"
+    },
+    {
+      "file": "shard-010.npz",
+      "states": 64,
+      "sha256": "c29a246315a97cd7d0ff788c217bdc6b019f266bccd2a8da314ab54f44e7ad38"
+    },
+    {
+      "file": "shard-011.npz",
+      "states": 64,
+      "sha256": "ac3057d11373c798e7e0c785763b2028cdc4a30be9f78ad3a2d786ddc41d6028"
+    },
+    {
+      "file": "shard-012.npz",
+      "states": 64,
+      "sha256": "16928ef394db50712582a5bd353fb2c747bf0c318e3f7f206926152618afd9e6"
+    },
+    {
+      "file": "shard-013.npz",
+      "states": 64,
+      "sha256": "17720b61e7e1f5c3f8256883bcc9598018e3c1f2627ff53dc704c93662c823c5"
+    },
+    {
+      "file": "shard-014.npz",
+      "states": 64,
+      "sha256": "a378a400a49f851ef7f56bba545ebcda3c19714915201644d84eb05bc0a830f8"
+    },
+    {
+      "file": "shard-015.npz",
+      "states": 64,
+      "sha256": "5a049da5fe4dd03919024e98e069e824e75dcac183fbba603ccd16c6b5993115"
+    }
+  ],
+  "labels_only": "Projected body keypoints and geometry segmentation never enter the deployed observer.",
+  "static_perception_examples": true,
+  "physical_demonstrations": false,
+  "robot_pose_sources": [
+    "docs/robotics/evidence/rgb-servo-v5/physical/development/2026097402-nominal/states.npz",
+    "docs/robotics/evidence/rgb-servo-v5/physical/development/2026097403-nominal/states.npz"
+  ],
+  "reserve_gib": 10,
+  "camera_configuration": "original",
+  "camera_protocol_sha256": "1891981aaa203a9b58eae205572e0512c5642443c707b8113e92056044369711",
+  "generator_sha256": "f047aa3c9ccd08d756d3fa72c08cdd16ed42ab216c26f715ccf9456d782fa85e",
+  "parent_git_revision": "b06be89a035ca6ee582d9a59467ec452c945f86f",
+  "arm_pose_source_sha256": {
+    "docs/robotics/evidence/rgb-servo-v5/physical/development/2026097402-nominal/states.npz": "b2139405834a5ac1815e96d2465141a494723630713097c273ec5ee6cec058a0",
+    "docs/robotics/evidence/rgb-servo-v5/physical/development/2026097403-nominal/states.npz": "9701357464a5dea32ec57ab9de6e92eac351f46455c1d856b86c43ba5d7c6f72"
+  },
+  "sampled_states_sha256": "5b6ee6c08862d19490e5cef768dbfeb335616d29aa2e521b4bf1311f678f7ce0",
+  "calibrations": {
+    "servo_overhead": {
+      "projection": [
+        [
+          289.70562438082106,
+          -7.942179233028326e-15,
+          -160.0,
+          243.15736897744793
+        ],
+        [
+          -1.773935405370967e-14,
+          -289.70562438082106,
+          -120.00000000000001,
+          173.3147254315665
+        ],
+        [
+          3.7493993930529855e-33,
+          6.123234262925839e-17,
+          -1.0,
+          1.565000057220459
+        ]
+      ],
+      "position": [
+        0.02499999850988388,
+        -0.05000000074505806,
+        1.565000057220459
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_left": {
+      "projection": [
+        [
+          139.96006121796395,
+          269.7455894009473,
+          -131.06432914733887,
+          235.9376259738274
+        ],
+        [
+          119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          300.9390426756939
+        ],
+        [
+          -0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4426019191741943
+        ]
+      ],
+      "position": [
+        0.31701743602752686,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_right": {
+      "projection": [
+        [
+          269.7455894009473,
+          -139.96006121796395,
+          -131.06432914733887,
+          212.20772144375218
+        ],
+        [
+          -119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          306.8958486433129
+        ],
+        [
+          0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4223229885101318
+        ]
+      ],
+      "position": [
+        -0.2670174539089203,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    }
+  },
+  "completed_states": 1024,
+  "wall_seconds": 34.2029077000916,
+  "original_manifest_sha256": "2c2337c7a6d0a948a8b0bcf104ad434c4b252e4bb1986f78aba4963c0bb89c50",
+  "packaging_transformation": "Protocol path normalized; original manifest SHA retained; all other original fields preserved."
+}

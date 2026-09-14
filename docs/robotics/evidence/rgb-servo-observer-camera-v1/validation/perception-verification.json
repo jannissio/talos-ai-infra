@@ -1,0 +1,57 @@
+{
+  "schema": "talos.rgb-servo-observer-camera-training.v1",
+  "protocol_sha256": "a9eeea6fcb3d21a1890ed6c3b8a7942a0e2a70247d8bce9480ba0ae72e1b3014",
+  "freeze_sha256": "333bfb6350a107fb347a206ab7577b793b6486667ae6ad31de4cea0685b323b6",
+  "development": {
+    "original": {
+      "states": 256,
+      "present": 233,
+      "accepted_present": 214,
+      "absent": 23,
+      "false_accepted_absent": 0,
+      "accepted_error_p95_mm": 2.6326736059462235,
+      "accepted_error_max_mm": 4.933714892039658,
+      "gate_passed": true,
+      "changed_acceptance_decisions_from_cuda": 0,
+      "maximum_score_delta_from_cuda_mm": 0.0026270931061762592
+    },
+    "opposite_obliques": {
+      "states": 256,
+      "present": 233,
+      "accepted_present": 221,
+      "absent": 23,
+      "false_accepted_absent": 0,
+      "accepted_error_p95_mm": 2.6635011197601486,
+      "accepted_error_max_mm": 4.702669960319059,
+      "gate_passed": true,
+      "changed_acceptance_decisions_from_cuda": 0,
+      "maximum_score_delta_from_cuda_mm": 0.0063530972643492944
+    }
+  },
+  "fresh_perception": {
+    "original": {
+      "states": 256,
+      "present": 232,
+      "accepted_present": 218,
+      "absent": 24,
+      "false_accepted_absent": 0,
+      "accepted_error_p95_mm": 2.2986533311083823,
+      "accepted_error_max_mm": 6.5158529785834896,
+      "gate_passed": false
+    },
+    "opposite_obliques": {
+      "states": 256,
+      "present": 232,
+      "accepted_present": 226,
+      "absent": 24,
+      "false_accepted_absent": 0,
+      "accepted_error_p95_mm": 2.2931897086679816,
+      "accepted_error_max_mm": 7.124302210543776,
+      "gate_passed": false
+    }
+  },
+  "selected_configuration": "opposite_obliques",
+  "selected_fresh_gate_passed": false,
+  "physical_trials": 0,
+  "scope": "OpenVINO CPU perception validation on AMD; no physical promotion or Intel evidence."
+}

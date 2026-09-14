@@ -1,0 +1,149 @@
+{
+  "protocol": "docs/robotics/experiments/rgb-servo-observer-camera-training-v1.json",
+  "protocol_sha256": "a9eeea6fcb3d21a1890ed6c3b8a7942a0e2a70247d8bce9480ba0ae72e1b3014",
+  "split": "development",
+  "states": 256,
+  "views": [
+    "servo_overhead",
+    "servo_left",
+    "servo_right"
+  ],
+  "shards": [
+    {
+      "file": "shard-000.npz",
+      "states": 64,
+      "sha256": "1ba761896e0876eb406d39e87bac58210a92cc2469cd0d984137129bf12cc392"
+    },
+    {
+      "file": "shard-001.npz",
+      "states": 64,
+      "sha256": "6e64a3350bbe2c50bfe10bc93b836e2210c903d6cf124075d724680099dca44b"
+    },
+    {
+      "file": "shard-002.npz",
+      "states": 64,
+      "sha256": "9fe8e4dc418d284be8cb8a7df7f214fdaa9aebba44188ab411910d70761cc161"
+    },
+    {
+      "file": "shard-003.npz",
+      "states": 64,
+      "sha256": "80fc3ad13ea09ef80a521c0233ba2d4f476ec49ee82e74124ac14535a203d617"
+    }
+  ],
+  "labels_only": "Projected body keypoints and geometry segmentation never enter the deployed observer.",
+  "static_perception_examples": true,
+  "physical_demonstrations": false,
+  "robot_pose_sources": [
+    "docs/robotics/evidence/rgb-servo-v5/physical/development/2026097402-nominal/states.npz",
+    "docs/robotics/evidence/rgb-servo-v5/physical/development/2026097403-nominal/states.npz"
+  ],
+  "reserve_gib": 10,
+  "camera_configuration": "original",
+  "camera_protocol_sha256": "1891981aaa203a9b58eae205572e0512c5642443c707b8113e92056044369711",
+  "generator_sha256": "f047aa3c9ccd08d756d3fa72c08cdd16ed42ab216c26f715ccf9456d782fa85e",
+  "parent_git_revision": "b06be89a035ca6ee582d9a59467ec452c945f86f",
+  "arm_pose_source_sha256": {
+    "docs/robotics/evidence/rgb-servo-v5/physical/development/2026097402-nominal/states.npz": "b2139405834a5ac1815e96d2465141a494723630713097c273ec5ee6cec058a0",
+    "docs/robotics/evidence/rgb-servo-v5/physical/development/2026097403-nominal/states.npz": "9701357464a5dea32ec57ab9de6e92eac351f46455c1d856b86c43ba5d7c6f72"
+  },
+  "sampled_states_sha256": "8b77e06b161b13d7f81e23d04e4267fceb0f2eb7e609c5b53f796f78c76cc115",
+  "calibrations": {
+    "servo_overhead": {
+      "projection": [
+        [
+          289.70562438082106,
+          -7.942179233028326e-15,
+          -160.0,
+          243.15736897744793
+        ],
+        [
+          -1.773935405370967e-14,
+          -289.70562438082106,
+          -120.00000000000001,
+          173.3147254315665
+        ],
+        [
+          3.7493993930529855e-33,
+          6.123234262925839e-17,
+          -1.0,
+          1.565000057220459
+        ]
+      ],
+      "position": [
+        0.02499999850988388,
+        -0.05000000074505806,
+        1.565000057220459
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_left": {
+      "projection": [
+        [
+          139.96006121796395,
+          269.7455894009473,
+          -131.06432914733887,
+          235.9376259738274
+        ],
+        [
+          119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          300.9390426756939
+        ],
+        [
+          -0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4426019191741943
+        ]
+      ],
+      "position": [
+        0.31701743602752686,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    },
+    "servo_right": {
+      "projection": [
+        [
+          269.7455894009473,
+          -139.96006121796395,
+          -131.06432914733887,
+          212.20772144375218
+        ],
+        [
+          -119.13603168091461,
+          -119.13603168091461,
+          -264.4665705386776,
+          306.8958486433129
+        ],
+        [
+          0.4055797755718231,
+          0.4055797755718231,
+          -0.8191520571708679,
+          1.4223229885101318
+        ]
+      ],
+      "position": [
+        -0.2670174539089203,
+        -0.34201744198799133,
+        1.4347894191741943
+      ],
+      "image_shape": [
+        240,
+        320
+      ]
+    }
+  },
+  "completed_states": 256,
+  "wall_seconds": 7.736997100058943,
+  "original_manifest_sha256": "c57c44942d391923525741839babad2f369130a846c08d776d55a9e20e2e8905",
+  "packaging_transformation": "Protocol path normalized; original manifest SHA retained; all other original fields preserved."
+}

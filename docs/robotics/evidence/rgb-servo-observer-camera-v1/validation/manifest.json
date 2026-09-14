@@ -1,0 +1,638 @@
+{
+  "files": [
+    {
+      "file": "audit.json",
+      "sha256": "c3bbb5fbc4d703b36566a94f3b7da821aa7279bc0fdf214172808cc2b709c30c",
+      "bytes": 1306
+    },
+    {
+      "file": "camera-protocol.json",
+      "sha256": "1891981aaa203a9b58eae205572e0512c5642443c707b8113e92056044369711",
+      "bytes": 3139
+    },
+    {
+      "file": "cpu-development-audit.json",
+      "sha256": "5002e72b4251e0bb65a9e697b139027f0e99454ab2583a035dce6e2f2c9c1001",
+      "bytes": 782
+    },
+    {
+      "file": "data/development-opposite_obliques/labels.npz",
+      "sha256": "e27311755dc71a013f1571eccbfd3cd88c937fa4835da0d3f87da2df02d336dd",
+      "bytes": 134870
+    },
+    {
+      "file": "data/development-opposite_obliques/manifest.json",
+      "sha256": "a4f02d1ef0771f0d7131750f3a97bd1b2c5de58fb8776ee6ad57efc249d24ecb",
+      "bytes": 4331
+    },
+    {
+      "file": "data/development-opposite_obliques/rgb-sha256.json",
+      "sha256": "eeddeb1a6422f61869f1d29524c8b28b6af41b7b761b401d6b9e2688f663fb57",
+      "bytes": 60202
+    },
+    {
+      "file": "data/development-opposite_obliques/sampled-states.npz",
+      "sha256": "8b77e06b161b13d7f81e23d04e4267fceb0f2eb7e609c5b53f796f78c76cc115",
+      "bytes": 44875
+    },
+    {
+      "file": "data/development-original/labels.npz",
+      "sha256": "79b6958189199d9deaef66d6f88cb63a503735668d7e1ba3ebbad2a4e0ffe68c",
+      "bytes": 133846
+    },
+    {
+      "file": "data/development-original/manifest.json",
+      "sha256": "d2586ac00364e3d1120b8f6f3079deb416cfc3afabb57f69b0a2c4c4bc14e0c2",
+      "bytes": 4323
+    },
+    {
+      "file": "data/development-original/rgb-sha256.json",
+      "sha256": "24c796aba81147178f510e70552b55a5be294576107cc10c8141ef543e5bafd6",
+      "bytes": 60202
+    },
+    {
+      "file": "data/development-original/sampled-states.npz",
+      "sha256": "8b77e06b161b13d7f81e23d04e4267fceb0f2eb7e609c5b53f796f78c76cc115",
+      "bytes": 44875
+    },
+    {
+      "file": "data/evaluation-opposite_obliques/labels.npz",
+      "sha256": "c34556b61aa51730d53a422460c92b01d757519c4c73f26c3fc294960da7d64f",
+      "bytes": 134776
+    },
+    {
+      "file": "data/evaluation-opposite_obliques/manifest.json",
+      "sha256": "5e547f9251eb61b8a6e7754110c5ebf65b534d900395bbf6e5c1479b67fd11c5",
+      "bytes": 4330
+    },
+    {
+      "file": "data/evaluation-opposite_obliques/rgb-sha256.json",
+      "sha256": "10e7881dec26d4a9084312c445d6b07b9e79675121eedf706c69bc14bcbf0d25",
+      "bytes": 60202
+    },
+    {
+      "file": "data/evaluation-opposite_obliques/sampled-states.npz",
+      "sha256": "176f6638f91168b4572b01fe6a4cabcff5c51f2a7dd5e69cc9eea426ff15d021",
+      "bytes": 44854
+    },
+    {
+      "file": "data/evaluation-original/labels.npz",
+      "sha256": "f56d9622cf84d52c6d9906d7c41e45fa52798e6608fd559412106bb470aa5fa6",
+      "bytes": 133745
+    },
+    {
+      "file": "data/evaluation-original/manifest.json",
+      "sha256": "7fa6ac563d6207febc058cc024c4f0447d040e640936f82db1f22850e757eab3",
+      "bytes": 4322
+    },
+    {
+      "file": "data/evaluation-original/rgb-sha256.json",
+      "sha256": "2f3f6707ae15fa7e2c9e26b05f50c57fb75f51ab6856aabc620d6c9f3414014b",
+      "bytes": 60202
+    },
+    {
+      "file": "data/evaluation-original/sampled-states.npz",
+      "sha256": "176f6638f91168b4572b01fe6a4cabcff5c51f2a7dd5e69cc9eea426ff15d021",
+      "bytes": 44854
+    },
+    {
+      "file": "data/train-opposite_obliques/labels.npz",
+      "sha256": "3e08333cb0e26cd30f8015476853a11a5a77e15fb33f2fa9901973e1b87ec3c1",
+      "bytes": 537997
+    },
+    {
+      "file": "data/train-opposite_obliques/manifest.json",
+      "sha256": "82a8e9193a85dc2c0d60fb660d5327251ef2d70d6c756ebd63222d7a1d088874",
+      "bytes": 6091
+    },
+    {
+      "file": "data/train-opposite_obliques/rgb-sha256.json",
+      "sha256": "a4513d3a257b29b4e9795e7cea444475198d8fd364bdfd721280416d66c4ecde",
+      "bytes": 239914
+    },
+    {
+      "file": "data/train-opposite_obliques/sampled-states.npz",
+      "sha256": "5b6ee6c08862d19490e5cef768dbfeb335616d29aa2e521b4bf1311f678f7ce0",
+      "bytes": 176309
+    },
+    {
+      "file": "data/train-original/labels.npz",
+      "sha256": "64e613e12ce24675f56468963e16c8d62328be97e7aadbfe52323efd72630539",
+      "bytes": 533677
+    },
+    {
+      "file": "data/train-original/manifest.json",
+      "sha256": "2857de84cf87641b97a36316d96233194f369ab932796b979fc80b0b2651dbfe",
+      "bytes": 6082
+    },
+    {
+      "file": "data/train-original/rgb-sha256.json",
+      "sha256": "1c6c5b43521c6b6c3d0589a34667b714b8e83c2df02ccec2ab581fffc61532ca",
+      "bytes": 239914
+    },
+    {
+      "file": "data/train-original/sampled-states.npz",
+      "sha256": "5b6ee6c08862d19490e5cef768dbfeb335616d29aa2e521b4bf1311f678f7ce0",
+      "bytes": 176309
+    },
+    {
+      "file": "development-cpu-opposite_obliques/frame-000.png",
+      "sha256": "2290820770c3670c7386d0c914ac2b62d712f2673c19e247400845d2d6da4d11",
+      "bytes": 131991
+    },
+    {
+      "file": "development-cpu-opposite_obliques/frame-032.png",
+      "sha256": "051281b810caf0320da5bb25406a4a0435a5a27754657839c889d5186f1b2c42",
+      "bytes": 115326
+    },
+    {
+      "file": "development-cpu-opposite_obliques/frame-064.png",
+      "sha256": "3d4dca0b83bd57ca8fb8a2219a31286bc6e832df8083cceddd8af7a3a50ebf20",
+      "bytes": 122460
+    },
+    {
+      "file": "development-cpu-opposite_obliques/frame-096.png",
+      "sha256": "e736aed42c2b50cc63fe5fb457a9131ed78c4112125b8fbc86103c7a1ba49a65",
+      "bytes": 125719
+    },
+    {
+      "file": "development-cpu-opposite_obliques/frame-128.png",
+      "sha256": "a2f255820fe724ce38249b3e6dd3b6a306bd1062b76c88e431bf4f1f804e38a9",
+      "bytes": 115062
+    },
+    {
+      "file": "development-cpu-opposite_obliques/frame-160.png",
+      "sha256": "ef8f429060b0fddb115e784a98f3ee4ca479a4eef7c95e7e671286ef1c5438be",
+      "bytes": 124186
+    },
+    {
+      "file": "development-cpu-opposite_obliques/frame-192.png",
+      "sha256": "3e2cd500d5d5f9bc65f8c9beb9536cae810114038bb64879073e0e02905850ce",
+      "bytes": 122747
+    },
+    {
+      "file": "development-cpu-opposite_obliques/frame-224.png",
+      "sha256": "38b9544a696f76c86b8630142923d1227f4476e63354119fa626d661353d7a0f",
+      "bytes": 122832
+    },
+    {
+      "file": "development-cpu-opposite_obliques/results.json",
+      "sha256": "e9fabe9c567e826cf3c6d9859611b648a622cac7c79c48c56d4f502d448fcec2",
+      "bytes": 734757
+    },
+    {
+      "file": "development-cpu-original/frame-000.png",
+      "sha256": "bf041c716f26e9cc8d0fd7cc55362b9855ec95a77f22cb588174420d9cab22da",
+      "bytes": 135686
+    },
+    {
+      "file": "development-cpu-original/frame-032.png",
+      "sha256": "b5ba00ac5098a2d592c3bc4345e4892441c78941d40e7b67441aa2243b6c29fd",
+      "bytes": 119697
+    },
+    {
+      "file": "development-cpu-original/frame-064.png",
+      "sha256": "a25b0125f1f3727f7ab719514515ee962a554fc2ab260499913955cbb138d9e0",
+      "bytes": 126684
+    },
+    {
+      "file": "development-cpu-original/frame-096.png",
+      "sha256": "a24d49b85475f40ea2fd85182a4ff8365ce70b065606ce74d0d3c085763ade87",
+      "bytes": 130658
+    },
+    {
+      "file": "development-cpu-original/frame-128.png",
+      "sha256": "c6e0294f5c708a34f29e81c8810e6e7b6a0667e0e9dbb04dd39cfcf22e7d8a6b",
+      "bytes": 121386
+    },
+    {
+      "file": "development-cpu-original/frame-160.png",
+      "sha256": "969544d98cb63653d5b9c409b085bfc333a31bb09d4c2f3c2d54c624b1ff4580",
+      "bytes": 128660
+    },
+    {
+      "file": "development-cpu-original/frame-192.png",
+      "sha256": "b828073db6fe5ca7f0d41d02023cf4c5c1612ca54f662c024411633bb343442d",
+      "bytes": 128095
+    },
+    {
+      "file": "development-cpu-original/frame-224.png",
+      "sha256": "677c83ebadda61b2bb632a97b96d6385193dac84d5b705091a132253520b889d",
+      "bytes": 128259
+    },
+    {
+      "file": "development-cpu-original/results.json",
+      "sha256": "dd4ac539bd20a6c07943b352978856d5fce6c2b08c459313ce174f6eecbf4c17",
+      "bytes": 729803
+    },
+    {
+      "file": "evaluation-cpu-opposite_obliques/frame-000.png",
+      "sha256": "7a21aaa7983f87dfc21ddcab4509434c46475a5f6f049190eab4cf635f3cb7a3",
+      "bytes": 123160
+    },
+    {
+      "file": "evaluation-cpu-opposite_obliques/frame-032.png",
+      "sha256": "c1edbb65c261bbea4518ca25bcb507ec6c932adb8944252c7b6de6d3d331e6fb",
+      "bytes": 117872
+    },
+    {
+      "file": "evaluation-cpu-opposite_obliques/frame-064.png",
+      "sha256": "776f795854815fdedbf6920519a3b8eda3482736404093b084e69883544c97ba",
+      "bytes": 119305
+    },
+    {
+      "file": "evaluation-cpu-opposite_obliques/frame-096.png",
+      "sha256": "04842c5b205c75cc7adb19228323da83216a863c2ffb130221d8c927bc2a0595",
+      "bytes": 130997
+    },
+    {
+      "file": "evaluation-cpu-opposite_obliques/frame-128.png",
+      "sha256": "2df252ce5e05c12220b6d6e996d917cca9216223d181d4ff85f3cb3553d4f450",
+      "bytes": 123208
+    },
+    {
+      "file": "evaluation-cpu-opposite_obliques/frame-160.png",
+      "sha256": "735c2ed787488782e7904029b1e3b7c974f51765dc56ab3b025ff17232e6d2c8",
+      "bytes": 126604
+    },
+    {
+      "file": "evaluation-cpu-opposite_obliques/frame-192.png",
+      "sha256": "16d104250e1509f0d7793850f94dba08d8c343583d233ee180b9251584a6d295",
+      "bytes": 116451
+    },
+    {
+      "file": "evaluation-cpu-opposite_obliques/frame-224.png",
+      "sha256": "8257337c7c25f88c881fa7428d40c1ce581c4e681b82f4c1a717019810097467",
+      "bytes": 126332
+    },
+    {
+      "file": "evaluation-cpu-opposite_obliques/results.json",
+      "sha256": "026bf04018ebd2fbba8a1a7e5201687d73d833838858423546cf49dfe2eaad31",
+      "bytes": 738514
+    },
+    {
+      "file": "evaluation-cpu-original/frame-000.png",
+      "sha256": "1a9550813d1c09e47463ed2593544242818195d7251497b020ff75aa5ac0fcc9",
+      "bytes": 126481
+    },
+    {
+      "file": "evaluation-cpu-original/frame-032.png",
+      "sha256": "be83a87a482982877bad686f797b50f1a92c3d3a10d2e25395d5728106fb652f",
+      "bytes": 128475
+    },
+    {
+      "file": "evaluation-cpu-original/frame-064.png",
+      "sha256": "538c7538d1dbee4f5e886652077c0614ee43ad2a34b741a8127218d86e0aa33c",
+      "bytes": 123799
+    },
+    {
+      "file": "evaluation-cpu-original/frame-096.png",
+      "sha256": "24ba29733e0bf4d18fb40660ee5b66597397a5aa561529b2557e093634eca545",
+      "bytes": 136884
+    },
+    {
+      "file": "evaluation-cpu-original/frame-128.png",
+      "sha256": "6811a28d66392c2f6a7b490cfbda4ff62bacc09d353e9397985eed6851ccf52e",
+      "bytes": 128217
+    },
+    {
+      "file": "evaluation-cpu-original/frame-160.png",
+      "sha256": "95f0248654cef17979f143b32848e7c588d424320e522ba315ef4403400b6fc5",
+      "bytes": 129657
+    },
+    {
+      "file": "evaluation-cpu-original/frame-192.png",
+      "sha256": "571196540c5976bba2773b9d01e20ddfeaf8592ad2261c484c09db586bcfab6d",
+      "bytes": 122634
+    },
+    {
+      "file": "evaluation-cpu-original/frame-224.png",
+      "sha256": "89976e5e5759ed66de9ace8912d5a9d6199e5390fcdc54fa4a1e8ac8943f1d2c",
+      "bytes": 131005
+    },
+    {
+      "file": "evaluation-cpu-original/results.json",
+      "sha256": "4d66003b93dfaaef3f182f3f7ffe6d2a547f01b7eafbbef973a75f1a987e44b8",
+      "bytes": 733311
+    },
+    {
+      "file": "fresh-perception-freeze.json",
+      "sha256": "333bfb6350a107fb347a206ab7577b793b6486667ae6ad31de4cea0685b323b6",
+      "bytes": 2066
+    },
+    {
+      "file": "openvino/motor.bin",
+      "sha256": "277d06790b778ff5b45cabb44015e3f8cf2b7c38e8fb0c8a9b924fee6c385cd5",
+      "bytes": 536656
+    },
+    {
+      "file": "openvino/motor.xml",
+      "sha256": "6380d60a8248492dcc9fdf3c14ac169222f55223318b32a39e2ad8719ca0a0f8",
+      "bytes": 13529
+    },
+    {
+      "file": "openvino/observer.bin",
+      "sha256": "9ee387fc2bfbde69367e49f5ec7bc5b6b38f5faa1d7b80004d6773456f7c73f0",
+      "bytes": 1575136
+    },
+    {
+      "file": "openvino/observer.xml",
+      "sha256": "542ac6cfe8903a66dd0c420f87bd571b49ba6873edd85cecbb87fd660b5adbe1",
+      "bytes": 82369
+    },
+    {
+      "file": "openvino/parity.json",
+      "sha256": "bbf5ec128a8b1828f5f7e4b0386aa1e3832ea6ccb7ddfc7f7ad807ecac0cc3e3",
+      "bytes": 1130
+    },
+    {
+      "file": "orchestration/verify_observer_camera_v1.py",
+      "sha256": "f2ecf82a4bead42fb832f176ca87d98d1b8587459792acefe072e6894ba3e725",
+      "bytes": 6498
+    },
+    {
+      "file": "perception-verification.json",
+      "sha256": "9b3922735330e85a900187511c2d51db391656f1741a4537ae092b70d53880d1",
+      "bytes": 1929
+    },
+    {
+      "file": "reproduction-inputs.json",
+      "sha256": "f03f5812b0715f39efb774a1d93202e7025344cabff4740efabf4c6f09573a51",
+      "bytes": 8270
+    },
+    {
+      "file": "scene.xml",
+      "sha256": "b0013192876d9ff69ff14c6ef9c947d191cf8c2814af0d775c76567fae4ccf44",
+      "bytes": 136446
+    },
+    {
+      "file": "source/scripts/collect_rgb_servo_camera_observer.py",
+      "sha256": "f047aa3c9ccd08d756d3fa72c08cdd16ed42ab216c26f715ccf9456d782fa85e",
+      "bytes": 10886
+    },
+    {
+      "file": "source/scripts/evaluate_rgb_servo_observer.py",
+      "sha256": "7f0e9324040a9798cf08ce8b8272bceb45607e5560232b2c6c14646bbeb3b6b9",
+      "bytes": 6965
+    },
+    {
+      "file": "source/scripts/export_rgb_servo_openvino.py",
+      "sha256": "28a0fb70d36cf9a2b15c2b50b1a051af9d46359c2ba8cc23ff6b1c70defd01d9",
+      "bytes": 3957
+    },
+    {
+      "file": "source/scripts/package_rgb_servo_camera_training.py",
+      "sha256": "b048e26346c6a73ae9926c247e95a1733640b4f83016d1ab7fcf0accbc8a6b74",
+      "bytes": 22394
+    },
+    {
+      "file": "source/scripts/train_rgb_servo_camera_observer.py",
+      "sha256": "65b7b7fe03e4a918ca6bb45fd0a87f7ee426a43476fdaa949a810c177d7e001c",
+      "bytes": 12718
+    },
+    {
+      "file": "source/scripts/train_rgb_servo_observer.py",
+      "sha256": "9e74341798a9f2583f9e1291571a37a7c9a8d6fea42aeb701d3d712cde5f82dc",
+      "bytes": 10766
+    },
+    {
+      "file": "source/simulation_lab/__init__.py",
+      "sha256": "41d6e06b5cd49e86faaccfc822e0195485e4efed792c4ae28bdb42dc8e814220",
+      "bytes": 82
+    },
+    {
+      "file": "source/simulation_lab/act_learning.py",
+      "sha256": "0266d6ec1db5291a14f7b0cc2bdc1e6eb977497b3d6e1342eeb0a6e6db4ff4c2",
+      "bytes": 4203
+    },
+    {
+      "file": "source/simulation_lab/autonomy.py",
+      "sha256": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+      "bytes": 32350
+    },
+    {
+      "file": "source/simulation_lab/bottle_vision.py",
+      "sha256": "5b6ccf6e0224bf66ef7d4c69c382384add65d90ebfeedad838be5dc756bfa9ac",
+      "bytes": 1651
+    },
+    {
+      "file": "source/simulation_lab/command_task.py",
+      "sha256": "b3861f88af0a3535569e3d911f68e0e1d566f0b1f5f24b60c79417d561ce51a4",
+      "bytes": 6890
+    },
+    {
+      "file": "source/simulation_lab/dataset.py",
+      "sha256": "1c9310a12391a957563f317f0f260ebc5ff284b9050a27b4a27fcb3143f1b2d2",
+      "bytes": 2391
+    },
+    {
+      "file": "source/simulation_lab/dinner.py",
+      "sha256": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11",
+      "bytes": 15459
+    },
+    {
+      "file": "source/simulation_lab/dinner_autonomy.py",
+      "sha256": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+      "bytes": 32018
+    },
+    {
+      "file": "source/simulation_lab/dinner_monitor.py",
+      "sha256": "34b2a5356ffcb5c2cf888607ceb387e51ca2ed00f6fa8fa39a897744e8bebe54",
+      "bytes": 5552
+    },
+    {
+      "file": "source/simulation_lab/dinner_vision.py",
+      "sha256": "66d0bc15b9a9f40832db56378de62c1b5355cebf583ececf7d8fa936a192360e",
+      "bytes": 4673
+    },
+    {
+      "file": "source/simulation_lab/engine.py",
+      "sha256": "84e69918d2bc9a98bcb5d23f7e9d2a6bb8410c25d6c1fe4eba24b766d4d77035",
+      "bytes": 25351
+    },
+    {
+      "file": "source/simulation_lab/experiment_push.py",
+      "sha256": "156700845e130b86e93774c9dfae4221de5443f9855c86bd8e84d7f052a22003",
+      "bytes": 712
+    },
+    {
+      "file": "source/simulation_lab/experiment_targets.py",
+      "sha256": "0704accb79c80d894efdf721e7a23437348c9dfe2d0d5edefd63e8b225ea9654",
+      "bytes": 722
+    },
+    {
+      "file": "source/simulation_lab/hardware_evidence.py",
+      "sha256": "386d563af1666943fb1fcf0d545389220eb30f5808f361bbf72df4aa4a2d7222",
+      "bytes": 488
+    },
+    {
+      "file": "source/simulation_lab/hosted_gpu.py",
+      "sha256": "668fd99bf83a52a8730179b33f93c5d319707033fecb0cf49f1bd39e2e727bb7",
+      "bytes": 4389
+    },
+    {
+      "file": "source/simulation_lab/hosted_worker.py",
+      "sha256": "60cf416fb7f6ef9f5151ccd9127fa821ddee3f65b74712f11ad11c37e6a3a5b2",
+      "bytes": 5050
+    },
+    {
+      "file": "source/simulation_lab/language.py",
+      "sha256": "8a6aa3efc5515e2da1d334432b884de297b53b1f048aba60c031d1739ddcfc1b",
+      "bytes": 5801
+    },
+    {
+      "file": "source/simulation_lab/learned_dinner.py",
+      "sha256": "5402aa9069b0a20b21c352272fbeb5dcf70d03ae555aa65d66574e5bf7975066",
+      "bytes": 12677
+    },
+    {
+      "file": "source/simulation_lab/learned_plan.py",
+      "sha256": "af91498d8f2d4cff06c829c1fc8c1075b359c00ed49e07043f8301bc4f85fcd8",
+      "bytes": 4681
+    },
+    {
+      "file": "source/simulation_lab/learned_skills.py",
+      "sha256": "3ef610a6e6d0516e8bf92d4e7f2b3d06540b49e2671682ab642239aa2cbb129b",
+      "bytes": 698
+    },
+    {
+      "file": "source/simulation_lab/learned_task.py",
+      "sha256": "3bc2fc075d15e07d5717333fbd69541d2e76d2bd41621a71f1a6e51229d2e24f",
+      "bytes": 8314
+    },
+    {
+      "file": "source/simulation_lab/policy_cameras.py",
+      "sha256": "1415c5f173502017c99f651778245dae83116f4b91b7bbe8bf614cecf06b2752",
+      "bytes": 723
+    },
+    {
+      "file": "source/simulation_lab/policy_control.py",
+      "sha256": "a418fe2619985852d4e65b40e20c18f82fd72076b4d8b9202507dda4a410b151",
+      "bytes": 904
+    },
+    {
+      "file": "source/simulation_lab/policy_observation.py",
+      "sha256": "d15a9b72e7fb366681d29a21f598d21ffd147b1b9ba56729d296250a67b37af6",
+      "bytes": 131
+    },
+    {
+      "file": "source/simulation_lab/primitive_policy.py",
+      "sha256": "60c009448171533385df1be82e3f64ed395f28d3e03145eb2f10ab6a791ef143",
+      "bytes": 8906
+    },
+    {
+      "file": "source/simulation_lab/public_trial.py",
+      "sha256": "12c83dc1c598b5a6138ecf7ce89ee15c654adb3f110f010963fe152f830c926d",
+      "bytes": 7411
+    },
+    {
+      "file": "source/simulation_lab/recording.py",
+      "sha256": "073fc8a874a313288399f1827c2018198c92e3da2975b122655afe41aebe43a2",
+      "bytes": 17533
+    },
+    {
+      "file": "source/simulation_lab/relay_task.py",
+      "sha256": "a1387ecf36d24166b6cd356a14375aa47aceb4202687b4ccc96a3d305ab6bcd2",
+      "bytes": 2646
+    },
+    {
+      "file": "source/simulation_lab/rendering.py",
+      "sha256": "570f36b7b683c05d6c33aebc442828196db00596c10ed5e94df2b49ceccf0fcd",
+      "bytes": 3069
+    },
+    {
+      "file": "source/simulation_lab/retrieval_policy.py",
+      "sha256": "e47aab06fae8c825cccbe72dae7040edf3ee5d7b07a6537080b95efe001c6873",
+      "bytes": 5478
+    },
+    {
+      "file": "source/simulation_lab/rgb_bottle_observer.py",
+      "sha256": "45e93ab0d7930a15c82f5e84809eb0d8d7d8d376ed878558529560ff20c18d20",
+      "bytes": 3852
+    },
+    {
+      "file": "source/simulation_lab/rgb_servo_cameras.py",
+      "sha256": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec",
+      "bytes": 2283
+    },
+    {
+      "file": "source/simulation_lab/rgb_servo_controller.py",
+      "sha256": "6fb0d6ac81f717288a23aa88f60bcd84f95f0137b0660db7d35ebe2aeba7cf94",
+      "bytes": 9675
+    },
+    {
+      "file": "source/simulation_lab/rgb_servo_geometry.py",
+      "sha256": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae",
+      "bytes": 2220
+    },
+    {
+      "file": "source/simulation_lab/rgb_servo_motor.py",
+      "sha256": "3d90c40a5af68f0b04dfe5aafaa7de47f4c0b67211d40cc1a461eae2311e22b7",
+      "bytes": 4412
+    },
+    {
+      "file": "source/simulation_lab/rgb_servo_network.py",
+      "sha256": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302",
+      "bytes": 3547
+    },
+    {
+      "file": "source/simulation_lab/rgb_servo_openvino.py",
+      "sha256": "2a091f27331304228bc57a306302cf05ced182af654a57c502b2bdea4bb1fa42",
+      "bytes": 2062
+    },
+    {
+      "file": "source/simulation_lab/rgb_servo_routing.py",
+      "sha256": "75acbf9a9e508ba24c29edc777c6ce83569d73bb9d7cbe567a2e7f40dffcafc6",
+      "bytes": 5932
+    },
+    {
+      "file": "source/simulation_lab/rgb_servo_vision.py",
+      "sha256": "498a5a52bd6fc207aa8754de074cc1c6d2ab9f10659e43f79d0aba12e9afcb1b",
+      "bytes": 1447
+    },
+    {
+      "file": "source/simulation_lab/scene.py",
+      "sha256": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+      "bytes": 13823
+    },
+    {
+      "file": "source/simulation_lab/sequence_policy.py",
+      "sha256": "510695960009387afef87284e76e57fa0cce500acd29c380336c08cf865904a8",
+      "bytes": 5049
+    },
+    {
+      "file": "source/simulation_lab/server.py",
+      "sha256": "724722f43bb88ee487fe1e94797fa0d658131d11f4455f3c5b1363c262bca6e8",
+      "bytes": 8114
+    },
+    {
+      "file": "source/simulation_lab/slots.py",
+      "sha256": "41755919e4d2bbfb2b023e78c09370d2fbcd740f377bdf616551aff2aa827873",
+      "bytes": 1870
+    },
+    {
+      "file": "source/simulation_lab/speech.py",
+      "sha256": "66a50562886702017bdf9e0d2a1af31dfb4531061af9b8a6c5c9f16d02cce4a0",
+      "bytes": 2143
+    },
+    {
+      "file": "source/simulation_lab/storage.py",
+      "sha256": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f",
+      "bytes": 723
+    },
+    {
+      "file": "worst-opposite_obliques.png",
+      "sha256": "0cf913607e5901129cfe57afe06ab0bf8168fd57dafb32f6d7d20b29cfc52cc3",
+      "bytes": 119371
+    },
+    {
+      "file": "worst-original.png",
+      "sha256": "d3dfe0c7a8cb6fb36a3ae9fab877ad7914ba9edb0b55e93d17796688072ed3ca",
+      "bytes": 131699
+    }
+  ],
+  "source": ".run/rgb-servo-observer-camera-v1",
+  "training_package_unchanged": true,
+  "originals_modified": false,
+  "compact_labels": "Exact concatenated original arrays excluding RGB; pixel hashes and rendering recipe retained."
+}

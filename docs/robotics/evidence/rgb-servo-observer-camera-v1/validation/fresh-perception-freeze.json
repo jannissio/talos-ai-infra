@@ -1,0 +1,29 @@
+{
+  "step": 3000,
+  "checkpoint": ".run/rgb-servo-observer-camera-v1/fit/step-003000.safetensors",
+  "checkpoint_sha256": "2d82fc20ee8bc7d209be57ca1436361c4865b3ee3fb1d49a176d2ca2df5f1109",
+  "protocol_sha256": "a9eeea6fcb3d21a1890ed6c3b8a7942a0e2a70247d8bce9480ba0ae72e1b3014",
+  "development_gate_passed": true,
+  "camera_configuration": "opposite_obliques",
+  "source_sha256": {
+    "scripts/train_rgb_servo_camera_observer.py": "65b7b7fe03e4a918ca6bb45fd0a87f7ee426a43476fdaa949a810c177d7e001c",
+    "scripts/collect_rgb_servo_camera_observer.py": "f047aa3c9ccd08d756d3fa72c08cdd16ed42ab216c26f715ccf9456d782fa85e",
+    "scripts/train_rgb_servo_observer.py": "9e74341798a9f2583f9e1291571a37a7c9a8d6fea42aeb701d3d712cde5f82dc",
+    "simulation_lab/rgb_bottle_observer.py": "45e93ab0d7930a15c82f5e84809eb0d8d7d8d376ed878558529560ff20c18d20",
+    "simulation_lab/rgb_servo_network.py": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302",
+    "simulation_lab/rgb_servo_cameras.py": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec",
+    "simulation_lab/rgb_servo_geometry.py": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae",
+    "simulation_lab/storage.py": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f"
+  },
+  "openvino_artifact_sha256": {
+    "observer.xml": "542ac6cfe8903a66dd0c420f87bd571b49ba6873edd85cecbb87fd660b5adbe1",
+    "observer.bin": "9ee387fc2bfbde69367e49f5ec7bc5b6b38f5faa1d7b80004d6773456f7c73f0",
+    "motor.xml": "6380d60a8248492dcc9fdf3c14ac169222f55223318b32a39e2ad8719ca0a0f8",
+    "motor.bin": "277d06790b778ff5b45cabb44015e3f8cf2b7c38e8fb0c8a9b924fee6c385cd5"
+  },
+  "export_parity_sha256": "bbf5ec128a8b1828f5f7e4b0386aa1e3832ea6ccb7ddfc7f7ad807ecac0cc3e3",
+  "cpu_development_audit_sha256": "5002e72b4251e0bb65a9e697b139027f0e99454ab2583a035dce6e2f2c9c1001",
+  "fresh_evaluation_rng_seed": 2026098203,
+  "fresh_evaluation_states": 256,
+  "evaluation_source_sha256": "7f0e9324040a9798cf08ce8b8272bceb45607e5560232b2c6c14646bbeb3b6b9"
+}
