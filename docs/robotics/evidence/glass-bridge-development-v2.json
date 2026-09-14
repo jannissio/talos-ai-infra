@@ -1,0 +1,638 @@
+{
+  "schema": "glass-bridge-development-v2",
+  "scope": "Privileged teacher dependency on exposed upright glass in joint seed2026114004 after mug clearance. No inverted/sideways glass, complete seven-object task, learned controller or coverage claim.",
+  "storage_preflight": {
+    "free_bytes": 540879867904,
+    "estimated_additional_bytes": 8388608,
+    "reserve_bytes": 10737418240
+  },
+  "geometry": [
+    {
+      "run": ".run/glass-bridge-geometry-v1",
+      "checked_buffers": 30,
+      "checked_bridge_proofs": 0,
+      "scope": "Reset-only geometry intersection; no physics steps. Actual held vertical grasp from saved motor run; horizontal hypothetical buffer resets retain actual obstacles."
+    },
+    {
+      "run": ".run/glass-bridge-geometry-v2",
+      "checked_buffers": 70,
+      "checked_bridge_proofs": 0,
+      "scope": "Reset-only geometry intersection; no physics steps. Actual held vertical grasp from saved motor run; horizontal hypothetical buffer resets retain actual obstacles."
+    },
+    {
+      "run": ".run/glass-bridge-geometry-v3",
+      "checked_buffers": 63,
+      "checked_bridge_proofs": 0,
+      "scope": "Reset-only geometry intersection; no physics steps. Actual held vertical grasp from saved motor run; horizontal hypothetical buffer resets retain actual obstacles."
+    },
+    {
+      "run": ".run/glass-bridge-geometry-v4",
+      "checked_buffers": 35,
+      "checked_bridge_proofs": 0,
+      "scope": "Reset-only geometry intersection; no physics steps. Actual held vertical grasp from saved motor run; horizontal hypothetical buffer resets retain actual obstacles."
+    },
+    {
+      "run": ".run/glass-bridge-geometry-v5",
+      "checked_buffers": 35,
+      "checked_bridge_proofs": 0,
+      "scope": "Reset-only geometry intersection; no physics steps. Actual held vertical grasp from saved motor run; horizontal hypothetical buffer resets retain actual obstacles."
+    },
+    {
+      "run": ".run/glass-bridge-geometry-v6",
+      "checked_buffers": 2,
+      "checked_bridge_proofs": 2,
+      "scope": "Reset-only geometry intersection; no physics steps. Actual held vertical grasp from saved motor run; horizontal hypothetical buffer resets retain actual obstacles."
+    },
+    {
+      "run": ".run/glass-bridge-geometry-v7",
+      "checked_buffers": 1,
+      "checked_bridge_proofs": 1,
+      "scope": "Reset-only geometry intersection; no physics steps. Actual held vertical grasp from saved motor run; horizontal hypothetical buffer resets retain actual obstacles."
+    }
+  ],
+  "attempts": [
+    {
+      "run": ".run/glass-bridge-physics-v1/leg1",
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for glass; 3 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for glass; 3 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "continuation_frames": 1,
+        "prefix_motor_frames": 0,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 0.4813569998368621
+      }
+    },
+    {
+      "run": ".run/glass-bridge-physics-v2/leg1",
+      "result": {
+        "status": "failed",
+        "message": "Gripper position/orientation tolerances not solved within joint limits.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819266632956664,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "rrt_routes": 1,
+          "lift_cm": 2.3993999986871017e-05,
+          "max_lift_cm": 5.283074659042663,
+          "both_fingers": false,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "external_contact_n": 0.35080613484973905,
+          "tilt_deg": 0.00210961300423852,
+          "peak_tilt_deg": 11.615603259393549,
+          "destination_normal_error_deg": 9.094410087764418,
+          "maximum_external_penetration_mm": 0.8301443822679747,
+          "other_object_max_displacement_mm": 6.5720656928351285e-06,
+          "post_hold_bridge_selected": true,
+          "placement_free_yaw": false
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 4.785,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 8.085,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.385,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 15.685,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 17.485,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "lower",
+            "at_s": 22.195,
+            "message": "Lower to measured table support"
+          },
+          {
+            "stage": "release",
+            "at_s": 25.32,
+            "message": "Release the object"
+          },
+          {
+            "stage": "failed",
+            "at_s": 29.625,
+            "message": "Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "frames": 5926,
+        "continuation_frames": 5926,
+        "prefix_motor_frames": 0,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 19.37753009982407,
+        "proven_hold_prefix_frames": 3497,
+        "proven_hold_motor_prefix_exact": true,
+        "proven_hold_source_sha256": "10fb935462735ad8403d150b42ccf94e0981095836661a884f2995190495abf5"
+      }
+    },
+    {
+      "run": ".run/glass-bridge-physics-v3/leg1",
+      "result": {
+        "status": "succeeded",
+        "message": "glass physically lifted, held, oriented, placed and released; both arms parked.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819266632956664,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "rrt_routes": 1,
+          "lift_cm": 2.8825212539107525e-05,
+          "max_lift_cm": 5.283074659042663,
+          "both_fingers": false,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "external_contact_n": 0.35059869916602665,
+          "tilt_deg": 0.0008705393618903161,
+          "peak_tilt_deg": 11.615603259393549,
+          "destination_normal_error_deg": 9.092104857792737,
+          "maximum_external_penetration_mm": 0.8301443822679747,
+          "other_object_max_displacement_mm": 8.634171103702027e-06,
+          "post_hold_bridge_selected": true,
+          "placement_free_yaw": false,
+          "release_joint_space_park_fallback": true,
+          "placement_xy_error_mm": 6.457549176725075,
+          "placement_z_error_mm": 3.8500409699607774,
+          "placement_yaw_error_deg": 0.0,
+          "placement_speed_mm_s": 0.015335686900898952,
+          "complete_object_supported_within_table": true
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 4.785,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 8.085,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 12.385,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 15.685,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 17.485,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "lower",
+            "at_s": 22.195,
+            "message": "Lower to measured table support"
+          },
+          {
+            "stage": "release",
+            "at_s": 25.32,
+            "message": "Release the object"
+          },
+          {
+            "stage": "retract",
+            "at_s": 29.625,
+            "message": "Withdraw the gripper"
+          },
+          {
+            "stage": "park",
+            "at_s": 35.105,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 38.41,
+            "message": "Verify stable placement"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 38.92,
+            "message": "glass physically lifted, held, oriented, placed and released; both arms parked."
+          }
+        ],
+        "frames": 7785,
+        "continuation_frames": 7785,
+        "prefix_motor_frames": 0,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": true,
+        "coverage_evaluation": false,
+        "wall_s": 26.10380049981177,
+        "proven_hold_prefix_frames": 3497,
+        "proven_hold_motor_prefix_exact": true,
+        "proven_hold_source_sha256": "10fb935462735ad8403d150b42ccf94e0981095836661a884f2995190495abf5",
+        "released_state_prefix_motor_frames": 5925,
+        "released_state_prefix_exact": true
+      }
+    },
+    {
+      "run": ".run/glass-bridge-physics-v3/leg2",
+      "result": {
+        "status": "succeeded",
+        "message": "glass physically lifted, held, oriented, placed and released; both arms parked.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 3.1856435689538583e-11,
+          "hold_verified_s": 1.8049999999983584,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": -2.4816685917361525e-05,
+          "max_lift_cm": 6.575776225699615,
+          "both_fingers": false,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "external_contact_n": 0.3507037402095491,
+          "tilt_deg": 0.0018877630373421064,
+          "peak_tilt_deg": 0.7877856252567209,
+          "destination_normal_error_deg": 0.0018877630373421064,
+          "maximum_external_penetration_mm": 0.14982152208171218,
+          "other_object_max_displacement_mm": 8.098743659125747e-06,
+          "placement_free_yaw": false,
+          "placement_xy_error_mm": 0.3981659458319338,
+          "placement_z_error_mm": 0.05746781400994827,
+          "placement_yaw_error_deg": 0.0,
+          "placement_speed_mm_s": 0.012903386796196112,
+          "complete_object_supported_within_table": true
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.9,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 7.205,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 11.51,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.815,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 16.62,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "lower",
+            "at_s": 20.925,
+            "message": "Lower to measured table support"
+          },
+          {
+            "stage": "release",
+            "at_s": 24.51,
+            "message": "Release the object"
+          },
+          {
+            "stage": "retract",
+            "at_s": 28.815,
+            "message": "Withdraw the gripper"
+          },
+          {
+            "stage": "park",
+            "at_s": 32.12,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 35.99,
+            "message": "Verify stable placement"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 36.5,
+            "message": "glass physically lifted, held, oriented, placed and released; both arms parked."
+          }
+        ],
+        "frames": 15085,
+        "continuation_frames": 7301,
+        "prefix_motor_frames": 7784,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": true,
+        "coverage_evaluation": false,
+        "wall_s": 32.77874709991738
+      }
+    }
+  ],
+  "hashes_sha256": {
+    ".run/glass-bridge-geometry-v1/report.json": "8063a4fe4545a5016f10d384d73602cf9558a300a41e403f3c8ceb87dec6be30",
+    ".run/glass-bridge-geometry-v1/scene.xml": "1768809e0e6811f27eb06b64fda361c37303f4e8ca3c99513f25ec7dcd548f49",
+    ".run/glass-bridge-geometry-v1/source-manifest.json": "8e3afadc3f65dbec94cc8f9f847cf736d8d5704a6eae65f54c776f8e2ee598e8",
+    ".run/glass-bridge-geometry-v2/report.json": "6d14d76e86a102c388cc0fc867856e2101623149c21e4ec5f5b45a4a368d4193",
+    ".run/glass-bridge-geometry-v2/scene.xml": "1768809e0e6811f27eb06b64fda361c37303f4e8ca3c99513f25ec7dcd548f49",
+    ".run/glass-bridge-geometry-v2/source-manifest.json": "b28786b39fd9beca1c821f5f1942b51ca974bd8b381360d7f0795c66af9e948b",
+    ".run/glass-bridge-geometry-v3/report.json": "b81661ad4b4e9b16a4415f746187379acbefa05f7c38f261494ad1ea965ef241",
+    ".run/glass-bridge-geometry-v3/scene.xml": "1768809e0e6811f27eb06b64fda361c37303f4e8ca3c99513f25ec7dcd548f49",
+    ".run/glass-bridge-geometry-v3/source-manifest.json": "55e328c2d0428354fe7975e80fb1f00cde55a6412365f1d73e728bc64dee6d31",
+    ".run/glass-bridge-geometry-v4/report.json": "d26bd3beb2f864f5e39ff2fc0b57d3221be8beb614088f1c34a4ef0548e6b65c",
+    ".run/glass-bridge-geometry-v4/scene.xml": "1768809e0e6811f27eb06b64fda361c37303f4e8ca3c99513f25ec7dcd548f49",
+    ".run/glass-bridge-geometry-v4/source-manifest.json": "1426eadc5ab1cf4ae8066cbde184b973700a6c88b45eac960738080fbcf86420",
+    ".run/glass-bridge-geometry-v5/report.json": "e06e390caba2d72df46eb643964e984256b163bddb5286a9e72faaaa2e4808fa",
+    ".run/glass-bridge-geometry-v5/scene.xml": "1768809e0e6811f27eb06b64fda361c37303f4e8ca3c99513f25ec7dcd548f49",
+    ".run/glass-bridge-geometry-v5/source-manifest.json": "924fea07b6dba5acdf58263bafe2af6197fd91d9b4508b2fea2c960462859384",
+    ".run/glass-bridge-geometry-v6/report.json": "546ef28f4caa25406145b917dbd65a631704f1a03eb91b441e7dc1d9e20a2372",
+    ".run/glass-bridge-geometry-v6/scene.xml": "1768809e0e6811f27eb06b64fda361c37303f4e8ca3c99513f25ec7dcd548f49",
+    ".run/glass-bridge-geometry-v6/source-manifest.json": "415bf6205f453242301240e526f658a318242f1b837c4926f7f8e864acf8b4a8",
+    ".run/glass-bridge-geometry-v6/proof-001.json": "fc7eeb527654c0b61f864ad3d09be7aa960bed9a200365b5fc5309cd1571b0bd",
+    ".run/glass-bridge-geometry-v6/proof-002.json": "a85091b044fe4428a0f93d74c2624c640b99164b719b0c5ac67f894d172d6904",
+    ".run/glass-bridge-geometry-v7/report.json": "d06ea4cf7c0964e434ed00aa98cc0ea8c3721d100a828a1241027b7de7746460",
+    ".run/glass-bridge-geometry-v7/scene.xml": "1768809e0e6811f27eb06b64fda361c37303f4e8ca3c99513f25ec7dcd548f49",
+    ".run/glass-bridge-geometry-v7/source-manifest.json": "bf681d506e3aa14489dde62b130ef82df2ba77c307b71b149cdddc44dad81859",
+    ".run/glass-bridge-geometry-v7/proof-001.json": "9b0b2fe07a1e4cdab956052e7123de40c0ab3c31da383c3191a57b14cb3e686a",
+    ".run/glass-bridge-physics-v1/leg1/result.json": "ebb2c3be00cc6ba7accb1276f3f9fb1b85e51c444f8ff786e3a723b47f956731",
+    ".run/glass-bridge-physics-v1/leg1/states.npz": "9e40f1306b57984f27e4e3b6f39b7959dd0e4f958e22f2284ec4724858a1f451",
+    ".run/glass-bridge-physics-v1/leg1/source-manifest.json": "76c33a3c0039e3787d4dc938a3426952c37c0f37f91cfbbaefcebd5954de445f",
+    ".run/glass-bridge-physics-v1/leg1/search.json": "00b2e31599b42abfe150d7993492204bfac498f3ab83763aacc743e8770330ef",
+    ".run/glass-bridge-physics-v1/leg1/placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    ".run/glass-bridge-physics-v2/leg1/result.json": "d61789d4eb4a511a5ca23cccbfb3ae47d62d092802169ddbd303727f7840bf90",
+    ".run/glass-bridge-physics-v2/leg1/states.npz": "5479e6fdddc44cd5221610bc00e956109fb2057adb39e3252b3c2bbdf9294006",
+    ".run/glass-bridge-physics-v2/leg1/source-manifest.json": "ad7708644cc6b03428e1466ba8fc1f8b7ecb55f113b9553f74adc26347a7314b",
+    ".run/glass-bridge-physics-v2/leg1/search.json": "7e314e73d3822115793b99f602c2014c107abd7f8d8d1409c98d0c3888331ad8",
+    ".run/glass-bridge-physics-v2/leg1/placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    ".run/glass-bridge-physics-v3/leg1/result.json": "90fb4e3182425d81e7246d96fdd55a5dd247c8716704394b1ace18c639fefe3d",
+    ".run/glass-bridge-physics-v3/leg1/states.npz": "bbcb28eb42ae1951c5c51b5a5ec571d5e926ffa7ace715154a169e223467e119",
+    ".run/glass-bridge-physics-v3/leg1/source-manifest.json": "05bae633189a71fb90d2dc222504565f53b20de65e53ee4e1ebd4367ec259023",
+    ".run/glass-bridge-physics-v3/leg1/search.json": "7e314e73d3822115793b99f602c2014c107abd7f8d8d1409c98d0c3888331ad8",
+    ".run/glass-bridge-physics-v3/leg1/placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    ".run/glass-bridge-physics-v3/leg2/result.json": "e822877f575ab0d47e4e47083b57aaadfffbaded93d8dcb531491a2e382c7e78",
+    ".run/glass-bridge-physics-v3/leg2/states.npz": "f676a90e75554fac6164a377bd1e3aaa4d554745d581588ee4b54169855e6cd5",
+    ".run/glass-bridge-physics-v3/leg2/source-manifest.json": "05bae633189a71fb90d2dc222504565f53b20de65e53ee4e1ebd4367ec259023",
+    ".run/glass-bridge-physics-v3/leg2/search.json": "cb8a374d329001b94f82b7955bf93156e9650dba0235941b9bca7e9a5e72222f",
+    ".run/glass-bridge-physics-v3/leg2/placement-search.json": "eadcb46b6da3af2a3c574bfe0b973e2e0c632796a20a01067f55a65a883acc0c",
+    "scripts/develop_glass_bridge.py": "95e9bccc2c853e547acb9c80aa0950777aa89746d22d5969d5f92c552e3cc333",
+    "scripts/develop_glass_bridge_physics.py": "9ad210586156236f37e3a06bf085fb043effb7e9cb558cebbd5c2396911fadfb",
+    "scripts/develop_glass_reorientation.py": "0384a09ed3169b12696af47591afc26462f09ad8f2afd486d429722ad19bb28d",
+    "simulation_lab/horizontal_glass_grasp_candidates.py": "030accdfc1d41714cf83722676f94e4bbf84325e9499c2f80d3a7c7234358ca4",
+    "scripts/export_glass_bridge_evidence.py": "ddabe2ed609a5fb05c5312f0fbab2a0216089ebb0448fb666364b9999e26ad19",
+    ".run/glass-bridge-generic-seed-v1/report.json": "084df13267acf914639f7982a8a92d388cdc5330f80192f4bccd2c03c3bda113",
+    "scripts/verify_glass_bridge_generic_seed.py": "c47f39b60c77dac6ccc9f22e357e3f8636a8846a3b85779a9084d88ca50a7c27",
+    "scripts/export_glass_bridge_generic_seed_evidence.py": "f043fea81092832b0b1f5d12e2a22ddecb98dbb3a3b82af437d546a6845f4c7a"
+  },
+  "summary": {
+    "checked_buffer_entries": 236,
+    "reset_only_bridge_proofs": 3,
+    "planning_only_first_leg": 1,
+    "failed_retreat_preserved": true,
+    "successful_two_leg_route": true,
+    "combined_final_state_frames": 15085,
+    "combined_final_motor_steps": 15084,
+    "all_motor_replays_exact": true,
+    "geometry_or_physics_changes": false,
+    "final_task_goal": [
+      0.075,
+      0.1,
+      0.76
+    ]
+  },
+  "integration_recommendations": [
+    "Use measured held-glass orientation as an explicit intermediate target candidate, with the existing3deg IK tolerance and actual support-height lowering. The passing bridge target is[.24,.09,.76379282132281] with the saved measured9.09deg tilt; physical release settles upright at approximately[.23915,.08360,.75994]. These coordinates are exposed evidence, not a universal buffer rule.",
+    "An ideal pre-contact carry reference rejects this bridge despite the verified measured held reference. Preserve the source-plan target, verify the original lift/hold, then choose and check the intermediate from actual held geometry before moving. This run matches the original3497-step motor/state hold prefix exactly.",
+    "After measured release with open fingers, if the fixed-orientation40mm retreat has no IK, use the existing collision-checked joint-space route to HOME. Preserve the original failure. The successful continuation matches all5925 prior motor/state steps exactly before this fallback, then completes the ordinary stable placement/park verification.",
+    "horizontal_glass_diameter_candidates(data,name,candidate_type) returns the physically used67mm band first and unverified72mm band, exact proof001 tool point/local body-up axis, opening.85 and torque.65Nm, no seed/position filters. horizontal_glass_ik_seeds() returns generic[0,.8,.4,-1.2,roll] seeds for rolls\u22122.4,0,+2.4; the first two pass actual post-bridge source/approach and measured-held goal/route checks, +2.4 is preserved as unsolved. These generic checks used no scene-specific initial joint vector and no additional physical trial. The successful physical run used the earlier proof-derived initial guess; a continuous shared-workflow rerun remains required after integration.",
+    "Second grasp starts from the actual settled state after full motor-prefix replay. The final leg peaks0.788deg tilt, lifts6.576cm, holds1.805s, and finishes0.398mm from the unchanged final position with0.150mm maximum external penetration. No torque increases were used."
+  ],
+  "generic_seed_check": {
+    "scope": "Reset-only checks from actual saved settled-source and held states; zero new physical trials, no scene-specific initial joint vector.",
+    "preflight": {
+      "free_bytes": 540749312000,
+      "estimated_additional_bytes": 33554432,
+      "reserve_bytes": 10737418240
+    },
+    "source_motor_trace": ".run/glass-bridge-physics-v3/leg2/states.npz",
+    "source_states_sha256": "f676a90e75554fac6164a377bd1e3aaa4d554745d581588ee4b54169855e6cd5",
+    "source_state_index": 7784,
+    "held_state_index": 11108,
+    "source": [
+      {
+        "seed": [
+          0.0,
+          0.8,
+          0.4,
+          -1.2,
+          -2.4
+        ],
+        "passed": true,
+        "q": [
+          -0.09930007691155085,
+          0.7047287646084788,
+          0.9362423895382352,
+          -1.638454144690149,
+          -1.522738184169146
+        ],
+        "above_q": [
+          -0.09930019054812333,
+          0.2387830138418165,
+          1.0994344795710016,
+          -1.3356901634448777,
+          -1.5227392916608218
+        ],
+        "approach_samples": 45,
+        "descent_samples": 22
+      },
+      {
+        "seed": [
+          0.0,
+          0.8,
+          0.4,
+          -1.2,
+          0.0
+        ],
+        "passed": true,
+        "q": [
+          -0.09931554081410536,
+          0.7047470566092672,
+          0.936235448514325,
+          -1.6384713737325314,
+          -1.522700583574827
+        ],
+        "above_q": [
+          -0.0993001906417273,
+          0.2387830008018653,
+          1.0994344902641802,
+          -1.3356901519549684,
+          -1.5227392927037076
+        ],
+        "approach_samples": 45,
+        "descent_samples": 22
+      },
+      {
+        "seed": [
+          0.0,
+          0.8,
+          0.4,
+          -1.2,
+          2.4
+        ],
+        "passed": false,
+        "error": "Gripper position/orientation tolerances not solved within joint limits."
+      }
+    ],
+    "goal_from_measured_hold": [
+      {
+        "seed": [
+          0.0,
+          0.8,
+          0.4,
+          -1.2,
+          -2.4
+        ],
+        "passed": true,
+        "above_q": [
+          -0.5803554275612236,
+          0.65656136403625,
+          0.47311774280128677,
+          -1.1296777184091575,
+          -1.522117022775444
+        ],
+        "lower_q": [
+          -0.5803554646400002,
+          0.814734469904509,
+          0.3985473487448686,
+          -1.213282854444285,
+          -1.5221170111778122
+        ],
+        "route_samples": 22
+      },
+      {
+        "seed": [
+          0.0,
+          0.8,
+          0.4,
+          -1.2,
+          0.0
+        ],
+        "passed": true,
+        "above_q": [
+          -0.5803554727636663,
+          0.6565626565674049,
+          0.47311761119519913,
+          -1.1296798492998075,
+          -1.5221167835461336
+        ],
+        "lower_q": [
+          -0.5803554646400687,
+          0.8147344700526207,
+          0.3985473483695702,
+          -1.2132828541508385,
+          -1.5221170111624145
+        ],
+        "route_samples": 22
+      },
+      {
+        "seed": [
+          0.0,
+          0.8,
+          0.4,
+          -1.2,
+          2.4
+        ],
+        "passed": false,
+        "error": "Gripper position/orientation tolerances not solved within joint limits."
+      }
+    ],
+    "geometry": {
+      "local_tool_point": [
+        0.016764418788134627,
+        7.09070720875532e-05,
+        -0.09797710178440536
+      ],
+      "local_axis": [
+        -0.0006212532843516971,
+        0.9999966397383193,
+        0.0025168544706080306
+      ],
+      "band": 0.067
+    },
+    "passing_source": 2,
+    "passing_goal": 2
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "talos.table-edge-regrasp-diagnostic-public.v1",
+  "scope": "Bounded front-edge regrasp diagnostic; not whole-table coverage.",
+  "reset_only": {
+    "stable_supported_overhangs": 6,
+    "support_physics_frames": 20400,
+    "all_replays_exact": true,
+    "delivery_or_regrasp_trials": 0
+  },
+  "final_receiver_gate": {
+    "measured_receiver_poses": 288,
+    "seeds_per_pose": 9,
+    "ik_solved": 2,
+    "ik_unsolved": 286,
+    "ik_solved_but_table_collision": 2,
+    "collision_free_receiver_paths": 0
+  },
+  "finding": "Six reset-only overhangs remained stable. No donor delivery or physical regrasp was launched. Two receiver poses solved IK but intersected the table and were refused.",
+  "retained_incident": "The invalid-reset incident and its correction are preserved; corrected runs reject invalid resets before stepping and keep the unchanged contact guards.",
+  "interpretation": "The diagnostic distinguishes supported reset geometry from manipulation feasibility and does not prove universal physical impossibility.",
+  "promotion": "not promoted"
+}

@@ -1,0 +1,548 @@
+{
+  "scope": "Exposed diagnosis of the same sideways-bottle grasp; no learned result, full placement or complete table.",
+  "findings": "The original ideal-axis lift solves 0/8 routes. Measured-axis lift solves 2/8 geometric routes; the first physical continuation loses finger support and stops at the unchanged 1 mm penetration guard. No promotion.",
+  "geometry_versions_share_same_prefix": true,
+  "new_physical_attempts": 1,
+  "new_physical_states": 394,
+  "prefix_motor_steps": 3421,
+  "all_motor_replays_exact": true,
+  "passed_physical_continuations": 0,
+  "whole_table_complete": false,
+  "preflight": {
+    "free_bytes": 540879855616,
+    "estimated_additional_bytes": 16777216,
+    "reserve_bytes": 10737418240
+  },
+  "runs": [
+    {
+      "run": "table-lift-geometry-v1",
+      "report": {
+        "scope": "Exposed motor-prefix lift diagnosis; not a complete table or learned result.",
+        "preflight": {
+          "free_bytes": 536821374976,
+          "estimated_additional_bytes": 536870912,
+          "reserve_bytes": 10737418240
+        },
+        "seed": 2026114001,
+        "prefix": ".run/whole-table-development-v23-bottle4001/lookahead-00-010-00-bottle",
+        "prefix_states_sha256": "2bd9a9d50c383dfc4de0bd108727f79d5b79db2f9a9a1f8663fd8b09a853a464",
+        "prefix_motor_steps": 3421,
+        "prefix_replay_exact": true,
+        "source_action": {
+          "item": "bottle",
+          "arm": "left",
+          "grasp_candidate": "inclined_bottle_band_0.04_1.04720",
+          "pick_point_m": [
+            -0.006570621875692004,
+            0.1432519374227719,
+            0.7839734805268532
+          ],
+          "initial_wrist_roll": -2.4,
+          "gripper_point_local_m": [
+            0.017,
+            0.0,
+            -0.098
+          ],
+          "gripper_constraint_axis_local": [
+            0.0,
+            0.8660254037844386,
+            0.5000000000000001
+          ],
+          "place_body_origin_m": [
+            -0.005237713603782723,
+            -0.0214772264734589,
+            0.7840555910386566
+          ],
+          "place_body_quaternion_wxyz": [
+            0.5471821216397392,
+            -0.5475449864622777,
+            0.44779606142713957,
+            -0.44750966573717643
+          ],
+          "orientation_constraint": "body Z within three degrees of horizontal plane; bearing and axial rotation free",
+          "teacher_observation": "privileged_state",
+          "policy_observation": "calibrated_rgbd_only"
+        },
+        "initial_forces": {
+          "fixed": 4.087041788222316,
+          "moving": 4.755077608287657,
+          "external": 3.3950408023943845,
+          "base": 3.3950408023943845
+        },
+        "geometry_checks": [
+          {
+            "mode": "original",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.065
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.03
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              -0.014530116668149266,
+              -0.020343935450398257,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              -0.029060233336298532,
+              -0.040687870900796515,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              -0.014530116668149266,
+              -0.020343935450398257,
+              0.065
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              -0.03487405211854752,
+              -0.005813818782248991,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              0.005813818782248991,
+              -0.03487405211854752,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.04
+            ],
+            "passed_geometry": true,
+            "path_samples": 22,
+            "final_q": [
+              0.5792549777625792,
+              1.3778917032851172,
+              -1.4791338151698574,
+              0.6057023118113535,
+              -1.5221986135358916
+            ]
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.065
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.03
+            ],
+            "passed_geometry": true,
+            "path_samples": 17,
+            "final_q": [
+              0.5792549777625793,
+              1.4313913846769633,
+              -1.5041606426675405,
+              0.5772294579171909,
+              -1.5221986135358914
+            ]
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              -0.014530116668149266,
+              -0.020343935450398257,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              -0.029060233336298532,
+              -0.040687870900796515,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              -0.014530116668149266,
+              -0.020343935450398257,
+              0.065
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              -0.03487405211854752,
+              -0.005813818782248991,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              0.005813818782248991,
+              -0.03487405211854752,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "physical_continuation": null,
+        "whole_table_complete": false,
+        "wall_s": 1.9483998999930918
+      },
+      "sha256": {
+        "report.json": "84b2adcfee655acc46b93d90f9f1d951c7c9eedc7e9d50b7646075d0cc3c0258",
+        "source-manifest.json": "5563e815db3b32a57967d9aa763c5b9c3c8c8c321bf81402c413a2ee41d962ae"
+      }
+    },
+    {
+      "run": "table-lift-physical-v1",
+      "report": {
+        "scope": "Exposed motor-prefix lift diagnosis; not a complete table or learned result.",
+        "preflight": {
+          "free_bytes": 536804466688,
+          "estimated_additional_bytes": 536870912,
+          "reserve_bytes": 10737418240
+        },
+        "seed": 2026114001,
+        "prefix": ".run/whole-table-development-v23-bottle4001/lookahead-00-010-00-bottle",
+        "prefix_states_sha256": "2bd9a9d50c383dfc4de0bd108727f79d5b79db2f9a9a1f8663fd8b09a853a464",
+        "prefix_motor_steps": 3421,
+        "prefix_replay_exact": true,
+        "source_action": {
+          "item": "bottle",
+          "arm": "left",
+          "grasp_candidate": "inclined_bottle_band_0.04_1.04720",
+          "pick_point_m": [
+            -0.006570621875692004,
+            0.1432519374227719,
+            0.7839734805268532
+          ],
+          "initial_wrist_roll": -2.4,
+          "gripper_point_local_m": [
+            0.017,
+            0.0,
+            -0.098
+          ],
+          "gripper_constraint_axis_local": [
+            0.0,
+            0.8660254037844386,
+            0.5000000000000001
+          ],
+          "place_body_origin_m": [
+            -0.005237713603782723,
+            -0.0214772264734589,
+            0.7840555910386566
+          ],
+          "place_body_quaternion_wxyz": [
+            0.5471821216397392,
+            -0.5475449864622777,
+            0.44779606142713957,
+            -0.44750966573717643
+          ],
+          "orientation_constraint": "body Z within three degrees of horizontal plane; bearing and axial rotation free",
+          "teacher_observation": "privileged_state",
+          "policy_observation": "calibrated_rgbd_only"
+        },
+        "initial_forces": {
+          "fixed": 4.087041788222316,
+          "moving": 4.755077608287657,
+          "external": 3.3950408023943845,
+          "base": 3.3950408023943845
+        },
+        "geometry_checks": [
+          {
+            "mode": "original",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.065
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.03
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              -0.014530116668149266,
+              -0.020343935450398257,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              -0.029060233336298532,
+              -0.040687870900796515,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              -0.014530116668149266,
+              -0.020343935450398257,
+              0.065
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              -0.03487405211854752,
+              -0.005813818782248991,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "original",
+            "shift_m": [
+              0.005813818782248991,
+              -0.03487405211854752,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.04
+            ],
+            "passed_geometry": true,
+            "path_samples": 22,
+            "final_q": [
+              0.5792549777625792,
+              1.3778917032851172,
+              -1.4791338151698574,
+              0.6057023118113535,
+              -1.5221986135358916
+            ]
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.065
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              0.0,
+              0.0,
+              0.03
+            ],
+            "passed_geometry": true,
+            "path_samples": 17,
+            "final_q": [
+              0.5792549777625793,
+              1.4313913846769633,
+              -1.5041606426675405,
+              0.5772294579171909,
+              -1.5221986135358914
+            ]
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              -0.014530116668149266,
+              -0.020343935450398257,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              -0.029060233336298532,
+              -0.040687870900796515,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              -0.014530116668149266,
+              -0.020343935450398257,
+              0.065
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              -0.03487405211854752,
+              -0.005813818782248991,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "mode": "measured_axis",
+            "shift_m": [
+              0.005813818782248991,
+              -0.03487405211854752,
+              0.04
+            ],
+            "passed_geometry": false,
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "physical_continuation": {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "The manipulated item penetrated external geometry by more than 1 mm.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 0.038818513906111504,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.8039502949168673,
+            "max_lift_cm": 2.058766380664656,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 1.0072006811219258,
+            "tilt_deg": 102.65009069024975,
+            "peak_tilt_deg": 103.19621218848091,
+            "lift_geometry_mode": "measured_axis",
+            "lift_geometry_row": 8,
+            "destination_normal_error_deg": 12.650090690249744,
+            "maximum_external_penetration_mm": 1.0025111353122864,
+            "other_object_max_displacement_mm": 0.00013406273555606281
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "lift",
+              "at_s": 0.0,
+              "message": "Lift the object"
+            },
+            {
+              "stage": "failed",
+              "at_s": 1.965,
+              "message": "The manipulated item penetrated external geometry by more than 1 mm."
+            }
+          ],
+          "frames": 394,
+          "observations": 1,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false
+        },
+        "whole_table_complete": false,
+        "wall_s": 4.200488599948585
+      },
+      "sha256": {
+        "report.json": "cc57ffe37b03d3af4fcfcd7f2921ea9e58f418b0bd904c01c6989ecbb55710a2",
+        "source-manifest.json": "5563e815db3b32a57967d9aa763c5b9c3c8c8c321bf81402c413a2ee41d962ae",
+        "continuation/states.npz": "879e0cabfe2ae4c43247de92ee73335a8b08f99384f8f03cb3dccfc10779cc72"
+      }
+    }
+  ]
+}

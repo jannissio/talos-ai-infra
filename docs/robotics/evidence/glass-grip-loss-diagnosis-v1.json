@@ -1,0 +1,748 @@
+{
+  "schema": "glass-grip-loss-diagnosis-v1",
+  "scope": "Exposed joint seed2026114004 glass-only teacher dependency; no full-table, learned-policy or coverage claim.",
+  "storage_preflight": {
+    "free_bytes": 542274584576,
+    "estimated_additional_bytes": 4194304,
+    "reserve_bytes": 10737418240
+  },
+  "diagnosis": {
+    "scope": "Read-only interpretation of exact V17 motor replay; zero new manipulation trials or model edits.",
+    "replay_exact": true,
+    "glass_weight_n": 0.350754778652395,
+    "contact_friction": [
+      1.0,
+      1.0,
+      0.005,
+      0.0005,
+      0.0005
+    ],
+    "findings": [
+      "The initial moving-jaw contact is already on the lip: normal-force-weighted height73.47mm at11.5s, compared with glass top74mm and commanded band69mm. The asymmetric pitched/hinged geometry places moving contact about4.47mm above the nominal band; fixed weighted contact is71.89mm.",
+      "During early unsupported lift, the glass moves downward relative to both jaws at approximately0.5\u20131.3mm/s and gradually tilts. Strong contacts have substantial nominal friction margin (weighted cone usage about0.04\u20130.09), so this is not an initial Coulomb-limit shortfall. Finite soft-contact creep is a plausible contributor; that mechanism was not isolated by changing physics.",
+      "Moving contacts remain at the top edge while the fixed jaw retains lower wall/lip contacts. At14.2s the moving weighted height is73.96mm and tilt7.76deg. At14.3s moving-jaw normal force has3.20N downward component, balanced by3.16N upward friction. This downward edge-normal component is nine times the glass weight; simply raising torque would also increase this wedging force.",
+      "The glass then rotates/slides around the better-retained fixed side while the hinged moving jaw runs over the lip. Moving vertical slip reaches11.14mm/s at14.4s and13.60mm/s at14.5s; fixed-side vertical slip is only0.63 and0.87mm/s respectively. The final loss is asymmetric edge escape, not uniform downward translation of an intact two-pad pinch.",
+      "The motor never intentionally releases: command tracks a closing offset and actual gripper actuator force remains\u22120.65Nm through the loss. Joint angle decreases0.4396\u21920.3981rad from11.5\u219214.575s; rapid closure follows lost contact.",
+      "One targeted correction merits a feasibility check and, only if source and unchanged goal/route checks pass, one physical test: lower this same rigid grasp contact band to0.060m, keeping its exact local tool point/local body-up axis, opening0.85 and torque0.65Nm. First-order predicted moving contact height64.5mm leaves about9.5mm to the top, rather than0.5mm. The earlier3mm change was insufficient because actual moving contact still landed on the lip. This is a hypothesis, not a verified geometry/hold/placement; lower-band goal reachability must be checked rather than assumed."
+    ],
+    "samples": [
+      {
+        "time": 11.5,
+        "tilt_deg": 0.0499667226310043,
+        "grip_q": 0.43964243746715,
+        "grip_ctrl": 0.43899037065365076,
+        "grip_actuator_force": -0.6499999999999773,
+        "contact_wrench_world": [
+          2.8352363301564765e-07,
+          -3.1959304203077465e-07,
+          0.35075496242922805,
+          7.023554238205776e-10,
+          1.7782728900517242e-09,
+          4.1237676115003785e-08
+        ],
+        "glass_origin_in_tool": [
+          0.0169533707222091,
+          -0.03489308731166172,
+          -0.15916076311599905
+        ],
+        "fixed": {
+          "normal_n": 8.91512150958482,
+          "height_mm": 71.88992379828873,
+          "normal_vertical_n": -0.022473755605787207,
+          "friction_vertical_n": 0.013342553407250888,
+          "net_vertical_n": -0.009131202198536319,
+          "friction_cone_usage": 0.031414509120418675,
+          "relative_vertical_velocity_mm_s": -0.020071484486225186
+        },
+        "moving": {
+          "normal_n": 9.015446219706439,
+          "height_mm": 73.4686643956034,
+          "normal_vertical_n": -0.4191084671031398,
+          "friction_vertical_n": 0.019347265330328045,
+          "net_vertical_n": -0.39976120177281177,
+          "friction_cone_usage": 0.004059243698833639,
+          "relative_vertical_velocity_mm_s": -0.03663000285636656
+        },
+        "external": {
+          "normal_n": 0.7596471629758614,
+          "height_mm": 0.052705584996654196,
+          "normal_vertical_n": 0.759646858770985,
+          "friction_vertical_n": 5.076295910289019e-07,
+          "net_vertical_n": 0.7596473664005761,
+          "friction_cone_usage": 0.12910963976729298,
+          "relative_vertical_velocity_mm_s": -0.019415112630004012
+        }
+      },
+      {
+        "time": 12.0,
+        "tilt_deg": 0.23251785160040697,
+        "grip_q": 0.4395338873436938,
+        "grip_ctrl": 0.43887953805106317,
+        "grip_actuator_force": -0.6500000000000341,
+        "contact_wrench_world": [
+          -0.0003186818722475948,
+          0.0004606494403271988,
+          0.3520090808500285,
+          -1.9509128436484557e-06,
+          -1.572929893695063e-06,
+          -1.5536128439991304e-07
+        ],
+        "glass_origin_in_tool": [
+          0.016992647204467245,
+          -0.035089515384529354,
+          -0.1592215113112002
+        ],
+        "fixed": {
+          "normal_n": 8.656045389455818,
+          "height_mm": 71.9730480425402,
+          "normal_vertical_n": -0.016491343344546164,
+          "friction_vertical_n": 0.48624196762695615,
+          "net_vertical_n": 0.46975062428241,
+          "friction_cone_usage": 0.06764704776779278,
+          "relative_vertical_velocity_mm_s": -0.7092186485638731
+        },
+        "moving": {
+          "normal_n": 8.763984067156926,
+          "height_mm": 73.5356530100484,
+          "normal_vertical_n": -0.43196495587643635,
+          "friction_vertical_n": 0.31422341244405483,
+          "net_vertical_n": -0.1177415434323815,
+          "friction_cone_usage": 0.036411226899388555,
+          "relative_vertical_velocity_mm_s": -0.5080649296256775
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 12.5,
+        "tilt_deg": 0.6592883538769558,
+        "grip_q": 0.4390515758871813,
+        "grip_ctrl": 0.43839804866753235,
+        "grip_actuator_force": -0.6499999999999773,
+        "contact_wrench_world": [
+          0.0005664171484371927,
+          -0.0011260808756461405,
+          0.35188583471047447,
+          -8.752042656892667e-06,
+          -1.8008101876076932e-06,
+          -4.2156414962937067e-07
+        ],
+        "glass_origin_in_tool": [
+          0.017081944979498966,
+          -0.03559079209635618,
+          -0.15932051617826085
+        ],
+        "fixed": {
+          "normal_n": 8.744093158503574,
+          "height_mm": 72.26863903825667,
+          "normal_vertical_n": -0.006468105651284783,
+          "friction_vertical_n": 0.4635465996346084,
+          "net_vertical_n": 0.4570784939833236,
+          "friction_cone_usage": 0.06518698297925736,
+          "relative_vertical_velocity_mm_s": -0.7500714911096364
+        },
+        "moving": {
+          "normal_n": 8.856071024523128,
+          "height_mm": 73.66317044834155,
+          "normal_vertical_n": -0.6620150032261953,
+          "friction_vertical_n": 0.5568223439533462,
+          "net_vertical_n": -0.1051926592728492,
+          "friction_cone_usage": 0.06383977076197016,
+          "relative_vertical_velocity_mm_s": -0.9338408081496735
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 13.0,
+        "tilt_deg": 2.024020664220222,
+        "grip_q": 0.43746484066921576,
+        "grip_ctrl": 0.43680509603663314,
+        "grip_actuator_force": -0.6500000000000341,
+        "contact_wrench_world": [
+          -0.00010542776589916869,
+          9.432830629463318e-05,
+          0.3508616180220428,
+          6.480742241465887e-08,
+          1.903753458765145e-07,
+          -2.916053120524632e-07
+        ],
+        "glass_origin_in_tool": [
+          0.016360628687338154,
+          -0.037345483550075345,
+          -0.15897250927816797
+        ],
+        "fixed": {
+          "normal_n": 8.350528258337713,
+          "height_mm": 72.36663989500713,
+          "normal_vertical_n": -0.05670479033802364,
+          "friction_vertical_n": 0.43848144064248007,
+          "net_vertical_n": 0.3817766503044564,
+          "friction_cone_usage": 0.08374712857096477,
+          "relative_vertical_velocity_mm_s": -0.7660011774236283
+        },
+        "moving": {
+          "normal_n": 8.37120930355573,
+          "height_mm": 73.73157967499814,
+          "normal_vertical_n": -0.5504586196663775,
+          "friction_vertical_n": 0.5195435873839639,
+          "net_vertical_n": -0.030915032282413657,
+          "friction_cone_usage": 0.09333687874431418,
+          "relative_vertical_velocity_mm_s": -1.3045071665724546
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 13.5,
+        "tilt_deg": 4.416252244380751,
+        "grip_q": 0.4333473995090474,
+        "grip_ctrl": 0.43260171544932546,
+        "grip_actuator_force": -0.6499999999999773,
+        "contact_wrench_world": [
+          -0.002122655238505189,
+          0.0013100000000336731,
+          0.3492885706288966,
+          -3.726628743060123e-06,
+          1.0394591890255933e-05,
+          3.505157137415234e-05
+        ],
+        "glass_origin_in_tool": [
+          0.015882693685554283,
+          -0.04048049226400935,
+          -0.1579053617235485
+        ],
+        "fixed": {
+          "normal_n": 8.712834922140493,
+          "height_mm": 71.26536387063824,
+          "normal_vertical_n": 0.20093650184411116,
+          "friction_vertical_n": 0.35385796693263394,
+          "net_vertical_n": 0.5547944687767451,
+          "friction_cone_usage": 0.11773686061823482,
+          "relative_vertical_velocity_mm_s": -0.6457224093710794
+        },
+        "moving": {
+          "normal_n": 8.356409589387635,
+          "height_mm": 73.67590826849099,
+          "normal_vertical_n": -0.8510868061395694,
+          "friction_vertical_n": 0.645580907991721,
+          "net_vertical_n": -0.20550589814784848,
+          "friction_cone_usage": 0.2735016743423617,
+          "relative_vertical_velocity_mm_s": -0.9621333813036445
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 14.0,
+        "tilt_deg": 6.977473473282876,
+        "grip_q": 0.4271863674559573,
+        "grip_ctrl": 0.42652519359298235,
+        "grip_actuator_force": -0.6499999999999773,
+        "contact_wrench_world": [
+          0.00033605550917958915,
+          -4.084186546737811e-06,
+          0.3494427654661829,
+          1.4032577523234724e-07,
+          -5.609927873843901e-06,
+          1.0956048023495684e-06
+        ],
+        "glass_origin_in_tool": [
+          0.012971031984863296,
+          -0.04283291550374166,
+          -0.15746624668388365
+        ],
+        "fixed": {
+          "normal_n": 8.453065679959158,
+          "height_mm": 70.07712944353275,
+          "normal_vertical_n": 0.30813325082254506,
+          "friction_vertical_n": 0.15326263325791367,
+          "net_vertical_n": 0.46139588408045873,
+          "friction_cone_usage": 0.0673004808677432,
+          "relative_vertical_velocity_mm_s": -0.267733440939372
+        },
+        "moving": {
+          "normal_n": 8.251701589217797,
+          "height_mm": 73.76882487239253,
+          "normal_vertical_n": -0.7369370408537379,
+          "friction_vertical_n": 0.624983922239462,
+          "net_vertical_n": -0.11195311861427598,
+          "friction_cone_usage": 0.0830813848630212,
+          "relative_vertical_velocity_mm_s": -2.0434450931058104
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 14.200000000000001,
+        "tilt_deg": 7.759291128672392,
+        "grip_q": 0.4267562501650431,
+        "grip_ctrl": 0.42610003165955507,
+        "grip_actuator_force": -0.6500000000000341,
+        "contact_wrench_world": [
+          0.00010336027768709233,
+          5.373419468490681e-06,
+          0.3496308135725914,
+          4.872665331362436e-07,
+          -1.7628710614718546e-06,
+          3.5626214366563563e-07
+        ],
+        "glass_origin_in_tool": [
+          0.012577544811999969,
+          -0.04355047693206178,
+          -0.15714890499579331
+        ],
+        "fixed": {
+          "normal_n": 8.478558526696643,
+          "height_mm": 69.90144135212938,
+          "normal_vertical_n": 0.242717972351663,
+          "friction_vertical_n": 0.24578094446059787,
+          "net_vertical_n": 0.4884989168122609,
+          "friction_cone_usage": 0.05660105953001375,
+          "relative_vertical_velocity_mm_s": -0.3750082899340442
+        },
+        "moving": {
+          "normal_n": 8.27735565395449,
+          "height_mm": 73.96294357341716,
+          "normal_vertical_n": -0.4091173226058598,
+          "friction_vertical_n": 0.2702492193661903,
+          "net_vertical_n": -0.13886810323966953,
+          "friction_cone_usage": 0.04527565733009176,
+          "relative_vertical_velocity_mm_s": -0.9076529147160003
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 14.3,
+        "tilt_deg": 8.137243942246933,
+        "grip_q": 0.4200235144129967,
+        "grip_ctrl": 0.41910582076789205,
+        "grip_actuator_force": -0.6499999999999773,
+        "contact_wrench_world": [
+          0.002634064844051487,
+          -0.004166615396191453,
+          0.3493853105820116,
+          -0.00010891501668440495,
+          -2.036723180945388e-05,
+          7.987654138367432e-06
+        ],
+        "glass_origin_in_tool": [
+          0.01142591912145878,
+          -0.04361664003052021,
+          -0.1575571824838844
+        ],
+        "fixed": {
+          "normal_n": 8.448810675023612,
+          "height_mm": 69.42921545392201,
+          "normal_vertical_n": 0.10528439400281683,
+          "friction_vertical_n": 0.2868186227154287,
+          "net_vertical_n": 0.3921030167182455,
+          "friction_cone_usage": 0.06312800540089589,
+          "relative_vertical_velocity_mm_s": -0.410793579609848
+        },
+        "moving": {
+          "normal_n": 7.436838216664954,
+          "height_mm": 73.91382523391464,
+          "normal_vertical_n": -3.202384029392139,
+          "friction_vertical_n": 3.159666323255905,
+          "net_vertical_n": -0.04271770613623388,
+          "friction_cone_usage": 0.5313867100880898,
+          "relative_vertical_velocity_mm_s": -6.292168249976373
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 14.4,
+        "tilt_deg": 9.042132534095774,
+        "grip_q": 0.4110330454099606,
+        "grip_ctrl": 0.4101554656585037,
+        "grip_actuator_force": -0.6499999999999204,
+        "contact_wrench_world": [
+          0.0006082327513610153,
+          0.0001094925183237061,
+          0.350470966668673,
+          -5.401550066369554e-06,
+          -1.8036393678380613e-06,
+          1.4474061200697719e-06
+        ],
+        "glass_origin_in_tool": [
+          0.009779082174741657,
+          -0.04397254997830566,
+          -0.15789798714362335
+        ],
+        "fixed": {
+          "normal_n": 8.068106673563918,
+          "height_mm": 69.14487796032896,
+          "normal_vertical_n": -0.1517388502448826,
+          "friction_vertical_n": 0.41573174949048475,
+          "net_vertical_n": 0.26399289924560215,
+          "friction_cone_usage": 0.07382658517340036,
+          "relative_vertical_velocity_mm_s": -0.6250405077994394
+        },
+        "moving": {
+          "normal_n": 7.111143274721083,
+          "height_mm": 73.85197304503502,
+          "normal_vertical_n": -2.9007770591634805,
+          "friction_vertical_n": 2.9872551265865512,
+          "net_vertical_n": 0.08647806742307085,
+          "friction_cone_usage": 0.458872073191211,
+          "relative_vertical_velocity_mm_s": -11.138644422734684
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 14.5,
+        "tilt_deg": 10.057309400191007,
+        "grip_q": 0.40424361413299187,
+        "grip_ctrl": 0.40333412131605123,
+        "grip_actuator_force": -0.6500000000000341,
+        "contact_wrench_world": [
+          -0.0011466271404163564,
+          -0.00015294831560286326,
+          0.35043255347659286,
+          2.749885501945881e-07,
+          1.23454629783748e-05,
+          2.1221768031608884e-06
+        ],
+        "glass_origin_in_tool": [
+          0.007976129062789205,
+          -0.04424177711840553,
+          -0.15832708912627041
+        ],
+        "fixed": {
+          "normal_n": 7.071451155416915,
+          "height_mm": 68.91573297506939,
+          "normal_vertical_n": -0.423960730490084,
+          "friction_vertical_n": 0.5336855181979361,
+          "net_vertical_n": 0.10972478770785213,
+          "friction_cone_usage": 0.1049581490482073,
+          "relative_vertical_velocity_mm_s": -0.8709301725512006
+        },
+        "moving": {
+          "normal_n": 6.160609071959418,
+          "height_mm": 73.83762341627454,
+          "normal_vertical_n": -2.538636478387942,
+          "friction_vertical_n": 2.779344244156683,
+          "net_vertical_n": 0.24070776576874076,
+          "friction_cone_usage": 0.49520884629623824,
+          "relative_vertical_velocity_mm_s": -13.604190347890485
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 14.55,
+        "tilt_deg": 10.522914889552657,
+        "grip_q": 0.40008020733906036,
+        "grip_ctrl": 0.39927022819730285,
+        "grip_actuator_force": -0.6499999999999204,
+        "contact_wrench_world": [
+          0.003533449770371122,
+          -0.0006323997050068086,
+          0.3514600097505032,
+          -2.120934526852851e-05,
+          -4.0899061804303485e-05,
+          1.0264543763979436e-06
+        ],
+        "glass_origin_in_tool": [
+          0.0070579238115883,
+          -0.04427690194146294,
+          -0.15859831598114815
+        ],
+        "fixed": {
+          "normal_n": 8.059248767581957,
+          "height_mm": 68.90223569482738,
+          "normal_vertical_n": -0.6193321220633423,
+          "friction_vertical_n": 0.606092072742603,
+          "net_vertical_n": -0.01324004932073932,
+          "friction_cone_usage": 0.10484890351488914,
+          "relative_vertical_velocity_mm_s": -0.9293616960084812
+        },
+        "moving": {
+          "normal_n": 7.193732026386627,
+          "height_mm": 73.85924376214797,
+          "normal_vertical_n": -2.7529837649491076,
+          "friction_vertical_n": 3.11768382402035,
+          "net_vertical_n": 0.3647000590712425,
+          "friction_cone_usage": 0.4688028281714183,
+          "relative_vertical_velocity_mm_s": -10.285733739499602
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 14.575000000000001,
+        "tilt_deg": 11.139923240853467,
+        "grip_q": 0.39812776634880853,
+        "grip_ctrl": 0.39708055323168584,
+        "grip_actuator_force": -0.6500000000000341,
+        "contact_wrench_world": [
+          0.02139763885579842,
+          0.0138627938386717,
+          0.01909417958383548,
+          -0.0006084887356181081,
+          0.0010673699560795717,
+          -9.216556217449131e-05
+        ],
+        "glass_origin_in_tool": [
+          0.0062103126465348525,
+          -0.04441079094181517,
+          -0.15893529457062183
+        ],
+        "fixed": {
+          "normal_n": 0.01952488761316281,
+          "height_mm": 67.30789372188569,
+          "normal_vertical_n": -0.0026808104170508423,
+          "friction_vertical_n": 0.01923027167847218,
+          "net_vertical_n": 0.01654946126142134,
+          "friction_cone_usage": 1.0000000000000002,
+          "relative_vertical_velocity_mm_s": -20.313421231366718
+        },
+        "moving": {
+          "normal_n": 0.0
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      },
+      {
+        "time": 14.6,
+        "tilt_deg": 13.22787533276122,
+        "grip_q": 0.390575490808069,
+        "grip_ctrl": 0.38884261477307963,
+        "grip_actuator_force": -0.6499999999999773,
+        "contact_wrench_world": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glass_origin_in_tool": [
+          0.004264129158378503,
+          -0.04669322296836122,
+          -0.16298021727697884
+        ],
+        "fixed": {
+          "normal_n": 0.0
+        },
+        "moving": {
+          "normal_n": 0.0
+        },
+        "external": {
+          "normal_n": 0.0
+        }
+      }
+    ],
+    "recommended_single_test": {
+      "contact_band_m": 0.06,
+      "local_tool_point": [
+        0.016844050389936402,
+        -0.0009278055682283223,
+        -0.0993204764644536
+      ],
+      "local_axis": [
+        -0.009721405847552073,
+        0.5015516051577634,
+        0.8650731076805114
+      ],
+      "torque_nm": 0.65,
+      "opening_rad": 0.85,
+      "required_precondition": "Source, goal and rigid route geometry checks must pass; all physical guards and exact replay retained."
+    },
+    "limitations": "One saved-run diagnosis. Contact softness mechanism not separately identified. Existing rendered views are occluded by the wrist; measured contact traces are the primary evidence."
+  },
+  "diagnostic_sources": {
+    "scripts/diagnose_glass_grip_loss.py": "53804867b2db7bf59d088c7b1a3268f8c2c79131aff229d137d90fe139087840",
+    "simulation_lab/storage.py": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f",
+    "scripts/develop_side_plate_grasp.py": "eb42ff2b186ab121143caacffe22d534e908fddf0c69060ed39daea59be9bee5",
+    "input/scene.xml": "1768809e0e6811f27eb06b64fda361c37303f4e8ca3c99513f25ec7dcd548f49",
+    "input/parameters.json": "2da75c2e456cdbe1d283979e330c69f44ff94fcb5ad8d624af9583efce16e067",
+    "input/result.json": "8b48713f1aab0916d493b347c05a2a24fefc4e0fc663c3876a698a7206e0a70b",
+    "input/source-manifest.json": "1630e3abff6b9694bfd3048dca5fea90e0b0d4f070ef353ff466be8c60b50c6c",
+    "input/states.npz": "7a4acef2def08f7a3a0e69ca69926cccc8b91d4ca5482cb75a00699b26e4705b"
+  },
+  "hashes_sha256": {
+    ".run/glass-grip-loss-diagnosis-v1/interpretation.json": "5d86e030b631b0a60187d6a2c9b474bfbf9bfacdfda9b254bcd478926bfef9ad",
+    ".run/glass-grip-loss-diagnosis-v1/contacts.json": "c1c9e7c3d7b5964f349b9f322197470bc3014a5acdda8f32431ef1e66a8fe664",
+    ".run/glass-grip-loss-diagnosis-v1/report.json": "5aa9176c92662fd3cd008d073a26bb9cf8ad8d78feadf7964ad2a46349781ec8",
+    ".run/glass-grip-loss-diagnosis-v1/source-manifest.json": "4c3b72a058cdc74e0807e9affe0789b87b2c780bd619210491fc92e9ae779756",
+    ".run/glass-placement-v18-proof004-band060/result.json": "f4fc6ac314b0b1859dcbc2f93ea86f9f2855635754640435c02946a905a4cca9",
+    ".run/glass-placement-v18-proof004-band060/states.npz": "132e6e07ff04a4a3f5db4638e740960993ad809f5178ac58cafb3518cbf24416",
+    ".run/glass-placement-v18-proof004-band060/scene.xml": "1768809e0e6811f27eb06b64fda361c37303f4e8ca3c99513f25ec7dcd548f49",
+    ".run/glass-placement-v18-proof004-band060/source-manifest.json": "519949b122abc51aedc955f9b7a39a87e0aaa1f509b857a0de79290be0dbe8b2",
+    ".run/glass-placement-v18-proof004-band060/placement-search.json": "3a370a550f4fdbc78d049fab499f06837d966322cb6b0d4eda991d21cbe12488",
+    ".run/glass-placement-v18-proof004-band060/search.json": "0bee988aa7fcd3fc5b27686c014ce6a3bdfa31eb9eb468160ea23e4e6e2160ff",
+    "scripts/export_glass_grip_loss_evidence.py": "5e7d2fdabd89aee7444be0356562a1799fe0b79b34c8703ccccd730f257eb308"
+  },
+  "followup": {
+    "run": ".run/glass-placement-v18-proof004-band060",
+    "contact_band_m": 0.06,
+    "torque_nm": 0.65,
+    "changes": "Only contact band changed from69mm to60mm; same local tool point/local axis/opening. Additional rigid-route preflight required before new manipulation.",
+    "planning": [
+      {
+        "kind": "complete_rigid_route_preflight",
+        "height": 0.065,
+        "nominal_closed_grip": 0.44,
+        "passed": false,
+        "error": "Gripper position/orientation tolerances not solved within joint limits."
+      },
+      {
+        "kind": "complete_rigid_route_preflight",
+        "height": 0.04,
+        "nominal_closed_grip": 0.44,
+        "passed": false,
+        "error": "Gripper position/orientation tolerances not solved within joint limits."
+      },
+      {
+        "kind": "complete_rigid_route_preflight",
+        "height": 0.1,
+        "nominal_closed_grip": 0.44,
+        "passed": false,
+        "error": "Gripper position/orientation tolerances not solved within joint limits."
+      },
+      {
+        "kind": "complete_rigid_route_preflight",
+        "height": 0.02,
+        "nominal_closed_grip": 0.44,
+        "passed": true,
+        "source_q": [
+          -0.6259781889732405,
+          -0.5755698350619095,
+          0.9533486711978096,
+          0.6675158005606296,
+          -1.5414962387073086
+        ],
+        "lift_q": [
+          -0.6259786716659612,
+          -0.6294026203727794,
+          0.5022395080441643,
+          1.172453509490771,
+          -1.5414931702472954
+        ],
+        "above_q": [
+          -0.5831324467670578,
+          0.8327845462290431,
+          -1.0166744298023194,
+          1.2291802807354328,
+          -1.5414931702472958
+        ],
+        "lower_q": [
+          -0.5831324467670578,
+          0.7764060303773783,
+          -0.7683468008099752,
+          1.0372311675947532,
+          -1.5414931702472958
+        ],
+        "transfer_samples": 45
+      }
+    ],
+    "result": {
+      "status": "failed",
+      "message": "The manipulated item penetrated external geometry by more than 1 mm.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.65,
+        "other_arm_max_motion_deg": 3.477618488712209e-11,
+        "hold_verified_s": 1.8049999999983584,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": 0.5126862165945489,
+        "max_lift_cm": 6.055500591252915,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.0
+        ],
+        "external_contact_n": 5.49169197678691,
+        "tilt_deg": 23.480596632994768,
+        "peak_tilt_deg": 23.480596632994768,
+        "destination_normal_error_deg": 23.480596632994768,
+        "maximum_external_penetration_mm": 4.491658474215012,
+        "other_object_max_displacement_mm": 3.7456741904488882e-06,
+        "placement_free_yaw": false
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.915,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 7.22,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 11.525,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 14.83,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "align",
+          "at_s": 16.635,
+          "message": "Move over the placement guide"
+        },
+        {
+          "stage": "failed",
+          "at_s": 16.885,
+          "message": "The manipulated item penetrated external geometry by more than 1 mm."
+        }
+      ],
+      "frames": 11379,
+      "continuation_frames": 3378,
+      "prefix_motor_frames": 8001,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "coverage_evaluation": false,
+      "wall_s": 17.256099799647927
+    },
+    "interpretation": "The deeper band enabled6.0555cm lift and1.805s unsupported hold, supporting the lip-headroom diagnosis. The glass still escaped at the beginning of align; final placement remains unsolved. This is not a verified full-transfer grasp.",
+    "source_hashes": {
+      "simulation_lab/table_teacher.py": "d9be80ac3644d5ab0130bc4857c247ceef6de5d02669f7e61903304aedc3236f",
+      "simulation_lab/autonomy.py": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+      "simulation_lab/dinner_autonomy.py": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+      "simulation_lab/random_dinner.py": "30bb153bb28e23f1e5b4fbf94a8f8c0a5a76d72921141e2604d07941204ba698",
+      "simulation_lab/dinner.py": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11",
+      "simulation_lab/scene.py": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+      "simulation_lab/side_plate_grasp_candidates.py": "7f6af355a40e76ab84261636fde273c006e6baf45943d91a6767f765f979043e",
+      "simulation_lab/glass_grasp_candidates.py": "c91103d53f515b3beac83e6b3fcb329b5b73d23ba97b0757dcb4d53772c9dd34",
+      "scripts/develop_side_plate_grasp.py": "eb42ff2b186ab121143caacffe22d534e908fddf0c69060ed39daea59be9bee5",
+      "scripts/develop_glass_reorientation.py": "6be80bf959a0ce50fe189f10f0383b10eca869da09e8611db20fd73b4b1745e7",
+      "scripts/develop_glass_placement.py": "bdcd87132f13fa30e7cf245e92462eab60b0b31116c2d9aac9ad5b68bb1199ae"
+    }
+  },
+  "physical_trials_added": 1,
+  "model_or_physics_changes": false,
+  "next_trial_authorized": false
+}

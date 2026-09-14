@@ -1,0 +1,1298 @@
+{
+  "scope": "Exposed side-plate grasp development: dependency of shared complete-table teacher, not coverage or learned-control evidence.",
+  "attempts": 16,
+  "physical_attempts": 10,
+  "planning_only_attempts": 6,
+  "state_frames": 39116,
+  "physical_state_frames": 39110,
+  "all_motor_replays_exact": true,
+  "passing_physical_attempts": 2,
+  "unique_passing_scene_seeds": [
+    2026114001
+  ],
+  "module_vs_initial_success_trace_equal": true,
+  "recommendation": "Prioritize reverse_rim_candidates(data,name,GraspCandidate,OPEN). Fixed finger outside rim, moving finger inside; radius .048m, localz .0105m, tool point[-.001,0,-.100], toolZup/toolXnegative radial, .8Nm. Angle0 passes exposed4001 final transfer. Preserve all normal gates.",
+  "limitations": [
+    "Both successful trials use the same seed and physical start; this is not two-scene coverage.",
+    "Seed4002 inverted and4003 far upright starts have no solved reverse-family sourceIK, including tested4003 buffer destination. They remain valid unsolved starts.",
+    "No learned control, complete randomized table success, or universal feasibility claim."
+  ],
+  "preflight": {
+    "free_bytes": 536093777920,
+    "estimated_additional_bytes": 1048576,
+    "reserve_bytes": 10737418240
+  },
+  "rows": [
+    {
+      "path": ".run/side-plate-grasp-v1-t080",
+      "parameters": {
+        "teacher_source": null,
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 0.8,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Hold lost independent support.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.8,
+          "other_arm_max_motion_deg": 3.543137915150358e-11,
+          "hold_verified_s": 1.6849999999996648,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 4.60938529520496,
+          "max_lift_cm": 5.861859992305862,
+          "both_fingers": false,
+          "finger_forces_n": [
+            0.0,
+            0.05586946909532734
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 17.702251645664067,
+          "peak_tilt_deg": 17.702251645664067,
+          "destination_normal_error_deg": 17.702251645664067,
+          "maximum_external_penetration_mm": 0.5646083975754783,
+          "other_object_max_displacement_mm": 0.0003874122998141494
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.215,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.515,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.815,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.115,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 15.805,
+            "message": "Hold lost independent support."
+          }
+        ],
+        "frames": 3162,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 13.130727199837565
+      },
+      "files": {
+        "states.npz": "a56ab85105904ea8474197f51ad568c585a3dd7edf091708b668093f17abff18",
+        "result.json": "c22dfe23a5032e22356cadfb5dd73963cfc9a8a41182ed5518dce74d40396ba3",
+        "search.json": "e27e8382006d6b728bd033933a4530575a873cebb82a75feeca423b35912ad0b",
+        "source-manifest.json": "575630cad761fdb24379fa0a76585e03003e831665419ea71f8290808fd6228a"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v2-t120",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 1.2,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+        "metrics": {
+          "gripper_torque_limit_nm": 1.2,
+          "other_arm_max_motion_deg": 3.543137915150358e-11,
+          "hold_verified_s": 1.804999999999641,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 5.212043622033391,
+          "max_lift_cm": 5.948715111989211,
+          "both_fingers": true,
+          "finger_forces_n": [
+            16.307136051685557,
+            16.226615187416876
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 10.797490356112316,
+          "peak_tilt_deg": 13.10463202463936,
+          "destination_normal_error_deg": 10.797490356112316,
+          "maximum_external_penetration_mm": 0.5646083975754783,
+          "other_object_max_displacement_mm": 0.0003902309576323708
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.215,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.515,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.815,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.115,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 15.92,
+            "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "frames": 3185,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 13.790810800157487
+      },
+      "files": {
+        "states.npz": "ceb23cc5d9a56231feae24775cc05d431e72c380023a92a045d63879612a6124",
+        "result.json": "e331b898f511d0faec394512184f0110f0254618cd99582901d33d57fc3d6910",
+        "search.json": "e27e8382006d6b728bd033933a4530575a873cebb82a75feeca423b35912ad0b",
+        "source-manifest.json": "575630cad761fdb24379fa0a76585e03003e831665419ea71f8290808fd6228a"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v3-t180",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 1.8,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Hold lost independent support.",
+        "metrics": {
+          "gripper_torque_limit_nm": 1.8,
+          "other_arm_max_motion_deg": 3.543137915150358e-11,
+          "hold_verified_s": 0.5549999999998896,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 4.065645283577279,
+          "max_lift_cm": 5.976011487955313,
+          "both_fingers": false,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 24.675908069593774,
+          "peak_tilt_deg": 24.675908069593774,
+          "destination_normal_error_deg": 24.675908069593774,
+          "maximum_external_penetration_mm": 0.5646083975754783,
+          "other_object_max_displacement_mm": 0.000359713741363472
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.215,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.515,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.815,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.115,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 14.675,
+            "message": "Hold lost independent support."
+          }
+        ],
+        "frames": 2936,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 12.518153300043195
+      },
+      "files": {
+        "states.npz": "077a7f884803f60f857ba52268b571f009f9ba010f32f29df6563ffc4c7dbbd3",
+        "result.json": "2566c35aceb84422fc93324a12df03cdcfca1b8c3c49f234f846f3cf65645123",
+        "search.json": "e27e8382006d6b728bd033933a4530575a873cebb82a75feeca423b35912ad0b",
+        "source-manifest.json": "575630cad761fdb24379fa0a76585e03003e831665419ea71f8290808fd6228a"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v4-z102-t120",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0102,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 1.2,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+        "metrics": {
+          "gripper_torque_limit_nm": 1.2,
+          "other_arm_max_motion_deg": 3.543137915150358e-11,
+          "hold_verified_s": 1.804999999999641,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 5.197307795617434,
+          "max_lift_cm": 5.93935660749747,
+          "both_fingers": true,
+          "finger_forces_n": [
+            16.297978765650605,
+            16.21744233338805
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 10.799675983303871,
+          "peak_tilt_deg": 13.103253966686246,
+          "destination_normal_error_deg": 10.799675983303871,
+          "maximum_external_penetration_mm": 0.34242348072710416,
+          "other_object_max_displacement_mm": 0.0003901085073296953
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.21,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.51,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.81,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.11,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 15.915,
+            "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "frames": 3184,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 13.865363100077957
+      },
+      "files": {
+        "states.npz": "79c48c789f69801519e796e3b377a66af0ae01a0d22ed145e50b76018e3c8e7f",
+        "result.json": "dfc00a4d4275a0251c48aab3db19f33dd1d6e693b7b460af58e7db5ac013d1e2",
+        "search.json": "7b0fd42df51c10839adbbf0a5d874f0002536d8e929ee4b806de8e28103db25a",
+        "source-manifest.json": "d853d7f6e2c94a69c4e88c07af0f2fb274f3ea0cb62166d1a875d05d0404948f"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v5-z098-t120",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0098,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 1.2,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+        "metrics": {
+          "gripper_torque_limit_nm": 1.2,
+          "other_arm_max_motion_deg": 3.543137915150358e-11,
+          "hold_verified_s": 1.804999999999641,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 5.1776447378513835,
+          "max_lift_cm": 5.924501093864675,
+          "both_fingers": true,
+          "finger_forces_n": [
+            16.289270702405766,
+            16.208724949257824
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 10.8008839226979,
+          "peak_tilt_deg": 13.105536300716595,
+          "destination_normal_error_deg": 10.8008839226979,
+          "maximum_external_penetration_mm": 0.441211541530377,
+          "other_object_max_displacement_mm": 0.0003899860517621295
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.205,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.505,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.805,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.105,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 15.91,
+            "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "frames": 3183,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 13.568742900155485
+      },
+      "files": {
+        "states.npz": "3ab3782a2e6983b98284d33789110c3c15696a2e3c6ca3d00d3b90a067a54ba4",
+        "result.json": "438ec5c69b392edad6a2f359d64b11fa2c63b6dcb6497d4f77c41a7d74f7f40f",
+        "search.json": "d6856b132333b979f8a91c1c8384febe65a4d426eb2df35b33d0bbcbc3050e8b",
+        "source-manifest.json": "d853d7f6e2c94a69c4e88c07af0f2fb274f3ea0cb62166d1a875d05d0404948f"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v6-p010-t120",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 1.2,
+        "pitch": 0.1,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for side_plate; 3 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 1.2,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for side_plate; 3 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 0.5745577001944184
+      },
+      "files": {
+        "states.npz": "f8a3c04362aac2092667215f45d29d12b2d447117a5bfc0f2e369fae293959bb",
+        "result.json": "f5c4603317a09d36c659c46394b05344dda8cbdfacb20ce7a1d7cfd46d8206d8",
+        "search.json": "2d77d28651639c44576bfc547a1c2307861bba00a63a741644447750df613af2",
+        "source-manifest.json": "6f035a31808516d29ee144fcce23f5204b6da9d48a7cf67c8177777253ea0598"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v7-x000-t120",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": 0.0,
+        "tool_z": -0.1,
+        "torque": 1.2,
+        "pitch": 0.0,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+        "metrics": {
+          "gripper_torque_limit_nm": 1.2,
+          "other_arm_max_motion_deg": 3.543137915150358e-11,
+          "hold_verified_s": 1.804999999999641,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 5.212171386930509,
+          "max_lift_cm": 5.948699202378627,
+          "both_fingers": true,
+          "finger_forces_n": [
+            16.30766225015187,
+            16.2271394014969
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 10.797771850473469,
+          "peak_tilt_deg": 13.10927044386882,
+          "destination_normal_error_deg": 10.797771850473469,
+          "maximum_external_penetration_mm": 0.5764693615313228,
+          "other_object_max_displacement_mm": 0.00038986358977294555
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.2,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.5,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.8,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.1,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 15.905,
+            "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "frames": 3182,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 14.291587099898607
+      },
+      "files": {
+        "states.npz": "59a320f71666f37d15c81a58480d768745a48439741bfdffbe98499747412796",
+        "result.json": "07b670a4ad7ac978314262431dc49374daeed3ba75e22ea279812755b4f318e5",
+        "search.json": "e27e8382006d6b728bd033933a4530575a873cebb82a75feeca423b35912ad0b",
+        "source-manifest.json": "6f035a31808516d29ee144fcce23f5204b6da9d48a7cf67c8177777253ea0598"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v8-a2618-t120",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -2.6179938779914944,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 1.2,
+        "pitch": 0.0,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+        "metrics": {
+          "gripper_torque_limit_nm": 1.2,
+          "other_arm_max_motion_deg": 3.543137915150358e-11,
+          "hold_verified_s": 1.804999999999641,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 5.212215151994259,
+          "max_lift_cm": 5.94737346571601,
+          "both_fingers": true,
+          "finger_forces_n": [
+            16.30985712691457,
+            16.22930113567746
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 10.805631331428016,
+          "peak_tilt_deg": 13.09735222721162,
+          "destination_normal_error_deg": 10.805631331428016,
+          "maximum_external_penetration_mm": 0.5634723812569087,
+          "other_object_max_displacement_mm": 0.0003894960378038711
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.185,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.485,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.785,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.085,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 15.89,
+            "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "frames": 3179,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 12.48482450004667
+      },
+      "files": {
+        "states.npz": "e2241674841234344fb99890533cfefb37acea030855e08ac0325ef08948fae4",
+        "result.json": "346d277e1664c30f5c3ae5e02770519cff1d0d64bb5a5477b18c7f2a53b0d42f",
+        "search.json": "674f5f5ead2bca29d5ccf210e3be1492215877ad2e169e076448339ab1812ae7",
+        "source-manifest.json": "6f035a31808516d29ee144fcce23f5204b6da9d48a7cf67c8177777253ea0598"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v9-reverse-t080",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 0.8,
+        "pitch": 0.0,
+        "closing_sign": -1,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for side_plate; 3 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.8,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for side_plate; 3 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 0.4859302002005279
+      },
+      "files": {
+        "states.npz": "f8a3c04362aac2092667215f45d29d12b2d447117a5bfc0f2e369fae293959bb",
+        "result.json": "2a713a420b4ef15837fbc5b0f044f88079bc8959b3b9a5554944ac65a5c9f813",
+        "search.json": "2d77d28651639c44576bfc547a1c2307861bba00a63a741644447750df613af2",
+        "source-manifest.json": "14f82a4ba2cfadf0acbe9b3be2c0635fc3dab41f7e9ce63aefd72702035344b3"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v10-reverse-a000-t080",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": 0.0,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 0.8,
+        "pitch": 0.0,
+        "closing_sign": -1,
+        "arm": "right"
+      },
+      "result": {
+        "status": "succeeded",
+        "message": "side_plate physically lifted, held, oriented, placed and released; both arms parked.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.8,
+          "other_arm_max_motion_deg": 3.544410137022943e-11,
+          "hold_verified_s": 1.804999999999641,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 3.251463279729805e-05,
+          "max_lift_cm": 6.487608053121985,
+          "both_fingers": false,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "external_contact_n": 0.42991993595110345,
+          "tilt_deg": 0.0005869835077036182,
+          "peak_tilt_deg": 14.957012582634107,
+          "destination_normal_error_deg": 0.0005869835077036182,
+          "maximum_external_penetration_mm": 0.6558037929780921,
+          "other_object_max_displacement_mm": 0.0008525279073622231,
+          "placement_xy_error_mm": 1.1418881312630749,
+          "placement_z_error_mm": 0.05737009605366605,
+          "placement_yaw_error_deg": 0.0,
+          "placement_speed_mm_s": 0.03636825897902427,
+          "complete_object_supported_within_table": true
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 2.805,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.105,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.405,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 13.705,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 15.51,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "lower",
+            "at_s": 19.815,
+            "message": "Lower to measured table support"
+          },
+          {
+            "stage": "release",
+            "at_s": 23.37,
+            "message": "Release the object"
+          },
+          {
+            "stage": "retract",
+            "at_s": 27.675,
+            "message": "Withdraw the gripper"
+          },
+          {
+            "stage": "park",
+            "at_s": 30.975,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 34.275,
+            "message": "Verify stable placement"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 34.78,
+            "message": "side_plate physically lifted, held, oriented, placed and released; both arms parked."
+          }
+        ],
+        "frames": 6957,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": true,
+        "coverage_evaluation": false,
+        "wall_s": 31.005213500000536
+      },
+      "files": {
+        "states.npz": "c57a3b9a1733ea59f5c2f2de969fb537fc4cf6ad7f4e20ae2daf904eeafe06c5",
+        "result.json": "d63ec0d7bc909f42ce97cbdeb64dfb23b01c22263dcedb0f9e3394bebe0b6017",
+        "search.json": "f64ecf1a7eb48899643f02d6b8806ed486eeff9025594a36d02097aad475c5f8",
+        "source-manifest.json": "14f82a4ba2cfadf0acbe9b3be2c0635fc3dab41f7e9ce63aefd72702035344b3"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v11-buffer-t120",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 1.2,
+        "pitch": 0.0,
+        "closing_sign": 1,
+        "target": [
+          0.05,
+          -0.1,
+          0.76
+        ],
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+        "metrics": {
+          "gripper_torque_limit_nm": 1.2,
+          "other_arm_max_motion_deg": 3.543137915150358e-11,
+          "hold_verified_s": 1.804999999999641,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 5.212043622033391,
+          "max_lift_cm": 5.948715111989211,
+          "both_fingers": true,
+          "finger_forces_n": [
+            16.307136051685557,
+            16.226615187416876
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 10.797490356112316,
+          "peak_tilt_deg": 13.10463202463936,
+          "destination_normal_error_deg": 10.797490356112316,
+          "maximum_external_penetration_mm": 0.5646083975754783,
+          "other_object_max_displacement_mm": 0.0003902309576323708
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.215,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.515,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.815,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.115,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 15.92,
+            "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "frames": 3185,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 13.55838460009545
+      },
+      "files": {
+        "states.npz": "8a6910fc9f7b99d8216873009c8ef1437034e71f54ea3042d91893bf9f316888",
+        "result.json": "fab7e7d339e18cbca524b6755c42e08fd9472cfcc774adf2097fa30fb155aab2",
+        "search.json": "e27e8382006d6b728bd033933a4530575a873cebb82a75feeca423b35912ad0b",
+        "source-manifest.json": "e8c5a004937f68dcd900c74d3a61ed617fd56319c6c4ee968fda27926b950a9c"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v12-reverse-seed4002",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114002,
+        "angle": 0.0,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 0.8,
+        "pitch": 0.0,
+        "closing_sign": -1,
+        "target": null,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for side_plate; 3 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.8,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for side_plate; 3 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 0.43440270004794
+      },
+      "files": {
+        "states.npz": "c6142714808b22a3c93a901f01ee1a61de7b17dd51b0ccebe855556d1b5ab1e7",
+        "result.json": "e511dd7c255a07c45c84b7c799c750144470ed51d4f5319e7aa3e6b55fe9c23a",
+        "search.json": "2d77d28651639c44576bfc547a1c2307861bba00a63a741644447750df613af2",
+        "source-manifest.json": "e8c5a004937f68dcd900c74d3a61ed617fd56319c6c4ee968fda27926b950a9c"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v13-family-seed4002",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114002,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 0.8,
+        "pitch": 0.0,
+        "closing_sign": 1,
+        "target": null,
+        "family": true,
+        "arm": "auto"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for side_plate; 72 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.8,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for side_plate; 72 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 1.788492300081998
+      },
+      "files": {
+        "states.npz": "c6142714808b22a3c93a901f01ee1a61de7b17dd51b0ccebe855556d1b5ab1e7",
+        "result.json": "7b2074a89f9f4e4f0416d04479f463d70cd76fe950d5361a18f2bf3d0d606f5b",
+        "search.json": "993552491fb70dfb4db37df94729ef52c88ac10f05cd7752d4fbd4d06e660fce",
+        "source-manifest.json": "eb399eba269fd9c41f7e569339ef7cf523643305f720b4508553c28c2dea957c"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v14-family-seed4003",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114003,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 0.8,
+        "pitch": 0.0,
+        "closing_sign": 1,
+        "target": null,
+        "family": true,
+        "arm": "auto"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for side_plate; 72 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.8,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for side_plate; 72 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 1.9255651999264956
+      },
+      "files": {
+        "states.npz": "a4210b46a7963298a78df4d90daa651abf38e00e77bd5ff70cc14153ad0b8e27",
+        "result.json": "24286201dc5388317944ca930893d6034bb1ac800618251d50401cc08ec0a644",
+        "search.json": "993552491fb70dfb4db37df94729ef52c88ac10f05cd7752d4fbd4d06e660fce",
+        "source-manifest.json": "eb399eba269fd9c41f7e569339ef7cf523643305f720b4508553c28c2dea957c"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v15-family-seed4003-buffer",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114003,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 0.8,
+        "pitch": 0.0,
+        "closing_sign": 1,
+        "target": [
+          0.0,
+          -0.1,
+          0.76
+        ],
+        "family": true,
+        "arm": "auto"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for side_plate; 72 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.8,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for side_plate; 72 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 1.9623288000002503
+      },
+      "files": {
+        "states.npz": "a4210b46a7963298a78df4d90daa651abf38e00e77bd5ff70cc14153ad0b8e27",
+        "result.json": "750fdca06510856709d3a85d7487749cf817c76e4bf04b0428618485359da8bb",
+        "search.json": "993552491fb70dfb4db37df94729ef52c88ac10f05cd7752d4fbd4d06e660fce",
+        "source-manifest.json": "eb399eba269fd9c41f7e569339ef7cf523643305f720b4508553c28c2dea957c"
+      }
+    },
+    {
+      "path": ".run/side-plate-grasp-v16-module-seed4001",
+      "parameters": {
+        "teacher_source": ".run/side-plate-grasp-v1-t080/source/simulation_lab/table_teacher.py",
+        "seed": 2026114001,
+        "angle": -3.141592653589793,
+        "radius": 0.048,
+        "height": 0.0105,
+        "tool_x": -0.001,
+        "tool_z": -0.1,
+        "torque": 0.8,
+        "pitch": 0.0,
+        "closing_sign": 1,
+        "target": null,
+        "family": true,
+        "arm": "auto"
+      },
+      "result": {
+        "status": "succeeded",
+        "message": "side_plate physically lifted, held, oriented, placed and released; both arms parked.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.8,
+          "other_arm_max_motion_deg": 3.544410137022943e-11,
+          "hold_verified_s": 1.804999999999641,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 3.251463279729805e-05,
+          "max_lift_cm": 6.487608053121985,
+          "both_fingers": false,
+          "finger_forces_n": [
+            0.0,
+            0.0
+          ],
+          "external_contact_n": 0.42991993595110345,
+          "tilt_deg": 0.0005869835077036182,
+          "peak_tilt_deg": 14.957012582634107,
+          "destination_normal_error_deg": 0.0005869835077036182,
+          "maximum_external_penetration_mm": 0.6558037929780921,
+          "other_object_max_displacement_mm": 0.0008525279073622231,
+          "placement_xy_error_mm": 1.1418881312630749,
+          "placement_z_error_mm": 0.05737009605366605,
+          "placement_yaw_error_deg": 0.0,
+          "placement_speed_mm_s": 0.03636825897902427,
+          "complete_object_supported_within_table": true
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 2.805,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.105,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 10.405,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 13.705,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 15.51,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "lower",
+            "at_s": 19.815,
+            "message": "Lower to measured table support"
+          },
+          {
+            "stage": "release",
+            "at_s": 23.37,
+            "message": "Release the object"
+          },
+          {
+            "stage": "retract",
+            "at_s": 27.675,
+            "message": "Withdraw the gripper"
+          },
+          {
+            "stage": "park",
+            "at_s": 30.975,
+            "message": "Park the working arm"
+          },
+          {
+            "stage": "verify",
+            "at_s": 34.275,
+            "message": "Verify stable placement"
+          },
+          {
+            "stage": "succeeded",
+            "at_s": 34.78,
+            "message": "side_plate physically lifted, held, oriented, placed and released; both arms parked."
+          }
+        ],
+        "frames": 6957,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": true,
+        "coverage_evaluation": false,
+        "wall_s": 31.28534509986639
+      },
+      "files": {
+        "states.npz": "c57a3b9a1733ea59f5c2f2de969fb537fc4cf6ad7f4e20ae2daf904eeafe06c5",
+        "result.json": "3291c65b6ce2f93b212e9a1eab1e017ad8ca33db9c843b48ad65b669b1c14acd",
+        "search.json": "f27c01245911e4691878b28a3e4c95edce38cbeeb3299fcdcf995216a3d361d3",
+        "source-manifest.json": "eb399eba269fd9c41f7e569339ef7cf523643305f720b4508553c28c2dea957c"
+      }
+    }
+  ]
+}

@@ -19,7 +19,7 @@ import numpy as np
 from PIL import Image
 
 from simulation_lab.dinner import OBJECTS
-from simulation_lab.random_dinner import assess, body_bounds, draw
+from simulation_lab.random_dinner import assess, body_bounds, draw, orientation
 from simulation_lab.scene import HOME, build_scene
 from simulation_lab.storage import require_space
 from simulation_lab.table_observation import TableObserver
@@ -53,11 +53,19 @@ def world_bounds(model, data, name):
     return low+pose[:3], high+pose[:3]
 
 
-def blockers(model, data, name, target):
-    low, high = body_bounds(model, name, np.array([1., 0., 0., 0.]))
-    if name == 'spoon':
-        quat = np.array([np.sqrt(.5), 0., 0., -np.sqrt(.5)])
-        low, high = body_bounds(model, name, quat)
+def arrangement_key(data):
+    """Coarse physical-state memory for avoiding repeated temporary placements."""
+    values = []
+    for name in OBJECTS:
+        body = data.body(name); rotation = body.xmat.reshape(3, 3)
+        values.extend(np.rint(body.xpos/.01).astype(int).tolist())
+        values.extend(np.rint(rotation[:, (0, 2)].ravel()/.1).astype(int).tolist())
+    return tuple(values)
+
+
+def blockers(model, data, name, target, quaternion=None):
+    quat = np.array([np.sqrt(.5), 0., 0., -np.sqrt(.5)]) if name == 'spoon' else np.array([1., 0., 0., 0.])
+    low, high = body_bounds(model, name, quat if quaternion is None else quaternion)
     low += target; high += target
     rows = []
     for other in OBJECTS:
@@ -67,8 +75,29 @@ def blockers(model, data, name, target):
     return rows
 
 
+def blocked_relations(model, data, layout, remaining):
+    return {(name, other) for name in remaining
+            for other in blockers(model, data, name, destination(layout, name))}
+
+
+def orientation_progress(before, after, name, accepted_relays, introduced):
+    """Bounded task progress from a physically verified temporary placement.
+
+    Every final setting needs body Z up; cutlery yaw is separately enforced at
+    final placement. A moved item may temporarily block a goal, but a relay may
+    not introduce an unrelated blocker. This is not a completion certificate.
+    """
+    angle = lambda data: math.degrees(math.acos(np.clip(data.body(name).xmat[8], -1., 1.)))
+    old, new = angle(before), angle(after)
+    improved = (old-new > 30. and accepted_relays < 2
+                and all(blocker == name for _, blocker in introduced))
+    return {'before_error_deg': old, 'after_error_deg': new, 'improvement_deg': old-new,
+            'minimum_improvement_deg': 30., 'previous_orientation_relays': accepted_relays,
+            'maximum_orientation_relays_per_item': 2, 'eligible': improved}
+
+
 def candidates(model, data, layout, remaining):
-    direct = [(name, destination(layout, name), 'final_setting') for name in remaining
+    direct = [(name, destination(layout, name), 'final_setting', None) for name in remaining
               if not blockers(model, data, name, destination(layout, name))]
     direct.sort(key=lambda row: min(np.linalg.norm(data.body(row[0]).xpos[:2]-[x, -.235]) for x in (-.25, .25)))
     # A cyclic obstruction or disjoint arm workspaces can require a temporary
@@ -76,23 +105,35 @@ def candidates(model, data, layout, remaining):
     table = model.geom('table').id; half = model.geom_size[table, :2]; center = data.geom_xpos[table, :2]
     options = []
     for name in remaining:
-        low, high = body_bounds(model, name, np.array([1., 0., 0., 0.]))
-        xs = np.arange(center[0]-half[0]-low[0]+.015, center[0]+half[0]-high[0]-.015, .065)
-        ys = np.arange(center[1]-half[1]-low[1]+.015, center[1]+half[1]-high[1]-.015, .065)
-        for x in xs:
-            for y in ys:
-                target = np.array([x, y, layout['table_z']])
-                if np.linalg.norm(target[:2]-data.body(name).xpos[:2]) < .07:continue
-                if blockers(model, data, name, target):continue
-                source = data.body(name).xpos[:2]; goal = destination(layout, name)[:2]
-                if np.linalg.norm(target[:2]-goal) < .02:continue
-                cost = np.linalg.norm(target[:2]-source)+np.linalg.norm(target[:2]-goal)
-                cost += .5*abs(target[0])  # Prefer a potential two-arm regrasp area.
-                options.append((cost, name, target, 'relay_or_clearance'))
+        nominal = np.array([np.sqrt(.5), 0., 0., -np.sqrt(.5)]) if name == 'spoon' else np.array([1., 0., 0., 0.])
+        orientations = [('final_orientation', nominal)]
+        current = data.joint(name+'_free').qpos[3:].copy()
+        normal = data.body(name).xmat.reshape(3, 3)[:, 2]
+        if normal[2] < .999 or name in ('fork', 'spoon'):
+            orientations.append(('preserved_orientation', current))
+        if OBJECTS[name]['kind'] in ('bottle', 'mug', 'glass'):
+            for angle in (-math.pi, -math.pi/2, 0., math.pi/2):
+                orientations.append((f'sideways_{angle}', orientation('sideways', angle, math.pi)))
+        for orientation_role, quaternion in orientations:
+            low, high = body_bounds(model, name, quaternion)
+            xs = np.arange(center[0]-half[0]-low[0]+.015, center[0]+half[0]-high[0]-.015, .065)
+            ys = np.arange(center[1]-half[1]-low[1]+.015, center[1]+half[1]-high[1]-.015, .065)
+            for x in xs:
+                for y in ys:
+                    target = np.array([x, y, layout['table_z']-low[2]])
+                    if np.linalg.norm(target[:2]-data.body(name).xpos[:2]) < .07:continue
+                    if blockers(model, data, name, target, quaternion):continue
+                    source = data.body(name).xpos[:2]; goal = destination(layout, name)[:2]
+                    if np.linalg.norm(target[:2]-goal) < .02:continue
+                    cost = np.linalg.norm(target[:2]-source)+np.linalg.norm(target[:2]-goal)
+                    cost += .5*abs(target[0])  # Prefer a potential two-arm regrasp area.
+                    options.append((cost, name, target, 'relay_or_clearance', quaternion, orientation_role))
     selected = []
     for name in remaining:
-        selected.extend(sorted((r for r in options if r[1] == name), key=lambda r: r[0])[:4])
-    return direct+[(name, target, role) for _, name, target, role in sorted(selected, key=lambda r: r[0])]
+        for family in dict.fromkeys(r[5] for r in options if r[1] == name):
+            count = 2 if family.startswith('sideways_') else 4
+            selected.extend(sorted((r for r in options if r[1] == name and r[5] == family), key=lambda r: r[0])[:count])
+    return direct+[(name, target, role, quaternion) for _, name, target, role, quaternion, _ in sorted(selected, key=lambda r: r[0])]
 
 
 def execute(model, data, layout, task, targets, folder, observer):
@@ -104,7 +145,12 @@ def execute(model, data, layout, task, targets, folder, observer):
     put(folder/'search.json', task.search_log)
     put(folder/'action.json', {'item': task.tube['id'], 'arm': task.side,
         'grasp_candidate': task.chosen.name, 'pick_point_m': task.grasp.tolist(),
+        'initial_wrist_roll': task.chosen_roll,
+        'gripper_point_local_m': task.chosen.local_tool_point.tolist(),
+        'gripper_constraint_axis_local': None if task.chosen.local_axis is None else task.chosen.local_axis.tolist(),
         'place_body_origin_m': task.destination_position.tolist(),
+        'place_body_quaternion_wxyz': task.destination_quaternion.tolist(),
+        'orientation_constraint': task.orientation_constraint,
         'teacher_observation': 'privileged_state', 'policy_observation': 'calibrated_rgbd_only'})
     stage_before = None; observations = 0; tick = 0
     while task.active and tick < 24000:
@@ -143,19 +189,22 @@ def execute(model, data, layout, task, targets, folder, observer):
     return result
 
 
-def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, reset='joint'):
+def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, reset='joint', include_item_buffers=False):
     if folder.exists():raise FileExistsError('Preserve every development attempt.')
     preflight = require_space(folder, 8*1024**3); folder.mkdir(parents=True)
     started = time.perf_counter(); report = {'seed': seed, 'preflight': preflight,
         'scope': 'Exposed development of a shared exact-state physical teacher; not learned evaluation.',
         'whole_table_complete': False, 'actions': [], 'planning_failures': [], 'remaining': list(OBJECTS),
         'only_item_diagnostic': only_item, 'maximum_actions': maximum_actions,
+        'include_item_buffers': include_item_buffers,
         'reset_distribution': reset, 'coverage_evaluation': False,
         'lookahead_attempts_per_item': lookahead_attempts, 'physical_lookahead': [],
         'lookahead_contract': 'Privileged training teacher searches independent copied physics states. Only a fully passing action is replayed through motor commands in the continuously evolving main scene. Failed searches remain; this is not learned online recovery.'}
     observer = None
     try:
         for name in ('simulation_lab/table_teacher.py', 'simulation_lab/table_observation.py',
+                     'simulation_lab/side_plate_grasp_candidates.py',
+                     'simulation_lab/glass_grasp_candidates.py',
                      'simulation_lab/random_dinner.py', 'simulation_lab/autonomy.py',
                      'simulation_lab/dinner_autonomy.py', 'scripts/develop_whole_table.py'):
             put(folder/'source'/name, (ROOT/name).read_bytes())
@@ -176,12 +225,18 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
         if not initial_geometry['valid'] and reset == 'joint':return
         observer = TableObserver(model); observe(observer, data, folder/'initial-observation')
         targets = np.asarray(HOME*2); remaining = list(OBJECTS)
+        seen_arrangements = {arrangement_key(data)}
+        orientation_relays = {name: 0 for name in OBJECTS}
         state_spec = mujoco.mjtState.mjSTATE_INTEGRATION
         for action_index in range(maximum_actions):
             selected = None
-            options = candidates(model, data, layout, remaining)
-            if only_item:options = [(only_item, destination(layout, only_item), 'isolated_diagnostic')]
-            for attempt_index, (name, target, role) in enumerate(options):
+            # Source IK is independent of the proposed destination. Reuse only
+            # within this unchanged main scene; discard after every real action.
+            source_pose_cache = {}
+            options = candidates(model, data, layout, [only_item] if only_item else remaining)
+            if only_item and not include_item_buffers:
+                options = [(only_item, destination(layout, only_item), 'isolated_diagnostic', None)]
+            for attempt_index, (name, target, role, quaternion) in enumerate(options):
                 excluded = []
                 for grasp_attempt in range(lookahead_attempts):
                     initial = np.empty(mujoco.mj_stateSize(model, state_spec))
@@ -190,11 +245,13 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
                     mujoco.mj_forward(model, trial)
                     trial_targets = targets.copy()
                     task = TableTeacher(model, trial, layout)
-                    task.start(object_id=name, target=target, excluded_grasps=excluded)
+                    task.start(object_id=name, target=target, target_quaternion=quaternion,
+                               excluded_grasps=excluded, source_pose_cache=source_pose_cache)
                     task.update(trial_targets)
                     if not task.active:
                         failure = {'action_index': action_index, 'attempt_index': attempt_index,
                             'grasp_attempt': grasp_attempt, 'item': name, 'role': role,
+                            'target_quaternion': None if quaternion is None else quaternion.tolist(),
                             'message': task.message, 'search': task.search_log}
                         report['planning_failures'].append(failure)
                         put(folder/f'planning-{action_index:02d}-{attempt_index:03d}-{grasp_attempt:02d}.json', failure)
@@ -203,22 +260,46 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
                     attempt_path = folder/f'lookahead-{action_index:02d}-{attempt_index:03d}-{grasp_attempt:02d}-{name}'
                     result = execute(model, trial, layout, task, trial_targets, attempt_path, observer)
                     result.update(role=role, path=attempt_path.relative_to(folder).as_posix(),
-                                  candidate=task.chosen.name, action_index=action_index)
+                                  candidate=task.chosen.name, initial_wrist_roll=task.chosen_roll,
+                                  action_index=action_index)
                     report['physical_lookahead'].append(result)
                     if result['demonstration_eligible']:
                         if role == 'relay_or_clearance':
+                            if arrangement_key(trial) in seen_arrangements:
+                                result['workflow_selection'] = 'Passing demonstration retained; repeated arrangement refused.'
+                                break
                             continuation = TableTeacher(model, trial, layout)
                             continuation.start(object_id=name, target=destination(layout, name))
                             continuation.update(trial_targets.copy())
                             result['final_transfer_plan_exists_after_regrasp'] = continuation.active
+                            before_blocked = blocked_relations(model, data, layout, remaining)
+                            after_blocked = blocked_relations(model, trial, layout, remaining)
+                            cleared = sorted(before_blocked-after_blocked)
+                            introduced = sorted(after_blocked-before_blocked)
+                            clearance_progress = bool(cleared) and not introduced
+                            orientation_change = orientation_progress(data, trial, name, orientation_relays[name], introduced)
+                            result['orientation_progress'] = orientation_change
+                            result['cleared_blocking_relationships'] = cleared
+                            result['introduced_blocking_relationships'] = introduced
                             put(attempt_path/'continuation-plan.json', {'planned': continuation.active,
                                 'search': continuation.search_log, 'message': continuation.message,
+                                'clearance_progress': clearance_progress,
+                                'orientation_progress': orientation_change,
+                                'cleared_blocking_relationships': cleared,
+                                'introduced_blocking_relationships': introduced,
                                 'meaning': 'Geometric next-action plan only, not yet physical transfer success.'})
-                            if not continuation.active:
+                            if not continuation.active and not clearance_progress and not orientation_change['eligible']:
                                 result['workflow_selection'] = 'Valid buffer demonstration retained, but final regrasp/transfer is unsolved.'
                                 break
+                            if clearance_progress:
+                                result['workflow_selection'] = 'Physically verified clearance removes a destination obstruction without introducing another.'
+                            elif continuation.active:
+                                result['workflow_selection'] = 'Physically verified buffer has a geometric final-transfer plan; execution is still required.'
+                            else:
+                                result['workflow_selection'] = 'Physically verified buffer improves task orientation by over 30 degrees within the two-relay budget.'
+                                result['orientation_relay_selected'] = True
                         selected = result, attempt_path, trial_targets; break
-                    excluded.append((task.side, task.chosen.name))
+                    excluded.append((task.side, task.chosen.name, task.chosen_roll))
                 if selected is not None:break
             if selected is None:
                 report['stop_reason'] = 'No current candidate action solved; remaining items are unsolved, not classified impossible.'
@@ -234,11 +315,13 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
                 assert np.array_equal(data.qpos, values['qpos'][i+1]), 'Main-scene position replay diverged.'
                 assert np.array_equal(data.qvel, values['qvel'][i+1]), 'Main-scene velocity replay diverged.'
             result['continuous_main_scene_replay_exact'] = True
+            seen_arrangements.add(arrangement_key(data))
+            if result.get('orientation_relay_selected'):orientation_relays[result['item']] += 1
             targets[:] = trial_targets
             report['actions'].append(result)
             put(folder/f'accepted-action-{action_index:02d}.json', result)
             if result['role'] == 'final_setting':remaining.remove(result['item'])
-            if only_item:break
+            if only_item and (not include_item_buffers or result['role'] == 'final_setting'):break
             if not remaining:break
         report['remaining'] = remaining
         report['final_geometry'] = assess(model, data)
@@ -271,6 +354,10 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=2026114001)
     parser.add_argument('--maximum-actions', type=int, default=14)
     parser.add_argument('--only-item', choices=tuple(OBJECTS))
+    parser.add_argument('--include-item-buffers', action='store_true',
+                        help='Allow temporary placements in an explicitly single-item joint-scene diagnostic.')
     parser.add_argument('--lookahead-attempts', type=int, default=6)
     parser.add_argument('--reset', choices=('joint', 'task'), default='joint')
-    args = parser.parse_args(); run(args.output, args.seed, args.maximum_actions, args.only_item, args.lookahead_attempts, args.reset)
+    args = parser.parse_args()
+    if args.include_item_buffers and not args.only_item:parser.error('--include-item-buffers requires --only-item.')
+    run(args.output, args.seed, args.maximum_actions, args.only_item, args.lookahead_attempts, args.reset, args.include_item_buffers)

@@ -1,0 +1,1376 @@
+{
+  "scope": "Isolated exposed robotics diagnosis of inverted glass in actual post-action joint seed2026114002; a dependency of complete-table manipulation, not learned control or coverage evaluation.",
+  "attempts": 15,
+  "physical_attempts": 10,
+  "planning_only_attempts": 5,
+  "physical_state_frames": 39466,
+  "all_motor_replays_exact": true,
+  "passing_physical_attempts": 0,
+  "findings": [
+    "96 additional bounded placementIK starts at4heights fail preserved-inverted buffer. Best observed normal residual4.14degrees, wristroll atnegative2.7398473rad jointlimit.",
+    "A scalar bodyZ horizontal-plane residual instead of bodyXup unlocks collision-checked sideways routes. Solver retains0.25mm position and3degree plane tolerances; final physical plane condition explicitly3degrees in later trials.",
+    "Scalar-plane route at buffer[.10,.12] with pi grasp fails from6.23mm in-hand translation plus3.26degree relative normal drift and tight carried-item table clearance.",
+    "Pi/2 grasp reaches unsupported alignment, but bodyZ rotates28.38degrees within jaws and lowering is rejected for table/right_lower_arm collision. Added12mm carried-item clearance plus measured reorientation correction still fails subsequent route planning.",
+    "Increasing initial torque to1.0Nm leaves measured end lift below2.5cm;1.2Nm only during carry still contacts table during align. Deepwrap source variants collide on approach or pinch the supported glass during descent, preserving timeout failures."
+  ],
+  "recommendation": "No passing glass placement demonstrated; do not promote this diagnostic as a verified manipulation primitive. Scalar horizontal-axis IK in scripts/develop_glass_reorientation.py:63 is a tested geometric improvement, but route margins, changing in-hand pose and physically feasible lowering still need resolution. All safeguards and failed traces remain intact.",
+  "preflight": {
+    "free_bytes": 531871313920,
+    "estimated_additional_bytes": 1048576,
+    "reserve_bytes": 10737418240
+  },
+  "rows": [
+    {
+      "path": ".run/glass-reorientation-v1-branches-inverted",
+      "parameters": {
+        "teacher_source": null,
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; additional placement branches exhausted.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 2.0469408926571786,
+          "max_lift_cm": 2.7550445931114664,
+          "both_fingers": true,
+          "finger_forces_n": [
+            13.862851026562925,
+            14.030098716786632
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 169.31158088435282,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 10.688419115645472,
+          "maximum_external_penetration_mm": 0.5253338703844067,
+          "other_object_max_displacement_mm": 0.00038386517978607264
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.665,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.965,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 11.265,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.565,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 16.365,
+            "message": "Placement pose/routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; additional placement branches exhausted."
+          }
+        ],
+        "frames": 3274,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 8.41509969998151
+      },
+      "files": {
+        "states.npz": "117fccbd319b263fd25c750c55b061e86b7b8e3ef034b332e71f4e8df198e116",
+        "result.json": "5b704753d37570a4090dfeeb1448ac3ada90d7cbd55ecbf546b55455ff288246",
+        "search.json": "158fbeb475fe5079773f010b612c67eaf91e92c07f9ab05c42310107788b15c0",
+        "placement-search.json": "6eca01191627a5b0f75b7abcf85c4250588b2e794aa002dbcad6eb0407f9d729",
+        "source-manifest.json": "2f8b4f316aa27d698fb9bf6375b9a2995ea6bc9d9a28066ecc7b80d3dfdd735a",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v2-close-buffer",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "target": [
+          0.2,
+          -0.1,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for glass; 3 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for glass; 3 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 0.2718155002221465
+      },
+      "files": {
+        "states.npz": "3dc078bc304f342e4beb7c70a938b512b38c8a0ee595adb2fd5286c91e8ac5ee",
+        "result.json": "a3596fc1666103e4f108f29d112860f656319972bddd3e05f3298b3d3ce911a1",
+        "search.json": "727081e4996ddc6b35db060b41df49a3837346f6adb24c7e9142ce7a086f50f9",
+        "placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "source-manifest.json": "2f8b4f316aa27d698fb9bf6375b9a2995ea6bc9d9a28066ecc7b80d3dfdd735a",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v3-forward-buffer",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "target": [
+          0.18,
+          0.12,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for glass; 3 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for glass; 3 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 0.3084625001065433
+      },
+      "files": {
+        "states.npz": "3dc078bc304f342e4beb7c70a938b512b38c8a0ee595adb2fd5286c91e8ac5ee",
+        "result.json": "49f5e4a54f7a6023f3e1f8f2dcee0f9a5e7f9a898a1c219d010d968dd4c3be57",
+        "search.json": "7de99e628c958f7a2652060eea619f1379f652792bca8133582a8363abfd7057",
+        "placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "source-manifest.json": "2f8b4f316aa27d698fb9bf6375b9a2995ea6bc9d9a28066ecc7b80d3dfdd735a",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v4-post-hold-sideways",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Post-hold sideways pose/path search exhausted; retained as unsolved.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 2.0469408926571786,
+          "max_lift_cm": 2.7550445931114664,
+          "both_fingers": true,
+          "finger_forces_n": [
+            13.862851026562925,
+            14.030098716786632
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 169.31158088435282,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 10.688419115645472,
+          "maximum_external_penetration_mm": 0.5253338703844067,
+          "other_object_max_displacement_mm": 0.00038386517978607264
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.665,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.965,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 11.265,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.565,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 16.365,
+            "message": "Post-hold sideways pose/path search exhausted; retained as unsolved."
+          }
+        ],
+        "frames": 3274,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 7.8983764997683465
+      },
+      "files": {
+        "states.npz": "117fccbd319b263fd25c750c55b061e86b7b8e3ef034b332e71f4e8df198e116",
+        "result.json": "4fa6ce6d8b9b36467d6f48dcb66a438e501b0f8d812b86d2820a4573fd078396",
+        "search.json": "158fbeb475fe5079773f010b612c67eaf91e92c07f9ab05c42310107788b15c0",
+        "placement-search.json": "3824451df21155d0bec17c5cb5b312875dbc1401c2df6d9c4839be00e8fdd408",
+        "source-manifest.json": "b9723d0a48b8629fa00c409e8661021f0ae3c1d3af56f45957e5260997efe324",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v5-horizontal-plane",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "The carried item contacted external support.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": -1.0592232215988817,
+          "max_lift_cm": 7.045154131977771,
+          "both_fingers": true,
+          "finger_forces_n": [
+            8.789175016137282,
+            12.028375718611333
+          ],
+          "external_contact_n": 9.722006444941877,
+          "tilt_deg": 127.19926643175091,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 37.199266431751084,
+          "maximum_external_penetration_mm": 0.6669627199293677,
+          "other_object_max_displacement_mm": 0.0004914459974858501,
+          "rrt_routes": 1,
+          "post_hold_sideways_target": [
+            0.1,
+            0.12,
+            0.784250000148168
+          ],
+          "post_hold_sideways_axis": [
+            -0.42864121087170615,
+            0.903474798952598,
+            0.0
+          ]
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.665,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.965,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 11.265,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.565,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 16.365,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "failed",
+            "at_s": 20.95,
+            "message": "The carried item contacted external support."
+          }
+        ],
+        "frames": 4191,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 8.99694970017299
+      },
+      "files": {
+        "states.npz": "31d0798a84444a40577b5fd90fc27971c404c0b114bc8fd54932cc763f2c6221",
+        "result.json": "8b2b4971ea5067785e1240c088eabb1d9f10a10c8caf5092e9df65876ce262c5",
+        "search.json": "158fbeb475fe5079773f010b612c67eaf91e92c07f9ab05c42310107788b15c0",
+        "placement-search.json": "aecb44be166d861a600a4625d1e936edf6da128ce9bb23627791cb6aeb2a98bb",
+        "source-manifest.json": "0f03005dc074b907d50934123eb89f2cea95b8c5c044ec354ba0caacbc8a237f",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v6-horizontal-flat-jaws",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.03,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "The carried item contacted external support.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": -1.1160862301007657,
+          "max_lift_cm": 7.292713408459717,
+          "both_fingers": true,
+          "finger_forces_n": [
+            10.408015342306044,
+            10.784561791429958
+          ],
+          "external_contact_n": 4.0012595928171795,
+          "tilt_deg": 126.0192899759891,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 36.01928997598892,
+          "maximum_external_penetration_mm": 0.5253338703844067,
+          "other_object_max_displacement_mm": 0.0004910940738797196,
+          "rrt_routes": 1,
+          "post_hold_sideways_target": [
+            0.1,
+            0.12,
+            0.784250000148168
+          ],
+          "post_hold_sideways_axis": [
+            -0.42864121087170615,
+            0.903474798952598,
+            0.0
+          ]
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.665,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.965,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 11.265,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.565,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 16.365,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "failed",
+            "at_s": 20.935,
+            "message": "The carried item contacted external support."
+          }
+        ],
+        "frames": 4188,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 8.843623900320381
+      },
+      "files": {
+        "states.npz": "82e3ecfa844fe22043ee7493d398e3a8971089bcbd44aeee89da66a3003817f1",
+        "result.json": "feb6687268f59fc22f0ed469f96d4104fdc99c7b5987af8c8ed0bef01beb1edc",
+        "search.json": "158fbeb475fe5079773f010b612c67eaf91e92c07f9ab05c42310107788b15c0",
+        "placement-search.json": "1295f8065fd253c6eaaffd18a80969364542720b9875d1d541cd1cd6ef6c4db5",
+        "source-manifest.json": "0f03005dc074b907d50934123eb89f2cea95b8c5c044ec354ba0caacbc8a237f",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v7-horizontal-t100",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": 1.0,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "align_duration": 6.0,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Lift did not obtain independent finger support.",
+        "metrics": {
+          "gripper_torque_limit_nm": 1.0,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 2.376653979166976,
+          "max_lift_cm": 2.569442630536811,
+          "both_fingers": true,
+          "finger_forces_n": [
+            19.798479974238198,
+            19.866636426025227
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 169.29234076592277,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 10.707659234075559,
+          "maximum_external_penetration_mm": 0.6152376787025873,
+          "other_object_max_displacement_mm": 0.0003416306235285692
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.665,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.965,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 11.265,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "failed",
+            "at_s": 14.565,
+            "message": "Lift did not obtain independent finger support."
+          }
+        ],
+        "frames": 2914,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 6.909760500304401
+      },
+      "files": {
+        "states.npz": "55dcc4d7eb3589543387f6417fcd9532f741b4f5ebe294a67413ed763fa08fc6",
+        "result.json": "56f645903a0bc11fa7f1aeb47bae9263231ccb2483d56d43a9416007c8d37d4a",
+        "search.json": "158fbeb475fe5079773f010b612c67eaf91e92c07f9ab05c42310107788b15c0",
+        "placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "source-manifest.json": "a48e1c23bad8464a5a4d2dc2a5600052e001e96c25a4baf1e6352f3b911228d0",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v8-horizontal-band030",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.03_-3.14159",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "align_duration": 4.0,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for glass; 3 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for glass; 3 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 0.3437410998158157
+      },
+      "files": {
+        "states.npz": "3dc078bc304f342e4beb7c70a938b512b38c8a0ee595adb2fd5286c91e8ac5ee",
+        "result.json": "5ac0d25fe247e6cf62c34028659aed1e8596fbf7bdaa348724ef3a8e1e52cc0d",
+        "search.json": "4614642a2855f817c362b4dc5342096b9c5dce34ac8b0855ba0e2009ebb27a63",
+        "placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "source-manifest.json": "a48e1c23bad8464a5a4d2dc2a5600052e001e96c25a4baf1e6352f3b911228d0",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v9-carry-t120",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "align_duration": 6.0,
+        "carry_torque": 1.2,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "The carried item contacted external support.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": -1.2808504474998372,
+          "max_lift_cm": 7.18974143310247,
+          "both_fingers": true,
+          "finger_forces_n": [
+            20.85620298909877,
+            20.67812145983045
+          ],
+          "external_contact_n": 2.1137404055682127,
+          "tilt_deg": 124.23585662148919,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 34.23585662148919,
+          "maximum_external_penetration_mm": 0.5267327323068687,
+          "other_object_max_displacement_mm": 0.0004900381825072554,
+          "carry_gripper_torque_limit_nm": 1.2,
+          "rrt_routes": 1,
+          "post_hold_sideways_target": [
+            0.1,
+            0.12,
+            0.784250000148168
+          ],
+          "post_hold_sideways_axis": [
+            -0.42864121087170615,
+            0.903474798952598,
+            0.0
+          ]
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.665,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 6.965,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 11.265,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 14.565,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 16.365,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "failed",
+            "at_s": 20.89,
+            "message": "The carried item contacted external support."
+          }
+        ],
+        "frames": 4179,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 9.261129400227219
+      },
+      "files": {
+        "states.npz": "a1da9cf9541935eff7cdd66e11ea57c3c377dd293f305c11fd7c5302a9a1ba75",
+        "result.json": "b0afce38f67028f875eb7cb15cb54fe61f32e547704fec4c16ad674ccea9f689",
+        "search.json": "158fbeb475fe5079773f010b612c67eaf91e92c07f9ab05c42310107788b15c0",
+        "placement-search.json": "c929c0a07e394ed7d07b61c214e3cee673c981e3c3f2544c4881777a1adc6b3d",
+        "source-manifest.json": "027ae061dec10cf4f786540140b08d673a0cd8c3938ca2a3ef36b85ef53714c0",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v10-side-grasp",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_1.57080",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "align_duration": 4.0,
+        "carry_torque": null,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "The planned path has insufficient clearance: table / right_lower_arm",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "rrt_routes": 1,
+          "lift_cm": 1.633524492968963,
+          "max_lift_cm": 5.0677457735815885,
+          "both_fingers": true,
+          "finger_forces_n": [
+            9.569988769374376,
+            9.766752950485811
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 118.35098382692254,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 28.350983826922587,
+          "maximum_external_penetration_mm": 0.5223454851706258,
+          "other_object_max_displacement_mm": 0.0006429037206611284,
+          "post_hold_sideways_target": [
+            0.1,
+            0.12,
+            0.784250000148168
+          ],
+          "post_hold_sideways_axis": [
+            -0.42864121087170615,
+            0.903474798952598,
+            0.0
+          ]
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 8.31,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 11.61,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 15.91,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 19.21,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 21.01,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "failed",
+            "at_s": 27.405,
+            "message": "The planned path has insufficient clearance: table / right_lower_arm"
+          }
+        ],
+        "frames": 5482,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 12.35036369971931
+      },
+      "files": {
+        "states.npz": "116978a80d0dbf97c91e1d46c54f2078f2d61aaf51252b10db641fcd6e6c3371",
+        "result.json": "60924678ffbb1007c38e0c56ad1eb5fe2e7f056141f99295d034d942200e0c32",
+        "search.json": "d6e5811c26d37f0ae0934c7fe3e24fd22c690bda62e8918d3b8b66378f57d5d7",
+        "placement-search.json": "108bb210435773a428cecd352a1662e6a58a80ba527a40f314d76b5c922e48c5",
+        "source-manifest.json": "027ae061dec10cf4f786540140b08d673a0cd8c3938ca2a3ef36b85ef53714c0",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v11-measured-corrections",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_1.57080",
+        "torque": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "align_duration": 4.0,
+        "carry_torque": null,
+        "carry_clearance": 0.012,
+        "reorient_corrections": 3,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Post-hold sideways pose/path search exhausted; retained as unsolved.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "rrt_routes": 2,
+          "lift_cm": 1.6594500344773389,
+          "max_lift_cm": 5.0677457735815885,
+          "both_fingers": true,
+          "finger_forces_n": [
+            11.02618825726498,
+            10.889643296380076
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 139.32345329060152,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 49.323453290601556,
+          "maximum_external_penetration_mm": 0.5223454851706258,
+          "other_object_max_displacement_mm": 0.0006768086704203932,
+          "post_hold_sideways_target": [
+            0.1,
+            0.12,
+            0.784250000148168
+          ],
+          "post_hold_sideways_axis": [
+            -0.42864121087170615,
+            0.903474798952598,
+            0.0
+          ],
+          "measured_reorientation_corrections": 1
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 8.31,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 11.61,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 15.91,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 19.21,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "align",
+            "at_s": 21.01,
+            "message": "Move over the placement guide"
+          },
+          {
+            "stage": "failed",
+            "at_s": 28.85,
+            "message": "Post-hold sideways pose/path search exhausted; retained as unsolved."
+          }
+        ],
+        "frames": 5771,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 13.192981200292706
+      },
+      "files": {
+        "states.npz": "318c683df2cd5462992036fec33f79b0e72fb11bf63750fca235682d18b5a288",
+        "result.json": "80b32ed8ff0aaf874c70b090ae4331c9e37ecf60f187f668d6dbdda731afe98e",
+        "search.json": "d6e5811c26d37f0ae0934c7fe3e24fd22c690bda62e8918d3b8b66378f57d5d7",
+        "placement-search.json": "cab6c6d49c53870bd800e805b8d464185dc6b730642c4c67ef26b172539a9b57",
+        "source-manifest.json": "0c5e9a43dc6f37b5902f9dc13a71b66cec30284c08e231f537cb126a7f1abd66",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v12-deep-wrap",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": null,
+        "tool_z": -0.09,
+        "tool_x": 0.014,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "align_duration": 4.0,
+        "carry_torque": null,
+        "carry_clearance": 0.012,
+        "reorient_corrections": 3,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for glass; 3 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for glass; 3 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 1.7567408001050353
+      },
+      "files": {
+        "states.npz": "3dc078bc304f342e4beb7c70a938b512b38c8a0ee595adb2fd5286c91e8ac5ee",
+        "result.json": "e07bf66e667a5f384293e0e19a9360b529438af90ed10d66221e1d2e986cc40a",
+        "search.json": "c9b841113bafcf9f29420cad1d3bdd25fff0e6c617dcf8fe699679a34f2b35ac",
+        "placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "source-manifest.json": "4b9aa066863b950355e3298573a97dcc68e48e63b8e2f9e591f9a40136ee8716",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v13-deep-wrap-side",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_1.57080",
+        "torque": null,
+        "tool_z": -0.09,
+        "tool_x": 0.014,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "align_duration": 4.0,
+        "carry_torque": null,
+        "carry_clearance": 0.012,
+        "reorient_corrections": 3,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for glass; 3 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for glass; 3 attempts retained."
+          }
+        ],
+        "frames": 1,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 2.2919703000225127
+      },
+      "files": {
+        "states.npz": "3dc078bc304f342e4beb7c70a938b512b38c8a0ee595adb2fd5286c91e8ac5ee",
+        "result.json": "2b48dbec1aedacf1c2a186bc278ced22431e682b7ddedf1fe5c29d131f423fb1",
+        "search.json": "650802bfee09aeedc3cf16e96a3ce7a3949f0d52edf1c299d39186177c9cc397",
+        "placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "source-manifest.json": "4b9aa066863b950355e3298573a97dcc68e48e63b8e2f9e591f9a40136ee8716",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v14-deep-clear-wrap",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_-3.14159",
+        "torque": null,
+        "tool_z": -0.09,
+        "tool_x": 0.02,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "align_duration": 4.0,
+        "carry_torque": null,
+        "carry_clearance": 0.012,
+        "reorient_corrections": 3,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Primitive timed out at descend",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "lift_cm": 0.017482437943716622,
+          "max_lift_cm": 0.04175458037951607,
+          "both_fingers": true,
+          "finger_forces_n": [
+            14.011889834886402,
+            21.991867389779706
+          ],
+          "external_contact_n": 16.864461409298446,
+          "tilt_deg": 178.83403812359003,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 1.1659618764081014,
+          "maximum_external_penetration_mm": 0.37940100448387154,
+          "other_object_max_displacement_mm": 0.0002922395895026907
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 3.465,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "failed",
+            "at_s": 12.465,
+            "message": "Primitive timed out at descend"
+          }
+        ],
+        "frames": 2494,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 6.1025898000225425
+      },
+      "files": {
+        "states.npz": "ac7069ef6cbfada0d41b0fe2d264cc2f1186e4e51d4cc942f65305a3bc914896",
+        "result.json": "b64af6e4c4c5da40720760f0602bbd03239bebbff8961ad6d5325556bf94a512",
+        "search.json": "158fbeb475fe5079773f010b612c67eaf91e92c07f9ab05c42310107788b15c0",
+        "placement-search.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "source-manifest.json": "4b9aa066863b950355e3298573a97dcc68e48e63b8e2f9e591f9a40136ee8716",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    },
+    {
+      "path": ".run/glass-reorientation-v15-diagonal-grasp",
+      "parameters": {
+        "teacher_source": ".run/glass-reorientation-v1-branches-inverted/source/simulation_lab/table_teacher.py",
+        "initial_from": ".run/whole-table-development-v16-seed4002/lookahead-01-024-00-glass",
+        "grasp": "top_wrap_0.045_2.35619",
+        "torque": null,
+        "tool_z": null,
+        "tool_x": null,
+        "mode": "inverted",
+        "side_axis": false,
+        "bearing": 0.0,
+        "post_hold_sideways": true,
+        "horizontal_plane": true,
+        "roll_bias": 0.0,
+        "align_duration": 4.0,
+        "carry_torque": 0.8,
+        "carry_clearance": 0.008,
+        "reorient_corrections": 3,
+        "target": [
+          0.07928541907265485,
+          -0.020714581012188205,
+          0.834
+        ],
+        "branches": 24,
+        "arm": "right"
+      },
+      "result": {
+        "status": "failed",
+        "message": "Post-hold sideways pose/path search exhausted; retained as unsolved.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.038819268443080306,
+          "hold_verified_s": 1.8000000000009209,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher",
+          "rrt_routes": 1,
+          "lift_cm": 4.437186898177192,
+          "max_lift_cm": 5.195966314910305,
+          "both_fingers": true,
+          "finger_forces_n": [
+            15.143331695474096,
+            15.049385377030708
+          ],
+          "external_contact_n": 0.0,
+          "tilt_deg": 169.01050156894865,
+          "peak_tilt_deg": 179.9999979086902,
+          "destination_normal_error_deg": 10.989498431049249,
+          "maximum_external_penetration_mm": 0.5181164513843326,
+          "other_object_max_displacement_mm": 0.00043372560457327516,
+          "carry_gripper_torque_limit_nm": 0.8
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "approach",
+            "at_s": 0.0,
+            "message": "Approach the object"
+          },
+          {
+            "stage": "descend",
+            "at_s": 5.79,
+            "message": "Align the fingers"
+          },
+          {
+            "stage": "close",
+            "at_s": 9.09,
+            "message": "Grasp and check both fingers"
+          },
+          {
+            "stage": "lift",
+            "at_s": 13.39,
+            "message": "Lift the object"
+          },
+          {
+            "stage": "hold",
+            "at_s": 16.69,
+            "message": "Verify an unsupported hold"
+          },
+          {
+            "stage": "failed",
+            "at_s": 18.49,
+            "message": "Post-hold sideways pose/path search exhausted; retained as unsolved."
+          }
+        ],
+        "frames": 3699,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 9.0942616998218
+      },
+      "files": {
+        "states.npz": "48ece942e844aeae397debfcf94bd6966c7ce29622b865a40fb03998ba063f3a",
+        "result.json": "4d223964c62d3799a30fc82d712e01e23bf49ba515fb169a379e0e8fc2f2485c",
+        "search.json": "42bbe44470ae8a02a778d3bbd6c583d74cade1988d2d53f68ff48765c49277a9",
+        "placement-search.json": "c72bccd7ecc8683d41b6b500a72e7af5f868691a503fe62ad01566c4b3108f45",
+        "source-manifest.json": "4b9aa066863b950355e3298573a97dcc68e48e63b8e2f9e591f9a40136ee8716",
+        "reset-provenance.json": "d153e67afa57cf7bac5c456aa8a784b42e3b65083baa3fe45da4f8aefd391a90"
+      }
+    }
+  ]
+}

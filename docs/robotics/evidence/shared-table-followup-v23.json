@@ -1,0 +1,3859 @@
+{
+  "schema": "talos_shared_table_followup_v1",
+  "meaning": "Completed exposed development; single-item and repeated-scene diagnostics are not full-table coverage.",
+  "runs": [
+    {
+      "run": "whole-table-development-v23-bottle4001",
+      "seed": 2026114001,
+      "scope": "Exposed development of a shared exact-state physical teacher; not learned evaluation.",
+      "coverage_evaluation": false,
+      "only_item_diagnostic": "bottle",
+      "whole_table_complete": false,
+      "remaining": [
+        "plate",
+        "side_plate",
+        "mug",
+        "glass",
+        "bottle",
+        "fork",
+        "spoon"
+      ],
+      "stop_reason": "No current candidate action solved; remaining items are unsolved, not classified impossible.",
+      "valid_initial_geometry": true,
+      "physical_attempts": 60,
+      "physical_frames": 188059,
+      "observations": 170,
+      "passing_primitives": 0,
+      "planning_failures": 3,
+      "all_motor_replays_exact": true,
+      "accepted_actions": [],
+      "physical_outcomes": [
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-001-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-001-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-001-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-001-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-002-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-002-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-002-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-002-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-003-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-003-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-003-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-003-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-004-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-004-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-004-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-004-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 90.03745136970007,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-005-00-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 90.03745136969184,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-005-01-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.5285073636156253e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 2.175073556342677,
+            "max_lift_cm": 2.175073556342677,
+            "both_fingers": false,
+            "finger_forces_n": [
+              10.320463245024447,
+              0.0
+            ],
+            "external_contact_n": 11.025708639203613,
+            "tilt_deg": 104.71134936204459,
+            "peak_tilt_deg": 104.71134936204459,
+            "destination_normal_error_deg": 104.71134936204459,
+            "maximum_external_penetration_mm": 0.6479452079778741,
+            "other_object_max_displacement_mm": 0.00010628515017392675
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.87,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 12.87,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2575,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-005-02-bottle",
+          "candidate": "inclined_bottle_band_0.128_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.5285073636156253e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 2.175073556342688,
+            "max_lift_cm": 2.175073556342688,
+            "both_fingers": false,
+            "finger_forces_n": [
+              10.320463245024255,
+              0.0
+            ],
+            "external_contact_n": 11.025708639203174,
+            "tilt_deg": 104.71134936204464,
+            "peak_tilt_deg": 104.71134936204464,
+            "destination_normal_error_deg": 104.71134936204464,
+            "maximum_external_penetration_mm": 0.6479452079778576,
+            "other_object_max_displacement_mm": 0.00010628515017392675
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.87,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 12.87,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2575,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-005-03-bottle",
+          "candidate": "inclined_bottle_band_0.128_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-006-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-006-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-006-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-006-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-007-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-007-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-007-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-007-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 90.03745136970007,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-008-00-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 90.03745136969184,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-008-01-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.5285073636156253e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 2.175073556342677,
+            "max_lift_cm": 2.175073556342677,
+            "both_fingers": false,
+            "finger_forces_n": [
+              10.320463245024447,
+              0.0
+            ],
+            "external_contact_n": 11.025708639203613,
+            "tilt_deg": 104.71134936204459,
+            "peak_tilt_deg": 104.71134936204459,
+            "destination_normal_error_deg": 104.71134936204459,
+            "maximum_external_penetration_mm": 0.6479452079778741,
+            "other_object_max_displacement_mm": 0.00010628515017392675
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.87,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 12.87,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2575,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-008-02-bottle",
+          "candidate": "inclined_bottle_band_0.128_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.5285073636156253e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 2.175073556342688,
+            "max_lift_cm": 2.175073556342688,
+            "both_fingers": false,
+            "finger_forces_n": [
+              10.320463245024255,
+              0.0
+            ],
+            "external_contact_n": 11.025708639203174,
+            "tilt_deg": 104.71134936204464,
+            "peak_tilt_deg": 104.71134936204464,
+            "destination_normal_error_deg": 104.71134936204464,
+            "maximum_external_penetration_mm": 0.6479452079778576,
+            "other_object_max_displacement_mm": 0.00010628515017392675
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.87,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 12.87,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2575,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-008-03-bottle",
+          "candidate": "inclined_bottle_band_0.128_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-009-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-009-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-009-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-009-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-010-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-010-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-010-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-010-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.021912909057708596,
+            "max_lift_cm": 1.2545520178264269e-12,
+            "both_fingers": false,
+            "finger_forces_n": [
+              11.15283484183038,
+              0.0
+            ],
+            "external_contact_n": 10.963428941348855,
+            "tilt_deg": 90.11067096788231,
+            "peak_tilt_deg": 90.1132321707683,
+            "destination_normal_error_deg": 0.1106709678834692,
+            "maximum_external_penetration_mm": 0.5896470192526951,
+            "other_object_max_displacement_mm": 0.0002103937139518912
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.415,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 13.415,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2684,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-011-00-bottle",
+          "candidate": "inclined_bottle_band_0.07_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.021912909057708596,
+            "max_lift_cm": 1.2545520178264269e-12,
+            "both_fingers": false,
+            "finger_forces_n": [
+              11.152834841830071,
+              0.0
+            ],
+            "external_contact_n": 10.963428941348617,
+            "tilt_deg": 90.11067096788231,
+            "peak_tilt_deg": 90.11323217076828,
+            "destination_normal_error_deg": 0.1106709678834692,
+            "maximum_external_penetration_mm": 0.5896470192527266,
+            "other_object_max_displacement_mm": 0.0002103937139518912
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.415,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 13.415,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2684,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-011-01-bottle",
+          "candidate": "inclined_bottle_band_0.07_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-012-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-012-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-012-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-012-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-013-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-013-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-013-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-013-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006758157930386588,
+            "max_lift_cm": 0.024622681901476096,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.087041788222316,
+              4.755077608287657
+            ],
+            "external_contact_n": 3.3950408023943845,
+            "tilt_deg": 90.03792744732179,
+            "peak_tilt_deg": 90.14717444158241,
+            "destination_normal_error_deg": 0.03792744731843266,
+            "maximum_external_penetration_mm": 0.5970029757059055,
+            "other_object_max_displacement_mm": 0.00010683418595873931
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 5.745,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 12.8,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 17.105,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3422,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-014-00-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "left",
+          "status": "failed",
+          "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.543137915150358e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": -0.006565034595040764,
+            "max_lift_cm": 0.02489165812643579,
+            "both_fingers": true,
+            "finger_forces_n": [
+              4.115892852517093,
+              4.764968129338594
+            ],
+            "external_contact_n": 3.409952273595915,
+            "tilt_deg": 90.04159250988796,
+            "peak_tilt_deg": 90.15151741105662,
+            "destination_normal_error_deg": 0.04159250988513796,
+            "maximum_external_penetration_mm": 0.5942472484345716,
+            "other_object_max_displacement_mm": 4.415525947362755e-05
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 4.675,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.785,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 16.09,
+              "message": "Lift routes unsolved: Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits.; Gripper position/orientation tolerances not solved within joint limits."
+            }
+          ],
+          "frames": 3219,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-014-01-bottle",
+          "candidate": "inclined_bottle_band_0.04_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 0.03745136970090008,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-014-02-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 0.0374513696911684,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-014-03-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4971357487070236e-10,
+            "max_lift_cm": 2.156397945978228,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221372678,
+            "tilt_deg": 90.03745136970007,
+            "peak_tilt_deg": 104.53829772187542,
+            "destination_normal_error_deg": 90.03745136970007,
+            "maximum_external_penetration_mm": 0.8669921159318134,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-015-00-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Candidate did not establish two-finger contact.",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 4.198332179531842e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 1.4831469385967466e-10,
+            "max_lift_cm": 2.1563979459782057,
+            "both_fingers": false,
+            "finger_forces_n": [
+              0.0,
+              0.0
+            ],
+            "external_contact_n": 0.7650700221370283,
+            "tilt_deg": 90.03745136969184,
+            "peak_tilt_deg": 104.53829772187528,
+            "destination_normal_error_deg": 90.03745136969184,
+            "maximum_external_penetration_mm": 0.8669921159318656,
+            "other_object_max_displacement_mm": 0.00016718218756660581
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.93,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "close",
+              "at_s": 11.59,
+              "message": "Grasp and check both fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 15.895,
+              "message": "Candidate did not establish two-finger contact."
+            }
+          ],
+          "frames": 3180,
+          "observations": 3,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-015-01-bottle",
+          "candidate": "inclined_bottle_band_0.116_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.5285073636156253e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 2.175073556342677,
+            "max_lift_cm": 2.175073556342677,
+            "both_fingers": false,
+            "finger_forces_n": [
+              10.320463245024447,
+              0.0
+            ],
+            "external_contact_n": 11.025708639203613,
+            "tilt_deg": 104.71134936204459,
+            "peak_tilt_deg": 104.71134936204459,
+            "destination_normal_error_deg": 104.71134936204459,
+            "maximum_external_penetration_mm": 0.6479452079778741,
+            "other_object_max_displacement_mm": 0.00010628515017392675
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.87,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 12.87,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2575,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-015-02-bottle",
+          "candidate": "inclined_bottle_band_0.128_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.5285073636156253e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 2.175073556342688,
+            "max_lift_cm": 2.175073556342688,
+            "both_fingers": false,
+            "finger_forces_n": [
+              10.320463245024255,
+              0.0
+            ],
+            "external_contact_n": 11.025708639203174,
+            "tilt_deg": 104.71134936204464,
+            "peak_tilt_deg": 104.71134936204464,
+            "destination_normal_error_deg": 104.71134936204464,
+            "maximum_external_penetration_mm": 0.6479452079778576,
+            "other_object_max_displacement_mm": 0.00010628515017392675
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.87,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 12.87,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2575,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-015-03-bottle",
+          "candidate": "inclined_bottle_band_0.128_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.5285073636156253e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 2.175073556342677,
+            "max_lift_cm": 2.175073556342677,
+            "both_fingers": false,
+            "finger_forces_n": [
+              10.320463245024447,
+              0.0
+            ],
+            "external_contact_n": 11.025708639203613,
+            "tilt_deg": 104.71134936204459,
+            "peak_tilt_deg": 104.71134936204459,
+            "destination_normal_error_deg": 104.71134936204459,
+            "maximum_external_penetration_mm": 0.6479452079778741,
+            "other_object_max_displacement_mm": 0.00010628515017392675
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.87,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 12.87,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2575,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-016-00-bottle",
+          "candidate": "inclined_bottle_band_0.128_1.04720",
+          "initial_wrist_roll": -2.4,
+          "action_index": 0
+        },
+        {
+          "item": "bottle",
+          "arm": "right",
+          "status": "failed",
+          "message": "Primitive timed out at descend",
+          "metrics": {
+            "gripper_torque_limit_nm": 0.4,
+            "other_arm_max_motion_deg": 3.5285073636156253e-11,
+            "hold_verified_s": 0.0,
+            "unexpected_collisions": 0,
+            "controller": "shared_exact_state_physical_teacher",
+            "lift_cm": 2.175073556342688,
+            "max_lift_cm": 2.175073556342688,
+            "both_fingers": false,
+            "finger_forces_n": [
+              10.320463245024255,
+              0.0
+            ],
+            "external_contact_n": 11.025708639203174,
+            "tilt_deg": 104.71134936204464,
+            "peak_tilt_deg": 104.71134936204464,
+            "destination_normal_error_deg": 104.71134936204464,
+            "maximum_external_penetration_mm": 0.6479452079778576,
+            "other_object_max_displacement_mm": 0.00010628515017392675
+          },
+          "history": [
+            {
+              "stage": "planning",
+              "at_s": 0.0,
+              "message": "Check reach and clearance"
+            },
+            {
+              "stage": "approach",
+              "at_s": 0.0,
+              "message": "Approach the object"
+            },
+            {
+              "stage": "descend",
+              "at_s": 3.87,
+              "message": "Align the fingers"
+            },
+            {
+              "stage": "failed",
+              "at_s": 12.87,
+              "message": "Primitive timed out at descend"
+            }
+          ],
+          "frames": 2575,
+          "observations": 2,
+          "replay_exact": true,
+          "replay_max_state_error": 0.0,
+          "demonstration_eligible": false,
+          "role": "relay_or_clearance",
+          "path": "lookahead-00-016-01-bottle",
+          "candidate": "inclined_bottle_band_0.128_1.04720",
+          "initial_wrist_roll": 0.0,
+          "action_index": 0
+        }
+      ],
+      "planning_outcomes": [
+        {
+          "action_index": 0,
+          "attempt_index": 0,
+          "grasp_attempt": 0,
+          "item": "bottle",
+          "role": "final_setting",
+          "target_quaternion": null,
+          "message": "No candidate grasp/approach solved for bottle; 240 attempts retained."
+        },
+        {
+          "action_index": 0,
+          "attempt_index": 11,
+          "grasp_attempt": 2,
+          "item": "bottle",
+          "role": "relay_or_clearance",
+          "target_quaternion": [
+            0.5000000000000001,
+            0.5000000000000001,
+            -0.5000000000000001,
+            0.5000000000000001
+          ],
+          "message": "No candidate grasp/approach solved for bottle; 240 attempts retained."
+        },
+        {
+          "action_index": 0,
+          "attempt_index": 16,
+          "grasp_attempt": 2,
+          "item": "bottle",
+          "role": "relay_or_clearance",
+          "target_quaternion": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "message": "No candidate grasp/approach solved for bottle; 240 attempts retained."
+        }
+      ],
+      "final_task_checks": {
+        "plate": {
+          "passed": false,
+          "xy_error_mm": 242.59460022766604,
+          "yaw_error_rad": 0.0
+        },
+        "side_plate": {
+          "passed": false,
+          "xy_error_mm": 260.7405801437029,
+          "yaw_error_rad": 0.0
+        },
+        "mug": {
+          "passed": false,
+          "xy_error_mm": 158.0079418374215,
+          "yaw_error_rad": 0.0
+        },
+        "glass": {
+          "passed": false,
+          "xy_error_mm": 295.73625753943924,
+          "yaw_error_rad": 0.0
+        },
+        "bottle": {
+          "passed": false,
+          "xy_error_mm": 289.6686671990898,
+          "yaw_error_rad": 0.0
+        },
+        "fork": {
+          "passed": false,
+          "xy_error_mm": 375.4319458021795,
+          "yaw_error_rad": 1.4552020595801016
+        },
+        "spoon": {
+          "passed": false,
+          "xy_error_mm": 618.4386461134719,
+          "yaw_error_rad": 0.5444379916524271
+        }
+      },
+      "report_sha256": "235698acce6e8cbbb855909dd48c5abd3f391b0aed473dd055e64c2d82f36cec",
+      "reset_recipe_sha256": "5ef7c953fe6a41b2f5994bd44fa9ea9bda90665390165b6a11d6becfb611c0f6",
+      "source_sha256": {
+        "scripts/develop_whole_table.py": "6110fead49a90ed7d7b0891c61cd24ccc393c7a80efdba067c1730f51213d596",
+        "simulation_lab/autonomy.py": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+        "simulation_lab/dinner_autonomy.py": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+        "simulation_lab/glass_grasp_candidates.py": "c91103d53f515b3beac83e6b3fcb329b5b73d23ba97b0757dcb4d53772c9dd34",
+        "simulation_lab/random_dinner.py": "30bb153bb28e23f1e5b4fbf94a8f8c0a5a76d72921141e2604d07941204ba698",
+        "simulation_lab/side_plate_grasp_candidates.py": "7f6af355a40e76ab84261636fde273c006e6baf45943d91a6767f765f979043e",
+        "simulation_lab/table_observation.py": "456b9896641fa12bc4b90ac625ffadb1fd0f14a48776fc95f7d5baef7de651c5",
+        "simulation_lab/table_teacher.py": "d9be80ac3644d5ab0130bc4857c247ceef6de5d02669f7e61903304aedc3236f"
+      },
+      "raw_preservation": "Original arrays, every search, cameras and sources remain in the local run folder."
+    }
+  ],
+  "run_count": 1,
+  "physical_attempts": 60,
+  "physical_frames": 188059,
+  "passing_primitives": 0,
+  "accepted_actions": 0,
+  "complete_tables": 0
+}

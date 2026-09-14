@@ -1,0 +1,2800 @@
+{
+  "scope": "Read-only reset-only geometry at the unchanged upright glass task destination[.075,.10,.76]. No geometry/material/motor changes and no mj_step in geometry search or verification. Not physical placement success.",
+  "preflight": {
+    "free_bytes": 537728421888,
+    "estimated_additional_bytes": 1048576,
+    "reserve_bytes": 10737418240
+  },
+  "fixed_target_admits_checked_contact": true,
+  "optimizer_trials": 576,
+  "accepted_solutions": 8,
+  "accepted_solutions_note": "Near-duplicate solutions from different optimizer starts; not8independent scene cases.",
+  "coupled_variables": "Five arm joints, gripper angle, continuous contact height[.018,.072] and continuous bearing[-pi,pi]; both arms, two real pad regions, diameter/rim families and both contact directions. Free wrist yaw, followed by exact collision-enabled jaw-to-glass signed-distance refinement.",
+  "refinement_correction": "V2 included visual-only moving-jaw geometry in signed-distance search and found no accepted contact. V3 applies actual collision-bitmask filtering. All earlier outcomes remain preserved.",
+  "key_findings": [
+    "Right-arm upper-wall/lip diameter contacts exist at the fixed target. Both collision-enabled finger groups touch glass; no unexpected robot/table/other-object collision under existing0.8mmguard; essentially zero jaw penetration.",
+    "Proof001 has worldtoolY nearlyup, approximatelyglass localheight.072 and toolpoint[.0168,0,-.098]. It opens collision-free and admits checked20/40mm departures but not the existing buffer in tested IK branch.",
+    "Proof004 is more route-useful: tool closingX horizontal, toolZ pitched30degrees toward shoulder. It admits exact rigid-grasp buffercontact and buffer-above endpoints, a direct checked goal-to-buffer-above path, and20mm goal departure. Direct low path intersects spoon_handle, so a raised route is needed.",
+    "WorldYup high-horizontal candidates on actualbuffer (.072height/Up and.067height/Down) still fail planning; the exact local-axis contact geometry in proof004 is the next executable hypothesis. Their successful-buffer motor prefixes replay exactly and no new contact action executes."
+  ],
+  "recommended_proof": "proof-004.json",
+  "recommended_joint_values": [
+    -0.5831324119185568,
+    1.223608770581092,
+    -1.686,
+    1.5076873184263728,
+    -1.5414970484274768,
+    0.44823670385696085
+  ],
+  "recommended_local_tool_point_at_height072": [
+    0.01684405,
+    -0.00092781,
+    -0.09932048
+  ],
+  "recommended_object_up_axis_local": [
+    -0.00972141,
+    0.50155161,
+    0.86507311
+  ],
+  "limitations": [
+    "Kinematic/contact existence does not establish force closure, unsupported hold, source reach, physical transfer/release, or universal feasibility.",
+    "Proof004 is close to an elbow joint boundary and20mm goaldeparture was checked;40mm departure did not solve from the tested initial branch.",
+    "No target was moved to a different task location; placing the glass at its requested target was an explicit geometric reset only."
+  ],
+  "archives": [
+    {
+      "path": ".run/glass-goal-geometry-v1",
+      "attempts": 192,
+      "checked_goal_contacts": 0,
+      "report_sha256": "6ceb50883748314f50e777bcf74b900c63781c90e11461215575cbf568685a26"
+    },
+    {
+      "path": ".run/glass-goal-geometry-v2",
+      "attempts": 192,
+      "checked_goal_contacts": 0,
+      "report_sha256": "9033516d0e38b316999daddf0779f43d91d303a0b61ffcc9bfee99a0b8dc4487"
+    },
+    {
+      "path": ".run/glass-goal-geometry-v3",
+      "attempts": 192,
+      "checked_goal_contacts": 8,
+      "report_sha256": "1e9cd7f44c687e89ab40c292b842aa74bb55fb7495e0d12585d6e4445d8836c5"
+    },
+    {
+      "path": ".run/glass-goal-geometry-verification-v1",
+      "attempts": null,
+      "checked_goal_contacts": null,
+      "report_sha256": "73e25100021f523ce8a47323f5e8a9c25d6637744600918b7154dbfddfcac7ff"
+    }
+  ],
+  "proofs": [
+    {
+      "path": ".run/glass-goal-geometry-v3/proof-001.json",
+      "sha256": "ce5dd511dc19e41b1f1726f9cdba212491318e46f7d88a0483e926eba006d3bd",
+      "state_sha256": "f2e878439a59f44064fd387ea95265e0d5f0bbc36e6d4d9cbc45c96ace000697",
+      "proof": {
+        "side": "right",
+        "pad": "tip",
+        "family": "diameter",
+        "closing_sign": 1,
+        "trial": 0,
+        "contact_height": 0.072,
+        "bearing": -2.569197027254771,
+        "q": [
+          -0.582962300596602,
+          0.7746348416776359,
+          0.4121413408605148,
+          -1.1842593254103422,
+          -1.522738067233441,
+          0.4549682271919221
+        ],
+        "contact_error_mm": 0.00020117002603807426,
+        "refined_q": [
+          -0.582962300596602,
+          0.7746348416776359,
+          0.4121413408605148,
+          -1.1842593254103422,
+          -1.522738067233441,
+          0.4549682271919221
+        ],
+        "exact_refined_gaps_mm": [
+          -5.009498656389014e-06,
+          -6.248264226254384e-06
+        ],
+        "collision": null,
+        "jaw_penetration_mm": 6.248264228906291e-06,
+        "other_penetration_mm": 0.0,
+        "jaw_gaps_mm": {
+          "fixed": -5.009498656389014e-06,
+          "moving": -6.248264228906291e-06
+        },
+        "contacts": [
+          {
+            "other": "right_fixed_jaw_sph_tip1",
+            "distance_mm": -5.009498656389014e-06,
+            "position": [
+              0.05322776138947859,
+              0.08921062836526153,
+              0.8319369320731262
+            ]
+          },
+          {
+            "other": "right_moving_jaw_box2",
+            "distance_mm": -6.248264228906291e-06,
+            "position": [
+              0.09753385254659609,
+              0.10947021647995701,
+              0.831000000001471
+            ]
+          }
+        ],
+        "checked_goal_contact": true,
+        "gripper_position": [
+          0.11494067980996217,
+          0.008976537631942269,
+          0.8321861022230544
+        ],
+        "gripper_rotation": [
+          [
+            0.834836270243389,
+            -0.000866880581616325,
+            0.5504976388724694
+          ],
+          [
+            0.5504979708686156,
+            0.002443159865165169,
+            -0.8348329264226522
+          ],
+          [
+            -0.0006212532843516971,
+            0.9999966397383193,
+            0.0025168544706080306
+          ]
+        ],
+        "object_origin_in_gripper": [
+          0.01680914902460795,
+          -0.07192885098907144,
+          -0.09815831530628913
+        ],
+        "object_rotation_in_gripper": [
+          [
+            0.834836270243389,
+            0.5504979708686156,
+            -0.0006212532843516971
+          ],
+          [
+            -0.000866880581616325,
+            0.002443159865165169,
+            0.9999966397383193
+          ],
+          [
+            0.5504976388724694,
+            -0.8348329264226522,
+            0.0025168544706080306
+          ]
+        ],
+        "fixed_contact_world": [
+          0.05420312151073857,
+          0.08655314723969779,
+          0.8319439171403156
+        ],
+        "moving_contact_world": [
+          0.09702243217434697,
+          0.11343986594623674,
+          0.8319653478892112
+        ]
+      },
+      "independent_checks": {
+        "proof": "proof-001.json",
+        "proof_sha256": "ce5dd511dc19e41b1f1726f9cdba212491318e46f7d88a0483e926eba006d3bd",
+        "opening": [
+          {
+            "grip": 0.4549682271919221,
+            "collision": null,
+            "jaw_penetration_mm": 6.248264228906291e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.4714278843922587,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.48788754159259523,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5043471987929318,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5208068559932684,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.537266513193605,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5537261703939416,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5701858275942782,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5866454847946148,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6031051419949514,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.619564799195288,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6360244563956244,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.652484113595961,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6689437707962976,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6854034279966342,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7018630851969708,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7183227423973073,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7347823995976439,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7512420567979805,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7677017139983171,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7841613711986537,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8006210283989903,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8170806855993269,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8335403427996635,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.85,
+            "collision": null,
+            "jaw_penetration_mm": 5.009498656389014e-06,
+            "passed": true
+          }
+        ],
+        "paths": [
+          {
+            "label": "lift20",
+            "target": [
+              0.075,
+              0.1,
+              0.78
+            ],
+            "endpoint": true,
+            "q": [
+              -0.582962300596602,
+              0.6184249948516367,
+              0.479801482504067,
+              -1.0957096202278953,
+              -1.522738067233441
+            ],
+            "direct_path": true,
+            "samples": 6
+          },
+          {
+            "label": "lift40",
+            "target": [
+              0.075,
+              0.1,
+              0.8
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5829623005966019,
+              0.4690861260838096,
+              0.5220095174861995,
+              -0.9885787864422003,
+              -1.522738067233441
+            ],
+            "direct_path": true,
+            "samples": 10
+          },
+          {
+            "label": "buffer_above",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.8
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "label": "buffer_contact",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.76
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "opening_clear": true
+      }
+    },
+    {
+      "path": ".run/glass-goal-geometry-v3/proof-002.json",
+      "sha256": "12e801eb034cf79ba97e55c871cf989ae220fa43446a4f82f22511be5a764475",
+      "state_sha256": "5636b024df5f379900b63c96617ba6beb9410edfe5e9a5d8afbcde8a5292a3f7",
+      "proof": {
+        "side": "right",
+        "pad": "tip",
+        "family": "diameter",
+        "closing_sign": 1,
+        "trial": 1,
+        "contact_height": 0.072,
+        "bearing": -2.5691970270722173,
+        "q": [
+          -0.582962300633487,
+          0.7746352987720023,
+          0.41214111265954767,
+          -1.1842599118038861,
+          -1.52273806396754,
+          0.4549682274108955
+        ],
+        "contact_error_mm": 0.00020121400919996405,
+        "refined_q": [
+          -0.582962300633487,
+          0.7746352987720023,
+          0.41214111265954767,
+          -1.1842599118038861,
+          -1.52273806396754,
+          0.4549682274108955
+        ],
+        "exact_refined_gaps_mm": [
+          -5.009623371297553e-06,
+          -6.248026324948023e-06
+        ],
+        "collision": null,
+        "jaw_penetration_mm": 6.2480263217090625e-06,
+        "other_penetration_mm": 0.0,
+        "jaw_gaps_mm": {
+          "fixed": -5.009623371297553e-06,
+          "moving": -6.2480263217090625e-06
+        },
+        "contacts": [
+          {
+            "other": "right_fixed_jaw_sph_tip1",
+            "distance_mm": -5.009623371297553e-06,
+            "position": [
+              0.053227761498464525,
+              0.08921062817661704,
+              0.8319369321879129
+            ]
+          },
+          {
+            "other": "right_moving_jaw_box2",
+            "distance_mm": -6.2480263217090625e-06,
+            "position": [
+              0.0975338524859657,
+              0.10947021658520983,
+              0.831000000001471
+            ]
+          }
+        ],
+        "checked_goal_contact": true,
+        "gripper_position": [
+          0.11494067997095882,
+          0.00897653737133338,
+          0.83218606625689
+        ],
+        "gripper_rotation": [
+          [
+            0.8348362700979887,
+            -0.0008666865052512907,
+            0.550497639398553
+          ],
+          [
+            0.5504979710928022,
+            0.002442859614427327,
+            -0.8348329271534589
+          ],
+          [
+            -0.0006212500190209691,
+            0.9999966406400602,
+            0.002516496971595873
+          ]
+        ],
+        "object_origin_in_gripper": [
+          0.016809148801824915,
+          -0.07192885016874846,
+          -0.098158289803046
+        ],
+        "object_rotation_in_gripper": [
+          [
+            0.8348362700979887,
+            0.5504979710928022,
+            -0.0006212500190209691
+          ],
+          [
+            -0.0008666865052512907,
+            0.002442859614427327,
+            0.9999966406400602
+          ],
+          [
+            0.550497639398553,
+            -0.8348329271534589,
+            0.002516496971595873
+          ]
+        ],
+        "fixed_contact_world": [
+          0.054203121621237006,
+          0.08655314704906061,
+          0.8319439162544314
+        ],
+        "moving_contact_world": [
+          0.09702243230395395,
+          0.11343986575589193,
+          0.8319653467658636
+        ]
+      },
+      "independent_checks": {
+        "proof": "proof-002.json",
+        "proof_sha256": "12e801eb034cf79ba97e55c871cf989ae220fa43446a4f82f22511be5a764475",
+        "opening": [
+          {
+            "grip": 0.4549682274108955,
+            "collision": null,
+            "jaw_penetration_mm": 6.2480263217090625e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.47142788460210816,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.48788754179332083,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5043471989845335,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5208068561757462,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.537266513366959,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5537261705581716,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5701858277493843,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.586645484940597,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6031051421318097,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6195647993230223,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.636024456514235,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6524841137054478,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6689437708966604,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6854034280878731,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7018630852790858,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7183227424702985,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7347823996615112,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7512420568527238,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7677017140439366,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7841613712351492,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.800621028426362,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8170806856175746,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8335403428087873,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.85,
+            "collision": null,
+            "jaw_penetration_mm": 5.009623371297553e-06,
+            "passed": true
+          }
+        ],
+        "paths": [
+          {
+            "label": "lift20",
+            "target": [
+              0.075,
+              0.1,
+              0.78
+            ],
+            "endpoint": true,
+            "q": [
+              -0.582962300633487,
+              0.6184254365852363,
+              0.47980132703209616,
+              -1.0957102639896683,
+              -1.5227380639675403
+            ],
+            "direct_path": true,
+            "samples": 6
+          },
+          {
+            "label": "lift40",
+            "target": [
+              0.075,
+              0.1,
+              0.8
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5829623006334871,
+              0.469086542292258,
+              0.5220094365527972,
+              -0.9885794792173909,
+              -1.5227380639675403
+            ],
+            "direct_path": true,
+            "samples": 10
+          },
+          {
+            "label": "buffer_above",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.8
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "label": "buffer_contact",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.76
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "opening_clear": true
+      }
+    },
+    {
+      "path": ".run/glass-goal-geometry-v3/proof-003.json",
+      "sha256": "7a5ac486568c6a2285c3dc16275fdabc4449e8f7e36c958b8dbd42d5b44cb7b7",
+      "state_sha256": "58ca751cf72c4557d61c122ce6febcc2003b458dde94b80c663c8a32058ef7ef",
+      "proof": {
+        "side": "right",
+        "pad": "tip",
+        "family": "diameter",
+        "closing_sign": 1,
+        "trial": 7,
+        "contact_height": 0.072,
+        "bearing": -2.5691970271994435,
+        "q": [
+          -0.5829623005785348,
+          0.7746349836367794,
+          0.412141268591142,
+          -1.184259508460988,
+          -1.5227380660293812,
+          0.4549682272627691
+        ],
+        "contact_error_mm": 0.00020118344158030928,
+        "refined_q": [
+          -0.5829623005785348,
+          0.7746349836367794,
+          0.412141268591142,
+          -1.184259508460988,
+          -1.5227380660293812,
+          0.4549682272627691
+        ],
+        "exact_refined_gaps_mm": [
+          -5.009474106148701e-06,
+          -6.248347261296053e-06
+        ],
+        "collision": null,
+        "jaw_penetration_mm": 6.248347263339616e-06,
+        "other_penetration_mm": 0.0,
+        "jaw_gaps_mm": {
+          "fixed": -5.009474106148701e-06,
+          "moving": -6.248347263339616e-06
+        },
+        "contacts": [
+          {
+            "other": "right_fixed_jaw_sph_tip1",
+            "distance_mm": -5.009474106148701e-06,
+            "position": [
+              0.05322776133653669,
+              0.08921062845693503,
+              0.8319369325627051
+            ]
+          },
+          {
+            "other": "right_moving_jaw_box2",
+            "distance_mm": -6.248347263339616e-06,
+            "position": [
+              0.09753385244114658,
+              0.10947021666251788,
+              0.831000000001471
+            ]
+          }
+        ],
+        "checked_goal_contact": true,
+        "gripper_position": [
+          0.1149406797711075,
+          0.008976537698926368,
+          0.8321860912729725
+        ],
+        "gripper_rotation": [
+          [
+            0.834836270213522,
+            -0.0008668191818830273,
+            0.5504976390144474
+          ],
+          [
+            0.5504979709152682,
+            0.0024430645649756583,
+            -0.8348329266707823
+          ],
+          [
+            -0.0006212520804732002,
+            0.9999966400243738,
+            0.0025167411100921605
+          ]
+        ],
+        "object_origin_in_gripper": [
+          0.016809148931903953,
+          -0.07192885118677307,
+          -0.09815830704662326
+        ],
+        "object_rotation_in_gripper": [
+          [
+            0.834836270213522,
+            0.5504979709152682,
+            -0.0006212520804732002
+          ],
+          [
+            -0.0008668191818830273,
+            0.0024430645649756583,
+            0.9999966400243738
+          ],
+          [
+            0.5504976390144474,
+            -0.8348329266707823,
+            0.0025167411100921605
+          ]
+        ],
+        "fixed_contact_world": [
+          0.0542031214581806,
+          0.08655314733067504,
+          0.8319439173126052
+        ],
+        "moving_contact_world": [
+          0.09702243212873822,
+          0.11343986603607933,
+          0.8319653479947184
+        ]
+      },
+      "independent_checks": {
+        "proof": "proof-003.json",
+        "proof_sha256": "7a5ac486568c6a2285c3dc16275fdabc4449e8f7e36c958b8dbd42d5b44cb7b7",
+        "opening": [
+          {
+            "grip": 0.4549682272627691,
+            "collision": null,
+            "jaw_penetration_mm": 6.248347263339616e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.4714278844601537,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.48788754165753834,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.504347198854923,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5208068560523076,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5372665132496922,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5537261704470768,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5701858276444615,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5866454848418461,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6031051420392307,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6195647992366153,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.636024456434,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6524841136313846,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6689437708287691,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6854034280261538,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7018630852235384,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7183227424209231,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7347823996183076,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7512420568156923,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7677017140130769,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7841613712104616,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8006210284078461,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8170806856052308,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8335403428026154,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.85,
+            "collision": null,
+            "jaw_penetration_mm": 5.009474106148701e-06,
+            "passed": true
+          }
+        ],
+        "paths": [
+          {
+            "label": "lift20",
+            "target": [
+              0.075,
+              0.1,
+              0.78
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5829623005785346,
+              0.6184251321868689,
+              0.4798014327055737,
+              -1.0957098211255094,
+              -1.5227380660293808
+            ],
+            "direct_path": true,
+            "samples": 6
+          },
+          {
+            "label": "lift40",
+            "target": [
+              0.075,
+              0.1,
+              0.8
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5829623005785347,
+              0.4690862556705636,
+              0.5220094907210738,
+              -0.9885790026247038,
+              -1.522738066029381
+            ],
+            "direct_path": true,
+            "samples": 10
+          },
+          {
+            "label": "buffer_above",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.8
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "label": "buffer_contact",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.76
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "opening_clear": true
+      }
+    },
+    {
+      "path": ".run/glass-goal-geometry-v3/proof-004.json",
+      "sha256": "5718acf40f79793be000532e52771fd834dcc97bd21cf59f5d8d791f25b099ef",
+      "state_sha256": "684778e89450e386340da367aef4d79867ea7fbb5a45a3459dda8d063bf367e0",
+      "proof": {
+        "side": "right",
+        "pad": "tip",
+        "family": "diameter",
+        "closing_sign": -1,
+        "trial": 0,
+        "contact_height": 0.072,
+        "bearing": 0.5600243778136772,
+        "q": [
+          -0.5831324119185568,
+          1.223608770581092,
+          -1.686,
+          1.5076873184263728,
+          -1.5414970484274768,
+          0.44823670385696085
+        ],
+        "contact_error_mm": 0.06353315834724395,
+        "refined_q": [
+          -0.5831324119185568,
+          1.223608770581092,
+          -1.686,
+          1.5076873184263728,
+          -1.5414970484274768,
+          0.44823670385696085
+        ],
+        "exact_refined_gaps_mm": [
+          -9.647489676708684e-06,
+          -9.912762657807508e-06
+        ],
+        "collision": null,
+        "jaw_penetration_mm": 9.912762657807508e-06,
+        "other_penetration_mm": 0.0,
+        "jaw_gaps_mm": {
+          "fixed": -9.647489676708684e-06,
+          "moving": -9.912762657807508e-06
+        },
+        "contacts": [
+          {
+            "other": "right_fixed_jaw_sph_tip1",
+            "distance_mm": -9.647489676708684e-06,
+            "position": [
+              0.05371052601501848,
+              0.08837446008735679,
+              0.8312549229650239
+            ]
+          },
+          {
+            "other": "right_moving_jaw_sph_tip2",
+            "distance_mm": -9.912762657807508e-06,
+            "position": [
+              0.09756496097778283,
+              0.10941633143264642,
+              0.8334648601303551
+            ]
+          }
+        ],
+        "checked_goal_contact": true,
+        "gripper_position": [
+          0.08779484432580092,
+          0.05005224705084113,
+          0.9185485634533904
+        ],
+        "gripper_rotation": [
+          [
+            0.8438162573783885,
+            -0.4600791217515628,
+            0.2762269456664922
+          ],
+          [
+            0.5365441436194004,
+            0.7326480663265147,
+            -0.41874478248181507
+          ],
+          [
+            -0.009721405847552073,
+            0.5015516051577634,
+            0.8650731076805114
+          ]
+        ],
+        "object_origin_in_gripper": [
+          0.017543991610960152,
+          -0.037039521139587285,
+          -0.16160574021745042
+        ],
+        "object_rotation_in_gripper": [
+          [
+            0.8438162573783885,
+            0.5365441436194004,
+            -0.009721405847552073
+          ],
+          [
+            -0.4600791217515628,
+            0.7326480663265147,
+            0.5015516051577634
+          ],
+          [
+            0.2762269456664922,
+            -0.41874478248181507,
+            0.8650731076805114
+          ]
+        ],
+        "fixed_contact_world": [
+          0.053918828202324284,
+          0.08688063154160017,
+          0.8336761555259447
+        ],
+        "moving_contact_world": [
+          0.09640025565963686,
+          0.1133629954904635,
+          0.8340600942761014
+        ]
+      },
+      "independent_checks": {
+        "proof": "proof-004.json",
+        "proof_sha256": "5718acf40f79793be000532e52771fd834dcc97bd21cf59f5d8d791f25b099ef",
+        "opening": [
+          {
+            "grip": 0.44823670385696085,
+            "collision": null,
+            "jaw_penetration_mm": 9.912762657807508e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.46497684119625415,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.48171697853554746,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.49845711587484076,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.515197253214134,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5319373905534274,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5486775278927206,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.565417665232014,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5821578025713072,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5988979399106005,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6156380772498938,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6323782145891871,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6491183519284804,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6658584892677737,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6825986266070669,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6993387639463603,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7160789012856537,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7328190386249469,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7495591759642402,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7662993133035335,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7830394506428269,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7997795879821201,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8165197253214134,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8332598626607066,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.85,
+            "collision": null,
+            "jaw_penetration_mm": 9.647489676708684e-06,
+            "passed": true
+          }
+        ],
+        "paths": [
+          {
+            "label": "lift20",
+            "target": [
+              0.075,
+              0.1,
+              0.78
+            ],
+            "endpoint": true,
+            "q": [
+              -0.583438294129434,
+              0.9342114085358248,
+              -1.2884274063367167,
+              1.39109343377374,
+              -1.5387980774874557
+            ],
+            "direct_path": true,
+            "samples": 13
+          },
+          {
+            "label": "lift40",
+            "target": [
+              0.075,
+              0.1,
+              0.8
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "label": "buffer_above",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.8
+            ],
+            "endpoint": true,
+            "q": [
+              -0.6256143066834287,
+              -0.5997795673758289,
+              0.578437838403235,
+              1.0666378179800589,
+              -1.541497048427478
+            ],
+            "direct_path": true,
+            "samples": 66
+          },
+          {
+            "label": "buffer_contact",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.76
+            ],
+            "endpoint": true,
+            "q": [
+              -0.6256143064231792,
+              -0.5638605202857452,
+              0.851658720738439,
+              0.7574978885484033,
+              -1.541497048427594
+            ],
+            "error": "The carried tube's path intersects spoon_handle."
+          }
+        ],
+        "opening_clear": true
+      }
+    },
+    {
+      "path": ".run/glass-goal-geometry-v3/proof-005.json",
+      "sha256": "42ec8e530009c738b87a7246407d8c3d85a049e14efd1dd914990737ce3d299b",
+      "state_sha256": "c047c97ad361bf8f9e987ec13d85b2b774d2304f6e6836a74e0af1634374868c",
+      "proof": {
+        "side": "right",
+        "pad": "tip",
+        "family": "diameter",
+        "closing_sign": -1,
+        "trial": 3,
+        "contact_height": 0.072,
+        "bearing": 0.5723955974643573,
+        "q": [
+          -0.5829620830692203,
+          0.7730500068766355,
+          0.41292626393744447,
+          -1.1822296635226544,
+          -1.5227474853102465,
+          0.45496747043364916
+        ],
+        "contact_error_mm": 0.00011893632240205463,
+        "refined_q": [
+          -0.5829620830692203,
+          0.7730500068766355,
+          0.41292626393744447,
+          -1.1822296635226544,
+          -1.5227474853102465,
+          0.45496747043364916
+        ],
+        "exact_refined_gaps_mm": [
+          -5.010858557729855e-06,
+          -6.164137849602217e-06
+        ],
+        "collision": null,
+        "jaw_penetration_mm": 6.164137849330327e-06,
+        "other_penetration_mm": 0.0,
+        "jaw_gaps_mm": {
+          "fixed": -5.010858557729855e-06,
+          "moving": -6.164137849330327e-06
+        },
+        "contacts": [
+          {
+            "other": "right_fixed_jaw_sph_tip1",
+            "distance_mm": -5.010858557729855e-06,
+            "position": [
+              0.0532271255796072,
+              0.08921172962169685,
+              0.8319384143823353
+            ]
+          },
+          {
+            "other": "right_moving_jaw_box2",
+            "distance_mm": -6.164137849330327e-06,
+            "position": [
+              0.09753380869708758,
+              0.10947029251365907,
+              0.8310000000012553
+            ]
+          }
+        ],
+        "checked_goal_contact": true,
+        "gripper_position": [
+          0.11493981602260525,
+          0.008977944622643716,
+          0.8323117124153868
+        ],
+        "gripper_rotation": [
+          [
+            0.8348368250679592,
+            -0.0015359904821174442,
+            0.5504953371679803
+          ],
+          [
+            0.5504971187637473,
+            0.0034749787075002286,
+            -0.8348298310169533
+          ],
+          [
+            -0.0006306689006071453,
+            0.9999927826020649,
+            0.0037465985262024187
+          ]
+        ],
+        "object_origin_in_gripper": [
+          0.016809754775248743,
+          -0.07193354363136548,
+          -0.09824553255244796
+        ],
+        "object_rotation_in_gripper": [
+          [
+            0.8348368250679592,
+            0.5504971187637473,
+            -0.0006306689006071453
+          ],
+          [
+            -0.0015359904821174442,
+            0.0034749787075002286,
+            0.9999927826020649
+          ],
+          [
+            0.5504953371679803,
+            -0.8348298310169533,
+            0.0037465985262024187
+          ]
+        ],
+        "fixed_contact_world": [
+          0.054202479312165916,
+          0.08655425707839855,
+          0.8319488417913186
+        ],
+        "moving_contact_world": [
+          0.09702172611876037,
+          0.1134409712158565,
+          0.8319711811489546
+        ]
+      },
+      "independent_checks": {
+        "proof": "proof-005.json",
+        "proof_sha256": "42ec8e530009c738b87a7246407d8c3d85a049e14efd1dd914990737ce3d299b",
+        "opening": [
+          {
+            "grip": 0.45496747043364916,
+            "collision": null,
+            "jaw_penetration_mm": 6.164137849330327e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.4714271591655804,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.48788684789751174,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5043465366294431,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5208062253613743,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5372659140933056,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5537256028252369,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5701852915571681,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5866449802890994,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6031046690210307,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6195643577529619,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6360240464848933,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6524837352168246,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6689434239487558,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6854031126806871,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7018628014126184,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7183224901445497,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.734782178876481,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7512418676084123,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7677015563403435,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7841612450722748,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8006209338042061,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8170806225361373,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8335403112680686,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.85,
+            "collision": null,
+            "jaw_penetration_mm": 5.010858557729855e-06,
+            "passed": true
+          }
+        ],
+        "paths": [
+          {
+            "label": "lift20",
+            "target": [
+              0.075,
+              0.1,
+              0.78
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5829620830692205,
+              0.6168941114318506,
+              0.4803337514487803,
+              -1.0934812555892055,
+              -1.522747485310247
+            ],
+            "direct_path": true,
+            "samples": 6
+          },
+          {
+            "label": "lift40",
+            "target": [
+              0.075,
+              0.1,
+              0.8
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5829620830692204,
+              0.4676446194579969,
+              0.5222828540604737,
+              -0.9861808662270451,
+              -1.5227474853102465
+            ],
+            "direct_path": true,
+            "samples": 10
+          },
+          {
+            "label": "buffer_above",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.8
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "label": "buffer_contact",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.76
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "opening_clear": true
+      }
+    },
+    {
+      "path": ".run/glass-goal-geometry-v3/proof-006.json",
+      "sha256": "cfad63cb2cd22de21b2c10c991e43cb62416bc80a2c3996960c87564e3442b26",
+      "state_sha256": "41167d89b98e2634a35fb50e1b938a08ddbd53753c672adfb9482bac7a478d88",
+      "proof": {
+        "side": "right",
+        "pad": "tip",
+        "family": "diameter",
+        "closing_sign": -1,
+        "trial": 4,
+        "contact_height": 0.072,
+        "bearing": 0.560024280769053,
+        "q": [
+          -0.5831324097115469,
+          1.2236088241883991,
+          -1.686,
+          1.5076872070642078,
+          -1.5414971796244041,
+          0.4482367076442012
+        ],
+        "contact_error_mm": 0.06352357978672499,
+        "refined_q": [
+          -0.5831324097115469,
+          1.2236088241883991,
+          -1.686,
+          1.5076872070642078,
+          -1.5414971796244041,
+          0.4482367076442012
+        ],
+        "exact_refined_gaps_mm": [
+          -9.647241404819526e-06,
+          -9.912701824958334e-06
+        ],
+        "collision": null,
+        "jaw_penetration_mm": 9.912701824958334e-06,
+        "other_penetration_mm": 0.0,
+        "jaw_gaps_mm": {
+          "fixed": -9.647241404819526e-06,
+          "moving": -9.912701824958334e-06
+        },
+        "contacts": [
+          {
+            "other": "right_fixed_jaw_sph_tip1",
+            "distance_mm": -9.647241404819526e-06,
+            "position": [
+              0.053710519429140575,
+              0.08837447149418444,
+              0.8312549156691972
+            ]
+          },
+          {
+            "other": "right_moving_jaw_sph_tip2",
+            "distance_mm": -9.912701824958334e-06,
+            "position": [
+              0.09756495735846735,
+              0.10941633770154552,
+              0.8334648492464444
+            ]
+          }
+        ],
+        "checked_goal_contact": true,
+        "gripper_position": [
+          0.0877948409211205,
+          0.05005225339390597,
+          0.9185485526905037
+        ],
+        "gripper_rotation": [
+          [
+            0.8438163186143417,
+            -0.4600789934780445,
+            0.2762269722535592
+          ],
+          [
+            0.5365440461045862,
+            0.732648113554845,
+            -0.41874482479697084
+          ],
+          [
+            -0.009721472617806232,
+            0.5015516538351316,
+            0.8650730787080274
+          ]
+        ],
+        "object_origin_in_gripper": [
+          0.017543995908097812,
+          -0.03703952895511762,
+          -0.16160572517035537
+        ],
+        "object_rotation_in_gripper": [
+          [
+            0.8438163186143417,
+            0.5365440461045862,
+            -0.009721472617806232
+          ],
+          [
+            -0.4600789934780445,
+            0.732648113554845,
+            0.5015516538351316
+          ],
+          [
+            0.2762269722535592,
+            -0.41874482479697084,
+            0.8650730787080274
+          ]
+        ],
+        "fixed_contact_world": [
+          0.053918821696906254,
+          0.0868806428201318,
+          0.8336761481423178
+        ],
+        "moving_contact_world": [
+          0.09640025251036001,
+          0.11336300196457039,
+          0.8340600835934997
+        ]
+      },
+      "independent_checks": {
+        "proof": "proof-006.json",
+        "proof_sha256": "cfad63cb2cd22de21b2c10c991e43cb62416bc80a2c3996960c87564e3442b26",
+        "opening": [
+          {
+            "grip": 0.4482367076442012,
+            "collision": null,
+            "jaw_penetration_mm": 9.912701824958334e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.4649768448256928,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.48171698200718444,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.4984571191886761,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5151972563701677,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5319373935516593,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5486775307331508,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5654176679146425,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5821578050961341,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.5988979422776257,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6156380794591174,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.632378216640609,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6491183538221006,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6658584910035922,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6825986281850838,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.6993387653665755,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.716078902548067,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7328190397295586,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7495591769110503,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7662993140925419,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7830394512740335,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.7997795884555251,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8165197256370167,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.8332598628185084,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          },
+          {
+            "grip": 0.85,
+            "collision": null,
+            "jaw_penetration_mm": 9.647241404819526e-06,
+            "passed": true
+          }
+        ],
+        "paths": [
+          {
+            "label": "lift20",
+            "target": [
+              0.075,
+              0.1,
+              0.78
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5834382918216464,
+              0.934211461373616,
+              -1.2884274069648727,
+              1.3910933274265793,
+              -1.538798210296678
+            ],
+            "direct_path": true,
+            "samples": 13
+          },
+          {
+            "label": "lift40",
+            "target": [
+              0.075,
+              0.1,
+              0.8
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          },
+          {
+            "label": "buffer_above",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.8
+            ],
+            "endpoint": true,
+            "q": [
+              -0.6256143029684699,
+              -0.5997795368615607,
+              0.5784379100477816,
+              1.066637658066386,
+              -1.5414971796244041
+            ],
+            "direct_path": true,
+            "samples": 66
+          },
+          {
+            "label": "buffer_contact",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.76
+            ],
+            "endpoint": true,
+            "q": [
+              -0.6256143027082209,
+              -0.56386044754631,
+              0.8516587640901367,
+              0.7574977147024121,
+              -1.5414971796245207
+            ],
+            "error": "The carried tube's path intersects spoon_handle."
+          }
+        ],
+        "opening_clear": true
+      }
+    },
+    {
+      "path": ".run/glass-goal-geometry-v3/proof-007.json",
+      "sha256": "24334b7c74b5dc6b440c5e9eb62ef278aa0a8803ab101afc95c4c17566d1386a",
+      "state_sha256": "deab50179ce02a529d1c516e35ca0540bdcc09dfa243d0fa1a3df82b62819e0d",
+      "proof": {
+        "side": "right",
+        "pad": "middle",
+        "family": "diameter",
+        "closing_sign": -1,
+        "trial": 0,
+        "contact_height": 0.072,
+        "bearing": 0.5392427798787524,
+        "q": [
+          -0.5807460691123993,
+          0.8068597390118114,
+          0.3259680060629821,
+          -1.129695705316622,
+          -1.5207303207429879,
+          0.4760698366798325
+        ],
+        "contact_error_mm": 0.0002273457319826141,
+        "refined_q": [
+          -0.5807460691123993,
+          0.8068597390118114,
+          0.3259680060629821,
+          -1.129695705316622,
+          -1.5207303207429879,
+          0.4760698366798325
+        ],
+        "exact_refined_gaps_mm": [
+          -1.4636673793975992e-05,
+          -1.4854850150905019e-05
+        ],
+        "collision": null,
+        "jaw_penetration_mm": 1.485485015482958e-05,
+        "other_penetration_mm": 0.0,
+        "jaw_gaps_mm": {
+          "fixed": -1.4636673797571374e-05,
+          "moving": -1.485485015482958e-05
+        },
+        "contacts": [
+          {
+            "other": "right_fixed_jaw_box4",
+            "distance_mm": -1.4636673797571374e-05,
+            "position": [
+              0.05238097307026635,
+              0.0907205810060312,
+              0.8310000000168225
+            ]
+          },
+          {
+            "other": "right_moving_jaw_box3",
+            "distance_mm": -1.485485015482958e-05,
+            "position": [
+              0.09807173612465218,
+              0.10758988434725876,
+              0.8339999999829268
+            ]
+          }
+        ],
+        "checked_goal_contact": true,
+        "gripper_position": [
+          0.11074947296141992,
+          0.016355406294984658,
+          0.8320996600642737
+        ],
+        "gripper_rotation": [
+          [
+            0.8360503673049595,
+            -0.002877562918733312,
+            0.5486451521346836
+          ],
+          [
+            0.5486509464053511,
+            0.0018578510093390371,
+            -0.8360494527228272
+          ],
+          [
+            0.0013864839537200968,
+            0.9999941339934325,
+            0.0031320346374597713
+          ]
+        ],
+        "object_origin_in_gripper": [
+          0.0159033604758461,
+          -0.0718409665765956,
+          -0.08977061045462467
+        ],
+        "object_rotation_in_gripper": [
+          [
+            0.8360503673049595,
+            0.5486509464053511,
+            0.0013864839537200968
+          ],
+          [
+            -0.002877562918733312,
+            0.0018578510093390371,
+            0.9999941339934325
+          ],
+          [
+            0.5486451521346836,
+            -0.8360494527228272,
+            0.0031320346374597713
+          ]
+        ],
+        "fixed_contact_world": [
+          0.05290379309364245,
+          0.08664110249162807,
+          0.8318026233868372
+        ],
+        "moving_contact_world": [
+          0.09755522487483961,
+          0.11255868321389409,
+          0.8319329604522526
+        ]
+      },
+      "independent_checks": {
+        "proof": "proof-007.json",
+        "proof_sha256": "24334b7c74b5dc6b440c5e9eb62ef278aa0a8803ab101afc95c4c17566d1386a",
+        "opening": [
+          {
+            "grip": 0.4760698366798325,
+            "collision": null,
+            "jaw_penetration_mm": 1.485485015482958e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.49165026015150615,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5072306836231798,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5228111070948535,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5383915305665271,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5539719540382008,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5695523775098743,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.585132800981548,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6007132244532216,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6162936479248953,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6318740713965689,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6474544948682426,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6630349183399162,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6786153418115899,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6941957652832635,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7097761887549372,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7253566122266109,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7409370356982845,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7565174591699582,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7720978826416318,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7876783061133055,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.8032587295849791,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.8188391530566528,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.8344195765283263,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.85,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636673797571374e-05,
+            "passed": true
+          }
+        ],
+        "paths": [
+          {
+            "label": "lift20",
+            "target": [
+              0.075,
+              0.1,
+              0.78
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5807460691123996,
+              0.6564908083976304,
+              0.3929856583242024,
+              -1.0463444269636615,
+              -1.5207303207429876
+            ],
+            "direct_path": true,
+            "samples": 6
+          },
+          {
+            "label": "lift40",
+            "target": [
+              0.075,
+              0.1,
+              0.8
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5807460691123995,
+              0.513856057876022,
+              0.4346109161733836,
+              -0.9453349342912339,
+              -1.5207303207429879
+            ],
+            "direct_path": true,
+            "samples": 10
+          },
+          {
+            "label": "buffer_above",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.8
+            ],
+            "error": "The planned path has insufficient clearance: right_shoulder / right_lower_arm"
+          },
+          {
+            "label": "buffer_contact",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.76
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "opening_clear": true
+      }
+    },
+    {
+      "path": ".run/glass-goal-geometry-v3/proof-008.json",
+      "sha256": "c8039fe15c56756ede530adf09e53ebf2a34ac32c4c8bcda2cf9b8fed4661cb5",
+      "state_sha256": "65091f6b6adc9ad15ea0f693fb96513d0584a522e3b878a48f6892a5fd884627",
+      "proof": {
+        "side": "right",
+        "pad": "middle",
+        "family": "diameter",
+        "closing_sign": -1,
+        "trial": 1,
+        "contact_height": 0.072,
+        "bearing": 0.5392427795047208,
+        "q": [
+          -0.580746069544025,
+          0.8068593672480223,
+          0.32596819974958285,
+          -1.1296951981603949,
+          -1.5207303305217426,
+          0.47606984106497086
+        ],
+        "contact_error_mm": 0.00022731135345963264,
+        "refined_q": [
+          -0.580746069544025,
+          0.8068593672480223,
+          0.32596819974958285,
+          -1.1296951981603949,
+          -1.5207303305217426,
+          0.47606984106497086
+        ],
+        "exact_refined_gaps_mm": [
+          -1.4636950217653114e-05,
+          -1.4855248394544799e-05
+        ],
+        "collision": null,
+        "jaw_penetration_mm": 1.4855248399750612e-05,
+        "other_penetration_mm": 0.0,
+        "jaw_gaps_mm": {
+          "fixed": -1.4636950219967142e-05,
+          "moving": -1.4855248399750612e-05
+        },
+        "contacts": [
+          {
+            "other": "right_fixed_jaw_box4",
+            "distance_mm": -1.4636950219967142e-05,
+            "position": [
+              0.05238097320414045,
+              0.0907205805069402,
+              0.8310000000168235
+            ]
+          },
+          {
+            "other": "right_moving_jaw_box3",
+            "distance_mm": -1.4855248399750612e-05,
+            "position": [
+              0.09807173600968834,
+              0.10758988477554032,
+              0.8339999999829256
+            ]
+          }
+        ],
+        "checked_goal_contact": true,
+        "gripper_position": [
+          0.1107494729431148,
+          0.016355406122993972,
+          0.8320996884054009
+        ],
+        "gripper_rotation": [
+          [
+            0.8360503668459612,
+            -0.002877735291449357,
+            0.5486451519300295
+          ],
+          [
+            0.5486509471295014,
+            0.0018581314993055542,
+            -0.8360494516242635
+          ],
+          [
+            0.0013864741735935548,
+            0.9999941329762504,
+            0.003132363714884151
+          ]
+        ],
+        "object_origin_in_gripper": [
+          0.01590336132834273,
+          -0.07184096522024812,
+          -0.08977063430431435
+        ],
+        "object_rotation_in_gripper": [
+          [
+            0.8360503668459612,
+            0.5486509471295014,
+            0.0013864741735935548
+          ],
+          [
+            -0.002877735291449357,
+            0.0018581314993055542,
+            0.9999941329762504
+          ],
+          [
+            0.5486451519300295,
+            -0.8360494516242635,
+            0.003132363714884151
+          ]
+        ],
+        "fixed_contact_world": [
+          0.05290379309835671,
+          0.08664110221312071,
+          0.8318026220423027
+        ],
+        "moving_contact_world": [
+          0.09755522513417009,
+          0.1125586830654696,
+          0.8319329595354116
+        ]
+      },
+      "independent_checks": {
+        "proof": "proof-008.json",
+        "proof_sha256": "c8039fe15c56756ede530adf09e53ebf2a34ac32c4c8bcda2cf9b8fed4661cb5",
+        "opening": [
+          {
+            "grip": 0.47606984106497086,
+            "collision": null,
+            "jaw_penetration_mm": 1.4855248399750612e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.4916502643539304,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5072306876428899,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5228111109318495,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.538391534220809,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5539719575097686,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5695523807987282,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.5851328040876876,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6007132273766472,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6162936506656067,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6318740739545663,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6474544972435259,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6630349205324855,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.678615343821445,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.6941957671104045,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.709776190399364,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7253566136883236,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7409370369772832,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7565174602662427,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7720978835552023,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.7876783068441617,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.8032587301331213,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.8188391534220809,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.8344195767110405,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          },
+          {
+            "grip": 0.85,
+            "collision": null,
+            "jaw_penetration_mm": 1.4636950219967142e-05,
+            "passed": true
+          }
+        ],
+        "paths": [
+          {
+            "label": "lift20",
+            "target": [
+              0.075,
+              0.1,
+              0.78
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5807460695440249,
+              0.6564904520005527,
+              0.39298579076207596,
+              -1.0463438739254183,
+              -1.5207303305217426
+            ],
+            "direct_path": true,
+            "samples": 6
+          },
+          {
+            "label": "lift40",
+            "target": [
+              0.075,
+              0.1,
+              0.8
+            ],
+            "endpoint": true,
+            "q": [
+              -0.5807460695440245,
+              0.5138557239126937,
+              0.43461098674342125,
+              -0.9453343418189046,
+              -1.5207303305217428
+            ],
+            "direct_path": true,
+            "samples": 10
+          },
+          {
+            "label": "buffer_above",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.8
+            ],
+            "error": "The planned path has insufficient clearance: right_shoulder / right_lower_arm"
+          },
+          {
+            "label": "buffer_contact",
+            "target": [
+              0.14425,
+              -0.02075,
+              0.76
+            ],
+            "error": "Gripper position/orientation tolerances not solved within joint limits."
+          }
+        ],
+        "opening_clear": true
+      }
+    }
+  ],
+  "continuations": [
+    {
+      "path": ".run/glass-placement-v14-final-high-horizontal",
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for glass; 6 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for glass; 6 attempts retained."
+          }
+        ],
+        "frames": 8002,
+        "continuation_frames": 1,
+        "prefix_motor_frames": 8001,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 5.633390799630433
+      },
+      "states_sha256": "a2cb5523523fb8c2b9faab775c11a8af6053214d2d9885c644ccffa24695cd73"
+    },
+    {
+      "path": ".run/glass-placement-v15-final-high-horizontal-negative",
+      "result": {
+        "status": "failed",
+        "message": "No candidate grasp/approach solved for glass; 6 attempts retained.",
+        "metrics": {
+          "gripper_torque_limit_nm": 0.65,
+          "other_arm_max_motion_deg": 0.0,
+          "hold_verified_s": 0.0,
+          "unexpected_collisions": 0,
+          "controller": "shared_exact_state_physical_teacher"
+        },
+        "history": [
+          {
+            "stage": "planning",
+            "at_s": 0.0,
+            "message": "Check reach and clearance"
+          },
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "No candidate grasp/approach solved for glass; 6 attempts retained."
+          }
+        ],
+        "frames": 8002,
+        "continuation_frames": 1,
+        "prefix_motor_frames": 8001,
+        "replay_exact": true,
+        "replay_max_state_error": 0.0,
+        "demonstration_eligible": false,
+        "coverage_evaluation": false,
+        "wall_s": 5.537087299861014
+      },
+      "states_sha256": "a2cb5523523fb8c2b9faab775c11a8af6053214d2d9885c644ccffa24695cd73"
+    }
+  ]
+}
