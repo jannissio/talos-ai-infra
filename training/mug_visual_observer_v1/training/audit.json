@@ -1,0 +1,20 @@
+{
+  "schema": "talos.mug-visual-observer.v1",
+  "protocol_sha256": "d36e25817a7e44c956b7c85b32bf3b507289257474d5a1d6c8fe3f407f4d0a61",
+  "source_sha256": "5dbee49e3b0d731c0095a4d739e5a5aa36bb8c6d6dd38f434bdb43d2cae1821b",
+  "split": "training",
+  "data_sha256": "0d43b00f5f7fcf1e7b4f1f63fb6845dbd883f321d2fc72b52107e3be13aceea1",
+  "states": 4096,
+  "rgb_views": 12288,
+  "maximum_geometric_label_difference_m": 0.0,
+  "maximum_feature_difference": 0.0,
+  "mismatches": [],
+  "passed": true,
+  "wall_seconds": 122.45258350018412,
+  "preflight": {
+    "free_bytes": 559251447808,
+    "estimated_additional_bytes": 4194304,
+    "reserve_bytes": 10737418240
+  },
+  "scope": "Every stored image hash, fixed calibration, RGB feature, acceptance and geometric label independently reconstructed from the compact state recipe. No physical trial or fitting."
+}

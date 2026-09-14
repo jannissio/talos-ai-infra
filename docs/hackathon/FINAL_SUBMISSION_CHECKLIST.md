@@ -65,7 +65,7 @@ The PDF requires an end-to-end perception/language/action workflow. Its examples
 
 ## Acceptance and storage rules
 
-Current visual-placement work: [held-mug visibility](../robotics/evidence/mug-visual-visibility-v1/README.md) passes on all 144 exposed states in three layouts. All 1,296 RGB views and masks are independently verified. A fixed close camera layout is selected for further investigation; biased RGB centroids remain too inaccurate for pose control. A learned pose observer and physical correction are still separate unfinished steps.
+Current visual-placement work: [held-mug visibility](../robotics/evidence/mug-visual-visibility-v1/README.md) passes all 144 exposed states / 1,296 independently verified views. The subsequent [compact RGB pose fit](../robotics/evidence/mug-visual-observer-v1/README.md) completes its single budget but fails accuracy at 8.105 mm p95 / 23.172 mm maximum. All 4,608 synthetic examples regenerate exactly; both models and every score are retained. No fresh evaluation, export or physical integration follows. Accurate held-object pose estimation and physical correction remain unfinished.
 
 - Every promoted skill needs physical replay and learned execution evidence, not just low training loss or an animation.
 - Report learned, programmed, classical-vision and privileged monitoring components separately.

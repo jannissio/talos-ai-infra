@@ -1,0 +1,25 @@
+{
+  "schema": "talos.mug-visual-observer.v1",
+  "protocol_sha256": "d36e25817a7e44c956b7c85b32bf3b507289257474d5a1d6c8fe3f407f4d0a61",
+  "source_sha256": "d4111be1a5af88fd700796dd4cae71b0d267cf9a4b83b844e152474017a5b419",
+  "training_states": 4096,
+  "development_states": 512,
+  "independently_reconstructed_rgb_views": 13824,
+  "checkpoint_scores": [
+    {
+      "update": 6000,
+      "checkpoint_sha256": "0e00ada4eb00574a68094d58e7498d551626bb8aac350f1b05d50889f38e746b",
+      "exact_score_match": true
+    },
+    {
+      "update": 12000,
+      "checkpoint_sha256": "b26fca746bc54b65fb91f4660ee03d7fabb57a680c80b3acd85814800d3a0923",
+      "exact_score_match": true
+    }
+  ],
+  "passed": true,
+  "fresh_evaluation_not_generated": true,
+  "export_not_performed": true,
+  "new_physical_trials": 0,
+  "selected_model_unchanged": true
+}
