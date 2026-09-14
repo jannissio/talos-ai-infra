@@ -253,7 +253,7 @@ if __name__=='__main__':
     parser.add_argument('--protocol',type=Path,default=ROOT/'docs/robotics/experiments/mug-correction-motor-v2.json')
     parser.add_argument('--mode',choices=['prepare','train','export','evaluate'],required=True)
     parser.add_argument('--split',choices=['training','development','evaluation'])
-    args=parser.parse_args();p=read(args.protocol)
+    args=parser.parse_args();args.protocol=args.protocol.resolve();p=read(args.protocol)
     sources(p,args.protocol)
     if args.mode=='prepare':
         if not args.split:parser.error('--split is required')
