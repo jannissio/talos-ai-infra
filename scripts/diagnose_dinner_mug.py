@@ -114,6 +114,9 @@ def run(args):
             model = mujoco.MjModel.from_xml_path(str((folder/'scene.xml').resolve()))
             model.vis.quality.offsamples = 0
             data = mujoco.MjData(model)
+            marker_ids = [i for i in range(model.ngeom) if (mujoco.mj_id2name(model,mujoco.mjtObj.mjOBJ_GEOM,i) or '').startswith('mug_place_outline_')]
+            if len(marker_ids)!=40:
+                raise ValueError('Expected the recorded forty-segment mug goal marker.')
             origin = float(frames['time'][indices[0]])
 
             def load(index):
@@ -151,7 +154,7 @@ def run(args):
                 probes.append({'stage':stage,'frame_index':index,'skill_seconds':float(data.time-origin),
                     'tool_world_m':actual_tool.tolist(),'object_world_m':obj.xpos.tolist(),
                     'tool_in_object_frame_mm':(object_rotation.T@(actual_tool-obj.xpos)*1000).tolist(),
-                    'placement_error_mm':float(np.linalg.norm(obj.xpos[:2]-data.geom('mug_place').xpos[:2])*1000),
+                    'placement_error_mm':float(np.linalg.norm(obj.xpos[:2]-np.mean(data.geom_xpos[marker_ids,:2],axis=0))*1000),
                     'object_yaw_rad':float(np.arctan2(object_rotation[1,0],object_rotation[0,0]))})
             traces.append({'seed':seed,'preset':preset,'status':mug['status'],'metrics':mug['metrics'],
                 'source_hashes':{n:sha(folder/n) for n in ('report.json','states.npz','scene.xml')},
