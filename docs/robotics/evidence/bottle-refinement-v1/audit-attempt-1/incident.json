@@ -1,0 +1,9 @@
+{
+  "status": "stopping_before_completion",
+  "source_sha256": "4d03fad60adc1bd9e5cfb47aa0fc5bc608a65f1222dc3eb56c4516512f236ab8",
+  "reason": "Read-only audit repeatedly decompresses a whole compressed shard for each image/label access; stop the inefficient process and load each shard once, preserving every numerical and image check.",
+  "observed_at_utc": "2026-09-14 07:23:00 UTC",
+  "training_audit_cpu_seconds_so_far": 678,
+  "data_or_model_changes": false,
+  "original_console_log": ".run/final-goal/bottle-refinement-v1-training-audit.log"
+}

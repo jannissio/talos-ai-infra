@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "1e94fa0c2583faf5401a7341ed73f7009f15bf48accc05866fd233bc3124a633",
+  "trainer_sha256": "22071bb91b907a2cd71429e3b7def00aff147b75734cd94de5af7f5d56cd4be7",
+  "network_sha256": "3390e076a13759fcef7d37bf685e3ed57372e8a148e923a96556c06194553e39",
+  "checkpoint_selection": "Finish both checkpoints. Among complete development-gate passes choose most accepted present states, then lowest p95, then earliest checkpoint. No threshold revision or further fit in this protocol.",
+  "data_splits": [
+    "training",
+    "development"
+  ]
+}

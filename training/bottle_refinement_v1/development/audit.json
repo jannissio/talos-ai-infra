@@ -1,0 +1,24 @@
+{
+  "schema": "talos.bottle-refinement.v1",
+  "split": "development",
+  "passed": true,
+  "states_geometry_checked": 512,
+  "rgb_hashes_checked": 1536,
+  "rgb_views_independently_regenerated": 21,
+  "regenerated_state_indices": [
+    0,
+    1,
+    7,
+    31,
+    127,
+    256,
+    511
+  ],
+  "maximum_world_label_discrepancy_m": 0.0,
+  "maximum_projection_discrepancy_px": 0.00012205471421111724,
+  "recipes_sha256": "896d9d15bf48b22ca1c99377269ab01cfd81391fd643dadcaac7321033348af8",
+  "data_manifest_sha256": "d92ea795999cacc572847794b453f272744a1563f334268c867b345a85848e39",
+  "protocol_sha256": "1e94fa0c2583faf5401a7341ed73f7009f15bf48accc05866fd233bc3124a633",
+  "auditor_sha256": "287424f8735d020a4d92ebe17fbb8ad5e7905bfec50228b1be7ecb7da91cc4bc",
+  "scope": "Every stored image hash, pose/keypoint/visibility label and camera projection checked; seven fixed states independently re-rendered. Synthetic posed observation audit, not physical manipulation."
+}

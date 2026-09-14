@@ -1,0 +1,905 @@
+{
+  "schema": "talos.bottle-refinement.v1",
+  "preflight": {
+    "free_bytes": 546670559232,
+    "estimated_additional_bytes": 402653184,
+    "reserve_bytes": 10737418240
+  },
+  "exact_copies": {
+    "models/bottle_refinement_v1/candidates/step-004000/refiner.safetensors": {
+      "source": ".run/bottle-refinement-v1/fit/step-004000/refiner.safetensors",
+      "sha256": "e90a8ba248df8dc8e504bbc9573a14395b14b9d6e337c9fb8118162e207614c4"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/candidates/step-004000/development.json": {
+      "source": ".run/bottle-refinement-v1/fit/step-004000/development.json",
+      "sha256": "f745d3086b36b9b51f5f9ccdc1acbbe91929aae69822657849731fe63d49110b"
+    },
+    "models/bottle_refinement_v1/candidates/step-008000/refiner.safetensors": {
+      "source": ".run/bottle-refinement-v1/fit/step-008000/refiner.safetensors",
+      "sha256": "c089f3a8bcfaa0189459679f6f13853988059b4c4c4f61566092b85243f58632"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/candidates/step-008000/development.json": {
+      "source": ".run/bottle-refinement-v1/fit/step-008000/development.json",
+      "sha256": "6852c00a78c1a4a9aaf7a8e7d15bb9d69eb61615bef0c13b75ff5b88b115503e"
+    },
+    "models/bottle_refinement_v1/refiner.safetensors": {
+      "source": ".run/bottle-refinement-v1/fit/step-008000/refiner.safetensors",
+      "sha256": "c089f3a8bcfaa0189459679f6f13853988059b4c4c4f61566092b85243f58632"
+    },
+    "models/bottle_refinement_v1/coarse.safetensors": {
+      "source": "docs/robotics/evidence/rgb-servo-observer-camera-v1/candidates/step-003000.safetensors",
+      "sha256": "2d82fc20ee8bc7d209be57ca1436361c4865b3ee3fb1d49a176d2ca2df5f1109"
+    },
+    "models/bottle_refinement_v1/openvino/artifacts.json": {
+      "source": ".run/bottle-refinement-v1/openvino/artifacts.json",
+      "sha256": "39708bf93fdedf3594be78b90c2d749705290affc409be5848b891b1a8f96721"
+    },
+    "models/bottle_refinement_v1/openvino/coarse.bin": {
+      "source": ".run/bottle-refinement-v1/openvino/coarse.bin",
+      "sha256": "9ee387fc2bfbde69367e49f5ec7bc5b6b38f5faa1d7b80004d6773456f7c73f0"
+    },
+    "models/bottle_refinement_v1/openvino/coarse.xml": {
+      "source": ".run/bottle-refinement-v1/openvino/coarse.xml",
+      "sha256": "542ac6cfe8903a66dd0c420f87bd571b49ba6873edd85cecbb87fd660b5adbe1"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/export/parity-development.json": {
+      "source": ".run/bottle-refinement-v1/openvino/parity-development.json",
+      "sha256": "b71d355a9574fb05d52f3a168d43dee45be9aed89614cf911b92a1183666c5fa"
+    },
+    "models/bottle_refinement_v1/openvino/protocol.json": {
+      "source": ".run/bottle-refinement-v1/openvino/protocol.json",
+      "sha256": "1e94fa0c2583faf5401a7341ed73f7009f15bf48accc05866fd233bc3124a633"
+    },
+    "models/bottle_refinement_v1/openvino/refiner.bin": {
+      "source": ".run/bottle-refinement-v1/openvino/refiner.bin",
+      "sha256": "bbab8e76c42df89a7375389c40533e1252a9bd508be2d0cad571fbd00f5e196e"
+    },
+    "models/bottle_refinement_v1/openvino/refiner.xml": {
+      "source": ".run/bottle-refinement-v1/openvino/refiner.xml",
+      "sha256": "038af07290c5bbbe318a47e1f5b61478ce13b2bbae0e2fb3d2a78a1a32fc1a15"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/fresh-perception.json": {
+      "source": ".run/bottle-refinement-v1/fresh-perception.json",
+      "sha256": "c70e5263d291ad1f50dbbfcc7a02b307d7776a09149d19a9fa7f11205c7cf00e"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/fresh-perception-freeze.json": {
+      "source": ".run/bottle-refinement-v1/fresh-perception-freeze.json",
+      "sha256": "39d549fefbb61db2f51c172a2d414344dddfee7c0a4e4a6e7ff81943178d51fe"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/evaluation-collect.log": {
+      "source": ".run/bottle-refinement-v1/evaluation-collect.log",
+      "sha256": "8af3190dea243677563713ac76f675a00c91b210cf6a36d4d65867d0cbe86a66"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/evaluation-audit.log": {
+      "source": ".run/bottle-refinement-v1/evaluation-audit.log",
+      "sha256": "1d35ebb328394c67f4fc0f9176c90e3eb7f197cfde93b4a4f705f097e2360f2b"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/selection.json": {
+      "source": ".run/bottle-refinement-v1/fit/selection.json",
+      "sha256": "ead07ca8b9d156bb21a4f2d66e0e0392c53afc3343764917820d758dc2c0deaa"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/fit-freeze.json": {
+      "source": ".run/bottle-refinement-v1/fit/fit-freeze.json",
+      "sha256": "d8d56a26e40ed666f051f5f6dd0a26762969be8d323b2216f32284a2d05f548b"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/protocol.json": {
+      "source": "docs/robotics/experiments/bottle-refinement-v1.json",
+      "sha256": "1e94fa0c2583faf5401a7341ed73f7009f15bf48accc05866fd233bc3124a633"
+    },
+    "training/bottle_refinement_v1/protocol.json": {
+      "source": "docs/robotics/experiments/bottle-refinement-v1.json",
+      "sha256": "1e94fa0c2583faf5401a7341ed73f7009f15bf48accc05866fd233bc3124a633"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/audit-attempt-1/audit_bottle_refinement_data.py": {
+      "source": ".run/bottle-refinement-v1/audit-attempt-1/audit_bottle_refinement_data.py",
+      "sha256": "4d03fad60adc1bd9e5cfb47aa0fc5bc608a65f1222dc3eb56c4516512f236ab8"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/audit-attempt-1/incident.json": {
+      "source": ".run/bottle-refinement-v1/audit-attempt-1/incident.json",
+      "sha256": "6c4ab05384ab2bbdb8a9f37e27257dbdbdcd37a8461a493a0994b1cae5da6fd7"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/audit-attempt-1/stopped.json": {
+      "source": ".run/bottle-refinement-v1/audit-attempt-1/stopped.json",
+      "sha256": "ccfb54b35126e90629e006369ead5564d9a6a35b113386c8dff8e2ddf0674c35"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/package-attempt-1/source.py": {
+      "source": ".run/bottle-refinement-v1/package-attempt-1/source.py",
+      "sha256": "d96b627858a9d5eba1cd3c1e1d2fbdd038ac2b63fca16ecf73b4320e9df20cc0"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/package-attempt-1/incident.json": {
+      "source": ".run/bottle-refinement-v1/package-attempt-1/incident.json",
+      "sha256": "f012bed7e3675de53c70378761f73a47c33e1ba39a4960139c8fcdbd136ddfcc"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/scripts/audit_bottle_refinement_data.py": {
+      "source": "scripts/audit_bottle_refinement_data.py",
+      "sha256": "287424f8735d020a4d92ebe17fbb8ad5e7905bfec50228b1be7ecb7da91cc4bc"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/scripts/bottle_refinement_experiment.py": {
+      "source": "scripts/bottle_refinement_experiment.py",
+      "sha256": "71ba64a8d568b12f20f04ee72eb856dee7db9ba8ceeecbcd7b71fcfc03ccd907"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/scripts/evaluate_bottle_refinement.py": {
+      "source": "scripts/evaluate_bottle_refinement.py",
+      "sha256": "6a1d23a1b629de23e4d498ab796435ba08a7a98eb49e4b59f8d88706d8849c47"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/scripts/export_bottle_refinement.py": {
+      "source": "scripts/export_bottle_refinement.py",
+      "sha256": "b7c63b8cb2796bcb74d29ec2b842cba508f33ade1b7dcc5de18ab7d5dfc9d6e4"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/scripts/package_bottle_refinement.py": {
+      "source": "scripts/package_bottle_refinement.py",
+      "sha256": "d9c08e167bebe6e4258b6247cfe2af7510989cc4646e37153517cbc3f5f2b00a"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/scripts/train_bottle_refinement.py": {
+      "source": "scripts/train_bottle_refinement.py",
+      "sha256": "22071bb91b907a2cd71429e3b7def00aff147b75734cd94de5af7f5d56cd4be7"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/simulation_lab/bottle_refinement.py": {
+      "source": "simulation_lab/bottle_refinement.py",
+      "sha256": "3390e076a13759fcef7d37bf685e3ed57372e8a148e923a96556c06194553e39"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/simulation_lab/bottle_refinement_runtime.py": {
+      "source": "simulation_lab/bottle_refinement_runtime.py",
+      "sha256": "d62bb641b1518ce6ec9e5224ffafd6f3177d0fdb26df72d7e1e5e0377d4b8fb4"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/simulation_lab/dinner.py": {
+      "source": "simulation_lab/dinner.py",
+      "sha256": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/simulation_lab/rgb_servo_cameras.py": {
+      "source": "simulation_lab/rgb_servo_cameras.py",
+      "sha256": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/simulation_lab/rgb_servo_geometry.py": {
+      "source": "simulation_lab/rgb_servo_geometry.py",
+      "sha256": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/simulation_lab/rgb_servo_network.py": {
+      "source": "simulation_lab/rgb_servo_network.py",
+      "sha256": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/frozen-source/simulation_lab/scene.py": {
+      "source": "simulation_lab/scene.py",
+      "sha256": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/console/bottle-refinement-v1-training-collect.log": {
+      "source": ".run/final-goal/bottle-refinement-v1-training-collect.log",
+      "sha256": "e7d3dd3fb619fabea1f32e6697533d0da5579efa559a97f89bf08b859d9b9034"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/console/bottle-refinement-v1-development-collect.log": {
+      "source": ".run/final-goal/bottle-refinement-v1-development-collect.log",
+      "sha256": "7468b6dce369679f30008b13579bd557ecb7e3b8f05e8ea0b540617734738e0d"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/console/bottle-refinement-v1-fit.log": {
+      "source": ".run/final-goal/bottle-refinement-v1-fit.log",
+      "sha256": "df5a9c998d38a844d258217948396154f632056c29a94df7c7f84ce423509611"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/console/bottle-refinement-v1-export.log": {
+      "source": ".run/final-goal/bottle-refinement-v1-export.log",
+      "sha256": "b735443a13c0298428ab4c3d00e9c9cd2b65121de82601133070bb2bc979163f"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/console/bottle-refinement-v1-fresh-perception.log": {
+      "source": ".run/final-goal/bottle-refinement-v1-fresh-perception.log",
+      "sha256": "f93aed75b1e5a54802a66a8a8121946c61e925e14c4e17fd50b2e68837262f77"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/console/bottle-refinement-v1-training-audit.log": {
+      "source": ".run/final-goal/bottle-refinement-v1-training-audit.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/console/bottle-refinement-v1-training-audit-attempt2.log": {
+      "source": ".run/final-goal/bottle-refinement-v1-training-audit-attempt2.log",
+      "sha256": "dc2fbce9e4eae5dabfd19c17b2404ed947dca202f5c1a06a8fbbd89e107fa676"
+    },
+    "docs/robotics/evidence/bottle-refinement-v1/console/bottle-refinement-v1-development-audit-attempt2.log": {
+      "source": ".run/final-goal/bottle-refinement-v1-development-audit-attempt2.log",
+      "sha256": "52468ad0b84a98634f82b7485a2c1f2673a208622bb8857e4176add52edb8181"
+    },
+    "training/bottle_refinement_v1/training/recipes.npz": {
+      "source": ".run/bottle-refinement-v1/training/recipes.npz",
+      "sha256": "67becadc5ddb4adfe687b6bc1e3b389c3a6032853855d3974bfc6621f0a817ef"
+    },
+    "training/bottle_refinement_v1/training/manifest.json": {
+      "source": ".run/bottle-refinement-v1/training/manifest.json",
+      "sha256": "8f6beab8a8c752ec9136de95cff56e7532fa9a840bb6c5766e4735c28149b6d3"
+    },
+    "training/bottle_refinement_v1/training/audit.json": {
+      "source": ".run/bottle-refinement-v1/training/audit.json",
+      "sha256": "e26caa6bd7bf7861f0db647e44424406e7ad9853fb386965b6a7bbb2bd28a7a5"
+    },
+    "training/bottle_refinement_v1/training/source-scene.xml": {
+      "source": ".run/bottle-refinement-v1/training/scene.xml",
+      "sha256": "1445ad749dbddf4983f9d8ee5e9c5da05bfa46c22f678f293ea4a47e82b0fed8"
+    },
+    "training/bottle_refinement_v1/training/example-0000.png": {
+      "source": ".run/bottle-refinement-v1/training/example-0000.png",
+      "sha256": "4b0f3cf89de656afc6af8e97ace95a3581420ba8ed291333b17cbfd023a12fdf"
+    },
+    "training/bottle_refinement_v1/training/example-0001.png": {
+      "source": ".run/bottle-refinement-v1/training/example-0001.png",
+      "sha256": "45f38761a6ef225dcaa3bcc926e36bd3d9000bff0bffad25231c660e817a3d51"
+    },
+    "training/bottle_refinement_v1/training/example-0007.png": {
+      "source": ".run/bottle-refinement-v1/training/example-0007.png",
+      "sha256": "ed944fe26ece15ad018947be5a8758062131382670baa0c949f657cb1a9dbed3"
+    },
+    "training/bottle_refinement_v1/training/example-0031.png": {
+      "source": ".run/bottle-refinement-v1/training/example-0031.png",
+      "sha256": "701ee1c079fbe644f4c22c2ee603bf6e968be820a0283d7b077b73ace601ad85"
+    },
+    "training/bottle_refinement_v1/training/example-0127.png": {
+      "source": ".run/bottle-refinement-v1/training/example-0127.png",
+      "sha256": "1170d1e5d5294047c4765d91613ef83f25b5488f9e969944d6609ace64038003"
+    },
+    "training/bottle_refinement_v1/training/example-4095.png": {
+      "source": ".run/bottle-refinement-v1/training/example-4095.png",
+      "sha256": "2afffc1e867ea1d2906071090b4a2d16b9b184b9c7311ed089b5e1a446527171"
+    },
+    "training/bottle_refinement_v1/development/recipes.npz": {
+      "source": ".run/bottle-refinement-v1/development/recipes.npz",
+      "sha256": "896d9d15bf48b22ca1c99377269ab01cfd81391fd643dadcaac7321033348af8"
+    },
+    "training/bottle_refinement_v1/development/manifest.json": {
+      "source": ".run/bottle-refinement-v1/development/manifest.json",
+      "sha256": "d92ea795999cacc572847794b453f272744a1563f334268c867b345a85848e39"
+    },
+    "training/bottle_refinement_v1/development/audit.json": {
+      "source": ".run/bottle-refinement-v1/development/audit.json",
+      "sha256": "dafcd2b2199d17a2e3820683a1a1114a919684d2c90e57cac3a25c134be842b7"
+    },
+    "training/bottle_refinement_v1/development/source-scene.xml": {
+      "source": ".run/bottle-refinement-v1/development/scene.xml",
+      "sha256": "1445ad749dbddf4983f9d8ee5e9c5da05bfa46c22f678f293ea4a47e82b0fed8"
+    },
+    "training/bottle_refinement_v1/development/example-0000.png": {
+      "source": ".run/bottle-refinement-v1/development/example-0000.png",
+      "sha256": "4757258ff75b25281d6c38f8044c67d7db7a48e73fa027a91ace59291dc6b6d0"
+    },
+    "training/bottle_refinement_v1/development/example-0001.png": {
+      "source": ".run/bottle-refinement-v1/development/example-0001.png",
+      "sha256": "839414fc51b658446173c8686323f496880d61e9ea300bb084611ba72465c3d0"
+    },
+    "training/bottle_refinement_v1/development/example-0007.png": {
+      "source": ".run/bottle-refinement-v1/development/example-0007.png",
+      "sha256": "99c58fc9743882ce1ea13a5ebfe401dee37fab467458b08a1fc0057363e2dfef"
+    },
+    "training/bottle_refinement_v1/development/example-0031.png": {
+      "source": ".run/bottle-refinement-v1/development/example-0031.png",
+      "sha256": "5db6a5ef3e5e571fe5a97056a9f52580f4347270c47932b8275a489f48871f98"
+    },
+    "training/bottle_refinement_v1/development/example-0127.png": {
+      "source": ".run/bottle-refinement-v1/development/example-0127.png",
+      "sha256": "ee718212ac9634278293c944fbd8271ed583e05a37e8a2d5dda90e4db413d7f0"
+    },
+    "training/bottle_refinement_v1/development/example-0511.png": {
+      "source": ".run/bottle-refinement-v1/development/example-0511.png",
+      "sha256": "b152e1fbb1e571ffcfa77e411535be4b524cf147e10ce30e61914f5b15d369ac"
+    },
+    "training/bottle_refinement_v1/evaluation/recipes.npz": {
+      "source": ".run/bottle-refinement-v1/evaluation/recipes.npz",
+      "sha256": "618c7e5e8926bb2976efb092e9dba108a76a8ed3445fa4a7e36ac5dc11989db3"
+    },
+    "training/bottle_refinement_v1/evaluation/manifest.json": {
+      "source": ".run/bottle-refinement-v1/evaluation/manifest.json",
+      "sha256": "f6a5cbedaa36454a9db381c4de3262684e23b71b56085f058c2a151e9b1a2bc9"
+    },
+    "training/bottle_refinement_v1/evaluation/audit.json": {
+      "source": ".run/bottle-refinement-v1/evaluation/audit.json",
+      "sha256": "fd5f73f0ea56165aa0d5dd8047f9fdf56991647bf2535f244ea987dd48844452"
+    },
+    "training/bottle_refinement_v1/evaluation/source-scene.xml": {
+      "source": ".run/bottle-refinement-v1/evaluation/scene.xml",
+      "sha256": "1445ad749dbddf4983f9d8ee5e9c5da05bfa46c22f678f293ea4a47e82b0fed8"
+    },
+    "training/bottle_refinement_v1/evaluation/example-0000.png": {
+      "source": ".run/bottle-refinement-v1/evaluation/example-0000.png",
+      "sha256": "0fe709dca74b0dc407ca77220740f01bd2d8f566c6945fd12bff29d58f9e2eee"
+    },
+    "training/bottle_refinement_v1/evaluation/example-0001.png": {
+      "source": ".run/bottle-refinement-v1/evaluation/example-0001.png",
+      "sha256": "13b83ce0120916c95c55dbb139a90e9ee2720060a2bbf1578b2974565c7adaf4"
+    },
+    "training/bottle_refinement_v1/evaluation/example-0007.png": {
+      "source": ".run/bottle-refinement-v1/evaluation/example-0007.png",
+      "sha256": "ba8c2cd9b796506b08504c108b9dabad6938fe71120a23c12b123602d573591b"
+    },
+    "training/bottle_refinement_v1/evaluation/example-0031.png": {
+      "source": ".run/bottle-refinement-v1/evaluation/example-0031.png",
+      "sha256": "e25bcb9eb8faaf6157635f7f0af257ae4b89e79875fa2a66642da5bfa839f378"
+    },
+    "training/bottle_refinement_v1/evaluation/example-0127.png": {
+      "source": ".run/bottle-refinement-v1/evaluation/example-0127.png",
+      "sha256": "2739a82d4a79280831730ab4c4e43f7bb340a93ea7d03ac205aba962617c964e"
+    },
+    "training/bottle_refinement_v1/evaluation/example-0511.png": {
+      "source": ".run/bottle-refinement-v1/evaluation/example-0511.png",
+      "sha256": "8be246649a86c5fc5acacf35ebfe5507b306e9e35ffb25285c3ecfe56dfafaa1"
+    },
+    "training/bottle_refinement_v1/prepared-training/source-manifest.json": {
+      "source": ".run/bottle-refinement-v1/prepared-training/manifest.json",
+      "sha256": "3e61e025381625108f135e868605fa120439bba3d673348e3599df190260656b"
+    },
+    "training/bottle_refinement_v1/prepared-development/source-manifest.json": {
+      "source": ".run/bottle-refinement-v1/prepared-development/manifest.json",
+      "sha256": "1c235b8433b67fe6129ba4ddce511ea0667316e6e695fe64c47d85d443b77681"
+    }
+  },
+  "prepared_inputs_verified": {
+    "training": {
+      "states": 4096,
+      "crop_count": 24576,
+      "original_npz_sha256": "68a69a0650c47976998cc79786de034eb3dee5481d24836e722be6c87adbf510",
+      "arrays": {
+        "crops": {
+          "shape": [
+            24576,
+            4,
+            64,
+            64
+          ],
+          "dtype": "float16",
+          "array_sha256": "e2b863a586f63976fadfe7c0fbf0e2ccb556f8a782123406cbe5e3e3e10839a9"
+        },
+        "centers": {
+          "shape": [
+            24576,
+            2
+          ],
+          "dtype": "float32",
+          "array_sha256": "a33ecf953a4a9672d28e522d328c22d2c17aeaefc81e31a639a33ff7c1658f2f"
+        },
+        "labels": {
+          "shape": [
+            24576,
+            2
+          ],
+          "dtype": "float32",
+          "array_sha256": "6c7b6828c8f3080976d6c32930563c61a38232f2e4546a9a9ca445f7cda614b1"
+        },
+        "visible": {
+          "shape": [
+            24576
+          ],
+          "dtype": "bool",
+          "array_sha256": "07f46ecd1da49ac3da220b0ac2d9208e58f85f6f40d8822d97c16193f78ad2f1"
+        },
+        "world_points": {
+          "shape": [
+            4096,
+            2,
+            3
+          ],
+          "dtype": "float64",
+          "array_sha256": "4f6052c47b1e67d181816caa3bf7224ebbaa65d55ced708381751f84fad681d8"
+        },
+        "present": {
+          "shape": [
+            4096
+          ],
+          "dtype": "bool",
+          "array_sha256": "85080bc1b868e4e9d96bcae344ad43494f69e5753812677e334e561d828d3b5c"
+        }
+      },
+      "shards": [
+        {
+          "file": "inputs-000.npz",
+          "first_state": 0,
+          "states": 64,
+          "sha256": "af862572298f1b7db2e553ec3ec33428febefd32ae77ae5f989fba5ae99b0a54"
+        },
+        {
+          "file": "inputs-001.npz",
+          "first_state": 64,
+          "states": 64,
+          "sha256": "662ff10a6be6772b4b3c0dc0b004bf4707d06ffa71598fdb018396f5e45ae2c7"
+        },
+        {
+          "file": "inputs-002.npz",
+          "first_state": 128,
+          "states": 64,
+          "sha256": "ed744d77eebd1723ee4c152c1dab915bc1ffaf21f30707e3e68208eea293c17f"
+        },
+        {
+          "file": "inputs-003.npz",
+          "first_state": 192,
+          "states": 64,
+          "sha256": "161235230a053d264e898f35e451a8419f1a95cb939cbdd75031ddbc0fb0e8c6"
+        },
+        {
+          "file": "inputs-004.npz",
+          "first_state": 256,
+          "states": 64,
+          "sha256": "f9cadeb1ea466626e259383036f5b2355f0f2017577ce932f764867582d5b863"
+        },
+        {
+          "file": "inputs-005.npz",
+          "first_state": 320,
+          "states": 64,
+          "sha256": "f8d1f9338e4e67d0a0e4872fecccdddbd37b8c2737287e1e5a476caeec71cce1"
+        },
+        {
+          "file": "inputs-006.npz",
+          "first_state": 384,
+          "states": 64,
+          "sha256": "e45c3e0ee510fe9788efba7c620de7c43ad91663e0122bdb85131213bd5deb12"
+        },
+        {
+          "file": "inputs-007.npz",
+          "first_state": 448,
+          "states": 64,
+          "sha256": "7ad4d5a8139564fd6386607c71f271ed0501ae1329305dd60a72f32e79273a81"
+        },
+        {
+          "file": "inputs-008.npz",
+          "first_state": 512,
+          "states": 64,
+          "sha256": "b3fbc05dd03dfeec8478adc90f6050e4866caa0303b3e63ec644966a60004e3d"
+        },
+        {
+          "file": "inputs-009.npz",
+          "first_state": 576,
+          "states": 64,
+          "sha256": "fb293eee8869d9330256ad6b86ba3d76ef6d4427123f4fd68bf47ddb18877add"
+        },
+        {
+          "file": "inputs-010.npz",
+          "first_state": 640,
+          "states": 64,
+          "sha256": "9ad9d2f8e79107f4d470e796034b3264e2caccbffd4b0477f1c7612ce658c44f"
+        },
+        {
+          "file": "inputs-011.npz",
+          "first_state": 704,
+          "states": 64,
+          "sha256": "3891d973cb72b22325caef5e484ca0c35ba1bb484ac0bd8b93cc8cd1930c2d97"
+        },
+        {
+          "file": "inputs-012.npz",
+          "first_state": 768,
+          "states": 64,
+          "sha256": "b7eda36593f7f04b9f9fa1fa199a4ba727d00fd1d0500e142eefb027521a2454"
+        },
+        {
+          "file": "inputs-013.npz",
+          "first_state": 832,
+          "states": 64,
+          "sha256": "8f36898e58392382cac270971fca99724c5cb2dcda2796a0d13493205ff68f87"
+        },
+        {
+          "file": "inputs-014.npz",
+          "first_state": 896,
+          "states": 64,
+          "sha256": "45934adeae86c58e60a2e3dbb688f739f577bbeaf02ab009a111d7b37af06bf4"
+        },
+        {
+          "file": "inputs-015.npz",
+          "first_state": 960,
+          "states": 64,
+          "sha256": "b1bdf9bbc62b000d781068a983ed7039ca8dfa65f14198b798c8877a4f82bac4"
+        },
+        {
+          "file": "inputs-016.npz",
+          "first_state": 1024,
+          "states": 64,
+          "sha256": "b2567b1e0d94f121b4303f8664b5301102e639a811e20bd6bc003476b3520284"
+        },
+        {
+          "file": "inputs-017.npz",
+          "first_state": 1088,
+          "states": 64,
+          "sha256": "3a2fe31f3d468d7705b7f833452f5f3a6345c22e656c7dde833face5a30f085c"
+        },
+        {
+          "file": "inputs-018.npz",
+          "first_state": 1152,
+          "states": 64,
+          "sha256": "8a9426adbfbf57962fb6b49fef3677747217b9d717133307f3b6816e08663ff6"
+        },
+        {
+          "file": "inputs-019.npz",
+          "first_state": 1216,
+          "states": 64,
+          "sha256": "0aa3e9f52791597527995994ff99559d5bb3b8ff9e13456c19e34be9e3855196"
+        },
+        {
+          "file": "inputs-020.npz",
+          "first_state": 1280,
+          "states": 64,
+          "sha256": "543bd76080530ea684f9a8ebefdf3be1473afea4db7503546290660e9d8dc964"
+        },
+        {
+          "file": "inputs-021.npz",
+          "first_state": 1344,
+          "states": 64,
+          "sha256": "0fa8327fbae399a0267c53b8e7ee0d6626eef88d6bce16d7712c61aab0e758e4"
+        },
+        {
+          "file": "inputs-022.npz",
+          "first_state": 1408,
+          "states": 64,
+          "sha256": "f759d21d31cf61371f102326d7d89b8686af6e62657de5d153473bc8ffcc7f67"
+        },
+        {
+          "file": "inputs-023.npz",
+          "first_state": 1472,
+          "states": 64,
+          "sha256": "65d3cdd2a141f26b842537e6d6441f9ccc847f889424d2f0a5f436c60a460035"
+        },
+        {
+          "file": "inputs-024.npz",
+          "first_state": 1536,
+          "states": 64,
+          "sha256": "586e7de1f1f45f9c92cad38647bea26da2b7debbbc92605390c2a6531281d68f"
+        },
+        {
+          "file": "inputs-025.npz",
+          "first_state": 1600,
+          "states": 64,
+          "sha256": "6e313e8dcc15dd89c7aad26513cf2c63edbb9cba2bd2ab99dba77ce915f72def"
+        },
+        {
+          "file": "inputs-026.npz",
+          "first_state": 1664,
+          "states": 64,
+          "sha256": "2b6fd1d2bbfa5316492c029b65daa2c08c108ba4100a3db86e169f701055ba2e"
+        },
+        {
+          "file": "inputs-027.npz",
+          "first_state": 1728,
+          "states": 64,
+          "sha256": "a6fa47e9799eb021f6b0fc7beb490c0013455f0e48bc0546166a2a87266e32dc"
+        },
+        {
+          "file": "inputs-028.npz",
+          "first_state": 1792,
+          "states": 64,
+          "sha256": "4eabdc8d73347f24ae6032853efd75468eed7375a35340a535a5198586c2de18"
+        },
+        {
+          "file": "inputs-029.npz",
+          "first_state": 1856,
+          "states": 64,
+          "sha256": "e23870d3a100c9c46f436c351e736e49db60ce2a2a3e7dc04790d7654080be74"
+        },
+        {
+          "file": "inputs-030.npz",
+          "first_state": 1920,
+          "states": 64,
+          "sha256": "f1cf14a348575677224b65e36ff6efc68368abf1e3708dbed09fb450a6c6fa97"
+        },
+        {
+          "file": "inputs-031.npz",
+          "first_state": 1984,
+          "states": 64,
+          "sha256": "e8c24ef0bc357dd6630efed127617216c6443358c5e448ed3241de0df3403240"
+        },
+        {
+          "file": "inputs-032.npz",
+          "first_state": 2048,
+          "states": 64,
+          "sha256": "5cdb8dc82ca7afd7acf259f8c88d8464a5981ad6eb3b0e6ffcaad7150d48decb"
+        },
+        {
+          "file": "inputs-033.npz",
+          "first_state": 2112,
+          "states": 64,
+          "sha256": "06d279513434c084d6df9a0f5a3cd9321bb7dfff64990193196191dbfd00053b"
+        },
+        {
+          "file": "inputs-034.npz",
+          "first_state": 2176,
+          "states": 64,
+          "sha256": "6672c937bdef3e1dafbf476259f513c4ef553ce491be3043864664d2870b7eb4"
+        },
+        {
+          "file": "inputs-035.npz",
+          "first_state": 2240,
+          "states": 64,
+          "sha256": "2a44074ff608540276c87185f1152cd258a36ebb4b7743c5001b37df37003b14"
+        },
+        {
+          "file": "inputs-036.npz",
+          "first_state": 2304,
+          "states": 64,
+          "sha256": "41da2b6517119a10b06da973b0d22f10227338118419142fb7ffd59fcca80b96"
+        },
+        {
+          "file": "inputs-037.npz",
+          "first_state": 2368,
+          "states": 64,
+          "sha256": "3240278f61e6f97aae53f328bd9af2e2bd9411ef45e36b6d34822b7091fc376a"
+        },
+        {
+          "file": "inputs-038.npz",
+          "first_state": 2432,
+          "states": 64,
+          "sha256": "858b0c645047246378c1295825e15a4d1b313a54a1f4b8b3d827dff7c78feb8e"
+        },
+        {
+          "file": "inputs-039.npz",
+          "first_state": 2496,
+          "states": 64,
+          "sha256": "23c1d788e65797a35b825b5e092523b977caf15023df6a6d89154433aab166bd"
+        },
+        {
+          "file": "inputs-040.npz",
+          "first_state": 2560,
+          "states": 64,
+          "sha256": "240bce68e2d1bff56275d93ff4ad73a9be8f111dbf89f6e9f3b3edb3fca30598"
+        },
+        {
+          "file": "inputs-041.npz",
+          "first_state": 2624,
+          "states": 64,
+          "sha256": "f21ffcf44aa496e8f781008df92e84401494603cc9718e9abb6b834d761f3258"
+        },
+        {
+          "file": "inputs-042.npz",
+          "first_state": 2688,
+          "states": 64,
+          "sha256": "52a1de39720394dce67357c0843341468c91177a1aa9994b49572bb301d849d2"
+        },
+        {
+          "file": "inputs-043.npz",
+          "first_state": 2752,
+          "states": 64,
+          "sha256": "48785e00111386dd61fd61640046175b33c237529d077081c2c6954f7b87bb2e"
+        },
+        {
+          "file": "inputs-044.npz",
+          "first_state": 2816,
+          "states": 64,
+          "sha256": "18abb313ae63c11aae91b8895b5d6394fde5b1dbe9ccac8f36de5241f2520d9d"
+        },
+        {
+          "file": "inputs-045.npz",
+          "first_state": 2880,
+          "states": 64,
+          "sha256": "909641494e7a5d2d881c683ec6695a1a714d0e226723cbde2c971e22b76976d6"
+        },
+        {
+          "file": "inputs-046.npz",
+          "first_state": 2944,
+          "states": 64,
+          "sha256": "f6c785b7f1874696329f0efa006732efeff652603877142a007f5338102af176"
+        },
+        {
+          "file": "inputs-047.npz",
+          "first_state": 3008,
+          "states": 64,
+          "sha256": "3defe85d416de048cec3830eb7349b1de37868a6054daa6098372ff72e6d9420"
+        },
+        {
+          "file": "inputs-048.npz",
+          "first_state": 3072,
+          "states": 64,
+          "sha256": "e0b900195a5c5690e2a3b9332bb6f66fdf6ceb920ae37ba714d86afd5979624b"
+        },
+        {
+          "file": "inputs-049.npz",
+          "first_state": 3136,
+          "states": 64,
+          "sha256": "527c79f7286d85487ec6cc26067ad8b555df7e5a801b76705c4b41d8ba1dc14a"
+        },
+        {
+          "file": "inputs-050.npz",
+          "first_state": 3200,
+          "states": 64,
+          "sha256": "6de5bc3b5fc38b8e8a26694089d2f155882d34029094f051dc0478a743fb8d8e"
+        },
+        {
+          "file": "inputs-051.npz",
+          "first_state": 3264,
+          "states": 64,
+          "sha256": "9b7559f37ca254207b4216f56b8235192bff045880d59a3802ef2be67b567a4e"
+        },
+        {
+          "file": "inputs-052.npz",
+          "first_state": 3328,
+          "states": 64,
+          "sha256": "f8d30989ea58f4541f0003db0c461a37b7a8ef43d87942e6c7ec55325127c0c0"
+        },
+        {
+          "file": "inputs-053.npz",
+          "first_state": 3392,
+          "states": 64,
+          "sha256": "778ec3cb84cef5c28b0598420354b0a8c4439da007fdc368ce6ac885ff7e2228"
+        },
+        {
+          "file": "inputs-054.npz",
+          "first_state": 3456,
+          "states": 64,
+          "sha256": "87b9ea5a739c1eb6127002f5ada08c6ad21582caf9fed60beb2b4a42a4860ee1"
+        },
+        {
+          "file": "inputs-055.npz",
+          "first_state": 3520,
+          "states": 64,
+          "sha256": "99d42baa19d5dc98eed054aefc8c73ecdea77b3a41487b66740ff99429896786"
+        },
+        {
+          "file": "inputs-056.npz",
+          "first_state": 3584,
+          "states": 64,
+          "sha256": "826e02bc97d18ffd459c4553027facf56c2d3326b78d783baba7fcaafa25bb8d"
+        },
+        {
+          "file": "inputs-057.npz",
+          "first_state": 3648,
+          "states": 64,
+          "sha256": "855ca51496e86285459aa636a14083e62f868c336ef12dceb75d72d7c2cf22bd"
+        },
+        {
+          "file": "inputs-058.npz",
+          "first_state": 3712,
+          "states": 64,
+          "sha256": "ee23083808fcce5cbb1e9468a0975ccbb182a749b8e06763d87f96fd46b97c4b"
+        },
+        {
+          "file": "inputs-059.npz",
+          "first_state": 3776,
+          "states": 64,
+          "sha256": "9f6dd9a8e0007ebc07b3ac4e4266e04d186e761e6804e47d4d8f91d9dadb1244"
+        },
+        {
+          "file": "inputs-060.npz",
+          "first_state": 3840,
+          "states": 64,
+          "sha256": "008004ebe7d301c376c0a2685539f147029df0c83dbf877e8837041e0ca80526"
+        },
+        {
+          "file": "inputs-061.npz",
+          "first_state": 3904,
+          "states": 64,
+          "sha256": "6d4feb338e157efc7db58c90e106e890ca5aa838bf7931fdfc04dfa40d4c8628"
+        },
+        {
+          "file": "inputs-062.npz",
+          "first_state": 3968,
+          "states": 64,
+          "sha256": "7925945573edf02cb3375078d51ed97a16dd1643237c0a7c54f422ad93ff81b3"
+        },
+        {
+          "file": "inputs-063.npz",
+          "first_state": 4032,
+          "states": 64,
+          "sha256": "f3ace66384edd1c951b8e16122a7d26da18a9f5ca227d5254766de07b5deb312"
+        }
+      ],
+      "all_arrays_verified_identical": true,
+      "reconstruction": "Concatenate each named array across the ordered shards on axis zero. All dtypes, shapes and logical-array SHA-256 digests are declared. The inputs include exact FP16 crop pixels, centers, labels, visibility and privileged scoring-only truth."
+    },
+    "development": {
+      "states": 512,
+      "crop_count": 3072,
+      "original_npz_sha256": "9dfbb0edb9a11748b469416398256c242c513d47bd31dc1c4688c18698f84d86",
+      "arrays": {
+        "crops": {
+          "shape": [
+            3072,
+            4,
+            64,
+            64
+          ],
+          "dtype": "float16",
+          "array_sha256": "701ff2ef20eeca9dbe36df69fa13ccde091894a4bd7cb7e61382b560ed5dda5f"
+        },
+        "centers": {
+          "shape": [
+            3072,
+            2
+          ],
+          "dtype": "float32",
+          "array_sha256": "cb283f469e67807442c025f9d1e7e239220a5707519ecbfff952c44d345bbb7d"
+        },
+        "labels": {
+          "shape": [
+            3072,
+            2
+          ],
+          "dtype": "float32",
+          "array_sha256": "f93226d784e8b7e7d16b7c5d2d8abe9691c3427fdadab73eed4824ab6e28292f"
+        },
+        "visible": {
+          "shape": [
+            3072
+          ],
+          "dtype": "bool",
+          "array_sha256": "0a72d7d6c9e8e3cfa61dcb2cfe46316f11c54edd3d9aa7e1c17202b89e536a8c"
+        },
+        "world_points": {
+          "shape": [
+            512,
+            2,
+            3
+          ],
+          "dtype": "float64",
+          "array_sha256": "ca4a3a36e92d515b95b15bdc1fdcaa80da1667ce36a76f8e3d0a5cb7b9cc66a6"
+        },
+        "present": {
+          "shape": [
+            512
+          ],
+          "dtype": "bool",
+          "array_sha256": "8cf7fbe5fd58192b6b29a7e1df6e1825b099d75c6c9ca7fbb35408fe1fc6ed08"
+        }
+      },
+      "shards": [
+        {
+          "file": "inputs-000.npz",
+          "first_state": 0,
+          "states": 64,
+          "sha256": "1eaec9b53825552f35b776993d108e3d29c3796a148e310f9dac81293c33c2c3"
+        },
+        {
+          "file": "inputs-001.npz",
+          "first_state": 64,
+          "states": 64,
+          "sha256": "89dca62f5c23c555b5a2a6fe8fd58106c4af2d6b510de584bb737b3118370073"
+        },
+        {
+          "file": "inputs-002.npz",
+          "first_state": 128,
+          "states": 64,
+          "sha256": "d87c54c78b7731aff9b8e5f3b034d6925168f720b8b32af4eead76811265a459"
+        },
+        {
+          "file": "inputs-003.npz",
+          "first_state": 192,
+          "states": 64,
+          "sha256": "93611d848741f88b085228cdb11f45c72d9983f8708e21dc9d22f087b8df7161"
+        },
+        {
+          "file": "inputs-004.npz",
+          "first_state": 256,
+          "states": 64,
+          "sha256": "5226ba6ea188a7fe0697c2ec2f35b18bba9ecd9e076b2a003711084e2bdff138"
+        },
+        {
+          "file": "inputs-005.npz",
+          "first_state": 320,
+          "states": 64,
+          "sha256": "c3c2313942d1233cd9572abc0e4394537efad2ebb1807df46c268e28cb834afa"
+        },
+        {
+          "file": "inputs-006.npz",
+          "first_state": 384,
+          "states": 64,
+          "sha256": "4fd06a64ff89d2beb26a1661a795c1093b211bf9717bd618c80123eeae232d0a"
+        },
+        {
+          "file": "inputs-007.npz",
+          "first_state": 448,
+          "states": 64,
+          "sha256": "9fdf55f815a7d2b7cd2fb109419119e3594344480eed7444fc3344810c213a9b"
+        }
+      ],
+      "all_arrays_verified_identical": true,
+      "reconstruction": "Concatenate each named array across the ordered shards on axis zero. All dtypes, shapes and logical-array SHA-256 digests are declared. The inputs include exact FP16 crop pixels, centers, labels, visibility and privileged scoring-only truth."
+    }
+  },
+  "original_physical_reserved_stages_started": false,
+  "development": {
+    "states": 512,
+    "present": 449,
+    "accepted_present": 433,
+    "absent": 63,
+    "false_accepted_absent": 0,
+    "accepted_fraction": 0.9643652561247216,
+    "p95_error_mm": 1.322130995753602,
+    "maximum_error_mm": 3.9706016951494623,
+    "gate_passed": true
+  },
+  "fresh_perception": {
+    "states": 512,
+    "present": 456,
+    "accepted_present": 433,
+    "absent": 56,
+    "false_accepted_absent": 0,
+    "accepted_fraction": 0.9495614035087719,
+    "p95_error_mm": 1.493560002081611,
+    "maximum_error_mm": 4.427195113147966,
+    "gate_passed": false
+  },
+  "promoted": false,
+  "scope": "All 5,120 observation recipes/labels and pixel hashes retained; all exact fit/development crop arrays preserved and compared. Original raw RGB remains local. This packaging audit does not repeat physical trials."
+}

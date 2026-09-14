@@ -1,0 +1,444 @@
+{
+  "states": 4096,
+  "crop_count": 24576,
+  "original_npz_sha256": "68a69a0650c47976998cc79786de034eb3dee5481d24836e722be6c87adbf510",
+  "arrays": {
+    "crops": {
+      "shape": [
+        24576,
+        4,
+        64,
+        64
+      ],
+      "dtype": "float16",
+      "array_sha256": "e2b863a586f63976fadfe7c0fbf0e2ccb556f8a782123406cbe5e3e3e10839a9"
+    },
+    "centers": {
+      "shape": [
+        24576,
+        2
+      ],
+      "dtype": "float32",
+      "array_sha256": "a33ecf953a4a9672d28e522d328c22d2c17aeaefc81e31a639a33ff7c1658f2f"
+    },
+    "labels": {
+      "shape": [
+        24576,
+        2
+      ],
+      "dtype": "float32",
+      "array_sha256": "6c7b6828c8f3080976d6c32930563c61a38232f2e4546a9a9ca445f7cda614b1"
+    },
+    "visible": {
+      "shape": [
+        24576
+      ],
+      "dtype": "bool",
+      "array_sha256": "07f46ecd1da49ac3da220b0ac2d9208e58f85f6f40d8822d97c16193f78ad2f1"
+    },
+    "world_points": {
+      "shape": [
+        4096,
+        2,
+        3
+      ],
+      "dtype": "float64",
+      "array_sha256": "4f6052c47b1e67d181816caa3bf7224ebbaa65d55ced708381751f84fad681d8"
+    },
+    "present": {
+      "shape": [
+        4096
+      ],
+      "dtype": "bool",
+      "array_sha256": "85080bc1b868e4e9d96bcae344ad43494f69e5753812677e334e561d828d3b5c"
+    }
+  },
+  "shards": [
+    {
+      "file": "inputs-000.npz",
+      "first_state": 0,
+      "states": 64,
+      "sha256": "af862572298f1b7db2e553ec3ec33428febefd32ae77ae5f989fba5ae99b0a54"
+    },
+    {
+      "file": "inputs-001.npz",
+      "first_state": 64,
+      "states": 64,
+      "sha256": "662ff10a6be6772b4b3c0dc0b004bf4707d06ffa71598fdb018396f5e45ae2c7"
+    },
+    {
+      "file": "inputs-002.npz",
+      "first_state": 128,
+      "states": 64,
+      "sha256": "ed744d77eebd1723ee4c152c1dab915bc1ffaf21f30707e3e68208eea293c17f"
+    },
+    {
+      "file": "inputs-003.npz",
+      "first_state": 192,
+      "states": 64,
+      "sha256": "161235230a053d264e898f35e451a8419f1a95cb939cbdd75031ddbc0fb0e8c6"
+    },
+    {
+      "file": "inputs-004.npz",
+      "first_state": 256,
+      "states": 64,
+      "sha256": "f9cadeb1ea466626e259383036f5b2355f0f2017577ce932f764867582d5b863"
+    },
+    {
+      "file": "inputs-005.npz",
+      "first_state": 320,
+      "states": 64,
+      "sha256": "f8d1f9338e4e67d0a0e4872fecccdddbd37b8c2737287e1e5a476caeec71cce1"
+    },
+    {
+      "file": "inputs-006.npz",
+      "first_state": 384,
+      "states": 64,
+      "sha256": "e45c3e0ee510fe9788efba7c620de7c43ad91663e0122bdb85131213bd5deb12"
+    },
+    {
+      "file": "inputs-007.npz",
+      "first_state": 448,
+      "states": 64,
+      "sha256": "7ad4d5a8139564fd6386607c71f271ed0501ae1329305dd60a72f32e79273a81"
+    },
+    {
+      "file": "inputs-008.npz",
+      "first_state": 512,
+      "states": 64,
+      "sha256": "b3fbc05dd03dfeec8478adc90f6050e4866caa0303b3e63ec644966a60004e3d"
+    },
+    {
+      "file": "inputs-009.npz",
+      "first_state": 576,
+      "states": 64,
+      "sha256": "fb293eee8869d9330256ad6b86ba3d76ef6d4427123f4fd68bf47ddb18877add"
+    },
+    {
+      "file": "inputs-010.npz",
+      "first_state": 640,
+      "states": 64,
+      "sha256": "9ad9d2f8e79107f4d470e796034b3264e2caccbffd4b0477f1c7612ce658c44f"
+    },
+    {
+      "file": "inputs-011.npz",
+      "first_state": 704,
+      "states": 64,
+      "sha256": "3891d973cb72b22325caef5e484ca0c35ba1bb484ac0bd8b93cc8cd1930c2d97"
+    },
+    {
+      "file": "inputs-012.npz",
+      "first_state": 768,
+      "states": 64,
+      "sha256": "b7eda36593f7f04b9f9fa1fa199a4ba727d00fd1d0500e142eefb027521a2454"
+    },
+    {
+      "file": "inputs-013.npz",
+      "first_state": 832,
+      "states": 64,
+      "sha256": "8f36898e58392382cac270971fca99724c5cb2dcda2796a0d13493205ff68f87"
+    },
+    {
+      "file": "inputs-014.npz",
+      "first_state": 896,
+      "states": 64,
+      "sha256": "45934adeae86c58e60a2e3dbb688f739f577bbeaf02ab009a111d7b37af06bf4"
+    },
+    {
+      "file": "inputs-015.npz",
+      "first_state": 960,
+      "states": 64,
+      "sha256": "b1bdf9bbc62b000d781068a983ed7039ca8dfa65f14198b798c8877a4f82bac4"
+    },
+    {
+      "file": "inputs-016.npz",
+      "first_state": 1024,
+      "states": 64,
+      "sha256": "b2567b1e0d94f121b4303f8664b5301102e639a811e20bd6bc003476b3520284"
+    },
+    {
+      "file": "inputs-017.npz",
+      "first_state": 1088,
+      "states": 64,
+      "sha256": "3a2fe31f3d468d7705b7f833452f5f3a6345c22e656c7dde833face5a30f085c"
+    },
+    {
+      "file": "inputs-018.npz",
+      "first_state": 1152,
+      "states": 64,
+      "sha256": "8a9426adbfbf57962fb6b49fef3677747217b9d717133307f3b6816e08663ff6"
+    },
+    {
+      "file": "inputs-019.npz",
+      "first_state": 1216,
+      "states": 64,
+      "sha256": "0aa3e9f52791597527995994ff99559d5bb3b8ff9e13456c19e34be9e3855196"
+    },
+    {
+      "file": "inputs-020.npz",
+      "first_state": 1280,
+      "states": 64,
+      "sha256": "543bd76080530ea684f9a8ebefdf3be1473afea4db7503546290660e9d8dc964"
+    },
+    {
+      "file": "inputs-021.npz",
+      "first_state": 1344,
+      "states": 64,
+      "sha256": "0fa8327fbae399a0267c53b8e7ee0d6626eef88d6bce16d7712c61aab0e758e4"
+    },
+    {
+      "file": "inputs-022.npz",
+      "first_state": 1408,
+      "states": 64,
+      "sha256": "f759d21d31cf61371f102326d7d89b8686af6e62657de5d153473bc8ffcc7f67"
+    },
+    {
+      "file": "inputs-023.npz",
+      "first_state": 1472,
+      "states": 64,
+      "sha256": "65d3cdd2a141f26b842537e6d6441f9ccc847f889424d2f0a5f436c60a460035"
+    },
+    {
+      "file": "inputs-024.npz",
+      "first_state": 1536,
+      "states": 64,
+      "sha256": "586e7de1f1f45f9c92cad38647bea26da2b7debbbc92605390c2a6531281d68f"
+    },
+    {
+      "file": "inputs-025.npz",
+      "first_state": 1600,
+      "states": 64,
+      "sha256": "6e313e8dcc15dd89c7aad26513cf2c63edbb9cba2bd2ab99dba77ce915f72def"
+    },
+    {
+      "file": "inputs-026.npz",
+      "first_state": 1664,
+      "states": 64,
+      "sha256": "2b6fd1d2bbfa5316492c029b65daa2c08c108ba4100a3db86e169f701055ba2e"
+    },
+    {
+      "file": "inputs-027.npz",
+      "first_state": 1728,
+      "states": 64,
+      "sha256": "a6fa47e9799eb021f6b0fc7beb490c0013455f0e48bc0546166a2a87266e32dc"
+    },
+    {
+      "file": "inputs-028.npz",
+      "first_state": 1792,
+      "states": 64,
+      "sha256": "4eabdc8d73347f24ae6032853efd75468eed7375a35340a535a5198586c2de18"
+    },
+    {
+      "file": "inputs-029.npz",
+      "first_state": 1856,
+      "states": 64,
+      "sha256": "e23870d3a100c9c46f436c351e736e49db60ce2a2a3e7dc04790d7654080be74"
+    },
+    {
+      "file": "inputs-030.npz",
+      "first_state": 1920,
+      "states": 64,
+      "sha256": "f1cf14a348575677224b65e36ff6efc68368abf1e3708dbed09fb450a6c6fa97"
+    },
+    {
+      "file": "inputs-031.npz",
+      "first_state": 1984,
+      "states": 64,
+      "sha256": "e8c24ef0bc357dd6630efed127617216c6443358c5e448ed3241de0df3403240"
+    },
+    {
+      "file": "inputs-032.npz",
+      "first_state": 2048,
+      "states": 64,
+      "sha256": "5cdb8dc82ca7afd7acf259f8c88d8464a5981ad6eb3b0e6ffcaad7150d48decb"
+    },
+    {
+      "file": "inputs-033.npz",
+      "first_state": 2112,
+      "states": 64,
+      "sha256": "06d279513434c084d6df9a0f5a3cd9321bb7dfff64990193196191dbfd00053b"
+    },
+    {
+      "file": "inputs-034.npz",
+      "first_state": 2176,
+      "states": 64,
+      "sha256": "6672c937bdef3e1dafbf476259f513c4ef553ce491be3043864664d2870b7eb4"
+    },
+    {
+      "file": "inputs-035.npz",
+      "first_state": 2240,
+      "states": 64,
+      "sha256": "2a44074ff608540276c87185f1152cd258a36ebb4b7743c5001b37df37003b14"
+    },
+    {
+      "file": "inputs-036.npz",
+      "first_state": 2304,
+      "states": 64,
+      "sha256": "41da2b6517119a10b06da973b0d22f10227338118419142fb7ffd59fcca80b96"
+    },
+    {
+      "file": "inputs-037.npz",
+      "first_state": 2368,
+      "states": 64,
+      "sha256": "3240278f61e6f97aae53f328bd9af2e2bd9411ef45e36b6d34822b7091fc376a"
+    },
+    {
+      "file": "inputs-038.npz",
+      "first_state": 2432,
+      "states": 64,
+      "sha256": "858b0c645047246378c1295825e15a4d1b313a54a1f4b8b3d827dff7c78feb8e"
+    },
+    {
+      "file": "inputs-039.npz",
+      "first_state": 2496,
+      "states": 64,
+      "sha256": "23c1d788e65797a35b825b5e092523b977caf15023df6a6d89154433aab166bd"
+    },
+    {
+      "file": "inputs-040.npz",
+      "first_state": 2560,
+      "states": 64,
+      "sha256": "240bce68e2d1bff56275d93ff4ad73a9be8f111dbf89f6e9f3b3edb3fca30598"
+    },
+    {
+      "file": "inputs-041.npz",
+      "first_state": 2624,
+      "states": 64,
+      "sha256": "f21ffcf44aa496e8f781008df92e84401494603cc9718e9abb6b834d761f3258"
+    },
+    {
+      "file": "inputs-042.npz",
+      "first_state": 2688,
+      "states": 64,
+      "sha256": "52a1de39720394dce67357c0843341468c91177a1aa9994b49572bb301d849d2"
+    },
+    {
+      "file": "inputs-043.npz",
+      "first_state": 2752,
+      "states": 64,
+      "sha256": "48785e00111386dd61fd61640046175b33c237529d077081c2c6954f7b87bb2e"
+    },
+    {
+      "file": "inputs-044.npz",
+      "first_state": 2816,
+      "states": 64,
+      "sha256": "18abb313ae63c11aae91b8895b5d6394fde5b1dbe9ccac8f36de5241f2520d9d"
+    },
+    {
+      "file": "inputs-045.npz",
+      "first_state": 2880,
+      "states": 64,
+      "sha256": "909641494e7a5d2d881c683ec6695a1a714d0e226723cbde2c971e22b76976d6"
+    },
+    {
+      "file": "inputs-046.npz",
+      "first_state": 2944,
+      "states": 64,
+      "sha256": "f6c785b7f1874696329f0efa006732efeff652603877142a007f5338102af176"
+    },
+    {
+      "file": "inputs-047.npz",
+      "first_state": 3008,
+      "states": 64,
+      "sha256": "3defe85d416de048cec3830eb7349b1de37868a6054daa6098372ff72e6d9420"
+    },
+    {
+      "file": "inputs-048.npz",
+      "first_state": 3072,
+      "states": 64,
+      "sha256": "e0b900195a5c5690e2a3b9332bb6f66fdf6ceb920ae37ba714d86afd5979624b"
+    },
+    {
+      "file": "inputs-049.npz",
+      "first_state": 3136,
+      "states": 64,
+      "sha256": "527c79f7286d85487ec6cc26067ad8b555df7e5a801b76705c4b41d8ba1dc14a"
+    },
+    {
+      "file": "inputs-050.npz",
+      "first_state": 3200,
+      "states": 64,
+      "sha256": "6de5bc3b5fc38b8e8a26694089d2f155882d34029094f051dc0478a743fb8d8e"
+    },
+    {
+      "file": "inputs-051.npz",
+      "first_state": 3264,
+      "states": 64,
+      "sha256": "9b7559f37ca254207b4216f56b8235192bff045880d59a3802ef2be67b567a4e"
+    },
+    {
+      "file": "inputs-052.npz",
+      "first_state": 3328,
+      "states": 64,
+      "sha256": "f8d30989ea58f4541f0003db0c461a37b7a8ef43d87942e6c7ec55325127c0c0"
+    },
+    {
+      "file": "inputs-053.npz",
+      "first_state": 3392,
+      "states": 64,
+      "sha256": "778ec3cb84cef5c28b0598420354b0a8c4439da007fdc368ce6ac885ff7e2228"
+    },
+    {
+      "file": "inputs-054.npz",
+      "first_state": 3456,
+      "states": 64,
+      "sha256": "87b9ea5a739c1eb6127002f5ada08c6ad21582caf9fed60beb2b4a42a4860ee1"
+    },
+    {
+      "file": "inputs-055.npz",
+      "first_state": 3520,
+      "states": 64,
+      "sha256": "99d42baa19d5dc98eed054aefc8c73ecdea77b3a41487b66740ff99429896786"
+    },
+    {
+      "file": "inputs-056.npz",
+      "first_state": 3584,
+      "states": 64,
+      "sha256": "826e02bc97d18ffd459c4553027facf56c2d3326b78d783baba7fcaafa25bb8d"
+    },
+    {
+      "file": "inputs-057.npz",
+      "first_state": 3648,
+      "states": 64,
+      "sha256": "855ca51496e86285459aa636a14083e62f868c336ef12dceb75d72d7c2cf22bd"
+    },
+    {
+      "file": "inputs-058.npz",
+      "first_state": 3712,
+      "states": 64,
+      "sha256": "ee23083808fcce5cbb1e9468a0975ccbb182a749b8e06763d87f96fd46b97c4b"
+    },
+    {
+      "file": "inputs-059.npz",
+      "first_state": 3776,
+      "states": 64,
+      "sha256": "9f6dd9a8e0007ebc07b3ac4e4266e04d186e761e6804e47d4d8f91d9dadb1244"
+    },
+    {
+      "file": "inputs-060.npz",
+      "first_state": 3840,
+      "states": 64,
+      "sha256": "008004ebe7d301c376c0a2685539f147029df0c83dbf877e8837041e0ca80526"
+    },
+    {
+      "file": "inputs-061.npz",
+      "first_state": 3904,
+      "states": 64,
+      "sha256": "6d4feb338e157efc7db58c90e106e890ca5aa838bf7931fdfc04dfa40d4c8628"
+    },
+    {
+      "file": "inputs-062.npz",
+      "first_state": 3968,
+      "states": 64,
+      "sha256": "7925945573edf02cb3375078d51ed97a16dd1643237c0a7c54f422ad93ff81b3"
+    },
+    {
+      "file": "inputs-063.npz",
+      "first_state": 4032,
+      "states": 64,
+      "sha256": "f3ace66384edd1c951b8e16122a7d26da18a9f5ca227d5254766de07b5deb312"
+    }
+  ],
+  "all_arrays_verified_identical": true,
+  "reconstruction": "Concatenate each named array across the ordered shards on axis zero. All dtypes, shapes and logical-array SHA-256 digests are declared. The inputs include exact FP16 crop pixels, centers, labels, visibility and privileged scoring-only truth."
+}

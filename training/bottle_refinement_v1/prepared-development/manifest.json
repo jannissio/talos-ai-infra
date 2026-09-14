@@ -1,0 +1,108 @@
+{
+  "states": 512,
+  "crop_count": 3072,
+  "original_npz_sha256": "9dfbb0edb9a11748b469416398256c242c513d47bd31dc1c4688c18698f84d86",
+  "arrays": {
+    "crops": {
+      "shape": [
+        3072,
+        4,
+        64,
+        64
+      ],
+      "dtype": "float16",
+      "array_sha256": "701ff2ef20eeca9dbe36df69fa13ccde091894a4bd7cb7e61382b560ed5dda5f"
+    },
+    "centers": {
+      "shape": [
+        3072,
+        2
+      ],
+      "dtype": "float32",
+      "array_sha256": "cb283f469e67807442c025f9d1e7e239220a5707519ecbfff952c44d345bbb7d"
+    },
+    "labels": {
+      "shape": [
+        3072,
+        2
+      ],
+      "dtype": "float32",
+      "array_sha256": "f93226d784e8b7e7d16b7c5d2d8abe9691c3427fdadab73eed4824ab6e28292f"
+    },
+    "visible": {
+      "shape": [
+        3072
+      ],
+      "dtype": "bool",
+      "array_sha256": "0a72d7d6c9e8e3cfa61dcb2cfe46316f11c54edd3d9aa7e1c17202b89e536a8c"
+    },
+    "world_points": {
+      "shape": [
+        512,
+        2,
+        3
+      ],
+      "dtype": "float64",
+      "array_sha256": "ca4a3a36e92d515b95b15bdc1fdcaa80da1667ce36a76f8e3d0a5cb7b9cc66a6"
+    },
+    "present": {
+      "shape": [
+        512
+      ],
+      "dtype": "bool",
+      "array_sha256": "8cf7fbe5fd58192b6b29a7e1df6e1825b099d75c6c9ca7fbb35408fe1fc6ed08"
+    }
+  },
+  "shards": [
+    {
+      "file": "inputs-000.npz",
+      "first_state": 0,
+      "states": 64,
+      "sha256": "1eaec9b53825552f35b776993d108e3d29c3796a148e310f9dac81293c33c2c3"
+    },
+    {
+      "file": "inputs-001.npz",
+      "first_state": 64,
+      "states": 64,
+      "sha256": "89dca62f5c23c555b5a2a6fe8fd58106c4af2d6b510de584bb737b3118370073"
+    },
+    {
+      "file": "inputs-002.npz",
+      "first_state": 128,
+      "states": 64,
+      "sha256": "d87c54c78b7731aff9b8e5f3b034d6925168f720b8b32af4eead76811265a459"
+    },
+    {
+      "file": "inputs-003.npz",
+      "first_state": 192,
+      "states": 64,
+      "sha256": "93611d848741f88b085228cdb11f45c72d9983f8708e21dc9d22f087b8df7161"
+    },
+    {
+      "file": "inputs-004.npz",
+      "first_state": 256,
+      "states": 64,
+      "sha256": "5226ba6ea188a7fe0697c2ec2f35b18bba9ecd9e076b2a003711084e2bdff138"
+    },
+    {
+      "file": "inputs-005.npz",
+      "first_state": 320,
+      "states": 64,
+      "sha256": "c3c2313942d1233cd9572abc0e4394537efad2ebb1807df46c268e28cb834afa"
+    },
+    {
+      "file": "inputs-006.npz",
+      "first_state": 384,
+      "states": 64,
+      "sha256": "4fd06a64ff89d2beb26a1661a795c1093b211bf9717bd618c80123eeae232d0a"
+    },
+    {
+      "file": "inputs-007.npz",
+      "first_state": 448,
+      "states": 64,
+      "sha256": "9fdf55f815a7d2b7cd2fb109419119e3594344480eed7444fc3344810c213a9b"
+    }
+  ],
+  "all_arrays_verified_identical": true,
+  "reconstruction": "Concatenate each named array across the ordered shards on axis zero. All dtypes, shapes and logical-array SHA-256 digests are declared. The inputs include exact FP16 crop pixels, centers, labels, visibility and privileged scoring-only truth."
+}

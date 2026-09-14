@@ -94,6 +94,14 @@ def declare(protocol):
     print({'physical_integration_sha256': sha(integration_path(p)), 'maximum_trials': 90}, flush=True)
 
 
+def bottle_destination(layout):
+    explicit = next((t['position_m'][:2] for t in layout['targets'] if t['object_id'] == 'bottle'), None)
+    if explicit is not None:
+        return list(explicit)
+    initial = next(o['initial_position_m'] for o in layout['objects'] if o['id'] == 'bottle')
+    return [initial[0]+.07, initial[1]-.04]
+
+
 def setup(p, spec, seed, split, folder):
     xml, layout = build_scene(seed=seed, scenario='dinner', dinner_preset='task')
     model = mujoco.MjModel.from_xml_string(xml)
@@ -103,7 +111,7 @@ def setup(p, spec, seed, split, folder):
     data.ctrl[:] = HOME*2
     address = int(model.joint('bottle_free').qposadr[0])
     if split == 'regression':
-        destination = next(t['position_m'][:2] for t in layout['targets'] if t['object_id'] == 'bottle')
+        destination = bottle_destination(layout)
         source = data.qpos[address:address+7].copy()
     else:
         rng = np.random.default_rng(seed)
@@ -149,6 +157,11 @@ def trial(args):
             raise ValueError('Reserved physical trials require the passing, frozen development gate.')
     root = ROOT / p['raw_root'] / 'physical' / args.split
     folder = root / f'{args.seed}-{args.mode}'
+    return execute_trial(p, spec, args, folder)
+
+
+def execute_trial(p, spec, args, folder, setup_function=setup):
+    """Shared mechanics; each caller must enforce its own frozen experiment gate."""
     if folder.exists():
         raise FileExistsError('Preserve every physical attempt.')
     preflight = space(p, folder, 24*1024**2)
@@ -166,7 +179,7 @@ def trial(args):
         'scope': spec['scope']}
     image_seconds = 0.
     try:
-        model, data, layout, destination, state = setup(p, spec, args.seed, args.split, folder)
+        model, data, layout, destination, state = setup_function(p, spec, args.seed, args.split, folder)
         report.update(setup=state, destination_m=destination, layout=layout)
         target = data.ctrl.copy()
         initial_others = {o['id']: data.body(o['id']).xpos.copy() for o in layout['objects'] if o['id'] != 'bottle'}
