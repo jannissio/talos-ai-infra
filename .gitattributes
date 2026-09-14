@@ -26,9 +26,11 @@
 models/bottle_relays/** -text whitespace=cr-at-eol
 models/dinner_suite/** -text whitespace=cr-at-eol
 models/spoon_release_v1/** -text whitespace=cr-at-eol
+models/mug_release_v1/** -text whitespace=cr-at-eol
 training/bottle_relays/** -text whitespace=cr-at-eol
 training/dinner_suite/** -text whitespace=cr-at-eol
 training/spoon_release_v1/** -text whitespace=cr-at-eol
+training/mug_release_v1/** -text whitespace=cr-at-eol
 models/bottle_servo_v1/** -text whitespace=cr-at-eol
 training/bottle_servo_v1/** -text whitespace=cr-at-eol
 docs/robotics/evidence/** -text whitespace=cr-at-eol
@@ -41,5 +43,7 @@ docs/robotics/evidence/rgb-servo-v5/**/scene.xml -whitespace
 docs/robotics/evidence/rgb-servo-observer-camera-v1/validation/scene.xml -whitespace
 docs/robotics/evidence/composed-dinner-v1/**/scene.xml -whitespace
 docs/robotics/evidence/spoon-release-v1/**/scene.xml -whitespace
+docs/robotics/evidence/mug-release-v1/**/scene.xml -whitespace
 training/bottle_servo_v1/motion/**/scene.xml -whitespace
 training/spoon_release_v1/**/scene.xml -whitespace
+training/mug_release_v1/**/scene.xml -whitespace
