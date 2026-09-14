@@ -2,6 +2,8 @@
 
 Prepared September 13. Internal completion target: **September 14, 18:00 CEST**, with time afterward for the user's review and corrections. The assistant must **never click the final submission button**. The user will submit personally.
 
+September 14 deadline recheck: the organizer's [event banner and schedule](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon) explicitly give **September 16, 20:30 CEST**. Keep the earlier September 14 handover target. The online track continues to name Core Ultra Series 2/3. The draft's application step, URLs and 1,962-character additional information remain present; no final action was taken.
+
 ## Ready for review
 
 - [Saved submission text and media](../../submission/final-v6/PROJECT.md): all three form steps and required attachments are saved. Supplementary dinner and relay videos include every frozen trial. The form's filled-fields percentage is not submission confirmation.
@@ -23,6 +25,8 @@ Prepared September 13. Internal completion target: **September 14, 18:00 CEST**,
 - Development is on `codex/final-submission`, including preserved V1 evidence revision `1a27b0b` and the subsequent V2 routing/Intel-verifier preparation. Use the latest privately pushed revision of this branch. The hosted baseline remains unchanged.
 
 ## Required before the public release
+
+The [first physical mug integration](../robotics/evidence/mug-visual-correction-v1/README.md) completes all 36 attempts and fails before correction because of renderer setup. Baseline passes all 12 workflows; all 24 experimental runs refuse their first camera input. Exact saved-state diagnosis verifies the setup repair, and a separate V2 protocol is running fresh scenes with unchanged controller/weights. All V1 failures and 63,734 state frames are packaged and verified. No selected-model or submission claim changes follow yet.
 
 The latest [joint-limited motor V2](../robotics/evidence/mug-correction-motor-v2/README.md) passes all 1,024 fresh offline cases at 0.061 mm p95 / 0.131 mm maximum, with exact callable CPU reproduction. Every earlier sampled position remains represented, but difficult poses use shorter steps. This is a motor prerequisite; contact-physics integration and corrective benefit remain untested. The selected robot and hosted demo are unchanged.
 

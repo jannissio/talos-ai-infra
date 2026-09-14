@@ -1,10 +1,12 @@
 # Talos completion checklist
 
-Updated September 14, 2026. Finish and hand over by **September 14**. The user works September 15. The public dashboard checked September 13 describes September 10–16 and shows submissions open; that does not extend our internal target.
+Updated September 14, 2026. Finish and hand over by **September 14, 18:00 CEST**. The user works September 15. The organizer's event page and schedule checked September 14 explicitly give **September 16, 20:30 CEST** as the submission deadline; our earlier handover target remains unchanged.
 
 This is the active development and release plan. It supersedes the narrower scope decision in `RELEASE_PLAN_2026-09-14.md`. Preparing files or stopping an experiment does not complete the full submission goal.
 
 ## Sources checked now
+
+- September 14 recheck: the event page's deadline banner and schedule agree on September 16, 20:30 CEST. The expanded Intel online track still requires Core Ultra Series 2/3, and the guidelines require a public repository, demo URL, descriptions/tags, cover, video and slides. Original/MIT-compliant wording is unchanged. The signed-in draft's application step still has the repository/demo links and saved 1,962-character additional information; no final action was taken.
 
 - [Intel online challenge PDF](https://drive.google.com/file/d/1xSisqTQUAFQiLOpjLZrCVTCsQi4bMCpO/view), all five pages read in the browser September 13.
 - [Live event dashboard](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon/live), September 13: submissions open, online September 10–16.
@@ -64,6 +66,8 @@ The PDF requires an end-to-end perception/language/action workflow. Its examples
 7. **Package, publish and submit.** Produce versioned assets, validate links/form fields, inspect credentials/metadata, publish sanitized release, prepare the user's upload and record submission confirmation.
 
 ## Acceptance and storage rules
+
+The first [physical mug correction comparison](../robotics/evidence/mug-visual-correction-v1/README.md) completes all 36 workflows, preserving 63,734 frames: baseline 6/6 per preset; both experimental modes 0/6 because renderer replacement yields black images before movement. No correction query occurs. An independent no-step diagnostic restores exact images/actions by closing the old renderer first. All 298 core package artifacts pass verification. A separate V2 protocol is now running new scenes with that setup repair and unchanged control settings; it has no final result or promotion yet.
 
 Latest motor prerequisite: [joint-limited V2](../robotics/evidence/mug-correction-motor-v2/README.md) retains all earlier configurations, passes all input labels, both development checkpoints, CPU export and 1,024/1,024 fresh offline cases (0.061 mm p95 / 0.131 mm maximum relative to scaled steps). The callable package reproduces every output exactly. No physical correction or model promotion follows yet; a separate live-versus-frozen comparison is next. V1 remains stopped and preserved.
 

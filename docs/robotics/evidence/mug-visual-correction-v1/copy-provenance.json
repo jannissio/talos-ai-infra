@@ -1,0 +1,1829 @@
+{
+  "preflight": {
+    "free_bytes": 554028658688,
+    "estimated_additional_bytes": 66864302,
+    "reserve_bytes": 10737418240
+  },
+  "entries": [
+    {
+      "file": "attempts/test-runner-1/incident.json",
+      "source": ".run/mug-visual-correction-v1/attempts/test-runner-1/incident.json",
+      "source_sha256": "fc729e889544b611aab54789132047b0ab9c857f2da7338449555617826d0a06",
+      "packaged_sha256": "fc729e889544b611aab54789132047b0ab9c857f2da7338449555617826d0a06",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "attempts/test-runner-1/test_mug_visual_control_contract.py",
+      "source": ".run/mug-visual-correction-v1/attempts/test-runner-1/test_mug_visual_control_contract.py",
+      "source_sha256": "e96fba046512fb7d3740256e14920fc6a37c849a24dbaf3fd8cd557ecb953f92",
+      "packaged_sha256": "e96fba046512fb7d3740256e14920fc6a37c849a24dbaf3fd8cd557ecb953f92",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "audit-source/scripts/audit_mug_visual_correction.py",
+      "source": ".run/mug-visual-correction-v1/audit-source/scripts/audit_mug_visual_correction.py",
+      "source_sha256": "2b1c3384eaf88be27dcf5283c744f9b9f121d4d95dfca9f58319ac937aaf88cb",
+      "packaged_sha256": "2b1c3384eaf88be27dcf5283c744f9b9f121d4d95dfca9f58319ac937aaf88cb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "contracts.json",
+      "source": ".run/mug-visual-correction-v1/contracts.json",
+      "source_sha256": "04792cdc5aad30c777edea43140be67bf222ecab51af56cca9d8122e9880d701",
+      "packaged_sha256": "04792cdc5aad30c777edea43140be67bf222ecab51af56cca9d8122e9880d701",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-upright-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-upright-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-baseline/report.json",
+      "source_sha256": "7b297b82cb35faa58d8e46704cfe2ae78b5c080ca41c3b579194f68c19b660fa",
+      "packaged_sha256": "7b297b82cb35faa58d8e46704cfe2ae78b5c080ca41c3b579194f68c19b660fa",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-upright-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-baseline/scene.xml",
+      "source_sha256": "16cee0a34b6da49fce1c9d6e3f62e2918b0cb39489b9e50f1cc7e6c5de78fdeb",
+      "packaged_sha256": "250aa00bce838b2c0e6d97b2251e54232ffc16ab474ae11ab37f8e79746ff25d",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100301-upright-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-baseline/states.npz",
+      "source_sha256": "00029e072796fa94e78546683fb9428776fe4eb1b18ea00c7dc9d998ba614556",
+      "packaged_sha256": "00029e072796fa94e78546683fb9428776fe4eb1b18ea00c7dc9d998ba614556",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-upright-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-upright-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-frozen/report.json",
+      "source_sha256": "2eb4f48aa8bbde3d34a8cdeb8676e3c3a3fb7929a9d22a01d39e058325dd69f8",
+      "packaged_sha256": "2eb4f48aa8bbde3d34a8cdeb8676e3c3a3fb7929a9d22a01d39e058325dd69f8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-upright-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-frozen/scene.xml",
+      "source_sha256": "16cee0a34b6da49fce1c9d6e3f62e2918b0cb39489b9e50f1cc7e6c5de78fdeb",
+      "packaged_sha256": "250aa00bce838b2c0e6d97b2251e54232ffc16ab474ae11ab37f8e79746ff25d",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100301-upright-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-frozen/states.npz",
+      "source_sha256": "258d9e2486253ecedba7ee3495778c7cca120ef47653f32e71f222dd7ee769cc",
+      "packaged_sha256": "258d9e2486253ecedba7ee3495778c7cca120ef47653f32e71f222dd7ee769cc",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-upright-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-upright-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-live/report.json",
+      "source_sha256": "2f8ed0ab5b028b7ebab3d81eb660ca59eab4e3376638a95e6361d6db26b0262a",
+      "packaged_sha256": "2f8ed0ab5b028b7ebab3d81eb660ca59eab4e3376638a95e6361d6db26b0262a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-upright-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-live/scene.xml",
+      "source_sha256": "16cee0a34b6da49fce1c9d6e3f62e2918b0cb39489b9e50f1cc7e6c5de78fdeb",
+      "packaged_sha256": "250aa00bce838b2c0e6d97b2251e54232ffc16ab474ae11ab37f8e79746ff25d",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100301-upright-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-upright-live/states.npz",
+      "source_sha256": "258d9e2486253ecedba7ee3495778c7cca120ef47653f32e71f222dd7ee769cc",
+      "packaged_sha256": "258d9e2486253ecedba7ee3495778c7cca120ef47653f32e71f222dd7ee769cc",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-wide_left-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-wide_left-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-baseline/report.json",
+      "source_sha256": "a4627d2740fa0c481761b76c8fb3480ae452f5f5a5adb4969cf64f13f7ab36c0",
+      "packaged_sha256": "a4627d2740fa0c481761b76c8fb3480ae452f5f5a5adb4969cf64f13f7ab36c0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-wide_left-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-baseline/scene.xml",
+      "source_sha256": "16cee0a34b6da49fce1c9d6e3f62e2918b0cb39489b9e50f1cc7e6c5de78fdeb",
+      "packaged_sha256": "250aa00bce838b2c0e6d97b2251e54232ffc16ab474ae11ab37f8e79746ff25d",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100301-wide_left-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-baseline/states.npz",
+      "source_sha256": "42f424e016bb0433eaaf8775846bf137fce9184b523cfb011c53b4baaee5cab0",
+      "packaged_sha256": "42f424e016bb0433eaaf8775846bf137fce9184b523cfb011c53b4baaee5cab0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-wide_left-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-wide_left-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-frozen/report.json",
+      "source_sha256": "c5aac7e1c6dc1433c1ddd66f3353bc96ce43c4ce8e5438fc3210efafb0662e81",
+      "packaged_sha256": "c5aac7e1c6dc1433c1ddd66f3353bc96ce43c4ce8e5438fc3210efafb0662e81",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-wide_left-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-frozen/scene.xml",
+      "source_sha256": "16cee0a34b6da49fce1c9d6e3f62e2918b0cb39489b9e50f1cc7e6c5de78fdeb",
+      "packaged_sha256": "250aa00bce838b2c0e6d97b2251e54232ffc16ab474ae11ab37f8e79746ff25d",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100301-wide_left-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-frozen/states.npz",
+      "source_sha256": "8d8a41b4772153ebc41baa1c7a53bd36be3b074c806c64365444f29a6d98913f",
+      "packaged_sha256": "8d8a41b4772153ebc41baa1c7a53bd36be3b074c806c64365444f29a6d98913f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-wide_left-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-wide_left-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-live/report.json",
+      "source_sha256": "ff8c27df8c6af9407fcb7b3027d8dab5b6d229da8bb982527c4342ae2387c17a",
+      "packaged_sha256": "ff8c27df8c6af9407fcb7b3027d8dab5b6d229da8bb982527c4342ae2387c17a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100301-wide_left-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-live/scene.xml",
+      "source_sha256": "16cee0a34b6da49fce1c9d6e3f62e2918b0cb39489b9e50f1cc7e6c5de78fdeb",
+      "packaged_sha256": "250aa00bce838b2c0e6d97b2251e54232ffc16ab474ae11ab37f8e79746ff25d",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100301-wide_left-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100301-wide_left-live/states.npz",
+      "source_sha256": "8d8a41b4772153ebc41baa1c7a53bd36be3b074c806c64365444f29a6d98913f",
+      "packaged_sha256": "8d8a41b4772153ebc41baa1c7a53bd36be3b074c806c64365444f29a6d98913f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-upright-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-upright-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-baseline/report.json",
+      "source_sha256": "8dad79bb95c57be4c537c493f7921984a047e3f1075d23741a04b7cc0e6e9a9b",
+      "packaged_sha256": "8dad79bb95c57be4c537c493f7921984a047e3f1075d23741a04b7cc0e6e9a9b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-upright-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-baseline/scene.xml",
+      "source_sha256": "d188a81115b4920c75d3428922082b07937a53d02001c5ed0b40deb0d69fb9e8",
+      "packaged_sha256": "5075e190a49e8198e67c0db14d96fa996e71fc946e42e1abc5445780efe92eab",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100302-upright-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-baseline/states.npz",
+      "source_sha256": "132d11e68b51e41d1e5ae459b0925ab4b749629a23e07075bcba0ceb8fd85b87",
+      "packaged_sha256": "132d11e68b51e41d1e5ae459b0925ab4b749629a23e07075bcba0ceb8fd85b87",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-upright-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-upright-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-frozen/report.json",
+      "source_sha256": "1f5cc02a12e9a1856befb2806f983ea69949d5244b80fa87acdc75a4cb0fea6b",
+      "packaged_sha256": "1f5cc02a12e9a1856befb2806f983ea69949d5244b80fa87acdc75a4cb0fea6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-upright-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-frozen/scene.xml",
+      "source_sha256": "d188a81115b4920c75d3428922082b07937a53d02001c5ed0b40deb0d69fb9e8",
+      "packaged_sha256": "5075e190a49e8198e67c0db14d96fa996e71fc946e42e1abc5445780efe92eab",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100302-upright-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-frozen/states.npz",
+      "source_sha256": "3b20775c13f5bf534a5b41589fa1edbbd1a18b32f8ff242242472676e903ad72",
+      "packaged_sha256": "3b20775c13f5bf534a5b41589fa1edbbd1a18b32f8ff242242472676e903ad72",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-upright-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-upright-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-live/report.json",
+      "source_sha256": "443b5a80eb541797bcbaadf9b1ce56a96df1744796904d5d3079c426daae082e",
+      "packaged_sha256": "443b5a80eb541797bcbaadf9b1ce56a96df1744796904d5d3079c426daae082e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-upright-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-live/scene.xml",
+      "source_sha256": "d188a81115b4920c75d3428922082b07937a53d02001c5ed0b40deb0d69fb9e8",
+      "packaged_sha256": "5075e190a49e8198e67c0db14d96fa996e71fc946e42e1abc5445780efe92eab",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100302-upright-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-upright-live/states.npz",
+      "source_sha256": "3b20775c13f5bf534a5b41589fa1edbbd1a18b32f8ff242242472676e903ad72",
+      "packaged_sha256": "3b20775c13f5bf534a5b41589fa1edbbd1a18b32f8ff242242472676e903ad72",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-wide_left-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-wide_left-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-baseline/report.json",
+      "source_sha256": "90e2d4d684584b8f8ece95bc0331a4b4f938b071737a96265017039b52832903",
+      "packaged_sha256": "90e2d4d684584b8f8ece95bc0331a4b4f938b071737a96265017039b52832903",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-wide_left-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-baseline/scene.xml",
+      "source_sha256": "d188a81115b4920c75d3428922082b07937a53d02001c5ed0b40deb0d69fb9e8",
+      "packaged_sha256": "5075e190a49e8198e67c0db14d96fa996e71fc946e42e1abc5445780efe92eab",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100302-wide_left-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-baseline/states.npz",
+      "source_sha256": "4fc6601fa339f1814e70a337c6c1d84c6cb33f95dcb06e9ffe1f71b7800050a6",
+      "packaged_sha256": "4fc6601fa339f1814e70a337c6c1d84c6cb33f95dcb06e9ffe1f71b7800050a6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-wide_left-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-wide_left-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-frozen/report.json",
+      "source_sha256": "5073a7c72cf3e712347ddb6e4d518b10e003eb9b433235ee1d82d5bbce8dfc4a",
+      "packaged_sha256": "5073a7c72cf3e712347ddb6e4d518b10e003eb9b433235ee1d82d5bbce8dfc4a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-wide_left-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-frozen/scene.xml",
+      "source_sha256": "d188a81115b4920c75d3428922082b07937a53d02001c5ed0b40deb0d69fb9e8",
+      "packaged_sha256": "5075e190a49e8198e67c0db14d96fa996e71fc946e42e1abc5445780efe92eab",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100302-wide_left-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-frozen/states.npz",
+      "source_sha256": "3ea365c223d58071b7c8004bad428142e0ab4399b76fb72500da3dda7aa21e0b",
+      "packaged_sha256": "3ea365c223d58071b7c8004bad428142e0ab4399b76fb72500da3dda7aa21e0b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-wide_left-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-wide_left-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-live/report.json",
+      "source_sha256": "9f3789bccfee2bfc7a882cae420273b4a448b5048a4dd78614b9ae27d6c98147",
+      "packaged_sha256": "9f3789bccfee2bfc7a882cae420273b4a448b5048a4dd78614b9ae27d6c98147",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100302-wide_left-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-live/scene.xml",
+      "source_sha256": "d188a81115b4920c75d3428922082b07937a53d02001c5ed0b40deb0d69fb9e8",
+      "packaged_sha256": "5075e190a49e8198e67c0db14d96fa996e71fc946e42e1abc5445780efe92eab",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100302-wide_left-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100302-wide_left-live/states.npz",
+      "source_sha256": "3ea365c223d58071b7c8004bad428142e0ab4399b76fb72500da3dda7aa21e0b",
+      "packaged_sha256": "3ea365c223d58071b7c8004bad428142e0ab4399b76fb72500da3dda7aa21e0b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-upright-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-upright-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-baseline/report.json",
+      "source_sha256": "34d625d5c00461186864c2c2e8e19b94de79948d37159de538c6663cedbecf2c",
+      "packaged_sha256": "34d625d5c00461186864c2c2e8e19b94de79948d37159de538c6663cedbecf2c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-upright-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-baseline/scene.xml",
+      "source_sha256": "a3697fad9e2f099e6c28231e051ad9b062f55b5774953af9e04d65704e3d20a3",
+      "packaged_sha256": "505b3290883bbd744920ae1acb23ab16c0a6bbf705e902b9d4ae93fb74e0ee04",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100303-upright-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-baseline/states.npz",
+      "source_sha256": "c9254f6623f65f03c1ed62093b0d8469c5d77388501a0eba7087c7b8e77f6980",
+      "packaged_sha256": "c9254f6623f65f03c1ed62093b0d8469c5d77388501a0eba7087c7b8e77f6980",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-upright-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-upright-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-frozen/report.json",
+      "source_sha256": "ee0fb17394f01a069d65731c629ffd30fbb585c8cb4f83e5f8fb5316ed8a66da",
+      "packaged_sha256": "ee0fb17394f01a069d65731c629ffd30fbb585c8cb4f83e5f8fb5316ed8a66da",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-upright-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-frozen/scene.xml",
+      "source_sha256": "a3697fad9e2f099e6c28231e051ad9b062f55b5774953af9e04d65704e3d20a3",
+      "packaged_sha256": "505b3290883bbd744920ae1acb23ab16c0a6bbf705e902b9d4ae93fb74e0ee04",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100303-upright-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-frozen/states.npz",
+      "source_sha256": "dc24172864e992c1ea8389c3923feed3a0dc072222f49d912b6237fff82e8f61",
+      "packaged_sha256": "dc24172864e992c1ea8389c3923feed3a0dc072222f49d912b6237fff82e8f61",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-upright-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-upright-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-live/report.json",
+      "source_sha256": "8c759a0cbca8f5834decb1adeec8155212783388bbd229dbd532a8f9285ed660",
+      "packaged_sha256": "8c759a0cbca8f5834decb1adeec8155212783388bbd229dbd532a8f9285ed660",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-upright-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-live/scene.xml",
+      "source_sha256": "a3697fad9e2f099e6c28231e051ad9b062f55b5774953af9e04d65704e3d20a3",
+      "packaged_sha256": "505b3290883bbd744920ae1acb23ab16c0a6bbf705e902b9d4ae93fb74e0ee04",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100303-upright-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-upright-live/states.npz",
+      "source_sha256": "dc24172864e992c1ea8389c3923feed3a0dc072222f49d912b6237fff82e8f61",
+      "packaged_sha256": "dc24172864e992c1ea8389c3923feed3a0dc072222f49d912b6237fff82e8f61",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-wide_left-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-wide_left-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-baseline/report.json",
+      "source_sha256": "18c8ead05ad3da58066c1086d9b444cfdc50df6cf17562c49c7a4931ff7d3d01",
+      "packaged_sha256": "18c8ead05ad3da58066c1086d9b444cfdc50df6cf17562c49c7a4931ff7d3d01",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-wide_left-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-baseline/scene.xml",
+      "source_sha256": "a3697fad9e2f099e6c28231e051ad9b062f55b5774953af9e04d65704e3d20a3",
+      "packaged_sha256": "505b3290883bbd744920ae1acb23ab16c0a6bbf705e902b9d4ae93fb74e0ee04",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100303-wide_left-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-baseline/states.npz",
+      "source_sha256": "40473c023503b0d7a89d1b8b7017eb6a8df843f791a2c9268ff7837e165834ce",
+      "packaged_sha256": "40473c023503b0d7a89d1b8b7017eb6a8df843f791a2c9268ff7837e165834ce",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-wide_left-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-wide_left-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-frozen/report.json",
+      "source_sha256": "affac92bfbc5405232b804c3c44212db0578bdf6b56a23d48c485bf05082a572",
+      "packaged_sha256": "affac92bfbc5405232b804c3c44212db0578bdf6b56a23d48c485bf05082a572",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-wide_left-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-frozen/scene.xml",
+      "source_sha256": "a3697fad9e2f099e6c28231e051ad9b062f55b5774953af9e04d65704e3d20a3",
+      "packaged_sha256": "505b3290883bbd744920ae1acb23ab16c0a6bbf705e902b9d4ae93fb74e0ee04",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100303-wide_left-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-frozen/states.npz",
+      "source_sha256": "f08d9d5c4fff742bcdc48961d909a8fbd86024125763030f99dcd577388ee60e",
+      "packaged_sha256": "f08d9d5c4fff742bcdc48961d909a8fbd86024125763030f99dcd577388ee60e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-wide_left-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-wide_left-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-live/report.json",
+      "source_sha256": "f5f41aba900841ed5c370277259dd274dcc5c5a99391274360cf45d9fa52e59c",
+      "packaged_sha256": "f5f41aba900841ed5c370277259dd274dcc5c5a99391274360cf45d9fa52e59c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100303-wide_left-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-live/scene.xml",
+      "source_sha256": "a3697fad9e2f099e6c28231e051ad9b062f55b5774953af9e04d65704e3d20a3",
+      "packaged_sha256": "505b3290883bbd744920ae1acb23ab16c0a6bbf705e902b9d4ae93fb74e0ee04",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100303-wide_left-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100303-wide_left-live/states.npz",
+      "source_sha256": "f08d9d5c4fff742bcdc48961d909a8fbd86024125763030f99dcd577388ee60e",
+      "packaged_sha256": "f08d9d5c4fff742bcdc48961d909a8fbd86024125763030f99dcd577388ee60e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-upright-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-upright-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-baseline/report.json",
+      "source_sha256": "24ebbfdbfca84ff02411b3d243d497167d295f20870571c075805e56375b5217",
+      "packaged_sha256": "24ebbfdbfca84ff02411b3d243d497167d295f20870571c075805e56375b5217",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-upright-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-baseline/scene.xml",
+      "source_sha256": "eb99536aa2fb90683dc76b4b35c05fbfd598466cf8d66c3198f2ce325e23cf12",
+      "packaged_sha256": "43fb6f8c1738b395c3348a37218c0113751bace7b5cdc393bbf700f267e5b1cc",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100304-upright-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-baseline/states.npz",
+      "source_sha256": "19ae1282ba6320ae242f7804e0d40546b7a7af94713117452eb6d07bb92c3551",
+      "packaged_sha256": "19ae1282ba6320ae242f7804e0d40546b7a7af94713117452eb6d07bb92c3551",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-upright-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-upright-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-frozen/report.json",
+      "source_sha256": "141008c7605317c35b5609f7a06b5d514a23c80e52fe3b0dcf013be122b50d13",
+      "packaged_sha256": "141008c7605317c35b5609f7a06b5d514a23c80e52fe3b0dcf013be122b50d13",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-upright-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-frozen/scene.xml",
+      "source_sha256": "eb99536aa2fb90683dc76b4b35c05fbfd598466cf8d66c3198f2ce325e23cf12",
+      "packaged_sha256": "43fb6f8c1738b395c3348a37218c0113751bace7b5cdc393bbf700f267e5b1cc",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100304-upright-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-frozen/states.npz",
+      "source_sha256": "9963037885ddbff8ee6acad83ed80119b6ae1debc92a4430671a58cbe19bf32a",
+      "packaged_sha256": "9963037885ddbff8ee6acad83ed80119b6ae1debc92a4430671a58cbe19bf32a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-upright-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-upright-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-live/report.json",
+      "source_sha256": "91ab39248fc81aee510d2f02eee1374dc16769db62f1f8f67f5025e3d5580a14",
+      "packaged_sha256": "91ab39248fc81aee510d2f02eee1374dc16769db62f1f8f67f5025e3d5580a14",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-upright-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-live/scene.xml",
+      "source_sha256": "eb99536aa2fb90683dc76b4b35c05fbfd598466cf8d66c3198f2ce325e23cf12",
+      "packaged_sha256": "43fb6f8c1738b395c3348a37218c0113751bace7b5cdc393bbf700f267e5b1cc",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100304-upright-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-upright-live/states.npz",
+      "source_sha256": "9963037885ddbff8ee6acad83ed80119b6ae1debc92a4430671a58cbe19bf32a",
+      "packaged_sha256": "9963037885ddbff8ee6acad83ed80119b6ae1debc92a4430671a58cbe19bf32a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-wide_left-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-wide_left-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-baseline/report.json",
+      "source_sha256": "17acbba71bb13911cc6b3f9df4570958700b14b561f8abd664fdd4dc69b57d99",
+      "packaged_sha256": "17acbba71bb13911cc6b3f9df4570958700b14b561f8abd664fdd4dc69b57d99",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-wide_left-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-baseline/scene.xml",
+      "source_sha256": "eb99536aa2fb90683dc76b4b35c05fbfd598466cf8d66c3198f2ce325e23cf12",
+      "packaged_sha256": "43fb6f8c1738b395c3348a37218c0113751bace7b5cdc393bbf700f267e5b1cc",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100304-wide_left-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-baseline/states.npz",
+      "source_sha256": "08702862b13e371624d1edb7e536ce056fa7c0215bdc0ce32c5df56dd15deb10",
+      "packaged_sha256": "08702862b13e371624d1edb7e536ce056fa7c0215bdc0ce32c5df56dd15deb10",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-wide_left-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-wide_left-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-frozen/report.json",
+      "source_sha256": "ce6e2cfe4213dfd97bea37f8f3510f87045a97644c944957dfc7d417de5f71c7",
+      "packaged_sha256": "ce6e2cfe4213dfd97bea37f8f3510f87045a97644c944957dfc7d417de5f71c7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-wide_left-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-frozen/scene.xml",
+      "source_sha256": "eb99536aa2fb90683dc76b4b35c05fbfd598466cf8d66c3198f2ce325e23cf12",
+      "packaged_sha256": "43fb6f8c1738b395c3348a37218c0113751bace7b5cdc393bbf700f267e5b1cc",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100304-wide_left-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-frozen/states.npz",
+      "source_sha256": "2141706d3b6f68c0e8dc2f988f3535ff5510d1a4eb22b97ecfd068f636923aa0",
+      "packaged_sha256": "2141706d3b6f68c0e8dc2f988f3535ff5510d1a4eb22b97ecfd068f636923aa0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-wide_left-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-wide_left-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-live/report.json",
+      "source_sha256": "0c1b8ed6774a00cf8acd3d98f4b946c7b4200ad0a14b36ed2392ceffd8176125",
+      "packaged_sha256": "0c1b8ed6774a00cf8acd3d98f4b946c7b4200ad0a14b36ed2392ceffd8176125",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100304-wide_left-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-live/scene.xml",
+      "source_sha256": "eb99536aa2fb90683dc76b4b35c05fbfd598466cf8d66c3198f2ce325e23cf12",
+      "packaged_sha256": "43fb6f8c1738b395c3348a37218c0113751bace7b5cdc393bbf700f267e5b1cc",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100304-wide_left-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100304-wide_left-live/states.npz",
+      "source_sha256": "2141706d3b6f68c0e8dc2f988f3535ff5510d1a4eb22b97ecfd068f636923aa0",
+      "packaged_sha256": "2141706d3b6f68c0e8dc2f988f3535ff5510d1a4eb22b97ecfd068f636923aa0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-upright-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-upright-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-baseline/report.json",
+      "source_sha256": "8492c0efb6cf9103c647ab5f22b17323f4ac1fc739d47997f8b572ce3bf793e2",
+      "packaged_sha256": "8492c0efb6cf9103c647ab5f22b17323f4ac1fc739d47997f8b572ce3bf793e2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-upright-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-baseline/scene.xml",
+      "source_sha256": "aa9adacf4d14de51f819c3f1e853baf6e03a6c29591caddc7a63f99588c1f2b0",
+      "packaged_sha256": "430e5d7758cd0993d190f5ee1409d9882360687686d324fa1bbd25ee01f85d67",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100305-upright-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-baseline/states.npz",
+      "source_sha256": "6f41be9c8a26e77223a0ecdb536fecefd0211b765cfe723227106761abbacad8",
+      "packaged_sha256": "6f41be9c8a26e77223a0ecdb536fecefd0211b765cfe723227106761abbacad8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-upright-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-upright-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-frozen/report.json",
+      "source_sha256": "2a1dc2f252a5db34fdb052405b7409ed9500fd0e78a8d41e587a3cd7234c8ac1",
+      "packaged_sha256": "2a1dc2f252a5db34fdb052405b7409ed9500fd0e78a8d41e587a3cd7234c8ac1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-upright-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-frozen/scene.xml",
+      "source_sha256": "aa9adacf4d14de51f819c3f1e853baf6e03a6c29591caddc7a63f99588c1f2b0",
+      "packaged_sha256": "430e5d7758cd0993d190f5ee1409d9882360687686d324fa1bbd25ee01f85d67",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100305-upright-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-frozen/states.npz",
+      "source_sha256": "9ecb900bc4812c7c90f0d27a1763ca3bf9af4af88f5bd599cd8dc5e26cc1dc1d",
+      "packaged_sha256": "9ecb900bc4812c7c90f0d27a1763ca3bf9af4af88f5bd599cd8dc5e26cc1dc1d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-upright-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-upright-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-live/report.json",
+      "source_sha256": "66b5a75a2bd123aead7c4846c0df6b506ad733f7875642e59889ac6aa795aa56",
+      "packaged_sha256": "66b5a75a2bd123aead7c4846c0df6b506ad733f7875642e59889ac6aa795aa56",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-upright-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-live/scene.xml",
+      "source_sha256": "aa9adacf4d14de51f819c3f1e853baf6e03a6c29591caddc7a63f99588c1f2b0",
+      "packaged_sha256": "430e5d7758cd0993d190f5ee1409d9882360687686d324fa1bbd25ee01f85d67",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100305-upright-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-upright-live/states.npz",
+      "source_sha256": "9ecb900bc4812c7c90f0d27a1763ca3bf9af4af88f5bd599cd8dc5e26cc1dc1d",
+      "packaged_sha256": "9ecb900bc4812c7c90f0d27a1763ca3bf9af4af88f5bd599cd8dc5e26cc1dc1d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-wide_left-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-wide_left-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-baseline/report.json",
+      "source_sha256": "5a61c89b86110acda702749276a4224cc70fd867e5a90617e6d0f853b263029d",
+      "packaged_sha256": "5a61c89b86110acda702749276a4224cc70fd867e5a90617e6d0f853b263029d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-wide_left-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-baseline/scene.xml",
+      "source_sha256": "aa9adacf4d14de51f819c3f1e853baf6e03a6c29591caddc7a63f99588c1f2b0",
+      "packaged_sha256": "430e5d7758cd0993d190f5ee1409d9882360687686d324fa1bbd25ee01f85d67",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100305-wide_left-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-baseline/states.npz",
+      "source_sha256": "ba3333e28742cab3ca5ef147969fec359354f8d13099b12090ce07195abc1cff",
+      "packaged_sha256": "ba3333e28742cab3ca5ef147969fec359354f8d13099b12090ce07195abc1cff",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-wide_left-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-wide_left-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-frozen/report.json",
+      "source_sha256": "89f86f9bfb1fd8ee6a5152e81b0c3fafddf75da7e210545e79b3bb06d6aec949",
+      "packaged_sha256": "89f86f9bfb1fd8ee6a5152e81b0c3fafddf75da7e210545e79b3bb06d6aec949",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-wide_left-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-frozen/scene.xml",
+      "source_sha256": "aa9adacf4d14de51f819c3f1e853baf6e03a6c29591caddc7a63f99588c1f2b0",
+      "packaged_sha256": "430e5d7758cd0993d190f5ee1409d9882360687686d324fa1bbd25ee01f85d67",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100305-wide_left-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-frozen/states.npz",
+      "source_sha256": "aba1ce20fe9cbb17244219a838290f50c1952a4c10ffb9827701961954a69f0a",
+      "packaged_sha256": "aba1ce20fe9cbb17244219a838290f50c1952a4c10ffb9827701961954a69f0a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-wide_left-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-wide_left-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-live/report.json",
+      "source_sha256": "c2b6176436c1eeae41acb499158e14bf8187ae924b84b341d4068a91648b7666",
+      "packaged_sha256": "c2b6176436c1eeae41acb499158e14bf8187ae924b84b341d4068a91648b7666",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100305-wide_left-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-live/scene.xml",
+      "source_sha256": "aa9adacf4d14de51f819c3f1e853baf6e03a6c29591caddc7a63f99588c1f2b0",
+      "packaged_sha256": "430e5d7758cd0993d190f5ee1409d9882360687686d324fa1bbd25ee01f85d67",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100305-wide_left-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100305-wide_left-live/states.npz",
+      "source_sha256": "aba1ce20fe9cbb17244219a838290f50c1952a4c10ffb9827701961954a69f0a",
+      "packaged_sha256": "aba1ce20fe9cbb17244219a838290f50c1952a4c10ffb9827701961954a69f0a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-upright-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-upright-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-baseline/report.json",
+      "source_sha256": "529a635bb0b64abad4aa237146a2c9130915a881c2eaf21c6d717c79e5b826de",
+      "packaged_sha256": "529a635bb0b64abad4aa237146a2c9130915a881c2eaf21c6d717c79e5b826de",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-upright-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-baseline/scene.xml",
+      "source_sha256": "b5e01606ad8fd4f6a6b9b7317752b077d8b2af8ab16568904a53cd4defafcd31",
+      "packaged_sha256": "8edfcbf82dc6e22aaf14c9eb108a674cd59dcd40cb86e6dceed8cb220082c8b7",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100306-upright-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-baseline/states.npz",
+      "source_sha256": "23b94497670aabac16b6494a89ffab4fce4d1849e93e7bca2af13394b4909f77",
+      "packaged_sha256": "23b94497670aabac16b6494a89ffab4fce4d1849e93e7bca2af13394b4909f77",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-upright-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-upright-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-frozen/report.json",
+      "source_sha256": "2bafb78650a08431d0e664c29a2e0ddff9cf817d6c153ea4318cb441560870fb",
+      "packaged_sha256": "2bafb78650a08431d0e664c29a2e0ddff9cf817d6c153ea4318cb441560870fb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-upright-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-frozen/scene.xml",
+      "source_sha256": "b5e01606ad8fd4f6a6b9b7317752b077d8b2af8ab16568904a53cd4defafcd31",
+      "packaged_sha256": "8edfcbf82dc6e22aaf14c9eb108a674cd59dcd40cb86e6dceed8cb220082c8b7",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100306-upright-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-frozen/states.npz",
+      "source_sha256": "48be01cf98256df46e995ea76f71a4785e6c5b239fc38dc0be7fe6478d0d9edb",
+      "packaged_sha256": "48be01cf98256df46e995ea76f71a4785e6c5b239fc38dc0be7fe6478d0d9edb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-upright-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-upright-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-live/report.json",
+      "source_sha256": "1b5ba5dbc1d36e9b4ed4943b737379ff96c5458e807614a676a355c7836aa6bc",
+      "packaged_sha256": "1b5ba5dbc1d36e9b4ed4943b737379ff96c5458e807614a676a355c7836aa6bc",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-upright-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-live/scene.xml",
+      "source_sha256": "b5e01606ad8fd4f6a6b9b7317752b077d8b2af8ab16568904a53cd4defafcd31",
+      "packaged_sha256": "8edfcbf82dc6e22aaf14c9eb108a674cd59dcd40cb86e6dceed8cb220082c8b7",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100306-upright-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-upright-live/states.npz",
+      "source_sha256": "48be01cf98256df46e995ea76f71a4785e6c5b239fc38dc0be7fe6478d0d9edb",
+      "packaged_sha256": "48be01cf98256df46e995ea76f71a4785e6c5b239fc38dc0be7fe6478d0d9edb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-wide_left-baseline/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-baseline/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-wide_left-baseline/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-baseline/report.json",
+      "source_sha256": "5b7984c267b5e2b0c9808abb655e12cdaced740941bdae37b3aab1f91bb02333",
+      "packaged_sha256": "5b7984c267b5e2b0c9808abb655e12cdaced740941bdae37b3aab1f91bb02333",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-wide_left-baseline/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-baseline/scene.xml",
+      "source_sha256": "b5e01606ad8fd4f6a6b9b7317752b077d8b2af8ab16568904a53cd4defafcd31",
+      "packaged_sha256": "8edfcbf82dc6e22aaf14c9eb108a674cd59dcd40cb86e6dceed8cb220082c8b7",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100306-wide_left-baseline/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-baseline/states.npz",
+      "source_sha256": "4079fa3b4116c83b924d46cda86ce9afa76f9b67f3ee8986aa1ca304c4fae80a",
+      "packaged_sha256": "4079fa3b4116c83b924d46cda86ce9afa76f9b67f3ee8986aa1ca304c4fae80a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-wide_left-frozen/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-frozen/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-wide_left-frozen/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-frozen/report.json",
+      "source_sha256": "dfc22920298908eb99fc7fa678564a44be2aad87492140e425f017d3a214caa9",
+      "packaged_sha256": "dfc22920298908eb99fc7fa678564a44be2aad87492140e425f017d3a214caa9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-wide_left-frozen/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-frozen/scene.xml",
+      "source_sha256": "b5e01606ad8fd4f6a6b9b7317752b077d8b2af8ab16568904a53cd4defafcd31",
+      "packaged_sha256": "8edfcbf82dc6e22aaf14c9eb108a674cd59dcd40cb86e6dceed8cb220082c8b7",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100306-wide_left-frozen/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-frozen/states.npz",
+      "source_sha256": "8e098e53dd6b7cf5d01a83903175467b5ef372ecaa82710f3b3cfdf51ded061a",
+      "packaged_sha256": "8e098e53dd6b7cf5d01a83903175467b5ef372ecaa82710f3b3cfdf51ded061a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-wide_left-live/inputs.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-live/inputs.json",
+      "source_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "packaged_sha256": "134d25c9f31f7b78f8a6890ee6bfa787332bde4afa0eb55fd4c4d83f4e471f6b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-wide_left-live/report.json",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-live/report.json",
+      "source_sha256": "6e813d580d48e69064812a2e54b2ac2f89f66f297241d808351bfd1352dba8c4",
+      "packaged_sha256": "6e813d580d48e69064812a2e54b2ac2f89f66f297241d808351bfd1352dba8c4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development/2026100306-wide_left-live/scene.xml",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-live/scene.xml",
+      "source_sha256": "b5e01606ad8fd4f6a6b9b7317752b077d8b2af8ab16568904a53cd4defafcd31",
+      "packaged_sha256": "8edfcbf82dc6e22aaf14c9eb108a674cd59dcd40cb86e6dceed8cb220082c8b7",
+      "transformation": "Portable mesh directory only; original XML also retained."
+    },
+    {
+      "file": "development/2026100306-wide_left-live/states.npz",
+      "source": ".run/mug-visual-correction-v1/development/2026100306-wide_left-live/states.npz",
+      "source_sha256": "8e098e53dd6b7cf5d01a83903175467b5ef372ecaa82710f3b3cfdf51ded061a",
+      "packaged_sha256": "8e098e53dd6b7cf5d01a83903175467b5ef372ecaa82710f3b3cfdf51ded061a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development-audit.json",
+      "source": ".run/mug-visual-correction-v1/development-audit.json",
+      "source_sha256": "425fafa5f618f639b171512553de73773f0a989246668e04f57551a87ed4ad8b",
+      "packaged_sha256": "425fafa5f618f639b171512553de73773f0a989246668e04f57551a87ed4ad8b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development-batch.json",
+      "source": ".run/mug-visual-correction-v1/development-batch.json",
+      "source_sha256": "a08e78e2e058d21061c8dbb21e4dee3986d972a70eafef1ebd4cdd042e8e6aa1",
+      "packaged_sha256": "a08e78e2e058d21061c8dbb21e4dee3986d972a70eafef1ebd4cdd042e8e6aa1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "development-freeze.json",
+      "source": ".run/mug-visual-correction-v1/development-freeze.json",
+      "source_sha256": "caf8dd92120a69ad272c1da2b84af9c2a226081f28e963ed6359ca1aaaeab0fc",
+      "packaged_sha256": "caf8dd92120a69ad272c1da2b84af9c2a226081f28e963ed6359ca1aaaeab0fc",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/scripts/evaluate_mug_visual_correction.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/scripts/evaluate_mug_visual_correction.py",
+      "source_sha256": "3f522f44a61dde221ffef9a6de9331a392cb124fe02d39e587b3d89e8d206123",
+      "packaged_sha256": "3f522f44a61dde221ffef9a6de9331a392cb124fe02d39e587b3d89e8d206123",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/scripts/probe_mug_correction_interface.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/scripts/probe_mug_correction_interface.py",
+      "source_sha256": "2399a5080693e72330e9b8797fb7aca2989242a45bc5e0dcf20ec19d4d37246d",
+      "packaged_sha256": "2399a5080693e72330e9b8797fb7aca2989242a45bc5e0dcf20ec19d4d37246d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/scripts/run_mug_visual_correction.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/scripts/run_mug_visual_correction.py",
+      "source_sha256": "e69f7be417a1db9c6db41046a4b20d44f3e39526f5215e346112d617b004c86a",
+      "packaged_sha256": "e69f7be417a1db9c6db41046a4b20d44f3e39526f5215e346112d617b004c86a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/__init__.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/__init__.py",
+      "source_sha256": "41d6e06b5cd49e86faaccfc822e0195485e4efed792c4ae28bdb42dc8e814220",
+      "packaged_sha256": "41d6e06b5cd49e86faaccfc822e0195485e4efed792c4ae28bdb42dc8e814220",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/act_learning.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/act_learning.py",
+      "source_sha256": "0266d6ec1db5291a14f7b0cc2bdc1e6eb977497b3d6e1342eeb0a6e6db4ff4c2",
+      "packaged_sha256": "0266d6ec1db5291a14f7b0cc2bdc1e6eb977497b3d6e1342eeb0a6e6db4ff4c2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/autonomy.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/autonomy.py",
+      "source_sha256": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+      "packaged_sha256": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/bottle_vision.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/bottle_vision.py",
+      "source_sha256": "5b6ccf6e0224bf66ef7d4c69c382384add65d90ebfeedad838be5dc756bfa9ac",
+      "packaged_sha256": "5b6ccf6e0224bf66ef7d4c69c382384add65d90ebfeedad838be5dc756bfa9ac",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/command_task.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/command_task.py",
+      "source_sha256": "b3861f88af0a3535569e3d911f68e0e1d566f0b1f5f24b60c79417d561ce51a4",
+      "packaged_sha256": "b3861f88af0a3535569e3d911f68e0e1d566f0b1f5f24b60c79417d561ce51a4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/dataset.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/dataset.py",
+      "source_sha256": "1c9310a12391a957563f317f0f260ebc5ff284b9050a27b4a27fcb3143f1b2d2",
+      "packaged_sha256": "1c9310a12391a957563f317f0f260ebc5ff284b9050a27b4a27fcb3143f1b2d2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/dinner.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/dinner.py",
+      "source_sha256": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11",
+      "packaged_sha256": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/dinner_autonomy.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/dinner_autonomy.py",
+      "source_sha256": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+      "packaged_sha256": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/dinner_monitor.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/dinner_monitor.py",
+      "source_sha256": "34b2a5356ffcb5c2cf888607ceb387e51ca2ed00f6fa8fa39a897744e8bebe54",
+      "packaged_sha256": "34b2a5356ffcb5c2cf888607ceb387e51ca2ed00f6fa8fa39a897744e8bebe54",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/dinner_vision.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/dinner_vision.py",
+      "source_sha256": "66d0bc15b9a9f40832db56378de62c1b5355cebf583ececf7d8fa936a192360e",
+      "packaged_sha256": "66d0bc15b9a9f40832db56378de62c1b5355cebf583ececf7d8fa936a192360e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/engine.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/engine.py",
+      "source_sha256": "84e69918d2bc9a98bcb5d23f7e9d2a6bb8410c25d6c1fe4eba24b766d4d77035",
+      "packaged_sha256": "84e69918d2bc9a98bcb5d23f7e9d2a6bb8410c25d6c1fe4eba24b766d4d77035",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/experiment_push.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/experiment_push.py",
+      "source_sha256": "156700845e130b86e93774c9dfae4221de5443f9855c86bd8e84d7f052a22003",
+      "packaged_sha256": "156700845e130b86e93774c9dfae4221de5443f9855c86bd8e84d7f052a22003",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/experiment_targets.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/experiment_targets.py",
+      "source_sha256": "0704accb79c80d894efdf721e7a23437348c9dfe2d0d5edefd63e8b225ea9654",
+      "packaged_sha256": "0704accb79c80d894efdf721e7a23437348c9dfe2d0d5edefd63e8b225ea9654",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/hardware_evidence.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/hardware_evidence.py",
+      "source_sha256": "386d563af1666943fb1fcf0d545389220eb30f5808f361bbf72df4aa4a2d7222",
+      "packaged_sha256": "386d563af1666943fb1fcf0d545389220eb30f5808f361bbf72df4aa4a2d7222",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/hosted_gpu.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/hosted_gpu.py",
+      "source_sha256": "668fd99bf83a52a8730179b33f93c5d319707033fecb0cf49f1bd39e2e727bb7",
+      "packaged_sha256": "668fd99bf83a52a8730179b33f93c5d319707033fecb0cf49f1bd39e2e727bb7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/hosted_worker.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/hosted_worker.py",
+      "source_sha256": "60cf416fb7f6ef9f5151ccd9127fa821ddee3f65b74712f11ad11c37e6a3a5b2",
+      "packaged_sha256": "60cf416fb7f6ef9f5151ccd9127fa821ddee3f65b74712f11ad11c37e6a3a5b2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/language.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/language.py",
+      "source_sha256": "8a6aa3efc5515e2da1d334432b884de297b53b1f048aba60c031d1739ddcfc1b",
+      "packaged_sha256": "8a6aa3efc5515e2da1d334432b884de297b53b1f048aba60c031d1739ddcfc1b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/learned_dinner.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/learned_dinner.py",
+      "source_sha256": "5402aa9069b0a20b21c352272fbeb5dcf70d03ae555aa65d66574e5bf7975066",
+      "packaged_sha256": "5402aa9069b0a20b21c352272fbeb5dcf70d03ae555aa65d66574e5bf7975066",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/learned_plan.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/learned_plan.py",
+      "source_sha256": "af91498d8f2d4cff06c829c1fc8c1075b359c00ed49e07043f8301bc4f85fcd8",
+      "packaged_sha256": "af91498d8f2d4cff06c829c1fc8c1075b359c00ed49e07043f8301bc4f85fcd8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/learned_skills.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/learned_skills.py",
+      "source_sha256": "3ef610a6e6d0516e8bf92d4e7f2b3d06540b49e2671682ab642239aa2cbb129b",
+      "packaged_sha256": "3ef610a6e6d0516e8bf92d4e7f2b3d06540b49e2671682ab642239aa2cbb129b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/learned_task.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/learned_task.py",
+      "source_sha256": "3bc2fc075d15e07d5717333fbd69541d2e76d2bd41621a71f1a6e51229d2e24f",
+      "packaged_sha256": "3bc2fc075d15e07d5717333fbd69541d2e76d2bd41621a71f1a6e51229d2e24f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/mug_correction_limits.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/mug_correction_limits.py",
+      "source_sha256": "0b4db501846ff62e87cc6dbde453d6b1bf370cb12e60088e709f89068ecb2595",
+      "packaged_sha256": "0b4db501846ff62e87cc6dbde453d6b1bf370cb12e60088e709f89068ecb2595",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/mug_correction_motor.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/mug_correction_motor.py",
+      "source_sha256": "38ca9f9d936c9ca50176c898904a680c1549df696c97475088852bc39be26313",
+      "packaged_sha256": "38ca9f9d936c9ca50176c898904a680c1549df696c97475088852bc39be26313",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/mug_correction_runtime.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/mug_correction_runtime.py",
+      "source_sha256": "eb580df116318a97fb2d24655d88a23be40a32beae186b0d03fbc88fc79e83f9",
+      "packaged_sha256": "eb580df116318a97fb2d24655d88a23be40a32beae186b0d03fbc88fc79e83f9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/mug_keypoint_observer.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/mug_keypoint_observer.py",
+      "source_sha256": "dc5c76bd5b82ffb7191727690be3ac15b0003310ff0a69ef848213ce376a5fea",
+      "packaged_sha256": "dc5c76bd5b82ffb7191727690be3ac15b0003310ff0a69ef848213ce376a5fea",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/mug_visual_control.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/mug_visual_control.py",
+      "source_sha256": "98503f8bfefff12a719e562471bd7819f192f9c20d519b4fc75ad6b5502310ae",
+      "packaged_sha256": "98503f8bfefff12a719e562471bd7819f192f9c20d519b4fc75ad6b5502310ae",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/mug_visual_geometry.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/mug_visual_geometry.py",
+      "source_sha256": "d0840f195103bf8be317d33a2aed0f40dfe572aa8aeab1c988db08ae86e11091",
+      "packaged_sha256": "d0840f195103bf8be317d33a2aed0f40dfe572aa8aeab1c988db08ae86e11091",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/mug_visual_observer.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/mug_visual_observer.py",
+      "source_sha256": "5d6fdd56a87035ac22eee40d20d8e09aa4b6a40f0b5695cf260243c6827a90c6",
+      "packaged_sha256": "5d6fdd56a87035ac22eee40d20d8e09aa4b6a40f0b5695cf260243c6827a90c6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/policy_cameras.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/policy_cameras.py",
+      "source_sha256": "1415c5f173502017c99f651778245dae83116f4b91b7bbe8bf614cecf06b2752",
+      "packaged_sha256": "1415c5f173502017c99f651778245dae83116f4b91b7bbe8bf614cecf06b2752",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/policy_control.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/policy_control.py",
+      "source_sha256": "a418fe2619985852d4e65b40e20c18f82fd72076b4d8b9202507dda4a410b151",
+      "packaged_sha256": "a418fe2619985852d4e65b40e20c18f82fd72076b4d8b9202507dda4a410b151",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/policy_observation.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/policy_observation.py",
+      "source_sha256": "d15a9b72e7fb366681d29a21f598d21ffd147b1b9ba56729d296250a67b37af6",
+      "packaged_sha256": "d15a9b72e7fb366681d29a21f598d21ffd147b1b9ba56729d296250a67b37af6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/primitive_policy.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/primitive_policy.py",
+      "source_sha256": "60c009448171533385df1be82e3f64ed395f28d3e03145eb2f10ab6a791ef143",
+      "packaged_sha256": "60c009448171533385df1be82e3f64ed395f28d3e03145eb2f10ab6a791ef143",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/public_trial.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/public_trial.py",
+      "source_sha256": "12c83dc1c598b5a6138ecf7ce89ee15c654adb3f110f010963fe152f830c926d",
+      "packaged_sha256": "12c83dc1c598b5a6138ecf7ce89ee15c654adb3f110f010963fe152f830c926d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/recording.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/recording.py",
+      "source_sha256": "073fc8a874a313288399f1827c2018198c92e3da2975b122655afe41aebe43a2",
+      "packaged_sha256": "073fc8a874a313288399f1827c2018198c92e3da2975b122655afe41aebe43a2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/relay_task.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/relay_task.py",
+      "source_sha256": "a1387ecf36d24166b6cd356a14375aa47aceb4202687b4ccc96a3d305ab6bcd2",
+      "packaged_sha256": "a1387ecf36d24166b6cd356a14375aa47aceb4202687b4ccc96a3d305ab6bcd2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rendering.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rendering.py",
+      "source_sha256": "570f36b7b683c05d6c33aebc442828196db00596c10ed5e94df2b49ceccf0fcd",
+      "packaged_sha256": "570f36b7b683c05d6c33aebc442828196db00596c10ed5e94df2b49ceccf0fcd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/retrieval_policy.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/retrieval_policy.py",
+      "source_sha256": "e47aab06fae8c825cccbe72dae7040edf3ee5d7b07a6537080b95efe001c6873",
+      "packaged_sha256": "e47aab06fae8c825cccbe72dae7040edf3ee5d7b07a6537080b95efe001c6873",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rgb_bottle_observer.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rgb_bottle_observer.py",
+      "source_sha256": "45e93ab0d7930a15c82f5e84809eb0d8d7d8d376ed878558529560ff20c18d20",
+      "packaged_sha256": "45e93ab0d7930a15c82f5e84809eb0d8d7d8d376ed878558529560ff20c18d20",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rgb_servo_cameras.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rgb_servo_cameras.py",
+      "source_sha256": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec",
+      "packaged_sha256": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rgb_servo_controller.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rgb_servo_controller.py",
+      "source_sha256": "6fb0d6ac81f717288a23aa88f60bcd84f95f0137b0660db7d35ebe2aeba7cf94",
+      "packaged_sha256": "6fb0d6ac81f717288a23aa88f60bcd84f95f0137b0660db7d35ebe2aeba7cf94",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rgb_servo_geometry.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rgb_servo_geometry.py",
+      "source_sha256": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae",
+      "packaged_sha256": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rgb_servo_motor.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rgb_servo_motor.py",
+      "source_sha256": "3d90c40a5af68f0b04dfe5aafaa7de47f4c0b67211d40cc1a461eae2311e22b7",
+      "packaged_sha256": "3d90c40a5af68f0b04dfe5aafaa7de47f4c0b67211d40cc1a461eae2311e22b7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rgb_servo_network.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rgb_servo_network.py",
+      "source_sha256": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302",
+      "packaged_sha256": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rgb_servo_openvino.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rgb_servo_openvino.py",
+      "source_sha256": "2a091f27331304228bc57a306302cf05ced182af654a57c502b2bdea4bb1fa42",
+      "packaged_sha256": "2a091f27331304228bc57a306302cf05ced182af654a57c502b2bdea4bb1fa42",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rgb_servo_routing.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rgb_servo_routing.py",
+      "source_sha256": "75acbf9a9e508ba24c29edc777c6ce83569d73bb9d7cbe567a2e7f40dffcafc6",
+      "packaged_sha256": "75acbf9a9e508ba24c29edc777c6ce83569d73bb9d7cbe567a2e7f40dffcafc6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/rgb_servo_vision.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/rgb_servo_vision.py",
+      "source_sha256": "498a5a52bd6fc207aa8754de074cc1c6d2ab9f10659e43f79d0aba12e9afcb1b",
+      "packaged_sha256": "498a5a52bd6fc207aa8754de074cc1c6d2ab9f10659e43f79d0aba12e9afcb1b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/scene.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/scene.py",
+      "source_sha256": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+      "packaged_sha256": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/sequence_policy.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/sequence_policy.py",
+      "source_sha256": "510695960009387afef87284e76e57fa0cce500acd29c380336c08cf865904a8",
+      "packaged_sha256": "510695960009387afef87284e76e57fa0cce500acd29c380336c08cf865904a8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/server.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/server.py",
+      "source_sha256": "724722f43bb88ee487fe1e94797fa0d658131d11f4455f3c5b1363c262bca6e8",
+      "packaged_sha256": "724722f43bb88ee487fe1e94797fa0d658131d11f4455f3c5b1363c262bca6e8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/slots.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/slots.py",
+      "source_sha256": "41755919e4d2bbfb2b023e78c09370d2fbcd740f377bdf616551aff2aa827873",
+      "packaged_sha256": "41755919e4d2bbfb2b023e78c09370d2fbcd740f377bdf616551aff2aa827873",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/speech.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/speech.py",
+      "source_sha256": "66a50562886702017bdf9e0d2a1af31dfb4531061af9b8a6c5c9f16d02cce4a0",
+      "packaged_sha256": "66a50562886702017bdf9e0d2a1af31dfb4531061af9b8a6c5c9f16d02cce4a0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/simulation_lab/storage.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/simulation_lab/storage.py",
+      "source_sha256": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f",
+      "packaged_sha256": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "frozen-source/training_tests/test_mug_visual_control.py",
+      "source": ".run/mug-visual-correction-v1/frozen-source/training_tests/test_mug_visual_control.py",
+      "source_sha256": "12d996647fc9f68e52d9c72b1faa15afceb84c4259ecbb5cbb4fb5ef41b9de9b",
+      "packaged_sha256": "12d996647fc9f68e52d9c72b1faa15afceb84c4259ecbb5cbb4fb5ef41b9de9b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "interface.json",
+      "source": ".run/mug-visual-correction-v1/interface.json",
+      "source_sha256": "4347e2d5b76779540cc34a7e7460b52d1fa0bd719d5ad29cbc4baa1fa271c562",
+      "packaged_sha256": "4347e2d5b76779540cc34a7e7460b52d1fa0bd719d5ad29cbc4baa1fa271c562",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "protocol.json",
+      "source": "docs/robotics/experiments/mug-visual-correction-v1.json",
+      "source_sha256": "fc75f6a6679636e537a972c587889bb16a0cce69f168f499d87ff841a6047f08",
+      "packaged_sha256": "fc75f6a6679636e537a972c587889bb16a0cce69f168f499d87ff841a6047f08",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-contracts-unittest.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-contracts-unittest.log",
+      "source_sha256": "60573da0f17a7574b13e2698a49bc0088d3d67db6d58d8a7b01410acc5d286d0",
+      "packaged_sha256": "60573da0f17a7574b13e2698a49bc0088d3d67db6d58d8a7b01410acc5d286d0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-contracts.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-contracts.log",
+      "source_sha256": "9ad19c7a618ca215316e9fbd3323913aa10a76308282c10918eeb463896de4bc",
+      "packaged_sha256": "b70651e2a1ea8369a39fdd7b36efb75a4a6a5976a5c63632c36e6a950ad281f9",
+      "transformation": "Private filesystem prefixes replaced; original local digest retained."
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100301-upright-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100301-upright-baseline.log",
+      "source_sha256": "378c915c0a06ded02afd46230af8bc24a17ee83cdb8552bf98371ac13ca52c8c",
+      "packaged_sha256": "378c915c0a06ded02afd46230af8bc24a17ee83cdb8552bf98371ac13ca52c8c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100301-upright-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100301-upright-frozen.log",
+      "source_sha256": "921f96eb39d12363e4af505230f4705c9bad7ddc8a2355fb2d1cd18949c43e01",
+      "packaged_sha256": "921f96eb39d12363e4af505230f4705c9bad7ddc8a2355fb2d1cd18949c43e01",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100301-upright-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100301-upright-live.log",
+      "source_sha256": "86bf6069db3e5520e87c30d3fcd1f4e77f94a6b562823077345e2559565816d0",
+      "packaged_sha256": "86bf6069db3e5520e87c30d3fcd1f4e77f94a6b562823077345e2559565816d0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100301-wide_left-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100301-wide_left-baseline.log",
+      "source_sha256": "8dd2cdfce55a60bed3d549e95ce8ce89c79860a725b70ef9aa1f9ddd9bce10d2",
+      "packaged_sha256": "8dd2cdfce55a60bed3d549e95ce8ce89c79860a725b70ef9aa1f9ddd9bce10d2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100301-wide_left-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100301-wide_left-frozen.log",
+      "source_sha256": "0dee6ea2d4c3f6c9b72fe6b4ac196a06b50366ba49aa42f7ecf9db6a909d5468",
+      "packaged_sha256": "0dee6ea2d4c3f6c9b72fe6b4ac196a06b50366ba49aa42f7ecf9db6a909d5468",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100301-wide_left-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100301-wide_left-live.log",
+      "source_sha256": "f695f9e3e47274df2c84b1bbc1ac197ac6d406d2ed4e6fd3578cb67f0b48a8b1",
+      "packaged_sha256": "f695f9e3e47274df2c84b1bbc1ac197ac6d406d2ed4e6fd3578cb67f0b48a8b1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100302-upright-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100302-upright-baseline.log",
+      "source_sha256": "821eda5944c0527150a1a2c95018d252f365ae2cb1fdbcbb63f19be443b0a342",
+      "packaged_sha256": "821eda5944c0527150a1a2c95018d252f365ae2cb1fdbcbb63f19be443b0a342",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100302-upright-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100302-upright-frozen.log",
+      "source_sha256": "e567c168aa425a9b33ec12095aee3aefaa02524677ac4fb7daf5c4405014267d",
+      "packaged_sha256": "e567c168aa425a9b33ec12095aee3aefaa02524677ac4fb7daf5c4405014267d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100302-upright-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100302-upright-live.log",
+      "source_sha256": "8056cbf982813a0024ee2a555381b76cfa5842cbec36f55336c44c1e1695cbf3",
+      "packaged_sha256": "8056cbf982813a0024ee2a555381b76cfa5842cbec36f55336c44c1e1695cbf3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100302-wide_left-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100302-wide_left-baseline.log",
+      "source_sha256": "5230e25d20496692f8e4bd708652f0e15e2c16f262751687ad60112bbf91c2f1",
+      "packaged_sha256": "5230e25d20496692f8e4bd708652f0e15e2c16f262751687ad60112bbf91c2f1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100302-wide_left-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100302-wide_left-frozen.log",
+      "source_sha256": "da2c2b3dd60dc89a284939a433cbb53fd89f3236332b3e6a7cdb04dc1d9c8541",
+      "packaged_sha256": "da2c2b3dd60dc89a284939a433cbb53fd89f3236332b3e6a7cdb04dc1d9c8541",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100302-wide_left-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100302-wide_left-live.log",
+      "source_sha256": "5c8563655bb865a1f911f638442d852fe1cbc8cb0bde551b854a65bb423df064",
+      "packaged_sha256": "5c8563655bb865a1f911f638442d852fe1cbc8cb0bde551b854a65bb423df064",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100303-upright-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100303-upright-baseline.log",
+      "source_sha256": "78edadf98fe338d32fb95adad415863011aedf38a2c2d14260165bc305fe3721",
+      "packaged_sha256": "78edadf98fe338d32fb95adad415863011aedf38a2c2d14260165bc305fe3721",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100303-upright-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100303-upright-frozen.log",
+      "source_sha256": "ad90699be8c41b2ba7da01de06eb79e130a84b5f502e207f7dfbfbc6169805b5",
+      "packaged_sha256": "ad90699be8c41b2ba7da01de06eb79e130a84b5f502e207f7dfbfbc6169805b5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100303-upright-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100303-upright-live.log",
+      "source_sha256": "a9a10e601c34cb87d915a8838b6e5e2735e893bab1553f119c6024dfaccad83b",
+      "packaged_sha256": "a9a10e601c34cb87d915a8838b6e5e2735e893bab1553f119c6024dfaccad83b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100303-wide_left-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100303-wide_left-baseline.log",
+      "source_sha256": "5bfe8b510dc2e8d1dc91dd6dce991e772b723b86a4b6449de3edd9bd46c81f3c",
+      "packaged_sha256": "5bfe8b510dc2e8d1dc91dd6dce991e772b723b86a4b6449de3edd9bd46c81f3c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100303-wide_left-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100303-wide_left-frozen.log",
+      "source_sha256": "fc050cbb59a3d55ca2268c45cfd3cc2114eeaf84aa6d02cfe072edea5657eb69",
+      "packaged_sha256": "fc050cbb59a3d55ca2268c45cfd3cc2114eeaf84aa6d02cfe072edea5657eb69",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100303-wide_left-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100303-wide_left-live.log",
+      "source_sha256": "72223f1975c8834d969a926f59bc4036c88961e5800ac5896a87e68efde8e04d",
+      "packaged_sha256": "72223f1975c8834d969a926f59bc4036c88961e5800ac5896a87e68efde8e04d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100304-upright-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100304-upright-baseline.log",
+      "source_sha256": "8e4611bb1def48c70ce572454ab404f1a7aa04f3ea6b8e11b90ce01ba1d5df82",
+      "packaged_sha256": "8e4611bb1def48c70ce572454ab404f1a7aa04f3ea6b8e11b90ce01ba1d5df82",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100304-upright-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100304-upright-frozen.log",
+      "source_sha256": "93b19fa19cb2213283757fd2628f6e824a5354c93ef1b88b3c58e084949f4275",
+      "packaged_sha256": "93b19fa19cb2213283757fd2628f6e824a5354c93ef1b88b3c58e084949f4275",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100304-upright-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100304-upright-live.log",
+      "source_sha256": "2276df75cc3c8ffc31714698dbed34afd1d83610b3cce7edec9cab67ac84146f",
+      "packaged_sha256": "2276df75cc3c8ffc31714698dbed34afd1d83610b3cce7edec9cab67ac84146f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100304-wide_left-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100304-wide_left-baseline.log",
+      "source_sha256": "8d261201ea619b23b14926d81b060e8629cdd8afec8e633dd1f3074467e277de",
+      "packaged_sha256": "8d261201ea619b23b14926d81b060e8629cdd8afec8e633dd1f3074467e277de",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100304-wide_left-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100304-wide_left-frozen.log",
+      "source_sha256": "84d7975628acacfb2b6eb47b88c2cf69956f746488972329738d2414ac3a60ea",
+      "packaged_sha256": "84d7975628acacfb2b6eb47b88c2cf69956f746488972329738d2414ac3a60ea",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100304-wide_left-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100304-wide_left-live.log",
+      "source_sha256": "560a797137dc4ea6e30f6e51b22dd4c48fee1ece59aec77357991098237930ea",
+      "packaged_sha256": "560a797137dc4ea6e30f6e51b22dd4c48fee1ece59aec77357991098237930ea",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100305-upright-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100305-upright-baseline.log",
+      "source_sha256": "202867a3b6130c20033a965038faaf883bf6c780263bde64255e25d300d6b8c6",
+      "packaged_sha256": "202867a3b6130c20033a965038faaf883bf6c780263bde64255e25d300d6b8c6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100305-upright-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100305-upright-frozen.log",
+      "source_sha256": "cf259e9eeccbf924b09f318e871684ad7419b5a4a12502d0d917548dd4f0f2ae",
+      "packaged_sha256": "cf259e9eeccbf924b09f318e871684ad7419b5a4a12502d0d917548dd4f0f2ae",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100305-upright-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100305-upright-live.log",
+      "source_sha256": "73babab55dd16199df165fe84a216cc0c4f4a65061ef6fb0a8e2abee0a87d2f8",
+      "packaged_sha256": "73babab55dd16199df165fe84a216cc0c4f4a65061ef6fb0a8e2abee0a87d2f8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100305-wide_left-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100305-wide_left-baseline.log",
+      "source_sha256": "9ede79a32b57c4345d154046ba1e5787c80defcab04d2b9836e818c1ccec9783",
+      "packaged_sha256": "9ede79a32b57c4345d154046ba1e5787c80defcab04d2b9836e818c1ccec9783",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100305-wide_left-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100305-wide_left-frozen.log",
+      "source_sha256": "82bc642f2888b7de15dc58449b08540650bf22cf9d5e656dc0ec0e4b7055ac52",
+      "packaged_sha256": "82bc642f2888b7de15dc58449b08540650bf22cf9d5e656dc0ec0e4b7055ac52",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100305-wide_left-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100305-wide_left-live.log",
+      "source_sha256": "5dfb873be9e66f5fca78a8524f04c648bf80fb7f55a41d1346b90c0628200f24",
+      "packaged_sha256": "5dfb873be9e66f5fca78a8524f04c648bf80fb7f55a41d1346b90c0628200f24",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100306-upright-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100306-upright-baseline.log",
+      "source_sha256": "41a415bf6906ea6a1dd512402a488f668b4aa82620a149fcc0349c05354c951b",
+      "packaged_sha256": "41a415bf6906ea6a1dd512402a488f668b4aa82620a149fcc0349c05354c951b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100306-upright-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100306-upright-frozen.log",
+      "source_sha256": "c7d6bacce097fe0669ceeabbc4e4adac157644a81389ce8318253ebf34c820f1",
+      "packaged_sha256": "c7d6bacce097fe0669ceeabbc4e4adac157644a81389ce8318253ebf34c820f1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100306-upright-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100306-upright-live.log",
+      "source_sha256": "21d40f5c282aeafb808594e824f2ca62338955fe9e204c2c613c4598ba3767a9",
+      "packaged_sha256": "21d40f5c282aeafb808594e824f2ca62338955fe9e204c2c613c4598ba3767a9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100306-wide_left-baseline.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100306-wide_left-baseline.log",
+      "source_sha256": "15598ae30c539fa9caf8af3762ea5479bbcde2e532d5f7747d4723844b3ea1c5",
+      "packaged_sha256": "15598ae30c539fa9caf8af3762ea5479bbcde2e532d5f7747d4723844b3ea1c5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100306-wide_left-frozen.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100306-wide_left-frozen.log",
+      "source_sha256": "4d1dce7853e3baca7272b03747a092ffa6405a5ee5a4206817f0f27fe9ddb354",
+      "packaged_sha256": "4d1dce7853e3baca7272b03747a092ffa6405a5ee5a4206817f0f27fe9ddb354",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-2026100306-wide_left-live.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-2026100306-wide_left-live.log",
+      "source_sha256": "7c958c0d6b1045c2e7ab7238d2245e8b32e2215c0423c5c6b132cec7e8d9f5da",
+      "packaged_sha256": "7c958c0d6b1045c2e7ab7238d2245e8b32e2215c0423c5c6b132cec7e8d9f5da",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-audit.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-audit.log",
+      "source_sha256": "c3b474e6cd69af24a892a54a49c213611768ff400679d3e86d14553241e53d5b",
+      "packaged_sha256": "c3b474e6cd69af24a892a54a49c213611768ff400679d3e86d14553241e53d5b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-development-batch.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-development-batch.log",
+      "source_sha256": "a5bc7d8ce21dd0fb908138659eb3a8580ddbe7fc1f32255783d047791e52335d",
+      "packaged_sha256": "a5bc7d8ce21dd0fb908138659eb3a8580ddbe7fc1f32255783d047791e52335d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-freeze.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-freeze.log",
+      "source_sha256": "313389aeb892200026ca39ea8403b35b96f8c63804967f1e05862d3237d702e0",
+      "packaged_sha256": "313389aeb892200026ca39ea8403b35b96f8c63804967f1e05862d3237d702e0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-visual-correction-v1-interface.log",
+      "source": ".run/final-goal/mug-visual-correction-v1-interface.log",
+      "source_sha256": "d174e2ca4acf2cdbe12ecf3c1b7cfa53062ade18b5a21908d4dbd24f3bb65611",
+      "packaged_sha256": "d174e2ca4acf2cdbe12ecf3c1b7cfa53062ade18b5a21908d4dbd24f3bb65611",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "renderer-diagnostic/close_then_create.png",
+      "source": ".run/mug-renderer-lifecycle-v1/close_then_create.png",
+      "source_sha256": "493954c9f1777f249f195a411454814c9c24ba99c700bde5c7efbf3a80787572",
+      "packaged_sha256": "493954c9f1777f249f195a411454814c9c24ba99c700bde5c7efbf3a80787572",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "renderer-diagnostic/create_then_close.png",
+      "source": ".run/mug-renderer-lifecycle-v1/create_then_close.png",
+      "source_sha256": "fbf6904aad44d033a17db8f0384d3904a413ecc60f02fc89dc0d8bd6cd816249",
+      "packaged_sha256": "fbf6904aad44d033a17db8f0384d3904a413ecc60f02fc89dc0d8bd6cd816249",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "renderer-diagnostic/report.json",
+      "source": ".run/mug-renderer-lifecycle-v1/report.json",
+      "source_sha256": "7d2757a652d8e1b27d91ca0cd382d86e7271a1ba782873e417a516830f8608c2",
+      "packaged_sha256": "7d2757a652d8e1b27d91ca0cd382d86e7271a1ba782873e417a516830f8608c2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "renderer-diagnostic/single_renderer.png",
+      "source": ".run/mug-renderer-lifecycle-v1/single_renderer.png",
+      "source_sha256": "493954c9f1777f249f195a411454814c9c24ba99c700bde5c7efbf3a80787572",
+      "packaged_sha256": "493954c9f1777f249f195a411454814c9c24ba99c700bde5c7efbf3a80787572",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "console/mug-renderer-lifecycle-v1.log",
+      "source": ".run/final-goal/mug-renderer-lifecycle-v1.log",
+      "source_sha256": "beb7d6eaeee081969604dee8fb6fb81a6ef971b7cfb01200bf1b66a94f6ce276",
+      "packaged_sha256": "beb7d6eaeee081969604dee8fb6fb81a6ef971b7cfb01200bf1b66a94f6ce276",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "validation-source/scripts/package_mug_visual_correction.py",
+      "source": "scripts/package_mug_visual_correction.py",
+      "source_sha256": "6a5045584d67b8caaadf53df75088c1b51666c22c2ec57c6ee771b03ad31a808",
+      "packaged_sha256": "6a5045584d67b8caaadf53df75088c1b51666c22c2ec57c6ee771b03ad31a808",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "validation-source/scripts/audit_mug_visual_correction.py",
+      "source": "scripts/audit_mug_visual_correction.py",
+      "source_sha256": "ff06424d17f91bd25119365bbd9c6ca58b98114562c2db1dc49586aa9b7e8aa2",
+      "packaged_sha256": "ff06424d17f91bd25119365bbd9c6ca58b98114562c2db1dc49586aa9b7e8aa2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "validation-source/scripts/package_spoon_release.py",
+      "source": "scripts/package_spoon_release.py",
+      "source_sha256": "ad485e7eaf4d6315a833a4482c20c8e749e24c21f8c309ee1a3f5c7af22caffd",
+      "packaged_sha256": "ad485e7eaf4d6315a833a4482c20c8e749e24c21f8c309ee1a3f5c7af22caffd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "file": "validation-source/scripts/diagnose_mug_renderer.py",
+      "source": "scripts/diagnose_mug_renderer.py",
+      "source_sha256": "b98da88cfb281f4435bb60612662c670d746858c535fb3d8bd9009b26f6fa2c2",
+      "packaged_sha256": "b98da88cfb281f4435bb60612662c670d746858c535fb3d8bd9009b26f6fa2c2",
+      "transformation": "byte-identical copy"
+    }
+  ]
+}

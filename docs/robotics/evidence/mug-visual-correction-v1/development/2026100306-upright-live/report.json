@@ -1,0 +1,261 @@
+{
+  "seed": 2026100306,
+  "split": "development",
+  "preset": "upright",
+  "variant": "live",
+  "instruction": "set the table",
+  "preflight": {
+    "free_bytes": 555146690560,
+    "estimated_additional_bytes": 16777216,
+    "reserve_bytes": 10737418240
+  },
+  "physics_state_writes_during_control": 0,
+  "hidden_forces": 0,
+  "equality_constraints": 0,
+  "first_correction_simulation_time": null,
+  "source_freeze_sha256": "caf8dd92120a69ad272c1da2b84af9c2a226081f28e963ed6359ca1aaaeab0fc",
+  "initial_state_sha256": "85be56818fde48413207dfcbbaf758ed643949ccc9fd2442815a146932f33be7",
+  "visual_plan": {
+    "steps": [
+      "bottle",
+      "plate",
+      "mug",
+      "drawer",
+      "fork",
+      "spoon"
+    ],
+    "reasons": [],
+    "observation": {
+      "bottle_path_clear": false,
+      "drawer_path_clear": false,
+      "drawer_open": false,
+      "source": "calibrated RGB color/geometry rules; no simulator object positions",
+      "bottle_centroid_px": [
+        166.42528533935547,
+        160.9885025024414
+      ],
+      "bottle_region": "standard",
+      "plate_centroid_px": [
+        127.39394187927246,
+        136.4747428894043
+      ],
+      "drawer_lining_pixels": 387
+    },
+    "instruction": "set the table",
+    "interpreter": "bounded grammar and RGB-grounded dependencies"
+  },
+  "expected_steps": [
+    "bottle",
+    "plate",
+    "mug",
+    "drawer",
+    "fork",
+    "spoon"
+  ],
+  "status": "failed",
+  "task": {
+    "status": "failed",
+    "active": false,
+    "stage": "neural_control",
+    "stage_label": "Neural bottle movement",
+    "message": "Amber bottle is missing or ambiguous in the calibrated camera region: [] Physics paused.",
+    "arm": "left",
+    "tube_id": "bottle",
+    "kind": "learned_dinner_sequence",
+    "source_slot": null,
+    "recording_id": null,
+    "destination_slot": null,
+    "progress": 0.0,
+    "stages": [
+      {
+        "id": "neural_control",
+        "label": "Camera-conditioned neural movement"
+      }
+    ],
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "metrics": {
+      "placement_error_mm": 80.62261503876923,
+      "placement_z_error_mm": 0.0,
+      "placement_yaw_error_deg": 0.0,
+      "speed_mm_s": 0.01846440997252602,
+      "max_lift_cm": 0.0,
+      "hold_verified_s": 0.0,
+      "longest_unsupported_gap_s": 0.0,
+      "stable_release_and_park_s": 0.0,
+      "both_arms_parked": true,
+      "other_object_displacements_m": {
+        "plate": 0.0,
+        "side_plate": 0.0,
+        "mug": 0.0,
+        "glass": 0.0,
+        "fork": 0.0,
+        "spoon": 0.0
+      },
+      "other_object_max_displacement_m": 0.0,
+      "parked_arm_max_motion_deg": 0.0,
+      "unexpected_collisions": 0
+    },
+    "history": [
+      {
+        "stage": "failed",
+        "at_s": 0.0,
+        "message": "Amber bottle is missing or ambiguous in the calibrated camera region: [] Physics paused."
+      }
+    ],
+    "observation": "initial three RGB cameras and motor-feedback progress guard",
+    "attachment": "physical_contacts_only",
+    "object_id": "bottle",
+    "skill_id": "bottle",
+    "skill_label": "bottle",
+    "policy_mode": "learned_dinner",
+    "physical_monitor": "privileged state for stop/score only; never motor target generation",
+    "teacher_updates": 0,
+    "policy_details": {
+      "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+      "continuous_visual_correction": false,
+      "initial_camera_conditioning": true,
+      "pregrasp_visual_feedback": false,
+      "visual_feedback_scope": "initial image only",
+      "visual_refresh_calls": 0,
+      "camera_support_check": "initial_only",
+      "visual_encoder": "bottle_rgb_geometry",
+      "neural_runtime": "OpenVINO",
+      "neural_execution_devices": [
+        "CPU"
+      ],
+      "inference_demonstration_actions": false,
+      "simulator_clock_or_object_pose_input": false,
+      "internal_progress_endpoints": 0,
+      "tracking_guard_wait_calls": 0
+    },
+    "inference_median_ms": null,
+    "completion_note": "Physical release and parked arms required before the next skill.",
+    "inactive_arm_control": "neural targets",
+    "steps": [
+      "bottle",
+      "plate",
+      "mug",
+      "drawer",
+      "fork",
+      "spoon"
+    ],
+    "completed_steps": [],
+    "results": [
+      {
+        "skill": "bottle",
+        "status": "failed",
+        "active": false,
+        "stage": "neural_control",
+        "stage_label": "Neural bottle movement",
+        "message": "Amber bottle is missing or ambiguous in the calibrated camera region: [] Physics paused.",
+        "arm": "left",
+        "tube_id": "bottle",
+        "kind": "learned_dinner",
+        "source_slot": null,
+        "recording_id": null,
+        "destination_slot": null,
+        "progress": 0.0,
+        "stages": [
+          {
+            "id": "neural_control",
+            "label": "Camera-conditioned neural movement"
+          }
+        ],
+        "elapsed_s": 0.0,
+        "attempts": 0,
+        "metrics": {
+          "placement_error_mm": 80.62261503876923,
+          "placement_z_error_mm": 0.0,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.01846440997252602,
+          "max_lift_cm": 0.0,
+          "hold_verified_s": 0.0,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.0,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 0.0,
+            "side_plate": 0.0,
+            "mug": 0.0,
+            "glass": 0.0,
+            "fork": 0.0,
+            "spoon": 0.0
+          },
+          "other_object_max_displacement_m": 0.0,
+          "parked_arm_max_motion_deg": 0.0,
+          "unexpected_collisions": 0
+        },
+        "history": [
+          {
+            "stage": "failed",
+            "at_s": 0.0,
+            "message": "Amber bottle is missing or ambiguous in the calibrated camera region: [] Physics paused."
+          }
+        ],
+        "observation": "initial three RGB cameras and motor-feedback progress guard",
+        "attachment": "physical_contacts_only",
+        "object_id": "bottle",
+        "skill_id": "bottle",
+        "skill_label": "bottle",
+        "policy_mode": "learned_dinner",
+        "physical_monitor": "privileged state for stop/score only; never motor target generation",
+        "teacher_updates": 0,
+        "policy_details": {
+          "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+          "continuous_visual_correction": false,
+          "initial_camera_conditioning": true,
+          "pregrasp_visual_feedback": false,
+          "visual_feedback_scope": "initial image only",
+          "visual_refresh_calls": 0,
+          "camera_support_check": "initial_only",
+          "visual_encoder": "bottle_rgb_geometry",
+          "neural_runtime": "OpenVINO",
+          "neural_execution_devices": [
+            "CPU"
+          ],
+          "inference_demonstration_actions": false,
+          "simulator_clock_or_object_pose_input": false,
+          "internal_progress_endpoints": 0,
+          "tracking_guard_wait_calls": 0
+        },
+        "inference_median_ms": null,
+        "completion_note": "Physical release and parked arms required before the next skill.",
+        "inactive_arm_control": "neural targets"
+      }
+    ],
+    "skill_elapsed_s": 0.0,
+    "intent_plan": {
+      "steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "reasons": [],
+      "observation": {
+        "bottle_path_clear": false,
+        "drawer_path_clear": false,
+        "drawer_open": false,
+        "source": "calibrated RGB color/geometry rules; no simulator object positions",
+        "bottle_centroid_px": [
+          166.42528533935547,
+          160.9885025024414
+        ],
+        "bottle_region": "standard",
+        "plate_centroid_px": [
+          127.39394187927246,
+          136.4747428894043
+        ],
+        "drawer_lining_pixels": 387
+      },
+      "instruction": "set the table",
+      "interpreter": "bounded grammar and RGB-grounded dependencies"
+    }
+  },
+  "wall_seconds": 0.6954214000143111,
+  "simulation_seconds": 0.0,
+  "trace_frames": 1
+}
