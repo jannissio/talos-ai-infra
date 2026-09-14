@@ -1,0 +1,597 @@
+{
+  "schema": "talos.spoon-release.v1",
+  "protocol_sha256": "a4b51b88e7605526cd37a316a8e30c819e851939ddd4ec3aa671ca018fc26a8b",
+  "source_sha256": "4ca7bdf183c5e66391502422682c34d24ee0715a1c4cc6b74cbe2f358832a4bf",
+  "candidate_sha256": "4429ae0473ca96295a6e3a73fa8240486f12d110d8011bc5d42e821a8eda7d07",
+  "script_sha256": "2ed9bce1e45513d7ddfe8ad2de48fd2d7346810ae898df461abe8da0ffbe3308",
+  "records": [
+    {
+      "episode": "seed-2026091701",
+      "lower_cut_endpoint": 60.3670282734037,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999431700047374,
+      "maximum_active_joint_change_rad": 0.02497720718383789,
+      "joint_offset_rad": [
+        0.0,
+        -0.010180264711380005,
+        -0.01121550053358078,
+        0.02139580249786377,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091702",
+      "lower_cut_endpoint": 60.24035788431451,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999599515866393,
+      "maximum_active_joint_change_rad": 0.02438485622406006,
+      "joint_offset_rad": [
+        -1.1920928955078125e-07,
+        -0.008481532335281372,
+        -0.012426242232322693,
+        0.020894527435302734,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091703",
+      "lower_cut_endpoint": 60.303269217162715,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999550199691916,
+      "maximum_active_joint_change_rad": 0.023834824562072754,
+      "joint_offset_rad": [
+        -2.384185791015625e-07,
+        -0.008158981800079346,
+        -0.012149311602115631,
+        0.020295143127441406,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091704",
+      "lower_cut_endpoint": 59.96269665336903,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999917629506268,
+      "maximum_active_joint_change_rad": 0.025061964988708496,
+      "joint_offset_rad": [
+        -1.3113021850585938e-06,
+        -0.008975565433502197,
+        -0.012566432356834412,
+        0.021529078483581543,
+        -1.1920928955078125e-06
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091705",
+      "lower_cut_endpoint": 60.27266752068301,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999554137254414,
+      "maximum_active_joint_change_rad": 0.024451613426208496,
+      "joint_offset_rad": [
+        -2.384185791015625e-07,
+        -0.008472144603729248,
+        -0.012447662651538849,
+        0.020906567573547363,
+        -2.384185791015625e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091706",
+      "lower_cut_endpoint": 60.247468575712155,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999597716363624,
+      "maximum_active_joint_change_rad": 0.023833394050598145,
+      "joint_offset_rad": [
+        -2.384185791015625e-07,
+        -0.008187085390090942,
+        -0.012096740305423737,
+        0.020270705223083496,
+        -2.384185791015625e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091707",
+      "lower_cut_endpoint": 60.38463045926738,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999431876470695,
+      "maximum_active_joint_change_rad": 0.024492621421813965,
+      "joint_offset_rad": [
+        -1.1920928955078125e-07,
+        -0.00845426321029663,
+        -0.012505754828453064,
+        0.020946979522705078,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091708",
+      "lower_cut_endpoint": 60.333018568917,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999951825237712,
+      "maximum_active_joint_change_rad": 0.024944663047790527,
+      "joint_offset_rad": [
+        0.0,
+        -0.01016339659690857,
+        -0.011200033128261566,
+        0.021363377571105957,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-42",
+      "lower_cut_endpoint": 60.23076569707533,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999577504218333,
+      "maximum_active_joint_change_rad": 0.023183107376098633,
+      "joint_offset_rad": [
+        -5.960464477539062e-07,
+        -0.007863253355026245,
+        -0.011820465326309204,
+        0.019670486450195312,
+        -4.76837158203125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091709",
+      "lower_cut_endpoint": 60.488801240169245,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999935771865303,
+      "maximum_active_joint_change_rad": 0.025099873542785645,
+      "joint_offset_rad": [
+        0.0,
+        -0.010156720876693726,
+        -0.011424779891967773,
+        0.021581649780273438,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091710",
+      "lower_cut_endpoint": 60.262754436241615,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999565466219957,
+      "maximum_active_joint_change_rad": 0.023517966270446777,
+      "joint_offset_rad": [
+        -3.5762786865234375e-07,
+        -0.008022338151931763,
+        -0.011941321194171906,
+        0.019950509071350098,
+        -2.384185791015625e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091711",
+      "lower_cut_endpoint": 60.4435626948257,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999369391160435,
+      "maximum_active_joint_change_rad": 0.023529410362243652,
+      "joint_offset_rad": [
+        -4.76837158203125e-07,
+        -0.007906883955001831,
+        -0.012133598327636719,
+        0.02002739906311035,
+        -2.384185791015625e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091712",
+      "lower_cut_endpoint": 60.2836609287547,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999512060812084,
+      "maximum_active_joint_change_rad": 0.025613069534301758,
+      "joint_offset_rad": [
+        0.0,
+        -0.009096592664718628,
+        -0.013002589344978333,
+        0.022086143493652344,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091713",
+      "lower_cut_endpoint": 60.278283102631185,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999540673971703,
+      "maximum_active_joint_change_rad": 0.0250319242477417,
+      "joint_offset_rad": [
+        0.0,
+        -0.008786767721176147,
+        -0.012720771133899689,
+        0.021494388580322266,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091714",
+      "lower_cut_endpoint": 60.44611228424843,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999937843760958,
+      "maximum_active_joint_change_rad": 0.025075078010559082,
+      "joint_offset_rad": [
+        0.0,
+        -0.010182112455368042,
+        -0.011313751339912415,
+        0.021495938301086426,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091715",
+      "lower_cut_endpoint": 60.4019933227693,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999403436885563,
+      "maximum_active_joint_change_rad": 0.02509784698486328,
+      "joint_offset_rad": [
+        0.0,
+        -0.0087260901927948,
+        -0.012911789119243622,
+        0.02162480354309082,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091716",
+      "lower_cut_endpoint": 60.37375337430496,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999437876293555,
+      "maximum_active_joint_change_rad": 0.02507627010345459,
+      "joint_offset_rad": [
+        0.0,
+        -0.008731484413146973,
+        -0.012884639203548431,
+        0.021602988243103027,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091717",
+      "lower_cut_endpoint": 60.39108873873083,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999422607338566,
+      "maximum_active_joint_change_rad": 0.02573072910308838,
+      "joint_offset_rad": [
+        0.0,
+        -0.009052455425262451,
+        -0.013168200850486755,
+        0.02220761775970459,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091718",
+      "lower_cut_endpoint": 60.318276435570034,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999950986453781,
+      "maximum_active_joint_change_rad": 0.0238494873046875,
+      "joint_offset_rad": [
+        -2.384185791015625e-07,
+        -0.00814560055732727,
+        -0.012158870697021484,
+        0.02029132843017578,
+        -2.384185791015625e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091719",
+      "lower_cut_endpoint": 60.301299303491035,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999489312024785,
+      "maximum_active_joint_change_rad": 0.025648832321166992,
+      "joint_offset_rad": [
+        0.0,
+        -0.009064346551895142,
+        -0.01307300478219986,
+        0.022124171257019043,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091720",
+      "lower_cut_endpoint": 60.325935234381795,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999505105209323,
+      "maximum_active_joint_change_rad": 0.02563917636871338,
+      "joint_offset_rad": [
+        0.0,
+        -0.009109705686569214,
+        -0.013016752898693085,
+        0.022113323211669922,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091721",
+      "lower_cut_endpoint": 60.13928392636838,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999749791665975,
+      "maximum_active_joint_change_rad": 0.023761510848999023,
+      "joint_offset_rad": [
+        -2.384185791015625e-07,
+        -0.008202582597732544,
+        -0.012071236968040466,
+        0.02026069164276123,
+        -1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091722",
+      "lower_cut_endpoint": 60.36243205469106,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999430077852773,
+      "maximum_active_joint_change_rad": 0.023511052131652832,
+      "joint_offset_rad": [
+        -3.5762786865234375e-07,
+        -0.00794893503189087,
+        -0.012067288160324097,
+        0.020003199577331543,
+        -1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091723",
+      "lower_cut_endpoint": 60.476174747766414,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999940035481319,
+      "maximum_active_joint_change_rad": 0.02510666847229004,
+      "joint_offset_rad": [
+        0.0,
+        -0.010190576314926147,
+        -0.011339791119098663,
+        0.0215303897857666,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091724",
+      "lower_cut_endpoint": 60.2734512016812,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999546172805314,
+      "maximum_active_joint_change_rad": 0.02503037452697754,
+      "joint_offset_rad": [
+        0.0,
+        -0.008787393569946289,
+        -0.012720339000225067,
+        0.021494507789611816,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091725",
+      "lower_cut_endpoint": 60.18742908177805,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999698494170834,
+      "maximum_active_joint_change_rad": 0.024109482765197754,
+      "joint_offset_rad": [
+        -1.1920928955078125e-07,
+        -0.008363217115402222,
+        -0.012204498052597046,
+        0.020554423332214355,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091726",
+      "lower_cut_endpoint": 60.30142553488359,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999518137113768,
+      "maximum_active_joint_change_rad": 0.025653719902038574,
+      "joint_offset_rad": [
+        0.0,
+        -0.009051322937011719,
+        -0.013090915977954865,
+        0.022128939628601074,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091727",
+      "lower_cut_endpoint": 60.110893214618294,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999786985768218,
+      "maximum_active_joint_change_rad": 0.02350616455078125,
+      "joint_offset_rad": [
+        -4.76837158203125e-07,
+        -0.008064210414886475,
+        -0.011894896626472473,
+        0.019945979118347168,
+        -2.384185791015625e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091728",
+      "lower_cut_endpoint": 60.13244365161739,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.00299997649875694,
+      "maximum_active_joint_change_rad": 0.02347886562347412,
+      "joint_offset_rad": [
+        -5.960464477539062e-07,
+        -0.008038580417633057,
+        -0.011942103505134583,
+        0.01996743679046631,
+        -3.5762786865234375e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091729",
+      "lower_cut_endpoint": 60.3308868063295,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999946733768688,
+      "maximum_active_joint_change_rad": 0.025380492210388184,
+      "joint_offset_rad": [
+        0.0,
+        -0.008907556533813477,
+        -0.012956805527210236,
+        0.021851181983947754,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091730",
+      "lower_cut_endpoint": 60.875844137993354,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999968900099903,
+      "maximum_active_joint_change_rad": 0.023651480674743652,
+      "joint_offset_rad": [
+        3.2186508178710938e-06,
+        -0.007531940937042236,
+        -0.012582913041114807,
+        0.02010202407836914,
+        3.337860107421875e-06
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091731",
+      "lower_cut_endpoint": 60.360442465824505,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999947462323016,
+      "maximum_active_joint_change_rad": 0.025397419929504395,
+      "joint_offset_rad": [
+        0.0,
+        -0.008911609649658203,
+        -0.012968488037586212,
+        0.021867036819458008,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091732",
+      "lower_cut_endpoint": 60.278063668223126,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999954923835979,
+      "maximum_active_joint_change_rad": 0.02379894256591797,
+      "joint_offset_rad": [
+        -2.384185791015625e-07,
+        -0.00813630223274231,
+        -0.012176096439361572,
+        0.020299315452575684,
+        -1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091733",
+      "lower_cut_endpoint": 60.35010594005008,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999946869559511,
+      "maximum_active_joint_change_rad": 0.024484753608703613,
+      "joint_offset_rad": [
+        0.0,
+        -0.008447259664535522,
+        -0.0125051811337471,
+        0.02093946933746338,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091734",
+      "lower_cut_endpoint": 60.23250414987372,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999592748898296,
+      "maximum_active_joint_change_rad": 0.024695873260498047,
+      "joint_offset_rad": [
+        0.0,
+        -0.008680641651153564,
+        -0.012484610080718994,
+        0.021152257919311523,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091735",
+      "lower_cut_endpoint": 60.298920329348675,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999951975946158,
+      "maximum_active_joint_change_rad": 0.023496627807617188,
+      "joint_offset_rad": [
+        -4.76837158203125e-07,
+        -0.008004724979400635,
+        -0.012001685798168182,
+        0.019993185997009277,
+        -2.384185791015625e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091736",
+      "lower_cut_endpoint": 60.32920445159596,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999945812216631,
+      "maximum_active_joint_change_rad": 0.025074005126953125,
+      "joint_offset_rad": [
+        0.0,
+        -0.008764266967773438,
+        -0.01278601586818695,
+        0.021537184715270996,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091737",
+      "lower_cut_endpoint": 60.276117665864994,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.0029999559495055284,
+      "maximum_active_joint_change_rad": 0.025032997131347656,
+      "joint_offset_rad": [
+        0.0,
+        -0.008783817291259766,
+        -0.012725301086902618,
+        0.021496057510375977,
+        1.1920928955078125e-07
+      ],
+      "opening_target_rad": 0.4000000059604645
+    },
+    {
+      "episode": "seed-2026091740",
+      "lower_cut_endpoint": 60.23668148563969,
+      "target_clearance_m": 0.003,
+      "actual_fk_clearance_m": 0.002999960804121904,
+      "maximum_active_joint_change_rad": 0.024097323417663574,
+      "joint_offset_rad": [
+        -1.1920928955078125e-07,
+        -0.008331060409545898,
+        -0.012273453176021576,
+        0.020591378211975098,
+        0.0
+      ],
+      "opening_target_rad": 0.4000000059604645
+    }
+  ],
+  "physical_replay_complete": false,
+  "training_started": false,
+  "originals_modified": false
+}
