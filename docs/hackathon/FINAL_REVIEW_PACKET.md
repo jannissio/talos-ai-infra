@@ -24,6 +24,8 @@ Prepared September 13. Internal completion target: **September 14, 18:00 CEST**,
 
 ## Required before the public release
 
+The latest [held-mug camera diagnostic](../robotics/evidence/mug-visual-visibility-v1/README.md) passes visibility on all 144 exposed states. All 1,296 views/masks are independently verified. It selects a closer fixed camera layout for pose-observer investigation; its color-centroid triangulation still has 10.836 mm p95 error. No observer or corrective controller has passed a new gate or replaced the selected system.
+
 1. **Run on the Intel laptop.** Follow [the tested procedure](../robotics/INTEL_FINAL_VERIFICATION.md), using a fresh output folder. Record CPU SKU, OpenGL renderer, OpenVINO device, FP32 parity/latency/throughput and the complete physical sequence. The procedure has passed on this PC, but AMD/NVIDIA is not Intel evidence. The available historical i7-10850H laptop is not Core Ultra Series 2/3; preserve that distinction and any organizer clarification. Do not turn a successful legacy run into a qualifying-hardware claim.
 2. **Human voice rehearsal.** On the full local browser, select the learned dinner sequence, reset Task start / Closed / seed 42, press Speak instruction and say “Set the table.” Check the transcript and all six outcomes. A human bottle command already passed; the full voice sequence remains pending. The assistant must not capture the microphone unattended. No new key is needed while the existing local `.env` works.
 3. **Refresh only changed claims.** Add actual Intel results, retain failed hardware checks where applicable, and update the current deck/video/text with measured results. Preserve older versions. The experimental RGB comparison stays supplementary and cannot imply broad coverage.

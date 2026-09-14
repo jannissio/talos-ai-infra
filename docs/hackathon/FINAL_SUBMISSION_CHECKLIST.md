@@ -65,6 +65,8 @@ The PDF requires an end-to-end perception/language/action workflow. Its examples
 
 ## Acceptance and storage rules
 
+Current visual-placement work: [held-mug visibility](../robotics/evidence/mug-visual-visibility-v1/README.md) passes on all 144 exposed states in three layouts. All 1,296 RGB views and masks are independently verified. A fixed close camera layout is selected for further investigation; biased RGB centroids remain too inaccurate for pose control. A learned pose observer and physical correction are still separate unfinished steps.
+
 - Every promoted skill needs physical replay and learned execution evidence, not just low training loss or an animation.
 - Report learned, programmed, classical-vision and privileged monitoring components separately.
 - No attachments, teleportation or hidden forces during manipulation. Setup/reset writes are explicit.
