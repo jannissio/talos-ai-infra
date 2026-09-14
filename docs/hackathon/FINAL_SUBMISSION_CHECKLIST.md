@@ -10,8 +10,8 @@ This is the active development and release plan. It supersedes the narrower scop
 
 After continuation or compaction, resume from [the authoritative current goal in PC_HANDOFF](../PC_HANDOFF.md#current-goal---authoritative-after-every-continuation), then [the broader manipulation plan](../robotics/BROADER_MANIPULATION_PLAN.md). The review packet links this same goal rather than defining another scope.
 
-- [ ] B1: Complete 100 declared diagnostic cases with paired learned/exact-state physical outcomes. Separate invalid arrangements, observed feasibility, perception refusal and physical failure. Six anchor regressions must pass before broad exposure.
-- [ ] B2: Select one substantive generalization/control improvement from the measured failure pattern. Define data, current-image/target inputs, recovery scope and training budget before fitting.
+- [x] B1: [All 100 cases / 200 rollouts](../robotics/evidence/manipulation-coverage-v1/README.md) complete, with all six learned anchors passing. Excluding anchors: 83 valid starts, 11 learned successes, 43 programmed successes and 32 demonstrated feasible learned failures. All 11 invalid starts and 88,760 frames remain available.
+- [ ] B2: [Bottle refinement V1](../robotics/experiments/bottle-refinement-v1.json) is frozen and underway: train a new local RGB refinement stage on wider positions and actual grasp/carry views, then test it with the existing target-conditioned neural route/motor controller. Training and CPU export pass development; all preceding data are audited and the selected weights are frozen before 512 fresh perception cases. The physical comparison is prepared but remains gated. Perception alone does not complete B2.
 - [ ] B3: Freeze a candidate before fresh wider-position evaluation; require improved physical success under unchanged criteria and preserved fallback regressions. Declare numerical promotion thresholds in that follow-on protocol before training.
 - [ ] B4: Extend the passing method across supported objects and drawer configurations, then test combined arrangements and full command sequences.
 

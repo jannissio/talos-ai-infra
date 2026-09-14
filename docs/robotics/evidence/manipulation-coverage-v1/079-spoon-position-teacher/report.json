@@ -1,0 +1,342 @@
+{
+  "case": {
+    "id": "079-spoon-position",
+    "skill": "spoon",
+    "kind": "position",
+    "drawer_local_xy": [
+      0.038,
+      -0.04
+    ],
+    "yaw_rad": 0.0,
+    "destination_xy": [
+      -0.02,
+      -0.155
+    ]
+  },
+  "controller": "teacher",
+  "protocol_sha256": "d528806e77ac16636a7dc06abad6fe2833fbe9f48ef80ede7bc52a08015ba55f",
+  "preflight": {
+    "free_bytes": 539752697856,
+    "estimated_additional_bytes": 25165824,
+    "reserve_bytes": 10737418240
+  },
+  "setup": {
+    "valid": false,
+    "initial_max_penetration_m": 0.009000000000000008,
+    "settled_source_xyz_m": [
+      -0.24200000325441917,
+      0.04145660384119802,
+      0.7889798301936064
+    ],
+    "settled_upright_z": 0.9999999999965375,
+    "settled_speed_m_s": 2.0956379996701727e-09,
+    "drawer_open_m": 0.11795052331270024,
+    "reason": "Initial inter-body overlap, tipped/unsupported object or unsettled reset."
+  },
+  "layout": {
+    "seed": 42,
+    "scenario": "dinner",
+    "racks": [],
+    "slots": [],
+    "tubes": [],
+    "table_z": 0.76,
+    "practice": false,
+    "transfer_side": null,
+    "objects": [
+      {
+        "id": "plate",
+        "body": "plate",
+        "label": "Blue-rim plate",
+        "kind": "plate",
+        "mass_kg": 0.06988658350326873,
+        "size_m": [
+          0.132,
+          0.132,
+          0.024
+        ],
+        "color": "#719acb",
+        "grasp_local_m": [
+          0,
+          -0.061,
+          0.01
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.720447122718411,
+        "initial_position_m": [
+          -0.11638508131170106,
+          0.006541255797003905,
+          0.761
+        ],
+        "initial_yaw_rad": -0.09840858828641696,
+        "grasp_site": "plate_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "side_plate",
+        "body": "side_plate",
+        "label": "Gold-rim side plate",
+        "kind": "plate",
+        "mass_kg": 0.04231680087139978,
+        "size_m": [
+          0.106,
+          0.106,
+          0.012
+        ],
+        "color": "#dfac65",
+        "grasp_local_m": [
+          0,
+          -0.048,
+          0.009
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.760260626383432,
+        "initial_position_m": [
+          0.12687188344558123,
+          0.2527466673290427,
+          0.761
+        ],
+        "initial_yaw_rad": 0.07994066843707767,
+        "grasp_site": "side_plate_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "mug",
+        "body": "mug",
+        "label": "Teal mug",
+        "kind": "mug",
+        "mass_kg": 0.046406457163855226,
+        "size_m": [
+          0.077,
+          0.05,
+          0.064
+        ],
+        "color": "#54b9b1",
+        "grasp_local_m": [
+          0.047,
+          0,
+          0.041
+        ],
+        "grasp_width_m": 0.008,
+        "friction": 0.7626769501606706,
+        "initial_position_m": [
+          0.2586956741386755,
+          -0.06784916089945942,
+          0.761
+        ],
+        "initial_yaw_rad": 0.05504403785809753,
+        "grasp_site": "mug_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "glass",
+        "body": "glass",
+        "label": "Clear drinking glass",
+        "kind": "glass",
+        "mass_kg": 0.0335931747384779,
+        "size_m": [
+          0.048,
+          0.048,
+          0.074
+        ],
+        "color": "#b3dcdf",
+        "grasp_local_m": [
+          0,
+          0,
+          0.045
+        ],
+        "grasp_width_m": 0.048,
+        "friction": 0.7211011999394468,
+        "initial_position_m": [
+          0.28506173849738614,
+          0.23942811469622016,
+          0.761
+        ],
+        "initial_yaw_rad": 0.06983024418539197,
+        "grasp_site": "glass_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "bottle",
+        "body": "bottle",
+        "label": "Amber water bottle",
+        "kind": "bottle",
+        "mass_kg": 0.08461626206403405,
+        "size_m": [
+          0.048,
+          0.048,
+          0.14
+        ],
+        "color": "#cf995b",
+        "grasp_local_m": [
+          0,
+          0,
+          0.128
+        ],
+        "grasp_width_m": 0.022,
+        "friction": 0.7468793560026864,
+        "initial_position_m": [
+          0.029619345775310266,
+          -0.07454542823589294,
+          0.761
+        ],
+        "initial_yaw_rad": -0.05760076020186079,
+        "grasp_site": "bottle_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "fork",
+        "body": "fork",
+        "label": "Fork",
+        "kind": "fork",
+        "mass_kg": 0.012451510275532108,
+        "size_m": [
+          0.017,
+          0.11,
+          0.016
+        ],
+        "color": "#cad5de",
+        "grasp_local_m": [
+          0,
+          0,
+          0.008
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.7210203415632669,
+        "initial_position_m": [
+          -0.3050063602249974,
+          0.16253963377110708,
+          0.79
+        ],
+        "initial_yaw_rad": -0.016307902906879085,
+        "grasp_site": "fork_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "spoon",
+        "body": "spoon",
+        "label": "Spoon",
+        "kind": "spoon",
+        "mass_kg": 0.014633366303023428,
+        "size_m": [
+          0.022,
+          0.11,
+          0.016
+        ],
+        "color": "#cad5de",
+        "grasp_local_m": [
+          0,
+          0,
+          0.008
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.7265035239674196,
+        "initial_position_m": [
+          -0.25752758977711454,
+          0.1675584124172709,
+          0.79
+        ],
+        "initial_yaw_rad": 0.028538748909999592,
+        "grasp_site": "spoon_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      }
+    ],
+    "targets": [
+      {
+        "id": "plate_place",
+        "label": "Plate setting",
+        "object_id": "plate",
+        "position_m": [
+          -0.06,
+          -0.025,
+          0.76
+        ],
+        "radius_m": 0.074
+      },
+      {
+        "id": "side_plate_place",
+        "label": "Side plate setting",
+        "object_id": "side_plate",
+        "position_m": [
+          0.11,
+          -0.025,
+          0.76
+        ],
+        "radius_m": 0.06
+      },
+      {
+        "id": "mug_place",
+        "label": "Mug setting",
+        "object_id": "mug",
+        "position_m": [
+          0.265,
+          0.005,
+          0.76
+        ],
+        "radius_m": 0.033
+      },
+      {
+        "id": "glass_place",
+        "label": "Glass setting",
+        "object_id": "glass",
+        "position_m": [
+          0.075,
+          0.1,
+          0.76
+        ],
+        "radius_m": 0.033
+      },
+      {
+        "id": "fork_place",
+        "label": "Fork setting",
+        "object_id": "fork",
+        "position_m": [
+          -0.16,
+          -0.045,
+          0.76
+        ],
+        "radius_m": 0.012
+      },
+      {
+        "id": "spoon_place",
+        "label": "Spoon setting",
+        "object_id": "spoon",
+        "position_m": [
+          -0.02,
+          -0.155,
+          0.76
+        ],
+        "radius_m": 0.014
+      }
+    ],
+    "drawer": {
+      "body": "cutlery_drawer",
+      "joint": "drawer_slide",
+      "travel_m": 0.12,
+      "initial_open_m": 0.11782959838997423,
+      "handle_site": "drawer_handle_grasp",
+      "actuated": false,
+      "closed_origin_m": [
+        -0.28,
+        0.18,
+        0.76
+      ]
+    },
+    "dinner_preset": "task",
+    "drawer_open": true,
+    "randomization": {
+      "object_xy_m": 0.009,
+      "mass_fraction": 0.08,
+      "friction_fraction": 0.1,
+      "light_multiplier": 0.9860265545874881
+    },
+    "challenge": {
+      "title": "Set the dinner table",
+      "autonomy_available": true,
+      "instruction": "Open the drawer, place the plate and cutlery, then coordinate both arms to serve a drink.",
+      "next_skill": "Learn camera/language control from verified demonstrations."
+    }
+  },
+  "status": "invalid_start",
+  "wall_seconds": 0.17372329998761415,
+  "trace_frames": 1
+}

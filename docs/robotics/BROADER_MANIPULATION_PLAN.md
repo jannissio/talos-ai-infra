@@ -23,9 +23,10 @@ The bottle gets a 24-position grid; other objects get nine-position grids, plus 
 
 ## Development steps
 
-- [ ] Complete the declared coverage map, including both controller outcomes and valid-start/feasibility distinctions.
-- [ ] Identify the highest-value failure pattern: perception support, grasp geometry, carrying/release, destination conditioning or drawer semantics.
-- [ ] Freeze one bounded improvement with varied demonstrations, current-image action inputs and fresh development/evaluation cases where justified by that pattern.
+- [x] Complete the declared coverage map: [all 200 rollouts](evidence/manipulation-coverage-v1/README.md), with 100 identical paired starts and 88,760 state frames. Excluding six anchors: 11/83 valid learned successes versus 43/83 programmed successes; 11 invalid arrangements are also retained.
+- [x] Identify the first target: wider bottle manipulation. Its 24-position grid has zero learned successes (two invalid starts) versus 15 programmed successes. Perception support and extrapolated motion are the dominant gaps; partially open/moved drawers also remain unsupported.
+- [x] Freeze [bottle image refinement V1](experiments/bottle-refinement-v1.json): a new RGB crop-refinement network after the frozen coarse detector, 4,096 broad/physical-context training states and 512 fresh development states. One 8,000-update RTX fit, two checkpoints. Current status: training and CPU export pass development (433/449 present, 0/63 absent false accepts, 1.322 mm p95 / 3.971 mm maximum); all 4,608 preceding data states are audited. The selected step-8,000 weights are frozen before the 512-state fresh perception test. Physical integration is prepared but remains gated.
+- [ ] Require the new observer to pass development, FP32 export and 512 fresh perception cases, then integrate the existing target-conditioned neural route/motor controller and run six development plus 24 fresh three-condition physical cases. No broader success is claimed before those tests.
 - [ ] Require improved success beyond the narrow presets, preserved baseline regressions and unchanged physical criteria before promotion.
 - [ ] Extend the successful method across skills, then evaluate combined configurations and full voice-command sequences.
 
