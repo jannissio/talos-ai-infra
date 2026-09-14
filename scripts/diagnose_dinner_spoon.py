@@ -57,7 +57,11 @@ def run(args):
     xml, _ = build_scene(seed=42, scenario='dinner', dinner_preset='task')
     model = mujoco.MjModel.from_xml_string(xml)
     geometry = RobotGeometry(model)
-    truth_tool = np.asarray([geometry.pose('left',q[:5])[0] for q in inputs['actions']])
+    grasp_point = np.asarray(protocol.get('grasp_point_local_m',[.003,0.,-.092]))
+    def tool_point(q):
+        _,rotation = geometry.pose('left',q[:5])
+        return geometry.scratch.body('left_gripper').xpos+rotation@grasp_point
+    truth_tool = np.asarray([tool_point(q) for q in inputs['actions']])
     stage_ends = np.cumsum(list(info['durations_s'].values()))
     stage_names = list(info['durations_s'])
     stages = np.asarray(stage_names)[np.minimum(np.searchsorted(stage_ends,inputs['seconds'],side='right'),len(stage_names)-1)]
@@ -82,7 +86,7 @@ def run(args):
                 parts.append(predictions*np.asarray(meta['action_std'])+np.asarray(meta['action_mean']))
         predicted = np.concatenate(parts)
         joints = np.max(np.abs(predicted[:,:5]-inputs['actions'][:,:5]),axis=1)
-        tools = np.asarray([geometry.pose('left',q[:5])[0] for q in predicted])
+        tools = np.asarray([tool_point(q) for q in predicted])
         errors = np.linalg.norm(tools-truth_tool,axis=1)*1000
         episodes = []
         for index,(begin,end) in enumerate(inputs['bounds']):
@@ -145,13 +149,13 @@ def run(args):
         if waits:
             raise ValueError('Stage-time diagnostic requires the declared zero-wait traces.')
         probes = []
-        for stage in ('close','hold','lower','release','park'):
+        for stage in protocol.get('stage_probes', ['close','hold','lower','release','park']):
             end_time = stage_ends[stage_names.index(stage)]-.1
             index = int(indices[np.argmin(abs(states['time'][indices]-origin-end_time))])
             load(index)
             hand = data.body('left_gripper')
             rotation = hand.xmat.reshape(3,3)
-            tool = hand.xpos+rotation@np.array([.003,0.,-.092])
+            tool = hand.xpos+rotation@grasp_point
             body = data.body('spoon')
             object_rotation = body.xmat.reshape(3,3)
             relative = object_rotation.T@(tool-body.xpos)
@@ -166,6 +170,7 @@ def run(args):
                        'nearest_standardized_feature_distance':float(training_distance.min()),
                        'probes':probes, 'tracking_guard_wait_calls':waits})
     report = {'schema':protocol['schema'], 'protocol_sha256':sha(args.protocol), 'script_sha256':sha(Path(__file__)),
+              'grasp_point_local_m':grasp_point.tolist(),
               'parent_git_revision':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
               'training_input_sha256':sha(source/'retrieval.npz'), 'fit':fit, 'exposed_traces':traces,
               'wall_seconds':time.perf_counter()-started, 'training_steps':0, 'new_physical_trials':0,
