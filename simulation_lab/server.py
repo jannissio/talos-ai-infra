@@ -97,7 +97,7 @@ class Rack(BaseModel):
 class LanguageCommand(BaseModel):
     model_config=ConfigDict(extra='forbid')
     text:str=Field(min_length=1,max_length=500)
-    mode:Literal['programmed','learned_bottle','learned_bottle_legacy','learned_dinner']='programmed'
+    mode:Literal['programmed','learned_bottle','learned_bottle_legacy','learned_dinner','learned_dinner_visual']='programmed'
 
 
 class Layout(BaseModel):

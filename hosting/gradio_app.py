@@ -28,6 +28,7 @@ from simulation_lab.hosted_worker import TrialWorker
 torch.set_num_threads(2)
 SUITE = os.environ.get('TALOS_DEMO_SUITE')
 AVAILABLE = load_checkpoints(SUITE)
+VISUAL_MUG_AVAILABLE=(ROOT/'models/dinner_visual_mug_v1/profile.json').is_file()
 JOBS = {}
 JOBS_LOCK = Lock()
 
@@ -35,6 +36,8 @@ JOBS_LOCK = Lock()
 def simulate(instruction, seed, controller, bottle_start, camera, inference, request: gr.Request):
     if inference not in ('cpu', 'gpu'):
         raise gr.Error('Choose one of the offered inference devices.')
+    if controller=='learned_visual' and inference!='cpu':
+        raise gr.Error('Live mug vision uses CPU · OpenVINO. Select CPU to run this controller.')
     use_gpu = controller == 'learned' and inference == 'gpu'
     if use_gpu and generate_trajectory is None:
         raise gr.Error('Shared GPU inference is unavailable in this local interface.')
@@ -47,7 +50,7 @@ def simulate(instruction, seed, controller, bottle_start, camera, inference, req
     try:
         for image, status, result in job.frames():
             result = dict(result)
-            result['inference_runtime'] = ('PyTorch CUDA via shared ZeroGPU' if use_gpu else 'OpenVINO CPU') if controller == 'learned' else 'Programmed controller'
+            result['inference_runtime'] = ('PyTorch CUDA via shared ZeroGPU' if use_gpu else 'OpenVINO CPU') if controller in ('learned','learned_visual') else 'Programmed controller'
             yield image, status, result
     finally:
         with JOBS_LOCK:
@@ -67,13 +70,16 @@ def cancel_trial(request: gr.Request):
 with gr.Blocks(title='Talos · Dinner robotics', delete_cache=(3600, 3600)) as demo:
     gr.Markdown('# Talos\n### Give an instruction. Watch a fresh physical simulation.')
     gr.Markdown('Two SO-101 arms share a dinner table. This compact demo starts a new scene for each trial. '
-                'Learned control uses initial camera images, neural motor targets and motor feedback; a separate physical monitor checks outcomes. '
+                'Learned control uses camera images, neural motor targets and motor feedback; a separate physical monitor checks outcomes. '
+                + ('Live mug vision adds stereo correction during late mug placement. Other skills use initial camera observations. ' if VISUAL_MUG_AVAILABLE else '') +
                 'Programmed control uses exact simulator state. Supported language and starting regions are limited.')
     with gr.Row():
         with gr.Column(scale=1):
-            instruction = gr.Textbox(label='Instruction', value='Place the bottle', max_lines=4)
+            instruction = gr.Textbox(label='Instruction', value='Set the table' if VISUAL_MUG_AVAILABLE else 'Place the bottle', max_lines=4)
             seed = gr.Number(label='Scene seed', value=42, precision=0, minimum=0, maximum=2147483647)
-            controller = gr.Radio([('Learned neural control', 'learned'), ('Programmed physical skills', 'programmed')], value='learned', label='Controller')
+            controllers=[('Learned dinner · initial vision','learned'),('Programmed physical skills','programmed')]
+            if VISUAL_MUG_AVAILABLE:controllers.insert(0,('Learned dinner · live mug vision','learned_visual'))
+            controller = gr.Radio(controllers, value='learned_visual' if VISUAL_MUG_AVAILABLE else 'learned', label='Controller')
             devices = [('CPU · OpenVINO', 'cpu')]+([('Shared GPU · queue may be unavailable', 'gpu')] if generate_trajectory is not None else [])
             inference = gr.Radio(devices, value='cpu', label='Learned inference',
                                  info='The small learned models run on CPU without waiting for a shared GPU.')
@@ -89,6 +95,7 @@ with gr.Blocks(title='Talos · Dinner robotics', delete_cache=(3600, 3600)) as d
         report = gr.JSON(label='Physical outcome')
     gr.Markdown('**Loaded learned skills:** ' + ', '.join(SKILL_LABELS.get(s, s) for s in AVAILABLE) + '.\n\n'
                 '**Try:** “place the bottle”; “set the table”; “pass the bottle to the right arm”. '
+                'Use “set the table” for live mug vision; choose initial vision for individual mug commands. '
                 'Additional learned instructions require their corresponding loaded models. '
                 'Unsupported commands and scenes are refused; a failed grasp is reported as a failure. '
                 'Table-supported bottle relays release before the second arm grasps. '

@@ -48,6 +48,21 @@ def build(output):
         for path in base.rglob('*'):
             if path.is_file() and path.name in model_files:
                 mapping[path.relative_to(ROOT).as_posix()] = path
+    visual_profile=ROOT/'models/dinner_visual_mug_v1/profile.json'
+    if visual_profile.is_file():
+        from simulation_lab.mug_visual_profile import load_profile
+        profile,_=load_profile(visual_profile)
+        for name in profile['model_files']:
+            if not name.startswith(('models/','docs/robotics/experiments/')) or '..' in Path(name).parts:
+                raise ValueError('Unexpected visual mug artifact path.')
+            mapping[name]=ROOT/name
+        for name in profile['runtime_sources']:
+            if not name.startswith('simulation_lab/') or Path(name).suffix!='.py' or '..' in Path(name).parts:
+                raise ValueError('Unexpected visual mug runtime dependency.')
+            mapping[name]=ROOT/name
+        for path in visual_profile.parent.iterdir():
+            if path.is_file() and path.suffix in ('.json','.md'):
+                mapping[path.relative_to(ROOT).as_posix()]=path
     expected = sum(p.stat().st_size for p in mapping.values()) + 1024**2
     space = require_space(output, expected)
     output.mkdir(parents=True)
@@ -89,6 +104,9 @@ Repository: https://github.com/jannissio/talos-ai-infra
 Original Talos contributions use MIT; robot asset notices are in
 `simulation_lab/NOTICE.md` and `simulation_lab/assets/so101/LICENSE`.
 '''
+    if visual_profile.is_file():
+        readme=readme.replace('Learned models use initial RGB observations and motor-feedback progress guards.\nThey do not provide continuous visual correction or arbitrary workspace coverage.',
+            'The live mug vision option adds stereo visual correction during late mug placement,\nverified within complete table-setting workflows. Other skills retain initial RGB\nobservations and motor-feedback guards. Arbitrary workspace coverage remains unfinished.')
     (output / 'README.md').write_text(readme, encoding='utf-8', newline='\n')
     (output / '.gitignore').write_text('__pycache__/\n*.py[cod]\n.env\n.env.*\n*.log\n', encoding='utf-8')
     (output / '.gitattributes').write_text(''.join(f'*.{extension} filter=lfs diff=lfs merge=lfs -text\n'

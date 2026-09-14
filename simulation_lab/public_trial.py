@@ -35,8 +35,8 @@ def validate_request(instruction, seed, controller, bottle_start, camera):
         raise CommandError('Use Cancel trial to stop a running trial.')
     if isinstance(seed, bool) or not isinstance(seed, (int, float)) or not np.isfinite(seed) or int(seed) != seed or not 0 <= seed <= 2147483647:
         raise CommandError('Choose an integer seed between 0 and 2147483647.')
-    if controller not in ('learned', 'programmed'):
-        raise CommandError('Choose learned or programmed control.')
+    if controller not in ('learned', 'learned_visual', 'programmed'):
+        raise CommandError('Choose one of the listed controllers.')
     if bottle_start not in ('upright', 'wide_left') or camera not in CAMERAS:
         raise CommandError('Choose one of the listed scene and camera options.')
     return plan, int(seed)
@@ -59,7 +59,11 @@ def trial_report(task, seed, controller, bottle_start, started):
         'plan': plan.get('steps', snapshot.get('steps', [])),
         'camera_plan_reasons': plan.get('reasons', []),
         'physics_state_writes_during_control': 0, 'hidden_forces': 0,
-        'control_inputs': 'Initial RGB views and motor feedback; separate physical stop/score monitor.' if controller == 'learned' else 'Programmed controller using exact simulator state.',
+        'control_inputs': ('Initial RGB views plus live stereo correction during mug placement; motor feedback and a separate physical stop/score monitor.'
+            if controller=='learned_visual' else 'Initial RGB views and motor feedback; separate physical stop/score monitor.'
+            if controller=='learned' else 'Programmed controller using exact simulator state.'),
+        'visual_feedback_profile': snapshot.get('visual_feedback_profile'),
+        'visual_feedback_scope': snapshot.get('visual_feedback_scope'),
     }
 
 
@@ -70,6 +74,8 @@ def run_trial(instruction, seed=42, controller='learned', bottle_start='upright'
     started = time.perf_counter()
     try:
         plan, seed = validate_request(instruction, seed, controller, bottle_start, camera)
+        if controller=='learned_visual' and policy_factory is not None:
+            raise CommandError('Live mug vision uses the verified OpenVINO CPU controller.')
         require_space(cache_dir or ROOT, 128 * 1024**2)
         xml, layout = build_scene(seed=seed, scenario='dinner', dinner_preset='task')
         model = mujoco.MjModel.from_xml_string(xml)
@@ -97,13 +103,17 @@ def run_trial(instruction, seed=42, controller='learned', bottle_start='upright'
             return renderer.render().copy()
 
         yield frame(), 'Reading the instruction and preparing a fresh scene…', {'status': 'preparing', 'seed': seed}
-        if controller == 'learned':
+        if controller in ('learned','learned_visual'):
             from .learned_dinner import LearnedDinnerSequence, observe_scene
             from .learned_plan import plan_learned_steps
             checkpoints = load_checkpoints(suite)
             visual_plan = plan_learned_steps(plan, observe_scene(model, data), checkpoints)
             options = {'policy_factory': policy_factory} if policy_factory else {}
-            task = LearnedDinnerSequence(model, data, layout, checkpoints, visual_plan['steps'], **options)
+            if controller=='learned_visual':
+                from .mug_visual_profile import make_sequence
+                task=make_sequence(model,data,layout,checkpoints,visual_plan['steps'])
+            else:
+                task = LearnedDinnerSequence(model, data, layout, checkpoints, visual_plan['steps'], **options)
             task.plan = visual_plan
         else:
             from .command_task import CommandSequence

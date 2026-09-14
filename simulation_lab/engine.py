@@ -241,7 +241,7 @@ class LabEngine:
             self._task_command({'action':'cancel'});return
         if self.layout.get('scenario')!='dinner':raise ValueError('Language commands use the dinner scene.')
         if self.task.active:raise ValueError('A task is running. Say stop or wait for it to finish.')
-        if payload.get('mode')=='learned_dinner':
+        if payload.get('mode') in ('learned_dinner','learned_dinner_visual'):
             if not self.dinner_suite.is_file():raise ValueError('The learned dinner suite is not installed.')
             try:
                 from .learned_dinner import LearnedDinnerSequence,observe_scene
@@ -250,7 +250,12 @@ class LabEngine:
             paths=json.loads(self.dinner_suite.read_text(encoding='utf-8-sig'))
             visual_plan=plan_learned_steps(plan,observe_scene(self.model,self.data),paths)
             checkpoints={name:self.dinner_suite.parent/path for name,path in paths.items()}
-            candidate=LearnedDinnerSequence(self.model,self.data,self.layout,checkpoints,visual_plan['steps'])
+            if payload.get('mode')=='learned_dinner_visual':
+                from .mug_visual_profile import make_sequence
+                if hasattr(self.task,'close'):self.task.close()
+                candidate=make_sequence(self.model,self.data,self.layout,checkpoints,visual_plan['steps'])
+            else:
+                candidate=LearnedDinnerSequence(self.model,self.data,self.layout,checkpoints,visual_plan['steps'])
             candidate.plan=visual_plan
             candidate.message='Plan: '+' → '.join(visual_plan['steps'])+'. '+' '.join(visual_plan['reasons'])
         elif payload.get('mode') in ('learned_bottle','learned_bottle_legacy'):
@@ -342,6 +347,7 @@ class LabEngine:
         if getattr(self.task,'kind',None)=='learned_bottle':snapshot['controller']='learned_bottle'
         if getattr(self.task,'kind',None) in ('learned_dinner','learned_dinner_sequence'):snapshot['controller']='learned_dinner'
         snapshot['learned_dinner_available']=self.dinner_suite.is_file()
+        snapshot['visual_mug_available']=(RUN_DIR.parent/'models/dinner_visual_mug_v1/profile.json').is_file()
         with self.lock:
             snapshot.update(self.render_stats)
             snapshot["frame_id"] = self.frame_id

@@ -4,6 +4,8 @@ $('command-mode').addEventListener('change',()=>{
   const mode=$('command-mode').value;
   $('command-feedback').textContent=mode==='programmed'
     ? 'Programmed mode: set the table, place individual items, or pass the bottle to the right arm.'
+    : mode==='learned_dinner_visual'
+      ? 'Learned dinner with live mug vision: say “set the table”. Stereo cameras correct late mug placement. Other skills use initial camera observations and motor feedback. Choose the original dinner controller for individual mug commands. Starting regions and destinations remain limited.'
     : mode==='learned_dinner'
       ? 'Learned dinner candidate: say “set the table” or name an item. Camera checks plan preparation steps; each neural skill releases and parks before the next. Relay instructions require the corresponding trained models. Custom destinations are unsupported.'
     : mode==='learned_bottle'
@@ -46,9 +48,12 @@ function updateState(next) {
   const previousVersion = state?.scene_version;
   state = next;
   const dinner = state.scenario === 'dinner';
-  $('runtime-mode').textContent=state.controller==='learned_dinner'?'Neural dinner skills · camera-grounded sequence':state.controller==='learned_bottle'?'OpenVINO neural bottle policy · physical success monitor':state.task.active?'Programmed physical skills · simulator positions':'Runs on this PC · Manual control';
+  $('runtime-mode').textContent=state.task.visual_feedback_profile?'Neural dinner skills · live mug vision':state.controller==='learned_dinner'?'Neural dinner skills · camera-grounded sequence':state.controller==='learned_bottle'?'OpenVINO neural bottle policy · physical success monitor':state.task.active?'Programmed physical skills · simulator positions':'Runs on this PC · Manual control';
   $('learned-dinner-option').disabled=!state.learned_dinner_available;
-  $('policy-description').textContent=state.learned_dinner_available
+  $('visual-mug-option').disabled=!state.visual_mug_available;
+  $('policy-description').textContent=state.visual_mug_available
+    ? 'Live mug vision adds stereo correction during mug placement. Other learned skills use initial camera observations and motor feedback. The original dinner suite and programmed controls remain available.'
+    : state.learned_dinner_available
     ? 'The dinner candidate combines six neural skills with camera-based preparation checks. Bottle-only models remain available. Programmed skills use simulator positions.'
     : 'The upright model uses overhead bottle localization and motor feedback. The original model uses three initial views and supports familiar sideways practice. Programmed skills use simulator positions.';
   connected = true;
