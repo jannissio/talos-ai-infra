@@ -398,6 +398,12 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
                             elif following is not None:
                                 result['workflow_selection'] = 'Both buffer and final-transfer motor traces pass; replay both in the continuous main scene.'
                                 result['verified_final_transfer_path'] = following[1].relative_to(folder).as_posix()
+                            elif verify_relay_continuation and orientation_change['eligible']:
+                                # Orientation progress is why physical continuation
+                                # could be skipped, even when geometric IK exists.
+                                # Charge that reason against its two-relay budget.
+                                result['workflow_selection'] = 'Physically verified buffer improves task orientation by over 30 degrees within the two-relay budget.'
+                                result['orientation_relay_selected'] = True
                             elif continuation.active:
                                 result['workflow_selection'] = 'Physically verified buffer has a geometric final-transfer plan; execution is still required.'
                             else:
