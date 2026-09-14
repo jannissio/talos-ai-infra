@@ -1,0 +1,433 @@
+{
+  "schema": "talos.drawer-clearance-diagnostic.v1",
+  "protocol_sha256": "82699e046b417d01bca816cba0564fb3a4b99120247ed919ad210e77a675567f",
+  "passed": true,
+  "all_42_outcomes_retained": true,
+  "recovered_plate_failures": 29,
+  "planning_recoveries": 0,
+  "invalid_starts": 0,
+  "rows": [
+    {
+      "seed": 2026112802,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 10.023435700219125,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "8fef60d5a765919aef637637f2ed13e8eccf83255367a12295bdab0988267ee3",
+      "group": "anchor"
+    },
+    {
+      "seed": 2026112801,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 9.707656200043857,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "91b77d9d81ede2312956b1f8820797728737a640b9e38336976434df9d6ebae3",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112803,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.0514102997258306,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "6e830b5610fa336731d86dad64876b793856b4a964bd031b274d65342699c5c0",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112806,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.98057569982484,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "1f868c6f89c623344cb7a91be7be7c2268dda9443dd92e1b715e087073459731",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112810,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.380775200203061,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "8a438d0d4c2e7dc243ef482787c360a73ad1a67b4ddff78450798509a1764bf2",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112811,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.382534199859947,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "f1d38a670c0b13c1ae9bada7afab01a4be84402bf16294678a1f0ecea5ad51e8",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112813,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 9.43908099969849,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "7399fd58650df5204365488a20861dbf4ba95149ac04e287d77ce2e8a918c590",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112816,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.25378100015223,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "64320dcddb949b77f9fb6e12f502cc7d5fbc6fae6f5c899c2fbb1d5eeea4c5c4",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112817,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.302165200002491,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "9ff3a85e4a39df2b40c83d67bf5cdeea7f0cc54a82394d691bfc15beec7ff13e",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112819,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.46782959997654,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "9df80cdb3c0cd4700a6b757a434be127754f9203e19e8186f196427dae5c06d9",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112821,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.885447199922055,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "53e12779024a58e6cf1346d8c7b302061ca908adb8c4ca48e5595b9f08009058",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112823,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.237091999966651,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "cdf6f5a209c43dd434f0c5eb90b3fc559803348166176c284098f3c9b817c75e",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112828,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.616001199930906,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "721bb2b42c7f90738959d9df51a628661aa74824bd03e92ce72b818a720c946f",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112829,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 0.33608580008149147,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "1748a8deb4e811ee573928449deb62f1d3a982c5ac84416a261f3af96c09b3bf",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112830,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.004386799875647,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "e4a68798e563b8866253056d51f401a8801b912b489f6cde2584977db51d52c7",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112832,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.544806099962443,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "b565e69e02f9bf932fdeba27448fe99e5ce6b8a583beb26a649d04e0c9a2db43",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112835,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.088356600143015,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "76ecd2f0ea0e11d9ad96d08fac8a3cfbe22651131aec50c5d40b2bd86ff6777b",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112837,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 3.6133197997696698,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "5c459d79f75b6479c32374e3dd47686dc4234ec77e6ef85d8422af628fca8321",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112839,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 7.492171800229698,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "c49317ad4f416f7080629cf039bca753d65b485f9a01734939b18ab2684151cd",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112840,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.13615470007062,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "971589d362950e20d81878edf62f39916411b710715540e91666cafa8c26f109",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112841,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.171282399911433,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "f98230f1badc3d311aef89364c3f3b36683ddf2b7f993b781da1ae54fc2fda4d",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112842,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.114922900218517,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "c80831b5cad10dbbaf20a24908a7df684e82d562b276e68d751b9a8f1455dc0f",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112845,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 10.388162100221962,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "6c59da9502f64601063865c6278224a625874f8aa9dd806e24d8a582d15e425d",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112847,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 7.672173200175166,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "bb29669c1f40063ca42aafee745ea347b460e51f3e274575d66af4b1cc466a17",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112849,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 7.9788403999991715,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "15a4937a5157bd8c98d86cf2a4c1c25711e47914453a2127ff83ebcc9eeb18bd",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112850,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.289866299834102,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "dd658c1e68b5be1813a1efc9387ed14a651960ff6c5cd18acf571fc7efc01fcd",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112853,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 7.955054200254381,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "758737ecc2150c9b0b077b6c5a17992dc77f3a04bd07292718fbd0e44334e6b6",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112855,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.093953299801797,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "a0d6161549c4ca1feeca6edb618100a268568d4dbd80e66fe891da19439ec486",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112856,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 3.7885763999074697,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "1702f87e818d8d4af5035aff937c6f95714e522f05cdae622044f8bb5e827bcd",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112860,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.594860899727792,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "56b123a9462a3652451a3a21126d04201c4f7694f7aa9843d9724fed4454592a",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112861,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.732531799934804,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "fbc76cc81bd9b78b48c386a7e060599cf4f78a6f3aa1444c1b73775da1c29463",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112862,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.646729099564254,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "1c687111772be5aeb228ae6a44428922db0d24e2641a87d64d226baa3fa740a7",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112863,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.5443144999444485,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "e74a80140fc1903e9634ee9e6a7a6189acc82e9367410728b611a060b36fac8f",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112864,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.767243099864572,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "aa4ac9401a732201d8922ad7b910e1c183595296bb9d5ae7efa39f8d1e2a37a9",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112901,
+      "split": "development",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.054830600041896,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "41b3e4abcc1ad618ae80cf6200f2e4caae9a7382ddfce8bf768a820eb87de331",
+      "group": "planning"
+    },
+    {
+      "seed": 2026112904,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.279654199723154,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "ae1994c351da6cee8042af6cf039cf220c7408d59ffcd5a31baf0b5506dd0b70",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112906,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.300022900104523,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "b7e9909c3794b7e442f0ccac1b8fe1a6a2f6e15b3c22713d8da3438201288f34",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112907,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.302668099757284,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "2accdcf21844a1b4b6387979ed4bf35f2714253107df094ae053ba8e3c001e3d",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112910,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 8.232129800133407,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "2a4ac37cb6b7fbb4f06f9ab9e4bd35ed5206474e21b20205979d399e4a8e9223",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112912,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 9.304211699869484,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "49d7531263506dcfcf5e7e50dcca1a536934548dcb18d7a80ce69eeb8d3e0fef",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112915,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 9.834577099885792,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "59b27655fad886fa2c8da1f233687730c289466719cd6b29790a12ac2975fc45",
+      "group": "plate_disturbance"
+    },
+    {
+      "seed": 2026112916,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 9.969975899904966,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "d56892ff9e7682ed741d1e99ee0c4e522cc15882d3affd92773ba2a2455ee6b3",
+      "group": "plate_disturbance"
+    }
+  ],
+  "fit_performed": false,
+  "promotion": false
+}

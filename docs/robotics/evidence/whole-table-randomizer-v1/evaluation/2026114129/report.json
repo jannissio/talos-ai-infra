@@ -1,0 +1,249 @@
+{
+  "schema": "talos.whole-table-randomizer.v1",
+  "seed": 2026114129,
+  "stage": "evaluation",
+  "protocol_sha256": "46d86ce7719931dd9b104a2c248302caf17e2669f1eb41fb89274dc43942c49e",
+  "generated": true,
+  "valid_joint_scene": true,
+  "final_geometry": {
+    "valid": true,
+    "objects": {
+      "plate": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          -0.3740676465449222,
+          -0.129015575183989,
+          0.7599425994952196
+        ],
+        "quaternion_wxyz": [
+          0.03472424239897715,
+          9.703958054011326e-06,
+          4.911987561260903e-06,
+          -0.9993969315900074
+        ],
+        "speed_m_s": 2.098856340205109e-06,
+        "angular_speed_rad_s": 0.003646489261843531,
+        "penetration_m": 5.730658410473476e-05,
+        "table_contact": true,
+        "realized_family": "upright",
+        "body_up_z": 0.9999999999844259,
+        "bounds_min_m": [
+          -0.44051202028556924,
+          -0.1954597433226412,
+          0.7599413378416359
+        ],
+        "bounds_max_m": [
+          -0.3076238059603802,
+          -0.06257170056239718,
+          0.7839440463267154
+        ]
+      },
+      "side_plate": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.05274473510714554,
+          -0.008704508184962257,
+          0.7719970852895277
+        ],
+        "quaternion_wxyz": [
+          -2.4077391638345353e-10,
+          0.8109117651665345,
+          0.5851684450775647,
+          1.2026427215396382e-10
+        ],
+        "speed_m_s": 2.3500820504307726e-10,
+        "angular_speed_rad_s": 1.924406346304061e-08,
+        "penetration_m": 2.914744253679436e-06,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.9999999999999997,
+        "bounds_min_m": [
+          -0.0005737973426648141,
+          -0.062023040810370994,
+          0.7599970852608687
+        ],
+        "bounds_max_m": [
+          0.10606326724593879,
+          0.04461402409141792,
+          0.7719970853137502
+        ]
+      },
+      "mug": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.033637187836740294,
+          0.22262978569147585,
+          0.7599428414133068
+        ],
+        "quaternion_wxyz": [
+          0.2649371421264596,
+          6.180677028999078e-06,
+          -8.411330297440167e-06,
+          0.9642656846600488
+        ],
+        "speed_m_s": 3.0428552520899568e-05,
+        "angular_speed_rad_s": 0.012592010636388692,
+        "penetration_m": 5.801046797683289e-05,
+        "table_contact": true,
+        "realized_family": "upright",
+        "body_up_z": 0.9999999990468171,
+        "bounds_min_m": [
+          -0.01076465157656771,
+          0.1973384215659289,
+          0.7599423195147393
+        ],
+        "bounds_max_m": [
+          0.0589277817312569,
+          0.2506435759591401,
+          0.8239433730098524
+        ]
+      },
+      "glass": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.1276984448405258,
+          0.07081579903988079,
+          0.8339985426340928
+        ],
+        "quaternion_wxyz": [
+          -6.332740876981711e-15,
+          0.9484201459939466,
+          0.31701612998839807,
+          -1.8437094760282015e-14
+        ],
+        "speed_m_s": 1.4914701777543876e-10,
+        "angular_speed_rad_s": 9.147929855391535e-12,
+        "penetration_m": 1.4573666531168495e-06,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.9999999999999999,
+        "bounds_min_m": [
+          0.10324025809949226,
+          0.0463576123764526,
+          0.7599985426340918
+        ],
+        "bounds_max_m": [
+          0.1521566314842721,
+          0.0952739855688974,
+          0.8339985426340937
+        ]
+      },
+      "bottle": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          -0.21585506942966243,
+          0.3141855838890042,
+          0.8999956279910298
+        ],
+        "quaternion_wxyz": [
+          -7.398208536725173e-12,
+          0.3472342211497582,
+          0.9377784363390532,
+          2.8326627542952906e-12
+        ],
+        "speed_m_s": 9.215345236137473e-11,
+        "angular_speed_rad_s": 6.563207102358344e-10,
+        "penetration_m": 4.3720091808715136e-06,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.9999999999999989,
+        "bounds_min_m": [
+          -0.24002590309202812,
+          0.2900147501543968,
+          0.7599956279908553
+        ],
+        "bounds_max_m": [
+          -0.19168423562174713,
+          0.33835641777119585,
+          0.8999956279914101
+        ]
+      },
+      "fork": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.45962829140799966,
+          0.14770411532078517,
+          0.7759093864308985
+        ],
+        "quaternion_wxyz": [
+          0.0005634701085013123,
+          -0.9988635590540661,
+          0.04765786579891608,
+          -2.6884420631557528e-05
+        ],
+        "speed_m_s": 9.863903201837936e-11,
+        "angular_speed_rad_s": 5.925804006164271e-09,
+        "penetration_m": 0.00010752671728276813,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.9999993635573281,
+        "bounds_min_m": [
+          0.4457901237639548,
+          0.0901613814077108,
+          0.7598924732828506
+        ],
+        "bounds_max_m": [
+          0.469155559768598,
+          0.20090972985315256,
+          0.7759691821989494
+        ]
+      },
+      "spoon": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.22615331374844408,
+          -0.10909645189702322,
+          0.759965066643809
+        ],
+        "quaternion_wxyz": [
+          0.07905060118516463,
+          6.825980303461091e-07,
+          -8.608753286383242e-06,
+          -0.9968706046311563
+        ],
+        "speed_m_s": 6.08993534551717e-11,
+        "angular_speed_rad_s": 9.678417843639939e-10,
+        "penetration_m": 3.584874868120591e-05,
+        "table_contact": true,
+        "realized_family": "upright",
+        "body_up_z": 0.9999999998508465,
+        "bounds_min_m": [
+          0.2133563697917611,
+          -0.16546392387169578,
+          0.759964151251297
+        ],
+        "bounds_max_m": [
+          0.24341006920868374,
+          -0.056049343768181,
+          0.7759653257151958
+        ]
+      }
+    },
+    "meaning": "Stable supported geometry only; manipulation feasibility remains unmeasured."
+  },
+  "proposals": 8,
+  "rejected_proposals": {
+    "initial_geometric_intersection": 1
+  },
+  "stability_samples": 101,
+  "trace_frames": 61,
+  "images_sha256": {
+    "overhead": "8b82a8c6db6221f8c58b20c76a91cc748a7e20ae5d4610519ab1b7c8fb8c1ce6",
+    "opposite": "14e3f71abe05bfb4db3d226b0b0e1c4c2ae94deb2b8ddbad6774286c53910446",
+    "overview": "7604c5e30df6d7d0c50647f17c1c739c57fd7b07f668978199a02bc989e5966d"
+  },
+  "preflight": {
+    "free_bytes": 545003438080,
+    "estimated_additional_bytes": 16777216,
+    "reserve_bytes": 10737418240
+  },
+  "control_policy_used": false,
+  "grasp_or_route_feasibility_claimed": false
+}

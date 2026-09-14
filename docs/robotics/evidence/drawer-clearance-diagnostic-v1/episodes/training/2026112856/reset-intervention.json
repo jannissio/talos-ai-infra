@@ -1,0 +1,27 @@
+{
+  "original_case": {
+    "seed": 2026112856,
+    "split": "training",
+    "group": "planning",
+    "original_status": "teacher_failed",
+    "original_failure": null
+  },
+  "original_report_sha256": "a03701397b67d68518c66fbf903b6dc475509d1355045885138bba5308fa28d8",
+  "original_initial_qpos_qvel_identical": true,
+  "only_plate_xy_and_its_velocity_changed_before_settling": true,
+  "plate_before_xy_m": [
+    -0.06061238451383245,
+    -0.02407168355088981
+  ],
+  "plate_after_xy_m": [
+    -0.03500000092937606,
+    -0.15500000011510107
+  ],
+  "declared_xy_m": [
+    -0.035,
+    -0.155
+  ],
+  "settle_steps": 300,
+  "initial_penetration_m": 5.7728395144257376e-05,
+  "scope": "Reset intervention, not an autonomous robot action."
+}

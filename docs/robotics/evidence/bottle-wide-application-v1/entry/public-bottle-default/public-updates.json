@@ -1,0 +1,1936 @@
+[
+  {
+    "message": "Reading the instruction and preparing a fresh scene\u2026",
+    "report": {
+      "status": "preparing",
+      "seed": 42
+    }
+  },
+  {
+    "message": "0% \u00b7 1.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 1.01,
+      "wall_seconds": 2.33,
+      "progress": 0.0,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.60093296168491,
+            "placement_z_error_mm": 1.1729186732978292e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.013308563702413876,
+            "max_lift_cm": 5.765350763464738e-06,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.1433106837871273e-07,
+              "side_plate": 4.3053647976572614e-08,
+              "mug": 1.4232658420652545e-07,
+              "glass": 1.0867405215905474e-07,
+              "fork": 5.147898222678454e-08,
+              "spoon": 1.8181601834699473e-07
+            },
+            "other_object_max_displacement_m": 4.3385260524821846e-07,
+            "parked_arm_max_motion_deg": 3.307140757785765e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "0% \u00b7 2.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 2.0,
+      "wall_seconds": 3.36,
+      "progress": 0.0,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.600947413428198,
+            "placement_z_error_mm": 5.7653511298383364e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.019356696198081336,
+            "max_lift_cm": 5.765351129838336e-06,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.5562273593427944e-07,
+              "side_plate": 2.8104277217939256e-07,
+              "mug": 3.0581893222906186e-07,
+              "glass": 6.070840501563501e-08,
+              "fork": 1.0296148732873325e-07,
+              "spoon": 3.6363607775935493e-07
+            },
+            "other_object_max_displacement_m": 4.3385260524821846e-07,
+            "parked_arm_max_motion_deg": 3.307140757785765e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "0% \u00b7 3.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 3.0,
+      "wall_seconds": 4.42,
+      "progress": 0.0,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.600967236872528,
+            "placement_z_error_mm": 1.2656542480726785e-11,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.013264948403893771,
+            "max_lift_cm": 5.765351485109704e-06,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.4726585732840712e-08,
+              "side_plate": 8.350326773716664e-08,
+              "mug": 1.9423383472113092e-07,
+              "glass": 2.395353049907751e-08,
+              "fork": 1.5444014709140754e-07,
+              "spoon": 5.454602824713912e-07
+            },
+            "other_object_max_displacement_m": 5.454602824713912e-07,
+            "parked_arm_max_motion_deg": 3.307140757785765e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "9% \u00b7 4.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 4.0,
+      "wall_seconds": 5.56,
+      "progress": 0.09090909090909091,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.600936481331486,
+            "placement_z_error_mm": 1.1729198723386958e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.01330856365072392,
+            "max_lift_cm": 5.765351829278842e-06,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.1597926331011884e-07,
+              "side_plate": 2.3840485451974918e-07,
+              "mug": 2.0367214117096434e-07,
+              "glass": 6.541638241438475e-08,
+              "fork": 2.0592255854352735e-07,
+              "spoon": 7.272885203123012e-07
+            },
+            "other_object_max_displacement_m": 7.272885203123012e-07,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "9% \u00b7 5.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 5.0,
+      "wall_seconds": 6.72,
+      "progress": 0.09090909090909091,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.600950933080785,
+            "placement_z_error_mm": 5.76535219565244e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.019356695935389957,
+            "max_lift_cm": 5.76535219565244e-06,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.570399060167934e-07,
+              "side_plate": 2.6141945792253435e-07,
+              "mug": 1.056089370903511e-07,
+              "glass": 4.847951972276969e-08,
+              "fork": 2.574015575307727e-07,
+              "spoon": 9.091211009443812e-07
+            },
+            "other_object_max_displacement_m": 9.091211009443812e-07,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "9% \u00b7 6.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 6.0,
+      "wall_seconds": 7.88,
+      "progress": 0.09090909090909091,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.600970756523774,
+            "placement_z_error_mm": 2.5424107263916085e-11,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.013264948090083273,
+            "max_lift_cm": 5.765352562026038e-06,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.9453169439975055e-08,
+              "side_plate": 6.07462578531461e-08,
+              "mug": 7.92978124453783e-08,
+              "glass": 9.031799685168295e-08,
+              "fork": 3.0888426509168037e-07,
+              "spoon": 1.0909575793221029e-06
+            },
+            "other_object_max_displacement_m": 1.0909575793221029e-06,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "18% \u00b7 7.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 7.0,
+      "wall_seconds": 8.94,
+      "progress": 0.18181818181818182,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.600940000977866,
+            "placement_z_error_mm": 1.1729210935840229e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.01330856359988328,
+            "max_lift_cm": 5.765352928399636e-06,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.1943420900912313e-07,
+              "side_plate": 5.223175376274178e-08,
+              "mug": 2.7162826750782454e-07,
+              "glass": 4.6350900006251795e-08,
+              "fork": 3.603628978660927e-07,
+              "spoon": 1.2727983371489763e-06
+            },
+            "other_object_max_displacement_m": 1.2727983371489763e-06,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "18% \u00b7 8.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 8.0,
+      "wall_seconds": 9.96,
+      "progress": 0.18181818181818182,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.600954452733212,
+            "placement_z_error_mm": 5.7653532947732344e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.019356695676942513,
+            "max_lift_cm": 5.7653532947732344e-06,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.59287076182876e-07,
+              "side_plate": 1.0141320436453408e-07,
+              "mug": 1.9185291450125128e-07,
+              "glass": 6.881406152127086e-08,
+              "fork": 4.11846574887836e-07,
+              "spoon": 1.454643032691319e-06
+            },
+            "other_object_max_displacement_m": 1.454643032691319e-06,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "18% \u00b7 9.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 9.01,
+      "wall_seconds": 10.94,
+      "progress": 0.18181818181818182,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.542852808526332,
+            "placement_z_error_mm": 0.839798207500353,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.9383744610270736,
+            "max_lift_cm": 0.08476519774124336,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 4.41797511232893e-08,
+              "side_plate": 8.109233909640717e-09,
+              "mug": 2.7804947191208467e-07,
+              "glass": 4.787715138657554e-08,
+              "fork": 4.633297869652229e-07,
+              "spoon": 1.636491740569341e-06
+            },
+            "other_object_max_displacement_m": 1.636491740569341e-06,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "18% \u00b7 10.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 10.01,
+      "wall_seconds": 11.99,
+      "progress": 0.18181818181818182,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.568722136664066,
+            "placement_z_error_mm": 0.7528362151637547,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.8730995619531289,
+            "max_lift_cm": 0.08476519774124336,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.2454563553804209e-07,
+              "side_plate": 4.3381093278939434e-08,
+              "mug": 1.1123113142229027e-07,
+              "glass": 8.212014318913906e-08,
+              "fork": 5.148115744359629e-07,
+              "spoon": 1.8183449012907184e-06
+            },
+            "other_object_max_displacement_m": 1.8183449012907184e-06,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "18% \u00b7 11.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 11.01,
+      "wall_seconds": 12.97,
+      "progress": 0.18181818181818182,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.606940847621868,
+            "placement_z_error_mm": 0.7430822022206351,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 1.0374160245650281,
+            "max_lift_cm": 0.08476519774124336,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.6234291812866754e-07,
+              "side_plate": 2.8111303206728474e-07,
+              "mug": 6.323181469561495e-08,
+              "glass": 6.401593708486626e-08,
+              "fork": 5.662964979603704e-07,
+              "spoon": 2.000201860081078e-06
+            },
+            "other_object_max_displacement_m": 2.000201860081078e-06,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "27% \u00b7 12.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 12.01,
+      "wall_seconds": 14.04,
+      "progress": 0.2727272727272727,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 13.20670487569279,
+            "placement_z_error_mm": 9.553927496009251,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 23.75110680031828,
+            "max_lift_cm": 0.9553927496009251,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 5.8906330797484767e-08,
+              "side_plate": 8.382534181312923e-08,
+              "mug": 1.651770325957975e-07,
+              "glass": 2.8435171321915872e-08,
+              "fork": 6.177774643794571e-07,
+              "spoon": 2.1820631858138614e-06
+            },
+            "other_object_max_displacement_m": 2.1820631858138614e-06,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "27% \u00b7 13.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 13.01,
+      "wall_seconds": 15.09,
+      "progress": 0.2727272727272727,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 13.718670480508052,
+            "placement_z_error_mm": 42.80928237591242,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 35.55976109641931,
+            "max_lift_cm": 4.280928237591242,
+            "hold_verified_s": 0.0,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.3111996235358728e-07,
+              "side_plate": 2.3854401504784526e-07,
+              "mug": 3.2502038316123526e-07,
+              "glass": 3.482852165036526e-08,
+              "fork": 6.692626703838938e-07,
+              "spoon": 2.3639283535525537e-06
+            },
+            "other_object_max_displacement_m": 2.3639283535525537e-06,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "27% \u00b7 14.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 14.01,
+      "wall_seconds": 16.16,
+      "progress": 0.2727272727272727,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 13.85291284314468,
+            "placement_z_error_mm": 66.75909180360019,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 8.83522419773989,
+            "max_lift_cm": 6.6759091803600175,
+            "hold_verified_s": 0.7900000000001235,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.661795816217074e-07,
+              "side_plate": 2.6177324084444997e-07,
+              "mug": 2.1973824983121337e-07,
+              "glass": 4.88505916858456e-08,
+              "fork": 7.207472709304593e-07,
+              "spoon": 2.5457976968863085e-06
+            },
+            "other_object_max_displacement_m": 2.5457976968863085e-06,
+            "parked_arm_max_motion_deg": 3.393651845121572e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "36% \u00b7 15.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 15.01,
+      "wall_seconds": 17.18,
+      "progress": 0.36363636363636365,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.196827176641436,
+            "placement_z_error_mm": 67.46273108690148,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.626502154986516,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 1.7900000000002798,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 7.363290856398735e-08,
+              "side_plate": 6.234822065377189e-08,
+              "mug": 2.3268659447551025e-07,
+              "glass": 5.933317046400899e-08,
+              "fork": 7.722342679333294e-07,
+              "spoon": 2.727671087415403e-06
+            },
+            "other_object_max_displacement_m": 2.727671087415403e-06,
+            "parked_arm_max_motion_deg": 3.408282396656305e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "36% \u00b7 16.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 16.01,
+      "wall_seconds": 18.14,
+      "progress": 0.36363636363636365,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 14.905155848867578,
+            "placement_z_error_mm": 66.9657344950002,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.5962366707447915,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 2.790000000000436,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.3894969463461142e-07,
+              "side_plate": 5.430076408647006e-08,
+              "mug": 1.5321208837323423e-07,
+              "glass": 3.983999002160037e-08,
+              "fork": 8.237200081394849e-07,
+              "spoon": 2.909548628490497e-06
+            },
+            "other_object_max_displacement_m": 2.909548628490497e-06,
+            "parked_arm_max_motion_deg": 3.408282396656305e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "45% \u00b7 17.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 17.01,
+      "wall_seconds": 19.23,
+      "progress": 0.45454545454545453,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 13.976711246920985,
+            "placement_z_error_mm": 65.99270230429688,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 2.3601813354574475,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 3.790000000000237,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.707638757211068e-07,
+              "side_plate": 1.0230873612487125e-07,
+              "mug": 1.3959786992989819e-07,
+              "glass": 5.469150915537555e-08,
+              "fork": 8.752041106564131e-07,
+              "spoon": 3.0914304022071103e-06
+            },
+            "other_object_max_displacement_m": 3.0914304022071103e-06,
+            "parked_arm_max_motion_deg": 3.408282396656305e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "45% \u00b7 18.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 18.01,
+      "wall_seconds": 20.36,
+      "progress": 0.45454545454545453,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 9.600349884020934,
+            "placement_z_error_mm": 65.60080450142803,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 6.237555634752218,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 4.790000000000038,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 8.835948424021276e-08,
+              "side_plate": 1.6218464487097184e-08,
+              "mug": 2.9168416429289917e-07,
+              "glass": 2.7885144995905907e-08,
+              "fork": 9.266921774141077e-07,
+              "spoon": 3.273316075381379e-06
+            },
+            "other_object_max_displacement_m": 3.273316075381379e-06,
+            "parked_arm_max_motion_deg": 3.408282396656305e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "45% \u00b7 19.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 19.01,
+      "wall_seconds": 21.55,
+      "progress": 0.45454545454545453,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 3.5701052377813833,
+            "placement_z_error_mm": 65.20950664436442,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 5.151672953610613,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 5.789999999999839,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.4783549807664524e-07,
+              "side_plate": 4.5185629987191836e-08,
+              "mug": 2.1570002162658688e-07,
+              "glass": 2.1797594562546027e-08,
+              "fork": 9.781779268097235e-07,
+              "spoon": 3.455205955817038e-06
+            },
+            "other_object_max_displacement_m": 3.455205955817038e-06,
+            "parked_arm_max_motion_deg": 3.408282396656305e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "45% \u00b7 20.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 20.01,
+      "wall_seconds": 22.76,
+      "progress": 0.45454545454545453,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 1.0434309387431864,
+            "placement_z_error_mm": 64.80927674244708,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.7759700540613238,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 6.78999999999964,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.760585570290061e-07,
+              "side_plate": 2.814170446483524e-07,
+              "mug": 2.99632581287163e-07,
+              "glass": 6.275425125613169e-08,
+              "fork": 1.029667714264267e-06,
+              "spoon": 3.6370998595817527e-06
+            },
+            "other_object_max_displacement_m": 3.6370998595817527e-06,
+            "parked_arm_max_motion_deg": 3.408282396656305e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "55% \u00b7 21.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 21.01,
+      "wall_seconds": 24.0,
+      "progress": 0.5454545454545454,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 1.0057231996038978,
+            "placement_z_error_mm": 61.16704813584095,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 10.829921152592851,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 7.789999999999441,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.0308605786226876e-07,
+              "side_plate": 8.492407999487792e-08,
+              "mug": 1.5449810125785727e-07,
+              "glass": 3.7057213186796994e-08,
+              "fork": 1.0811543450345094e-06,
+              "spoon": 3.818997931905961e-06
+            },
+            "other_object_max_displacement_m": 3.818997931905961e-06,
+            "parked_arm_max_motion_deg": 3.408282396656305e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "55% \u00b7 22.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 22.0,
+      "wall_seconds": 25.1,
+      "progress": 0.5454545454545454,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 0.940626024463819,
+            "placement_z_error_mm": 38.81698717609039,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 31.553497826589208,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.5759884189818065e-07,
+              "side_plate": 2.389584457764484e-07,
+              "mug": 1.2646350333129156e-07,
+              "glass": 2.9289553828934635e-08,
+              "fork": 1.1326391576614322e-06,
+              "spoon": 4.000900168588847e-06
+            },
+            "other_object_max_displacement_m": 4.000900168588847e-06,
+            "parked_arm_max_motion_deg": 3.408282396656305e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "55% \u00b7 23.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 23.0,
+      "wall_seconds": 26.16,
+      "progress": 0.5454545454545454,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 1.0310505361419258,
+            "placement_z_error_mm": 7.465332338643771,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 25.805373278414066,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.820236178579784e-07,
+              "side_plate": 2.623772961563337e-07,
+              "mug": 2.056855237881054e-07,
+              "glass": 6.394624188421811e-08,
+              "fork": 1.1841281642650655e-06,
+              "spoon": 4.1828064832012185e-06
+            },
+            "other_object_max_displacement_m": 4.1828064832012185e-06,
+            "parked_arm_max_motion_deg": 3.408282396656305e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "55% \u00b7 24.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 24.0,
+      "wall_seconds": 27.25,
+      "progress": 0.5454545454545454,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 1.7734104211957733,
+            "placement_z_error_mm": 0.3460682520403102,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.4774172784581592,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.1781262964130103e-07,
+              "side_plate": 6.49308298262011e-08,
+              "mug": 3.5460930150562624e-07,
+              "glass": 4.016695191189075e-08,
+              "fork": 1.2356167310859756e-06,
+              "spoon": 4.364717114623719e-06
+            },
+            "other_object_max_displacement_m": 4.364717114623719e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "64% \u00b7 25.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 25.0,
+      "wall_seconds": 28.37,
+      "progress": 0.6363636363636364,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 1.8399314251600736,
+            "placement_z_error_mm": 0.002385689490957965,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.5370172655915413,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.6808687895013697e-07,
+              "side_plate": 5.7450057697803136e-08,
+              "mug": 2.585333473790722e-07,
+              "glass": 2.0967249894456395e-08,
+              "fork": 1.287107002327809e-06,
+              "spoon": 4.5466315156718385e-06
+            },
+            "other_object_max_displacement_m": 4.5466315156718385e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "64% \u00b7 26.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 26.0,
+      "wall_seconds": 29.46,
+      "progress": 0.6363636363636364,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 2.2060886751684876,
+            "placement_z_error_mm": 0.3954575797074922,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 1.4447089808188804,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.8861749497727603e-07,
+              "side_plate": 1.0383176919269595e-07,
+              "mug": 2.734962820022439e-07,
+              "glass": 8.470400625103325e-08,
+              "fork": 1.3385963075796348e-06,
+              "spoon": 4.728550164236441e-06
+            },
+            "other_object_max_displacement_m": 4.728550164236441e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "64% \u00b7 27.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 27.0,
+      "wall_seconds": 30.58,
+      "progress": 0.6363636363636364,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 2.250858932208874,
+            "placement_z_error_mm": 5.6238721568568906e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.014653951976864331,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.325391994171268e-07,
+              "side_plate": 2.4327695765669447e-08,
+              "mug": 2.0926324973351935e-07,
+              "glass": 4.1881514727431036e-08,
+              "fork": 1.3900869746843029e-06,
+              "spoon": 4.910472725380085e-06
+            },
+            "other_object_max_displacement_m": 4.910472725380085e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "64% \u00b7 28.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 28.0,
+      "wall_seconds": 31.74,
+      "progress": 0.6363636363636364,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 2.2509182943056363,
+            "placement_z_error_mm": 4.107550266585491e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.013652461902959358,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.79172391797857e-07,
+              "side_plate": 4.8301990732426095e-08,
+              "mug": 2.017013905837196e-07,
+              "glass": 1.0284023497221599e-07,
+              "fork": 1.4415747222635559e-06,
+              "spoon": 5.092399568997942e-06
+            },
+            "other_object_max_displacement_m": 5.092399568997942e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "73% \u00b7 29.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 29.0,
+      "wall_seconds": 32.97,
+      "progress": 0.7272727272727273,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 2.250830658713503,
+            "placement_z_error_mm": 1.0010269724247678e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.020394801766886385,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.957981390904333e-07,
+              "side_plate": 2.8195405382665915e-07,
+              "mug": 3.2306940150151994e-07,
+              "glass": 8.949883566818098e-08,
+              "fork": 1.4930667294477243e-06,
+              "spoon": 5.274330521627216e-06
+            },
+            "other_object_max_displacement_m": 5.274330521627216e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "73% \u00b7 30.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 30.0,
+      "wall_seconds": 34.08,
+      "progress": 0.7272727272727273,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 2.2508575094947223,
+            "placement_z_error_mm": 5.623870968918254e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.014653951704057349,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.4726576719515874e-07,
+              "side_plate": 8.676998368928201e-08,
+              "mug": 2.534598902820141e-07,
+              "glass": 5.222445442527248e-08,
+              "fork": 1.5445597335837947e-06,
+              "spoon": 5.456265460321543e-06
+            },
+            "other_object_max_displacement_m": 5.456265460321543e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "73% \u00b7 31.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 31.0,
+      "wall_seconds": 35.16,
+      "progress": 0.7272727272727273,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 2.2509168715463694,
+            "placement_z_error_mm": 4.1075491563624666e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.013652461866673304,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.9075124159651018e-07,
+              "side_plate": 2.3964671848907853e-07,
+              "mug": 3.320305877169513e-07,
+              "glass": 5.907730050541452e-08,
+              "fork": 1.5960475234550278e-06,
+              "spoon": 5.638204735322669e-06
+            },
+            "other_object_max_displacement_m": 5.638204735322669e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "82% \u00b7 32.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 32.0,
+      "wall_seconds": 36.13,
+      "progress": 0.8181818181818182,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 2.2508292359789417,
+            "placement_z_error_mm": 1.0010279827277202e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.020394801544002264,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 3.0352390794166717e-07,
+              "side_plate": 2.632299007150598e-07,
+              "mug": 2.0823881834658989e-07,
+              "glass": 7.259498833949003e-08,
+              "fork": 1.647541736863102e-06,
+              "spoon": 5.8201479028017445e-06
+            },
+            "other_object_max_displacement_m": 5.8201479028017445e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "82% \u00b7 33.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 33.0,
+      "wall_seconds": 37.03,
+      "progress": 0.8181818181818182,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 2.2508560867865928,
+            "placement_z_error_mm": 5.623869780979618e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.014653951430861716,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 1.619923330017727e-07,
+              "side_plate": 6.838306725494677e-08,
+              "mug": 1.8969506493032524e-07,
+              "glass": 1.0003863171444049e-07,
+              "fork": 1.6990292085701447e-06,
+              "spoon": 6.0020953586708696e-06
+            },
+            "other_object_max_displacement_m": 6.0020953586708696e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "82% \u00b7 34.0 simulated seconds \u00b7 Locate the bottle in three RGB views and check a neural route.",
+    "report": {
+      "status": "running",
+      "message": "Locate the bottle in three RGB views and check a neural route.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 34.0,
+      "wall_seconds": 37.95,
+      "progress": 0.8181818181818182,
+      "completed_steps": [],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "running",
+          "message": "Locate the bottle in three RGB views and check a neural route.",
+          "metrics": {
+            "placement_error_mm": 2.250915448792863,
+            "placement_z_error_mm": 4.107548012832751e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.013652461832058812,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.0,
+            "both_arms_parked": false,
+            "other_object_displacements_m": {
+              "plate": 2.0273891886687972e-07,
+              "side_plate": 6.151393680348121e-08,
+              "mug": 2.5558962456925494e-07,
+              "glass": 4.0996592651156666e-08,
+              "fork": 1.7505232248897687e-06,
+              "spoon": 6.184046718880268e-06
+            },
+            "other_object_max_displacement_m": 6.184046718880268e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 0
+    }
+  },
+  {
+    "message": "Succeeded \u00b7 Bottle placed; every route leg physically released and both arms parked.",
+    "report": {
+      "status": "succeeded",
+      "message": "Bottle placed; every route leg physically released and both arms parked.",
+      "seed": 42,
+      "controller": "learned_wide",
+      "bottle_start": "wide_rectangle",
+      "simulation_seconds": 34.54,
+      "wall_seconds": 38.42,
+      "progress": 1.0,
+      "completed_steps": [
+        "bottle"
+      ],
+      "results": [
+        {
+          "skill": "bottle",
+          "status": "succeeded",
+          "message": "Bottle placed; every route leg physically released and both arms parked.",
+          "metrics": {
+            "placement_error_mm": 2.2509151926980024,
+            "placement_z_error_mm": 4.107547824094837e-05,
+            "placement_yaw_error_deg": 0.0,
+            "speed_mm_s": 0.013652461824764954,
+            "max_lift_cm": 6.8278704100799175,
+            "hold_verified_s": 8.39999999999932,
+            "longest_unsupported_gap_s": 0.0,
+            "stable_release_and_park_s": 0.5000000000002558,
+            "both_arms_parked": true,
+            "other_object_displacements_m": {
+              "plate": 3.8579077160853394e-07,
+              "side_plate": 6.354147403990076e-08,
+              "mug": 1.9854747353482556e-07,
+              "glass": 4.1317668162782395e-08,
+              "fork": 1.7783311787793603e-06,
+              "spoon": 6.282302125984552e-06
+            },
+            "other_object_max_displacement_m": 6.282302125984552e-06,
+            "parked_arm_max_motion_deg": 4.476948769628046e-11,
+            "unexpected_collisions": 0
+          }
+        }
+      ],
+      "plan": [],
+      "camera_plan_reasons": [],
+      "physics_state_writes_during_control": 0,
+      "hidden_forces": 0,
+      "control_inputs": "Live RGB for bottle approach/grasp, and late mug correction during table setting; motor feedback and a separate physical stop/score monitor.",
+      "visual_feedback_profile": "Wide bottle \u00b7 live vision",
+      "visual_feedback_scope": "bottle_approach_and_grasp",
+      "destination_xy_m": [
+        0.1,
+        -0.115
+      ],
+      "completed_route_legs": 1
+    }
+  }
+]

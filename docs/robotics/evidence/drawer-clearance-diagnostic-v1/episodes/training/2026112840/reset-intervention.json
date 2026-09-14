@@ -1,0 +1,27 @@
+{
+  "original_case": {
+    "seed": 2026112840,
+    "split": "training",
+    "group": "plate_disturbance",
+    "original_status": "teacher_failed",
+    "original_failure": "Another object was disturbed."
+  },
+  "original_report_sha256": "f13770c06abba03cc8716efb9034da45828f0bc4a22d5f310ba10d978e4ad645",
+  "original_initial_qpos_qvel_identical": true,
+  "only_plate_xy_and_its_velocity_changed_before_settling": true,
+  "plate_before_xy_m": [
+    -0.060612384512987436,
+    -0.02407168355372419
+  ],
+  "plate_after_xy_m": [
+    -0.0350000009253405,
+    -0.15500000011788234
+  ],
+  "declared_xy_m": [
+    -0.035,
+    -0.155
+  ],
+  "settle_steps": 300,
+  "initial_penetration_m": 5.772839515033094e-05,
+  "scope": "Reset intervention, not an autonomous robot action."
+}

@@ -1,6 +1,16 @@
 # Broader camera-driven manipulation
 
-The active priority, corrected by the user on September 14, is useful manipulation beyond reset presets. The private submission baseline stays available, but submission readiness does not complete this development goal.
+## Governing goal and coherent implementation plan
+
+Implementation now follows [the shared whole-table pipeline](WHOLE_TABLE_PIPELINE.md), using CLIPort as the selected published spatial-policy reference. The first joint-scene geometry milestone is 14/16 development and 63/64 final stable arrangements; manipulation remains unverified.
+
+The sole authoritative goal is [the current top-level goal in PC_HANDOFF](../PC_HANDOFF.md#current-goal---authoritative-after-every-continuation): complete table setting from jointly randomized physically feasible starting arrangements for all seven loose dinner items, full tabletop rotations and explicitly addressed stable alternative orientations. Conflicting prior priorities below are superseded; completed protocols stay frozen.
+
+The next substantive milestone combines the all-item workspace-wide randomizer, physical feasibility/demonstration interface and shared current-scene pick/place policy. It must cover tabletop cutlery, side plate and glass, scene-dependent arm/task order and clearance. The randomizer uses actual tabletop geometry and a conservative robot-length bound, never a learned success rectangle. That bound is necessary geometry, not proof of a feasible grasp/route. Record all proposals, stable settled states, unsupported geometries and controller failures separately.
+
+The architectural/data bottleneck is generating successful physical pinching grasps and routes over those scenes. Initial-image/progress-to-joint trajectories alone cannot cover qualitatively different grasps and paths. Preserve the useful live bottle observer/motor/routing components. Reuse a published spatial action methodology, train from physically verified varied demonstrations, execute short moves with refreshed observations and evaluate complete jointly randomized scenes. Drawer configuration remains a fixture task; alternative loose-object orientations are not automatically invalid merely because existing policies are upright-only.
+
+The original box-based milestone below is historical/intermediate evidence. It does not define the desired final product.
 
 ## First measurable milestone
 

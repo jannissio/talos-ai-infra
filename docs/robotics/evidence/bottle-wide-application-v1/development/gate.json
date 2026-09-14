@@ -1,0 +1,141 @@
+{
+  "schema": "talos.bottle-wide-application.v1",
+  "protocol_sha256": "1038047d4d95e3cd7860fce071f381b08fb1f4c87e04467161a4c00c39480d57",
+  "passed": true,
+  "counts": {
+    "candidate": 4,
+    "baseline": 0
+  },
+  "candidate_bottle_successes": 4,
+  "rows": [
+    {
+      "case": {
+        "id": "2026113101-candidate",
+        "surface": "engine",
+        "seed": 2026113101,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "c1bcbb473488b0b467099d0c9e9ee3ed7e289d3e79a371a9ca0c4ecff1262732"
+    },
+    {
+      "case": {
+        "id": "2026113101-baseline",
+        "surface": "engine",
+        "seed": 2026113101,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "The carried object lost finger support. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "d6580e32b319e083fab0b9b456d3640883498e4e22f3f96e7ad9b9ac05221fd6"
+    },
+    {
+      "case": {
+        "id": "2026113102-candidate",
+        "surface": "engine",
+        "seed": 2026113102,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "4b5e6533a1923daf960f2d1392c332b26831f93912d41205dfa7701663eb805e"
+    },
+    {
+      "case": {
+        "id": "2026113102-baseline",
+        "surface": "engine",
+        "seed": 2026113102,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Arm failed to track the neural primitive within ten seconds. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "36ff6814fa56fda9693fed786b81179c618b06ddc95c9ab374e84644b4073832"
+    },
+    {
+      "case": {
+        "id": "2026113103-candidate",
+        "surface": "engine",
+        "seed": 2026113103,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "fbac1f4be02c0e1797277fffb9e00fceb348a5eb9bdd25804ed85a9455513220"
+    },
+    {
+      "case": {
+        "id": "2026113103-baseline",
+        "surface": "engine",
+        "seed": 2026113103,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Unexpected arm contact: left_lower_arm / bottle_neck_2 Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "966ee4e24f90d14bd332610316daec937444e8def5a7e89363f04541ac85bc0f"
+    },
+    {
+      "case": {
+        "id": "2026113104-candidate",
+        "surface": "engine",
+        "seed": 2026113104,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "ebb9aa49e645ea053793ceb9273c9c1eb3c42f1aad120be8074b9fdcdefa2817"
+    },
+    {
+      "case": {
+        "id": "2026113104-baseline",
+        "surface": "engine",
+        "seed": 2026113104,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "The carried object lost finger support. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "f1f6f77fddbf88157997930003552c7490d5315b3f7ff479a558d80e5d4d94ca"
+    }
+  ],
+  "all_planned_outcomes_retained": true
+}

@@ -1,0 +1,1264 @@
+{
+  "seed": 2026114156,
+  "generated": true,
+  "order": [
+    "fork",
+    "mug",
+    "spoon",
+    "glass",
+    "bottle",
+    "plate",
+    "side_plate"
+  ],
+  "objects": {
+    "fork": {
+      "object_id": "fork",
+      "attempt": 0,
+      "position_m": [
+        -0.0630775604051701,
+        -0.06302734133807691,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        4.738820028316241e-18,
+        -0.9970008342200471,
+        0.07739080413414859,
+        6.104869401874109e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": 2.986656120880296,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "mug": {
+      "object_id": "mug",
+      "attempt": 0,
+      "position_m": [
+        0.024001730275351296,
+        -0.05875863380745949,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.9434761064510653,
+        0.0,
+        0.0,
+        -0.3314405475435046
+      ],
+      "family": "upright",
+      "yaw_rad": -0.6756600351883901,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "spoon": {
+      "object_id": "spoon",
+      "attempt": 1,
+      "position_m": [
+        -0.25627860488094,
+        -0.11681554364767602,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        5.667369223965293e-17,
+        0.37862141336709715,
+        0.925551632995103,
+        -2.318387509843312e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -0.7766127324129566,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "glass": {
+      "object_id": "glass",
+      "attempt": 1,
+      "position_m": [
+        0.3530086334010946,
+        -0.2668753091223113,
+        0.8350000000000001
+      ],
+      "quaternion_wxyz": [
+        8.81359512345162e-18,
+        0.9895868631624376,
+        0.14393693152324388,
+        -6.059471922250745e-17
+      ],
+      "family": "inverted",
+      "yaw_rad": -2.8527153865538786,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "bottle": {
+      "object_id": "bottle",
+      "attempt": 0,
+      "position_m": [
+        0.10349615133143342,
+        0.3347186427349605,
+        0.7850466522190657
+      ],
+      "quaternion_wxyz": [
+        -0.554876874557409,
+        0.2716686096620263,
+        0.6528370137517493,
+        -0.4383054346929793
+      ],
+      "family": "sideways",
+      "yaw_rad": -2.867369951292593,
+      "axial_roll_rad": -2.078693189966067,
+      "candidate_arms": [
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "plate": {
+      "object_id": "plate",
+      "attempt": 1,
+      "position_m": [
+        0.11546283878358288,
+        0.07838738179301069,
+        0.785
+      ],
+      "quaternion_wxyz": [
+        4.152708293425154e-17,
+        -0.7348877772091211,
+        0.6781887310392566,
+        4.499889820458317e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": 1.6510023837370902,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "side_plate": {
+      "object_id": "side_plate",
+      "attempt": 0,
+      "position_m": [
+        -0.3967072320961253,
+        0.331649514209453,
+        0.773
+      ],
+      "quaternion_wxyz": [
+        3.872534769121067e-17,
+        -0.7746151295590357,
+        0.6324329221808732,
+        4.743149694927927e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": 1.7722126252784998,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    }
+  },
+  "proposals": [
+    {
+      "object_id": "fork",
+      "attempt": 0,
+      "position_m": [
+        -0.0630775604051701,
+        -0.06302734133807691,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        4.738820028316241e-18,
+        -0.9970008342200471,
+        0.07739080413414859,
+        6.104869401874109e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": 2.986656120880296,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "mug",
+      "attempt": 0,
+      "position_m": [
+        0.024001730275351296,
+        -0.05875863380745949,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.9434761064510653,
+        0.0,
+        0.0,
+        -0.3314405475435046
+      ],
+      "family": "upright",
+      "yaw_rad": -0.6756600351883901,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "spoon",
+      "attempt": 0,
+      "position_m": [
+        0.2280128728346701,
+        0.37975213715139167,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        5.667369223965293e-17,
+        0.37862141336709715,
+        0.925551632995103,
+        -2.318387509843312e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -0.7766127324129566,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [],
+      "rejection": "outside_conservative_arm_length_bound"
+    },
+    {
+      "object_id": "spoon",
+      "attempt": 1,
+      "position_m": [
+        -0.25627860488094,
+        -0.11681554364767602,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        5.667369223965293e-17,
+        0.37862141336709715,
+        0.925551632995103,
+        -2.318387509843312e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -0.7766127324129566,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "glass",
+      "attempt": 0,
+      "position_m": [
+        -0.22627000231765174,
+        -0.24658406704664293,
+        0.8350000000000001
+      ],
+      "quaternion_wxyz": [
+        8.81359512345162e-18,
+        0.9895868631624376,
+        0.14393693152324388,
+        -6.059471922250745e-17
+      ],
+      "family": "inverted",
+      "yaw_rad": -2.8527153865538786,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "world",
+          "penetration_m": 0.014198604044043243
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.015998827811766408
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.015998827811766408
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.014198604044043241
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.014191787726568116
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.014362880581401866
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.014362880581401864
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.014191787726568114
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.015553268112546892
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.014083570358983706
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.014083570358983704
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01555326811254689
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.016999999999999973
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.01699999999999998
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.0040000000000000495
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.004000000000000049
+        }
+      ]
+    },
+    {
+      "object_id": "glass",
+      "attempt": 1,
+      "position_m": [
+        0.3530086334010946,
+        -0.2668753091223113,
+        0.8350000000000001
+      ],
+      "quaternion_wxyz": [
+        8.81359512345162e-18,
+        0.9895868631624376,
+        0.14393693152324388,
+        -6.059471922250745e-17
+      ],
+      "family": "inverted",
+      "yaw_rad": -2.8527153865538786,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "bottle",
+      "attempt": 0,
+      "position_m": [
+        0.10349615133143342,
+        0.3347186427349605,
+        0.7850466522190657
+      ],
+      "quaternion_wxyz": [
+        -0.554876874557409,
+        0.2716686096620263,
+        0.6528370137517493,
+        -0.4383054346929793
+      ],
+      "family": "sideways",
+      "yaw_rad": -2.867369951292593,
+      "axial_roll_rad": -2.078693189966067,
+      "candidate_arms": [
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "plate",
+      "attempt": 0,
+      "position_m": [
+        -0.282936709978468,
+        0.024910819199036205,
+        0.785
+      ],
+      "quaternion_wxyz": [
+        4.152708293425154e-17,
+        -0.7348877772091211,
+        0.6781887310392566,
+        4.499889820458317e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": 1.6510023837370902,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004002474280571928
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004002474280571929
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0040024753629997285
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004002475362999728
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005394811869829031
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005394811869829032
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005394811550355436
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005394811550355435
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0022563753329374937
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002256375332937495
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002256375500878818
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002256375500878817
+        }
+      ]
+    },
+    {
+      "object_id": "plate",
+      "attempt": 1,
+      "position_m": [
+        0.11546283878358288,
+        0.07838738179301069,
+        0.785
+      ],
+      "quaternion_wxyz": [
+        4.152708293425154e-17,
+        -0.7348877772091211,
+        0.6781887310392566,
+        4.499889820458317e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": 1.6510023837370902,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "side_plate",
+      "attempt": 0,
+      "position_m": [
+        -0.3967072320961253,
+        0.331649514209453,
+        0.773
+      ],
+      "quaternion_wxyz": [
+        3.872534769121067e-17,
+        -0.7746151295590357,
+        0.6324329221808732,
+        4.743149694927927e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": 1.7722126252784998,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    }
+  ],
+  "arm_outer_bounds": {
+    "left": {
+      "origin_m": [
+        -0.25,
+        -0.19616469999999997,
+        0.8404
+      ],
+      "radius_m": 0.49835825187839283
+    },
+    "right": {
+      "origin_m": [
+        0.25,
+        -0.19616469999999997,
+        0.8404
+      ],
+      "radius_m": 0.49835825187839283
+    }
+  },
+  "table_xy_bounds_m": [
+    [
+      -0.48,
+      -0.32
+    ],
+    [
+      0.48,
+      0.46
+    ]
+  ],
+  "table_z": 0.76,
+  "fixture": "Original closed drawer and parked robot bases.",
+  "scope": "Reset geometry only; arm bounds do not certify a grasp or a collision-free route."
+}

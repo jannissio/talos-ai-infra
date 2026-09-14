@@ -1,0 +1,538 @@
+{
+  "case": {
+    "id": "2026113104-baseline",
+    "surface": "engine",
+    "seed": 2026113104,
+    "preset": "wide_rectangle",
+    "instruction": "Set the table",
+    "mode": "baseline"
+  },
+  "stage": "development",
+  "protocol_sha256": "1038047d4d95e3cd7860fce071f381b08fb1f4c87e04467161a4c00c39480d57",
+  "preflight": {
+    "free_bytes": 543124582400,
+    "estimated_additional_bytes": 67108864,
+    "reserve_bytes": 10737418240
+  },
+  "status": "failed",
+  "passed": false,
+  "bottle_completed": false,
+  "layout": {
+    "seed": 2026113104,
+    "scenario": "dinner",
+    "racks": [],
+    "slots": [],
+    "tubes": [],
+    "table_z": 0.76,
+    "practice": false,
+    "transfer_side": null,
+    "objects": [
+      {
+        "id": "plate",
+        "body": "plate",
+        "label": "Blue-rim plate",
+        "kind": "plate",
+        "mass_kg": 0.0668003516316265,
+        "size_m": [
+          0.132,
+          0.132,
+          0.024
+        ],
+        "color": "#719acb",
+        "grasp_local_m": [
+          0,
+          -0.061,
+          0.01
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.867168012159406,
+        "initial_position_m": [
+          -0.11636526694856758,
+          0.01615266333462747,
+          0.761
+        ],
+        "initial_yaw_rad": 0.008331272793340533,
+        "grasp_site": "plate_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "side_plate",
+        "body": "side_plate",
+        "label": "Gold-rim side plate",
+        "kind": "plate",
+        "mass_kg": 0.046723709440747656,
+        "size_m": [
+          0.106,
+          0.106,
+          0.012
+        ],
+        "color": "#dfac65",
+        "grasp_local_m": [
+          0,
+          -0.048,
+          0.009
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.8557303954212765,
+        "initial_position_m": [
+          0.11931856663790913,
+          0.24964329829430237,
+          0.761
+        ],
+        "initial_yaw_rad": -0.035545315197544974,
+        "grasp_site": "side_plate_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "mug",
+        "body": "mug",
+        "label": "Teal mug",
+        "kind": "mug",
+        "mass_kg": 0.04566670694901124,
+        "size_m": [
+          0.077,
+          0.05,
+          0.064
+        ],
+        "color": "#54b9b1",
+        "grasp_local_m": [
+          0.047,
+          0,
+          0.041
+        ],
+        "grasp_width_m": 0.008,
+        "friction": 0.8658866770202833,
+        "initial_position_m": [
+          0.2557177105928792,
+          -0.06236908797029384,
+          0.761
+        ],
+        "initial_yaw_rad": -0.07758292542015069,
+        "grasp_site": "mug_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "glass",
+        "body": "glass",
+        "label": "Clear drinking glass",
+        "kind": "glass",
+        "mass_kg": 0.03293530509146623,
+        "size_m": [
+          0.048,
+          0.048,
+          0.074
+        ],
+        "color": "#b3dcdf",
+        "grasp_local_m": [
+          0,
+          0,
+          0.045
+        ],
+        "grasp_width_m": 0.048,
+        "friction": 0.7245048901645131,
+        "initial_position_m": [
+          0.28108544255650075,
+          0.24190186054512147,
+          0.761
+        ],
+        "initial_yaw_rad": 0.024542697252084467,
+        "grasp_site": "glass_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "bottle",
+        "body": "bottle",
+        "label": "Amber water bottle",
+        "kind": "bottle",
+        "mass_kg": 0.07366453842268281,
+        "size_m": [
+          0.048,
+          0.048,
+          0.14
+        ],
+        "color": "#cf995b",
+        "grasp_local_m": [
+          0,
+          0,
+          0.128
+        ],
+        "grasp_width_m": 0.022,
+        "friction": 0.7469945856224818,
+        "initial_position_m": [
+          0.02128177894869508,
+          -0.07924355139989908,
+          0.761
+        ],
+        "initial_yaw_rad": -0.06941009203546908,
+        "grasp_site": "bottle_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "fork",
+        "body": "fork",
+        "label": "Fork",
+        "kind": "fork",
+        "mass_kg": 0.011640458253533593,
+        "size_m": [
+          0.017,
+          0.11,
+          0.016
+        ],
+        "color": "#cad5de",
+        "grasp_local_m": [
+          0,
+          0,
+          0.008
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.8111235422197984,
+        "initial_position_m": [
+          -0.3012208830584444,
+          0.162969500768015,
+          0.79
+        ],
+        "initial_yaw_rad": -0.04687784571678726,
+        "grasp_site": "fork_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "spoon",
+        "body": "spoon",
+        "label": "Spoon",
+        "kind": "spoon",
+        "mass_kg": 0.013713647305482798,
+        "size_m": [
+          0.022,
+          0.11,
+          0.016
+        ],
+        "color": "#cad5de",
+        "grasp_local_m": [
+          0,
+          0,
+          0.008
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.8048141482948193,
+        "initial_position_m": [
+          -0.25590550749386176,
+          0.16376852581845058,
+          0.79
+        ],
+        "initial_yaw_rad": -0.003978785657904618,
+        "grasp_site": "spoon_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      }
+    ],
+    "targets": [
+      {
+        "id": "plate_place",
+        "label": "Plate setting",
+        "object_id": "plate",
+        "position_m": [
+          -0.06,
+          -0.025,
+          0.76
+        ],
+        "radius_m": 0.074
+      },
+      {
+        "id": "side_plate_place",
+        "label": "Side plate setting",
+        "object_id": "side_plate",
+        "position_m": [
+          0.11,
+          -0.025,
+          0.76
+        ],
+        "radius_m": 0.06
+      },
+      {
+        "id": "mug_place",
+        "label": "Mug setting",
+        "object_id": "mug",
+        "position_m": [
+          0.265,
+          0.005,
+          0.76
+        ],
+        "radius_m": 0.033
+      },
+      {
+        "id": "glass_place",
+        "label": "Glass setting",
+        "object_id": "glass",
+        "position_m": [
+          0.075,
+          0.1,
+          0.76
+        ],
+        "radius_m": 0.033
+      },
+      {
+        "id": "fork_place",
+        "label": "Fork setting",
+        "object_id": "fork",
+        "position_m": [
+          -0.16,
+          -0.045,
+          0.76
+        ],
+        "radius_m": 0.012
+      },
+      {
+        "id": "spoon_place",
+        "label": "Spoon setting",
+        "object_id": "spoon",
+        "position_m": [
+          -0.02,
+          -0.155,
+          0.76
+        ],
+        "radius_m": 0.014
+      }
+    ],
+    "drawer": {
+      "body": "cutlery_drawer",
+      "joint": "drawer_slide",
+      "travel_m": 0.12,
+      "initial_open_m": 0.0,
+      "handle_site": "drawer_handle_grasp",
+      "actuated": false,
+      "closed_origin_m": [
+        -0.28,
+        0.18,
+        0.76
+      ]
+    },
+    "dinner_preset": "task",
+    "drawer_open": false,
+    "randomization": {
+      "object_xy_m": 0.009,
+      "mass_fraction": 0.08,
+      "friction_fraction": 0.1,
+      "light_multiplier": 0.9910483053626991
+    },
+    "challenge": {
+      "title": "Set the dinner table",
+      "autonomy_available": true,
+      "instruction": "Open the drawer, place the plate and cutlery, then coordinate both arms to serve a drink.",
+      "next_skill": "Learn camera/language control from verified demonstrations."
+    },
+    "wide_bottle_reset": {
+      "initial_bottle_penetration_m": 0.0,
+      "initial_bottle_overlap_valid": true
+    },
+    "bottle_start": "wide_rectangle"
+  },
+  "message": "The carried object lost finger support. Physics paused.",
+  "task": {
+    "status": "failed",
+    "active": false,
+    "stage": "neural_control",
+    "stage_label": "Neural bottle movement",
+    "message": "The carried object lost finger support. Physics paused.",
+    "arm": "left",
+    "tube_id": "bottle",
+    "kind": "learned_dinner_sequence",
+    "source_slot": null,
+    "recording_id": null,
+    "destination_slot": null,
+    "progress": 0.08121827096626277,
+    "stages": [
+      {
+        "id": "neural_control",
+        "label": "Camera-conditioned neural movement"
+      }
+    ],
+    "elapsed_s": 19.875,
+    "attempts": 0,
+    "metrics": {
+      "placement_error_mm": 117.71052727173502,
+      "placement_z_error_mm": 51.138489562779554,
+      "placement_yaw_error_deg": 0.0,
+      "speed_mm_s": 205.81829204688222,
+      "max_lift_cm": 6.839972841958019,
+      "hold_verified_s": 3.6999999999992674,
+      "longest_unsupported_gap_s": 0.1849999999999632,
+      "stable_release_and_park_s": 0.0,
+      "both_arms_parked": false,
+      "other_object_displacements_m": {
+        "plate": 6.594948223463273e-09,
+        "side_plate": 5.552712062204306e-08,
+        "mug": 1.899972579630147e-07,
+        "glass": 3.871916451905226e-08,
+        "fork": 9.552247603943457e-07,
+        "spoon": 1.907998830111743e-06
+      },
+      "other_object_max_displacement_m": 1.907998830111743e-06,
+      "parked_arm_max_motion_deg": 0.001647120192173908,
+      "unexpected_collisions": 0
+    },
+    "history": [
+      {
+        "stage": "failed",
+        "at_s": 19.875,
+        "message": "The carried object lost finger support. Physics paused."
+      }
+    ],
+    "observation": "initial three RGB cameras and motor-feedback progress guard",
+    "attachment": "physical_contacts_only",
+    "object_id": "bottle",
+    "skill_id": "bottle",
+    "skill_label": "bottle",
+    "policy_mode": "learned_dinner",
+    "physical_monitor": "privileged state for stop/score only; never motor target generation",
+    "teacher_updates": 0,
+    "policy_details": {
+      "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+      "continuous_visual_correction": false,
+      "initial_camera_conditioning": true,
+      "pregrasp_visual_feedback": false,
+      "visual_feedback_scope": "initial image only",
+      "visual_refresh_calls": 0,
+      "camera_support_check": "initial_only",
+      "visual_encoder": "bottle_rgb_geometry",
+      "neural_runtime": "OpenVINO",
+      "neural_execution_devices": [
+        "CPU"
+      ],
+      "inference_demonstration_actions": false,
+      "simulator_clock_or_object_pose_input": false,
+      "internal_progress_endpoints": 384,
+      "tracking_guard_wait_calls": 4
+    },
+    "inference_median_ms": 1.8025499302893877,
+    "completion_note": "Physical release and parked arms required before the next skill.",
+    "inactive_arm_control": "neural targets",
+    "steps": [
+      "bottle",
+      "plate",
+      "mug",
+      "drawer",
+      "fork",
+      "spoon"
+    ],
+    "completed_steps": [],
+    "results": [
+      {
+        "skill": "bottle",
+        "status": "failed",
+        "active": false,
+        "stage": "neural_control",
+        "stage_label": "Neural bottle movement",
+        "message": "The carried object lost finger support. Physics paused.",
+        "arm": "left",
+        "tube_id": "bottle",
+        "kind": "learned_dinner",
+        "source_slot": null,
+        "recording_id": null,
+        "destination_slot": null,
+        "progress": 0.48730962579757664,
+        "stages": [
+          {
+            "id": "neural_control",
+            "label": "Camera-conditioned neural movement"
+          }
+        ],
+        "elapsed_s": 19.875,
+        "attempts": 0,
+        "metrics": {
+          "placement_error_mm": 117.71052727173502,
+          "placement_z_error_mm": 51.138489562779554,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 205.81829204688222,
+          "max_lift_cm": 6.839972841958019,
+          "hold_verified_s": 3.6999999999992674,
+          "longest_unsupported_gap_s": 0.1849999999999632,
+          "stable_release_and_park_s": 0.0,
+          "both_arms_parked": false,
+          "other_object_displacements_m": {
+            "plate": 6.594948223463273e-09,
+            "side_plate": 5.552712062204306e-08,
+            "mug": 1.899972579630147e-07,
+            "glass": 3.871916451905226e-08,
+            "fork": 9.552247603943457e-07,
+            "spoon": 1.907998830111743e-06
+          },
+          "other_object_max_displacement_m": 1.907998830111743e-06,
+          "parked_arm_max_motion_deg": 0.001647120192173908,
+          "unexpected_collisions": 0
+        },
+        "history": [
+          {
+            "stage": "failed",
+            "at_s": 19.875,
+            "message": "The carried object lost finger support. Physics paused."
+          }
+        ],
+        "observation": "initial three RGB cameras and motor-feedback progress guard",
+        "attachment": "physical_contacts_only",
+        "object_id": "bottle",
+        "skill_id": "bottle",
+        "skill_label": "bottle",
+        "policy_mode": "learned_dinner",
+        "physical_monitor": "privileged state for stop/score only; never motor target generation",
+        "teacher_updates": 0,
+        "policy_details": {
+          "kind": "Camera-conditioned neural motion primitive with programmed joint-feedback progress guard",
+          "continuous_visual_correction": false,
+          "initial_camera_conditioning": true,
+          "pregrasp_visual_feedback": false,
+          "visual_feedback_scope": "initial image only",
+          "visual_refresh_calls": 0,
+          "camera_support_check": "initial_only",
+          "visual_encoder": "bottle_rgb_geometry",
+          "neural_runtime": "OpenVINO",
+          "neural_execution_devices": [
+            "CPU"
+          ],
+          "inference_demonstration_actions": false,
+          "simulator_clock_or_object_pose_input": false,
+          "internal_progress_endpoints": 384,
+          "tracking_guard_wait_calls": 4
+        },
+        "inference_median_ms": 1.8025499302893877,
+        "completion_note": "Physical release and parked arms required before the next skill.",
+        "inactive_arm_control": "neural targets"
+      }
+    ],
+    "skill_elapsed_s": 19.875,
+    "intent_plan": {
+      "steps": [
+        "bottle",
+        "plate",
+        "mug",
+        "drawer",
+        "fork",
+        "spoon"
+      ],
+      "reasons": [],
+      "observation": {
+        "bottle_path_clear": false,
+        "drawer_path_clear": false,
+        "drawer_open": false,
+        "source": "calibrated RGB color/geometry rules; no simulator object positions",
+        "bottle_centroid_px": [
+          155.43502807617188,
+          162.39548206329346
+        ],
+        "bottle_region": "standard",
+        "plate_centroid_px": [
+          126.94880485534668,
+          134.59044456481934
+        ],
+        "drawer_lining_pixels": 374
+      },
+      "instruction": "Set the table",
+      "interpreter": "bounded grammar and RGB-grounded dependencies"
+    },
+    "visual_feedback_profile": "dinner_visual_mug_v1",
+    "visual_feedback_scope": "late_mug_placement"
+  },
+  "physics_state_writes_during_control": 0,
+  "hidden_forces": 0,
+  "equality_constraints": 0,
+  "wall_seconds": 3.8785458002239466,
+  "trace_frames": 399
+}

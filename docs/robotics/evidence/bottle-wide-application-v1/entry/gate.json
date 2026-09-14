@@ -1,0 +1,140 @@
+{
+  "schema": "talos.bottle-wide-application.v1",
+  "protocol_sha256": "1038047d4d95e3cd7860fce071f381b08fb1f4c87e04467161a4c00c39480d57",
+  "passed": true,
+  "counts": {
+    "candidate": 8
+  },
+  "candidate_bottle_successes": 8,
+  "rows": [
+    {
+      "case": {
+        "id": "engine-bottle-default",
+        "surface": "engine",
+        "seed": 42,
+        "preset": "wide_rectangle",
+        "instruction": "Place. The bottle.",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Bottle placed; every route leg physically released and both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "12fca018dc5eab48583e4ca7397767a0d0f3e40b5f6e14f125314c174ac718c0"
+    },
+    {
+      "case": {
+        "id": "engine-bottle-right",
+        "surface": "engine",
+        "seed": 2026113001,
+        "preset": "wide_rectangle",
+        "instruction": "Place the bottle at the right spot",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Bottle placed; every route leg physically released and both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "e5ccd54f9028e3f0b16e01504c8246f1838836043b17d6b966016c89014bbd21"
+    },
+    {
+      "case": {
+        "id": "engine-table-wide",
+        "surface": "engine",
+        "seed": 42,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "4e2eceeacad907a030fa1a9f6c37702d17d71ead2957295971d0c44bf15ac28e"
+    },
+    {
+      "case": {
+        "id": "engine-table-upright",
+        "surface": "engine",
+        "seed": 42,
+        "preset": "upright",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "33d0a660b8c4986db66e2d6f6c80c4b22a9849dc2de38b0c4903b475d400aa3c"
+    },
+    {
+      "case": {
+        "id": "public-bottle-default",
+        "surface": "public",
+        "seed": 42,
+        "preset": "wide_rectangle",
+        "instruction": "Place. The bottle.",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Bottle placed; every route leg physically released and both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "058e04cdd482d9afe631286258cdc5b6679b72448188cf4757b6fae7f9134e54"
+    },
+    {
+      "case": {
+        "id": "public-bottle-right",
+        "surface": "public",
+        "seed": 2026113001,
+        "preset": "wide_rectangle",
+        "instruction": "Place the bottle at the right spot",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Bottle placed; every route leg physically released and both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "586355763908d168e331e2165cea4c5b3f9eb3509dafa3e5f7b70598055dd3e4"
+    },
+    {
+      "case": {
+        "id": "public-table-wide",
+        "surface": "public",
+        "seed": 42,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "0db8d707f950568793b5c21bb8a35c992a7d5e0a773ccf95c450c59d0a017358"
+    },
+    {
+      "case": {
+        "id": "public-table-upright",
+        "surface": "public",
+        "seed": 42,
+        "preset": "upright",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "c31fe9bcb82b474037bd22913d03fce2fe2c0be7ec19664e12262080475fcf43"
+    }
+  ],
+  "all_planned_outcomes_retained": true
+}

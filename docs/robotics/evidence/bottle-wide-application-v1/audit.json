@@ -1,0 +1,2473 @@
+{
+  "schema": "talos.bottle-wide-application.v1",
+  "audit_passed": true,
+  "gates": {
+    "entry": {
+      "passed": true,
+      "counts": {
+        "candidate": 8
+      },
+      "bottles": 8
+    },
+    "development": {
+      "passed": true,
+      "counts": {
+        "candidate": 4,
+        "baseline": 0
+      },
+      "bottles": 4
+    },
+    "evaluation": {
+      "passed": true,
+      "counts": {
+        "candidate": 10,
+        "baseline": 0
+      },
+      "bottles": 10
+    }
+  },
+  "rows": [
+    {
+      "case": {
+        "id": "engine-bottle-default",
+        "surface": "engine",
+        "seed": 42,
+        "preset": "wide_rectangle",
+        "instruction": "Place. The bottle.",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Bottle placed; every route leg physically released and both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "12fca018dc5eab48583e4ca7397767a0d0f3e40b5f6e14f125314c174ac718c0",
+      "trace_frames": 692,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "engine-bottle-right",
+        "surface": "engine",
+        "seed": 2026113001,
+        "preset": "wide_rectangle",
+        "instruction": "Place the bottle at the right spot",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Bottle placed; every route leg physically released and both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "e5ccd54f9028e3f0b16e01504c8246f1838836043b17d6b966016c89014bbd21",
+      "trace_frames": 692,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "engine-table-wide",
+        "surface": "engine",
+        "seed": 42,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "4e2eceeacad907a030fa1a9f6c37702d17d71ead2957295971d0c44bf15ac28e",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "engine-table-upright",
+        "surface": "engine",
+        "seed": 42,
+        "preset": "upright",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "33d0a660b8c4986db66e2d6f6c80c4b22a9849dc2de38b0c4903b475d400aa3c",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "public-bottle-default",
+        "surface": "public",
+        "seed": 42,
+        "preset": "wide_rectangle",
+        "instruction": "Place. The bottle.",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Bottle placed; every route leg physically released and both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "058e04cdd482d9afe631286258cdc5b6679b72448188cf4757b6fae7f9134e54",
+      "trace_frames": 692,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "public-bottle-right",
+        "surface": "public",
+        "seed": 2026113001,
+        "preset": "wide_rectangle",
+        "instruction": "Place the bottle at the right spot",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Bottle placed; every route leg physically released and both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "586355763908d168e331e2165cea4c5b3f9eb3509dafa3e5f7b70598055dd3e4",
+      "trace_frames": 692,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "public-table-wide",
+        "surface": "public",
+        "seed": 42,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "0db8d707f950568793b5c21bb8a35c992a7d5e0a773ccf95c450c59d0a017358",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "public-table-upright",
+        "surface": "public",
+        "seed": 42,
+        "preset": "upright",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "c31fe9bcb82b474037bd22913d03fce2fe2c0be7ec19664e12262080475fcf43",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113101-candidate",
+        "surface": "engine",
+        "seed": 2026113101,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "c1bcbb473488b0b467099d0c9e9ee3ed7e289d3e79a371a9ca0c4ecff1262732",
+      "trace_frames": 4877,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113101-baseline",
+        "surface": "engine",
+        "seed": 2026113101,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "The carried object lost finger support. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "d6580e32b319e083fab0b9b456d3640883498e4e22f3f96e7ad9b9ac05221fd6",
+      "trace_frames": 383,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113102-candidate",
+        "surface": "engine",
+        "seed": 2026113102,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "4b5e6533a1923daf960f2d1392c332b26831f93912d41205dfa7701663eb805e",
+      "trace_frames": 5569,
+      "rgb_observations": 692,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113102-baseline",
+        "surface": "engine",
+        "seed": 2026113102,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Arm failed to track the neural primitive within ten seconds. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "36ff6814fa56fda9693fed786b81179c618b06ddc95c9ab374e84644b4073832",
+      "trace_frames": 233,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113103-candidate",
+        "surface": "engine",
+        "seed": 2026113103,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "fbac1f4be02c0e1797277fffb9e00fceb348a5eb9bdd25804ed85a9455513220",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113103-baseline",
+        "surface": "engine",
+        "seed": 2026113103,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Unexpected arm contact: left_lower_arm / bottle_neck_2 Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "966ee4e24f90d14bd332610316daec937444e8def5a7e89363f04541ac85bc0f",
+      "trace_frames": 501,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113104-candidate",
+        "surface": "engine",
+        "seed": 2026113104,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "ebb9aa49e645ea053793ceb9273c9c1eb3c42f1aad120be8074b9fdcdefa2817",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113104-baseline",
+        "surface": "engine",
+        "seed": 2026113104,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "The carried object lost finger support. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "f1f6f77fddbf88157997930003552c7490d5315b3f7ff479a558d80e5d4d94ca",
+      "trace_frames": 399,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113201-candidate",
+        "surface": "engine",
+        "seed": 2026113201,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "49207905c74e0198ca82375930e0e94198a283dc57efd1245e38714a53c45a6a",
+      "trace_frames": 4879,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113201-baseline",
+        "surface": "engine",
+        "seed": 2026113201,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Arm failed to track the neural primitive within ten seconds. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "6674bf62d6d3545fc99ded3b2b4c3804e3aa650184dd4f357697eee07b8c1919",
+      "trace_frames": 717,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113202-candidate",
+        "surface": "engine",
+        "seed": 2026113202,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "918046ea61f386c08b8006a7a538c01cb8ef0c2ab78a8e8764cfb83dcf02b19f",
+      "trace_frames": 5570,
+      "rgb_observations": 692,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113202-baseline",
+        "surface": "engine",
+        "seed": 2026113202,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Object observation lies outside the trained camera support. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "939c35240d3dc6158951b126b456877e2b39a43e8ca24cd93bfabbb4b2aa88fe",
+      "trace_frames": 1,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113203-candidate",
+        "surface": "engine",
+        "seed": 2026113203,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "df973bb58c885c16c4e0be138cf0c6eeeaad07ed790618c7cf9c7475dfdd9bed",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113203-baseline",
+        "surface": "engine",
+        "seed": 2026113203,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Arm failed to track the neural primitive within ten seconds. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "73dfa2448669a1c2418fd5707cfcbb9d39c294832367c2c050ef70438acb5be7",
+      "trace_frames": 721,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113204-candidate",
+        "surface": "engine",
+        "seed": 2026113204,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "3d1634ecfc7c1d393bf38f413b8c52ab792b506af63b2f21e53183bea7d8d468",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113204-baseline",
+        "surface": "engine",
+        "seed": 2026113204,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Arm failed to track the neural primitive within ten seconds. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "4ab2a225d8433ee8a2c97fa277c59b8136921d289a88c02846fc6268b078bf4b",
+      "trace_frames": 781,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113205-candidate",
+        "surface": "engine",
+        "seed": 2026113205,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "720f66ebab636958a1771742bbf10b4990ef9876d130989acf52e3111b359a13",
+      "trace_frames": 5569,
+      "rgb_observations": 692,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113205-baseline",
+        "surface": "engine",
+        "seed": 2026113205,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Arm failed to track the neural primitive within ten seconds. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "b204fd1b8d0e4b52285d604106766316ac9b59bb5ec508a64aae4a35982e5535",
+      "trace_frames": 313,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113206-candidate",
+        "surface": "engine",
+        "seed": 2026113206,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "7ccab39160bf4044e52dc1591db04da700ada81aba14c1075e4d16e724bae7cd",
+      "trace_frames": 4879,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113206-baseline",
+        "surface": "engine",
+        "seed": 2026113206,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Amber bottle is missing or ambiguous in the calibrated camera region: [] Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "6f3fda12ad16096740bd8c87ba872505bae02f54f8a5781e1a362abbbe188c7e",
+      "trace_frames": 1,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113207-candidate",
+        "surface": "engine",
+        "seed": 2026113207,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "8a9b75ffdb1b723395596a083f57e96ca53cfad3dc0be77d70b8f841edd6829c",
+      "trace_frames": 4877,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113207-baseline",
+        "surface": "engine",
+        "seed": 2026113207,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Amber bottle is missing or ambiguous in the calibrated camera region: [] Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "d08b9084a9b62c3874deb1b27f33d455629a0260ceb4522b71d323ab732e6265",
+      "trace_frames": 1,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113208-candidate",
+        "surface": "engine",
+        "seed": 2026113208,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "f89a294a7465879a2a3f5e014ddcb7a9de0cdedb2950d99c45b10ed2884f1192",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113208-baseline",
+        "surface": "engine",
+        "seed": 2026113208,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Neural skill did not reach its physical goal before timeout.",
+      "exit_code": 0,
+      "report_sha256": "95d15ce4cc7a28370810efc356db018197a7b12661a00d6a1b5ee14655866bbc",
+      "trace_frames": 1490,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113209-candidate",
+        "surface": "engine",
+        "seed": 2026113209,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "0bd18f7d3d0d66eb10f96f375c3d65e9d32d5d5783b392298bdc27c92fab896b",
+      "trace_frames": 4878,
+      "rgb_observations": 346,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113209-baseline",
+        "surface": "engine",
+        "seed": 2026113209,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "The carried object lost finger support. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "f7447be201f372ff8baaaf48a1e084acf6c8ad2d3b72c1e7fa9c50fa3774c73c",
+      "trace_frames": 477,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113210-candidate",
+        "surface": "engine",
+        "seed": 2026113210,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "candidate"
+      },
+      "status": "succeeded",
+      "passed": true,
+      "bottle_completed": true,
+      "message": "Completed all requested neural dinner skills; both arms parked.",
+      "exit_code": 0,
+      "report_sha256": "fd6be43f2abad790c3facf7ce33ea8c12e3e419f3bdf3d2b7abec9f43b1c0f99",
+      "trace_frames": 5568,
+      "rgb_observations": 692,
+      "reset_independently_regenerated": true
+    },
+    {
+      "case": {
+        "id": "2026113210-baseline",
+        "surface": "engine",
+        "seed": 2026113210,
+        "preset": "wide_rectangle",
+        "instruction": "Set the table",
+        "mode": "baseline"
+      },
+      "status": "failed",
+      "passed": false,
+      "bottle_completed": false,
+      "message": "Arm failed to track the neural primitive within ten seconds. Physics paused.",
+      "exit_code": 0,
+      "report_sha256": "f425caec6ee2463f54db2ae9fdaa05dad5bfc8a2a61d1a99a246c58938b04b3c",
+      "trace_frames": 225,
+      "rgb_observations": 0,
+      "reset_independently_regenerated": true
+    }
+  ],
+  "state_frames": 99579,
+  "rgb_observations": 8996,
+  "completed_bottle_legs": 26,
+  "distinct_paired_reset_groups": 20,
+  "preflight": {
+    "free_bytes": 545002364928,
+    "estimated_additional_bytes": 156702121,
+    "reserve_bytes": 10737418240
+  },
+  "source_copies": {
+    "protocol.json": {
+      "source": ".run/bottle-wide-application-v1/protocol.json",
+      "original_sha256": "1038047d4d95e3cd7860fce071f381b08fb1f4c87e04467161a4c00c39480d57",
+      "copied_sha256": "1038047d4d95e3cd7860fce071f381b08fb1f4c87e04467161a4c00c39480d57",
+      "sanitized": false
+    },
+    "development/2026113101-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-baseline.log",
+      "original_sha256": "0034b213ea495192d5482fb0c8b3464fb807261bc9433ce1e1af077274aefd8c",
+      "copied_sha256": "0034b213ea495192d5482fb0c8b3464fb807261bc9433ce1e1af077274aefd8c",
+      "sanitized": false
+    },
+    "development/2026113101-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-candidate.log",
+      "original_sha256": "6a357450c0ad63b07ff7c8d54133b9a7b1c9c38fb45b596c8bcf3c6767fcad31",
+      "copied_sha256": "6a357450c0ad63b07ff7c8d54133b9a7b1c9c38fb45b596c8bcf3c6767fcad31",
+      "sanitized": false
+    },
+    "development/2026113102-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-baseline.log",
+      "original_sha256": "80ef0650db1793dda4638359adef0e0794f8ec50fc864fd741d6ecd789f1c4e8",
+      "copied_sha256": "80ef0650db1793dda4638359adef0e0794f8ec50fc864fd741d6ecd789f1c4e8",
+      "sanitized": false
+    },
+    "development/2026113102-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-candidate.log",
+      "original_sha256": "1d219e9866c4fee68d3ad8f18c5a9d604022ed4bf5bd62a8a450c9407c0df8b8",
+      "copied_sha256": "1d219e9866c4fee68d3ad8f18c5a9d604022ed4bf5bd62a8a450c9407c0df8b8",
+      "sanitized": false
+    },
+    "development/2026113103-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-baseline.log",
+      "original_sha256": "3f685e9a3a22230ef12e92cb0ac00742eeab14cb4ca6da4daf1a4845ca8d12e3",
+      "copied_sha256": "3f685e9a3a22230ef12e92cb0ac00742eeab14cb4ca6da4daf1a4845ca8d12e3",
+      "sanitized": false
+    },
+    "development/2026113103-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-candidate.log",
+      "original_sha256": "86a86cc0b3bed753a54c107893ac6c3b0efe77c219a4bdc5d5a3f3e5e73963b0",
+      "copied_sha256": "86a86cc0b3bed753a54c107893ac6c3b0efe77c219a4bdc5d5a3f3e5e73963b0",
+      "sanitized": false
+    },
+    "development/2026113104-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-baseline.log",
+      "original_sha256": "02d1bcd084022b2d48b2e73f309638a21f25f9a5711211b7b130457f63453734",
+      "copied_sha256": "02d1bcd084022b2d48b2e73f309638a21f25f9a5711211b7b130457f63453734",
+      "sanitized": false
+    },
+    "development/2026113104-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-candidate.log",
+      "original_sha256": "51db67f9f7ff7fd1af675f08805f647da61959034161613d66b5b3e7214a32a7",
+      "copied_sha256": "51db67f9f7ff7fd1af675f08805f647da61959034161613d66b5b3e7214a32a7",
+      "sanitized": false
+    },
+    "development/gate.json": {
+      "source": ".run/bottle-wide-application-v1/development/gate.json",
+      "original_sha256": "d0418e8e83942d98851c559a8473844e266f4162986e5ab1de520fdd21a7bb6a",
+      "copied_sha256": "d0418e8e83942d98851c559a8473844e266f4162986e5ab1de520fdd21a7bb6a",
+      "sanitized": false
+    },
+    "entry/engine-bottle-default.log": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-default.log",
+      "original_sha256": "d0a656a7fe8ed2888d730927b7ef985a0e3608754b8edfe80df6f3c57ffbea79",
+      "copied_sha256": "d0a656a7fe8ed2888d730927b7ef985a0e3608754b8edfe80df6f3c57ffbea79",
+      "sanitized": false
+    },
+    "entry/engine-bottle-right.log": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-right.log",
+      "original_sha256": "45515f8eb70e89a7055cccd0ac2613cbcf57da6f22a88816e7cfe0216de5b2d6",
+      "copied_sha256": "45515f8eb70e89a7055cccd0ac2613cbcf57da6f22a88816e7cfe0216de5b2d6",
+      "sanitized": false
+    },
+    "entry/engine-table-upright.log": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-upright.log",
+      "original_sha256": "f7f9bd3c57054b90278667e082dbd5ebd3e495902f9c3568ce7a0f4459e25a3e",
+      "copied_sha256": "f7f9bd3c57054b90278667e082dbd5ebd3e495902f9c3568ce7a0f4459e25a3e",
+      "sanitized": false
+    },
+    "entry/engine-table-wide.log": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-wide.log",
+      "original_sha256": "33bba5ea594561885ed6619d9044d560593668e8bcd8cbbf5fe9917279494400",
+      "copied_sha256": "33bba5ea594561885ed6619d9044d560593668e8bcd8cbbf5fe9917279494400",
+      "sanitized": false
+    },
+    "entry/gate.json": {
+      "source": ".run/bottle-wide-application-v1/entry/gate.json",
+      "original_sha256": "e4ac30f0586f89afa7b5390690df21beb57f6bcb7bb8837c9501cc5d184989ab",
+      "copied_sha256": "e4ac30f0586f89afa7b5390690df21beb57f6bcb7bb8837c9501cc5d184989ab",
+      "sanitized": false
+    },
+    "entry/public-bottle-default.log": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default.log",
+      "original_sha256": "4af1b86a6cb1d0e620a926820dea79ea4f9fbfbdb5f4da3124f689ef477ff110",
+      "copied_sha256": "4af1b86a6cb1d0e620a926820dea79ea4f9fbfbdb5f4da3124f689ef477ff110",
+      "sanitized": false
+    },
+    "entry/public-bottle-right.log": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right.log",
+      "original_sha256": "326ebf6c59bbbbab823174f33e8d667ec11550e5ded368a07a822e77ef337608",
+      "copied_sha256": "326ebf6c59bbbbab823174f33e8d667ec11550e5ded368a07a822e77ef337608",
+      "sanitized": false
+    },
+    "entry/public-table-upright.log": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-upright.log",
+      "original_sha256": "8fd386a267b2a83e878af6878fa7f351d8cfc8104a40d39edbb24246e882aed5",
+      "copied_sha256": "8fd386a267b2a83e878af6878fa7f351d8cfc8104a40d39edbb24246e882aed5",
+      "sanitized": false
+    },
+    "entry/public-table-wide.log": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-wide.log",
+      "original_sha256": "f2f8336a6243edae8ddad882acc2f43030b3742a42aff69f9cb6e909eef7b231",
+      "copied_sha256": "f2f8336a6243edae8ddad882acc2f43030b3742a42aff69f9cb6e909eef7b231",
+      "sanitized": false
+    },
+    "evaluation/2026113201-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-baseline.log",
+      "original_sha256": "6732f0b3067ef61ce3ec23ac399b9356e9f58c59b35dc7170721337c054c852a",
+      "copied_sha256": "6732f0b3067ef61ce3ec23ac399b9356e9f58c59b35dc7170721337c054c852a",
+      "sanitized": false
+    },
+    "evaluation/2026113201-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-candidate.log",
+      "original_sha256": "e8a5e7179cfcc79fd7c7c59f9d8eb07d34524aed70098f67651ddf1d8b080779",
+      "copied_sha256": "e8a5e7179cfcc79fd7c7c59f9d8eb07d34524aed70098f67651ddf1d8b080779",
+      "sanitized": false
+    },
+    "evaluation/2026113202-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-baseline.log",
+      "original_sha256": "18d21b9d96fcc2fc25b9c1becb6987746d54508cf8cef6cb814d9c1558782af7",
+      "copied_sha256": "18d21b9d96fcc2fc25b9c1becb6987746d54508cf8cef6cb814d9c1558782af7",
+      "sanitized": false
+    },
+    "evaluation/2026113202-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-candidate.log",
+      "original_sha256": "b6d02c2dbb6e4a495e3f526d0ceef1f3ca7e26b73fa5d7ba8802dc6cac612d1e",
+      "copied_sha256": "b6d02c2dbb6e4a495e3f526d0ceef1f3ca7e26b73fa5d7ba8802dc6cac612d1e",
+      "sanitized": false
+    },
+    "evaluation/2026113203-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-baseline.log",
+      "original_sha256": "97f382684213ea8f1c653cf035b8452dd6e7fcdac2f845e2bd567f964d9db05b",
+      "copied_sha256": "97f382684213ea8f1c653cf035b8452dd6e7fcdac2f845e2bd567f964d9db05b",
+      "sanitized": false
+    },
+    "evaluation/2026113203-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-candidate.log",
+      "original_sha256": "09c456f8a9a62b19a366fd11aad4e11b4970024770b93f15f5dc4f61b1dd2115",
+      "copied_sha256": "09c456f8a9a62b19a366fd11aad4e11b4970024770b93f15f5dc4f61b1dd2115",
+      "sanitized": false
+    },
+    "evaluation/2026113204-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-baseline.log",
+      "original_sha256": "f3ffba5a680c1429d89fc3f44beafec1d2bd11d56ac5233ddb77905431d180ee",
+      "copied_sha256": "f3ffba5a680c1429d89fc3f44beafec1d2bd11d56ac5233ddb77905431d180ee",
+      "sanitized": false
+    },
+    "evaluation/2026113204-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-candidate.log",
+      "original_sha256": "f3c03ccce649d4705c1a240d1737d35952620586bd272a864b0b7bd4f0932c4d",
+      "copied_sha256": "f3c03ccce649d4705c1a240d1737d35952620586bd272a864b0b7bd4f0932c4d",
+      "sanitized": false
+    },
+    "evaluation/2026113205-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-baseline.log",
+      "original_sha256": "38e4c26af402063080a8308c1896aa2690c8619828bb689454f5b903201cda0b",
+      "copied_sha256": "38e4c26af402063080a8308c1896aa2690c8619828bb689454f5b903201cda0b",
+      "sanitized": false
+    },
+    "evaluation/2026113205-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-candidate.log",
+      "original_sha256": "a693a01175b6606d4e32de888930fa6d4204befdd98c26d929d9ed692a52e26f",
+      "copied_sha256": "a693a01175b6606d4e32de888930fa6d4204befdd98c26d929d9ed692a52e26f",
+      "sanitized": false
+    },
+    "evaluation/2026113206-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-baseline.log",
+      "original_sha256": "1f5c8d3634b2f436677301a978346c59b19f32c3bcb01a1af19ded727bc99160",
+      "copied_sha256": "1f5c8d3634b2f436677301a978346c59b19f32c3bcb01a1af19ded727bc99160",
+      "sanitized": false
+    },
+    "evaluation/2026113206-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-candidate.log",
+      "original_sha256": "5310dae3c79b8cd11c2329587ffb3e061355f945f674ee532b7b4c2e7930a45b",
+      "copied_sha256": "5310dae3c79b8cd11c2329587ffb3e061355f945f674ee532b7b4c2e7930a45b",
+      "sanitized": false
+    },
+    "evaluation/2026113207-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-baseline.log",
+      "original_sha256": "d0ff953ce32876bedea4319f18f7ae62875a2abb84c2ac6bf5c63551325a3f14",
+      "copied_sha256": "d0ff953ce32876bedea4319f18f7ae62875a2abb84c2ac6bf5c63551325a3f14",
+      "sanitized": false
+    },
+    "evaluation/2026113207-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-candidate.log",
+      "original_sha256": "8445eefb853abeb46c4b7d386e4ba49993668a3ce5ee6ccc73cf3534d1939773",
+      "copied_sha256": "8445eefb853abeb46c4b7d386e4ba49993668a3ce5ee6ccc73cf3534d1939773",
+      "sanitized": false
+    },
+    "evaluation/2026113208-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-baseline.log",
+      "original_sha256": "250fff287f4e37d4ef3abf1e5e76823ec20e293786e3b1ed8d43678fb20f674c",
+      "copied_sha256": "250fff287f4e37d4ef3abf1e5e76823ec20e293786e3b1ed8d43678fb20f674c",
+      "sanitized": false
+    },
+    "evaluation/2026113208-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-candidate.log",
+      "original_sha256": "4f5e3873122b3ddbffb145348290a76128ebdbca3f27ce6569e54e8b70ac3c38",
+      "copied_sha256": "4f5e3873122b3ddbffb145348290a76128ebdbca3f27ce6569e54e8b70ac3c38",
+      "sanitized": false
+    },
+    "evaluation/2026113209-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-baseline.log",
+      "original_sha256": "35eebd0e7a8a6376b527b432cdce1f0954de59c834555315c28aa5725446c20f",
+      "copied_sha256": "35eebd0e7a8a6376b527b432cdce1f0954de59c834555315c28aa5725446c20f",
+      "sanitized": false
+    },
+    "evaluation/2026113209-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-candidate.log",
+      "original_sha256": "39566afe5828aa7e63672090c73a0384c10cab5b3c383fe78a15e108ec924b3c",
+      "copied_sha256": "39566afe5828aa7e63672090c73a0384c10cab5b3c383fe78a15e108ec924b3c",
+      "sanitized": false
+    },
+    "evaluation/2026113210-baseline.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-baseline.log",
+      "original_sha256": "db9ef249e61972527c00bc29481d70d6b4c93c9a5f063b171e21378ef067bf5b",
+      "copied_sha256": "db9ef249e61972527c00bc29481d70d6b4c93c9a5f063b171e21378ef067bf5b",
+      "sanitized": false
+    },
+    "evaluation/2026113210-candidate.log": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-candidate.log",
+      "original_sha256": "1f48694037d360c5a995f596ea8d355d4a92e9687d63c3172e4e91d64ca14f39",
+      "copied_sha256": "1f48694037d360c5a995f596ea8d355d4a92e9687d63c3172e4e91d64ca14f39",
+      "sanitized": false
+    },
+    "evaluation/gate.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/gate.json",
+      "original_sha256": "68c76e3686fb2f705f586d67db1c2b29d2d0c8f115bac15e4bf0cc87bb04b31c",
+      "copied_sha256": "68c76e3686fb2f705f586d67db1c2b29d2d0c8f115bac15e4bf0cc87bb04b31c",
+      "sanitized": false
+    },
+    "development/2026113101-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-baseline/initial.npz",
+      "original_sha256": "bb404a96fd1bde19a6827b72d3df72b0e44b0f2e9c336bef8b880044cfb63984",
+      "copied_sha256": "bb404a96fd1bde19a6827b72d3df72b0e44b0f2e9c336bef8b880044cfb63984",
+      "sanitized": false
+    },
+    "development/2026113101-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-baseline/report.json",
+      "original_sha256": "d6580e32b319e083fab0b9b456d3640883498e4e22f3f96e7ad9b9ac05221fd6",
+      "copied_sha256": "d6580e32b319e083fab0b9b456d3640883498e4e22f3f96e7ad9b9ac05221fd6",
+      "sanitized": false
+    },
+    "development/2026113101-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-baseline/scene.xml",
+      "original_sha256": "ad854c523884e93e7390fcdc366e9acf5d2f511bb449203e0553d2b689f66c3d",
+      "copied_sha256": "ad854c523884e93e7390fcdc366e9acf5d2f511bb449203e0553d2b689f66c3d",
+      "sanitized": false
+    },
+    "development/2026113101-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-baseline/states.npz",
+      "original_sha256": "49895b1bdde180ab9c25ee416c57a0aa9db3c5724799a6795657de8317a891ac",
+      "copied_sha256": "49895b1bdde180ab9c25ee416c57a0aa9db3c5724799a6795657de8317a891ac",
+      "sanitized": false
+    },
+    "development/2026113101-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-candidate/bottle-runtime.json",
+      "original_sha256": "75aef95af66d7372cc113028d8e21dd894d21d4f241452c879171196b42c6d33",
+      "copied_sha256": "75aef95af66d7372cc113028d8e21dd894d21d4f241452c879171196b42c6d33",
+      "sanitized": false
+    },
+    "development/2026113101-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-candidate/initial.npz",
+      "original_sha256": "bb404a96fd1bde19a6827b72d3df72b0e44b0f2e9c336bef8b880044cfb63984",
+      "copied_sha256": "bb404a96fd1bde19a6827b72d3df72b0e44b0f2e9c336bef8b880044cfb63984",
+      "sanitized": false
+    },
+    "development/2026113101-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-candidate/report.json",
+      "original_sha256": "c1bcbb473488b0b467099d0c9e9ee3ed7e289d3e79a371a9ca0c4ecff1262732",
+      "copied_sha256": "c1bcbb473488b0b467099d0c9e9ee3ed7e289d3e79a371a9ca0c4ecff1262732",
+      "sanitized": false
+    },
+    "development/2026113101-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-candidate/scene.xml",
+      "original_sha256": "ad854c523884e93e7390fcdc366e9acf5d2f511bb449203e0553d2b689f66c3d",
+      "copied_sha256": "ad854c523884e93e7390fcdc366e9acf5d2f511bb449203e0553d2b689f66c3d",
+      "sanitized": false
+    },
+    "development/2026113101-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113101-candidate/states.npz",
+      "original_sha256": "40f9262d91938c2b6d8bb409eeee9af90d8edd975715ab79e7bf34e1efb4e64c",
+      "copied_sha256": "40f9262d91938c2b6d8bb409eeee9af90d8edd975715ab79e7bf34e1efb4e64c",
+      "sanitized": false
+    },
+    "development/2026113102-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-baseline/initial.npz",
+      "original_sha256": "3600bcc9d1003ab4ee94b21b7b463b15b2f660b77386db7f4ef70c317c33de67",
+      "copied_sha256": "3600bcc9d1003ab4ee94b21b7b463b15b2f660b77386db7f4ef70c317c33de67",
+      "sanitized": false
+    },
+    "development/2026113102-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-baseline/report.json",
+      "original_sha256": "36ff6814fa56fda9693fed786b81179c618b06ddc95c9ab374e84644b4073832",
+      "copied_sha256": "36ff6814fa56fda9693fed786b81179c618b06ddc95c9ab374e84644b4073832",
+      "sanitized": false
+    },
+    "development/2026113102-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-baseline/scene.xml",
+      "original_sha256": "e8432ff05b19ec5ee0f7333976680ddf32b6639b9c71cbc4b77b9413068f2a55",
+      "copied_sha256": "e8432ff05b19ec5ee0f7333976680ddf32b6639b9c71cbc4b77b9413068f2a55",
+      "sanitized": false
+    },
+    "development/2026113102-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-baseline/states.npz",
+      "original_sha256": "251bc7e0c5a74181e4f6ea97ab8df564d5a318acec6623802dc426994748e8cd",
+      "copied_sha256": "251bc7e0c5a74181e4f6ea97ab8df564d5a318acec6623802dc426994748e8cd",
+      "sanitized": false
+    },
+    "development/2026113102-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-candidate/bottle-runtime.json",
+      "original_sha256": "05e21be821721a48dea68a60fe9bd873890abdfbb1aa451d243a5f59b193aa12",
+      "copied_sha256": "05e21be821721a48dea68a60fe9bd873890abdfbb1aa451d243a5f59b193aa12",
+      "sanitized": false
+    },
+    "development/2026113102-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-candidate/initial.npz",
+      "original_sha256": "3600bcc9d1003ab4ee94b21b7b463b15b2f660b77386db7f4ef70c317c33de67",
+      "copied_sha256": "3600bcc9d1003ab4ee94b21b7b463b15b2f660b77386db7f4ef70c317c33de67",
+      "sanitized": false
+    },
+    "development/2026113102-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-candidate/report.json",
+      "original_sha256": "4b5e6533a1923daf960f2d1392c332b26831f93912d41205dfa7701663eb805e",
+      "copied_sha256": "4b5e6533a1923daf960f2d1392c332b26831f93912d41205dfa7701663eb805e",
+      "sanitized": false
+    },
+    "development/2026113102-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-candidate/scene.xml",
+      "original_sha256": "e8432ff05b19ec5ee0f7333976680ddf32b6639b9c71cbc4b77b9413068f2a55",
+      "copied_sha256": "e8432ff05b19ec5ee0f7333976680ddf32b6639b9c71cbc4b77b9413068f2a55",
+      "sanitized": false
+    },
+    "development/2026113102-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113102-candidate/states.npz",
+      "original_sha256": "41eba3c974656979e6bb55322aaf19414b5f032dd3cda268396d9b19e8339744",
+      "copied_sha256": "41eba3c974656979e6bb55322aaf19414b5f032dd3cda268396d9b19e8339744",
+      "sanitized": false
+    },
+    "development/2026113103-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-baseline/initial.npz",
+      "original_sha256": "82fc9d4df5bf007eb1b6fac52803aeb5f3958d657660bc370b99225943bd87c2",
+      "copied_sha256": "82fc9d4df5bf007eb1b6fac52803aeb5f3958d657660bc370b99225943bd87c2",
+      "sanitized": false
+    },
+    "development/2026113103-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-baseline/report.json",
+      "original_sha256": "966ee4e24f90d14bd332610316daec937444e8def5a7e89363f04541ac85bc0f",
+      "copied_sha256": "966ee4e24f90d14bd332610316daec937444e8def5a7e89363f04541ac85bc0f",
+      "sanitized": false
+    },
+    "development/2026113103-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-baseline/scene.xml",
+      "original_sha256": "98249476806232a5a930365459a64437d5c714deae23f46acf5641b2e007eb07",
+      "copied_sha256": "98249476806232a5a930365459a64437d5c714deae23f46acf5641b2e007eb07",
+      "sanitized": false
+    },
+    "development/2026113103-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-baseline/states.npz",
+      "original_sha256": "5135b6f22963b58e973f84a48d5aa8ff32a4eef6f1cfa811ca696dcf6df2f05c",
+      "copied_sha256": "5135b6f22963b58e973f84a48d5aa8ff32a4eef6f1cfa811ca696dcf6df2f05c",
+      "sanitized": false
+    },
+    "development/2026113103-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-candidate/bottle-runtime.json",
+      "original_sha256": "1ab9c950161dac6e73babe7feb4854451e4a7f6b90c6f8e2f09b6934f12898cd",
+      "copied_sha256": "1ab9c950161dac6e73babe7feb4854451e4a7f6b90c6f8e2f09b6934f12898cd",
+      "sanitized": false
+    },
+    "development/2026113103-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-candidate/initial.npz",
+      "original_sha256": "82fc9d4df5bf007eb1b6fac52803aeb5f3958d657660bc370b99225943bd87c2",
+      "copied_sha256": "82fc9d4df5bf007eb1b6fac52803aeb5f3958d657660bc370b99225943bd87c2",
+      "sanitized": false
+    },
+    "development/2026113103-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-candidate/report.json",
+      "original_sha256": "fbac1f4be02c0e1797277fffb9e00fceb348a5eb9bdd25804ed85a9455513220",
+      "copied_sha256": "fbac1f4be02c0e1797277fffb9e00fceb348a5eb9bdd25804ed85a9455513220",
+      "sanitized": false
+    },
+    "development/2026113103-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-candidate/scene.xml",
+      "original_sha256": "98249476806232a5a930365459a64437d5c714deae23f46acf5641b2e007eb07",
+      "copied_sha256": "98249476806232a5a930365459a64437d5c714deae23f46acf5641b2e007eb07",
+      "sanitized": false
+    },
+    "development/2026113103-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113103-candidate/states.npz",
+      "original_sha256": "e322f51fd11403815f24158317c8a5ddbee95cfaac0617fe1be177ef24c18148",
+      "copied_sha256": "e322f51fd11403815f24158317c8a5ddbee95cfaac0617fe1be177ef24c18148",
+      "sanitized": false
+    },
+    "development/2026113104-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-baseline/initial.npz",
+      "original_sha256": "59c5bdd8dcfaed0652af6dc129a4f07ee0b0b6f3bae489ada81158a71ed0779f",
+      "copied_sha256": "59c5bdd8dcfaed0652af6dc129a4f07ee0b0b6f3bae489ada81158a71ed0779f",
+      "sanitized": false
+    },
+    "development/2026113104-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-baseline/report.json",
+      "original_sha256": "f1f6f77fddbf88157997930003552c7490d5315b3f7ff479a558d80e5d4d94ca",
+      "copied_sha256": "f1f6f77fddbf88157997930003552c7490d5315b3f7ff479a558d80e5d4d94ca",
+      "sanitized": false
+    },
+    "development/2026113104-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-baseline/scene.xml",
+      "original_sha256": "7ed16c30f0a1bc0e627f35430e75652d6f76abab215cd97844f925e0e564e26d",
+      "copied_sha256": "7ed16c30f0a1bc0e627f35430e75652d6f76abab215cd97844f925e0e564e26d",
+      "sanitized": false
+    },
+    "development/2026113104-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-baseline/states.npz",
+      "original_sha256": "f353d7e9e067902d29f595efd4e714c3216acd6e46b7346ca0d1d8d547fabf3c",
+      "copied_sha256": "f353d7e9e067902d29f595efd4e714c3216acd6e46b7346ca0d1d8d547fabf3c",
+      "sanitized": false
+    },
+    "development/2026113104-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-candidate/bottle-runtime.json",
+      "original_sha256": "64c1d0148537877bbc7986d44ee04a85a02d3b3deb8d444767db875a68784474",
+      "copied_sha256": "64c1d0148537877bbc7986d44ee04a85a02d3b3deb8d444767db875a68784474",
+      "sanitized": false
+    },
+    "development/2026113104-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-candidate/initial.npz",
+      "original_sha256": "59c5bdd8dcfaed0652af6dc129a4f07ee0b0b6f3bae489ada81158a71ed0779f",
+      "copied_sha256": "59c5bdd8dcfaed0652af6dc129a4f07ee0b0b6f3bae489ada81158a71ed0779f",
+      "sanitized": false
+    },
+    "development/2026113104-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-candidate/report.json",
+      "original_sha256": "ebb9aa49e645ea053793ceb9273c9c1eb3c42f1aad120be8074b9fdcdefa2817",
+      "copied_sha256": "ebb9aa49e645ea053793ceb9273c9c1eb3c42f1aad120be8074b9fdcdefa2817",
+      "sanitized": false
+    },
+    "development/2026113104-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-candidate/scene.xml",
+      "original_sha256": "7ed16c30f0a1bc0e627f35430e75652d6f76abab215cd97844f925e0e564e26d",
+      "copied_sha256": "7ed16c30f0a1bc0e627f35430e75652d6f76abab215cd97844f925e0e564e26d",
+      "sanitized": false
+    },
+    "development/2026113104-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/development/2026113104-candidate/states.npz",
+      "original_sha256": "46608bf3ace20fb7561a714f798af3d6545618187fb7d38e8ca7dc33ff74bf86",
+      "copied_sha256": "46608bf3ace20fb7561a714f798af3d6545618187fb7d38e8ca7dc33ff74bf86",
+      "sanitized": false
+    },
+    "entry/engine-bottle-default/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-default/bottle-runtime.json",
+      "original_sha256": "6ea2df37299d73a2a7d6986d1cfeac4c0fbb3b624ccee0b8b9037ea7159a13d0",
+      "copied_sha256": "6ea2df37299d73a2a7d6986d1cfeac4c0fbb3b624ccee0b8b9037ea7159a13d0",
+      "sanitized": false
+    },
+    "entry/engine-bottle-default/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-default/initial.npz",
+      "original_sha256": "458b4603efa84a7337248d8b0d8c7b0718f692dfd89b4df9d633247eca63292a",
+      "copied_sha256": "458b4603efa84a7337248d8b0d8c7b0718f692dfd89b4df9d633247eca63292a",
+      "sanitized": false
+    },
+    "entry/engine-bottle-default/observations.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-default/observations.json",
+      "original_sha256": "a5a00974f53fef36a1d39760cf508cd170f3f7c944f11fdc455acf2d5e43622c",
+      "copied_sha256": "a5a00974f53fef36a1d39760cf508cd170f3f7c944f11fdc455acf2d5e43622c",
+      "sanitized": false
+    },
+    "entry/engine-bottle-default/report.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-default/report.json",
+      "original_sha256": "12fca018dc5eab48583e4ca7397767a0d0f3e40b5f6e14f125314c174ac718c0",
+      "copied_sha256": "12fca018dc5eab48583e4ca7397767a0d0f3e40b5f6e14f125314c174ac718c0",
+      "sanitized": false
+    },
+    "entry/engine-bottle-default/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-default/scene.xml",
+      "original_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "copied_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "sanitized": false
+    },
+    "entry/engine-bottle-default/states.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-default/states.npz",
+      "original_sha256": "84a1b97438f06128826049fc84cea107605660b7c5c0a038a59a48b46baa4e4e",
+      "copied_sha256": "84a1b97438f06128826049fc84cea107605660b7c5c0a038a59a48b46baa4e4e",
+      "sanitized": false
+    },
+    "entry/engine-bottle-right/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-right/bottle-runtime.json",
+      "original_sha256": "778d123d9f5f613722baf9a993e5a1cebb0e0039facfba08d0ab5aa1f466fab8",
+      "copied_sha256": "778d123d9f5f613722baf9a993e5a1cebb0e0039facfba08d0ab5aa1f466fab8",
+      "sanitized": false
+    },
+    "entry/engine-bottle-right/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-right/initial.npz",
+      "original_sha256": "aaa76966bddc8c7eaf8b412acb448a661f78e62896c33cf4167079735291430e",
+      "copied_sha256": "aaa76966bddc8c7eaf8b412acb448a661f78e62896c33cf4167079735291430e",
+      "sanitized": false
+    },
+    "entry/engine-bottle-right/observations.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-right/observations.json",
+      "original_sha256": "63351c093741e425df1040a5ce117a529b83a2fedf115dca1681ec094c989cce",
+      "copied_sha256": "63351c093741e425df1040a5ce117a529b83a2fedf115dca1681ec094c989cce",
+      "sanitized": false
+    },
+    "entry/engine-bottle-right/report.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-right/report.json",
+      "original_sha256": "e5ccd54f9028e3f0b16e01504c8246f1838836043b17d6b966016c89014bbd21",
+      "copied_sha256": "e5ccd54f9028e3f0b16e01504c8246f1838836043b17d6b966016c89014bbd21",
+      "sanitized": false
+    },
+    "entry/engine-bottle-right/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-right/scene.xml",
+      "original_sha256": "0428fe13f7f7f5b4e1ce66c7a76917832ad4e2dce399b8f851eb6579144790d7",
+      "copied_sha256": "0428fe13f7f7f5b4e1ce66c7a76917832ad4e2dce399b8f851eb6579144790d7",
+      "sanitized": false
+    },
+    "entry/engine-bottle-right/states.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-bottle-right/states.npz",
+      "original_sha256": "6d66c9680785a42a3ccae6de98cd4937d4af5e82503c0490d659ad6333c44a5d",
+      "copied_sha256": "6d66c9680785a42a3ccae6de98cd4937d4af5e82503c0490d659ad6333c44a5d",
+      "sanitized": false
+    },
+    "entry/engine-table-upright/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-upright/bottle-runtime.json",
+      "original_sha256": "09784b30ec1495a85b26c521545d09ce377243c8ef9cd1b1afe0ede2e2694a8e",
+      "copied_sha256": "09784b30ec1495a85b26c521545d09ce377243c8ef9cd1b1afe0ede2e2694a8e",
+      "sanitized": false
+    },
+    "entry/engine-table-upright/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-upright/initial.npz",
+      "original_sha256": "0b71f1ec0f493846b799541f2bb6c68d54288058aac78eac50b21e9142ef0c7e",
+      "copied_sha256": "0b71f1ec0f493846b799541f2bb6c68d54288058aac78eac50b21e9142ef0c7e",
+      "sanitized": false
+    },
+    "entry/engine-table-upright/report.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-upright/report.json",
+      "original_sha256": "33d0a660b8c4986db66e2d6f6c80c4b22a9849dc2de38b0c4903b475d400aa3c",
+      "copied_sha256": "33d0a660b8c4986db66e2d6f6c80c4b22a9849dc2de38b0c4903b475d400aa3c",
+      "sanitized": false
+    },
+    "entry/engine-table-upright/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-upright/scene.xml",
+      "original_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "copied_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "sanitized": false
+    },
+    "entry/engine-table-upright/states.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-upright/states.npz",
+      "original_sha256": "4421e0e0f510de955660ac74065470179d9422ea5e6d6912b488edf33e83f6ba",
+      "copied_sha256": "4421e0e0f510de955660ac74065470179d9422ea5e6d6912b488edf33e83f6ba",
+      "sanitized": false
+    },
+    "entry/engine-table-wide/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-wide/bottle-runtime.json",
+      "original_sha256": "02c14e80bd7ce1ffeb883330cd1ed1b4070c517e45d14935d410a72f72d0b5a4",
+      "copied_sha256": "02c14e80bd7ce1ffeb883330cd1ed1b4070c517e45d14935d410a72f72d0b5a4",
+      "sanitized": false
+    },
+    "entry/engine-table-wide/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-wide/initial.npz",
+      "original_sha256": "458b4603efa84a7337248d8b0d8c7b0718f692dfd89b4df9d633247eca63292a",
+      "copied_sha256": "458b4603efa84a7337248d8b0d8c7b0718f692dfd89b4df9d633247eca63292a",
+      "sanitized": false
+    },
+    "entry/engine-table-wide/report.json": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-wide/report.json",
+      "original_sha256": "4e2eceeacad907a030fa1a9f6c37702d17d71ead2957295971d0c44bf15ac28e",
+      "copied_sha256": "4e2eceeacad907a030fa1a9f6c37702d17d71ead2957295971d0c44bf15ac28e",
+      "sanitized": false
+    },
+    "entry/engine-table-wide/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-wide/scene.xml",
+      "original_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "copied_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "sanitized": false
+    },
+    "entry/engine-table-wide/states.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/engine-table-wide/states.npz",
+      "original_sha256": "321381829a4c326a5ac4d41c2b4e8051190511953b181e63c03a7fd9b364f3aa",
+      "copied_sha256": "321381829a4c326a5ac4d41c2b4e8051190511953b181e63c03a7fd9b364f3aa",
+      "sanitized": false
+    },
+    "entry/public-bottle-default/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default/bottle-runtime.json",
+      "original_sha256": "a2d83292bebdc3a100472971405ad4c1097cdb11712309f8d8d99b0a7acba875",
+      "copied_sha256": "a2d83292bebdc3a100472971405ad4c1097cdb11712309f8d8d99b0a7acba875",
+      "sanitized": false
+    },
+    "entry/public-bottle-default/final.png": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default/final.png",
+      "original_sha256": "eeb3f8b128e039ee0fd3391372b94552ff18092f94bab52f8771ccddf118eb41",
+      "copied_sha256": "eeb3f8b128e039ee0fd3391372b94552ff18092f94bab52f8771ccddf118eb41",
+      "sanitized": false
+    },
+    "entry/public-bottle-default/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default/initial.npz",
+      "original_sha256": "458b4603efa84a7337248d8b0d8c7b0718f692dfd89b4df9d633247eca63292a",
+      "copied_sha256": "458b4603efa84a7337248d8b0d8c7b0718f692dfd89b4df9d633247eca63292a",
+      "sanitized": false
+    },
+    "entry/public-bottle-default/initial.png": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default/initial.png",
+      "original_sha256": "c371f5938d8fad4155e8c075f4c00d3e12811c6a9df0bfd719ae646344cf88f6",
+      "copied_sha256": "c371f5938d8fad4155e8c075f4c00d3e12811c6a9df0bfd719ae646344cf88f6",
+      "sanitized": false
+    },
+    "entry/public-bottle-default/observations.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default/observations.json",
+      "original_sha256": "8310771b086bccaad753b50a313a6fc39516625f0abff606309098d63c75ecb7",
+      "copied_sha256": "8310771b086bccaad753b50a313a6fc39516625f0abff606309098d63c75ecb7",
+      "sanitized": false
+    },
+    "entry/public-bottle-default/public-updates.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default/public-updates.json",
+      "original_sha256": "a4340670eea0265b984c5e3e02137020e8aa9bfa5dd3e6d4ced1320cd59a1a77",
+      "copied_sha256": "a4340670eea0265b984c5e3e02137020e8aa9bfa5dd3e6d4ced1320cd59a1a77",
+      "sanitized": false
+    },
+    "entry/public-bottle-default/report.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default/report.json",
+      "original_sha256": "058e04cdd482d9afe631286258cdc5b6679b72448188cf4757b6fae7f9134e54",
+      "copied_sha256": "058e04cdd482d9afe631286258cdc5b6679b72448188cf4757b6fae7f9134e54",
+      "sanitized": false
+    },
+    "entry/public-bottle-default/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default/scene.xml",
+      "original_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "copied_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "sanitized": false
+    },
+    "entry/public-bottle-default/states.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-default/states.npz",
+      "original_sha256": "ae5e86c02763b5afd5dee08c7e022449fd2ad2329b1fdab55919d154c271b72c",
+      "copied_sha256": "ae5e86c02763b5afd5dee08c7e022449fd2ad2329b1fdab55919d154c271b72c",
+      "sanitized": false
+    },
+    "entry/public-bottle-right/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right/bottle-runtime.json",
+      "original_sha256": "267542b0ae981f68306b9ca9964c1216eab052bf9a2df70c4d51447e967073ab",
+      "copied_sha256": "267542b0ae981f68306b9ca9964c1216eab052bf9a2df70c4d51447e967073ab",
+      "sanitized": false
+    },
+    "entry/public-bottle-right/final.png": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right/final.png",
+      "original_sha256": "0b7e18a37bee84c21d2f0af9a9327720a350c7b1fa4bbc04f5a8d8ed66541191",
+      "copied_sha256": "0b7e18a37bee84c21d2f0af9a9327720a350c7b1fa4bbc04f5a8d8ed66541191",
+      "sanitized": false
+    },
+    "entry/public-bottle-right/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right/initial.npz",
+      "original_sha256": "aaa76966bddc8c7eaf8b412acb448a661f78e62896c33cf4167079735291430e",
+      "copied_sha256": "aaa76966bddc8c7eaf8b412acb448a661f78e62896c33cf4167079735291430e",
+      "sanitized": false
+    },
+    "entry/public-bottle-right/initial.png": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right/initial.png",
+      "original_sha256": "d8b8245455413a1920432b78e9dc14ccaa28f85dfcc1cd89c1bda93e8d7d5ba8",
+      "copied_sha256": "d8b8245455413a1920432b78e9dc14ccaa28f85dfcc1cd89c1bda93e8d7d5ba8",
+      "sanitized": false
+    },
+    "entry/public-bottle-right/observations.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right/observations.json",
+      "original_sha256": "aae175795eb3ff1d579956d617bf73eb03bda65dcbdf8c3285170bd777b76f1e",
+      "copied_sha256": "aae175795eb3ff1d579956d617bf73eb03bda65dcbdf8c3285170bd777b76f1e",
+      "sanitized": false
+    },
+    "entry/public-bottle-right/public-updates.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right/public-updates.json",
+      "original_sha256": "a68d57777b093d8ac24c2c40acdfa33e27b466cc2178243bac07b1a945daef8b",
+      "copied_sha256": "a68d57777b093d8ac24c2c40acdfa33e27b466cc2178243bac07b1a945daef8b",
+      "sanitized": false
+    },
+    "entry/public-bottle-right/report.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right/report.json",
+      "original_sha256": "586355763908d168e331e2165cea4c5b3f9eb3509dafa3e5f7b70598055dd3e4",
+      "copied_sha256": "586355763908d168e331e2165cea4c5b3f9eb3509dafa3e5f7b70598055dd3e4",
+      "sanitized": false
+    },
+    "entry/public-bottle-right/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right/scene.xml",
+      "original_sha256": "0428fe13f7f7f5b4e1ce66c7a76917832ad4e2dce399b8f851eb6579144790d7",
+      "copied_sha256": "0428fe13f7f7f5b4e1ce66c7a76917832ad4e2dce399b8f851eb6579144790d7",
+      "sanitized": false
+    },
+    "entry/public-bottle-right/states.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/public-bottle-right/states.npz",
+      "original_sha256": "41e7600ff93471467741ffeeea8da209717500dafa8fa93de0e0abb242a701e4",
+      "copied_sha256": "41e7600ff93471467741ffeeea8da209717500dafa8fa93de0e0abb242a701e4",
+      "sanitized": false
+    },
+    "entry/public-table-upright/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-upright/bottle-runtime.json",
+      "original_sha256": "7985454f29e9442e10a6a45e29395d621e67d9a8a759b8d3f9f2a763fa251504",
+      "copied_sha256": "7985454f29e9442e10a6a45e29395d621e67d9a8a759b8d3f9f2a763fa251504",
+      "sanitized": false
+    },
+    "entry/public-table-upright/final.png": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-upright/final.png",
+      "original_sha256": "f5abacece71ed268e369ce504f674a88a2e757ae4657a9bac5e07e7f90109505",
+      "copied_sha256": "f5abacece71ed268e369ce504f674a88a2e757ae4657a9bac5e07e7f90109505",
+      "sanitized": false
+    },
+    "entry/public-table-upright/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-upright/initial.npz",
+      "original_sha256": "0b71f1ec0f493846b799541f2bb6c68d54288058aac78eac50b21e9142ef0c7e",
+      "copied_sha256": "0b71f1ec0f493846b799541f2bb6c68d54288058aac78eac50b21e9142ef0c7e",
+      "sanitized": false
+    },
+    "entry/public-table-upright/initial.png": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-upright/initial.png",
+      "original_sha256": "fc33c1b45242249be55e099091c24804c87e562007acddce0c2713474fa1a0f7",
+      "copied_sha256": "fc33c1b45242249be55e099091c24804c87e562007acddce0c2713474fa1a0f7",
+      "sanitized": false
+    },
+    "entry/public-table-upright/public-updates.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-upright/public-updates.json",
+      "original_sha256": "8d44cb2da7540fc4aee6f0fc84d0a2ccc62d01d02b4f9a07c975d46932214972",
+      "copied_sha256": "8d44cb2da7540fc4aee6f0fc84d0a2ccc62d01d02b4f9a07c975d46932214972",
+      "sanitized": false
+    },
+    "entry/public-table-upright/report.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-upright/report.json",
+      "original_sha256": "c31fe9bcb82b474037bd22913d03fce2fe2c0be7ec19664e12262080475fcf43",
+      "copied_sha256": "c31fe9bcb82b474037bd22913d03fce2fe2c0be7ec19664e12262080475fcf43",
+      "sanitized": false
+    },
+    "entry/public-table-upright/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-upright/scene.xml",
+      "original_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "copied_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "sanitized": false
+    },
+    "entry/public-table-upright/states.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-upright/states.npz",
+      "original_sha256": "970b77c0fc91ee91061852f926048bdf2a6e22567d1df6b1bc2a1eaa68a5424f",
+      "copied_sha256": "970b77c0fc91ee91061852f926048bdf2a6e22567d1df6b1bc2a1eaa68a5424f",
+      "sanitized": false
+    },
+    "entry/public-table-wide/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-wide/bottle-runtime.json",
+      "original_sha256": "55b884bd6516384c03057a29264add86ffaeb4ab73ee268ff6a317fd0f1b7abd",
+      "copied_sha256": "55b884bd6516384c03057a29264add86ffaeb4ab73ee268ff6a317fd0f1b7abd",
+      "sanitized": false
+    },
+    "entry/public-table-wide/final.png": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-wide/final.png",
+      "original_sha256": "b90bb898c8f04b9c2bfa49a9696e674a3271847915c99fb9aeb24108182640e5",
+      "copied_sha256": "b90bb898c8f04b9c2bfa49a9696e674a3271847915c99fb9aeb24108182640e5",
+      "sanitized": false
+    },
+    "entry/public-table-wide/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-wide/initial.npz",
+      "original_sha256": "458b4603efa84a7337248d8b0d8c7b0718f692dfd89b4df9d633247eca63292a",
+      "copied_sha256": "458b4603efa84a7337248d8b0d8c7b0718f692dfd89b4df9d633247eca63292a",
+      "sanitized": false
+    },
+    "entry/public-table-wide/initial.png": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-wide/initial.png",
+      "original_sha256": "c371f5938d8fad4155e8c075f4c00d3e12811c6a9df0bfd719ae646344cf88f6",
+      "copied_sha256": "c371f5938d8fad4155e8c075f4c00d3e12811c6a9df0bfd719ae646344cf88f6",
+      "sanitized": false
+    },
+    "entry/public-table-wide/public-updates.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-wide/public-updates.json",
+      "original_sha256": "9f88ebbeebbd473d7b87cb6a5dedef06029d857a25684a8331080772e045b500",
+      "copied_sha256": "9f88ebbeebbd473d7b87cb6a5dedef06029d857a25684a8331080772e045b500",
+      "sanitized": false
+    },
+    "entry/public-table-wide/report.json": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-wide/report.json",
+      "original_sha256": "0db8d707f950568793b5c21bb8a35c992a7d5e0a773ccf95c450c59d0a017358",
+      "copied_sha256": "0db8d707f950568793b5c21bb8a35c992a7d5e0a773ccf95c450c59d0a017358",
+      "sanitized": false
+    },
+    "entry/public-table-wide/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-wide/scene.xml",
+      "original_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "copied_sha256": "cc082e56a51fe9e61fef76c302b070581dbb00cbc5c48f086891ca58e94b3670",
+      "sanitized": false
+    },
+    "entry/public-table-wide/states.npz": {
+      "source": ".run/bottle-wide-application-v1/entry/public-table-wide/states.npz",
+      "original_sha256": "d13cf8bda367753100f87febec06ea76e061f931d3bd7e5e8b0b2f4aa6996c0d",
+      "copied_sha256": "d13cf8bda367753100f87febec06ea76e061f931d3bd7e5e8b0b2f4aa6996c0d",
+      "sanitized": false
+    },
+    "evaluation/2026113201-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-baseline/initial.npz",
+      "original_sha256": "464fd138470cc200c91d386e061745d62decee71c02ddcd02bea3e71902ed7ce",
+      "copied_sha256": "464fd138470cc200c91d386e061745d62decee71c02ddcd02bea3e71902ed7ce",
+      "sanitized": false
+    },
+    "evaluation/2026113201-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-baseline/report.json",
+      "original_sha256": "6674bf62d6d3545fc99ded3b2b4c3804e3aa650184dd4f357697eee07b8c1919",
+      "copied_sha256": "6674bf62d6d3545fc99ded3b2b4c3804e3aa650184dd4f357697eee07b8c1919",
+      "sanitized": false
+    },
+    "evaluation/2026113201-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-baseline/scene.xml",
+      "original_sha256": "ccbed6017a2a264c185ada79b52e7b7d6f8cc62f47d517a154c75fd7efeff9e3",
+      "copied_sha256": "ccbed6017a2a264c185ada79b52e7b7d6f8cc62f47d517a154c75fd7efeff9e3",
+      "sanitized": false
+    },
+    "evaluation/2026113201-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-baseline/states.npz",
+      "original_sha256": "8346b558081cd13036d35f7bf2148e473b3df0284c5f4495ad391b38f2a91c3a",
+      "copied_sha256": "8346b558081cd13036d35f7bf2148e473b3df0284c5f4495ad391b38f2a91c3a",
+      "sanitized": false
+    },
+    "evaluation/2026113201-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-candidate/bottle-runtime.json",
+      "original_sha256": "478091364453c60ae9706771b1d2192336345744309d8aeb2b15008123add116",
+      "copied_sha256": "478091364453c60ae9706771b1d2192336345744309d8aeb2b15008123add116",
+      "sanitized": false
+    },
+    "evaluation/2026113201-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-candidate/initial.npz",
+      "original_sha256": "464fd138470cc200c91d386e061745d62decee71c02ddcd02bea3e71902ed7ce",
+      "copied_sha256": "464fd138470cc200c91d386e061745d62decee71c02ddcd02bea3e71902ed7ce",
+      "sanitized": false
+    },
+    "evaluation/2026113201-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-candidate/report.json",
+      "original_sha256": "49207905c74e0198ca82375930e0e94198a283dc57efd1245e38714a53c45a6a",
+      "copied_sha256": "49207905c74e0198ca82375930e0e94198a283dc57efd1245e38714a53c45a6a",
+      "sanitized": false
+    },
+    "evaluation/2026113201-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-candidate/scene.xml",
+      "original_sha256": "ccbed6017a2a264c185ada79b52e7b7d6f8cc62f47d517a154c75fd7efeff9e3",
+      "copied_sha256": "ccbed6017a2a264c185ada79b52e7b7d6f8cc62f47d517a154c75fd7efeff9e3",
+      "sanitized": false
+    },
+    "evaluation/2026113201-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113201-candidate/states.npz",
+      "original_sha256": "ed1d38e568e14c3bb4b1e288fe77b0e6c65aee59a0784e3bc3ec701db64f09f6",
+      "copied_sha256": "ed1d38e568e14c3bb4b1e288fe77b0e6c65aee59a0784e3bc3ec701db64f09f6",
+      "sanitized": false
+    },
+    "evaluation/2026113202-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-baseline/initial.npz",
+      "original_sha256": "a38514dced452eede442ff8bae1876e545e543276d5396919f9f4b27af975c5a",
+      "copied_sha256": "a38514dced452eede442ff8bae1876e545e543276d5396919f9f4b27af975c5a",
+      "sanitized": false
+    },
+    "evaluation/2026113202-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-baseline/report.json",
+      "original_sha256": "939c35240d3dc6158951b126b456877e2b39a43e8ca24cd93bfabbb4b2aa88fe",
+      "copied_sha256": "939c35240d3dc6158951b126b456877e2b39a43e8ca24cd93bfabbb4b2aa88fe",
+      "sanitized": false
+    },
+    "evaluation/2026113202-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-baseline/scene.xml",
+      "original_sha256": "4195b95b409d39adc1ce4ba3bea1cba9b6d0bfaa607523bdc7cdae6d5e0b5ab1",
+      "copied_sha256": "4195b95b409d39adc1ce4ba3bea1cba9b6d0bfaa607523bdc7cdae6d5e0b5ab1",
+      "sanitized": false
+    },
+    "evaluation/2026113202-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-baseline/states.npz",
+      "original_sha256": "9ecc5e2adfb733ed14258fabe3fc3941b6007b04b49a1a56ad4d1882edb9f5c5",
+      "copied_sha256": "9ecc5e2adfb733ed14258fabe3fc3941b6007b04b49a1a56ad4d1882edb9f5c5",
+      "sanitized": false
+    },
+    "evaluation/2026113202-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-candidate/bottle-runtime.json",
+      "original_sha256": "9aacec9f985792efaf8518316b8474148a916167a51c97246b2e111d10f7b084",
+      "copied_sha256": "9aacec9f985792efaf8518316b8474148a916167a51c97246b2e111d10f7b084",
+      "sanitized": false
+    },
+    "evaluation/2026113202-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-candidate/initial.npz",
+      "original_sha256": "a38514dced452eede442ff8bae1876e545e543276d5396919f9f4b27af975c5a",
+      "copied_sha256": "a38514dced452eede442ff8bae1876e545e543276d5396919f9f4b27af975c5a",
+      "sanitized": false
+    },
+    "evaluation/2026113202-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-candidate/report.json",
+      "original_sha256": "918046ea61f386c08b8006a7a538c01cb8ef0c2ab78a8e8764cfb83dcf02b19f",
+      "copied_sha256": "918046ea61f386c08b8006a7a538c01cb8ef0c2ab78a8e8764cfb83dcf02b19f",
+      "sanitized": false
+    },
+    "evaluation/2026113202-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-candidate/scene.xml",
+      "original_sha256": "4195b95b409d39adc1ce4ba3bea1cba9b6d0bfaa607523bdc7cdae6d5e0b5ab1",
+      "copied_sha256": "4195b95b409d39adc1ce4ba3bea1cba9b6d0bfaa607523bdc7cdae6d5e0b5ab1",
+      "sanitized": false
+    },
+    "evaluation/2026113202-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113202-candidate/states.npz",
+      "original_sha256": "167d011a43d482eb1a20f55499ca4d899ed2d2a4627cbdb7b0947fcb6ddc826d",
+      "copied_sha256": "167d011a43d482eb1a20f55499ca4d899ed2d2a4627cbdb7b0947fcb6ddc826d",
+      "sanitized": false
+    },
+    "evaluation/2026113203-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-baseline/initial.npz",
+      "original_sha256": "c98fc11ae1ce216014d9d4748b0826c99b01b9a221a4a12477d64ebb196e8e64",
+      "copied_sha256": "c98fc11ae1ce216014d9d4748b0826c99b01b9a221a4a12477d64ebb196e8e64",
+      "sanitized": false
+    },
+    "evaluation/2026113203-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-baseline/report.json",
+      "original_sha256": "73dfa2448669a1c2418fd5707cfcbb9d39c294832367c2c050ef70438acb5be7",
+      "copied_sha256": "73dfa2448669a1c2418fd5707cfcbb9d39c294832367c2c050ef70438acb5be7",
+      "sanitized": false
+    },
+    "evaluation/2026113203-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-baseline/scene.xml",
+      "original_sha256": "d8be757c4667e6a63a9abdef067177620c0921f902f56f2ccbb3d594944dc775",
+      "copied_sha256": "d8be757c4667e6a63a9abdef067177620c0921f902f56f2ccbb3d594944dc775",
+      "sanitized": false
+    },
+    "evaluation/2026113203-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-baseline/states.npz",
+      "original_sha256": "e7a1518842ff39b0df23cd392dcdfa55aab659f5ae91e33e9a1c8a6f96bc241f",
+      "copied_sha256": "e7a1518842ff39b0df23cd392dcdfa55aab659f5ae91e33e9a1c8a6f96bc241f",
+      "sanitized": false
+    },
+    "evaluation/2026113203-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-candidate/bottle-runtime.json",
+      "original_sha256": "bf38bf4adcbfdda9996a0765bd44bef14401000d69d49f786c4d969d528906a8",
+      "copied_sha256": "bf38bf4adcbfdda9996a0765bd44bef14401000d69d49f786c4d969d528906a8",
+      "sanitized": false
+    },
+    "evaluation/2026113203-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-candidate/initial.npz",
+      "original_sha256": "c98fc11ae1ce216014d9d4748b0826c99b01b9a221a4a12477d64ebb196e8e64",
+      "copied_sha256": "c98fc11ae1ce216014d9d4748b0826c99b01b9a221a4a12477d64ebb196e8e64",
+      "sanitized": false
+    },
+    "evaluation/2026113203-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-candidate/report.json",
+      "original_sha256": "df973bb58c885c16c4e0be138cf0c6eeeaad07ed790618c7cf9c7475dfdd9bed",
+      "copied_sha256": "df973bb58c885c16c4e0be138cf0c6eeeaad07ed790618c7cf9c7475dfdd9bed",
+      "sanitized": false
+    },
+    "evaluation/2026113203-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-candidate/scene.xml",
+      "original_sha256": "d8be757c4667e6a63a9abdef067177620c0921f902f56f2ccbb3d594944dc775",
+      "copied_sha256": "d8be757c4667e6a63a9abdef067177620c0921f902f56f2ccbb3d594944dc775",
+      "sanitized": false
+    },
+    "evaluation/2026113203-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113203-candidate/states.npz",
+      "original_sha256": "62d1bfa9002b5443169b9e8b85bac4e06ad1aa079538ded302fd2f2c0b0139e0",
+      "copied_sha256": "62d1bfa9002b5443169b9e8b85bac4e06ad1aa079538ded302fd2f2c0b0139e0",
+      "sanitized": false
+    },
+    "evaluation/2026113204-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-baseline/initial.npz",
+      "original_sha256": "884bdd42ed584d3a9bcc1dce6aa8959b1e150fe2458088e65d64e57c68991e89",
+      "copied_sha256": "884bdd42ed584d3a9bcc1dce6aa8959b1e150fe2458088e65d64e57c68991e89",
+      "sanitized": false
+    },
+    "evaluation/2026113204-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-baseline/report.json",
+      "original_sha256": "4ab2a225d8433ee8a2c97fa277c59b8136921d289a88c02846fc6268b078bf4b",
+      "copied_sha256": "4ab2a225d8433ee8a2c97fa277c59b8136921d289a88c02846fc6268b078bf4b",
+      "sanitized": false
+    },
+    "evaluation/2026113204-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-baseline/scene.xml",
+      "original_sha256": "9b21e2067c2a163e90b7e7d3b146577674edddf657e2699811de243406b04d95",
+      "copied_sha256": "9b21e2067c2a163e90b7e7d3b146577674edddf657e2699811de243406b04d95",
+      "sanitized": false
+    },
+    "evaluation/2026113204-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-baseline/states.npz",
+      "original_sha256": "636421cfac3f52e2c7703dda8b0fbeea8ae1d5a9ac477c48edd0c7e31aec2cd9",
+      "copied_sha256": "636421cfac3f52e2c7703dda8b0fbeea8ae1d5a9ac477c48edd0c7e31aec2cd9",
+      "sanitized": false
+    },
+    "evaluation/2026113204-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-candidate/bottle-runtime.json",
+      "original_sha256": "8fa4d7f852e05861661c26aa4d7339feffaa0adace1604d8a52e7705ea60098d",
+      "copied_sha256": "8fa4d7f852e05861661c26aa4d7339feffaa0adace1604d8a52e7705ea60098d",
+      "sanitized": false
+    },
+    "evaluation/2026113204-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-candidate/initial.npz",
+      "original_sha256": "884bdd42ed584d3a9bcc1dce6aa8959b1e150fe2458088e65d64e57c68991e89",
+      "copied_sha256": "884bdd42ed584d3a9bcc1dce6aa8959b1e150fe2458088e65d64e57c68991e89",
+      "sanitized": false
+    },
+    "evaluation/2026113204-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-candidate/report.json",
+      "original_sha256": "3d1634ecfc7c1d393bf38f413b8c52ab792b506af63b2f21e53183bea7d8d468",
+      "copied_sha256": "3d1634ecfc7c1d393bf38f413b8c52ab792b506af63b2f21e53183bea7d8d468",
+      "sanitized": false
+    },
+    "evaluation/2026113204-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-candidate/scene.xml",
+      "original_sha256": "9b21e2067c2a163e90b7e7d3b146577674edddf657e2699811de243406b04d95",
+      "copied_sha256": "9b21e2067c2a163e90b7e7d3b146577674edddf657e2699811de243406b04d95",
+      "sanitized": false
+    },
+    "evaluation/2026113204-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113204-candidate/states.npz",
+      "original_sha256": "26da980df2fe44987dbc7bac993490f1244bc233e96cc735965a612d3a328428",
+      "copied_sha256": "26da980df2fe44987dbc7bac993490f1244bc233e96cc735965a612d3a328428",
+      "sanitized": false
+    },
+    "evaluation/2026113205-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-baseline/initial.npz",
+      "original_sha256": "78bdf6f1826fb87d5c63765f8459d71a9f6271ac716780e3f9cb52c3e170a848",
+      "copied_sha256": "78bdf6f1826fb87d5c63765f8459d71a9f6271ac716780e3f9cb52c3e170a848",
+      "sanitized": false
+    },
+    "evaluation/2026113205-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-baseline/report.json",
+      "original_sha256": "b204fd1b8d0e4b52285d604106766316ac9b59bb5ec508a64aae4a35982e5535",
+      "copied_sha256": "b204fd1b8d0e4b52285d604106766316ac9b59bb5ec508a64aae4a35982e5535",
+      "sanitized": false
+    },
+    "evaluation/2026113205-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-baseline/scene.xml",
+      "original_sha256": "8a997b922994e3d514bca7ec7f56d6b6e663877a3e73aeb10d09c02aa226479e",
+      "copied_sha256": "8a997b922994e3d514bca7ec7f56d6b6e663877a3e73aeb10d09c02aa226479e",
+      "sanitized": false
+    },
+    "evaluation/2026113205-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-baseline/states.npz",
+      "original_sha256": "c8b5ac8c304e28c0016feec0d7d46e0c7db3a64fa300c4eac6625376f1f3d30b",
+      "copied_sha256": "c8b5ac8c304e28c0016feec0d7d46e0c7db3a64fa300c4eac6625376f1f3d30b",
+      "sanitized": false
+    },
+    "evaluation/2026113205-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-candidate/bottle-runtime.json",
+      "original_sha256": "fe553e058bf1d6a46e536dcf39386dc82cfcf0ac4dd9e7a9204a73b998576e2f",
+      "copied_sha256": "fe553e058bf1d6a46e536dcf39386dc82cfcf0ac4dd9e7a9204a73b998576e2f",
+      "sanitized": false
+    },
+    "evaluation/2026113205-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-candidate/initial.npz",
+      "original_sha256": "78bdf6f1826fb87d5c63765f8459d71a9f6271ac716780e3f9cb52c3e170a848",
+      "copied_sha256": "78bdf6f1826fb87d5c63765f8459d71a9f6271ac716780e3f9cb52c3e170a848",
+      "sanitized": false
+    },
+    "evaluation/2026113205-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-candidate/report.json",
+      "original_sha256": "720f66ebab636958a1771742bbf10b4990ef9876d130989acf52e3111b359a13",
+      "copied_sha256": "720f66ebab636958a1771742bbf10b4990ef9876d130989acf52e3111b359a13",
+      "sanitized": false
+    },
+    "evaluation/2026113205-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-candidate/scene.xml",
+      "original_sha256": "8a997b922994e3d514bca7ec7f56d6b6e663877a3e73aeb10d09c02aa226479e",
+      "copied_sha256": "8a997b922994e3d514bca7ec7f56d6b6e663877a3e73aeb10d09c02aa226479e",
+      "sanitized": false
+    },
+    "evaluation/2026113205-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113205-candidate/states.npz",
+      "original_sha256": "b2b3cc98cb6de89f36984cbb2ac9d7c81d5f40e2c435065149aebf27d3ae366f",
+      "copied_sha256": "b2b3cc98cb6de89f36984cbb2ac9d7c81d5f40e2c435065149aebf27d3ae366f",
+      "sanitized": false
+    },
+    "evaluation/2026113206-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-baseline/initial.npz",
+      "original_sha256": "594739b52c9276a42084fb180f7bb300bc1a3187f63501519e899f9b4029bafc",
+      "copied_sha256": "594739b52c9276a42084fb180f7bb300bc1a3187f63501519e899f9b4029bafc",
+      "sanitized": false
+    },
+    "evaluation/2026113206-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-baseline/report.json",
+      "original_sha256": "6f3fda12ad16096740bd8c87ba872505bae02f54f8a5781e1a362abbbe188c7e",
+      "copied_sha256": "6f3fda12ad16096740bd8c87ba872505bae02f54f8a5781e1a362abbbe188c7e",
+      "sanitized": false
+    },
+    "evaluation/2026113206-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-baseline/scene.xml",
+      "original_sha256": "053595d58680f3104ebf262065c2484b98ca6bbafc1ff0a434dc0c010fb48f64",
+      "copied_sha256": "053595d58680f3104ebf262065c2484b98ca6bbafc1ff0a434dc0c010fb48f64",
+      "sanitized": false
+    },
+    "evaluation/2026113206-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-baseline/states.npz",
+      "original_sha256": "4818ebfa1c18f58ac3098172090950eb8659b28be3c7980dce1d2733116afa08",
+      "copied_sha256": "4818ebfa1c18f58ac3098172090950eb8659b28be3c7980dce1d2733116afa08",
+      "sanitized": false
+    },
+    "evaluation/2026113206-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-candidate/bottle-runtime.json",
+      "original_sha256": "9ab9909b9e7c8e9d72df5adb4fd011299a97733665e4ab600cdc5c3799a48dbc",
+      "copied_sha256": "9ab9909b9e7c8e9d72df5adb4fd011299a97733665e4ab600cdc5c3799a48dbc",
+      "sanitized": false
+    },
+    "evaluation/2026113206-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-candidate/initial.npz",
+      "original_sha256": "594739b52c9276a42084fb180f7bb300bc1a3187f63501519e899f9b4029bafc",
+      "copied_sha256": "594739b52c9276a42084fb180f7bb300bc1a3187f63501519e899f9b4029bafc",
+      "sanitized": false
+    },
+    "evaluation/2026113206-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-candidate/report.json",
+      "original_sha256": "7ccab39160bf4044e52dc1591db04da700ada81aba14c1075e4d16e724bae7cd",
+      "copied_sha256": "7ccab39160bf4044e52dc1591db04da700ada81aba14c1075e4d16e724bae7cd",
+      "sanitized": false
+    },
+    "evaluation/2026113206-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-candidate/scene.xml",
+      "original_sha256": "053595d58680f3104ebf262065c2484b98ca6bbafc1ff0a434dc0c010fb48f64",
+      "copied_sha256": "053595d58680f3104ebf262065c2484b98ca6bbafc1ff0a434dc0c010fb48f64",
+      "sanitized": false
+    },
+    "evaluation/2026113206-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113206-candidate/states.npz",
+      "original_sha256": "768293a19d606efdc6fefc19cf3f23a27a81c05ad1ab96c77c540bd6835e3d42",
+      "copied_sha256": "768293a19d606efdc6fefc19cf3f23a27a81c05ad1ab96c77c540bd6835e3d42",
+      "sanitized": false
+    },
+    "evaluation/2026113207-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-baseline/initial.npz",
+      "original_sha256": "c517c4a49d4bc20abcf04e98aebe142a56a7b94cc609b679d96ee7b2a5c290ab",
+      "copied_sha256": "c517c4a49d4bc20abcf04e98aebe142a56a7b94cc609b679d96ee7b2a5c290ab",
+      "sanitized": false
+    },
+    "evaluation/2026113207-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-baseline/report.json",
+      "original_sha256": "d08b9084a9b62c3874deb1b27f33d455629a0260ceb4522b71d323ab732e6265",
+      "copied_sha256": "d08b9084a9b62c3874deb1b27f33d455629a0260ceb4522b71d323ab732e6265",
+      "sanitized": false
+    },
+    "evaluation/2026113207-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-baseline/scene.xml",
+      "original_sha256": "3ca60269f49f62521df1ef49e82f57c173eed328dcbbf8fe40205d129ec808bf",
+      "copied_sha256": "3ca60269f49f62521df1ef49e82f57c173eed328dcbbf8fe40205d129ec808bf",
+      "sanitized": false
+    },
+    "evaluation/2026113207-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-baseline/states.npz",
+      "original_sha256": "1765306be16f63ed1ef85527866a16b8ac896734f51111490f9d23c2649e2cca",
+      "copied_sha256": "1765306be16f63ed1ef85527866a16b8ac896734f51111490f9d23c2649e2cca",
+      "sanitized": false
+    },
+    "evaluation/2026113207-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-candidate/bottle-runtime.json",
+      "original_sha256": "d34c0bea7fcd6599760746d1ac8f364c9303fa6af4aaabfb777cdaa1b658d47e",
+      "copied_sha256": "d34c0bea7fcd6599760746d1ac8f364c9303fa6af4aaabfb777cdaa1b658d47e",
+      "sanitized": false
+    },
+    "evaluation/2026113207-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-candidate/initial.npz",
+      "original_sha256": "c517c4a49d4bc20abcf04e98aebe142a56a7b94cc609b679d96ee7b2a5c290ab",
+      "copied_sha256": "c517c4a49d4bc20abcf04e98aebe142a56a7b94cc609b679d96ee7b2a5c290ab",
+      "sanitized": false
+    },
+    "evaluation/2026113207-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-candidate/report.json",
+      "original_sha256": "8a9b75ffdb1b723395596a083f57e96ca53cfad3dc0be77d70b8f841edd6829c",
+      "copied_sha256": "8a9b75ffdb1b723395596a083f57e96ca53cfad3dc0be77d70b8f841edd6829c",
+      "sanitized": false
+    },
+    "evaluation/2026113207-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-candidate/scene.xml",
+      "original_sha256": "3ca60269f49f62521df1ef49e82f57c173eed328dcbbf8fe40205d129ec808bf",
+      "copied_sha256": "3ca60269f49f62521df1ef49e82f57c173eed328dcbbf8fe40205d129ec808bf",
+      "sanitized": false
+    },
+    "evaluation/2026113207-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113207-candidate/states.npz",
+      "original_sha256": "04e6ede5d5cf77267a039855850dffe3a9727d90b36dafe823e422ffcd4ee86a",
+      "copied_sha256": "04e6ede5d5cf77267a039855850dffe3a9727d90b36dafe823e422ffcd4ee86a",
+      "sanitized": false
+    },
+    "evaluation/2026113208-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-baseline/initial.npz",
+      "original_sha256": "b9f58bac3b074f504b580bac1568f3b2d51542c4b6c6e8409475d37803e4bfab",
+      "copied_sha256": "b9f58bac3b074f504b580bac1568f3b2d51542c4b6c6e8409475d37803e4bfab",
+      "sanitized": false
+    },
+    "evaluation/2026113208-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-baseline/report.json",
+      "original_sha256": "95d15ce4cc7a28370810efc356db018197a7b12661a00d6a1b5ee14655866bbc",
+      "copied_sha256": "95d15ce4cc7a28370810efc356db018197a7b12661a00d6a1b5ee14655866bbc",
+      "sanitized": false
+    },
+    "evaluation/2026113208-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-baseline/scene.xml",
+      "original_sha256": "c7c1a14f297c6aac5501b66f32941823f667ac8677cd99efbd9eb27f202db033",
+      "copied_sha256": "c7c1a14f297c6aac5501b66f32941823f667ac8677cd99efbd9eb27f202db033",
+      "sanitized": false
+    },
+    "evaluation/2026113208-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-baseline/states.npz",
+      "original_sha256": "d888fd443c25e0053f24769065c7907c9820440ee015f177a93c5f325129bc31",
+      "copied_sha256": "d888fd443c25e0053f24769065c7907c9820440ee015f177a93c5f325129bc31",
+      "sanitized": false
+    },
+    "evaluation/2026113208-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-candidate/bottle-runtime.json",
+      "original_sha256": "34ce8ed314fb1bbb2d9b20c1d0bd8633353bd1d1eb3b83b3ea4a86f7b4daeea0",
+      "copied_sha256": "34ce8ed314fb1bbb2d9b20c1d0bd8633353bd1d1eb3b83b3ea4a86f7b4daeea0",
+      "sanitized": false
+    },
+    "evaluation/2026113208-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-candidate/initial.npz",
+      "original_sha256": "b9f58bac3b074f504b580bac1568f3b2d51542c4b6c6e8409475d37803e4bfab",
+      "copied_sha256": "b9f58bac3b074f504b580bac1568f3b2d51542c4b6c6e8409475d37803e4bfab",
+      "sanitized": false
+    },
+    "evaluation/2026113208-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-candidate/report.json",
+      "original_sha256": "f89a294a7465879a2a3f5e014ddcb7a9de0cdedb2950d99c45b10ed2884f1192",
+      "copied_sha256": "f89a294a7465879a2a3f5e014ddcb7a9de0cdedb2950d99c45b10ed2884f1192",
+      "sanitized": false
+    },
+    "evaluation/2026113208-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-candidate/scene.xml",
+      "original_sha256": "c7c1a14f297c6aac5501b66f32941823f667ac8677cd99efbd9eb27f202db033",
+      "copied_sha256": "c7c1a14f297c6aac5501b66f32941823f667ac8677cd99efbd9eb27f202db033",
+      "sanitized": false
+    },
+    "evaluation/2026113208-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113208-candidate/states.npz",
+      "original_sha256": "52f92d3db54743df4d1e670ef912c9a75ce0a1f887fead8b8c2b8eb2877fa52f",
+      "copied_sha256": "52f92d3db54743df4d1e670ef912c9a75ce0a1f887fead8b8c2b8eb2877fa52f",
+      "sanitized": false
+    },
+    "evaluation/2026113209-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-baseline/initial.npz",
+      "original_sha256": "94a99491aa54f0de33a80cfc0e776f8f040c8026e2fa1bb5c172d4c68ee16d60",
+      "copied_sha256": "94a99491aa54f0de33a80cfc0e776f8f040c8026e2fa1bb5c172d4c68ee16d60",
+      "sanitized": false
+    },
+    "evaluation/2026113209-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-baseline/report.json",
+      "original_sha256": "f7447be201f372ff8baaaf48a1e084acf6c8ad2d3b72c1e7fa9c50fa3774c73c",
+      "copied_sha256": "f7447be201f372ff8baaaf48a1e084acf6c8ad2d3b72c1e7fa9c50fa3774c73c",
+      "sanitized": false
+    },
+    "evaluation/2026113209-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-baseline/scene.xml",
+      "original_sha256": "854f635e95e9610f34e7af57667bdc8a05c1e9b1a284dd874668f35f9b11345c",
+      "copied_sha256": "854f635e95e9610f34e7af57667bdc8a05c1e9b1a284dd874668f35f9b11345c",
+      "sanitized": false
+    },
+    "evaluation/2026113209-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-baseline/states.npz",
+      "original_sha256": "2fc0f9e46f18d473aa7494b287be834a309905a2ca368ef30fcf7ee82fd4222a",
+      "copied_sha256": "2fc0f9e46f18d473aa7494b287be834a309905a2ca368ef30fcf7ee82fd4222a",
+      "sanitized": false
+    },
+    "evaluation/2026113209-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-candidate/bottle-runtime.json",
+      "original_sha256": "a915810f5dc317b9734968a6b0e94f1716926ac33e061a02e1d1017e985bbceb",
+      "copied_sha256": "a915810f5dc317b9734968a6b0e94f1716926ac33e061a02e1d1017e985bbceb",
+      "sanitized": false
+    },
+    "evaluation/2026113209-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-candidate/initial.npz",
+      "original_sha256": "94a99491aa54f0de33a80cfc0e776f8f040c8026e2fa1bb5c172d4c68ee16d60",
+      "copied_sha256": "94a99491aa54f0de33a80cfc0e776f8f040c8026e2fa1bb5c172d4c68ee16d60",
+      "sanitized": false
+    },
+    "evaluation/2026113209-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-candidate/report.json",
+      "original_sha256": "0bd18f7d3d0d66eb10f96f375c3d65e9d32d5d5783b392298bdc27c92fab896b",
+      "copied_sha256": "0bd18f7d3d0d66eb10f96f375c3d65e9d32d5d5783b392298bdc27c92fab896b",
+      "sanitized": false
+    },
+    "evaluation/2026113209-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-candidate/scene.xml",
+      "original_sha256": "854f635e95e9610f34e7af57667bdc8a05c1e9b1a284dd874668f35f9b11345c",
+      "copied_sha256": "854f635e95e9610f34e7af57667bdc8a05c1e9b1a284dd874668f35f9b11345c",
+      "sanitized": false
+    },
+    "evaluation/2026113209-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113209-candidate/states.npz",
+      "original_sha256": "2bf407e101e157f186094555995efbf24e34ba848c6fc94145b4ea90e123b271",
+      "copied_sha256": "2bf407e101e157f186094555995efbf24e34ba848c6fc94145b4ea90e123b271",
+      "sanitized": false
+    },
+    "evaluation/2026113210-baseline/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-baseline/initial.npz",
+      "original_sha256": "41ec8195023c977f43cb2b7dbbda501334cc31766a6a809d3ac2e1069bebe446",
+      "copied_sha256": "41ec8195023c977f43cb2b7dbbda501334cc31766a6a809d3ac2e1069bebe446",
+      "sanitized": false
+    },
+    "evaluation/2026113210-baseline/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-baseline/report.json",
+      "original_sha256": "f425caec6ee2463f54db2ae9fdaa05dad5bfc8a2a61d1a99a246c58938b04b3c",
+      "copied_sha256": "f425caec6ee2463f54db2ae9fdaa05dad5bfc8a2a61d1a99a246c58938b04b3c",
+      "sanitized": false
+    },
+    "evaluation/2026113210-baseline/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-baseline/scene.xml",
+      "original_sha256": "f0eeae12bfdb206d25f73e4a6c3b2fc1dab5e5b8cd68cd2b2e23b6ae75237090",
+      "copied_sha256": "f0eeae12bfdb206d25f73e4a6c3b2fc1dab5e5b8cd68cd2b2e23b6ae75237090",
+      "sanitized": false
+    },
+    "evaluation/2026113210-baseline/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-baseline/states.npz",
+      "original_sha256": "550e2931ef65035c1b158f8cca7ac2c7fa417c697a05b271106938dd002c2514",
+      "copied_sha256": "550e2931ef65035c1b158f8cca7ac2c7fa417c697a05b271106938dd002c2514",
+      "sanitized": false
+    },
+    "evaluation/2026113210-candidate/bottle-runtime.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-candidate/bottle-runtime.json",
+      "original_sha256": "402e817ee354e28b76a4bf451f4beb9813551f0cb1737bc1c9f1b63591305816",
+      "copied_sha256": "402e817ee354e28b76a4bf451f4beb9813551f0cb1737bc1c9f1b63591305816",
+      "sanitized": false
+    },
+    "evaluation/2026113210-candidate/initial.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-candidate/initial.npz",
+      "original_sha256": "41ec8195023c977f43cb2b7dbbda501334cc31766a6a809d3ac2e1069bebe446",
+      "copied_sha256": "41ec8195023c977f43cb2b7dbbda501334cc31766a6a809d3ac2e1069bebe446",
+      "sanitized": false
+    },
+    "evaluation/2026113210-candidate/report.json": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-candidate/report.json",
+      "original_sha256": "fd6be43f2abad790c3facf7ce33ea8c12e3e419f3bdf3d2b7abec9f43b1c0f99",
+      "copied_sha256": "fd6be43f2abad790c3facf7ce33ea8c12e3e419f3bdf3d2b7abec9f43b1c0f99",
+      "sanitized": false
+    },
+    "evaluation/2026113210-candidate/source-scene.xml": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-candidate/scene.xml",
+      "original_sha256": "f0eeae12bfdb206d25f73e4a6c3b2fc1dab5e5b8cd68cd2b2e23b6ae75237090",
+      "copied_sha256": "f0eeae12bfdb206d25f73e4a6c3b2fc1dab5e5b8cd68cd2b2e23b6ae75237090",
+      "sanitized": false
+    },
+    "evaluation/2026113210-candidate/states.npz": {
+      "source": ".run/bottle-wide-application-v1/evaluation/2026113210-candidate/states.npz",
+      "original_sha256": "3b713aae4ed003c17c51a4da6676de915db8c2f97e9231be3fedc71da9487e31",
+      "copied_sha256": "3b713aae4ed003c17c51a4da6676de915db8c2f97e9231be3fedc71da9487e31",
+      "sanitized": false
+    },
+    "frozen-source/hosting/gradio_app.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/hosting/gradio_app.py",
+      "original_sha256": "391dc004e294c597084fff44422914bb7e7d0559e4d25eb53ad3569304437593",
+      "copied_sha256": "391dc004e294c597084fff44422914bb7e7d0559e4d25eb53ad3569304437593",
+      "sanitized": false
+    },
+    "frozen-source/scripts/evaluate_visual_mug_deployment.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/scripts/evaluate_visual_mug_deployment.py",
+      "original_sha256": "7365d2717765519424750b7283967ca9bbbe368806899956437fe3aed3fe9b92",
+      "copied_sha256": "7365d2717765519424750b7283967ca9bbbe368806899956437fe3aed3fe9b92",
+      "sanitized": false
+    },
+    "frozen-source/scripts/evaluate_wide_bottle_application.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/scripts/evaluate_wide_bottle_application.py",
+      "original_sha256": "2dc6c12f1ec6f3af80911398098be08ce9db6c4c3b22d625b1f3c69bb21b7274",
+      "copied_sha256": "2dc6c12f1ec6f3af80911398098be08ce9db6c4c3b22d625b1f3c69bb21b7274",
+      "sanitized": false
+    },
+    "frozen-source/scripts/measure_manipulation_coverage.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/scripts/measure_manipulation_coverage.py",
+      "original_sha256": "79d4eb3aa16e04db6517353234083d5f581c3db1b3229b66b8f709e8b4bdd1d8",
+      "copied_sha256": "79d4eb3aa16e04db6517353234083d5f581c3db1b3229b66b8f709e8b4bdd1d8",
+      "sanitized": false
+    },
+    "frozen-source/scripts/package_bottle_wide.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/scripts/package_bottle_wide.py",
+      "original_sha256": "562fd58958e1ffcf697087a1dff29f7c42fe4c088056921f298d50d9950f1b2a",
+      "copied_sha256": "562fd58958e1ffcf697087a1dff29f7c42fe4c088056921f298d50d9950f1b2a",
+      "sanitized": false
+    },
+    "frozen-source/scripts/package_spoon_release.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/scripts/package_spoon_release.py",
+      "original_sha256": "ad485e7eaf4d6315a833a4482c20c8e749e24c21f8c309ee1a3f5c7af22caffd",
+      "copied_sha256": "ad485e7eaf4d6315a833a4482c20c8e749e24c21f8c309ee1a3f5c7af22caffd",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/act_learning.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/act_learning.py",
+      "original_sha256": "0266d6ec1db5291a14f7b0cc2bdc1e6eb977497b3d6e1342eeb0a6e6db4ff4c2",
+      "copied_sha256": "0266d6ec1db5291a14f7b0cc2bdc1e6eb977497b3d6e1342eeb0a6e6db4ff4c2",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/autonomy.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/autonomy.py",
+      "original_sha256": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+      "copied_sha256": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/bottle_refinement.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/bottle_refinement.py",
+      "original_sha256": "3390e076a13759fcef7d37bf685e3ed57372e8a148e923a96556c06194553e39",
+      "copied_sha256": "3390e076a13759fcef7d37bf685e3ed57372e8a148e923a96556c06194553e39",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/bottle_refinement_runtime.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/bottle_refinement_runtime.py",
+      "original_sha256": "d62bb641b1518ce6ec9e5224ffafd6f3177d0fdb26df72d7e1e5e0377d4b8fb4",
+      "copied_sha256": "d62bb641b1518ce6ec9e5224ffafd6f3177d0fdb26df72d7e1e5e0377d4b8fb4",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/bottle_vision.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/bottle_vision.py",
+      "original_sha256": "5b6ccf6e0224bf66ef7d4c69c382384add65d90ebfeedad838be5dc756bfa9ac",
+      "copied_sha256": "5b6ccf6e0224bf66ef7d4c69c382384add65d90ebfeedad838be5dc756bfa9ac",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/command_task.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/command_task.py",
+      "original_sha256": "b3861f88af0a3535569e3d911f68e0e1d566f0b1f5f24b60c79417d561ce51a4",
+      "copied_sha256": "b3861f88af0a3535569e3d911f68e0e1d566f0b1f5f24b60c79417d561ce51a4",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/dataset.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/dataset.py",
+      "original_sha256": "1c9310a12391a957563f317f0f260ebc5ff284b9050a27b4a27fcb3143f1b2d2",
+      "copied_sha256": "1c9310a12391a957563f317f0f260ebc5ff284b9050a27b4a27fcb3143f1b2d2",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/dinner.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/dinner.py",
+      "original_sha256": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11",
+      "copied_sha256": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/dinner_autonomy.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/dinner_autonomy.py",
+      "original_sha256": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+      "copied_sha256": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/dinner_monitor.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/dinner_monitor.py",
+      "original_sha256": "34b2a5356ffcb5c2cf888607ceb387e51ca2ed00f6fa8fa39a897744e8bebe54",
+      "copied_sha256": "34b2a5356ffcb5c2cf888607ceb387e51ca2ed00f6fa8fa39a897744e8bebe54",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/dinner_vision.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/dinner_vision.py",
+      "original_sha256": "66d0bc15b9a9f40832db56378de62c1b5355cebf583ececf7d8fa936a192360e",
+      "copied_sha256": "66d0bc15b9a9f40832db56378de62c1b5355cebf583ececf7d8fa936a192360e",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/engine.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/engine.py",
+      "original_sha256": "89250432f80d1faf6e4f48d138451626f0fed873acfe97bde94ef83c63915c4b",
+      "copied_sha256": "89250432f80d1faf6e4f48d138451626f0fed873acfe97bde94ef83c63915c4b",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/experiment_push.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/experiment_push.py",
+      "original_sha256": "156700845e130b86e93774c9dfae4221de5443f9855c86bd8e84d7f052a22003",
+      "copied_sha256": "156700845e130b86e93774c9dfae4221de5443f9855c86bd8e84d7f052a22003",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/experiment_targets.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/experiment_targets.py",
+      "original_sha256": "0704accb79c80d894efdf721e7a23437348c9dfe2d0d5edefd63e8b225ea9654",
+      "copied_sha256": "0704accb79c80d894efdf721e7a23437348c9dfe2d0d5edefd63e8b225ea9654",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/hardware_evidence.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/hardware_evidence.py",
+      "original_sha256": "386d563af1666943fb1fcf0d545389220eb30f5808f361bbf72df4aa4a2d7222",
+      "copied_sha256": "386d563af1666943fb1fcf0d545389220eb30f5808f361bbf72df4aa4a2d7222",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/hosted_gpu.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/hosted_gpu.py",
+      "original_sha256": "668fd99bf83a52a8730179b33f93c5d319707033fecb0cf49f1bd39e2e727bb7",
+      "copied_sha256": "668fd99bf83a52a8730179b33f93c5d319707033fecb0cf49f1bd39e2e727bb7",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/hosted_worker.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/hosted_worker.py",
+      "original_sha256": "60cf416fb7f6ef9f5151ccd9127fa821ddee3f65b74712f11ad11c37e6a3a5b2",
+      "copied_sha256": "60cf416fb7f6ef9f5151ccd9127fa821ddee3f65b74712f11ad11c37e6a3a5b2",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/language.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/language.py",
+      "original_sha256": "8a6aa3efc5515e2da1d334432b884de297b53b1f048aba60c031d1739ddcfc1b",
+      "copied_sha256": "8a6aa3efc5515e2da1d334432b884de297b53b1f048aba60c031d1739ddcfc1b",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/learned_dinner.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/learned_dinner.py",
+      "original_sha256": "5402aa9069b0a20b21c352272fbeb5dcf70d03ae555aa65d66574e5bf7975066",
+      "copied_sha256": "5402aa9069b0a20b21c352272fbeb5dcf70d03ae555aa65d66574e5bf7975066",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/learned_plan.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/learned_plan.py",
+      "original_sha256": "af91498d8f2d4cff06c829c1fc8c1075b359c00ed49e07043f8301bc4f85fcd8",
+      "copied_sha256": "af91498d8f2d4cff06c829c1fc8c1075b359c00ed49e07043f8301bc4f85fcd8",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/learned_skills.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/learned_skills.py",
+      "original_sha256": "3ef610a6e6d0516e8bf92d4e7f2b3d06540b49e2671682ab642239aa2cbb129b",
+      "copied_sha256": "3ef610a6e6d0516e8bf92d4e7f2b3d06540b49e2671682ab642239aa2cbb129b",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/learned_task.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/learned_task.py",
+      "original_sha256": "3bc2fc075d15e07d5717333fbd69541d2e76d2bd41621a71f1a6e51229d2e24f",
+      "copied_sha256": "3bc2fc075d15e07d5717333fbd69541d2e76d2bd41621a71f1a6e51229d2e24f",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/mug_correction_limits.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/mug_correction_limits.py",
+      "original_sha256": "0b4db501846ff62e87cc6dbde453d6b1bf370cb12e60088e709f89068ecb2595",
+      "copied_sha256": "0b4db501846ff62e87cc6dbde453d6b1bf370cb12e60088e709f89068ecb2595",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/mug_correction_motor.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/mug_correction_motor.py",
+      "original_sha256": "38ca9f9d936c9ca50176c898904a680c1549df696c97475088852bc39be26313",
+      "copied_sha256": "38ca9f9d936c9ca50176c898904a680c1549df696c97475088852bc39be26313",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/mug_correction_runtime.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/mug_correction_runtime.py",
+      "original_sha256": "eb580df116318a97fb2d24655d88a23be40a32beae186b0d03fbc88fc79e83f9",
+      "copied_sha256": "eb580df116318a97fb2d24655d88a23be40a32beae186b0d03fbc88fc79e83f9",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/mug_keypoint_observer.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/mug_keypoint_observer.py",
+      "original_sha256": "dc5c76bd5b82ffb7191727690be3ac15b0003310ff0a69ef848213ce376a5fea",
+      "copied_sha256": "dc5c76bd5b82ffb7191727690be3ac15b0003310ff0a69ef848213ce376a5fea",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/mug_visual_control.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/mug_visual_control.py",
+      "original_sha256": "98503f8bfefff12a719e562471bd7819f192f9c20d519b4fc75ad6b5502310ae",
+      "copied_sha256": "98503f8bfefff12a719e562471bd7819f192f9c20d519b4fc75ad6b5502310ae",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/mug_visual_geometry.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/mug_visual_geometry.py",
+      "original_sha256": "d0840f195103bf8be317d33a2aed0f40dfe572aa8aeab1c988db08ae86e11091",
+      "copied_sha256": "d0840f195103bf8be317d33a2aed0f40dfe572aa8aeab1c988db08ae86e11091",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/mug_visual_observer.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/mug_visual_observer.py",
+      "original_sha256": "5d6fdd56a87035ac22eee40d20d8e09aa4b6a40f0b5695cf260243c6827a90c6",
+      "copied_sha256": "5d6fdd56a87035ac22eee40d20d8e09aa4b6a40f0b5695cf260243c6827a90c6",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/mug_visual_profile.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/mug_visual_profile.py",
+      "original_sha256": "a955e238d4f55a0d01eb832272f57ab2eb9d17ef37aaacb7b5ea1fca3d223d3c",
+      "copied_sha256": "a955e238d4f55a0d01eb832272f57ab2eb9d17ef37aaacb7b5ea1fca3d223d3c",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/policy_cameras.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/policy_cameras.py",
+      "original_sha256": "1415c5f173502017c99f651778245dae83116f4b91b7bbe8bf614cecf06b2752",
+      "copied_sha256": "1415c5f173502017c99f651778245dae83116f4b91b7bbe8bf614cecf06b2752",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/policy_control.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/policy_control.py",
+      "original_sha256": "a418fe2619985852d4e65b40e20c18f82fd72076b4d8b9202507dda4a410b151",
+      "copied_sha256": "a418fe2619985852d4e65b40e20c18f82fd72076b4d8b9202507dda4a410b151",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/policy_observation.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/policy_observation.py",
+      "original_sha256": "d15a9b72e7fb366681d29a21f598d21ffd147b1b9ba56729d296250a67b37af6",
+      "copied_sha256": "d15a9b72e7fb366681d29a21f598d21ffd147b1b9ba56729d296250a67b37af6",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/primitive_policy.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/primitive_policy.py",
+      "original_sha256": "60c009448171533385df1be82e3f64ed395f28d3e03145eb2f10ab6a791ef143",
+      "copied_sha256": "60c009448171533385df1be82e3f64ed395f28d3e03145eb2f10ab6a791ef143",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/public_trial.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/public_trial.py",
+      "original_sha256": "52ffa6fe6ad9446b6315c3870488a686e485f87b60754704ef61d82605699af4",
+      "copied_sha256": "52ffa6fe6ad9446b6315c3870488a686e485f87b60754704ef61d82605699af4",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/recording.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/recording.py",
+      "original_sha256": "073fc8a874a313288399f1827c2018198c92e3da2975b122655afe41aebe43a2",
+      "copied_sha256": "073fc8a874a313288399f1827c2018198c92e3da2975b122655afe41aebe43a2",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/relay_task.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/relay_task.py",
+      "original_sha256": "a1387ecf36d24166b6cd356a14375aa47aceb4202687b4ccc96a3d305ab6bcd2",
+      "copied_sha256": "a1387ecf36d24166b6cd356a14375aa47aceb4202687b4ccc96a3d305ab6bcd2",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rendering.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rendering.py",
+      "original_sha256": "570f36b7b683c05d6c33aebc442828196db00596c10ed5e94df2b49ceccf0fcd",
+      "copied_sha256": "570f36b7b683c05d6c33aebc442828196db00596c10ed5e94df2b49ceccf0fcd",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/retrieval_policy.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/retrieval_policy.py",
+      "original_sha256": "e47aab06fae8c825cccbe72dae7040edf3ee5d7b07a6537080b95efe001c6873",
+      "copied_sha256": "e47aab06fae8c825cccbe72dae7040edf3ee5d7b07a6537080b95efe001c6873",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rgb_bottle_observer.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rgb_bottle_observer.py",
+      "original_sha256": "45e93ab0d7930a15c82f5e84809eb0d8d7d8d376ed878558529560ff20c18d20",
+      "copied_sha256": "45e93ab0d7930a15c82f5e84809eb0d8d7d8d376ed878558529560ff20c18d20",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rgb_servo_cameras.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rgb_servo_cameras.py",
+      "original_sha256": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec",
+      "copied_sha256": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rgb_servo_controller.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rgb_servo_controller.py",
+      "original_sha256": "6fb0d6ac81f717288a23aa88f60bcd84f95f0137b0660db7d35ebe2aeba7cf94",
+      "copied_sha256": "6fb0d6ac81f717288a23aa88f60bcd84f95f0137b0660db7d35ebe2aeba7cf94",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rgb_servo_geometry.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rgb_servo_geometry.py",
+      "original_sha256": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae",
+      "copied_sha256": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rgb_servo_motor.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rgb_servo_motor.py",
+      "original_sha256": "3d90c40a5af68f0b04dfe5aafaa7de47f4c0b67211d40cc1a461eae2311e22b7",
+      "copied_sha256": "3d90c40a5af68f0b04dfe5aafaa7de47f4c0b67211d40cc1a461eae2311e22b7",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rgb_servo_network.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rgb_servo_network.py",
+      "original_sha256": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302",
+      "copied_sha256": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rgb_servo_openvino.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rgb_servo_openvino.py",
+      "original_sha256": "2a091f27331304228bc57a306302cf05ced182af654a57c502b2bdea4bb1fa42",
+      "copied_sha256": "2a091f27331304228bc57a306302cf05ced182af654a57c502b2bdea4bb1fa42",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rgb_servo_routing.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rgb_servo_routing.py",
+      "original_sha256": "75acbf9a9e508ba24c29edc777c6ce83569d73bb9d7cbe567a2e7f40dffcafc6",
+      "copied_sha256": "75acbf9a9e508ba24c29edc777c6ce83569d73bb9d7cbe567a2e7f40dffcafc6",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/rgb_servo_vision.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/rgb_servo_vision.py",
+      "original_sha256": "498a5a52bd6fc207aa8754de074cc1c6d2ab9f10659e43f79d0aba12e9afcb1b",
+      "copied_sha256": "498a5a52bd6fc207aa8754de074cc1c6d2ab9f10659e43f79d0aba12e9afcb1b",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/scene.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/scene.py",
+      "original_sha256": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+      "copied_sha256": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/sequence_policy.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/sequence_policy.py",
+      "original_sha256": "510695960009387afef87284e76e57fa0cce500acd29c380336c08cf865904a8",
+      "copied_sha256": "510695960009387afef87284e76e57fa0cce500acd29c380336c08cf865904a8",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/server.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/server.py",
+      "original_sha256": "0775496d63d694e84eb92a31f1bc53a1bbb2d0e7f1f4af9262c2a102e1ca4d33",
+      "copied_sha256": "0775496d63d694e84eb92a31f1bc53a1bbb2d0e7f1f4af9262c2a102e1ca4d33",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/slots.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/slots.py",
+      "original_sha256": "41755919e4d2bbfb2b023e78c09370d2fbcd740f377bdf616551aff2aa827873",
+      "copied_sha256": "41755919e4d2bbfb2b023e78c09370d2fbcd740f377bdf616551aff2aa827873",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/speech.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/speech.py",
+      "original_sha256": "66a50562886702017bdf9e0d2a1af31dfb4531061af9b8a6c5c9f16d02cce4a0",
+      "copied_sha256": "66a50562886702017bdf9e0d2a1af31dfb4531061af9b8a6c5c9f16d02cce4a0",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/storage.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/storage.py",
+      "original_sha256": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f",
+      "copied_sha256": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/trial_preview.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/trial_preview.py",
+      "original_sha256": "59fc8b1dc83596856835b62a5153a85dbf39bf9f8e7c2be62b764bed70dfb11b",
+      "copied_sha256": "59fc8b1dc83596856835b62a5153a85dbf39bf9f8e7c2be62b764bed70dfb11b",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/wide_bottle_setup.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/wide_bottle_setup.py",
+      "original_sha256": "0ac199c9420cb3c3fcaa358af399ffa94fb8c8103809943dc130eb4851b4558f",
+      "copied_sha256": "0ac199c9420cb3c3fcaa358af399ffa94fb8c8103809943dc130eb4851b4558f",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/wide_bottle_task.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/wide_bottle_task.py",
+      "original_sha256": "15825e5beef63c60446c5298a61402976a8e24c5b670e90010b08f1f9d31dbad",
+      "copied_sha256": "15825e5beef63c60446c5298a61402976a8e24c5b670e90010b08f1f9d31dbad",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/__init__.py": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/__init__.py",
+      "original_sha256": "41d6e06b5cd49e86faaccfc822e0195485e4efed792c4ae28bdb42dc8e814220",
+      "copied_sha256": "41d6e06b5cd49e86faaccfc822e0195485e4efed792c4ae28bdb42dc8e814220",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/web/app.js": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/web/app.js",
+      "original_sha256": "29058de587f363c3dff255aa575cc4e89301d6add92c03333cea5e3df3be97f7",
+      "copied_sha256": "29058de587f363c3dff255aa575cc4e89301d6add92c03333cea5e3df3be97f7",
+      "sanitized": false
+    },
+    "frozen-source/simulation_lab/web/index.html": {
+      "source": ".run/bottle-wide-application-v1/frozen-source/simulation_lab/web/index.html",
+      "original_sha256": "3fdbdd0e20e8527e098a0edda16f985d8d08e61d89f20c3411c8fe011aec3437",
+      "copied_sha256": "3fdbdd0e20e8527e098a0edda16f985d8d08e61d89f20c3411c8fe011aec3437",
+      "sanitized": false
+    },
+    "console/bottle-wide-application-v1-entry.log": {
+      "source": ".run/final-goal/bottle-wide-application-v1-entry.log",
+      "original_sha256": "3c571eb5d272ea6e702e449afebce29deb7031e1c1c61a2a8eac95beb80dec13",
+      "copied_sha256": "3c571eb5d272ea6e702e449afebce29deb7031e1c1c61a2a8eac95beb80dec13",
+      "sanitized": false
+    },
+    "console/bottle-wide-application-v1-development.log": {
+      "source": ".run/final-goal/bottle-wide-application-v1-development.log",
+      "original_sha256": "d22bbc9f4d534014ad0351eb9cbcf9a77544e4f289c39aa4bba603774846949b",
+      "copied_sha256": "d22bbc9f4d534014ad0351eb9cbcf9a77544e4f289c39aa4bba603774846949b",
+      "sanitized": false
+    },
+    "console/bottle-wide-application-v1-evaluation.log": {
+      "source": ".run/final-goal/bottle-wide-application-v1-evaluation.log",
+      "original_sha256": "880eedb09c07ddd9e4c8e9530d1d7cdf13038c13ca71d13480f77b40b768075c",
+      "copied_sha256": "880eedb09c07ddd9e4c8e9530d1d7cdf13038c13ca71d13480f77b40b768075c",
+      "sanitized": false
+    }
+  },
+  "scope": "Actual local/public entry points and fresh paired full dinners with wider bottle starts. Other objects and cabinet remain in the existing narrow distribution. All outcomes and 20 Hz traces retained. Reset states and final parked/placement geometry are independently checked; saved per-skill monitor thresholds are checked, but 20 Hz traces do not independently reconstruct every 200 Hz contact event. No live browser/cloud/Intel or arbitrary-arrangement claim."
+}

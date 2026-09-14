@@ -1,0 +1,2902 @@
+{
+  "seed": 2026114142,
+  "generated": true,
+  "order": [
+    "mug",
+    "side_plate",
+    "glass",
+    "fork",
+    "spoon",
+    "plate",
+    "bottle"
+  ],
+  "objects": {
+    "mug": {
+      "object_id": "mug",
+      "attempt": 0,
+      "position_m": [
+        -0.4184624727742201,
+        -0.05104792924266746,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.3165452468905047,
+        0.0,
+        0.0,
+        -0.948577412060307
+      ],
+      "family": "upright",
+      "yaw_rad": -2.4974221989991463,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "side_plate": {
+      "object_id": "side_plate",
+      "attempt": 0,
+      "position_m": [
+        -0.2307278099808206,
+        0.36992897839118877,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.9536229204555584,
+        0.0,
+        0.0,
+        -0.30100386306792104
+      ],
+      "family": "face_up",
+      "yaw_rad": -0.611490325662964,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "glass": {
+      "object_id": "glass",
+      "attempt": 0,
+      "position_m": [
+        -0.37312174837770207,
+        0.04395041192750676,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.8315383209410424,
+        0.0,
+        0.0,
+        -0.5554673895077477
+      ],
+      "family": "upright",
+      "yaw_rad": -1.177849877637082,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "fork": {
+      "object_id": "fork",
+      "attempt": 0,
+      "position_m": [
+        -0.12761212106036285,
+        -0.1334200007596982,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.2030284312342778,
+        0.0,
+        0.0,
+        -0.9791728428171137
+      ],
+      "family": "face_up",
+      "yaw_rad": -2.7326930914422873,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "spoon": {
+      "object_id": "spoon",
+      "attempt": 0,
+      "position_m": [
+        -0.02150143784912034,
+        0.17444479261104612,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        1.927943110717433e-17,
+        -0.9491391189015347,
+        0.3148570040047044,
+        5.811800919541518e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": 2.500980670273199,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "plate": {
+      "object_id": "plate",
+      "attempt": 0,
+      "position_m": [
+        0.19905930864584126,
+        0.2302280280033877,
+        0.785
+      ],
+      "quaternion_wxyz": [
+        4.5581903428743036e-17,
+        0.6677239533195305,
+        0.7444089750690392,
+        -4.088630010733899e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -1.462294113200012,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "bottle": {
+      "object_id": "bottle",
+      "attempt": 1,
+      "position_m": [
+        -0.4071556234553175,
+        -0.13855068234843718,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.5366346831984588,
+        0.0,
+        0.0,
+        -0.8438146815435779
+      ],
+      "family": "upright",
+      "yaw_rad": -2.008705033105855,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    }
+  },
+  "proposals": [
+    {
+      "object_id": "mug",
+      "attempt": 0,
+      "position_m": [
+        -0.4184624727742201,
+        -0.05104792924266746,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.3165452468905047,
+        0.0,
+        0.0,
+        -0.948577412060307
+      ],
+      "family": "upright",
+      "yaw_rad": -2.4974221989991463,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "side_plate",
+      "attempt": 0,
+      "position_m": [
+        -0.2307278099808206,
+        0.36992897839118877,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.9536229204555584,
+        0.0,
+        0.0,
+        -0.30100386306792104
+      ],
+      "family": "face_up",
+      "yaw_rad": -0.611490325662964,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "glass",
+      "attempt": 0,
+      "position_m": [
+        -0.37312174837770207,
+        0.04395041192750676,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.8315383209410424,
+        0.0,
+        0.0,
+        -0.5554673895077477
+      ],
+      "family": "upright",
+      "yaw_rad": -1.177849877637082,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "fork",
+      "attempt": 0,
+      "position_m": [
+        -0.12761212106036285,
+        -0.1334200007596982,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.2030284312342778,
+        0.0,
+        0.0,
+        -0.9791728428171137
+      ],
+      "family": "face_up",
+      "yaw_rad": -2.7326930914422873,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "spoon",
+      "attempt": 0,
+      "position_m": [
+        -0.02150143784912034,
+        0.17444479261104612,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        1.927943110717433e-17,
+        -0.9491391189015347,
+        0.3148570040047044,
+        5.811800919541518e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": 2.500980670273199,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "plate",
+      "attempt": 0,
+      "position_m": [
+        0.19905930864584126,
+        0.2302280280033877,
+        0.785
+      ],
+      "quaternion_wxyz": [
+        4.5581903428743036e-17,
+        0.6677239533195305,
+        0.7444089750690392,
+        -4.088630010733899e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -1.462294113200012,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "bottle",
+      "attempt": 0,
+      "position_m": [
+        -0.37173935885308385,
+        0.04132342015080259,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.5366346831984588,
+        0.0,
+        0.0,
+        -0.8438146815435779
+      ],
+      "family": "upright",
+      "yaw_rad": -2.008705033105855,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "glass",
+          "penetration_m": 0.014000000000000012
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.014000000000000012
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.014000000000000012
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.014000000000000012
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.014000000000000012
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022070864083582778
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022070864083582778
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022070864083582778
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022070864083582778
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022070864083582778
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016553140051676716
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016553140051676716
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016553140051676716
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016553140051676716
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012642753985637766
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012642753985637766
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012642753985637766
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012642753985637766
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010592615684535082
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010592615684535082
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010592615684535082
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010592615684535082
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010592615684535082
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010541686787969306
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010541686787969306
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010541686787969306
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010541686787969306
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012501391029757817
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012501391029757817
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012501391029757817
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012501391029757817
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012501391029757817
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016339471526786026
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016339471526786026
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016339471526786026
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002178601408041368
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002178601408041368
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002178601408041368
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002178601408041368
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002178601408041368
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028473087904556434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028473087904556434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028473087904556434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028473087904556434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028473087904556434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003594042437786701
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003594042437786701
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003594042437786701
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003594042437786701
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003594042437786701
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0043692786978638196
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0043692786978638196
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0043692786978638196
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0043692786978638196
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0043692786978638196
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005119118186802507
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005119118186802507
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005119118186802507
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005791997206229845
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005791997206229845
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005791997206229845
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005791997206229845
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005791997206229845
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006344163745422291
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006344163745422291
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006344163745422291
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006344163745422291
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0067354515267962056
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0067354515267962056
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0067354515267962056
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0067354515267962056
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0069407307850175275
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0069407307850175275
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0069407307850175275
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0069407307850175275
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006945322733573666
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006945322733573666
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006945322733573666
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006945322733573666
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006748875991725765
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006748875991725765
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006748875991725765
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006748875991725765
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006365560792742792
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006365560792742792
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006365560792742792
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006365560792742792
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006365560792742792
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005821242703564048
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005821242703564048
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005821242703564048
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005821242703564048
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005821242703564048
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005152327617075866
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005152327617075866
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005152327617075866
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005152327617075866
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005152327617075866
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004405118711294774
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004405118711294774
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004405118711294774
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004405118711294774
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0036302298491321396
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0036302298491321396
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0036302298491321396
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0036302298491321396
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028803472668775033
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028803472668775033
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028803472668775033
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028803472668775033
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 6.83586812376787e-05
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00039357411884694677
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00039357411884694677
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 6.835868123767865e-05
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009219245790688783
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011780528671111417
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011780528671111417
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009219245790688783
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011733889234178704
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008517143937191078
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008517143937191078
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011733889234178704
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009525107266036279
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011733887647488773
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011733887647488773
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009525107266036279
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013694496975567743
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008829989511066009
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008829989511066009
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013694496975567743
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011826753287991593
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013694499824639904
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013694499824639904
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011826753287991593
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017528730993569153
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011184133215598273
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011184133215598273
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017528730993569153
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001596731667065603
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017528727586253912
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017528727586253912
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001596731667065603
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002297529456208745
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015419143911790546
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015419143911790543
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002297529456208745
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0021664642888060645
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022975299593144686
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022975299593144686
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0021664642888060645
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0029663016496456695
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002124641866805237
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002124641866805237
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0029663016496456695
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002492373353534663
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002622019419822415
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002622019419822415
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002492373353534663
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037136141907344678
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028268834389960024
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028268834389960024
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037136141907344678
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022870915922551106
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024511204141810013
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024511204141810013
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022870915922551106
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00438991147031309
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00438991147031309
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003499801832102254
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003499801832102254
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023022883444945947
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024618308027040334
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024618308027040334
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023022883444945947
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003615575876401024
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003615575876401024
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0027321816131071733
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0027321816131071733
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002532452696914497
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0026578913638619435
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0026578913638619435
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002532452696914497
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028755332774281894
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028755332774281894
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0020426728042752334
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0020426728042752334
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00208632335976563
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00208632335976563
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002220216590067169
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002220216590067169
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002220216437433805
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002220216437433805
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001478264527877052
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001478264527877052
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015345010780672672
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015345010780672672
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016942840179940601
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016942840179940601
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016942840853874704
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016942840853874704
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001077419650584905
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010774196505849048
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011425959731480775
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011425959731480775
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013335781154293748
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013335781154293748
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013335776182988647
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013335776182988647
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008674554605548833
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008674554605548831
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009373136494082511
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009373136494082511
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011626785998832562
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011626785998832562
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011626788771032367
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011626788771032367
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008626809160880574
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008626809160880571
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009326461833067747
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009326461833067747
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011932338353562717
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011932338353562717
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0006047415468840188
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008330140851489636
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008330140851489636
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0006047415468840188
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00016358714336448573
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.000492201070960739
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.000492201070960739
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0001635871433644858
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014149008843731621
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011371764086331281
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011371764086331281
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014149008843731621
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0001595781302652116
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0001595781302652116
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008511023307648825
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012419272533089488
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012419272533089488
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008511023307648826
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017983248023974725
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015512337681780689
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015512337681780686
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017983248023974725
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014028758681691263
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019153628684056062
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019153628684056062
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014028758681691263
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023429808185720965
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002120965280748727
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002120965280748727
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023429808185720965
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017813055553656258
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024666147885930145
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024666147885930145
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017813055553656258
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003011753622304569
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002807546784914482
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002807546784914482
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003011753622304569
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019606012819985167
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002858115306887672
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002858115306887672
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019606012819985167
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003759065457960606
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0035641864679506695
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0035641864679506695
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003759065457960606
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019444718862635805
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0030480041375318388
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0030480041375318388
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019444718862635805
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003661027235232675
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003661027235232675
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003465457683405142
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003465457683405142
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001949364608499894
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002818077590896715
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002818077590896715
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001949364608499894
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0029209852656645837
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0029209852656645837
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002714956722497119
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002714956722497119
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022656677414815
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022656677414815
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00204082440135069
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00204082440135069
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017436709730985754
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024044483461831126
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024044483461831126
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017436709730985754
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013414082845650231
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0018353047772304348
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0018353047772304348
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013414082845650231
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017397359513200825
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017397359513200825
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014890031952209384
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014890031952209384
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00023963639231089156
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00023963639231089156
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0007699907521613755
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011494332761335802
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011494332761335802
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0007699907521613754
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001379028992272451
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001379028992272451
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010970970392694894
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010970970392694894
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.000705119450087624
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009255080075449107
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009255080075449107
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0007051194500876241
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 2.194562953970855e-05
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0004264873188469467
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0004264873188469467
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 2.1945629539708497e-05
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011721830939435856
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014292902392629456
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014292902392629456
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011721830939435856
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014246263072397458
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011076812087895116
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011076812087895114
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014246263072397458
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012027692409091433
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014246261358247375
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014246261358247375
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012027692409091433
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001620687083315334
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011389657611138825
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011389657611138825
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001620687083315334
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00143293384412922
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016206873554765484
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016206873554765484
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00143293384412922
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0020041104849002882
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001374380132129678
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001374380132129678
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0020041104849002882
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001846990182167987
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002004110131207572
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002004110131207572
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001846990182167987
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025487668413217432
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017978812028740434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017978812028740432
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025487668413217432
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024167228043638026
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025487673327574036
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025487673327574036
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024167228043638026
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0032175390356194164
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00238060867624995
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00238060867624995
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0032175390356194164
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002513914480751658
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002654932619822415
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002654932619822415
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002513914480751658
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003964851574556343
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0030828502540664058
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0030828502540664058
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003964851574556343
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023086327194721057
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024840336141810013
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024840336141810013
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023086327194721057
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004639911470313091
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004639911470313091
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037425681002482302
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037425681002482302
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002335235578641743
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025060703292649525
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025060703292649525
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002335235578641743
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0038655758764010242
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0038655758764010242
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002974947881253149
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002974947881253149
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025653999310616456
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002702130890422863
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002702130890422863
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025653999310616456
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0031255332774281887
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0031255332774281887
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022854390724212086
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022854390724212086
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023348261945419432
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023348261945419432
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024702165900671686
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024702165900671686
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024702164374338044
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024702164374338044
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017210307994733316
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017210307994733316
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017830039095454503
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017830039095454503
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00194428401799406
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00194428401799406
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019442840853874702
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019442840853874702
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001320185922181185
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001320185922181185
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013910988046262605
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013910988046262605
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015835781154293746
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015835781154293746
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015835776182988644
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015835776182988644
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011102217321511633
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011102217321511633
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001185816480886434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001185816480886434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001412678599883256
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001412678599883256
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014126788771032365
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014126788771032365
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011054471876843371
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011054471876843371
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001181149018083088
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001181149018083088
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014432338353562715
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014432338353562715
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0006384402947951198
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009188247421316666
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009188247421316666
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0006384402947951198
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00019811750529252694
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0005991840023354243
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0005991840023354243
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00019811750529252694
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016661382556642109
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013874349230524816
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013874349230524816
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016661382556642109
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0002453887872479143
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0002453887872479143
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008856326926929244
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013489101846836347
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013489101846836347
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0008856326926929243
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002049562173688521
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001801492282597422
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001801492282597422
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002049562173688521
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0014374062300971681
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002022345799780292
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002022345799780292
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001437406230097168
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002594218189863145
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023712237951680802
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0023712237951680802
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002594218189863145
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0018158359172936677
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025735977199677004
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025735977199677004
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0018158359172936677
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003262990993595617
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003057805299333835
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003057805299333835
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003262990993595617
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019951316439265586
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002965098238262358
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002965098238262358
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019951316439265586
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004010302831403541
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0038144449835084073
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0038144449835084073
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004010302831403541
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0018980588125519604
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0030809173375318387
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0030809173375318387
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0018980588125519604
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003911027235232675
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003911027235232675
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037139605148833253
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037139605148833253
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001902951534788274
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028509907908967147
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0028509907908967147
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001902951534788274
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0031709852656645835
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0031709852656645835
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002963459553975302
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.002963459553975302
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025156677414814995
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0025156677414814995
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022893272363637956
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022893272363637956
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016972579269040175
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024373615461831125
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0024373615461831125
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016972579269040175
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012949952403460765
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0018682179772304347
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0018682179772304347
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012949952403460765
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019897359513200825
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0019897359513200825
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001737506029904231
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001737506029904231
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0002725495923108915
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0002725495923108915
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0007235777051907226
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011823464761335802
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0011823464761335802
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0007235777051907224
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016290289922724509
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0016290289922724509
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001345599873622969
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.001345599873622969
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0006830871364212225
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009584212075449106
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0009584212075449106
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0006830871364212226
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00695610690000199
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00695610690000199
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00695610690000199
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00695610690000199
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00695610690000199
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006925148342110956
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006925148342110956
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006925148342110956
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006925148342110956
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006695228209386937
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006695228209386937
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006695228209386937
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.006695228209386937
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00628193514489113
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00628193514489113
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00628193514489113
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00628193514489113
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0057127750670339945
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0057127750670339945
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0057127750670339945
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0057127750670339945
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005026884409086374
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005026884409086374
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005026884409086374
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005026884409086374
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004271005488396352
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004271005488396352
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004271005488396352
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004271005488396352
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004271005488396352
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003496721987321794
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003496721987321794
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003496721987321794
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.003496721987321794
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0027566642072948027
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0027566642072948027
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0027566642072948027
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0027566642072948027
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0027566642072948027
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0021013002957527343
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0021013002957527343
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0021013002957527343
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0021013002957527343
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0021013002957527343
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015750718174774383
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015750718174774383
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015750718174774383
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0015750718174774383
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012147514883695738
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012147514883695738
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012147514883695738
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0012147514883695738
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010438883409531945
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010438883409531945
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010438883409531945
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010438883409531945
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010742838404199178
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010742838404199178
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010742838404199178
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010742838404199178
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0010742838404199178
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013041696759650808
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013041696759650808
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013041696759650808
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0013041696759650808
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017177265825760884
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017177265825760884
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017177265825760884
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017177265825760884
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0017177265825760884
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022866693446202836
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022866693446202836
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022866693446202836
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022866693446202836
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0022866693446202836
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0029728426988816135
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0029728426988816135
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0029728426988816135
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0029728426988816135
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037288114831349434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037288114831349434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037288114831349434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037288114831349434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0037288114831349434
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004503004860684734
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004503004860684734
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004503004860684734
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004503004860684734
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.004503004860684734
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005243249066602394
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005243249066602394
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005243249066602394
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005243249066602394
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005243249066602394
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005898524687819108
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005898524687819108
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005898524687819108
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005898524687819108
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.005898524687819108
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00642450262645603
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00642450262645603
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00642450262645603
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.00642450262645603
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0067850736446093225
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0067850736446093225
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0067850736446093225
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0067850736446093225
+        },
+        {
+          "other_body": "glass",
+          "penetration_m": 0.0067850736446093225
+        }
+      ]
+    },
+    {
+      "object_id": "bottle",
+      "attempt": 1,
+      "position_m": [
+        -0.4071556234553175,
+        -0.13855068234843718,
+        0.761
+      ],
+      "quaternion_wxyz": [
+        0.5366346831984588,
+        0.0,
+        0.0,
+        -0.8438146815435779
+      ],
+      "family": "upright",
+      "yaw_rad": -2.008705033105855,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": null,
+      "collisions": []
+    }
+  ],
+  "arm_outer_bounds": {
+    "left": {
+      "origin_m": [
+        -0.25,
+        -0.19616469999999997,
+        0.8404
+      ],
+      "radius_m": 0.49835825187839283
+    },
+    "right": {
+      "origin_m": [
+        0.25,
+        -0.19616469999999997,
+        0.8404
+      ],
+      "radius_m": 0.49835825187839283
+    }
+  },
+  "table_xy_bounds_m": [
+    [
+      -0.48,
+      -0.32
+    ],
+    [
+      0.48,
+      0.46
+    ]
+  ],
+  "table_z": 0.76,
+  "fixture": "Original closed drawer and parked robot bases.",
+  "scope": "Reset geometry only; arm bounds do not certify a grasp or a collision-free route."
+}

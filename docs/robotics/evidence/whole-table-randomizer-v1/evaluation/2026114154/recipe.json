@@ -1,0 +1,2892 @@
+{
+  "seed": 2026114154,
+  "generated": true,
+  "order": [
+    "spoon",
+    "bottle",
+    "glass",
+    "plate",
+    "side_plate",
+    "fork",
+    "mug"
+  ],
+  "objects": {
+    "spoon": {
+      "object_id": "spoon",
+      "attempt": 0,
+      "position_m": [
+        0.0054016900959762415,
+        -0.2862995275151517,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        5.1854982548512256e-17,
+        0.5318220494464708,
+        0.8468561316555224,
+        -3.25647085285303e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -1.1215013217071332,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "bottle": {
+      "object_id": "bottle",
+      "attempt": 1,
+      "position_m": [
+        -0.11615253451126506,
+        -0.27581364180053125,
+        0.7851851013102525
+      ],
+      "quaternion_wxyz": [
+        -0.5016137528951037,
+        0.4522213892019953,
+        0.543595267775776,
+        0.4983810218161301
+      ],
+      "family": "sideways",
+      "yaw_rad": 1.665530571763819,
+      "axial_roll_rad": 3.053323882040144,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "glass": {
+      "object_id": "glass",
+      "attempt": 1,
+      "position_m": [
+        -0.016304865493080578,
+        0.20644186671557196,
+        0.835
+      ],
+      "quaternion_wxyz": [
+        4.0176795382883616e-17,
+        -0.7546419141101521,
+        0.656136861842227,
+        4.620849023087148e-17
+      ],
+      "family": "inverted",
+      "yaw_rad": 1.7102163986280976,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "plate": {
+      "object_id": "plate",
+      "attempt": 0,
+      "position_m": [
+        0.35302355101753635,
+        -0.07763012578596304,
+        0.785
+      ],
+      "quaternion_wxyz": [
+        7.0738313712102e-18,
+        0.9933046387278435,
+        0.11552443326737596,
+        -6.082236731981358e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -2.910026750212642,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "side_plate": {
+      "object_id": "side_plate",
+      "attempt": 0,
+      "position_m": [
+        0.11212782096698165,
+        -0.041247256706322066,
+        0.773
+      ],
+      "quaternion_wxyz": [
+        3.760899836773887e-17,
+        0.7891491942883622,
+        0.6142015541774775,
+        -4.832145174174777e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -1.8188450794568223,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "fork": {
+      "object_id": "fork",
+      "attempt": 4,
+      "position_m": [
+        -0.0012123807702674738,
+        0.05378339977784646,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        6.112867239865848e-17,
+        -0.05816505061571643,
+        0.9983069802855589,
+        3.561582152939046e-18
+      ],
+      "family": "face_down",
+      "yaw_rad": 0.11639579544047818,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    "mug": {
+      "object_id": "mug",
+      "attempt": 3,
+      "position_m": [
+        0.09903864460484624,
+        0.18663370002691015,
+        0.7864677538853692
+      ],
+      "quaternion_wxyz": [
+        -0.5790550053402104,
+        -0.03277647553287813,
+        0.7063467297663681,
+        0.40582668812000156
+      ],
+      "family": "sideways",
+      "yaw_rad": 2.576670645172114,
+      "axial_roll_rad": 2.4839315426912814,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    }
+  },
+  "proposals": [
+    {
+      "object_id": "spoon",
+      "attempt": 0,
+      "position_m": [
+        0.0054016900959762415,
+        -0.2862995275151517,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        5.1854982548512256e-17,
+        0.5318220494464708,
+        0.8468561316555224,
+        -3.25647085285303e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -1.1215013217071332,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "bottle",
+      "attempt": 0,
+      "position_m": [
+        -0.18582387149412843,
+        0.13944224084582962,
+        0.7851851013102525
+      ],
+      "quaternion_wxyz": [
+        -0.5016137528951037,
+        0.4522213892019953,
+        0.543595267775776,
+        0.4983810218161301
+      ],
+      "family": "sideways",
+      "yaw_rad": 1.665530571763819,
+      "axial_roll_rad": 3.053323882040144,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0028321072987819483
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.002144560056240301
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0010635213655777846
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.008536337442991029
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.006857062502607031
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0058867455928494974
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.013359561670262742
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010802998876533637
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0033301827991203937
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.005759355638426826
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.009372879152325455
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.001900063074912208
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004082712310050793
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.00624028008241812
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.00375414753095125
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004308724355058035
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004796052882722327
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003709845260984731
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0071374234225552915
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0044844546162118425
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010618699670344855
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.00657976513606477
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003145883592931615
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.009115114319842695
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010628466292656754
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010628466292656765
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.006998666861036126
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.006998666861036121
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.00675746520743294
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.005391769273027629
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0008480330544800189
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0004969975741312957
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0006194571018371205
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0042957878766281595
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.005241713962376672
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.00012858837491846326
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.007758748384320842
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.00429578835493317
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.005241714440681682
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.008704674470069354
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.009826417351294386
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.007758748238954234
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.008704674324702746
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010772343437042899
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.009575236506443933
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010106705962148278
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.009160779876399766
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.00862931042069542
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010527580143867139
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.009486631174467665
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.008540705088719153
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.009581654058118626
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.006774509114578014
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.009316937550491997
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010262863636240509
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0077204352003265265
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0029038633090553716
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.006774508899080947
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.007720434984829459
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003849789394803883
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0029038631172798963
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0038497892030284076
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 4.722573089034816e-05
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0016608793799299392
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 4.7226228992197205e-05
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0026068054656784513
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0031891565336511166
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.001660879313189186
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0026068053989376973
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004135082619399628
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0035819812395936927
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0031891559767522034
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0041350820625007155
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004527907325342205
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0028125845019632938
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003581981591711386
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004527907677459898
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003758510587711806
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0009333981060899905
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.00281258440339092
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0037585104891394313
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0018793241918385018
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0009333977559862264
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0018793238417347377
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.018643590013844608
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.01518380387733163
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.012035762153309447
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.009414263061041461
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0077184061345397246
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.00851809642728694
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010765631367565316
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.01373307473604388
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.016968660273856892
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.016897095186153014
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.016897095186153014
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.018208821437455214
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.018208821437455214
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.01764683301700423
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.01764683301700423
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.02045635640247297
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.02045635640247297
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.022035887481976695
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.022035887481976695
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.02342379979860568
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.02342379979860568
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.025060865755249566
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.024778192721308497
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.02474170182405514
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.02502437485799621
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.024936786131156418
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.024666057017034438
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.024790136653790654
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.025060865767912634
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.02467102599025271
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.024453456834982425
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.02471921697236217
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.024936786127632452
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.022523186106221133
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.020068512056736005
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.020068512056736005
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008798980790314008
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008798980790314095
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0029859927623950965
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002985992762395105
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00528358154416657
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0052835815441665615
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005014007122882794
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005014007122882803
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003642159815976716
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0036421598159767075
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001637907287961318
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0011333518500593715
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0011333518500593726
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0010661218858240844
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0018610770042167817
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001861077004216783
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004628815911245304
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0007407365552966786
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0007407365552966797
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0046288159112453054
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003452622254588685
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034526222545886867
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.008047799818131616
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.008047799818131616
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0045473776634621585
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004547377663462159
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0018036830496499852
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0018036830496499844
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0004825931268933311
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.000258938591781527
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0025070175611684883
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0003453667223470235
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001561091475419977
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0013391721222335879
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004060189120099873
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0050061152058483846
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0022850982079821
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0030846779478415393
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004619838419542854
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0046198384195428556
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00308467794784154
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0030306289383339037
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034252232107630036
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034252232107630062
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0030306289383339063
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0037367377405159385
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0029638753045083907
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0029638753045083915
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0037367377405159393
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00515488596171979
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0032672356740792077
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0032672356740792085
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005154885961719792
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.007188428692622644
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004314630812883827
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004314630812883829
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.007188428692622646
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0054117014266942065
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005411701426694206
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001965318254037008
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001965318254037009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0017476005644998034
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0017476005644998047
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0025546545458125704
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0025546545458125687
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0006285961020521457
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0006285961020521477
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0025546547339169697
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002554654733916968
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004579189372382004
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0045791893723820054
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004579189495728636
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0045791894957286335
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004964958391995736
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004964958391995738
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0049649584608266436
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004964958460826641
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0036532322095244427
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003653232209524445
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0036532320056907874
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003653232005690786
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008437086202220431
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008437086202220446
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008437085312603252
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008437085312603222
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003953037212522106
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004660822790686127
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004366456696345246
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003569722644239773
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0035697226442397696
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004107118471185433
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004660822790686122
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0036407087222652098
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0053199836626492076
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0004930415301462499
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0012069771367167338
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0021529032224652453
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0007778087373819505
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00667353101608859
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.007619457101837102
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004260907221069106
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003314981135320594
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034936682676016484
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004439594353350161
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0012234621753863138
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0002775360896378016
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0026848490618390118
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003630775147587524
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0011118627370115275
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0001659366512630153
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006101299645141817
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.007047225730890329
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003212381540296673
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002266455454548161
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0022285585178096782
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004788137754495932
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00384221166874742
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001282632432061166
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0014216675397672681
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0029499447602291985
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0020040186744806872
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00047574145401875663
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0013678609288823099
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0017606861917237992
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.000814760105975287
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00042193484313379786
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0020708038127907986
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001301406723042706
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0003554806372941938
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0011248777270422867
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002957334292141555
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008388065420781732
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008388065420781715
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0012601612415190527
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002417435022608833
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.000500012927312005
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0012601612334192118
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0024174350145814687
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004432892056830996
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0032938149240634733
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0032938147863587975
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004432891920358467
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004816931372171401
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003681321556366988
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0036813215190434857
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004816931335181865
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003511086665966675
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0023636869700115947
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008004287602382383
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008004287602382401
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002726487203998663
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002726487203998661
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.012891712345742575
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.012866696140336415
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01327902865594882
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01330404486135498
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.010161220917523823
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.007013179193501655
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004391680101233654
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0026958231747319316
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034955134674791327
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008004287602382383
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0008004287602382392
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0027264872039986622
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0027264872039986614
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00010498802389247073
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00010498802389247157
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001456356402472983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0014563564024729823
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00303588748197671
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0030358874819767113
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0044237997986056946
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004423799798605694
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.007394922840405534
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.007394922840405534
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.007659385362777425
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.007659385362777425
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.011569773801997524
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.011569773801997524
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.010670524504735558
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.010670524504735558
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.013671025990252699
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.013453456834982416
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.013719216972362159
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.013936786127632442
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.013304044873972378
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.013172758620728149
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01353973972270545
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.013671025975949679
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0009220417700824858
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0009220417700824852
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002293889076988572
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002293889076988573
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0072167595476395185
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0072167595476395185
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0075693762441353726
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0075693762441353726
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0027832403100316837
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002783240310031683
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003473884471312608
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034738844713126087
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.017814896231509957
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.017814896231509957
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.017814896231509957
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.017814896231509957
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.017814896231509957
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.027068514076703878
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.027068514076703878
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.027068514076703878
+        }
+      ]
+    },
+    {
+      "object_id": "bottle",
+      "attempt": 1,
+      "position_m": [
+        -0.11615253451126506,
+        -0.27581364180053125,
+        0.7851851013102525
+      ],
+      "quaternion_wxyz": [
+        -0.5016137528951037,
+        0.4522213892019953,
+        0.543595267775776,
+        0.4983810218161301
+      ],
+      "family": "sideways",
+      "yaw_rad": 1.665530571763819,
+      "axial_roll_rad": 3.053323882040144,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "glass",
+      "attempt": 0,
+      "position_m": [
+        -0.2019447037872052,
+        0.15652437167843836,
+        0.835
+      ],
+      "quaternion_wxyz": [
+        4.0176795382883616e-17,
+        -0.7546419141101521,
+        0.656136861842227,
+        4.620849023087148e-17
+      ],
+      "family": "inverted",
+      "yaw_rad": 1.7102163986280976,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.000915369071555173
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0009153690715551741
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0033833238474682468
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0009153688419230524
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0009153688419230535
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0033833238474682476
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004261512530954704
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003383324130067938
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0033833241300679387
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004261512530954706
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0034900872064829286
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0042615125040463804
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004261512504046382
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0034900872064829295
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0011216200482648791
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0034900876802181485
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0034900876802181494
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0011216200482648804
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0011216197855588683
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0011216197855588696
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0011326615420914287
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0011326615420914287
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0036263241675415165
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0011326612379604127
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0011326612379604127
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0036263241675415165
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003999999999999906
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.001341060888065832
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003734200114852458
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.003734200114852458
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.001341060888065832
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0013410607101131177
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.0013410607101131177
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004055036655512243
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004055036655512243
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004055036655512243
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004055036655512243
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.004055036655512243
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.015738452642532354
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.015738452642532354
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.016294327990787026
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.016294327990787026
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000096
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000082
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000082
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000082
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.018000000000000082
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.01800000000000009
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.016150954914073496
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.016150954914073496
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.016639251036334523
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.016639251036334523
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.009878897311159275
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.009878897311159275
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.011378088539346702
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.011378088539346702
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004020214476240242
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004020214476240242
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006428133396215418
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006428133396215418
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0021267163693556327
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0021267163693556327
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0018765280423288931
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0018765280423288933
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003662976741894135
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003662976741894135
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006124972523737206
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006124972523737206
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.009480450629897812
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.009480450629897812
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.011042615697995046
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.011042615697995046
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004025834221499117
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0040258342214991175
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0016179153015239425
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001617915301523942
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005126716369355632
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005126716369355631
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0012371818298781072
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0012371818298781076
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0017669728869620033
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0017669728869620029
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0015868061472172235
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.001586806147217224
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0010724257505888139
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0010724257505888134
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0048765280423288945
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004876528042328895
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0043175174868699566
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004317517486869957
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0018555217050268856
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0018555217050268851
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0002526521763082283
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0002526521763082283
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.003622379847599188
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0036223798475991864
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0029323504867178707
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002932350486717871
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002910419702633644
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0029104197026336453
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0005419523027739124
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0005419523027739113
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0005419519475956933
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0005419519475956944
+        }
+      ]
+    },
+    {
+      "object_id": "glass",
+      "attempt": 1,
+      "position_m": [
+        -0.016304865493080578,
+        0.20644186671557196,
+        0.835
+      ],
+      "quaternion_wxyz": [
+        4.0176795382883616e-17,
+        -0.7546419141101521,
+        0.656136861842227,
+        4.620849023087148e-17
+      ],
+      "family": "inverted",
+      "yaw_rad": 1.7102163986280976,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "plate",
+      "attempt": 0,
+      "position_m": [
+        0.35302355101753635,
+        -0.07763012578596304,
+        0.785
+      ],
+      "quaternion_wxyz": [
+        7.0738313712102e-18,
+        0.9933046387278435,
+        0.11552443326737596,
+        -6.082236731981358e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -2.910026750212642,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "side_plate",
+      "attempt": 0,
+      "position_m": [
+        0.11212782096698165,
+        -0.041247256706322066,
+        0.773
+      ],
+      "quaternion_wxyz": [
+        3.760899836773887e-17,
+        0.7891491942883622,
+        0.6142015541774775,
+        -4.832145174174777e-17
+      ],
+      "family": "face_down",
+      "yaw_rad": -1.8188450794568223,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "fork",
+      "attempt": 0,
+      "position_m": [
+        -0.21424372956670343,
+        0.30476907671118236,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        6.112867239865848e-17,
+        -0.05816505061571643,
+        0.9983069802855589,
+        3.561582152939046e-18
+      ],
+      "family": "face_down",
+      "yaw_rad": 0.11639579544047818,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.01139490612317099
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.01139490612317099
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010349707754481005
+        },
+        {
+          "other_body": "cutlery_cabinet",
+          "penetration_m": 0.010349707754481005
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.00039490612317097075
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0003949061231709708
+        }
+      ]
+    },
+    {
+      "object_id": "fork",
+      "attempt": 1,
+      "position_m": [
+        0.2934464733775603,
+        -0.15189977051492973,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        6.112867239865848e-17,
+        -0.05816505061571643,
+        0.9983069802855589,
+        3.561582152939046e-18
+      ],
+      "family": "face_down",
+      "yaw_rad": 0.11639579544047818,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "world",
+          "penetration_m": 0.012955683645501625
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.012955683645501625
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.015691684198320368
+        },
+        {
+          "other_body": "world",
+          "penetration_m": 0.015691684198320368
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.0006135345692417331
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.0006135345692417311
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.005215129714248554
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.005215129714248555
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.000415129714248578
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.00041512971424857877
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.005912330036200507
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.005249910114937857
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.005249910114937857
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.005912330036200507
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.001144128807629118
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.0004178992799205545
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.0004178992799205533
+        },
+        {
+          "other_body": "plate",
+          "penetration_m": 0.0011441288076291171
+        }
+      ]
+    },
+    {
+      "object_id": "fork",
+      "attempt": 2,
+      "position_m": [
+        -0.2811852508251102,
+        0.08102329560828658,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        6.112867239865848e-17,
+        -0.05816505061571643,
+        0.9983069802855589,
+        3.561582152939046e-18
+      ],
+      "family": "face_down",
+      "yaw_rad": 0.11639579544047818,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002471905765268861
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.002471905765268861
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0031687046777288514
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0031687046777288514
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0059999999999999975
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999999
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999999
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0059999999999999975
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006999999999999981
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006999999999999982
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.006999999999999981
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0053927673102059865
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0053927673102059865
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004695968397745995
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.004695968397745995
+        }
+      ]
+    },
+    {
+      "object_id": "fork",
+      "attempt": 3,
+      "position_m": [
+        -0.25547228682440926,
+        0.18368699321637572,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        6.112867239865848e-17,
+        -0.05816505061571643,
+        0.9983069802855589,
+        3.561582152939046e-18
+      ],
+      "family": "face_down",
+      "yaw_rad": 0.11639579544047818,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999994
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999996
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999996
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999994
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999998
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999998
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999998
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999998
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0059999999999999975
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999999
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.005999999999999999
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0059999999999999975
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        },
+        {
+          "other_body": "cutlery_drawer",
+          "penetration_m": 0.0034999999999999983
+        }
+      ]
+    },
+    {
+      "object_id": "fork",
+      "attempt": 4,
+      "position_m": [
+        -0.0012123807702674738,
+        0.05378339977784646,
+        0.777
+      ],
+      "quaternion_wxyz": [
+        6.112867239865848e-17,
+        -0.05816505061571643,
+        0.9983069802855589,
+        3.561582152939046e-18
+      ],
+      "family": "face_down",
+      "yaw_rad": 0.11639579544047818,
+      "axial_roll_rad": 0.0,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    },
+    {
+      "object_id": "mug",
+      "attempt": 0,
+      "position_m": [
+        0.09995776302418502,
+        -0.28861086224579696,
+        0.7864677538853692
+      ],
+      "quaternion_wxyz": [
+        -0.5790550053402104,
+        -0.03277647553287813,
+        0.7063467297663681,
+        0.40582668812000156
+      ],
+      "family": "sideways",
+      "yaw_rad": 2.576670645172114,
+      "axial_roll_rad": 2.4839315426912814,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": "initial_geometric_intersection",
+      "collisions": [
+        {
+          "other_body": "spoon",
+          "penetration_m": 0.0017561372201931058
+        },
+        {
+          "other_body": "spoon",
+          "penetration_m": 0.00620838306956411
+        },
+        {
+          "other_body": "spoon",
+          "penetration_m": 0.002052882022721226
+        },
+        {
+          "other_body": "spoon",
+          "penetration_m": 0.0019713025204966673
+        },
+        {
+          "other_body": "spoon",
+          "penetration_m": 0.006391439107614183
+        },
+        {
+          "other_body": "spoon",
+          "penetration_m": 0.0021662140982942973
+        }
+      ]
+    },
+    {
+      "object_id": "mug",
+      "attempt": 1,
+      "position_m": [
+        -0.13663518110463402,
+        0.35484053142211325,
+        0.7864677538853692
+      ],
+      "quaternion_wxyz": [
+        -0.5790550053402104,
+        -0.03277647553287813,
+        0.7063467297663681,
+        0.40582668812000156
+      ],
+      "family": "sideways",
+      "yaw_rad": 2.576670645172114,
+      "axial_roll_rad": 2.4839315426912814,
+      "candidate_arms": [],
+      "rejection": "outside_conservative_arm_length_bound"
+    },
+    {
+      "object_id": "mug",
+      "attempt": 2,
+      "position_m": [
+        0.11870925224450712,
+        0.32784126340972664,
+        0.7864677538853692
+      ],
+      "quaternion_wxyz": [
+        -0.5790550053402104,
+        -0.03277647553287813,
+        0.7063467297663681,
+        0.40582668812000156
+      ],
+      "family": "sideways",
+      "yaw_rad": 2.576670645172114,
+      "axial_roll_rad": 2.4839315426912814,
+      "candidate_arms": [],
+      "rejection": "outside_conservative_arm_length_bound"
+    },
+    {
+      "object_id": "mug",
+      "attempt": 3,
+      "position_m": [
+        0.09903864460484624,
+        0.18663370002691015,
+        0.7864677538853692
+      ],
+      "quaternion_wxyz": [
+        -0.5790550053402104,
+        -0.03277647553287813,
+        0.7063467297663681,
+        0.40582668812000156
+      ],
+      "family": "sideways",
+      "yaw_rad": 2.576670645172114,
+      "axial_roll_rad": 2.4839315426912814,
+      "candidate_arms": [
+        "left",
+        "right"
+      ],
+      "rejection": null,
+      "collisions": []
+    }
+  ],
+  "arm_outer_bounds": {
+    "left": {
+      "origin_m": [
+        -0.25,
+        -0.19616469999999997,
+        0.8404
+      ],
+      "radius_m": 0.49835825187839283
+    },
+    "right": {
+      "origin_m": [
+        0.25,
+        -0.19616469999999997,
+        0.8404
+      ],
+      "radius_m": 0.49835825187839283
+    }
+  },
+  "table_xy_bounds_m": [
+    [
+      -0.48,
+      -0.32
+    ],
+    [
+      0.48,
+      0.46
+    ]
+  ],
+  "table_z": 0.76,
+  "fixture": "Original closed drawer and parked robot bases.",
+  "scope": "Reset geometry only; arm bounds do not certify a grasp or a collision-free route."
+}
