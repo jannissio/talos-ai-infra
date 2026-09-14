@@ -1,5 +1,7 @@
 # Talos completion checklist
 
+**Authoritative user change, September 14 evening:** capability development is paused, unfinished. The user now prioritizes the final submission and explicitly requested a video from their local screen and voice recordings. The reviewed local export `submission/final-video/Talos-submission.mp4` is ready: **4:49.5, 25.8 MB, 1080p H.264/AAC**, with actual voice input, successful recorded six-skill dinner and bottle relay, and an explicitly in-progress hosted excerpt. Raw recordings, personal narration, editing intermediates and the local video-delivery folder are excluded from Git and general submission bundles. The saved form's earlier video and V7 slides have not been replaced; the redesigned V9 deck is ready separately. Final visibility, media replacement and the user's Submit action remain open. The historical development goals below are not completed and must not restart automatically.
+
 Updated September 14, 2026. Finish and hand over by **September 14, 18:00 CEST**. The user works September 15. The organizer's event page and schedule checked September 14 explicitly give **September 16, 20:30 CEST** as the submission deadline; our earlier handover target remains unchanged.
 
 This is the active development and release plan. It supersedes the narrower scope decision in `RELEASE_PLAN_2026-09-14.md`. Preparing files or stopping an experiment does not complete the full submission goal.
