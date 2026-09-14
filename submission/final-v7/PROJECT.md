@@ -1,6 +1,6 @@
 # Talos submission text — September 14 update
 
-Saved in the submission draft on September 14 and verified by leaving the form, reopening it and checking all three steps. The form contains the 198-character summary, 1,856-character long description and 1,559-character additional information below. It updates the retained v6 draft with completed voice/Intel checks and the measured limits of the broader work. Existing v6 media and all earlier evidence remain unchanged. GitHub and Hugging Face remain private; only the user performs final Submit. The team page still reports “Submission draft in progress.”
+Saved in the submission draft on September 14 and verified by leaving the form, reopening it and checking all three steps. The form contains the 198-character summary, 1,856-character long description and 1,559-character additional information below. The updated eight-slide V7 PDF is also attached and verified after a separate reload. It updates the retained v6 draft with completed voice/Intel checks and the measured limits of the broader work. The v6 cover and videos remain attached; all earlier files and evidence remain unchanged. GitHub and Hugging Face remain private; only the user performs final Submit. The team page still reports “Submission draft in progress.”
 
 **Title:** Talos: Learned Dinner-Table Robotics
 
@@ -37,6 +37,7 @@ Legacy Intel execution and a human full-sequence voice rehearsal are verified. Q
 
 - Repository: https://github.com/jannissio/talos-ai-infra
 - Hosted CPU demo: https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics
+- Updated presentation: [eight-slide PDF](Talos-v7.pdf), [editable PowerPoint](Talos-v7.pptx) and [validation summary](quality-check.json). The PDF attachment was saved at 17:47 CEST and remained present after reload.
 - Existing cover, main video, slide PDF and all-trial videos: [v6 media inventory](../final-v6/PROJECT.md#media-and-links).
 - Current requirements and remaining work: [completion checklist](../../docs/hackathon/FINAL_SUBMISSION_CHECKLIST.md).
 - Human microphone and private live-mug CPU outcome: [evidence](../../docs/robotics/evidence/human-voice-dinner-v1/README.md).
@@ -46,7 +47,7 @@ Legacy Intel execution and a human full-sequence voice rehearsal are verified. Q
 ## Remaining submission actions
 
 - Review this saved text against any subsequent measured results. Final Submit has not been pressed.
-- Update slides/video captions that still say the human rehearsal or legacy Intel run is pending; preserve the previous versions. Existing v6 videos show the earlier bounded system, not complete seven-item control.
+- The slide claims are updated. Review the retained v6 video's historical captions before final release; its footage shows the earlier bounded system, not complete seven-item control.
 - Resolve the Core Ultra eligibility requirement or explicitly disclose the limitation; no qualifying result is asserted.
 - At the agreed release time, make the audited repository and demo public and verify anonymous access with a fresh judge-style CPU trial.
 - Recheck all form fields and media, then leave final Submit to the user.

@@ -6,6 +6,8 @@ Two SO-101 arms, a physical dinner-table simulation, and spoken or typed instruc
 
 Talos combines MuJoCo, six camera views, Speechmatics transcription and camera-conditioned neural motor policies running through OpenVINO. It chains six learned dinner skills, supports table-supported bottle relays in both directions, and now offers stereo visual correction during late mug placement. The browser provides progress, cancellation and explicit failures. See [the current architecture and evidence](docs/robotics/FINAL_ARCHITECTURE.md).
 
+The broader [seven-item shared-table goal](docs/robotics/WHOLE_TABLE_PIPELINE.md) remains unfinished: no complete jointly randomized table has passed, and the adapted CLIPort runtime has not been trained into a Talos action policy. Its privileged physical teachers and static-geometry camera diagnoses are development dependencies, separate from the working learned dinner demo. The [current saved submission text and slides](submission/final-v7/PROJECT.md) keep that distinction explicit.
+
 ## Run locally
 
 Use clean CPython 3.12. For the programmed simulator:
@@ -59,7 +61,7 @@ Create a local `.env` containing `SPEECHMATICS_API_KEY=your-key`. Spaces around 
 - The [integrated camera-planned workflow](docs/robotics/evidence/composed-dinner-v1/README.md) completes **8/10** new frozen scenes from the left-reach bottle preset: both relay legs, then plate, mug, drawer, fork and spoon, without a reset. All ten pass every step through fork; two final spoon placements fail. Existing models remain unchanged.
 - A later [paired spoon-release experiment](docs/robotics/evidence/spoon-release-v1/README.md) completes all 24 development trials. Baseline and candidate each pass **4/6 standard and 4/6 left-reach workflows**; two scenes fail at the preceding mug step. The candidate shows no increase in completed workflows and is not promoted. These results remain separate from the earlier frozen evaluations.
 - A separate [mug release fit](docs/robotics/evidence/mug-release-v1/README.md) regresses on its 24 paired development workflows: baseline **6/6 per preset**, candidate **4/6**. All failures are preserved, and the candidate remains unpromoted. The selected dinner models are unchanged.
-- A human microphone bottle command succeeded on this PC. Final six-skill microphone rehearsal is still open.
+- A human “Set the table” microphone command completed all six learned skills, including 15 live mug corrections and parked arms. [The preserved trace and private hosted CPU trial](docs/robotics/evidence/human-voice-dinner-v1/README.md) verify this bounded workflow; the hosted trial took 287.79 wall seconds.
 - Real Speechmatics transcripts have driven the six-skill programmed sequence and a learned bottle movement, using explicitly labeled synthetic speech tests.
 - The revised upright model completed **10/10 new task-preset scene seeds**, with **0.36–1.66 mm** placement errors. This covers small bottle-position changes, not the entire reachable workspace. Wider-position trials still include failures.
 - The original three-view model supports familiar sideways practice but completed **0/10** broader scene seeds. Its results remain available separately.
@@ -71,6 +73,6 @@ No objects are welded to grippers or teleported during control. The original lea
 
 See the [upright policy experiment](docs/robotics/VISUAL_BOTTLE_POLICY.md), [relay evidence](docs/robotics/TABLE_RELAY.md), [simulator controls](simulation_lab/README.md), and [storage safeguards](docs/robotics/STORAGE_POLICY.md). A [271 KB frozen training input](training/bottle_visual/README.md) supports local GPU retraining.
 
-The original [submission folder](submission/PROJECT.md) is preserved. Updated materials are versioned under `submission/final-v6/`; [the final checklist](docs/hackathon/FINAL_SUBMISSION_CHECKLIST.md) tracks remaining work. A compact Hugging Face demo is under [private deployment verification](docs/hackathon/PUBLIC_DEMO.md). The repository and Space stay private until immediately before submission. Final-suite Intel execution, public judge access and the user's submission confirmation remain open.
+The original [submission folder](submission/PROJECT.md) and v6 media are preserved. Updated text and slides are versioned under [final-v7](submission/final-v7/PROJECT.md) and saved in the draft; [the final checklist](docs/hackathon/FINAL_SUBMISSION_CHECKLIST.md) tracks remaining work. The compact Hugging Face demo has passed its [private CPU verification](docs/robotics/evidence/human-voice-dinner-v1/README.md). The repository and Space stay private until immediately before submission. Core Ultra eligibility, the latest live-mug Intel run, historical video-caption review, public judge access and the user's final submission remain open.
 
 Project code, model weights and original dinner assets use [MIT](LICENSE). SO-101 assets retain their [Apache-2.0 attribution](simulation_lab/NOTICE.md). See [development and AI-assistance provenance](docs/PROVENANCE.md).
