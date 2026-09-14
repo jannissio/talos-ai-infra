@@ -22,13 +22,25 @@ Copy `.env.example` to `.env` and privately set `SPEECHMATICS_API_KEY`. The serv
 
 Install Python 3.12 and the graphics libraries listed in `hosting/packages.txt`. Use `python3.12 -m venv .venv`, install the root requirements, then run `python -m simulation_lab.server --learned --port 8765` on a machine with a working OpenGL renderer. For headless hosting, the Gradio app configures MuJoCo with OSMesa.
 
-The separate `hosting/requirements.txt` adds Gradio and records the deployed Space environment. Build an explicit allowlisted bundle with:
+The separate `hosting/requirements.txt` adds Gradio and records the deployed Space environment. For a local Linux CPU run of this interface, install the graphics libraries above and run these commands from the full GitHub checkout:
+
+```bash
+python3.12 -m venv .venv-hosting
+source .venv-hosting/bin/activate
+python -m pip install torch==2.8.0+cpu --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r hosting/requirements.txt
+python hosting/gradio_app.py
+```
+
+Installing CPU Torch first avoids downloading a CUDA build for this local CPU interface. The `torch==2.8.0` requirement accepts the installed `2.8.0+cpu` build. The public Space's platform manages its optional shared-GPU support separately.
+
+Build an explicit allowlisted Space bundle with:
 
 ```powershell
 .\.venv\Scripts\python scripts/build_hf_space.py --output .run/space-export
 ```
 
-The builder refuses existing outputs and does not upload. It excludes credentials, recordings, development history and training datasets. The Space's OpenVINO CPU path performs local inference; its optional shared-GPU path depends on Hugging Face allocation and can report allocation failures separately.
+The builder refuses existing outputs and does not upload. It excludes credentials, recordings, development history and training datasets, and includes the third-party notices with the license files. Within the exported bundle, `hosting/requirements.txt` is copied to the root as `requirements.txt`. The Space's OpenVINO CPU path performs local inference; its optional shared-GPU path depends on Hugging Face allocation and can report allocation failures separately.
 
 ## Verification
 

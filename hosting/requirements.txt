@@ -1,5 +1,6 @@
 # Isolated Python 3.12 environment for the optional Gradio trial interface.
-# Install CPU Torch separately using the command in hosting/README.md.
+# For a local CPU install, follow docs/SETUP.md (Linux and hosted interface):
+# https://github.com/jannissio/talos-ai-infra/blob/main/docs/SETUP.md#linux-and-hosted-interface
 gradio==6.27.0
 torch==2.8.0
 mujoco==3.12.0

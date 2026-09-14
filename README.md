@@ -4,7 +4,7 @@
 
 ![Talos cover illustration](submission/cover.png)
 
-[Try the live demo](https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics) · [Presentation](submission/presentation.pdf) · [Results and limits](docs/EVIDENCE.md)
+[Try the live demo](https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics) · [Presentation](submission/presentation.pdf) · [Results and limits](docs/EVIDENCE.md) · [Licenses and attribution](THIRD_PARTY_NOTICES.md)
 
 Say or type **“Set the table.”** Talos places the bottle, plate and mug, opens the drawer, and retrieves the fork and spoon. It also transfers a bottle between the arms by setting it down on the shared table. The local app has six camera views, voice input, manual controls, cancellation and explicit failure messages.
 
@@ -54,4 +54,8 @@ See [the evidence index](docs/EVIDENCE.md) for exact protocols, outcomes, limita
 
 The release contains one current presentation. Historical slides, stopped experiments and complete success/failure traces are preserved in the [development archive](docs/ARCHIVE.md). A shallow clone avoids downloading that large history. Credentials, virtual environments, personal recordings and editing files are excluded from Git.
 
-Original Talos code and models use [MIT](LICENSE). SO-101 assets retain Apache-2.0 and their notices; see [third-party licenses](THIRD_PARTY_NOTICES.md).
+## Licenses and attribution
+
+**MIT covers original Talos code, model weights and procedural dinner assets.** The root [MIT license](LICENSE) does not replace third-party terms. SO-101 robot assets retain [Apache-2.0](simulation_lab/assets/so101/LICENSE), their [source attribution and modification notices](simulation_lab/NOTICE.md). Installed libraries retain their own licenses, including Apache-2.0, BSD and MIT-CMU.
+
+See [third-party notices and the dependency-license table](THIRD_PARTY_NOTICES.md) for the component boundaries, upstream links and archived research licenses.

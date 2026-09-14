@@ -38,7 +38,7 @@ def build(output):
     assets = subprocess.check_output(['git', 'ls-files', '--', 'simulation_lab/assets/so101'], cwd=ROOT, text=True).splitlines()
     for name in assets:
         mapping[name] = ROOT / name
-    for name in ['LICENSE', 'simulation_lab/NOTICE.md', 'hosting/gradio_app.py','hosting/gpu_inference.py']:
+    for name in ['LICENSE', 'THIRD_PARTY_NOTICES.md', 'simulation_lab/NOTICE.md', 'hosting/gradio_app.py','hosting/gpu_inference.py']:
         mapping[name] = ROOT / name
     mapping['requirements.txt'] = ROOT / 'hosting/requirements.txt'
     mapping['packages.txt'] = ROOT / 'hosting/packages.txt'
@@ -99,10 +99,17 @@ table between arms; they are not airborne handoffs.
 This deployment contains no Speechmatics credentials or microphone service. Use
 the complete local application for voice and six simultaneous camera streams.
 
-Source, models, measured results and setup instructions are available in the repository.
-Repository: https://github.com/jannissio/talos-ai-infra
-Original Talos contributions use MIT; robot asset notices are in
-`simulation_lab/NOTICE.md` and `simulation_lab/assets/so101/LICENSE`.
+Source, models, measured results and [setup instructions](https://github.com/jannissio/talos-ai-infra/blob/main/docs/SETUP.md) are available in the [Talos repository](https://github.com/jannissio/talos-ai-infra).
+
+Measured scope: the original dinner suite passed 8/10 frozen workflows. The late-mug comparison passed 20/20 live, 20/20 original baseline and 0/20 frozen-image workflows. This is bounded feedback, not general workspace coverage.
+
+Use the OpenVINO CPU option to avoid shared-GPU allocation. A full dinner can take about five minutes. No login is needed for the CPU trial.
+
+## Licenses and attribution
+
+**MIT covers original Talos code, model weights and procedural dinner assets.** Third-party components retain their own licenses. The [MIT license](https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics/blob/main/LICENSE) does not replace the SO-101 assets' [Apache-2.0 license](https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics/blob/main/simulation_lab/assets/so101/LICENSE) or their [attribution and modification notices](https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics/blob/main/simulation_lab/NOTICE.md).
+
+See [third-party notices and the dependency-license table](https://huggingface.co/spaces/jannis-sms/talos-dinner-robotics/blob/main/THIRD_PARTY_NOTICES.md) for upstream terms, including Apache-2.0, BSD and MIT-CMU. The full notices file is included in this bundle.
 '''
     if visual_profile.is_file():
         readme=readme.replace('Learned models use initial RGB observations and motor-feedback progress guards.\nThey do not provide continuous visual correction or arbitrary workspace coverage.',
