@@ -69,6 +69,8 @@ The [compact Intel kit](../../submission/verification-v1/README.md) is prepared 
 
 Current visual-placement work: the failed [direct-XYZ fit](../robotics/evidence/mug-visual-observer-v1/README.md) remains stopped and preserved. A separately declared [stereo image-point observer](../robotics/evidence/mug-keypoint-observer-v1/README.md) passes all gates: fresh 448/448 present, 0/64 absent, 0.270 mm p95 / 0.422 mm maximum; all 144 exposed physical states accepted, 0.617 / 0.893 mm. Both models, exact compact inputs and all outcomes are packaged; the full fresh image/prediction reproduction passes. This establishes bounded held-mug perception, with no corrective motor integration, new physical controller trial or selected-model change. Physical visual correction remains unfinished and requires a separate experiment.
 
+The subsequent [differential motor input gate](../robotics/evidence/mug-correction-motor-v1/README.md) stops before training: 6,853/8,192 and 857/1,024 local translations meet the joint-step limit, below 99%. Independent geometry audits pass, and every attempt is packaged. No motor weights, fresh evaluation or physical controller result exists. Next: separately bounded joint-limited step sizing; the failed protocol stays closed.
+
 - Every promoted skill needs physical replay and learned execution evidence, not just low training loss or an animation.
 - Report learned, programmed, classical-vision and privileged monitoring components separately.
 - No attachments, teleportation or hidden forces during manipulation. Setup/reset writes are explicit.

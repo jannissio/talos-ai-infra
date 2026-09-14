@@ -1,0 +1,48 @@
+{
+  "schema": "talos.mug-correction-motor.v1",
+  "protocol_sha256": "92a51fe44f3199b85227b9dc695e85ad4b7a48d072384e17f47566ceffc54af6",
+  "source_sha256": "a0e7204ed50a0ec4322d1f1e3eecef3bb9d857892162e1cf96cb46ffaf359bbf",
+  "splits": {
+    "training": {
+      "attempted": 8192,
+      "accepted": 6853,
+      "rejected": 1339,
+      "coverage_fraction": 0.8365478515625,
+      "gate_passed": false,
+      "rejected_excessive_joint_delta": 1339,
+      "rejected_position_error": 64,
+      "rejected_axis_error": 0,
+      "maximum_joint_delta_rad": 0.34660863876342773,
+      "p95_position_error_mm": 0.07183126622887433,
+      "maximum_position_error_mm": 0.3560188936028013
+    },
+    "development": {
+      "attempted": 1024,
+      "accepted": 857,
+      "rejected": 167,
+      "coverage_fraction": 0.8369140625,
+      "gate_passed": false,
+      "rejected_excessive_joint_delta": 167,
+      "rejected_position_error": 7,
+      "rejected_axis_error": 0,
+      "maximum_joint_delta_rad": 0.2970242500305176,
+      "p95_position_error_mm": 0.06739177494111519,
+      "maximum_position_error_mm": 0.26663517093986183
+    }
+  },
+  "required_coverage": 0.99,
+  "preflight": {
+    "free_bytes": 558720020480,
+    "estimated_additional_bytes": 13681869,
+    "reserve_bytes": 10737418240
+  },
+  "status": "stopped_at_input_gate",
+  "independent_geometry_audits_passed": true,
+  "model_fitted": false,
+  "export_performed": false,
+  "new_physical_trials": 0,
+  "selected_robot_unchanged": true,
+  "fresh_seed_unexposed": 2026100103,
+  "diagnosis": "Every rejected case exceeds the 0.08 rad joint-step limit; a subset also exceeds the 0.15 mm endpoint-error limit. Fixed 2 mm Cartesian steps are unsuitable for part of this sampled placement region. The audit verifies these labels; it does not make them safe motor commands.",
+  "next_hypothesis": "Separately declare joint-limited correction sizing before fitting; do not relax this failed protocol or drop inconvenient cases."
+}
