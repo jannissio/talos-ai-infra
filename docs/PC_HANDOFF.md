@@ -1,5 +1,7 @@
 # Continue Talos on another Windows PC
 
+**Presentation preference, September 14:** the user explicitly rejected copying Delphi's slides or layouts. Use that reference only for typography, white space, thin rules and restrained accents; compose Talos's own story and layouts from its existing content and evidence. The new eight-slide [V9 review deck](../submission/final-v9/README.md) is built from a blank presentation, with editable charts and a matching PDF. It is ready for user review. The saved hackathon draft still contains V7; no form replacement or final submission was performed during this redesign. Earlier attempts remain preserved locally. This presentation request does not narrow or complete the active robotics goal below.
+
 ## Current goal - authoritative after every continuation
 
 **AUTHORITATIVE TOP-LEVEL GOAL — replaces conflicting earlier goal wording:** From a jointly randomized initial dinner scene, set the complete dinner table using camera observations. Every movable item may start anywhere on the tabletop where a valid grasp and transfer are physically feasible, at any tabletop rotation and in other physically stable orientations that must be explicitly addressed. Include bottle, plate, mug, tabletop fork/spoon, side plate and glass. Choose appropriate arms, grasps, collision-free routes and task order from the actual scene, with continuing observation and recovery. Intended final place settings may remain defined by the dinner task. Relevant drawer state/configuration and obstacle-clearance handling belong in the complete task.
