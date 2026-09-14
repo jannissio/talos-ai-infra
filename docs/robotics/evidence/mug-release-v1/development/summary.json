@@ -1,0 +1,406 @@
+{
+  "complete": true,
+  "attempted": 24,
+  "planned": 24,
+  "passed_workflows": {
+    "baseline": {
+      "upright": 6,
+      "wide_left": 6
+    },
+    "candidate": {
+      "upright": 4,
+      "wide_left": 4
+    }
+  },
+  "passed_target_skill_attempts": {
+    "baseline": {
+      "upright": 6,
+      "wide_left": 6
+    },
+    "candidate": {
+      "upright": 4,
+      "wide_left": 4
+    }
+  },
+  "paired_initial_states_match": true,
+  "pairs": [
+    {
+      "seed": 2026099601,
+      "preset": "upright",
+      "match": true
+    },
+    {
+      "seed": 2026099601,
+      "preset": "wide_left",
+      "match": true
+    },
+    {
+      "seed": 2026099602,
+      "preset": "upright",
+      "match": true
+    },
+    {
+      "seed": 2026099602,
+      "preset": "wide_left",
+      "match": true
+    },
+    {
+      "seed": 2026099603,
+      "preset": "upright",
+      "match": true
+    },
+    {
+      "seed": 2026099603,
+      "preset": "wide_left",
+      "match": true
+    },
+    {
+      "seed": 2026099604,
+      "preset": "upright",
+      "match": true
+    },
+    {
+      "seed": 2026099604,
+      "preset": "wide_left",
+      "match": true
+    },
+    {
+      "seed": 2026099605,
+      "preset": "upright",
+      "match": true
+    },
+    {
+      "seed": 2026099605,
+      "preset": "wide_left",
+      "match": true
+    },
+    {
+      "seed": 2026099606,
+      "preset": "upright",
+      "match": true
+    },
+    {
+      "seed": 2026099606,
+      "preset": "wide_left",
+      "match": true
+    }
+  ],
+  "gate_passed": false,
+  "rows": [
+    {
+      "seed": 2026099601,
+      "preset": "upright",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 3.0705609719629487,
+      "initial_state_sha256": "c1077a548668b68a15371fa891ab99ab082ee527277958201ea3c968f32194aa",
+      "report": "2026099601-upright-baseline/report.json",
+      "report_sha256": "29945c68b61569630e54ad07ea068fc573791fb2da58e508716b1221b6207ef7",
+      "wall_seconds": 50.32902549998835
+    },
+    {
+      "seed": 2026099601,
+      "preset": "upright",
+      "controller": "candidate",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 4.460815473711471,
+      "initial_state_sha256": "c1077a548668b68a15371fa891ab99ab082ee527277958201ea3c968f32194aa",
+      "report": "2026099601-upright-candidate/report.json",
+      "report_sha256": "03c37b988ad861c9e6877bc8efc7cd5be4fca9aecdb0ff44e62c3c82535390b9",
+      "wall_seconds": 50.85506239999086
+    },
+    {
+      "seed": 2026099601,
+      "preset": "wide_left",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 3.072909407230886,
+      "initial_state_sha256": "4fbdef3bc6f4eb5bc23ab4d7b592296f392eb1bda13a6061ad03e54c06c2a4e0",
+      "report": "2026099601-wide_left-baseline/report.json",
+      "report_sha256": "a4cac7c03cd95e2f7677d292d3ebdc35fc68741141285f57b5bfc8e938e73105",
+      "wall_seconds": 57.78429780015722
+    },
+    {
+      "seed": 2026099601,
+      "preset": "wide_left",
+      "controller": "candidate",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 4.460272231552095,
+      "initial_state_sha256": "4fbdef3bc6f4eb5bc23ab4d7b592296f392eb1bda13a6061ad03e54c06c2a4e0",
+      "report": "2026099601-wide_left-candidate/report.json",
+      "report_sha256": "d69b951778e538235402c309cbe8defe97e72351a9381773b6a8ff58e12a3e40",
+      "wall_seconds": 56.97529619978741
+    },
+    {
+      "seed": 2026099602,
+      "preset": "upright",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 7.29336161311724,
+      "initial_state_sha256": "f61af3d51e2210cda63af84970edf01b51e2aa144c7f5633bbf8f8fbf9fe2fcf",
+      "report": "2026099602-upright-baseline/report.json",
+      "report_sha256": "be86e4e0c9f15578f2c176c5c2fa6545411fc27e6fd9e27e67bc964b6a1947c0",
+      "wall_seconds": 51.15387410018593
+    },
+    {
+      "seed": 2026099602,
+      "preset": "upright",
+      "controller": "candidate",
+      "passed": false,
+      "status": "failed",
+      "target_skill_status": "failed",
+      "target_skill_placement_mm": 8.622809561425619,
+      "initial_state_sha256": "f61af3d51e2210cda63af84970edf01b51e2aa144c7f5633bbf8f8fbf9fe2fcf",
+      "report": "2026099602-upright-candidate/report.json",
+      "report_sha256": "43ed59e4fe63b38ed84f5b27d7f6f58e9cbb82966f29f403e15ccec82e1823b8",
+      "wall_seconds": 31.56446659984067
+    },
+    {
+      "seed": 2026099602,
+      "preset": "wide_left",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 7.292585573965547,
+      "initial_state_sha256": "7c5f7e3453a98b2c6b51fb5812b1b2f9778e18914e347916c829d60e3e906621",
+      "report": "2026099602-wide_left-baseline/report.json",
+      "report_sha256": "4230a99b9b39d8c66ff5d2774b74eb5cf439d8df1cbb040ffbaaaf218a77fb0a",
+      "wall_seconds": 58.69351819995791
+    },
+    {
+      "seed": 2026099602,
+      "preset": "wide_left",
+      "controller": "candidate",
+      "passed": false,
+      "status": "failed",
+      "target_skill_status": "failed",
+      "target_skill_placement_mm": 8.633635758307667,
+      "initial_state_sha256": "7c5f7e3453a98b2c6b51fb5812b1b2f9778e18914e347916c829d60e3e906621",
+      "report": "2026099602-wide_left-candidate/report.json",
+      "report_sha256": "75d74c4ec45eca45acc79b8491be181e853b7e919922554651865ab3d2ce0c0d",
+      "wall_seconds": 38.868645400274545
+    },
+    {
+      "seed": 2026099603,
+      "preset": "upright",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 3.929930126285506,
+      "initial_state_sha256": "12a9c4b72de54d964e2cb4d0e97093ed23539c29240550b71bc75f74b14242df",
+      "report": "2026099603-upright-baseline/report.json",
+      "report_sha256": "5cac72bb704843aec4cb93d34195a975eaca010dc61eaa8783be9918a7c55281",
+      "wall_seconds": 51.04052700009197
+    },
+    {
+      "seed": 2026099603,
+      "preset": "upright",
+      "controller": "candidate",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 4.796390145696976,
+      "initial_state_sha256": "12a9c4b72de54d964e2cb4d0e97093ed23539c29240550b71bc75f74b14242df",
+      "report": "2026099603-upright-candidate/report.json",
+      "report_sha256": "69993c5fa06db0a6181f33982da11ccbb4c08bfe612a8fe16ec4a4b28586ae45",
+      "wall_seconds": 51.29267319990322
+    },
+    {
+      "seed": 2026099603,
+      "preset": "wide_left",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 3.931598011503493,
+      "initial_state_sha256": "78706061ebc7b36af9ad1fd3a68c1dc62b198179f9d137a8d475f6f1e2cf218a",
+      "report": "2026099603-wide_left-baseline/report.json",
+      "report_sha256": "10dc4975566e5e8aa3e9ca12c87669f9569969ef3757d123e3b1070142c57831",
+      "wall_seconds": 58.84602619986981
+    },
+    {
+      "seed": 2026099603,
+      "preset": "wide_left",
+      "controller": "candidate",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 4.796928271047055,
+      "initial_state_sha256": "78706061ebc7b36af9ad1fd3a68c1dc62b198179f9d137a8d475f6f1e2cf218a",
+      "report": "2026099603-wide_left-candidate/report.json",
+      "report_sha256": "237787c7864781c0885716e178921f53035cab226d53678601b77f6ad3c2cdf1",
+      "wall_seconds": 58.67981859995052
+    },
+    {
+      "seed": 2026099604,
+      "preset": "upright",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 3.149953214196663,
+      "initial_state_sha256": "1ca3418054ce06ec708886d62ef25c0f122f6c59b8a8c12525f55c64013b9d56",
+      "report": "2026099604-upright-baseline/report.json",
+      "report_sha256": "d5b166d5ba6adc769975a9fb390c5d87700c8f7cbe5b8be4176a054940cbcd66",
+      "wall_seconds": 50.01207310007885
+    },
+    {
+      "seed": 2026099604,
+      "preset": "upright",
+      "controller": "candidate",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 4.610465176249733,
+      "initial_state_sha256": "1ca3418054ce06ec708886d62ef25c0f122f6c59b8a8c12525f55c64013b9d56",
+      "report": "2026099604-upright-candidate/report.json",
+      "report_sha256": "2a86da1e131eb7e9dc12a855ebfabaecdb76d41fc919857a62740630289a6a76",
+      "wall_seconds": 50.1838010000065
+    },
+    {
+      "seed": 2026099604,
+      "preset": "wide_left",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 3.1482456720846512,
+      "initial_state_sha256": "c8e7144b0fbe08b4edff50d37ea8064dc635178bb38681a87f66db774f871fda",
+      "report": "2026099604-wide_left-baseline/report.json",
+      "report_sha256": "6094f160d7349b96044dd8b2f1c6bec18085e662f1d9c6f3dd92639b6831ab7f",
+      "wall_seconds": 57.754297599662095
+    },
+    {
+      "seed": 2026099604,
+      "preset": "wide_left",
+      "controller": "candidate",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 4.5969234203000315,
+      "initial_state_sha256": "c8e7144b0fbe08b4edff50d37ea8064dc635178bb38681a87f66db774f871fda",
+      "report": "2026099604-wide_left-candidate/report.json",
+      "report_sha256": "e73fbe628dacb731164dea2cc3e23e40c365ac25a41ebdf8b5849e0803547b60",
+      "wall_seconds": 57.873168699909
+    },
+    {
+      "seed": 2026099605,
+      "preset": "upright",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 5.2347148672486545,
+      "initial_state_sha256": "79b3c458dd1a69f884243c44deb2c5be85fd03cc4e5fa3260fb8b29e86e89111",
+      "report": "2026099605-upright-baseline/report.json",
+      "report_sha256": "ce035392b7dd6b0e25bdde4e219fa335ba6691fb1bee0e775633cbcc7b03c14f",
+      "wall_seconds": 50.957207300234586
+    },
+    {
+      "seed": 2026099605,
+      "preset": "upright",
+      "controller": "candidate",
+      "passed": false,
+      "status": "failed",
+      "target_skill_status": "failed",
+      "target_skill_placement_mm": 10.654945112663517,
+      "initial_state_sha256": "79b3c458dd1a69f884243c44deb2c5be85fd03cc4e5fa3260fb8b29e86e89111",
+      "report": "2026099605-upright-candidate/report.json",
+      "report_sha256": "e2dfb8694e9325f5bf5af046b4de63a0be4a95b82a7eeeac052f4af22d4865a4",
+      "wall_seconds": 30.88427780009806
+    },
+    {
+      "seed": 2026099605,
+      "preset": "wide_left",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 5.234097526690511,
+      "initial_state_sha256": "773502dc2518deac270eda1e5151fe97864936cbd049f5c3812fea386a65ecf8",
+      "report": "2026099605-wide_left-baseline/report.json",
+      "report_sha256": "e5e80744648b788e2c85fb52b9cea2d3950c3263fac180d70bc781a8dceba930",
+      "wall_seconds": 58.23968940041959
+    },
+    {
+      "seed": 2026099605,
+      "preset": "wide_left",
+      "controller": "candidate",
+      "passed": false,
+      "status": "failed",
+      "target_skill_status": "failed",
+      "target_skill_placement_mm": 10.662418393123865,
+      "initial_state_sha256": "773502dc2518deac270eda1e5151fe97864936cbd049f5c3812fea386a65ecf8",
+      "report": "2026099605-wide_left-candidate/report.json",
+      "report_sha256": "e35f66e2fbffaa0761990e337d5cbb687def815f8ede13c2ce07b0d97ad3a508",
+      "wall_seconds": 38.81166729982942
+    },
+    {
+      "seed": 2026099606,
+      "preset": "upright",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 2.8540569756073926,
+      "initial_state_sha256": "89f1b1b5d83abe06f33d237f951a43d83192032b4dc811d0708ee285542edba0",
+      "report": "2026099606-upright-baseline/report.json",
+      "report_sha256": "182727e7ba0dc3f8030b58f68d652efa44fb128383c387c8faa29c4b3082d896",
+      "wall_seconds": 51.548099000006914
+    },
+    {
+      "seed": 2026099606,
+      "preset": "upright",
+      "controller": "candidate",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 2.841833831128806,
+      "initial_state_sha256": "89f1b1b5d83abe06f33d237f951a43d83192032b4dc811d0708ee285542edba0",
+      "report": "2026099606-upright-candidate/report.json",
+      "report_sha256": "36b3896247486f3cc31574242b872c0b044b718a66e68e58cccb53b7d95dfd94",
+      "wall_seconds": 51.38609440019354
+    },
+    {
+      "seed": 2026099606,
+      "preset": "wide_left",
+      "controller": "baseline",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 2.8540761536200967,
+      "initial_state_sha256": "ca714958a82a785ede627471ad3cf59fd1f43a4d1a11810576c1ef0d50ee45a1",
+      "report": "2026099606-wide_left-baseline/report.json",
+      "report_sha256": "214dbd950b45bc980e21f0b6060f0041653aabe8c032ff779f2c7904c6c0592b",
+      "wall_seconds": 59.62345189973712
+    },
+    {
+      "seed": 2026099606,
+      "preset": "wide_left",
+      "controller": "candidate",
+      "passed": true,
+      "status": "succeeded",
+      "target_skill_status": "succeeded",
+      "target_skill_placement_mm": 2.8418673876720852,
+      "initial_state_sha256": "ca714958a82a785ede627471ad3cf59fd1f43a4d1a11810576c1ef0d50ee45a1",
+      "report": "2026099606-wide_left-candidate/report.json",
+      "report_sha256": "e9820ae272e2516b1e27f21f62688b75987313933da791ed905bb65a6947af49",
+      "wall_seconds": 59.39914770005271
+    }
+  ],
+  "split": "development",
+  "freeze_sha256": "856331e5ba520b797600089a96d8dbcacfc80836fe93b6c7cee15c5705d098d5",
+  "wall_seconds": 443.57075649965554
+}
