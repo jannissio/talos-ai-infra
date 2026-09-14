@@ -15,9 +15,11 @@ from .autonomy import ArmIK, OPEN, PlanningError, skew
 from .dinner import OBJECTS
 from .dinner_autonomy import CLOSED, DinnerTask
 from .glass_grasp_candidates import padded_glass_wrap_candidates
+from .horizontal_glass_grasp_candidates import horizontal_glass_diameter_candidates, horizontal_glass_ik_seeds
 from .random_dinner import body_bounds
 from .scene import HOME, TABLE_Z
 from .side_plate_grasp_candidates import reverse_rim_candidates
+from .table_buffers import measured_glass_buffer
 
 
 def rotation_z(angle):
@@ -40,8 +42,25 @@ class TableIK(ArmIK):
     soft_placement = False
     placement_solve = False
     axis_in_plane = False
+    fallback_initials = ()
 
     def solve(self, position, initial):
+        try:
+            result = self._solve(position, initial)
+            self.last_initial = np.asarray(initial).copy()
+            return result
+        except PlanningError as exc:
+            first_error = exc
+        for alternative in self.fallback_initials:
+            try:
+                result = self._solve(position, alternative)
+                self.last_initial = np.asarray(alternative).copy()
+                return result
+            except PlanningError:
+                pass
+        raise first_error
+
+    def _solve(self, position, initial):
         placement = self.placement_solve or self.soft_placement
         if not self.soft_placement and not self.axis_in_plane:
             try:return super().solve(position, initial)
@@ -104,6 +123,7 @@ def grasp_candidates(data, name):
     body = data.body(name); center = body.xpos.copy(); r = body.xmat.reshape(3, 3)
     rows = reverse_rim_candidates(data, name, GraspCandidate, OPEN)
     rows += padded_glass_wrap_candidates(data, name, GraspCandidate)
+    rows += horizontal_glass_diameter_candidates(data, name, GraspCandidate)
     def add(label, point, local, axis, direction, x=None, opening=OPEN, approach=None):
         rows.append(GraspCandidate(label, center+r@np.asarray(point), np.asarray(local), axis,
                                   np.asarray(direction), None if x is None else np.asarray(x), opening,
@@ -210,6 +230,8 @@ class TableTeacher(DinnerTask):
         self.place_override = None
         self.orientation_override = None
         self.placement_free_yaw = False
+        self.allow_measured_buffer = False
+        self.buffer_search = None
         self.source_pose_cache = {}
         self.excluded_grasps = set()
         self.route_rng = np.random.default_rng(2026115002)
@@ -217,11 +239,12 @@ class TableTeacher(DinnerTask):
                        'align', 'lower', 'release', 'retract', 'park', 'verify']
 
     def start(self, side='auto', object_id='bottle', target=None, target_quaternion=None,
-              excluded_grasps=(), source_pose_cache=None, **kwargs):
+              excluded_grasps=(), source_pose_cache=None, allow_measured_buffer=False, **kwargs):
         if self.active:raise ValueError('Cancel the current primitive first.')
         if object_id not in OBJECTS:raise ValueError('Unknown loose table item.')
         self.__init__(self.model, self.data, self.layout)
         self.requested_side, self.requested_object = side, object_id
+        self.allow_measured_buffer = allow_measured_buffer
         self.place_override = None if target is None else np.asarray(target, dtype=float)
         if target_quaternion is not None:
             quaternion = np.asarray(target_quaternion, dtype=float)
@@ -386,6 +409,7 @@ class TableTeacher(DinnerTask):
         self.ik.axis_local = None if candidate.local_axis is None else candidate.local_axis.copy()
         self.ik.axis_target = candidate.axis_target.copy()
         self.ik.x_target = candidate.x_target
+        self.ik.fallback_initials = horizontal_glass_ik_seeds() if candidate.name.startswith('horizontal_glass_diameter_') else ()
         self.open_grip = candidate.open_grip
         self.grip_torque = self.default_grip_torque if candidate.torque_limit_nm is None else candidate.torque_limit_nm
         self.metrics['gripper_torque_limit_nm'] = self.grip_torque
@@ -424,12 +448,14 @@ class TableTeacher(DinnerTask):
                         if cached is None:
                             try:
                                 q = self.ik.solve(candidate.point, initial)
-                                self.source_pose_cache[cache_key] = {'q': q.copy()}
+                                self.source_pose_cache[cache_key] = {'q': q.copy(), 'solver_initial': self.ik.last_initial.copy()}
                             except PlanningError as exc:
                                 self.source_pose_cache[cache_key] = {'error': str(exc)}
                                 raise
                         elif 'error' in cached:raise PlanningError(cached['error'])
                         else:q = cached['q'].copy()
+                        solved = self.source_pose_cache[cache_key]
+                        if 'solver_initial' in solved:record['source_ik_initial_joints'] = solved['solver_initial'].tolist()
                         # Different initial roll guesses can converge to the
                         # same joint solution. Retain that search result without
                         # rerunning an already failed physical configuration.
@@ -480,6 +506,14 @@ class TableTeacher(DinnerTask):
 
     def _place_route(self):
         self.reference = self._carry_reference()
+        if self.allow_measured_buffer and self.tube['id'] == 'glass' and self.buffer_search is None:
+            previous_plane, previous_axis = self.placement_in_plane, self.placement_body_axis
+            self.placement_in_plane, self.placement_body_axis = False, 2
+            route = measured_glass_buffer(self, destination(self.layout, 'glass'), GraspCandidate)
+            if route is not None:
+                self._move('align', route, CLOSED, 4.)
+                return
+            self.placement_in_plane, self.placement_body_axis = previous_plane, previous_axis
         start = self.data.qpos[self.offset:self.offset+5].copy(); errors = []
         grip = float(self.data.qpos[self.offset+5])
         for free_yaw in self._placement_yaw_modes():
@@ -601,8 +635,18 @@ class TableTeacher(DinnerTask):
                     else:raise PlanningError('No measured tabletop support; release refused.')
             elif self.stage == 'release' and done:
                 point = self.ik.point(self.data)
-                path = self._cartesian(point, point+[0., 0., .04],
-                                       self.data.qpos[self.offset:self.offset+5], self.open_grip)
+                try:
+                    path = self._cartesian(point, point+[0., 0., .04],
+                                           self.data.qpos[self.offset:self.offset+5], self.open_grip)
+                except PlanningError as exc:
+                    # After measured release, a Cartesian withdrawal can run
+                    # into a wrist limit. Check the real open-hand joint route
+                    # to park, treating the released item as an obstacle.
+                    if forces['fixed']+forces['moving'] >= .02 or forces['base'] <= .06:
+                        raise
+                    path = self._route(self.data.qpos[self.offset:self.offset+5], np.asarray(HOME[:5]), self.open_grip)
+                    self.metrics['release_joint_space_park_fallback'] = True
+                    self.metrics['cartesian_release_retreat_failure'] = str(exc)
                 self._move('retract', path, self.open_grip, 3.)
             elif self.stage == 'retract' and done:
                 path = self._route(self.data.qpos[self.offset:self.offset+5], np.asarray(HOME[:5]), self.open_grip)

@@ -19,6 +19,7 @@ import numpy as np
 from PIL import Image
 
 from simulation_lab.dinner import OBJECTS
+from simulation_lab.direct_contact_dinner import draw_candidate
 from simulation_lab.random_dinner import assess, body_bounds, draw, orientation
 from simulation_lab.scene import HOME, build_scene
 from simulation_lab.storage import require_space
@@ -143,15 +144,17 @@ def execute(model, data, layout, task, targets, folder, observer):
     controls, qpos, qvel, stages = [], [data.qpos.copy()], [data.qvel.copy()], [task.stage]
     # The selected path was planned with real geometry; no action is applied yet.
     put(folder/'search.json', task.search_log)
-    put(folder/'action.json', {'item': task.tube['id'], 'arm': task.side,
-        'grasp_candidate': task.chosen.name, 'pick_point_m': task.grasp.tolist(),
-        'initial_wrist_roll': task.chosen_roll,
-        'gripper_point_local_m': task.chosen.local_tool_point.tolist(),
-        'gripper_constraint_axis_local': None if task.chosen.local_axis is None else task.chosen.local_axis.tolist(),
-        'place_body_origin_m': task.destination_position.tolist(),
-        'place_body_quaternion_wxyz': task.destination_quaternion.tolist(),
-        'orientation_constraint': task.orientation_constraint,
-        'teacher_observation': 'privileged_state', 'policy_observation': 'calibrated_rgbd_only'})
+    def action_metadata():
+        return {'item': task.tube['id'], 'arm': task.side,
+            'grasp_candidate': task.chosen.name, 'pick_point_m': task.grasp.tolist(),
+            'initial_wrist_roll': task.chosen_roll,
+            'gripper_point_local_m': task.chosen.local_tool_point.tolist(),
+            'gripper_constraint_axis_local': None if task.chosen.local_axis is None else task.chosen.local_axis.tolist(),
+            'place_body_origin_m': task.destination_position.tolist(),
+            'place_body_quaternion_wxyz': task.destination_quaternion.tolist(),
+            'orientation_constraint': task.orientation_constraint,
+            'teacher_observation': 'privileged_state', 'policy_observation': 'calibrated_rgbd_only'}
+    put(folder/'action-plan.json', action_metadata())
     stage_before = None; observations = 0; tick = 0
     while task.active and tick < 24000:
         phase = (task.stage, float(task.stage_started))
@@ -169,6 +172,10 @@ def execute(model, data, layout, task, targets, folder, observer):
         qpos.append(data.qpos.copy()); qvel.append(data.qvel.copy()); stages.append(task.stage)
         tick += 1
     if task.active:task._finish('failed', 'Development episode tick budget exhausted.', True)
+    # A privileged buffer search may choose a new supported target from the
+    # measured held pose. Preserve both the initial plan and the executed label.
+    put(folder/'action.json', action_metadata())
+    if getattr(task, 'buffer_search', None) is not None:put(folder/'buffer-search.json', task.buffer_search)
     values = {'initial_integration': initial, 'ctrl': np.asarray(controls),
               'qpos': np.asarray(qpos), 'qvel': np.asarray(qvel), 'stage': np.asarray(stages)}
     arrays(folder/'states.npz', **values)
@@ -190,6 +197,15 @@ def execute(model, data, layout, task, targets, folder, observer):
 
 
 def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, reset='joint', include_item_buffers=False):
+    protocol_bytes = None
+    if reset == 'joint-direct-contact':
+        protocol_bytes = (ROOT/'docs/robotics/experiments/joint-direct-contact-development-v1.json').read_bytes()
+        protocol = json.loads(protocol_bytes)
+        if (seed != protocol['protocol_seed']
+                or maximum_actions != protocol['execution']['maximum_accepted_actions']
+                or lookahead_attempts != protocol['execution']['physical_lookahead_attempts_per_candidate']
+                or only_item is not None or include_item_buffers):
+            raise ValueError('Arguments differ from the fixed joint-direct-contact V1 declaration. Declare a separate experiment instead.')
     if folder.exists():raise FileExistsError('Preserve every development attempt.')
     preflight = require_space(folder, 8*1024**3); folder.mkdir(parents=True)
     started = time.perf_counter(); report = {'seed': seed, 'preflight': preflight,
@@ -205,12 +221,26 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
         for name in ('simulation_lab/table_teacher.py', 'simulation_lab/table_observation.py',
                      'simulation_lab/side_plate_grasp_candidates.py',
                      'simulation_lab/glass_grasp_candidates.py',
+                     'simulation_lab/horizontal_glass_grasp_candidates.py',
+                     'simulation_lab/table_buffers.py',
+                     'simulation_lab/contact_reach.py', 'simulation_lab/direct_contact_dinner.py',
                      'simulation_lab/random_dinner.py', 'simulation_lab/autonomy.py',
                      'simulation_lab/dinner_autonomy.py', 'scripts/develop_whole_table.py'):
             put(folder/'source'/name, (ROOT/name).read_bytes())
         xml, layout = build_scene(seed=seed, scenario='dinner', dinner_preset='task')
         model = mujoco.MjModel.from_xml_string(xml)
-        if reset == 'joint':data, recipe = draw(model, seed)
+        if reset == 'joint-direct-contact':
+            put(folder/'protocol.json', protocol_bytes)
+            def before_candidate(index):
+                require_space(folder/'reset-candidates'/f'{index:03d}', 32*1024**2)
+            def record_candidate(index, candidate_recipe, result, trace):
+                path = folder/'reset-candidates'/f'{index:03d}'
+                put(path/'recipe.json', candidate_recipe); put(path/'result.json', result)
+                arrays(path/'states.npz', **trace)
+                print({key: result[key] for key in ('candidate_index', 'candidate_seed', 'selected', 'reason', 'settling_replay_exact')}, flush=True)
+            data, recipe = draw_candidate(model, seed, record=record_candidate,
+                                          before_candidate=before_candidate)
+        elif reset == 'joint':data, recipe = draw(model, seed)
         else:
             data = mujoco.MjData(model); data.qpos[:12] = HOME*2; data.ctrl[:] = HOME*2
             mujoco.mj_forward(model, data)
@@ -218,11 +248,12 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
         put(folder/'reset-recipe.json', recipe)
         report['generated'] = recipe['generated']
         if not recipe['generated']:return
-        for _ in range(600):mujoco.mj_step(model, data)
+        if reset != 'joint-direct-contact':
+            for _ in range(600):mujoco.mj_step(model, data)
         initial_geometry = assess(model, data); put(folder/'initial-geometry.json', initial_geometry)
         report['valid_initial_geometry'] = initial_geometry['valid']
         arrays(folder/'initial-state.npz', qpos=data.qpos, qvel=data.qvel, ctrl=data.ctrl)
-        if not initial_geometry['valid'] and reset == 'joint':return
+        if not initial_geometry['valid'] and reset != 'task':return
         observer = TableObserver(model); observe(observer, data, folder/'initial-observation')
         targets = np.asarray(HOME*2); remaining = list(OBJECTS)
         seen_arrangements = {arrangement_key(data)}
@@ -246,7 +277,8 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
                     trial_targets = targets.copy()
                     task = TableTeacher(model, trial, layout)
                     task.start(object_id=name, target=target, target_quaternion=quaternion,
-                               excluded_grasps=excluded, source_pose_cache=source_pose_cache)
+                               excluded_grasps=excluded, source_pose_cache=source_pose_cache,
+                               allow_measured_buffer=role == 'relay_or_clearance')
                     task.update(trial_targets)
                     if not task.active:
                         failure = {'action_index': action_index, 'attempt_index': attempt_index,
@@ -337,7 +369,7 @@ def run(folder, seed, maximum_actions, only_item=None, lookahead_attempts=6, res
             final_checks[name] = {'passed': bool(row['valid'] and xy_error < .008 and r[2, 2] > .98 and yaw_error < .175),
                                   'xy_error_mm': xy_error*1000, 'yaw_error_rad': yaw_error}
         report['final_task_checks'] = final_checks
-        report['whole_table_complete'] = reset == 'joint' and not remaining and only_item is None and all(r['passed'] for r in final_checks.values())
+        report['whole_table_complete'] = reset != 'task' and not remaining and only_item is None and all(r['passed'] for r in final_checks.values())
         observe(observer, data, folder/'final-observation')
     except Exception as exc:
         report.update(error_type=type(exc).__name__, error=str(exc)); raise
@@ -357,7 +389,7 @@ if __name__ == '__main__':
     parser.add_argument('--include-item-buffers', action='store_true',
                         help='Allow temporary placements in an explicitly single-item joint-scene diagnostic.')
     parser.add_argument('--lookahead-attempts', type=int, default=6)
-    parser.add_argument('--reset', choices=('joint', 'task'), default='joint')
+    parser.add_argument('--reset', choices=('joint', 'joint-direct-contact', 'task'), default='joint')
     args = parser.parse_args()
     if args.include_item_buffers and not args.only_item:parser.error('--include-item-buffers requires --only-item.')
     run(args.output, args.seed, args.maximum_actions, args.only_item, args.lookahead_attempts, args.reset, args.include_item_buffers)
