@@ -1,5 +1,7 @@
 # Final review and handover
 
+**Current development priority:** follow [the authoritative goal in PC_HANDOFF](../PC_HANDOFF.md#current-goal---authoritative-after-every-continuation) and [B1-B4 in the active checklist](FINAL_SUBMISSION_CHECKLIST.md#current-goal-and-priority). Broader camera-driven manipulation is the primary work; this packet preserves the submission fallback. Its historical pending notes below do not supersede current results or that goal. Media updates are deferred while the declared coverage diagnosis proceeds. The human six-skill voice trial and actual legacy Intel rendering/inference are now verified.
+
 Prepared September 13. Internal completion target: **September 14, 18:00 CEST**, with time afterward for the user's review and corrections. The assistant must **never click the final submission button**. The user will submit personally.
 
 September 14 deadline recheck: the organizer's [event banner and schedule](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon) explicitly give **September 16, 20:30 CEST**. Keep the earlier September 14 handover target. The online track continues to name Core Ultra Series 2/3. The draft's application step, URLs and 1,962-character additional information remain present; no final action was taken.

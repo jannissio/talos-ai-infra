@@ -1,0 +1,31 @@
+{
+  "schema": "talos.intel-target-inspection.v1",
+  "cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+  "os": "Windows",
+  "os_release": "11",
+  "python": "3.12.10",
+  "mujoco": "3.12.0",
+  "openvino": "2026.3.0-22451-8a17657b995-releases/2026/3",
+  "openvino_devices": [
+    {
+      "id": "CPU",
+      "name": "AMD Ryzen 7 5800X 8-Core Processor             "
+    },
+    {
+      "id": "GPU",
+      "name": "NVIDIA GeForce RTX 4070 (dGPU)"
+    }
+  ],
+  "opengl": {
+    "vendor": "NVIDIA Corporation",
+    "renderer": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+    "version": "4.6.0 NVIDIA 591.86"
+  },
+  "intel_cpu": false,
+  "intel_opengl_renderer": false,
+  "core_ultra_series": null,
+  "strict_written_hardware_check": false,
+  "all_intel_cpu_and_graphics": false,
+  "physical_policy_run": "Required separately; device discovery does not demonstrate task success.",
+  "eligibility": "Record actual hardware. Organizer confirmation remains necessary for legacy Intel under the livestream clarification."
+}
