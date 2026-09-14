@@ -1,0 +1,38 @@
+{
+  "policy_image": {
+    "shape": [
+      256,
+      320,
+      6
+    ],
+    "dtype": "float32",
+    "array_sha256": "d0d833b92328bf30a1972b02a7e3b23d62b4a7870e1a6a5882523fd0f32cef18"
+  },
+  "observed": {
+    "shape": [
+      256,
+      320
+    ],
+    "dtype": "bool",
+    "array_sha256": "2f79f8297b74b12eb4a7f97f0da90875375d7eb6b33686f155bcdf89b34d8536"
+  },
+  "rgb": {
+    "shape": [
+      3,
+      480,
+      640,
+      3
+    ],
+    "dtype": "uint8",
+    "array_sha256": "0f798b3b79c2bb3b2283ac78938bbd06ed9ca8c6ad68273ed96e738f0f7cbbfa"
+  },
+  "depth_m": {
+    "shape": [
+      3,
+      480,
+      640
+    ],
+    "dtype": "float32",
+    "array_sha256": "c64b37858acf8fe6a0bfe73a556e12870429359b1ab99ef8b8c76d5f5f0b2aa5"
+  }
+}

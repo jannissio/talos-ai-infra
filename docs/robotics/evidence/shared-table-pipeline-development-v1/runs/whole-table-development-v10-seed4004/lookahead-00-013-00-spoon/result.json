@@ -1,0 +1,57 @@
+{
+  "item": "spoon",
+  "arm": "right",
+  "status": "failed",
+  "message": "Lift routes unsolved: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.",
+  "metrics": {
+    "gripper_torque_limit_nm": 0.3,
+    "other_arm_max_motion_deg": 3.5285073636156253e-11,
+    "hold_verified_s": 0.0,
+    "unexpected_collisions": 0,
+    "controller": "shared_exact_state_physical_teacher",
+    "lift_cm": 0.007364743684479258,
+    "max_lift_cm": 0.011856785413910664,
+    "both_fingers": true,
+    "finger_forces_n": [
+      3.943055578534541,
+      3.9461093897846253
+    ],
+    "external_contact_n": 0.13479630604791573,
+    "tilt_deg": 1.611591265860563,
+    "peak_tilt_deg": 1.611591265860563,
+    "maximum_external_penetration_mm": 0.10649551187521655,
+    "other_object_max_displacement_mm": 0.00012691183232643169
+  },
+  "history": [
+    {
+      "stage": "planning",
+      "at_s": 0.0,
+      "message": "Check reach and clearance"
+    },
+    {
+      "stage": "approach",
+      "at_s": 0.0,
+      "message": "Approach the object"
+    },
+    {
+      "stage": "descend",
+      "at_s": 4.305,
+      "message": "Align the fingers"
+    },
+    {
+      "stage": "close",
+      "at_s": 7.605,
+      "message": "Grasp and check both fingers"
+    },
+    {
+      "stage": "failed",
+      "at_s": 11.905,
+      "message": "Lift routes unsolved: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+    }
+  ],
+  "frames": 2382,
+  "observations": 3,
+  "replay_exact": true,
+  "replay_max_state_error": 0.0,
+  "demonstration_eligible": false
+}

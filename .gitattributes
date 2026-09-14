@@ -80,3 +80,9 @@ training/drawer_configurations_v1/**/*scene.xml -whitespace
 docs/robotics/evidence/bottle-wide-application-v*/**/*scene.xml -whitespace
 docs/robotics/evidence/whole-table-randomizer-v*/**/*scene.xml -whitespace
 docs/robotics/evidence/drawer-clearance-diagnostic-v*/**/*scene.xml -whitespace
+
+# Preserve the exact upstream/frozen bytes, including terminal blank lines.
+third_party/talos_cliport/LICENSE-CLIP -whitespace
+third_party/talos_cliport/models/core/fusion.py -whitespace
+third_party/talos_cliport/models/core/transport.py -whitespace
+docs/robotics/evidence/shared-table-pipeline-development-v1/runs/whole-table-development-v1/source/simulation_lab/table_teacher.py -whitespace

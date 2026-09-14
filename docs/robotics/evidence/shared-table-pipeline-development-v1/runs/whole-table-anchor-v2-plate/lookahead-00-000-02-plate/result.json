@@ -1,0 +1,67 @@
+{
+  "item": "plate",
+  "arm": "left",
+  "status": "failed",
+  "message": "Placement pose/routes unsolved: Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.",
+  "metrics": {
+    "gripper_torque_limit_nm": 0.5,
+    "other_arm_max_motion_deg": 3.543137915150358e-11,
+    "hold_verified_s": 1.804999999999641,
+    "unexpected_collisions": 0,
+    "controller": "shared_exact_state_physical_teacher",
+    "lift_cm": 5.546811992382416,
+    "max_lift_cm": 5.711493527485912,
+    "both_fingers": true,
+    "finger_forces_n": [
+      6.435764458421132,
+      6.363610010278382
+    ],
+    "external_contact_n": 0.0,
+    "tilt_deg": 6.105787844881331,
+    "peak_tilt_deg": 6.305037100926644,
+    "maximum_external_penetration_mm": 0.27358834438913854,
+    "other_object_max_displacement_mm": 0.0034098487655105157
+  },
+  "history": [
+    {
+      "stage": "planning",
+      "at_s": 0.0,
+      "message": "Check reach and clearance"
+    },
+    {
+      "stage": "approach",
+      "at_s": 0.0,
+      "message": "Approach the object"
+    },
+    {
+      "stage": "descend",
+      "at_s": 6.045,
+      "message": "Align the fingers"
+    },
+    {
+      "stage": "close",
+      "at_s": 9.345,
+      "message": "Grasp and check both fingers"
+    },
+    {
+      "stage": "lift",
+      "at_s": 13.645,
+      "message": "Lift the object"
+    },
+    {
+      "stage": "hold",
+      "at_s": 16.95,
+      "message": "Verify an unsupported hold"
+    },
+    {
+      "stage": "failed",
+      "at_s": 18.755,
+      "message": "Placement pose/routes unsolved: Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm.; Placement position/orientation tolerance not solved for this grasp and arm."
+    }
+  ],
+  "frames": 3752,
+  "observations": 5,
+  "replay_exact": true,
+  "replay_max_state_error": 0.0,
+  "demonstration_eligible": false
+}

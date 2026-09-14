@@ -1,0 +1,112 @@
+[
+  {
+    "arm": "left",
+    "candidate": "handle_axis_1",
+    "initial_wrist_roll": -2.4,
+    "planned": false,
+    "error": "Route search exhausted (not proof of impossibility): The planned path has insufficient clearance: mug_lip_8 / left_moving_jaw_so101_v1"
+  },
+  {
+    "arm": "left",
+    "candidate": "handle_axis_1",
+    "initial_wrist_roll": 0.0,
+    "planned": false,
+    "error": "Route search exhausted (not proof of impossibility): The planned path has insufficient clearance: mug_lip_8 / left_moving_jaw_so101_v1"
+  },
+  {
+    "arm": "left",
+    "candidate": "handle_axis_1",
+    "initial_wrist_roll": 2.4,
+    "planned": false,
+    "error": "The requested gripper pose is outside this arm's useful reach."
+  },
+  {
+    "arm": "left",
+    "candidate": "handle_axis_-1",
+    "initial_wrist_roll": -2.4,
+    "planned": false,
+    "error": "The requested gripper pose is outside this arm's useful reach."
+  },
+  {
+    "arm": "left",
+    "candidate": "handle_axis_-1",
+    "initial_wrist_roll": 0.0,
+    "planned": false,
+    "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / left_camera_box1; The planned path has insufficient clearance: table / left_camera_box2; The planned path has insufficient clearance: table / left_camera_box1"
+  },
+  {
+    "arm": "left",
+    "candidate": "handle_axis_-1",
+    "initial_wrist_roll": 2.4,
+    "planned": false,
+    "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / left_camera_box1; The planned path has insufficient clearance: table / left_camera_box2; The planned path has insufficient clearance: table / left_camera_box1"
+  },
+  {
+    "arm": "left",
+    "candidate": "body_band_0.037_1",
+    "skipped": "Earlier saved physical lookahead failed this grasp."
+  },
+  {
+    "arm": "left",
+    "candidate": "body_band_0.037_-1",
+    "initial_wrist_roll": -2.4,
+    "planned": false,
+    "error": "The requested gripper pose is outside this arm's useful reach."
+  },
+  {
+    "arm": "left",
+    "candidate": "body_band_0.037_-1",
+    "initial_wrist_roll": 0.0,
+    "planned": false,
+    "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / left_camera_box1; The planned path has insufficient clearance: table / left_camera_box2; The planned path has insufficient clearance: table / left_camera_box1"
+  },
+  {
+    "arm": "left",
+    "candidate": "body_band_0.037_-1",
+    "initial_wrist_roll": 2.4,
+    "planned": false,
+    "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / left_camera_box1; The planned path has insufficient clearance: table / left_camera_box2; The planned path has insufficient clearance: table / left_camera_box1"
+  },
+  {
+    "arm": "left",
+    "candidate": "body_band_0.048_1",
+    "skipped": "Earlier saved physical lookahead failed this grasp."
+  },
+  {
+    "arm": "left",
+    "candidate": "body_band_0.048_-1",
+    "initial_wrist_roll": -2.4,
+    "planned": false,
+    "error": "The requested gripper pose is outside this arm's useful reach."
+  },
+  {
+    "arm": "left",
+    "candidate": "body_band_0.048_-1",
+    "initial_wrist_roll": 0.0,
+    "planned": false,
+    "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / left_camera_box2; The planned path has insufficient clearance: table / left_camera_box2; The planned path has insufficient clearance: table / left_camera_box2"
+  },
+  {
+    "arm": "left",
+    "candidate": "body_band_0.048_-1",
+    "initial_wrist_roll": 2.4,
+    "planned": false,
+    "error": "Grasp has no solved destination approach: The planned path has insufficient clearance: table / left_camera_box2; The planned path has insufficient clearance: table / left_camera_box2; The planned path has insufficient clearance: table / left_camera_box2"
+  },
+  {
+    "arm": "left",
+    "candidate": "body_band_0.025_1",
+    "initial_wrist_roll": -2.4,
+    "planned": true,
+    "point_m": [
+      -0.26827606737069004,
+      -0.05598711239572896,
+      0.7850720387300716
+    ],
+    "hover_m": [
+      -0.26827606737069004,
+      -0.05598711239572896,
+      0.8250720387300716
+    ]
+  }
+]

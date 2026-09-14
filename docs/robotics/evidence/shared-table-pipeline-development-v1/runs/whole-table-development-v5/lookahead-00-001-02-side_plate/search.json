@@ -1,0 +1,49 @@
+[
+  {
+    "arm": "right",
+    "candidate": "rim_-3.14159",
+    "skipped": "Earlier saved physical lookahead failed this grasp."
+  },
+  {
+    "arm": "right",
+    "candidate": "low_rim_-3.14159",
+    "skipped": "Earlier saved physical lookahead failed this grasp."
+  },
+  {
+    "arm": "right",
+    "candidate": "face_pinch_-3.14159",
+    "initial_wrist_roll": -2.4,
+    "planned": false,
+    "error": "The requested gripper pose is outside this arm's useful reach."
+  },
+  {
+    "arm": "right",
+    "candidate": "face_pinch_-3.14159",
+    "initial_wrist_roll": 0.0,
+    "planned": false,
+    "error": "The requested gripper pose is outside this arm's useful reach."
+  },
+  {
+    "arm": "right",
+    "candidate": "face_pinch_-3.14159",
+    "initial_wrist_roll": 2.4,
+    "planned": false,
+    "error": "The requested gripper pose is outside this arm's useful reach."
+  },
+  {
+    "arm": "right",
+    "candidate": "rim_-2.61799",
+    "initial_wrist_roll": -2.4,
+    "planned": true,
+    "point_m": [
+      0.384461307998982,
+      -0.0020727280059274697,
+      0.768941978547701
+    ],
+    "hover_m": [
+      0.384461307998982,
+      -0.0020727280059274697,
+      0.808941978547701
+    ]
+  }
+]

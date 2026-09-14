@@ -1,0 +1,77 @@
+{
+  "item": "plate",
+  "arm": "left",
+  "status": "failed",
+  "message": "No measured tabletop support; release refused.",
+  "metrics": {
+    "gripper_torque_limit_nm": 0.5,
+    "other_arm_max_motion_deg": 3.544410137022943e-11,
+    "hold_verified_s": 1.804999999999641,
+    "unexpected_collisions": 0,
+    "controller": "shared_exact_state_physical_teacher",
+    "lift_cm": 0.44507184525516275,
+    "max_lift_cm": 6.280222889751896,
+    "both_fingers": true,
+    "finger_forces_n": [
+      6.144201454213288,
+      5.670743824111418
+    ],
+    "external_contact_n": 0.37818684419528775,
+    "tilt_deg": 4.385248853846376,
+    "peak_tilt_deg": 7.4825840749483215,
+    "maximum_external_penetration_mm": 0.3181902619538258,
+    "other_object_max_displacement_mm": 0.004975225173979843
+  },
+  "history": [
+    {
+      "stage": "planning",
+      "at_s": 0.0,
+      "message": "Check reach and clearance"
+    },
+    {
+      "stage": "approach",
+      "at_s": 0.0,
+      "message": "Approach the object"
+    },
+    {
+      "stage": "descend",
+      "at_s": 6.04,
+      "message": "Align the fingers"
+    },
+    {
+      "stage": "close",
+      "at_s": 9.34,
+      "message": "Grasp and check both fingers"
+    },
+    {
+      "stage": "lift",
+      "at_s": 13.64,
+      "message": "Lift the object"
+    },
+    {
+      "stage": "hold",
+      "at_s": 16.945,
+      "message": "Verify an unsupported hold"
+    },
+    {
+      "stage": "align",
+      "at_s": 18.75,
+      "message": "Move over the placement guide"
+    },
+    {
+      "stage": "lower",
+      "at_s": 23.055,
+      "message": "Lower to measured table support"
+    },
+    {
+      "stage": "failed",
+      "at_s": 27.36,
+      "message": "No measured tabletop support; release refused."
+    }
+  ],
+  "frames": 5473,
+  "observations": 7,
+  "replay_exact": true,
+  "replay_max_state_error": 0.0,
+  "demonstration_eligible": false
+}

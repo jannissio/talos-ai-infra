@@ -1,0 +1,56 @@
+{
+  "item": "side_plate",
+  "arm": "right",
+  "status": "failed",
+  "message": "Lift routes unsolved: The carried tube's path intersects table.; The carried tube's path intersects table.; The carried tube's path intersects table.",
+  "metrics": {
+    "gripper_torque_limit_nm": 0.5,
+    "other_arm_max_motion_deg": 5.472653218207015e-10,
+    "hold_verified_s": 0.0,
+    "unexpected_collisions": 0,
+    "controller": "shared_exact_state_physical_teacher",
+    "lift_cm": -0.37477005494946924,
+    "max_lift_cm": 5.84405736026028e-06,
+    "both_fingers": true,
+    "finger_forces_n": [
+      12.904203367752007,
+      7.322777764132487
+    ],
+    "external_contact_n": 5.073787127314176,
+    "tilt_deg": 0.47134612365476086,
+    "peak_tilt_deg": 2.0956139896871058,
+    "other_object_max_displacement_mm": 0.0002627320672288247
+  },
+  "history": [
+    {
+      "stage": "planning",
+      "at_s": 0.0,
+      "message": "Check reach and clearance"
+    },
+    {
+      "stage": "approach",
+      "at_s": 0.0,
+      "message": "Approach the object"
+    },
+    {
+      "stage": "descend",
+      "at_s": 3.125,
+      "message": "Align the fingers"
+    },
+    {
+      "stage": "close",
+      "at_s": 6.425,
+      "message": "Grasp and check both fingers"
+    },
+    {
+      "stage": "failed",
+      "at_s": 10.725,
+      "message": "Lift routes unsolved: The carried tube's path intersects table.; The carried tube's path intersects table.; The carried tube's path intersects table."
+    }
+  ],
+  "frames": 2146,
+  "observations": 3,
+  "replay_exact": true,
+  "replay_max_state_error": 0.0,
+  "demonstration_eligible": false
+}

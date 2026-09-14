@@ -1,0 +1,320 @@
+{
+  "seed": 2026114001,
+  "preflight": {
+    "free_bytes": 547926810624,
+    "estimated_additional_bytes": 4294967296,
+    "reserve_bytes": 10737418240
+  },
+  "scope": "Exposed development of a shared exact-state physical teacher; not learned evaluation.",
+  "whole_table_complete": false,
+  "actions": [
+    {
+      "item": "plate",
+      "arm": "right",
+      "status": "failed",
+      "message": "Placement pose/routes unsolved: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.5,
+        "other_arm_max_motion_deg": 3.543137915150358e-11,
+        "hold_verified_s": 1.804999999999641,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": 5.666855093328682,
+        "max_lift_cm": 5.818280384836805,
+        "both_fingers": true,
+        "finger_forces_n": [
+          6.411122768727864,
+          6.3582058819478835
+        ],
+        "external_contact_n": 0.0,
+        "tilt_deg": 4.980539030961962,
+        "peak_tilt_deg": 5.228053368977655,
+        "other_object_max_displacement_mm": 0.0004162155221664158
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 4.27,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 7.57,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 11.87,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 15.175,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "failed",
+          "at_s": 16.98,
+          "message": "Placement pose/routes unsolved: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        }
+      ],
+      "frames": 3397,
+      "observations": 5,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "role": "final_setting"
+    }
+  ],
+  "planning_failures": [],
+  "remaining": [
+    "plate",
+    "side_plate",
+    "mug",
+    "glass",
+    "bottle",
+    "fork",
+    "spoon"
+  ],
+  "only_item_diagnostic": null,
+  "maximum_actions": 14,
+  "generated": true,
+  "valid_initial_geometry": true,
+  "stop_reason": "Physical action failed; state and trace retained. Physical recovery remains unimplemented.",
+  "final_geometry": {
+    "valid": false,
+    "objects": {
+      "plate": {
+        "valid": false,
+        "reasons": [
+          "not_supported_on_table"
+        ],
+        "position_m": [
+          0.08993456742975317,
+          -0.2147150409927229,
+          0.816608888140768
+        ],
+        "quaternion_wxyz": [
+          0.9968300609243201,
+          -0.0019935999234827473,
+          0.04340130630871886,
+          0.06664969473042211
+        ],
+        "speed_m_s": 0.0005081637605223186,
+        "angular_speed_rad_s": 0.0010942006087769384,
+        "penetration_m": 0.0004171838933388673,
+        "table_contact": false,
+        "realized_family": "upright",
+        "body_up_z": 0.9962242437709002,
+        "bounds_min_m": [
+          0.023958547680155443,
+          -0.2812421806310547,
+          0.8115737870903528
+        ],
+        "bounds_max_m": [
+          0.15832591463525955,
+          -0.1479146235737842,
+          0.8462623664508278
+        ]
+      },
+      "side_plate": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.36974521677158945,
+          -0.04776129651352873,
+          0.7599423046184409
+        ],
+        "quaternion_wxyz": [
+          0.35955439985953697,
+          -8.05688830580097e-06,
+          -6.637395097517087e-06,
+          -0.9331241254156264
+        ],
+        "speed_m_s": 3.520153686963939e-06,
+        "angular_speed_rad_s": 0.00669460191498122,
+        "penetration_m": 5.8387336428562324e-05,
+        "table_contact": true,
+        "realized_family": "upright",
+        "body_up_z": 0.9999999997517346,
+        "bounds_min_m": [
+          0.3164635497878901,
+          -0.10104293223217217,
+          0.759941365126797
+        ],
+        "bounds_max_m": [
+          0.42302704822179305,
+          0.005520629788833768,
+          0.7719434178331224
+        ]
+      },
+      "mug": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.37313932889509643,
+          0.12020588192370663,
+          0.82399854263333
+        ],
+        "quaternion_wxyz": [
+          -1.2694473507569348e-14,
+          0.9160394576668629,
+          0.4010881598818383,
+          -1.850786668773176e-15
+        ],
+        "speed_m_s": 3.271716992837338e-12,
+        "angular_speed_rad_s": 1.0197599365521062e-12,
+        "penetration_m": 1.4573666871313415e-06,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.9999999999999994,
+        "bounds_min_m": [
+          0.34777656778707494,
+          0.0948431209022768,
+          0.7599985426333293
+        ],
+        "bounds_max_m": [
+          0.40901738796734066,
+          0.1587426644864552,
+          0.8239985426333306
+        ]
+      },
+      "glass": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          -0.12366669212246051,
+          0.3190695767662406,
+          0.833998542633326
+        ],
+        "quaternion_wxyz": [
+          5.199562929409548e-15,
+          0.39793639058232105,
+          0.9174130089824939,
+          4.431334114066402e-15
+        ],
+        "speed_m_s": 3.431572567824538e-12,
+        "angular_speed_rad_s": 5.398889103748292e-13,
+        "penetration_m": 1.4573666916194513e-06,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.999999999999999,
+        "bounds_min_m": [
+          -0.1480091464655223,
+          0.29472712223288544,
+          0.7599985426333257
+        ],
+        "bounds_max_m": [
+          -0.09932423765875598,
+          0.3434120312122815,
+          0.8339985426333263
+        ]
+      },
+      "bottle": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          -0.045774824248211846,
+          0.1353147737107145,
+          0.7839996265132217
+        ],
+        "quaternion_wxyz": [
+          0.5471825366225009,
+          -0.5475454016829913,
+          0.4477955537133444,
+          -0.44750915832610233
+        ],
+        "speed_m_s": 2.4497670523183134e-08,
+        "angular_speed_rad_s": 1.0878038998059138e-07,
+        "penetration_m": 5.596452526090496e-05,
+        "table_contact": true,
+        "realized_family": "sideways",
+        "body_up_z": -0.0006536496592582097,
+        "bounds_min_m": [
+          -0.05053715426882475,
+          0.11179200901616154,
+          0.759944035474761
+        ],
+        "bounds_max_m": [
+          0.09362539277244698,
+          0.17651020765720876,
+          0.8079996213861267
+        ]
+      },
+      "fork": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.18186899685830998,
+          0.11016035142717687,
+          0.7759093864308984
+        ],
+        "quaternion_wxyz": [
+          0.0004212623470825794,
+          -0.7467719338141809,
+          0.6650799656027027,
+          -0.0003751791174585022
+        ],
+        "speed_m_s": 8.0816947609068e-11,
+        "angular_speed_rad_s": 3.6224419419030933e-09,
+        "penetration_m": 0.00010752671725330082,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.9999993635573283,
+        "bounds_min_m": [
+          0.12427763104736275,
+          0.09519286383466936,
+          0.7598924732828279
+        ],
+        "bounds_max_m": [
+          0.23505221119446548,
+          0.12074525928770732,
+          0.7759691821989717
+        ]
+      },
+      "spoon": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          -0.42167403979555634,
+          0.3152385824359346,
+          0.7599650666438087
+        ],
+        "quaternion_wxyz": [
+          0.4909493760234766,
+          4.23964479503686e-06,
+          -7.523429087444101e-06,
+          -0.8711881025975862
+        ],
+        "speed_m_s": 8.845023372622085e-11,
+        "angular_speed_rad_s": 1.4060621742271328e-09,
+        "penetration_m": 3.5848748937182494e-05,
+        "table_contact": true,
+        "realized_family": "upright",
+        "body_up_z": 0.9999999998508466,
+        "bounds_min_m": [
+          -0.4693421756416347,
+          0.2819414829978453,
+          0.7599641512510312
+        ],
+        "bounds_max_m": [
+          -0.3719455998989703,
+          0.3465387921397252,
+          0.775965325715461
+        ]
+      }
+    },
+    "meaning": "Stable supported geometry only; manipulation feasibility remains unmeasured."
+  },
+  "wall_s": 13.875315399840474
+}

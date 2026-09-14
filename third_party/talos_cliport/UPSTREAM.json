@@ -1,0 +1,88 @@
+{
+  "cliport_revision": "2be5c47b5bb9bb7040ad90693288b87b1e18e7ad",
+  "clip_revision": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "preflight": {
+    "free_bytes": 548215414784,
+    "estimated_additional_bytes": 16777216,
+    "reserve_bytes": 10737418240
+  },
+  "sources": [
+    {
+      "path": "models/resnet.py",
+      "upstream_sha256": "31262d52a177a0d3eee60caa5b7dafabb32aec924aae2f4908b15bff93278023",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/models/resnet.py"
+    },
+    {
+      "path": "models/resnet_lat.py",
+      "upstream_sha256": "cccb43f9b5debd8cd9e6f1601cdcc013dee57b042836d01671b125ea6009c074",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/models/resnet_lat.py"
+    },
+    {
+      "path": "models/clip_lingunet_lat.py",
+      "upstream_sha256": "e53b7c338198bdb92c84f872066d467e4eef4d40dafc9d61e0ac691809efc5c3",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/models/clip_lingunet_lat.py"
+    },
+    {
+      "path": "models/core/attention.py",
+      "upstream_sha256": "fd9d5a354458821c8c5ea4ec1466fc8ee33895d448557473475f4ae45cdc5fe0",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/models/core/attention.py"
+    },
+    {
+      "path": "models/core/transport.py",
+      "upstream_sha256": "9ccf77441d4454ea9f6bed908f8b9a8881037abf97cdec200bc0998745dd6d55",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/models/core/transport.py"
+    },
+    {
+      "path": "models/core/fusion.py",
+      "upstream_sha256": "156c27a55f58d417c59e446504764d314b6530afa332f902dfa828b5a30f945f",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/models/core/fusion.py"
+    },
+    {
+      "path": "models/core/clip.py",
+      "upstream_sha256": "ff228f3c1180c23769815be0a8d41f7bf77bddccc2a82fd77fb318b56a1e597d",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/models/core/clip.py"
+    },
+    {
+      "path": "models/streams/two_stream_attention_lang_fusion.py",
+      "upstream_sha256": "efc8b18a2b02564ac4df39133796ee2c8ed3e5cd50732d5dcc64d752970bc9bd",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/models/streams/two_stream_attention_lang_fusion.py"
+    },
+    {
+      "path": "models/streams/two_stream_transport_lang_fusion.py",
+      "upstream_sha256": "23c23872bea85780da65aea0718723bb817623e14247a177519c659a2e1e17ec",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/models/streams/two_stream_transport_lang_fusion.py"
+    },
+    {
+      "path": "utils/simple_tokenizer.py",
+      "upstream_sha256": "e0f5830b4c969099e64212f8058746559ccd14b9df9b3ceaa3993c5bb4c554ff",
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/utils/simple_tokenizer.py"
+    },
+    {
+      "path": "utils/utils.py",
+      "upstream_sha256": "930285f2ae9155a4e867143d6a92cbced96e961c10b3fe39b242316eb12139ea",
+      "selected_definitions": [
+        "preprocess",
+        "ImageRotator"
+      ],
+      "url": "https://raw.githubusercontent.com/cliport/cliport/2be5c47b5bb9bb7040ad90693288b87b1e18e7ad/cliport/utils/utils.py"
+    },
+    {
+      "path": "LICENSE-CLIP",
+      "url": "https://raw.githubusercontent.com/openai/CLIP/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE",
+      "upstream_sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db"
+    },
+    {
+      "path": "utils/bpe_simple_vocab_16e6.txt.gz",
+      "url": "https://raw.githubusercontent.com/openai/CLIP/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/bpe_simple_vocab_16e6.txt.gz",
+      "upstream_sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a"
+    }
+  ],
+  "adaptations": [
+    "Local package namespace and minimal registry.",
+    "Only preprocessing and rotation utilities retained; current Kornia API names.",
+    "GPL-3.0 unet.py was not downloaded or copied; original Talos UpsampleMerge supplies the interface.",
+    "Frozen CLIP RN50 weights shared across streams and loaded only from an explicitly hash-verified local file.",
+    "Upstream implicit downloads disabled; exact weight download and reserve checks are separate."
+  ],
+  "claim": "Architecture compatibility only; no pretrained robotics weights or Talos fit."
+}

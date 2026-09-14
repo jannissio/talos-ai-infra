@@ -1,0 +1,52 @@
+{
+  "item": "mug",
+  "arm": "left",
+  "status": "failed",
+  "message": "The manipulated item penetrated external geometry by more than 1 mm.",
+  "metrics": {
+    "gripper_torque_limit_nm": 0.4,
+    "other_arm_max_motion_deg": 3.5285073636156253e-11,
+    "hold_verified_s": 0.0,
+    "unexpected_collisions": 0,
+    "controller": "shared_exact_state_physical_teacher",
+    "lift_cm": -0.048544693211727274,
+    "max_lift_cm": 1.8378631949644841e-10,
+    "both_fingers": false,
+    "finger_forces_n": [
+      41.59520283461629,
+      0.0
+    ],
+    "external_contact_n": 38.923774607479444,
+    "tilt_deg": 90.11264139156121,
+    "peak_tilt_deg": 90.11264139156121,
+    "maximum_external_penetration_mm": 1.0009582875948568,
+    "other_object_max_displacement_mm": 9.78433257735698e-05
+  },
+  "history": [
+    {
+      "stage": "planning",
+      "at_s": 0.0,
+      "message": "Check reach and clearance"
+    },
+    {
+      "stage": "approach",
+      "at_s": 0.0,
+      "message": "Approach the object"
+    },
+    {
+      "stage": "descend",
+      "at_s": 2.855,
+      "message": "Align the fingers"
+    },
+    {
+      "stage": "failed",
+      "at_s": 4.18,
+      "message": "The manipulated item penetrated external geometry by more than 1 mm."
+    }
+  ],
+  "frames": 837,
+  "observations": 2,
+  "replay_exact": true,
+  "replay_max_state_error": 0.0,
+  "demonstration_eligible": false
+}

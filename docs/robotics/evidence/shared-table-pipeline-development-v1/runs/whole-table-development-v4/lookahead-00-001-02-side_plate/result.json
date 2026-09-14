@@ -1,0 +1,66 @@
+{
+  "item": "side_plate",
+  "arm": "right",
+  "status": "failed",
+  "message": "Hold lost independent support.",
+  "metrics": {
+    "gripper_torque_limit_nm": 0.5,
+    "other_arm_max_motion_deg": 4.591448738160733e-11,
+    "hold_verified_s": 0.3099999999999383,
+    "unexpected_collisions": 0,
+    "controller": "shared_exact_state_physical_teacher",
+    "lift_cm": 4.177370930102853,
+    "max_lift_cm": 5.414076299743076,
+    "both_fingers": false,
+    "finger_forces_n": [
+      0.0,
+      0.02431401176471618
+    ],
+    "external_contact_n": 0.0,
+    "tilt_deg": 23.0857687763902,
+    "peak_tilt_deg": 23.0857687763902,
+    "other_object_max_displacement_mm": 0.00034929683806935835
+  },
+  "history": [
+    {
+      "stage": "planning",
+      "at_s": 0.0,
+      "message": "Check reach and clearance"
+    },
+    {
+      "stage": "approach",
+      "at_s": 0.0,
+      "message": "Approach the object"
+    },
+    {
+      "stage": "descend",
+      "at_s": 3.04,
+      "message": "Align the fingers"
+    },
+    {
+      "stage": "close",
+      "at_s": 6.34,
+      "message": "Grasp and check both fingers"
+    },
+    {
+      "stage": "lift",
+      "at_s": 10.64,
+      "message": "Lift the object"
+    },
+    {
+      "stage": "hold",
+      "at_s": 13.94,
+      "message": "Verify an unsupported hold"
+    },
+    {
+      "stage": "failed",
+      "at_s": 14.255,
+      "message": "Hold lost independent support."
+    }
+  ],
+  "frames": 2852,
+  "observations": 5,
+  "replay_exact": true,
+  "replay_max_state_error": 0.0,
+  "demonstration_eligible": false
+}

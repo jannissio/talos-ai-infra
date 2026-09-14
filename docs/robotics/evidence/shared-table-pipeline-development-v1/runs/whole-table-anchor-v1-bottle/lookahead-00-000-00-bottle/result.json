@@ -1,0 +1,101 @@
+{
+  "item": "bottle",
+  "arm": "left",
+  "status": "succeeded",
+  "message": "bottle physically lifted, held, oriented, placed and released; both arms parked.",
+  "metrics": {
+    "gripper_torque_limit_nm": 0.4,
+    "other_arm_max_motion_deg": 3.544410137022943e-11,
+    "hold_verified_s": 1.804999999999641,
+    "unexpected_collisions": 0,
+    "controller": "shared_exact_state_physical_teacher",
+    "lift_cm": -2.307425384096007e-05,
+    "max_lift_cm": 6.580396584851633,
+    "both_fingers": false,
+    "finger_forces_n": [
+      0.0,
+      0.0
+    ],
+    "external_contact_n": 0.8303660129647199,
+    "tilt_deg": 0.0004614952595299231,
+    "peak_tilt_deg": 1.2972762347489124,
+    "maximum_external_penetration_mm": 0.152513198127147,
+    "other_object_max_displacement_mm": 0.00658821686477486,
+    "placement_xy_error_mm": 0.25498415799246704,
+    "placement_z_error_mm": 0.056739397743310604,
+    "placement_yaw_error_deg": 0.0,
+    "placement_speed_mm_s": 0.014761329429084452
+  },
+  "history": [
+    {
+      "stage": "planning",
+      "at_s": 0.0,
+      "message": "Check reach and clearance"
+    },
+    {
+      "stage": "approach",
+      "at_s": 0.0,
+      "message": "Approach the object"
+    },
+    {
+      "stage": "descend",
+      "at_s": 3.87,
+      "message": "Align the fingers"
+    },
+    {
+      "stage": "close",
+      "at_s": 7.17,
+      "message": "Grasp and check both fingers"
+    },
+    {
+      "stage": "lift",
+      "at_s": 11.47,
+      "message": "Lift the object"
+    },
+    {
+      "stage": "hold",
+      "at_s": 14.775,
+      "message": "Verify an unsupported hold"
+    },
+    {
+      "stage": "align",
+      "at_s": 16.58,
+      "message": "Move over the placement guide"
+    },
+    {
+      "stage": "lower",
+      "at_s": 20.885,
+      "message": "Lower to measured table support"
+    },
+    {
+      "stage": "release",
+      "at_s": 24.245,
+      "message": "Release the object"
+    },
+    {
+      "stage": "retract",
+      "at_s": 28.55,
+      "message": "Withdraw the gripper"
+    },
+    {
+      "stage": "park",
+      "at_s": 31.85,
+      "message": "Park the working arm"
+    },
+    {
+      "stage": "verify",
+      "at_s": 35.72,
+      "message": "Verify stable placement"
+    },
+    {
+      "stage": "succeeded",
+      "at_s": 36.225,
+      "message": "bottle physically lifted, held, oriented, placed and released; both arms parked."
+    }
+  ],
+  "frames": 7246,
+  "observations": 11,
+  "replay_exact": true,
+  "replay_max_state_error": 0.0,
+  "demonstration_eligible": true
+}

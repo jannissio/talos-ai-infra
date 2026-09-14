@@ -1,0 +1,80 @@
+{
+  "scope": "Architecture compatibility/memory smoke only; no trained robotics policy.",
+  "preflight": {
+    "free_bytes": 547926183936,
+    "estimated_additional_bytes": 134217728,
+    "reserve_bytes": 10737418240
+  },
+  "rotations": 36,
+  "heads": [
+    {
+      "name": "pick",
+      "logit_shape": [
+        1,
+        81920
+      ],
+      "loss": 11.313444137573242,
+      "wall_s": 1.564334699884057,
+      "peak_allocated_bytes": 2881495040,
+      "peak_reserved_bytes": 3177185280,
+      "finite_gradients": true
+    },
+    {
+      "name": "place",
+      "logit_shape": [
+        1,
+        36,
+        256,
+        320
+      ],
+      "loss": 14.910037994384766,
+      "wall_s": 1.3488704999908805,
+      "peak_allocated_bytes": 5126883328,
+      "peak_reserved_bytes": 5899288576,
+      "finite_gradients": true
+    }
+  ],
+  "passed": true,
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "mujoco": "3.12.0",
+    "numpy": "2.2.6",
+    "kornia": "0.8.2",
+    "ftfy": "6.3.1",
+    "regex": "2024.11.6"
+  },
+  "sources_sha256": {
+    "third_party/talos_cliport/support.py": "fc18991322c5d29f74111ab674771f1e3d13da6fbfd27538be54174a1934fd9a",
+    "third_party/talos_cliport/__init__.py": "133f37980a4fa6324f568b161b5759454bec9849454a6d6ccb43691c2a96410a",
+    "third_party/talos_cliport/models/clip_lingunet_lat.py": "455f53dc729d7767d13bb94529153a9de9fd0dd39f45e39dab9580bcf92fb65a",
+    "third_party/talos_cliport/models/resnet.py": "7da9b6cf02bb0fe8be7884de71ac88af40317e022f50e2c92448c414f00d8b4b",
+    "third_party/talos_cliport/models/resnet_lat.py": "b1974a8deef285646f115fbd69c857a565f25495ca670e42b5429e374780b574",
+    "third_party/talos_cliport/models/__init__.py": "741f1eb747d4500183e4c970292e6f87d164edf9d043ba1184b1311bcedc8c8c",
+    "third_party/talos_cliport/utils/simple_tokenizer.py": "b6a3a39c54cc2ed33c1e09e1d75eb068dd5c6273dba68427be3f81593a9ab428",
+    "third_party/talos_cliport/utils/utils.py": "1282fa741e4d52152e4a0345ef3b2fd08a882948bb093acca95232c192a690d1",
+    "third_party/talos_cliport/utils/__init__.py": "133f37980a4fa6324f568b161b5759454bec9849454a6d6ccb43691c2a96410a",
+    "third_party/talos_cliport/models/core/attention.py": "7f1cc625336cb9671f8c809b31600eda23e98ad5b29cf1184db59fd69c3b07ab",
+    "third_party/talos_cliport/models/core/clip.py": "384fb574d6087c37c026f3abec0e2fb86d6673bdb8ef1bfbbe78cb08f66a09d0",
+    "third_party/talos_cliport/models/core/fusion.py": "3d82856ae9ca01008e380599890c5bd3cfbe8cb181ec5b26f10df103607cc124",
+    "third_party/talos_cliport/models/core/transport.py": "55eea8c84dfcf1742688c90b4a85286898ccf4b0dd7bebebfa5fde018bac9209",
+    "third_party/talos_cliport/models/core/__init__.py": "133f37980a4fa6324f568b161b5759454bec9849454a6d6ccb43691c2a96410a",
+    "third_party/talos_cliport/models/streams/two_stream_attention_lang_fusion.py": "be951960ee13c4494ea9da0c2bf12a2de28679827c3e2846c954c53505daabcd",
+    "third_party/talos_cliport/models/streams/two_stream_transport_lang_fusion.py": "9dbe47094055ed80f511fd661789a1345ade7cfd2ac0ebcdc5e3e7e3ae32c361",
+    "third_party/talos_cliport/models/streams/__init__.py": "133f37980a4fa6324f568b161b5759454bec9849454a6d6ccb43691c2a96410a",
+    "simulation_lab/table_observation.py": "456b9896641fa12bc4b90ac625ffadb1fd0f14a48776fc95f7d5baef7de651c5",
+    "scripts/check_spatial_runtime.py": "3f2cbe8737c653cedd8f730e8bc072e730927a3db4e481178b723a0cefa470be"
+  },
+  "gpu": "NVIDIA GeForce RTX 4070",
+  "total_vram_bytes": 12878086144,
+  "observation_wall_s": 0.21829270012676716,
+  "observed_cells": 76730,
+  "image_shape": [
+    256,
+    320,
+    6
+  ],
+  "trainable_parameters": 277007371,
+  "frozen_parameters": 102007137,
+  "peak_reserved_bytes": 5899288576
+}

@@ -1,0 +1,2468 @@
+{
+  "seed": 2026114001,
+  "preflight": {
+    "free_bytes": 547866632192,
+    "estimated_additional_bytes": 8589934592,
+    "reserve_bytes": 10737418240
+  },
+  "scope": "Exposed development of a shared exact-state physical teacher; not learned evaluation.",
+  "whole_table_complete": false,
+  "actions": [],
+  "planning_failures": [
+    {
+      "action_index": 0,
+      "attempt_index": 0,
+      "grasp_attempt": 0,
+      "item": "plate",
+      "role": "final_setting",
+      "message": "No candidate grasp/approach solved for plate; 144 attempts retained.",
+      "search": [
+        {
+          "arm": "right",
+          "candidate": "rim_-3.14159",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-3.14159",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-3.14159",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-3.14159",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-3.14159",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-3.14159",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-2.61799",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-2.61799",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-2.61799",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-2.61799",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-2.61799",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-2.61799",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-2.09440",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-2.09440",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-2.09440",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-2.09440",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-2.09440",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-2.09440",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-1.57080",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-1.57080",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-1.57080",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-1.57080",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-1.57080",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-1.57080",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-1.04720",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-1.04720",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-1.04720",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-1.04720",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-1.04720",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-1.04720",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-0.52360",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-0.52360",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_-0.52360",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-0.52360",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-0.52360",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_-0.52360",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_0.00000",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_0.00000",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_0.00000",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_0.00000",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_0.00000",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_0.00000",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_0.52360",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_0.52360",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_0.52360",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_0.52360",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_0.52360",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_0.52360",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_1.04720",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_1.04720",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_1.04720",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_1.04720",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_1.04720",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_1.04720",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_1.57080",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_1.57080",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_1.57080",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_1.57080",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_1.57080",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_1.57080",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_2.09440",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_2.09440",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_2.09440",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_2.09440",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_2.09440",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_2.09440",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_2.61799",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_2.61799",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "rim_2.61799",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "Grasp has no solved destination approach: The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach.; The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_2.61799",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_2.61799",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "face_pinch_2.61799",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-3.14159",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-3.14159",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-3.14159",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-3.14159",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-3.14159",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-3.14159",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-2.61799",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-2.61799",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-2.61799",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-2.61799",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-2.61799",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-2.61799",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-2.09440",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-2.09440",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-2.09440",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-2.09440",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-2.09440",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-2.09440",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-1.57080",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-1.57080",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-1.57080",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-1.57080",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-1.57080",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-1.57080",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-1.04720",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-1.04720",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-1.04720",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-1.04720",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-1.04720",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-1.04720",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-0.52360",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-0.52360",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_-0.52360",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-0.52360",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-0.52360",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_-0.52360",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_0.00000",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_0.00000",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_0.00000",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_0.00000",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_0.00000",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_0.00000",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_0.52360",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_0.52360",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_0.52360",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_0.52360",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_0.52360",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_0.52360",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_1.04720",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_1.04720",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_1.04720",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_1.04720",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_1.04720",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_1.04720",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_1.57080",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_1.57080",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_1.57080",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_1.57080",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_1.57080",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_1.57080",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_2.09440",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_2.09440",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_2.09440",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_2.09440",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_2.09440",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_2.09440",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_2.61799",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_2.61799",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "rim_2.61799",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_2.61799",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_2.61799",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "face_pinch_2.61799",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        }
+      ]
+    },
+    {
+      "action_index": 0,
+      "attempt_index": 2,
+      "grasp_attempt": 0,
+      "item": "fork",
+      "role": "final_setting",
+      "message": "No candidate grasp/approach solved for fork; 36 attempts retained.",
+      "search": [
+        {
+          "arm": "right",
+          "candidate": "handle_-0.015_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.015_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.015_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.015_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.015_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.015_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.03_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.03_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.03_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.03_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.03_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_-0.03_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_0.0_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_0.0_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_0.0_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_0.0_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_0.0_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "handle_0.0_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.015_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.015_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.015_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.015_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.015_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.015_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.03_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.03_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.03_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.03_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.03_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_-0.03_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_0.0_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_0.0_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_0.0_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_0.0_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_0.0_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "handle_0.0_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        }
+      ]
+    },
+    {
+      "action_index": 0,
+      "attempt_index": 3,
+      "grasp_attempt": 0,
+      "item": "bottle",
+      "role": "final_setting",
+      "message": "No candidate grasp/approach solved for bottle; 48 attempts retained.",
+      "search": [
+        {
+          "arm": "left",
+          "candidate": "body_band_0.128_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.128_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.128_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.128_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.128_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.128_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.116_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.116_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.116_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.116_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.116_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.116_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.07_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.07_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.07_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.07_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.07_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.07_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.04_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.04_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.04_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.04_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.04_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "left",
+          "candidate": "body_band_0.04_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.128_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.128_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.128_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.128_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.128_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.128_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.116_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.116_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.116_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.116_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.116_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.116_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.07_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.07_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.07_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.07_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.07_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.07_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.04_1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.04_1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.04_1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.04_-1",
+          "initial_wrist_roll": -2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.04_-1",
+          "initial_wrist_roll": 0.0,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        },
+        {
+          "arm": "right",
+          "candidate": "body_band_0.04_-1",
+          "initial_wrist_roll": 2.4,
+          "planned": false,
+          "error": "The requested gripper pose is outside this arm's useful reach."
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "plate",
+    "side_plate",
+    "mug",
+    "glass",
+    "bottle",
+    "fork",
+    "spoon"
+  ],
+  "only_item_diagnostic": null,
+  "maximum_actions": 14,
+  "lookahead_attempts_per_item": 8,
+  "physical_lookahead": [
+    {
+      "item": "side_plate",
+      "arm": "right",
+      "status": "failed",
+      "message": "Hold lost independent support.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.5,
+        "other_arm_max_motion_deg": 3.543137915150358e-11,
+        "hold_verified_s": 0.3649999999999274,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": 4.230518681049455,
+        "max_lift_cm": 5.251902714594447,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.05980724671771457
+        ],
+        "external_contact_n": 0.0,
+        "tilt_deg": 21.302898636706278,
+        "peak_tilt_deg": 21.302898636706278,
+        "other_object_max_displacement_mm": 0.0003550548576675013
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.22,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.52,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 10.82,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 14.12,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "failed",
+          "at_s": 14.49,
+          "message": "Hold lost independent support."
+        }
+      ],
+      "frames": 2899,
+      "observations": 5,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "role": "final_setting",
+      "path": "lookahead-00-001-00-side_plate",
+      "candidate": "rim_-3.14159",
+      "action_index": 0
+    },
+    {
+      "item": "side_plate",
+      "arm": "right",
+      "status": "failed",
+      "message": "Hold lost independent support.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.5,
+        "other_arm_max_motion_deg": 5.636197339927869e-10,
+        "hold_verified_s": 0.5199999999998965,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": 3.8807100978293207,
+        "max_lift_cm": 5.090808810551262,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.027855726430251523
+        ],
+        "external_contact_n": 0.0,
+        "tilt_deg": 22.117016697824734,
+        "peak_tilt_deg": 22.117016697824734,
+        "other_object_max_displacement_mm": 0.0003572200030208671
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.155,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.455,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 10.755,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 14.055,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "failed",
+          "at_s": 14.58,
+          "message": "Hold lost independent support."
+        }
+      ],
+      "frames": 2917,
+      "observations": 5,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "role": "final_setting",
+      "path": "lookahead-00-001-01-side_plate",
+      "candidate": "low_rim_-3.14159",
+      "action_index": 0
+    },
+    {
+      "item": "side_plate",
+      "arm": "right",
+      "status": "failed",
+      "message": "Hold lost independent support.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.5,
+        "other_arm_max_motion_deg": 3.543137915150358e-11,
+        "hold_verified_s": 0.3099999999999383,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": 4.297339922088117,
+        "max_lift_cm": 5.27089148591674,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.05653556315394683
+        ],
+        "external_contact_n": 0.0,
+        "tilt_deg": 21.310024511107194,
+        "peak_tilt_deg": 21.310024511107194,
+        "other_object_max_displacement_mm": 0.00035285102034473653
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.185,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.485,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 10.785,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 14.085,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "failed",
+          "at_s": 14.4,
+          "message": "Hold lost independent support."
+        }
+      ],
+      "frames": 2881,
+      "observations": 5,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "role": "final_setting",
+      "path": "lookahead-00-001-02-side_plate",
+      "candidate": "rim_-2.61799",
+      "action_index": 0
+    },
+    {
+      "item": "side_plate",
+      "arm": "right",
+      "status": "failed",
+      "message": "Lift routes unsolved: The carried tube's path intersects table.; The carried tube's path intersects table.; The carried tube's path intersects table.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.5,
+        "other_arm_max_motion_deg": 5.472653218207015e-10,
+        "hold_verified_s": 0.0,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": -0.37477005494946924,
+        "max_lift_cm": 5.84405736026028e-06,
+        "both_fingers": true,
+        "finger_forces_n": [
+          12.904203367752007,
+          7.322777764132487
+        ],
+        "external_contact_n": 5.073787127314176,
+        "tilt_deg": 0.47134612365476086,
+        "peak_tilt_deg": 2.0956139896871058,
+        "other_object_max_displacement_mm": 0.0002627320672288247
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.125,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.425,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "failed",
+          "at_s": 10.725,
+          "message": "Lift routes unsolved: The carried tube's path intersects table.; The carried tube's path intersects table.; The carried tube's path intersects table."
+        }
+      ],
+      "frames": 2146,
+      "observations": 3,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "role": "final_setting",
+      "path": "lookahead-00-001-03-side_plate",
+      "candidate": "low_rim_-2.61799",
+      "action_index": 0
+    },
+    {
+      "item": "side_plate",
+      "arm": "right",
+      "status": "failed",
+      "message": "Hold lost independent support.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.5,
+        "other_arm_max_motion_deg": 4.591448738160733e-11,
+        "hold_verified_s": 0.3099999999999383,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": 4.177370930102853,
+        "max_lift_cm": 5.414076299743076,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.02431401176471618
+        ],
+        "external_contact_n": 0.0,
+        "tilt_deg": 23.0857687763902,
+        "peak_tilt_deg": 23.0857687763902,
+        "other_object_max_displacement_mm": 0.00034929683806935835
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.04,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.34,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 10.64,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 13.94,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "failed",
+          "at_s": 14.255,
+          "message": "Hold lost independent support."
+        }
+      ],
+      "frames": 2852,
+      "observations": 5,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "role": "final_setting",
+      "path": "lookahead-00-001-04-side_plate",
+      "candidate": "rim_-2.09440",
+      "action_index": 0
+    },
+    {
+      "item": "side_plate",
+      "arm": "right",
+      "status": "failed",
+      "message": "Hold lost independent support.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.5,
+        "other_arm_max_motion_deg": 5.615332901217468e-10,
+        "hold_verified_s": 0.2949999999999413,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": 3.891100703419559,
+        "max_lift_cm": 4.890750723069948,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.036547316644267844
+        ],
+        "external_contact_n": 0.0,
+        "tilt_deg": 22.21501850976846,
+        "peak_tilt_deg": 22.21501850976846,
+        "other_object_max_displacement_mm": 0.00034729499865193507
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 2.975,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.275,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 10.575,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 13.875,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "failed",
+          "at_s": 14.175,
+          "message": "Hold lost independent support."
+        }
+      ],
+      "frames": 2836,
+      "observations": 5,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "role": "final_setting",
+      "path": "lookahead-00-001-05-side_plate",
+      "candidate": "low_rim_-2.09440",
+      "action_index": 0
+    },
+    {
+      "item": "side_plate",
+      "arm": "right",
+      "status": "failed",
+      "message": "Hold lost independent support.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.5,
+        "other_arm_max_motion_deg": 3.543137915150358e-11,
+        "hold_verified_s": 0.3599999999999284,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": 4.267210444626402,
+        "max_lift_cm": 5.324865120110534,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.03722063582433962
+        ],
+        "external_contact_n": 0.0,
+        "tilt_deg": 21.831145869050644,
+        "peak_tilt_deg": 21.831145869050644,
+        "other_object_max_displacement_mm": 0.00035321844398684716
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.15,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.45,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 10.75,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 14.05,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "failed",
+          "at_s": 14.415,
+          "message": "Hold lost independent support."
+        }
+      ],
+      "frames": 2884,
+      "observations": 5,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "role": "final_setting",
+      "path": "lookahead-00-001-06-side_plate",
+      "candidate": "rim_-1.57080",
+      "action_index": 0
+    },
+    {
+      "item": "side_plate",
+      "arm": "right",
+      "status": "failed",
+      "message": "Hold lost independent support.",
+      "metrics": {
+        "gripper_torque_limit_nm": 0.5,
+        "other_arm_max_motion_deg": 5.57156846880053e-10,
+        "hold_verified_s": 0.5149999999998975,
+        "unexpected_collisions": 0,
+        "controller": "shared_exact_state_physical_teacher",
+        "lift_cm": 3.942895910216515,
+        "max_lift_cm": 4.915669398113376,
+        "both_fingers": false,
+        "finger_forces_n": [
+          0.0,
+          0.08028220630285958
+        ],
+        "external_contact_n": 0.0,
+        "tilt_deg": 22.28511795609031,
+        "peak_tilt_deg": 22.28511795609031,
+        "other_object_max_displacement_mm": 0.0003569754213985105
+      },
+      "history": [
+        {
+          "stage": "planning",
+          "at_s": 0.0,
+          "message": "Check reach and clearance"
+        },
+        {
+          "stage": "approach",
+          "at_s": 0.0,
+          "message": "Approach the object"
+        },
+        {
+          "stage": "descend",
+          "at_s": 3.15,
+          "message": "Align the fingers"
+        },
+        {
+          "stage": "close",
+          "at_s": 6.45,
+          "message": "Grasp and check both fingers"
+        },
+        {
+          "stage": "lift",
+          "at_s": 10.75,
+          "message": "Lift the object"
+        },
+        {
+          "stage": "hold",
+          "at_s": 14.05,
+          "message": "Verify an unsupported hold"
+        },
+        {
+          "stage": "failed",
+          "at_s": 14.57,
+          "message": "Hold lost independent support."
+        }
+      ],
+      "frames": 2915,
+      "observations": 5,
+      "replay_exact": true,
+      "replay_max_state_error": 0.0,
+      "demonstration_eligible": false,
+      "role": "final_setting",
+      "path": "lookahead-00-001-07-side_plate",
+      "candidate": "low_rim_-1.57080",
+      "action_index": 0
+    }
+  ],
+  "lookahead_contract": "Privileged training teacher searches independent copied physics states. Only a fully passing action is replayed through motor commands in the continuously evolving main scene. Failed searches remain; this is not learned online recovery.",
+  "generated": true,
+  "valid_initial_geometry": true,
+  "stop_reason": "No current candidate action solved; remaining items are unsolved, not classified impossible.",
+  "final_geometry": {
+    "valid": true,
+    "objects": {
+      "plate": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.09149927176511662,
+          -0.21447325135583734,
+          0.7599429132911615
+        ],
+        "quaternion_wxyz": [
+          0.9977339214052084,
+          1.65904066093917e-06,
+          -2.7353059983216547e-06,
+          0.06728314846341782
+        ],
+        "speed_m_s": 7.752585475750903e-06,
+        "angular_speed_rad_s": 0.003914700034905304,
+        "penetration_m": 5.771267186155544e-05,
+        "table_contact": true,
+        "realized_family": "upright",
+        "body_up_z": 0.9999999998737612,
+        "bounds_min_m": [
+          0.024930107021748457,
+          -0.28104237853521913,
+          0.7599425421942196
+        ],
+        "bounds_max_m": [
+          0.15806828956103247,
+          -0.1479042273890634,
+          0.7839433376732704
+        ]
+      },
+      "side_plate": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.369745213553561,
+          -0.04776129089672604,
+          0.7599424349344392
+        ],
+        "quaternion_wxyz": [
+          0.3595595236195352,
+          3.290622296633057e-06,
+          -8.768702614512454e-06,
+          -0.9331221511071184
+        ],
+        "speed_m_s": 2.604909941825938e-05,
+        "angular_speed_rad_s": 0.006782529000897203,
+        "penetration_m": 5.8054354681678426e-05,
+        "table_contact": true,
+        "realized_family": "upright",
+        "body_up_z": 0.9999999997824237,
+        "bounds_min_m": [
+          0.3164634037073042,
+          -0.10104289579699367,
+          0.7599415920118099
+        ],
+        "bounds_max_m": [
+          0.42302682450647106,
+          0.005520537665437995,
+          0.7719434288183
+        ]
+      },
+      "mug": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.3731393288950936,
+          0.1202058819236968,
+          0.8239985426342319
+        ],
+        "quaternion_wxyz": [
+          -1.2149423017162433e-14,
+          0.9160394576668629,
+          0.4010881598818383,
+          -7.522252746117917e-15
+        ],
+        "speed_m_s": 3.5665069379873334e-11,
+        "angular_speed_rad_s": 1.1117094804538609e-12,
+        "penetration_m": 1.4573659470127386e-06,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.9999999999999994,
+        "bounds_min_m": [
+          0.3477765677870715,
+          0.09484312090226663,
+          0.7599985426342312
+        ],
+        "bounds_max_m": [
+          0.4090173879673376,
+          0.15874266448644506,
+          0.8239985426342326
+        ]
+      },
+      "glass": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          -0.12366669212246843,
+          0.31906957676626596,
+          0.8339985426340508
+        ],
+        "quaternion_wxyz": [
+          1.64970295041086e-14,
+          0.39793639058232105,
+          0.9174130089824939,
+          -9.933157922317419e-15
+        ],
+        "speed_m_s": 1.4000486963379113e-10,
+        "angular_speed_rad_s": 9.00924414021007e-12,
+        "penetration_m": 1.4573666493218755e-06,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.999999999999999,
+        "bounds_min_m": [
+          -0.14800914646552957,
+          0.2947271222329082,
+          0.75999854263405
+        ],
+        "bounds_max_m": [
+          -0.09932423765876322,
+          0.34341203121230435,
+          0.8339985426340517
+        ]
+      },
+      "bottle": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          -0.04577523570140577,
+          0.13531483649333606,
+          0.783999626513224
+        ],
+        "quaternion_wxyz": [
+          0.5471821216397393,
+          -0.5475449864622778,
+          0.4477960614271397,
+          -0.44750966573717654
+        ],
+        "speed_m_s": 2.4491104870655572e-08,
+        "angular_speed_rad_s": 1.0869164008335565e-07,
+        "penetration_m": 5.5964525451018506e-05,
+        "table_contact": true,
+        "realized_family": "sideways",
+        "body_up_z": -0.0006536496592705054,
+        "bounds_min_m": [
+          -0.050537522097623,
+          0.11179206296679498,
+          0.7599440354745673
+        ],
+        "bounds_max_m": [
+          0.09362501284511296,
+          0.17651010803727746,
+          0.8079996213861289
+        ]
+      },
+      "fork": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          0.18186899672716478,
+          0.11016035255668047,
+          0.7759093864308974
+        ],
+        "quaternion_wxyz": [
+          0.00042126232736226907,
+          -0.7467719381171547,
+          0.665079960771194,
+          -0.00037517913957654114
+        ],
+        "speed_m_s": 5.1488334312967464e-11,
+        "angular_speed_rad_s": 4.205578038136329e-09,
+        "penetration_m": 0.00010752671738233229,
+        "table_contact": true,
+        "realized_family": "inverted",
+        "body_up_z": -0.9999993635573293,
+        "bounds_min_m": [
+          0.1242776308926904,
+          0.09519286424401152,
+          0.759892473282528
+        ],
+        "bounds_max_m": [
+          0.2350522110421568,
+          0.12074526109089886,
+          0.7759691821992685
+        ]
+      },
+      "spoon": {
+        "valid": true,
+        "reasons": [],
+        "position_m": [
+          -0.42167403933001474,
+          0.3152385832048171,
+          0.7599650666438079
+        ],
+        "quaternion_wxyz": [
+          0.4909493761995457,
+          4.2396473509186556e-06,
+          -7.523427646840297e-06,
+          -0.8711881024983653
+        ],
+        "speed_m_s": 2.575584363879402e-10,
+        "angular_speed_rad_s": 1.3828707615678526e-08,
+        "penetration_m": 3.5848748631738015e-05,
+        "table_contact": true,
+        "realized_family": "upright",
+        "body_up_z": 0.9999999998508488,
+        "bounds_min_m": [
+          -0.4693421751856816,
+          0.2819414837830034,
+          0.7599641512510569
+        ],
+        "bounds_max_m": [
+          -0.3719455994229899,
+          0.3465387928911441,
+          0.7759653257154339
+        ]
+      }
+    },
+    "meaning": "Stable supported geometry only; manipulation feasibility remains unmeasured."
+  },
+  "final_task_checks": {
+    "plate": {
+      "passed": false,
+      "xy_error_mm": 242.59460022766604,
+      "yaw_error_rad": 0.0
+    },
+    "side_plate": {
+      "passed": false,
+      "xy_error_mm": 260.7405801437029,
+      "yaw_error_rad": 0.0
+    },
+    "mug": {
+      "passed": false,
+      "xy_error_mm": 158.0079418374215,
+      "yaw_error_rad": 0.0
+    },
+    "glass": {
+      "passed": false,
+      "xy_error_mm": 295.73625753943924,
+      "yaw_error_rad": 0.0
+    },
+    "bottle": {
+      "passed": false,
+      "xy_error_mm": 289.6686671990898,
+      "yaw_error_rad": 0.0
+    },
+    "fork": {
+      "passed": false,
+      "xy_error_mm": 375.4319458021795,
+      "yaw_error_rad": 1.4552020595801016
+    },
+    "spoon": {
+      "passed": false,
+      "xy_error_mm": 618.4386461134719,
+      "yaw_error_rad": 0.5444379916524271
+    }
+  },
+  "wall_s": 98.68437370005995
+}
