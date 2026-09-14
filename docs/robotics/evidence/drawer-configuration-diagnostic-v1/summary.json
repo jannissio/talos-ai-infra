@@ -1,0 +1,115 @@
+{
+  "schema": "talos.drawer-configuration-diagnostic.v1",
+  "protocol_sha256": "e3c98a47260f7fcdf6aa13609ebb7826b1160644be1577edc860ffb8895fe04b",
+  "rows": [
+    {
+      "case": "003-drawer-anchor",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "5d5dbdc70c9182ba8efda5ade2afe950de6df37d9311dc62af791b71b91ccf3c"
+    },
+    {
+      "case": "086-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "43adda6b6af20396260f6a8a89a730123ca86abe4f270878e6d0350cd7eba4a7"
+    },
+    {
+      "case": "087-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "f02604905ae196f45a9846ffae4d0ce2db6dce4b90738faa2cba1d843b74360d"
+    },
+    {
+      "case": "088-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "9d2f24b3452c1e594544d8c3e4db32f09f7f46625de176bd48926265ed914789"
+    },
+    {
+      "case": "089-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The planned path has insufficient clearance: left_shoulder / left_fixed_jaw_box1 Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "2b209a759ed4c1269e7b9c0fec63b3402e2c35028229b2d07625a82de47dca0f"
+    },
+    {
+      "case": "090-drawer-cabinet_position",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "f95c6e47dbe85569df50cd227ec7989fcd33d108b5ce0756b11e7d1a398476c1"
+    },
+    {
+      "case": "091-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "6a1a7f2ca13a29bac8f19d468eabae68cac8b968ec9d2405331993c3f1cfab35"
+    },
+    {
+      "case": "092-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "0ea108db3df3fd0f99299548337d7d057334b2a8a2bcdc1938ca0bdca3a3cac1"
+    },
+    {
+      "case": "093-drawer-cabinet_position",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "1753ebb116391cb2ff967736f84128e76102eff8581a0bbd13bfd09d1945ce97"
+    },
+    {
+      "case": "094-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "a6dded345adb530c01461083e7b85604af157ce2ca83aef63375c1ddd3a139cd"
+    },
+    {
+      "case": "095-drawer-cabinet_orientation",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "66f255b93c36b6d1c12988b82e5163776dac9f71099ff73035c4aafaa18e8d3b"
+    },
+    {
+      "case": "096-drawer-cabinet_orientation",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "b4373471d51e2bc0283820ee3970330becedc54cd006f8231c4f3f28b3abb563"
+    },
+    {
+      "case": "097-drawer-opening",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "6f4947c72e941779ce67d6d4b8494f67e28ef3494bcab3c2ee925cddfe493aa8"
+    },
+    {
+      "case": "098-drawer-opening",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "c083f70dc2151d5bc413005e7dd9e0460059db3649ab0cfc57c4896792c6e654"
+    },
+    {
+      "case": "099-drawer-opening",
+      "status": "already_open",
+      "message": "Already-open semantic verification; no physical opening claimed.",
+      "valid": true,
+      "report_sha256": "17112d3fd49c7d61d00662cf2f815f524acc1ab3997039d5ebaa91c4f022fd4d"
+    }
+  ],
+  "all_15_cases_retained": true,
+  "physical_successes": 5,
+  "already_open": 1,
+  "promotion": false
+}

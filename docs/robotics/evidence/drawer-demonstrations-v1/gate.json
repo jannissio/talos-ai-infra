@@ -1,0 +1,734 @@
+{
+  "schema": "talos.drawer-demonstrations.v1",
+  "protocol_sha256": "9ffce20462c23f1e151c92ff5aef87ea607bc63e752616bc911bfe3f671b1595",
+  "passed": false,
+  "all_80_outcomes_retained": true,
+  "eligible": {
+    "training": 31,
+    "development": 8
+  },
+  "rows": [
+    {
+      "seed": 2026112801,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.970935000106692,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "a89154c7fc1617fb50783d36cdf3be02c820a6f74fda1a1f71df5450caef69f2"
+    },
+    {
+      "seed": 2026112802,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.427534299902618,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "a8ce35e20b4ce02a35eaa994d24a1815f3114b9c82a32fe48bc7a5410b7c2e9f"
+    },
+    {
+      "seed": 2026112803,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.769971699919552,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "ec7ac25cf53d49ce1059158289c55649041fd6203b14d02bd0a9c81793a05e9d"
+    },
+    {
+      "seed": 2026112804,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.845044799614698,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "0ad957747bfec4dfc153a51589158a3d6f35d51c9ffd69dcb1819624e058c8b6"
+    },
+    {
+      "seed": 2026112805,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.683032100088894,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "c6b99c713dd169d1a444ffb042165972f656d730f174d713f6fabb93c45636c4"
+    },
+    {
+      "seed": 2026112806,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.1309609999880195,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "1d13963af18ad1682fdc9b7d365043510ea2fab3e2a74a7e91fd079145124f63"
+    },
+    {
+      "seed": 2026112807,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.928563700057566,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "2001c812f86f50f49f1c3383facde2ee6d10fda357e888fd4dc31a6123ab3488"
+    },
+    {
+      "seed": 2026112808,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.011996199842542,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "acd4907f8c1452aceb5e1a951028de472890e11b37d41e0a46f7b26a264540a0"
+    },
+    {
+      "seed": 2026112809,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.081591700203717,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "b7d3aea96f14c064da31c3dced1b74c595b2afe0e4f1e790c0117e5c77223654"
+    },
+    {
+      "seed": 2026112810,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.56078980024904,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "92afea195a3f59c9693247bf5f5a490f6f036d4d97eb55adbd8fe3ed86e14a55"
+    },
+    {
+      "seed": 2026112811,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.536954500246793,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "aeb8db5410a8c69c48bc429114a6774a8e9f0cf61a91d997290befb83ae5c88e"
+    },
+    {
+      "seed": 2026112812,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.757384600117803,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "7a682187bc1ead64cb7b46bbca1b4c466f4e17340f3f4e145db17445fa5aed60"
+    },
+    {
+      "seed": 2026112813,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.146816599648446,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "5ff34b4850d4c8878cb81415b6acd21052e9a54db499caf4434dfefdd4c5a4fa"
+    },
+    {
+      "seed": 2026112814,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.060430499725044,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "31e5bf4cdc5e339b229b6623b449f510cdf4ead7d811a2cc6675102740673c80"
+    },
+    {
+      "seed": 2026112815,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.10649190004915,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "155a573b4d023ffef0a64918a3c25bf185de2bfd610edd5ecf05186568f7cfa4"
+    },
+    {
+      "seed": 2026112816,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.75367909995839,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "529dc2f354f3056766b91e083f1c710115fc782e28924d23328dcf7c2e3278a0"
+    },
+    {
+      "seed": 2026112817,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.379125200212002,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "f15670a75c9eedff08406318c9542c5e30a2a80ec3c0f2f97dc823928815a71c"
+    },
+    {
+      "seed": 2026112818,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.821279300376773,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "183e7330c0239b085a08c11bc3dda5fda12075a7725ec7fa9a176b308897f10e"
+    },
+    {
+      "seed": 2026112819,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.216946399770677,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "b765c7876b79f3b5eab9f59d2b1b6fdafe7dba8bfab2847cf43837a03cd33b8a"
+    },
+    {
+      "seed": 2026112820,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.646747400052845,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "eef76bf5959cb2e3f38c1abefed3db5276f849bc6a55d7409bc3d19702206134"
+    },
+    {
+      "seed": 2026112821,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.126514500007033,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "207b89d75786b7c073e465ebd060cb3f9bf6db72c3a6a351735ec275e8774546"
+    },
+    {
+      "seed": 2026112822,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.800522800069302,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "78e28517e1ac114ae237234d2d9ec6352128d9dfa486c7a9b1e89731cf91d453"
+    },
+    {
+      "seed": 2026112823,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.75600490020588,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "6315a8690d4dca3bc016a27c417e28eaae9775cf1ea5dcde41cf97e0216ca449"
+    },
+    {
+      "seed": 2026112824,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.285644699819386,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "e012f4db64095ca6e3e8ffa7972e2911589aa1afee1449059afeb8f3835d02dc"
+    },
+    {
+      "seed": 2026112825,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.180575999896973,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "c159f9d9bff6b561f8c16350ad2f20a5eec535853820dc1ebb204c09502037c5"
+    },
+    {
+      "seed": 2026112826,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.966434800066054,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "03cb365e4691e0f7b5ab759ef6ce1836c05c0d5f0d0b638b051844f63fea613a"
+    },
+    {
+      "seed": 2026112827,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.793436200357974,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "99df991aa7ae5116c05988ca972421ae692d339e28aad27b3b9ce12c39d586c1"
+    },
+    {
+      "seed": 2026112828,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.193733800202608,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "e90cc9f7ced75e44dbb1af7c71a8e4d21a12977c71afe5ca36c85dc830730e4c"
+    },
+    {
+      "seed": 2026112829,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 0.42311309976503253,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "9eec76eda60339507537ead4a068343e17ea2db74f68a7be0ab1205eea2d6c22"
+    },
+    {
+      "seed": 2026112830,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.618894500192255,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "e35ddc5621aa258c78cbd65363dcbb27c0f490671710758148755ddd6e19dd86"
+    },
+    {
+      "seed": 2026112831,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.204803599976003,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "c7a51d05844130cf9c2cb97e88582d0fb6beb56f77d71c454d282919aca7033f"
+    },
+    {
+      "seed": 2026112832,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.357712900266051,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "226f04b13ac19e380d7b4f4b79d49824f10cea019eb5455d6053e660c5495120"
+    },
+    {
+      "seed": 2026112833,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.023159299977124,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "b35f8c01fefb91c38288059e9abccfb6736e304080655699184601e23d845f91"
+    },
+    {
+      "seed": 2026112834,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.755798399914056,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "4f1f2010584cf4a539dfa31832e9826e38157ee503e53965105aae4593eb10b4"
+    },
+    {
+      "seed": 2026112835,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.073906100355089,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "9af50bbe9b98d1c5b6db8758784ce2b6f51dbbcdb969bcc56492e95e9e05c69d"
+    },
+    {
+      "seed": 2026112836,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.740004100371152,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "b4d29b55de75fa9d1a50bea117aa0e0e4752fe655b63b5da86d46b1490297600"
+    },
+    {
+      "seed": 2026112837,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.746458100154996,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "23d5f3428f2bc49c5d85fcb7fda2a39b20165689e81ef1c6112720872b7e1e81"
+    },
+    {
+      "seed": 2026112838,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.130548700224608,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "3b31c463264142e29fbfd164c637a841623cca589a507af5864c8aab0428fc1c"
+    },
+    {
+      "seed": 2026112839,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.300527800340205,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "a16151da16946d33b0f99eb6cfa31a613ede1d8f5dd2c8b917fa46ecc6962cb9"
+    },
+    {
+      "seed": 2026112840,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.41165790008381,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "f13770c06abba03cc8716efb9034da45828f0bc4a22d5f310ba10d978e4ad645"
+    },
+    {
+      "seed": 2026112841,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.541930099949241,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "75b847a7599148062442ac80b61ba2f46682cc5bd8a29089a4d6e63320e8f695"
+    },
+    {
+      "seed": 2026112842,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.392226799856871,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "317c0bb5259c7f00caf1fcc51bf4e2b6c6ef467818485be09619002edc5fc3c1"
+    },
+    {
+      "seed": 2026112843,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.24927069991827,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "8613081a6ffb847d8e1edf7ae446da56db7f77ce01f4b33c5fbc6810b9c936b0"
+    },
+    {
+      "seed": 2026112844,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.15429970016703,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "c5a594d34fe50e9d9f4e85fc54724937db626711e4c8a4ed59a1604cfcaef088"
+    },
+    {
+      "seed": 2026112845,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.5666275001131,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "cd0400b379143c134362178620a0ed6289a55b920f913920aa561f4ad6b22fec"
+    },
+    {
+      "seed": 2026112846,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.998671100009233,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "d8c7e14a9f0016781de6a2a11db8d608a6983cc46460ad18c5007fe955c0bb2b"
+    },
+    {
+      "seed": 2026112847,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.003906300291419,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "5c52a5bd3b5eb9765eb9acdfebd16c952154ec2e8deb34bc67f2590db9ddcd27"
+    },
+    {
+      "seed": 2026112848,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.916179000400007,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "ce7c5edfcb837bc678f960ea5f213b67bd62a473f07e306035308c935a7afa9e"
+    },
+    {
+      "seed": 2026112849,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.584730799775571,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "5323e9060a3f89c03dafad0dceae5136ea186bcbdc78c9c441a1b591e8f12493"
+    },
+    {
+      "seed": 2026112850,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.3895914000459015,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "9a36fc5858b27c85dd0557496d43057b64d7fe7f7384e8b5a06d31a6694cd60f"
+    },
+    {
+      "seed": 2026112851,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.099735100287944,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "53694db71260cae025adeef3fdee509625419eebd945c248cba40a0c416c9350"
+    },
+    {
+      "seed": 2026112852,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 12.067486499901861,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "7771b13de74285a146dccd7d5b4525fab331ae1d6cfc9137e04f08891250cae9"
+    },
+    {
+      "seed": 2026112853,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.090353900101036,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "21b0b01acf7640e676bc737ba11fd1333ffdbe878ea34bae64f7bdbb01a1e9e2"
+    },
+    {
+      "seed": 2026112854,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.692745099775493,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "99aa5584b9c0d9b186ceeff40e9c3f04cec3283a0a4ae85ba9d70c769ab8f66b"
+    },
+    {
+      "seed": 2026112855,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.453942900057882,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "97d249154b07a0422b1585c69decdbdc860a4cf3926045822969c799fb5f3df0"
+    },
+    {
+      "seed": 2026112856,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.499668099917471,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "a03701397b67d68518c66fbf903b6dc475509d1355045885138bba5308fa28d8"
+    },
+    {
+      "seed": 2026112857,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.547383199911565,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "918afb7a4e87d29976db4cf9869137d42d3d17fd00181dce1269e7380f08438b"
+    },
+    {
+      "seed": 2026112858,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.563958200160414,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "4fbe95df9641c725cc37f9e2669d4dd7faa67623a1b9935fa54ef4bddebfa189"
+    },
+    {
+      "seed": 2026112859,
+      "split": "training",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.591725599952042,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "3229ebca72e0c4c23ceaab5bbbdbba094dc37bba94e9db1902dac71f13eaa2fa"
+    },
+    {
+      "seed": 2026112860,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.442585200071335,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "5bb3aac859e2f4ac21f6211afd65292212f401d6aaae4c55b0f04c6622abc015"
+    },
+    {
+      "seed": 2026112861,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.080685299821198,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "99189835556ffa50ea536ee378dfadc92a4dff014f252669c4f0ffbbda835999"
+    },
+    {
+      "seed": 2026112862,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.280863500200212,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "5db3c7d6169424b36aadfa16c384013bb6efa959065f20eabeac24f702bb775f"
+    },
+    {
+      "seed": 2026112863,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.420743700116873,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "5b7c3562f6fbb304d8f7f51d93882fd2f75e22e8c2fe5da8c9d6530a3bedf10f"
+    },
+    {
+      "seed": 2026112864,
+      "split": "training",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.239209699910134,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "e8dd6101a6c2d9d6ae9be1bc1faee7038fca123bbfe73e5ca8d295d356ec9c16"
+    },
+    {
+      "seed": 2026112901,
+      "split": "development",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 5.42457289993763,
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "report_sha256": "f4c63d58ae62ff9d1b22855416f77c9ad45e7d3afb9a68d64e0d92c3aa846e78"
+    },
+    {
+      "seed": 2026112902,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.689586599823087,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "6a3dad2f76bc1c9bdedcd418fa224f213aa9de2207a35e6af20ac39b53bca1f7"
+    },
+    {
+      "seed": 2026112903,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.52187370043248,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "2ab9435bf2984f77888720ee5662ef3f566e5a3d050991d4c23d042c44393459"
+    },
+    {
+      "seed": 2026112904,
+      "split": "development",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.258729100227356,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "5fa71a9ca8cc63c2faff8df42cfb52442602496b2136d15fba733ab19f48deae"
+    },
+    {
+      "seed": 2026112905,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.768651299644262,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "661b045f41c7d824276625c81f841143ed5c0e92bd8f94fe3f1f8a38c853eab1"
+    },
+    {
+      "seed": 2026112906,
+      "split": "development",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.195387799758464,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "b40c27e83ca65511c7b25f906df00933a1d02912cf0ab8a0cde85fe9275e20df"
+    },
+    {
+      "seed": 2026112907,
+      "split": "development",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.627733599860221,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "b77b5680faa8b11445a5bf9e8d5a557eda5d9e90e4d15a9ef0a181de741e5d74"
+    },
+    {
+      "seed": 2026112908,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.679257299751043,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "f6cfb67b0c1c696bbcfa978bc9d6f1e24c946f2e16ab49a5cd9a50f55fd711c2"
+    },
+    {
+      "seed": 2026112909,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.688301499933004,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "16aefbd8da74da3e44f7f33b78de32b0c5075b65b9f023463f47b9f87384796f"
+    },
+    {
+      "seed": 2026112910,
+      "split": "development",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 3.972122199833393,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "4bfba9d051c8d3528ac07d4030f68252b4130495c39a1e2b58c2f6975a49c55d"
+    },
+    {
+      "seed": 2026112911,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.714043200016022,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "cef55e3e7f23fb531ba026362006f2f72a6fa38931ec11a6764914236cdf0dd0"
+    },
+    {
+      "seed": 2026112912,
+      "split": "development",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.377133300062269,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "31132e50455f98e30156a2059c53b99b22f2c603cf1633507a69df34d94bc426"
+    },
+    {
+      "seed": 2026112913,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.586957999970764,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "bfdf879b1d588c6a87ea910754b797c45c5fe71a14908be3e9cf57a023717dc4"
+    },
+    {
+      "seed": 2026112914,
+      "split": "development",
+      "status": "eligible",
+      "training_eligible": true,
+      "wall_seconds": 11.718563100323081,
+      "message": "Drawer physically opened and released; arm parked.",
+      "report_sha256": "3a742f076267c2b8bac8588902b35327ce1f3cb22d5b71f6b4aa98db6fc1e6c3"
+    },
+    {
+      "seed": 2026112915,
+      "split": "development",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.41286400007084,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "be18c2e825a4986cc685d4bb2dde318a2222a5026e07086b4e49c2637cb77d0a"
+    },
+    {
+      "seed": 2026112916,
+      "split": "development",
+      "status": "teacher_failed",
+      "training_eligible": false,
+      "wall_seconds": 4.310304699931294,
+      "message": "Pull the passive drawer using the gripper.",
+      "report_sha256": "9837584e6790efe26c129468fa6954c81fcedb5ff6485b9623839b03623d24d0"
+    }
+  ],
+  "fit_performed": false,
+  "promotion": false
+}

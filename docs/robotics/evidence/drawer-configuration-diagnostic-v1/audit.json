@@ -1,0 +1,593 @@
+{
+  "schema": "talos.drawer-configuration-diagnostic.v1",
+  "all_15_outcomes_retained": true,
+  "rows": [
+    {
+      "case": "003-drawer-anchor",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "5d5dbdc70c9182ba8efda5ade2afe950de6df37d9311dc62af791b71b91ccf3c",
+      "old_teacher_status": "succeeded",
+      "trace_frames": 597,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "086-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "43adda6b6af20396260f6a8a89a730123ca86abe4f270878e6d0350cd7eba4a7",
+      "old_teacher_status": "failed",
+      "trace_frames": 458,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "087-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "f02604905ae196f45a9846ffae4d0ce2db6dce4b90738faa2cba1d843b74360d",
+      "old_teacher_status": "failed",
+      "trace_frames": 1,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "088-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "9d2f24b3452c1e594544d8c3e4db32f09f7f46625de176bd48926265ed914789",
+      "old_teacher_status": "failed",
+      "trace_frames": 1,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "089-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The planned path has insufficient clearance: left_shoulder / left_fixed_jaw_box1 Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "2b209a759ed4c1269e7b9c0fec63b3402e2c35028229b2d07625a82de47dca0f",
+      "old_teacher_status": "failed",
+      "trace_frames": 267,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "090-drawer-cabinet_position",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "f95c6e47dbe85569df50cd227ec7989fcd33d108b5ce0756b11e7d1a398476c1",
+      "old_teacher_status": "succeeded",
+      "trace_frames": 597,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "091-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "6a1a7f2ca13a29bac8f19d468eabae68cac8b968ec9d2405331993c3f1cfab35",
+      "old_teacher_status": "failed",
+      "trace_frames": 1,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "092-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "0ea108db3df3fd0f99299548337d7d057334b2a8a2bcdc1938ca0bdca3a3cac1",
+      "old_teacher_status": "failed",
+      "trace_frames": 267,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "093-drawer-cabinet_position",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "1753ebb116391cb2ff967736f84128e76102eff8581a0bbd13bfd09d1945ce97",
+      "old_teacher_status": "failed",
+      "trace_frames": 598,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "094-drawer-cabinet_position",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "a6dded345adb530c01461083e7b85604af157ce2ca83aef63375c1ddd3a139cd",
+      "old_teacher_status": "failed",
+      "trace_frames": 1,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "095-drawer-cabinet_orientation",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "66f255b93c36b6d1c12988b82e5163776dac9f71099ff73035c4aafaa18e8d3b",
+      "old_teacher_status": "failed",
+      "trace_frames": 1,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "096-drawer-cabinet_orientation",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "b4373471d51e2bc0283820ee3970330becedc54cd006f8231c4f3f28b3abb563",
+      "old_teacher_status": "failed",
+      "trace_frames": 595,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "097-drawer-opening",
+      "status": "succeeded",
+      "message": "Drawer physically opened and released; arm parked.",
+      "valid": true,
+      "report_sha256": "6f4947c72e941779ce67d6d4b8494f67e28ef3494bcab3c2ee925cddfe493aa8",
+      "old_teacher_status": "failed",
+      "trace_frames": 599,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "098-drawer-opening",
+      "status": "failed",
+      "message": "The requested gripper pose is outside this arm's useful reach. Physics paused for inspection.",
+      "valid": true,
+      "report_sha256": "c083f70dc2151d5bc413005e7dd9e0460059db3649ab0cfc57c4896792c6e654",
+      "old_teacher_status": "failed",
+      "trace_frames": 1,
+      "unchanged_initial_state_verified": true
+    },
+    {
+      "case": "099-drawer-opening",
+      "status": "already_open",
+      "message": "Already-open semantic verification; no physical opening claimed.",
+      "valid": true,
+      "report_sha256": "17112d3fd49c7d61d00662cf2f815f524acc1ab3997039d5ebaa91c4f022fd4d",
+      "old_teacher_status": "failed",
+      "trace_frames": 11,
+      "unchanged_initial_state_verified": true
+    }
+  ],
+  "trace_frames": 3995,
+  "physical_successes": 5,
+  "old_teacher_successes": 2,
+  "already_open": 1,
+  "source_copies": {
+    "protocol.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/protocol.json",
+      "sha256": "e3c98a47260f7fcdf6aa13609ebb7826b1160644be1577edc860ffb8895fe04b"
+    },
+    "summary.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/summary.json",
+      "sha256": "2fbd542368abe6d6817040b989c957ec3daf787d132bfc5f2724e197ebe4f4dc"
+    },
+    "003-drawer-anchor/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/003-drawer-anchor/report.json",
+      "sha256": "5d5dbdc70c9182ba8efda5ade2afe950de6df37d9311dc62af791b71b91ccf3c"
+    },
+    "003-drawer-anchor/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/003-drawer-anchor/scene.xml",
+      "sha256": "2fb5aa275a8b29a1fe6577996e61f77d95c70056fadf68fdc7ab106f44c49cc3"
+    },
+    "003-drawer-anchor/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/003-drawer-anchor/states.npz",
+      "sha256": "61341664b639f5d270abc3b57444ceb70a9206e3535d1faf692613d95e0c8a94"
+    },
+    "086-drawer-cabinet_position/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/086-drawer-cabinet_position/report.json",
+      "sha256": "43adda6b6af20396260f6a8a89a730123ca86abe4f270878e6d0350cd7eba4a7"
+    },
+    "086-drawer-cabinet_position/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/086-drawer-cabinet_position/scene.xml",
+      "sha256": "2571ac9a531f24b2035004d5ae8446b673ae9156075a2b435a15d769a5d74f21"
+    },
+    "086-drawer-cabinet_position/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/086-drawer-cabinet_position/states.npz",
+      "sha256": "c382bfc060a6ac5a8eb34046d41e053be14c75e53c0a63d2f2a564d24436b22c"
+    },
+    "087-drawer-cabinet_position/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/087-drawer-cabinet_position/report.json",
+      "sha256": "f02604905ae196f45a9846ffae4d0ce2db6dce4b90738faa2cba1d843b74360d"
+    },
+    "087-drawer-cabinet_position/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/087-drawer-cabinet_position/scene.xml",
+      "sha256": "89beba3271e0314537ba2b4a7ef156928391cfd5fbfe8bf30dbe0bb128761397"
+    },
+    "087-drawer-cabinet_position/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/087-drawer-cabinet_position/states.npz",
+      "sha256": "75113235135ed6a0c41d3e8ec4530581002c5248011793c3c66597fd42da460e"
+    },
+    "088-drawer-cabinet_position/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/088-drawer-cabinet_position/report.json",
+      "sha256": "9d2f24b3452c1e594544d8c3e4db32f09f7f46625de176bd48926265ed914789"
+    },
+    "088-drawer-cabinet_position/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/088-drawer-cabinet_position/scene.xml",
+      "sha256": "de32931f4770924dbf7dc750266e52600d02c21438f07d9695e23dadeb7ae759"
+    },
+    "088-drawer-cabinet_position/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/088-drawer-cabinet_position/states.npz",
+      "sha256": "af0e31d3a5aff9594d138b9fd09eb481c36271ceaf8161b225ddc710a4132b49"
+    },
+    "089-drawer-cabinet_position/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/089-drawer-cabinet_position/report.json",
+      "sha256": "2b209a759ed4c1269e7b9c0fec63b3402e2c35028229b2d07625a82de47dca0f"
+    },
+    "089-drawer-cabinet_position/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/089-drawer-cabinet_position/scene.xml",
+      "sha256": "d21ae57f518263b9602ef6ce656c342d1ffcdf214fae58115c0de13f51be9fc6"
+    },
+    "089-drawer-cabinet_position/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/089-drawer-cabinet_position/states.npz",
+      "sha256": "6d0a9e3be73945b54cef4c5e625362cf29047ae3e5ac34447cdaead3b2cd9cb2"
+    },
+    "090-drawer-cabinet_position/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/090-drawer-cabinet_position/report.json",
+      "sha256": "f95c6e47dbe85569df50cd227ec7989fcd33d108b5ce0756b11e7d1a398476c1"
+    },
+    "090-drawer-cabinet_position/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/090-drawer-cabinet_position/scene.xml",
+      "sha256": "2fb5aa275a8b29a1fe6577996e61f77d95c70056fadf68fdc7ab106f44c49cc3"
+    },
+    "090-drawer-cabinet_position/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/090-drawer-cabinet_position/states.npz",
+      "sha256": "f44ec270ce2de5469fc272872423047870ba3afb7cfce135f0f1e95f9f92422b"
+    },
+    "091-drawer-cabinet_position/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/091-drawer-cabinet_position/report.json",
+      "sha256": "6a1a7f2ca13a29bac8f19d468eabae68cac8b968ec9d2405331993c3f1cfab35"
+    },
+    "091-drawer-cabinet_position/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/091-drawer-cabinet_position/scene.xml",
+      "sha256": "6da5b03795ad36ade032547e4d851150d85ba3cde0fc9aa0c1f2bdfe0f9747b0"
+    },
+    "091-drawer-cabinet_position/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/091-drawer-cabinet_position/states.npz",
+      "sha256": "fd1d7792ef3a403f371c2c25feefbda85f72b65d50cef3ae1f738d3c6dc5fbd8"
+    },
+    "092-drawer-cabinet_position/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/092-drawer-cabinet_position/report.json",
+      "sha256": "0ea108db3df3fd0f99299548337d7d057334b2a8a2bcdc1938ca0bdca3a3cac1"
+    },
+    "092-drawer-cabinet_position/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/092-drawer-cabinet_position/scene.xml",
+      "sha256": "c84d025623aaabb643f4e6ad16deb092412949f53973b40cc938e83b12b3bce3"
+    },
+    "092-drawer-cabinet_position/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/092-drawer-cabinet_position/states.npz",
+      "sha256": "087a8f4b1c85009b947083bf2772ff24f07a62a6dcc78b9a358f77a0b316c472"
+    },
+    "093-drawer-cabinet_position/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/093-drawer-cabinet_position/report.json",
+      "sha256": "1753ebb116391cb2ff967736f84128e76102eff8581a0bbd13bfd09d1945ce97"
+    },
+    "093-drawer-cabinet_position/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/093-drawer-cabinet_position/scene.xml",
+      "sha256": "db57bcf3d9a084676cd5e60d641bfac7453d0e2cf22bf1393777cfa632cf82cb"
+    },
+    "093-drawer-cabinet_position/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/093-drawer-cabinet_position/states.npz",
+      "sha256": "ad4cd10a3deedc45efe9558e87693d8125d081951a15ff63bb67e5c164766ca5"
+    },
+    "094-drawer-cabinet_position/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/094-drawer-cabinet_position/report.json",
+      "sha256": "a6dded345adb530c01461083e7b85604af157ce2ca83aef63375c1ddd3a139cd"
+    },
+    "094-drawer-cabinet_position/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/094-drawer-cabinet_position/scene.xml",
+      "sha256": "726b3c504f9c1a81d66d2394d296a7aae86aba3abe8a8f7387cc89749c3ffd7c"
+    },
+    "094-drawer-cabinet_position/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/094-drawer-cabinet_position/states.npz",
+      "sha256": "0c6bb02b4acc4c406e837a6b49823a7f43809713f0081b7a44306e76fe1930d9"
+    },
+    "095-drawer-cabinet_orientation/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/095-drawer-cabinet_orientation/report.json",
+      "sha256": "66f255b93c36b6d1c12988b82e5163776dac9f71099ff73035c4aafaa18e8d3b"
+    },
+    "095-drawer-cabinet_orientation/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/095-drawer-cabinet_orientation/scene.xml",
+      "sha256": "db2b6b722f755575bf63c58385d08a3fa2c145674d92e0571773cd0d581ca0c6"
+    },
+    "095-drawer-cabinet_orientation/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/095-drawer-cabinet_orientation/states.npz",
+      "sha256": "ec156324a0a1e0fd49afa04b4722c631105195634c0ea0466301922a84c27a4c"
+    },
+    "096-drawer-cabinet_orientation/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/096-drawer-cabinet_orientation/report.json",
+      "sha256": "b4373471d51e2bc0283820ee3970330becedc54cd006f8231c4f3f28b3abb563"
+    },
+    "096-drawer-cabinet_orientation/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/096-drawer-cabinet_orientation/scene.xml",
+      "sha256": "688793f4ea792175dbfac1dd898cf2812928c54674df4f8d08bb5eb38425515e"
+    },
+    "096-drawer-cabinet_orientation/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/096-drawer-cabinet_orientation/states.npz",
+      "sha256": "776d2b6c111357af02802234db16b90c5eab1b6c9e1beb9973fc2a201d9d7315"
+    },
+    "097-drawer-opening/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/097-drawer-opening/report.json",
+      "sha256": "6f4947c72e941779ce67d6d4b8494f67e28ef3494bcab3c2ee925cddfe493aa8"
+    },
+    "097-drawer-opening/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/097-drawer-opening/scene.xml",
+      "sha256": "2fb5aa275a8b29a1fe6577996e61f77d95c70056fadf68fdc7ab106f44c49cc3"
+    },
+    "097-drawer-opening/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/097-drawer-opening/states.npz",
+      "sha256": "6b5d284f4230db16e17792f4583054768adb4d9ad9c350b1b947f666b2c1f23b"
+    },
+    "098-drawer-opening/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/098-drawer-opening/report.json",
+      "sha256": "c083f70dc2151d5bc413005e7dd9e0460059db3649ab0cfc57c4896792c6e654"
+    },
+    "098-drawer-opening/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/098-drawer-opening/scene.xml",
+      "sha256": "2fb5aa275a8b29a1fe6577996e61f77d95c70056fadf68fdc7ab106f44c49cc3"
+    },
+    "098-drawer-opening/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/098-drawer-opening/states.npz",
+      "sha256": "3f123dee8d7b73a9ef1d6a4aa3b53dbaabd97c64eac5f4887f5d396806d18f5f"
+    },
+    "099-drawer-opening/report.json": {
+      "source": ".run/drawer-configuration-diagnostic-v1/099-drawer-opening/report.json",
+      "sha256": "17112d3fd49c7d61d00662cf2f815f524acc1ab3997039d5ebaa91c4f022fd4d"
+    },
+    "099-drawer-opening/source-scene.xml": {
+      "source": ".run/drawer-configuration-diagnostic-v1/099-drawer-opening/scene.xml",
+      "sha256": "2fb5aa275a8b29a1fe6577996e61f77d95c70056fadf68fdc7ab106f44c49cc3"
+    },
+    "099-drawer-opening/states.npz": {
+      "source": ".run/drawer-configuration-diagnostic-v1/099-drawer-opening/states.npz",
+      "sha256": "79e646cefd2f959c00342d33684c1585634446be70de8cd39bea5b3409765fd3"
+    },
+    "frozen-source/scripts/diagnose_drawer_configuration.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/scripts/diagnose_drawer_configuration.py",
+      "sha256": "6deb17e970bce95a93da48f9f96fecc10da6903919337a57e7167e23e9b277af"
+    },
+    "frozen-source/scripts/measure_manipulation_coverage.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/scripts/measure_manipulation_coverage.py",
+      "sha256": "79d4eb3aa16e04db6517353234083d5f581c3db1b3229b66b8f709e8b4bdd1d8"
+    },
+    "frozen-source/simulation_lab/act_learning.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/act_learning.py",
+      "sha256": "0266d6ec1db5291a14f7b0cc2bdc1e6eb977497b3d6e1342eeb0a6e6db4ff4c2"
+    },
+    "frozen-source/simulation_lab/autonomy.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/autonomy.py",
+      "sha256": "0e60140b1d3dd03c278592fb975393b50f6074235280472390f3a8feda142c95"
+    },
+    "frozen-source/simulation_lab/bottle_refinement.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/bottle_refinement.py",
+      "sha256": "3390e076a13759fcef7d37bf685e3ed57372e8a148e923a96556c06194553e39"
+    },
+    "frozen-source/simulation_lab/bottle_refinement_runtime.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/bottle_refinement_runtime.py",
+      "sha256": "d62bb641b1518ce6ec9e5224ffafd6f3177d0fdb26df72d7e1e5e0377d4b8fb4"
+    },
+    "frozen-source/simulation_lab/bottle_vision.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/bottle_vision.py",
+      "sha256": "5b6ccf6e0224bf66ef7d4c69c382384add65d90ebfeedad838be5dc756bfa9ac"
+    },
+    "frozen-source/simulation_lab/command_task.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/command_task.py",
+      "sha256": "b3861f88af0a3535569e3d911f68e0e1d566f0b1f5f24b60c79417d561ce51a4"
+    },
+    "frozen-source/simulation_lab/dataset.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/dataset.py",
+      "sha256": "1c9310a12391a957563f317f0f260ebc5ff284b9050a27b4a27fcb3143f1b2d2"
+    },
+    "frozen-source/simulation_lab/dinner.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/dinner.py",
+      "sha256": "37107bcbd85a39466dcd01b202d6661f1e3c9f705e6865de05d6fa994e562c11"
+    },
+    "frozen-source/simulation_lab/dinner_autonomy.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/dinner_autonomy.py",
+      "sha256": "717c03217039a8ce5234ff8554aeb948f444fa88644aafe5e456e1bd74c17eba"
+    },
+    "frozen-source/simulation_lab/dinner_monitor.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/dinner_monitor.py",
+      "sha256": "34b2a5356ffcb5c2cf888607ceb387e51ca2ed00f6fa8fa39a897744e8bebe54"
+    },
+    "frozen-source/simulation_lab/dinner_vision.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/dinner_vision.py",
+      "sha256": "66d0bc15b9a9f40832db56378de62c1b5355cebf583ececf7d8fa936a192360e"
+    },
+    "frozen-source/simulation_lab/engine.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/engine.py",
+      "sha256": "7fe591389934e926b8c92395774e147530849f1e7905b228af0da7548c381603"
+    },
+    "frozen-source/simulation_lab/experiment_push.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/experiment_push.py",
+      "sha256": "156700845e130b86e93774c9dfae4221de5443f9855c86bd8e84d7f052a22003"
+    },
+    "frozen-source/simulation_lab/experiment_targets.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/experiment_targets.py",
+      "sha256": "0704accb79c80d894efdf721e7a23437348c9dfe2d0d5edefd63e8b225ea9654"
+    },
+    "frozen-source/simulation_lab/hardware_evidence.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/hardware_evidence.py",
+      "sha256": "386d563af1666943fb1fcf0d545389220eb30f5808f361bbf72df4aa4a2d7222"
+    },
+    "frozen-source/simulation_lab/hosted_gpu.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/hosted_gpu.py",
+      "sha256": "668fd99bf83a52a8730179b33f93c5d319707033fecb0cf49f1bd39e2e727bb7"
+    },
+    "frozen-source/simulation_lab/hosted_worker.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/hosted_worker.py",
+      "sha256": "60cf416fb7f6ef9f5151ccd9127fa821ddee3f65b74712f11ad11c37e6a3a5b2"
+    },
+    "frozen-source/simulation_lab/language.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/language.py",
+      "sha256": "8a6aa3efc5515e2da1d334432b884de297b53b1f048aba60c031d1739ddcfc1b"
+    },
+    "frozen-source/simulation_lab/learned_dinner.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/learned_dinner.py",
+      "sha256": "5402aa9069b0a20b21c352272fbeb5dcf70d03ae555aa65d66574e5bf7975066"
+    },
+    "frozen-source/simulation_lab/learned_plan.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/learned_plan.py",
+      "sha256": "af91498d8f2d4cff06c829c1fc8c1075b359c00ed49e07043f8301bc4f85fcd8"
+    },
+    "frozen-source/simulation_lab/learned_skills.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/learned_skills.py",
+      "sha256": "3ef610a6e6d0516e8bf92d4e7f2b3d06540b49e2671682ab642239aa2cbb129b"
+    },
+    "frozen-source/simulation_lab/learned_task.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/learned_task.py",
+      "sha256": "3bc2fc075d15e07d5717333fbd69541d2e76d2bd41621a71f1a6e51229d2e24f"
+    },
+    "frozen-source/simulation_lab/mug_correction_limits.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/mug_correction_limits.py",
+      "sha256": "0b4db501846ff62e87cc6dbde453d6b1bf370cb12e60088e709f89068ecb2595"
+    },
+    "frozen-source/simulation_lab/mug_correction_motor.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/mug_correction_motor.py",
+      "sha256": "38ca9f9d936c9ca50176c898904a680c1549df696c97475088852bc39be26313"
+    },
+    "frozen-source/simulation_lab/mug_correction_runtime.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/mug_correction_runtime.py",
+      "sha256": "eb580df116318a97fb2d24655d88a23be40a32beae186b0d03fbc88fc79e83f9"
+    },
+    "frozen-source/simulation_lab/mug_keypoint_observer.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/mug_keypoint_observer.py",
+      "sha256": "dc5c76bd5b82ffb7191727690be3ac15b0003310ff0a69ef848213ce376a5fea"
+    },
+    "frozen-source/simulation_lab/mug_visual_control.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/mug_visual_control.py",
+      "sha256": "98503f8bfefff12a719e562471bd7819f192f9c20d519b4fc75ad6b5502310ae"
+    },
+    "frozen-source/simulation_lab/mug_visual_geometry.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/mug_visual_geometry.py",
+      "sha256": "d0840f195103bf8be317d33a2aed0f40dfe572aa8aeab1c988db08ae86e11091"
+    },
+    "frozen-source/simulation_lab/mug_visual_observer.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/mug_visual_observer.py",
+      "sha256": "5d6fdd56a87035ac22eee40d20d8e09aa4b6a40f0b5695cf260243c6827a90c6"
+    },
+    "frozen-source/simulation_lab/mug_visual_profile.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/mug_visual_profile.py",
+      "sha256": "a955e238d4f55a0d01eb832272f57ab2eb9d17ef37aaacb7b5ea1fca3d223d3c"
+    },
+    "frozen-source/simulation_lab/policy_cameras.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/policy_cameras.py",
+      "sha256": "1415c5f173502017c99f651778245dae83116f4b91b7bbe8bf614cecf06b2752"
+    },
+    "frozen-source/simulation_lab/policy_control.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/policy_control.py",
+      "sha256": "a418fe2619985852d4e65b40e20c18f82fd72076b4d8b9202507dda4a410b151"
+    },
+    "frozen-source/simulation_lab/policy_observation.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/policy_observation.py",
+      "sha256": "d15a9b72e7fb366681d29a21f598d21ffd147b1b9ba56729d296250a67b37af6"
+    },
+    "frozen-source/simulation_lab/primitive_policy.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/primitive_policy.py",
+      "sha256": "60c009448171533385df1be82e3f64ed395f28d3e03145eb2f10ab6a791ef143"
+    },
+    "frozen-source/simulation_lab/public_trial.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/public_trial.py",
+      "sha256": "d2ffcd66dd52c8334b92bee84bc83cb250582f311aaadfe82f68f81e9137305e"
+    },
+    "frozen-source/simulation_lab/recording.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/recording.py",
+      "sha256": "073fc8a874a313288399f1827c2018198c92e3da2975b122655afe41aebe43a2"
+    },
+    "frozen-source/simulation_lab/relay_task.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/relay_task.py",
+      "sha256": "a1387ecf36d24166b6cd356a14375aa47aceb4202687b4ccc96a3d305ab6bcd2"
+    },
+    "frozen-source/simulation_lab/rendering.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rendering.py",
+      "sha256": "570f36b7b683c05d6c33aebc442828196db00596c10ed5e94df2b49ceccf0fcd"
+    },
+    "frozen-source/simulation_lab/retrieval_policy.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/retrieval_policy.py",
+      "sha256": "e47aab06fae8c825cccbe72dae7040edf3ee5d7b07a6537080b95efe001c6873"
+    },
+    "frozen-source/simulation_lab/rgb_bottle_observer.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rgb_bottle_observer.py",
+      "sha256": "45e93ab0d7930a15c82f5e84809eb0d8d7d8d376ed878558529560ff20c18d20"
+    },
+    "frozen-source/simulation_lab/rgb_servo_cameras.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rgb_servo_cameras.py",
+      "sha256": "eb750885e17ccc731ad9a80f3f5450ec2b5823c68e9dd57d9e325623d28eb3ec"
+    },
+    "frozen-source/simulation_lab/rgb_servo_controller.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rgb_servo_controller.py",
+      "sha256": "6fb0d6ac81f717288a23aa88f60bcd84f95f0137b0660db7d35ebe2aeba7cf94"
+    },
+    "frozen-source/simulation_lab/rgb_servo_geometry.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rgb_servo_geometry.py",
+      "sha256": "bca323458c4971bab8534e36fb6f7d5aa668df188e7573efa095ebfbca4db1ae"
+    },
+    "frozen-source/simulation_lab/rgb_servo_motor.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rgb_servo_motor.py",
+      "sha256": "3d90c40a5af68f0b04dfe5aafaa7de47f4c0b67211d40cc1a461eae2311e22b7"
+    },
+    "frozen-source/simulation_lab/rgb_servo_network.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rgb_servo_network.py",
+      "sha256": "3ef3cd8fcac1e40743893caab14fb94decf52d1c402c6ade69c342e8c97d9302"
+    },
+    "frozen-source/simulation_lab/rgb_servo_openvino.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rgb_servo_openvino.py",
+      "sha256": "2a091f27331304228bc57a306302cf05ced182af654a57c502b2bdea4bb1fa42"
+    },
+    "frozen-source/simulation_lab/rgb_servo_routing.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rgb_servo_routing.py",
+      "sha256": "75acbf9a9e508ba24c29edc777c6ce83569d73bb9d7cbe567a2e7f40dffcafc6"
+    },
+    "frozen-source/simulation_lab/rgb_servo_vision.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/rgb_servo_vision.py",
+      "sha256": "498a5a52bd6fc207aa8754de074cc1c6d2ab9f10659e43f79d0aba12e9afcb1b"
+    },
+    "frozen-source/simulation_lab/scene.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/scene.py",
+      "sha256": "b363abd064ed0983f9ba96381855f9fd079072dc48593f17fc0bf6e623468b19"
+    },
+    "frozen-source/simulation_lab/sequence_policy.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/sequence_policy.py",
+      "sha256": "510695960009387afef87284e76e57fa0cce500acd29c380336c08cf865904a8"
+    },
+    "frozen-source/simulation_lab/server.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/server.py",
+      "sha256": "1db8f2dd5f2c9e234aee2144fb7d034e9d608a3791cc2c4b96223c2d99d041b4"
+    },
+    "frozen-source/simulation_lab/slots.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/slots.py",
+      "sha256": "41755919e4d2bbfb2b023e78c09370d2fbcd740f377bdf616551aff2aa827873"
+    },
+    "frozen-source/simulation_lab/speech.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/speech.py",
+      "sha256": "66a50562886702017bdf9e0d2a1af31dfb4531061af9b8a6c5c9f16d02cce4a0"
+    },
+    "frozen-source/simulation_lab/storage.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/storage.py",
+      "sha256": "adff62806bc5786ee7c374a09754d82e37474b97f4d37074551d02d3796f444f"
+    },
+    "frozen-source/simulation_lab/trial_preview.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/trial_preview.py",
+      "sha256": "59fc8b1dc83596856835b62a5153a85dbf39bf9f8e7c2be62b764bed70dfb11b"
+    },
+    "frozen-source/simulation_lab/__init__.py": {
+      "source": ".run/drawer-configuration-diagnostic-v1/frozen-source/simulation_lab/__init__.py",
+      "sha256": "41d6e06b5cd49e86faaccfc822e0195485e4efed792c4ae28bdb42dc8e814220"
+    },
+    "console.log": {
+      "source": ".run/final-goal/drawer-configuration-diagnostic-v1.log",
+      "sha256": "163625de6c245ad82f1c818c75b8f6bf3eb184097ce630a5e4a0cf84b33da07f"
+    }
+  },
+  "preflight": {
+    "free_bytes": 537357389824,
+    "estimated_additional_bytes": 39336353,
+    "reserve_bytes": 10737418240
+  },
+  "promotion": false,
+  "verification": "All hashes, matching original qpos/qvel, finite state traces, terminal opening/parking geometry and every reported success threshold checked. Successful and semantic no-op initial/mid/final RGB views rendered from saved states. 20 Hz traces do not reconstruct every 200 Hz contact query."
+}

@@ -1,0 +1,539 @@
+{
+  "seed": 2026112605,
+  "split": "evaluation",
+  "mode": "live",
+  "protocol_sha256": "07961d2203cf47d64d8bf6c29b7e3e58a19a3c2566e8a1e02828cd98077485e8",
+  "integration_sha256": "9c9dd55318cddb4e650f558537938b08ab98945e7e725a0866278b97d9708b3b",
+  "preflight": {
+    "free_bytes": 545333497856,
+    "estimated_additional_bytes": 25165824,
+    "reserve_bytes": 10737418240
+  },
+  "status": "succeeded",
+  "message": "Every leg physically released and parked.",
+  "physics_state_writes_during_control": 0,
+  "hidden_forces": 0,
+  "inverse_solver_calls_during_control": 0,
+  "inference_runtime": "OpenVINO CPU FP32",
+  "scope": "Frozen wider upright-bottle execution at two explicit destinations. Source/scene randomization is declared; no arbitrary task, unknown geometry, moved cabinet or continuous visual carry correction claim.",
+  "setup": {
+    "valid": true,
+    "requested_source_qpos": [
+      -0.11104886439108333,
+      -0.12972519967175017,
+      0.761,
+      0.9868279258130448,
+      0.0,
+      0.0,
+      0.1617734367426365
+    ],
+    "settled_source_xyz_m": [
+      -0.11104883690652383,
+      -0.1297251734948584,
+      0.7599436831367352
+    ],
+    "initial_penetration_m": 0.0,
+    "settled_upright_z": 0.9999999996591847,
+    "settled_speed_m_s": 1.2207907394269476e-05,
+    "reason": null
+  },
+  "destination_m": [
+    0.2,
+    0.05
+  ],
+  "layout": {
+    "seed": 2026112605,
+    "scenario": "dinner",
+    "racks": [],
+    "slots": [],
+    "tubes": [],
+    "table_z": 0.76,
+    "practice": false,
+    "transfer_side": null,
+    "objects": [
+      {
+        "id": "plate",
+        "body": "plate",
+        "label": "Blue-rim plate",
+        "kind": "plate",
+        "mass_kg": 0.06220457833744507,
+        "size_m": [
+          0.132,
+          0.132,
+          0.024
+        ],
+        "color": "#719acb",
+        "grasp_local_m": [
+          0,
+          -0.061,
+          0.01
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.8216128005375198,
+        "initial_position_m": [
+          -0.10404189758507852,
+          0.010590303967626427,
+          0.761
+        ],
+        "initial_yaw_rad": -0.006320477800948701,
+        "grasp_site": "plate_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "side_plate",
+        "body": "side_plate",
+        "label": "Gold-rim side plate",
+        "kind": "plate",
+        "mass_kg": 0.04753515497992663,
+        "size_m": [
+          0.106,
+          0.106,
+          0.012
+        ],
+        "color": "#dfac65",
+        "grasp_local_m": [
+          0,
+          -0.048,
+          0.009
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.7953875596277138,
+        "initial_position_m": [
+          0.1158300212303289,
+          0.244594176513686,
+          0.761
+        ],
+        "initial_yaw_rad": 0.022265345582916207,
+        "grasp_site": "side_plate_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "mug",
+        "body": "mug",
+        "label": "Teal mug",
+        "kind": "mug",
+        "mass_kg": 0.04205972775327715,
+        "size_m": [
+          0.077,
+          0.05,
+          0.064
+        ],
+        "color": "#54b9b1",
+        "grasp_local_m": [
+          0.047,
+          0,
+          0.041
+        ],
+        "grasp_width_m": 0.008,
+        "friction": 0.7891648470507016,
+        "initial_position_m": [
+          0.25038444180326686,
+          -0.06197717869029994,
+          0.761
+        ],
+        "initial_yaw_rad": 0.03610984621869401,
+        "grasp_site": "mug_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "glass",
+        "body": "glass",
+        "label": "Clear drinking glass",
+        "kind": "glass",
+        "mass_kg": 0.035670369667041624,
+        "size_m": [
+          0.048,
+          0.048,
+          0.074
+        ],
+        "color": "#b3dcdf",
+        "grasp_local_m": [
+          0,
+          0,
+          0.045
+        ],
+        "grasp_width_m": 0.048,
+        "friction": 0.8466279233703426,
+        "initial_position_m": [
+          0.27835372915444057,
+          0.23740290418086682,
+          0.761
+        ],
+        "initial_yaw_rad": -0.06430567041521781,
+        "grasp_site": "glass_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "bottle",
+        "body": "bottle",
+        "label": "Amber water bottle",
+        "kind": "bottle",
+        "mass_kg": 0.08017016998002616,
+        "size_m": [
+          0.048,
+          0.048,
+          0.14
+        ],
+        "color": "#cf995b",
+        "grasp_local_m": [
+          0,
+          0,
+          0.128
+        ],
+        "grasp_width_m": 0.022,
+        "friction": 0.8227498938042344,
+        "initial_position_m": [
+          0.028362767752552955,
+          -0.06603565377492725,
+          0.761
+        ],
+        "initial_yaw_rad": -0.07136253803790321,
+        "grasp_site": "bottle_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "fork",
+        "body": "fork",
+        "label": "Fork",
+        "kind": "fork",
+        "mass_kg": 0.012658494269796849,
+        "size_m": [
+          0.017,
+          0.11,
+          0.016
+        ],
+        "color": "#cad5de",
+        "grasp_local_m": [
+          0,
+          0,
+          0.008
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.8261067611106265,
+        "initial_position_m": [
+          -0.30090479780081,
+          0.16650889675736671,
+          0.79
+        ],
+        "initial_yaw_rad": 0.03616150142420735,
+        "grasp_site": "fork_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "spoon",
+        "body": "spoon",
+        "label": "Spoon",
+        "kind": "spoon",
+        "mass_kg": 0.013929644988960667,
+        "size_m": [
+          0.022,
+          0.11,
+          0.016
+        ],
+        "color": "#cad5de",
+        "grasp_local_m": [
+          0,
+          0,
+          0.008
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.84810653478112,
+        "initial_position_m": [
+          -0.259242180598298,
+          0.16624784234628184,
+          0.79
+        ],
+        "initial_yaw_rad": 0.032790121969485636,
+        "grasp_site": "spoon_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      }
+    ],
+    "targets": [
+      {
+        "id": "plate_place",
+        "label": "Plate setting",
+        "object_id": "plate",
+        "position_m": [
+          -0.06,
+          -0.025,
+          0.76
+        ],
+        "radius_m": 0.074
+      },
+      {
+        "id": "side_plate_place",
+        "label": "Side plate setting",
+        "object_id": "side_plate",
+        "position_m": [
+          0.11,
+          -0.025,
+          0.76
+        ],
+        "radius_m": 0.06
+      },
+      {
+        "id": "mug_place",
+        "label": "Mug setting",
+        "object_id": "mug",
+        "position_m": [
+          0.265,
+          0.005,
+          0.76
+        ],
+        "radius_m": 0.033
+      },
+      {
+        "id": "glass_place",
+        "label": "Glass setting",
+        "object_id": "glass",
+        "position_m": [
+          0.075,
+          0.1,
+          0.76
+        ],
+        "radius_m": 0.033
+      },
+      {
+        "id": "fork_place",
+        "label": "Fork setting",
+        "object_id": "fork",
+        "position_m": [
+          -0.16,
+          -0.045,
+          0.76
+        ],
+        "radius_m": 0.012
+      },
+      {
+        "id": "spoon_place",
+        "label": "Spoon setting",
+        "object_id": "spoon",
+        "position_m": [
+          -0.02,
+          -0.155,
+          0.76
+        ],
+        "radius_m": 0.014
+      }
+    ],
+    "drawer": {
+      "body": "cutlery_drawer",
+      "joint": "drawer_slide",
+      "travel_m": 0.12,
+      "initial_open_m": 0.0,
+      "handle_site": "drawer_handle_grasp",
+      "actuated": false,
+      "closed_origin_m": [
+        -0.28,
+        0.18,
+        0.76
+      ]
+    },
+    "dinner_preset": "task",
+    "drawer_open": false,
+    "randomization": {
+      "object_xy_m": 0.009,
+      "mass_fraction": 0.08,
+      "friction_fraction": 0.1,
+      "light_multiplier": 0.9977504126989946
+    },
+    "challenge": {
+      "title": "Set the dinner table",
+      "autonomy_available": true,
+      "instruction": "Open the drawer, place the plate and cutlery, then coordinate both arms to serve a drink.",
+      "next_skill": "Learn camera/language control from verified demonstrations."
+    }
+  },
+  "simulation_seconds": 34.53999999999922,
+  "route": {
+    "kind": "direct",
+    "legs": [
+      {
+        "side": "right",
+        "destination": [
+          0.2,
+          0.05
+        ],
+        "planned": {
+          "lift_m": 0.07,
+          "transport_height_above_table_m": 0.198
+        }
+      }
+    ],
+    "prior_refusals": [
+      "direct left: Neural motor prediction exceeds joint limits."
+    ]
+  },
+  "completed_legs": [
+    {
+      "leg": 0,
+      "side": "right",
+      "destination": [
+        0.2,
+        0.05
+      ],
+      "physical": {
+        "passed": true,
+        "failure": null,
+        "metrics": {
+          "placement_error_mm": 4.792580163554418,
+          "placement_z_error_mm": 0.0002762032609293641,
+          "placement_yaw_error_deg": 0.0,
+          "speed_mm_s": 0.011992853331943772,
+          "max_lift_cm": 6.919151655118805,
+          "hold_verified_s": 8.529999999999301,
+          "longest_unsupported_gap_s": 0.0,
+          "stable_release_and_park_s": 0.5000000000002558,
+          "both_arms_parked": true,
+          "other_object_displacements_m": {
+            "plate": 1.2120121187032323e-07,
+            "side_plate": 1.1321130058227421e-07,
+            "mug": 2.4479542747587386e-07,
+            "glass": 1.1957075416912856e-07,
+            "fork": 5.426367387957853e-06,
+            "spoon": 5.247329521365584e-06
+          },
+          "other_object_max_displacement_m": 5.426367387957853e-06,
+          "parked_arm_max_motion_deg": 3.40955461852889e-11,
+          "unexpected_collisions": 0
+        },
+        "teacher_updates": 0,
+        "scoring": "Privileged simulator state; no motor targets generated"
+      },
+      "route_details": {
+        "lift_m": 0.07,
+        "transport_height_above_table_m": 0.198,
+        "actual_transport_height_above_table_m": 0.198,
+        "retract_m": 0.065
+      },
+      "stages": [
+        {
+          "stage": "approach",
+          "time_s": 0.0
+        },
+        {
+          "stage": "descend",
+          "time_s": 3.004999999999958
+        },
+        {
+          "stage": "close",
+          "time_s": 6.009999999999894
+        },
+        {
+          "stage": "lift",
+          "time_s": 11.010000000000321
+        },
+        {
+          "stage": "hold",
+          "time_s": 14.510000000000868
+        },
+        {
+          "stage": "align",
+          "time_s": 16.31000000000104
+        },
+        {
+          "stage": "lower",
+          "time_s": 20.315000000000243
+        },
+        {
+          "stage": "release",
+          "time_s": 24.319999999999446
+        },
+        {
+          "stage": "retract",
+          "time_s": 28.32499999999865
+        },
+        {
+          "stage": "park",
+          "time_s": 31.32999999999805
+        },
+        {
+          "stage": "verify",
+          "time_s": 34.32999999999911
+        }
+      ],
+      "accepted_rgb": 340,
+      "rgb_refusals": 6
+    }
+  ],
+  "physical": {
+    "passed": true,
+    "failure": null,
+    "metrics": {
+      "placement_error_mm": 4.792580163554418,
+      "placement_z_error_mm": 0.0002762032609293641,
+      "placement_yaw_error_deg": 0.0,
+      "speed_mm_s": 0.011992853331943772,
+      "max_lift_cm": 6.919151655118805,
+      "hold_verified_s": 8.529999999999301,
+      "longest_unsupported_gap_s": 0.0,
+      "stable_release_and_park_s": 0.5000000000002558,
+      "both_arms_parked": true,
+      "other_object_displacements_m": {
+        "plate": 1.2120121187032323e-07,
+        "side_plate": 1.1321130058227421e-07,
+        "mug": 2.4479542747587386e-07,
+        "glass": 1.1957075416912856e-07,
+        "fork": 5.426367387957853e-06,
+        "spoon": 5.247329521365584e-06
+      },
+      "other_object_max_displacement_m": 5.426367387957853e-06,
+      "parked_arm_max_motion_deg": 3.40955461852889e-11,
+      "unexpected_collisions": 0
+    },
+    "teacher_updates": 0,
+    "scoring": "Privileged simulator state; no motor targets generated"
+  },
+  "stage": "leg-1:verify",
+  "cumulative_non_target_displacement_m": 5.426367387957853e-06,
+  "controller_status": "running",
+  "controller_stages": [
+    {
+      "stage": "approach",
+      "time_s": 0.0
+    },
+    {
+      "stage": "descend",
+      "time_s": 3.004999999999958
+    },
+    {
+      "stage": "close",
+      "time_s": 6.009999999999894
+    },
+    {
+      "stage": "lift",
+      "time_s": 11.010000000000321
+    },
+    {
+      "stage": "hold",
+      "time_s": 14.510000000000868
+    },
+    {
+      "stage": "align",
+      "time_s": 16.31000000000104
+    },
+    {
+      "stage": "lower",
+      "time_s": 20.315000000000243
+    },
+    {
+      "stage": "release",
+      "time_s": 24.319999999999446
+    },
+    {
+      "stage": "retract",
+      "time_s": 28.32499999999865
+    },
+    {
+      "stage": "park",
+      "time_s": 31.32999999999805
+    },
+    {
+      "stage": "verify",
+      "time_s": 34.32999999999911
+    }
+  ],
+  "wall_seconds": 38.514962600078434,
+  "image_pipeline_seconds": 28.205371003597975,
+  "trace_frames": 692
+}

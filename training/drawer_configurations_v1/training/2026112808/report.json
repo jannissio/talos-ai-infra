@@ -1,0 +1,538 @@
+{
+  "schema": "talos.drawer-demonstrations.v1",
+  "protocol_sha256": "9ffce20462c23f1e151c92ff5aef87ea607bc63e752616bc911bfe3f671b1595",
+  "seed": 2026112808,
+  "split": "training",
+  "case": {
+    "id": "2026112808",
+    "skill": "drawer",
+    "kind": "combined_configuration",
+    "cabinet_xy": [
+      -0.28747578110197153,
+      0.1768885405858726
+    ],
+    "cabinet_yaw_rad": -0.046899398149657136,
+    "drawer_open_m": 0.035162889285535244
+  },
+  "preflight": {
+    "free_bytes": 537140391936,
+    "estimated_additional_bytes": 67108864,
+    "reserve_bytes": 10737418240
+  },
+  "status": "eligible",
+  "training_eligible": true,
+  "teacher": "exact-state contact-only demonstration",
+  "state_writes_during_control": 0,
+  "external_forces": 0,
+  "equality_constraints": 0,
+  "setup": {
+    "valid": true,
+    "initial_max_penetration_m": 5.788075811278678e-05,
+    "settled_source_xyz_m": [
+      -0.2891242949591872,
+      0.14176431554031482,
+      0.76
+    ],
+    "settled_upright_z": 0.9999999999999999,
+    "settled_speed_m_s": 9.678335500437222e-13,
+    "drawer_open_m": 0.03516288928669571,
+    "reason": null
+  },
+  "layout": {
+    "seed": 2026112808,
+    "scenario": "dinner",
+    "racks": [],
+    "slots": [],
+    "tubes": [],
+    "table_z": 0.76,
+    "practice": false,
+    "transfer_side": null,
+    "objects": [
+      {
+        "id": "plate",
+        "body": "plate",
+        "label": "Blue-rim plate",
+        "kind": "plate",
+        "mass_kg": 0.06730392005267387,
+        "size_m": [
+          0.132,
+          0.132,
+          0.024
+        ],
+        "color": "#719acb",
+        "grasp_local_m": [
+          0,
+          -0.061,
+          0.01
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.8531667882073389,
+        "initial_position_m": [
+          -0.10205623228010363,
+          0.014926502952499225,
+          0.761
+        ],
+        "initial_yaw_rad": -0.07880284328672207,
+        "grasp_site": "plate_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "side_plate",
+        "body": "side_plate",
+        "label": "Gold-rim side plate",
+        "kind": "plate",
+        "mass_kg": 0.043556066637450076,
+        "size_m": [
+          0.106,
+          0.106,
+          0.012
+        ],
+        "color": "#dfac65",
+        "grasp_local_m": [
+          0,
+          -0.048,
+          0.009
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.7907084545369154,
+        "initial_position_m": [
+          0.12662574027629755,
+          0.252678837865764,
+          0.761
+        ],
+        "initial_yaw_rad": -0.09179753667776532,
+        "grasp_site": "side_plate_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "mug",
+        "body": "mug",
+        "label": "Teal mug",
+        "kind": "mug",
+        "mass_kg": 0.04388814891738713,
+        "size_m": [
+          0.077,
+          0.05,
+          0.064
+        ],
+        "color": "#54b9b1",
+        "grasp_local_m": [
+          0.047,
+          0,
+          0.041
+        ],
+        "grasp_width_m": 0.008,
+        "friction": 0.7608229546399798,
+        "initial_position_m": [
+          0.2511911419457198,
+          -0.06939735581641558,
+          0.761
+        ],
+        "initial_yaw_rad": -0.023270319000649284,
+        "grasp_site": "mug_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "glass",
+        "body": "glass",
+        "label": "Clear drinking glass",
+        "kind": "glass",
+        "mass_kg": 0.03264460920178916,
+        "size_m": [
+          0.048,
+          0.048,
+          0.074
+        ],
+        "color": "#b3dcdf",
+        "grasp_local_m": [
+          0,
+          0,
+          0.045
+        ],
+        "grasp_width_m": 0.048,
+        "friction": 0.805181657652887,
+        "initial_position_m": [
+          0.28922026147566526,
+          0.24532731167763497,
+          0.761
+        ],
+        "initial_yaw_rad": 0.10694709807254807,
+        "grasp_site": "glass_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "bottle",
+        "body": "bottle",
+        "label": "Amber water bottle",
+        "kind": "bottle",
+        "mass_kg": 0.07491540560759359,
+        "size_m": [
+          0.048,
+          0.048,
+          0.14
+        ],
+        "color": "#cf995b",
+        "grasp_local_m": [
+          0,
+          0,
+          0.128
+        ],
+        "grasp_width_m": 0.022,
+        "friction": 0.8347663808694933,
+        "initial_position_m": [
+          0.029550896845530354,
+          -0.07424556657036378,
+          0.761
+        ],
+        "initial_yaw_rad": -0.05534914677879345,
+        "grasp_site": "bottle_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "fork",
+        "body": "fork",
+        "label": "Fork",
+        "kind": "fork",
+        "mass_kg": 0.012509075921505066,
+        "size_m": [
+          0.017,
+          0.11,
+          0.016
+        ],
+        "color": "#cad5de",
+        "grasp_local_m": [
+          0,
+          0,
+          0.008
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.8166345721563458,
+        "initial_position_m": [
+          -0.304761946255652,
+          0.1640058393425631,
+          0.79
+        ],
+        "initial_yaw_rad": 0.0242415024534441,
+        "grasp_site": "fork_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      },
+      {
+        "id": "spoon",
+        "body": "spoon",
+        "label": "Spoon",
+        "kind": "spoon",
+        "mass_kg": 0.014183815252706754,
+        "size_m": [
+          0.022,
+          0.11,
+          0.016
+        ],
+        "color": "#cad5de",
+        "grasp_local_m": [
+          0,
+          0,
+          0.008
+        ],
+        "grasp_width_m": 0.009,
+        "friction": 0.780996951885796,
+        "initial_position_m": [
+          -0.2543972218981307,
+          0.16258013276712144,
+          0.79
+        ],
+        "initial_yaw_rad": 0.04299836951618323,
+        "grasp_site": "spoon_grasp",
+        "grasp_status": "candidate_only_not_a_verified_grasp"
+      }
+    ],
+    "targets": [
+      {
+        "id": "plate_place",
+        "label": "Plate setting",
+        "object_id": "plate",
+        "position_m": [
+          -0.06,
+          -0.025,
+          0.76
+        ],
+        "radius_m": 0.074
+      },
+      {
+        "id": "side_plate_place",
+        "label": "Side plate setting",
+        "object_id": "side_plate",
+        "position_m": [
+          0.11,
+          -0.025,
+          0.76
+        ],
+        "radius_m": 0.06
+      },
+      {
+        "id": "mug_place",
+        "label": "Mug setting",
+        "object_id": "mug",
+        "position_m": [
+          0.265,
+          0.005,
+          0.76
+        ],
+        "radius_m": 0.033
+      },
+      {
+        "id": "glass_place",
+        "label": "Glass setting",
+        "object_id": "glass",
+        "position_m": [
+          0.075,
+          0.1,
+          0.76
+        ],
+        "radius_m": 0.033
+      },
+      {
+        "id": "fork_place",
+        "label": "Fork setting",
+        "object_id": "fork",
+        "position_m": [
+          -0.16,
+          -0.045,
+          0.76
+        ],
+        "radius_m": 0.012
+      },
+      {
+        "id": "spoon_place",
+        "label": "Spoon setting",
+        "object_id": "spoon",
+        "position_m": [
+          -0.02,
+          -0.155,
+          0.76
+        ],
+        "radius_m": 0.014
+      }
+    ],
+    "drawer": {
+      "body": "cutlery_drawer",
+      "joint": "drawer_slide",
+      "travel_m": 0.12,
+      "initial_open_m": 0.035162889285535244,
+      "handle_site": "drawer_handle_grasp",
+      "actuated": false,
+      "closed_origin_m": [
+        -0.28747578110197153,
+        0.1768885405858726,
+        0.76
+      ]
+    },
+    "dinner_preset": "task",
+    "drawer_open": false,
+    "randomization": {
+      "object_xy_m": 0.009,
+      "mass_fraction": 0.08,
+      "friction_fraction": 0.1,
+      "light_multiplier": 0.9604163024427511
+    },
+    "challenge": {
+      "title": "Set the dinner table",
+      "autonomy_available": true,
+      "instruction": "Open the drawer, place the plate and cutlery, then coordinate both arms to serve a drink.",
+      "next_skill": "Learn camera/language control from verified demonstrations."
+    }
+  },
+  "teacher_outcome": {
+    "status": "succeeded",
+    "active": false,
+    "stage": "park",
+    "stage_label": "Park the working arm",
+    "message": "Drawer physically opened and released; arm parked.",
+    "arm": "left",
+    "tube_id": "drawer",
+    "kind": "drawer_open",
+    "source_slot": "drawer_start",
+    "recording_id": null,
+    "destination_slot": "bottle_place",
+    "progress": 1.0,
+    "stages": [
+      {
+        "id": "planning",
+        "label": "Check reach and clearance"
+      },
+      {
+        "id": "approach",
+        "label": "Approach the object"
+      },
+      {
+        "id": "descend",
+        "label": "Align the fingers"
+      },
+      {
+        "id": "close",
+        "label": "Grasp and check both fingers"
+      },
+      {
+        "id": "lift",
+        "label": "Lift the object"
+      },
+      {
+        "id": "hold",
+        "label": "Verify an unsupported hold"
+      },
+      {
+        "id": "align",
+        "label": "Move over the placement guide"
+      },
+      {
+        "id": "lower",
+        "label": "Lower to measured table support"
+      },
+      {
+        "id": "release",
+        "label": "Release the object"
+      },
+      {
+        "id": "retract",
+        "label": "Withdraw the gripper"
+      },
+      {
+        "id": "park",
+        "label": "Park the working arm"
+      },
+      {
+        "id": "verify",
+        "label": "Verify stable placement"
+      }
+    ],
+    "elapsed_s": 29.77,
+    "attempts": 1,
+    "metrics": {
+      "gripper_torque_limit_nm": 0.15,
+      "other_arm_max_motion_deg": 3.40955461852889e-11,
+      "hold_verified_s": 0.0,
+      "unexpected_collisions": 0,
+      "starting_opening_m": 0.03516288928669571,
+      "pull_axis_world": [
+        -0.04688220708414237,
+        -0.9989004247966459,
+        0.0
+      ],
+      "desired_opening_m": 0.116,
+      "observation": "exact_simulator_state",
+      "lift_cm": 0.0,
+      "max_lift_cm": 0.0,
+      "both_fingers": false,
+      "finger_forces_n": [
+        0.0,
+        0.0
+      ],
+      "external_contact_n": 0.26185725817236594,
+      "tilt_deg": 8.537736462515939e-07,
+      "peak_tilt_deg": 8.537736462515939e-07,
+      "drawer_open_m": 0.11591008925728194,
+      "commanded_remaining_pull_m": 0.0789421369334184
+    },
+    "history": [
+      {
+        "stage": "planning",
+        "at_s": 0.0,
+        "message": "Check reach and clearance"
+      },
+      {
+        "stage": "approach",
+        "at_s": 0.0,
+        "message": "Approach the object"
+      },
+      {
+        "stage": "descend",
+        "at_s": 5.64,
+        "message": "Align the fingers"
+      },
+      {
+        "stage": "close",
+        "at_s": 8.94,
+        "message": "Grasp and check both fingers"
+      },
+      {
+        "stage": "align",
+        "at_s": 13.24,
+        "message": "Move over the placement guide"
+      },
+      {
+        "stage": "release",
+        "at_s": 19.545,
+        "message": "Release the object"
+      },
+      {
+        "stage": "retract",
+        "at_s": 22.85,
+        "message": "Withdraw the gripper"
+      },
+      {
+        "stage": "park",
+        "at_s": 26.155,
+        "message": "Park the working arm"
+      },
+      {
+        "stage": "succeeded",
+        "at_s": 29.77,
+        "message": "Drawer physically opened and released; arm parked."
+      }
+    ],
+    "observation": "exact_simulator_state",
+    "attachment": "physical_contacts_only",
+    "object_id": "drawer"
+  },
+  "teacher_physical": {
+    "passed": true,
+    "failure": null,
+    "metrics": {
+      "drawer_open_m": 0.11591008925728194,
+      "max_opening_m": 0.11617159016651624,
+      "verified_handle_contact_s": 7.214999999999815,
+      "stable_release_and_park_s": 0.6549999999998697,
+      "both_arms_parked": true,
+      "other_object_displacements_m": {
+        "plate": 3.921091877500354e-08,
+        "side_plate": 5.9077123962673806e-08,
+        "mug": 5.717797309277947e-08,
+        "glass": 5.6465472860493116e-08,
+        "bottle": 9.233044686079937e-08,
+        "fork": 0.08074870112963568,
+        "spoon": 0.08074175584586077
+      },
+      "other_object_max_displacement_m": 3.9661761862740445e-07,
+      "parked_arm_max_motion_deg": 3.40955461852889e-11,
+      "unexpected_collisions": 0
+    },
+    "teacher_updates": 0,
+    "scoring": "Privileged simulator state; no motor targets generated"
+  },
+  "replay": {
+    "passed": true,
+    "failure": null,
+    "metrics": {
+      "drawer_open_m": 0.1158882765049067,
+      "max_opening_m": 0.11617618134295737,
+      "verified_handle_contact_s": 7.209999999999816,
+      "stable_release_and_park_s": 2.1599999999995703,
+      "both_arms_parked": true,
+      "other_object_displacements_m": {
+        "plate": 1.6575154222605189e-07,
+        "side_plate": 4.4268193790569905e-08,
+        "mug": 5.8558677696630946e-08,
+        "glass": 5.289589473318447e-08,
+        "bottle": 9.221845305310932e-08,
+        "fork": 0.08072700743861339,
+        "spoon": 0.08071971172955428
+      },
+      "other_object_max_displacement_m": 3.967059210048841e-07,
+      "parked_arm_max_motion_deg": 1.3939366940519469e-06,
+      "unexpected_collisions": 0
+    },
+    "teacher_updates": 0,
+    "scoring": "Privileged simulator state; no motor targets generated"
+  },
+  "replayed_saved_float32_endpoints": true,
+  "wall_seconds": 12.011996199842542
+}
