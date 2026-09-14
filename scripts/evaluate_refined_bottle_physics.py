@@ -119,7 +119,8 @@ def setup(p, spec, seed, split, folder):
         x, y, yaw = rng.uniform(*bounds['x']), rng.uniform(*bounds['y']), rng.uniform(*bounds['yaw'])
         source = np.array([x, y, layout['table_z']+.001, math.cos(yaw/2), 0., 0., math.sin(yaw/2)])
         data.qpos[address:address+7] = source
-        destination = p['physical']['destinations_xy_m'][seed % 3]
+        destinations = p['physical']['destinations_xy_m']
+        destination = destinations[seed % len(destinations)]
     mujoco.mj_forward(model, data)
     body = model.body('bottle').id
     penetration = max((-float(c.dist) for c in data.contact
