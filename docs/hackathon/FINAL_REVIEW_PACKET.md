@@ -24,6 +24,8 @@ Prepared September 13. Internal completion target: **September 14, 18:00 CEST**,
 
 ## Required before the public release
 
+The [compact Intel verification kit](../../submission/verification-v1/README.md) is ready for the laptop: 19.5 MB download, exact selected files and complete licenses. A fresh isolated extraction passes all six physical skills and CPU export checks on this PC in 52.662 seconds; strict Intel eligibility correctly remains false. The actual laptop run is still required. Reuse the existing Python environment and preserve the 10 GiB reserve.
+
 The latest [held-mug camera diagnostic](../robotics/evidence/mug-visual-visibility-v1/README.md) passes visibility on all 144 exposed states, with all 1,296 views/masks independently verified. A separate [RGB geometry-to-pose fit](../robotics/evidence/mug-visual-observer-v1/README.md) then fails development accuracy: final 8.105 mm p95 / 23.172 mm maximum. All 4,608 synthetic examples, 13,824 regenerated RGB views, both candidates and every score are preserved. No observer or corrective controller passes a new gate or replaces the selected system. Further work needs a separate protocol, not additional fitting on this stopped experiment.
 
 1. **Run on the Intel laptop.** Follow [the tested procedure](../robotics/INTEL_FINAL_VERIFICATION.md), using a fresh output folder. Record CPU SKU, OpenGL renderer, OpenVINO device, FP32 parity/latency/throughput and the complete physical sequence. The procedure has passed on this PC, but AMD/NVIDIA is not Intel evidence. The available historical i7-10850H laptop is not Core Ultra Series 2/3; preserve that distinction and any organizer clarification. Do not turn a successful legacy run into a qualifying-hardware claim.

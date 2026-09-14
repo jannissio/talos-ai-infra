@@ -65,6 +65,8 @@ The PDF requires an end-to-end perception/language/action workflow. Its examples
 
 ## Acceptance and storage rules
 
+The [compact Intel kit](../../submission/verification-v1/README.md) is prepared and physically verified from an isolated extraction on this PC: all six skills and CPU export checks pass in 52.662 seconds, with correctly false Intel eligibility. The 19.5 MB private download reuses the laptop's existing environment. This reduces handoff preparation; actual Intel execution and eligibility remain open.
+
 Current visual-placement work: [held-mug visibility](../robotics/evidence/mug-visual-visibility-v1/README.md) passes all 144 exposed states / 1,296 independently verified views. The subsequent [compact RGB pose fit](../robotics/evidence/mug-visual-observer-v1/README.md) completes its single budget but fails accuracy at 8.105 mm p95 / 23.172 mm maximum. All 4,608 synthetic examples regenerate exactly; both models and every score are retained. No fresh evaluation, export or physical integration follows. Accurate held-object pose estimation and physical correction remain unfinished.
 
 - Every promoted skill needs physical replay and learned execution evidence, not just low training loss or an animation.

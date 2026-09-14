@@ -1,0 +1,25 @@
+{
+  "schema": "talos.intel-verification-kit-pc-portability.v1",
+  "archive_sha256": "6a9b1228b5212efe815d07cbb5aca96e9966e354557afbd42583e986edf22394",
+  "archive_bytes": 19526128,
+  "source_git_revision": "57d6ff6185da832d49ae378de393f4a3e7c8cc6a",
+  "archive_members": 319,
+  "all_archive_and_extracted_hashes_match": true,
+  "isolated_python_mode": true,
+  "invocation": "python -I scripts/verify_intel_submission.py --suite models/dinner_suite/suite.json --output .run/pc-bundle-cpu --device CPU --diagnostic",
+  "physical_passed": true,
+  "all_six_cpu_exports_pass_parity": true,
+  "strict_hardware_and_physics_passed": false,
+  "cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+  "renderer": "NVIDIA GeForce RTX 4070/PCIe/SSE2",
+  "wall_seconds": 52.66162429982796,
+  "simulation_seconds": 247.65499999984726,
+  "trace_frames": 4955,
+  "source_sha256": "829991ebdad5d2dcbbc70aacac6b5940829aa2a61309e238e8f1e0efa3df2b9d",
+  "storage_preflight": {
+    "free_bytes": 559123218432,
+    "estimated_additional_bytes": 8383957,
+    "reserve_bytes": 10737418240
+  },
+  "scope": "Exposed seed-42 PC portability regression of the downloadable kit. Actual Intel execution, hardware eligibility, human voice and final submission remain open."
+}

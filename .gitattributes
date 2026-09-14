@@ -17,6 +17,7 @@
 *.jpg binary
 *.stl binary
 *.npz binary
+*.zip binary
 *.npy binary
 *.safetensors binary
 *.bin binary
@@ -37,6 +38,8 @@ models/bottle_servo_v1/** -text whitespace=cr-at-eol
 training/bottle_servo_v1/** -text whitespace=cr-at-eol
 docs/robotics/evidence/** -text whitespace=cr-at-eol
 docs/robotics/experiments/** -text whitespace=cr-at-eol
+submission/verification-v1/** -text whitespace=cr-at-eol
+submission/verification-v1/pc-portability/*scene.xml -whitespace
 
 # Generated state scenes preserve their original XML indentation and hashes.
 docs/robotics/evidence/rgb-servo-v1/**/scene.xml -whitespace

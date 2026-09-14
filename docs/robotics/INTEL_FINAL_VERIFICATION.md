@@ -6,15 +6,17 @@ The user confirmed enrollment and access to the laptop, but cannot access an Int
 
 ## Procedure on the laptop
 
+The [compact verification kit](../../submission/verification-v1/README.md) is now the easiest handoff: download its 19.5 MB ZIP from the private repository, extract it into a new folder and reuse the existing Python environment. It includes the exact selected models, scripts, assets and licenses. An isolated extraction passes all six skills and CPU export checks on the RTX PC in 52.662 wall seconds, while correctly failing Intel eligibility. Actual laptop execution remains open. Allow 1 GiB of new writes plus the 10 GiB reserve before downloading/extracting; dependency installation is additional. The full checkout method below remains available.
+
 Use the final `codex/final-submission` revision and the existing clean Python 3.12 `.venv-training` environment. Install the pinned `requirements-training.txt` and `requirements-openvino.txt` only if missing; preserve the 10 GiB reserve and check available disk first. CUDA is unnecessary for this inference verification. Keep `.env` local; this procedure does not require a Speechmatics key or microphone.
 
-To preserve the laptop's existing checkout and uncommitted work, run the following from its original Talos repository. This creates a separate checkout of the current private branch and reuses the existing Python environment. The dated sibling directory must not already exist. The disk check allows 1 GiB for checkout/verification writes in addition to the 10 GiB reserve; do not delete old data if it refuses.
+To preserve the laptop's existing checkout and uncommitted work, run the following from its original Talos repository. This creates a separate checkout of the current private branch and reuses the existing Python environment. The dated sibling directory must not already exist. With the larger preserved experiment archive, the disk check now allows 2 GiB for fetch/checkout/verification writes in addition to the 10 GiB reserve; do not delete old data if it refuses.
 
 ```powershell
 $talosBase = (Get-Location).Path
 $talosPython = Join-Path $talosBase ".venv-training\Scripts\python.exe"
 $talosReview = Join-Path (Split-Path $talosBase -Parent) "Talos-final-20260914"
-& $talosPython -c "import sys; from pathlib import Path; from simulation_lab.storage import require_space; require_space(Path(sys.argv[1]), 1024**3)" $talosReview
+& $talosPython -c "import sys; from pathlib import Path; from simulation_lab.storage import require_space; require_space(Path(sys.argv[1]), 2*1024**3)" $talosReview
 if ($LASTEXITCODE -ne 0) { throw "Disk/environment preflight failed." }
 if (Test-Path -LiteralPath $talosReview) { throw "Use a new review directory; preserve the existing one." }
 git fetch origin codex/final-submission
