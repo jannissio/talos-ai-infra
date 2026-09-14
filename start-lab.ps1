@@ -4,7 +4,7 @@ $taskRoot = $PSScriptRoot
 if ($DinnerSuite -and -not $Learned) { throw 'DinnerSuite requires -Learned.' }
 if ($DinnerSuite) { $DinnerSuite = (Resolve-Path -LiteralPath $DinnerSuite).Path }
 $taskPython = Join-Path $taskRoot '.venv\Scripts\python.exe'
-if ($Learned -and (Test-Path -LiteralPath (Join-Path $taskRoot '.venv-training\Scripts\python.exe'))) {
+if (($Learned -or -not (Test-Path -LiteralPath $taskPython)) -and (Test-Path -LiteralPath (Join-Path $taskRoot '.venv-training\Scripts\python.exe'))) {
     $taskPython = Join-Path $taskRoot '.venv-training\Scripts\python.exe'
 }
 $taskRunDir = Join-Path $taskRoot '.run'

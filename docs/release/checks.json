@@ -54,5 +54,41 @@
     "promoted_dependencies_verified_in_index": 206,
     "archived_files_hash_verified": 12178,
     "archive_tag": "development-snapshot-2026-09-14"
+  },
+  "local_browser": {
+    "http_checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "bytes": 15446
+      },
+      {
+        "path": "/static/app.js",
+        "status": 200,
+        "bytes": 29652
+      },
+      {
+        "path": "/static/style.css",
+        "status": 200,
+        "bytes": 13997
+      },
+      {
+        "path": "/static/speech.js",
+        "status": 200,
+        "bytes": 4280
+      },
+      {
+        "path": "/static/speech-worklet.js",
+        "status": 200,
+        "bytes": 289
+      }
+    ],
+    "all_five_assets_match_published_originals": true
+  },
+  "launcher": {
+    "retained_gpu_environment_used_when_cpu_environment_is_archived": true,
+    "fresh_server_started": true,
+    "fresh_server_stopped": true,
+    "user_port_8770_preserved": true
   }
 }

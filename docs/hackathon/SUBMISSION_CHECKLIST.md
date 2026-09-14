@@ -8,7 +8,7 @@
 - [x] Clean-copy model hash checks, application/model tests and two full production-entry physical checks.
 - [x] Human microphone rehearsal and legacy Intel baseline evidence retained.
 - [x] Confirm persisted final media and descriptions after leaving and reopening the submission form.
-- [ ] Verify public GitHub and Hugging Face access and a new anonymous CPU trial.
+- [x] Verify public GitHub and Hugging Face access and a new anonymous CPU trial.
 - [ ] Resolve the conflicting Core Ultra eligibility wording with the organizers, or accept the clearly disclosed limitation. Legacy Intel success does not establish Core Ultra execution.
 - [ ] User reviews the final draft and clicks Submit.
 
